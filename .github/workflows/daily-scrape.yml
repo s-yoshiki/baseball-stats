@@ -71,6 +71,14 @@ jobs:
           if [ -n "$SCRAPE_KANA_LIMIT" ]; then args+=(--kana-limit "$SCRAPE_KANA_LIMIT"); fi
           pnpm --filter @repo/parser run scrape -- "${args[@]}"
 
+      - name: Upload raw scrape SQLite
+        uses: actions/upload-artifact@v4
+        with:
+          name: baseball-stats-raw-${{ github.run_id }}
+          path: data/raw/raw.sqlite
+          if-no-files-found: error
+          retention-days: 30
+
       - name: Open data update pull request
         uses: peter-evans/create-pull-request@v7
         with:

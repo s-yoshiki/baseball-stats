@@ -425,7 +425,9 @@ export async function writeSnapshotToSqlite(
             is_active: player.isActive ? 1 : 0,
             team: detail(player, "所属球団"),
             position: detail(player, "守備位置"),
-            detail_json: JSON.stringify(player.detailInfo),
+            detail_json: JSON.stringify(
+              player.profileDetails ?? parsePlayerDetails(player.detailInfo),
+            ),
             computed_json: JSON.stringify(player.computedStats),
           })
           .execute();

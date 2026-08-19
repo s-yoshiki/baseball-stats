@@ -15,3 +15,5 @@ build
 # canonical data and are intentionally kept under version control.
 data/sqlite/*.sqlite
 data/sqlite/*.sqlite-*
+data/raw/*.sqlite
+data/raw/*.sqlite-*

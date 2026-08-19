@@ -1,14 +1,16 @@
 import { mkdir, readdir, readFile, rename, writeFile } from "node:fs/promises";
 import path from "node:path";
-import { parseInnings, parseSeason, toNumber } from "./parse-values.js";
+import { parseInnings, parseSeason, round, toNumber } from "./parse-values.js";
 import { parsePlayerDetails } from "./player-details.js";
 import { parsePlayerName } from "./player-name.js";
+import { calculatePlayerStats } from "./stats.js";
 import type {
+  BattingStatRow,
   BattingTotals,
   ComputedBattingSeason,
   ComputedPitchingSeason,
   EnrichedPlayer,
-  FieldProvenance,
+  PitchingStatRow,
   PitchingTotals,
   PlayerApiAttributes,
   PlayerApiBattingStat,
@@ -16,171 +18,24 @@ import type {
   PlayerApiIndexDocument,
   PlayerApiPitchingStat,
   PlayerDetails,
-  PlayerSource,
+  RawPlayer,
 } from "./types.js";
 
-type LegacyMeta = {
-  source?: { name: string; url: string };
-  generatedAt?: string;
-};
+type UnknownRecord = Record<string, unknown>;
 
-type LegacyPlayerApiDocument = {
-  schemaVersion?: number;
-  data: {
-    type: "player";
-    id: string;
-    attributes: {
-      profile: {
-        name: string;
-        kana: string;
-        url: string;
-        isActive: boolean;
-        details: Record<string, string>;
-      };
-      battingStats: PlayerApiBattingStat[];
-      pitchingStats: PlayerApiPitchingStat[];
-      career: PlayerApiAttributes["career"];
-    };
-    links: { self: string };
-  };
-  meta: LegacyMeta;
-};
-
-const NPB_SOURCE_ID = "npb";
-const COMPUTED_SOURCE_ID = "baseball-stats";
-
-function createSources(
-  player: EnrichedPlayer,
-  generatedAt: string,
-): PlayerSource[] {
-  const defaults: PlayerSource[] = [
-    {
-      id: NPB_SOURCE_ID,
-      kind: "official",
-      name: "NPB公式サイト",
-      url: player.playerUrl,
-      retrievedAt: generatedAt,
-    },
-    {
-      id: COMPUTED_SOURCE_ID,
-      kind: "computed",
-      name: "baseball-stats",
-      retrievedAt: generatedAt,
-    },
-  ];
-  const customSources = (player.sources ?? []).filter(
-    (source) => source.id !== NPB_SOURCE_ID && source.id !== COMPUTED_SOURCE_ID,
-  );
-  const sources = new Map(
-    [...defaults, ...customSources].map((source) => [source.id, source]),
-  );
-  return [...sources.values()];
-}
-
-function createProvenance(
-  player: EnrichedPlayer,
-  generatedAt: string,
-): Record<string, FieldProvenance> {
-  const normalized = (note?: string): FieldProvenance => ({
-    sourceId: NPB_SOURCE_ID,
-    method: "normalized",
-    updatedAt: generatedAt,
-    ...(note ? { note } : {}),
-  });
-  const scraped = (note?: string): FieldProvenance => ({
-    sourceId: NPB_SOURCE_ID,
-    method: "scraped",
-    updatedAt: generatedAt,
-    ...(note ? { note } : {}),
-  });
-  const calculated = (note?: string): FieldProvenance => ({
-    sourceId: COMPUTED_SOURCE_ID,
-    method: "calculated",
-    updatedAt: generatedAt,
-    ...(note ? { note } : {}),
-  });
-
-  const provenance: Record<string, FieldProvenance> = {
-    "profile.familyName": normalized(),
-    "profile.givenName": normalized(),
-    "profile.familyNameKana": normalized(),
-    "profile.givenNameKana": normalized(),
-    "profile.registeredName": normalized(),
-    "profile.registeredNameKana": normalized(),
-    "profile.url": scraped(),
-    "profile.isActive": scraped(),
-    "profile.details": normalized(),
-    "profile.rawDetails.npb": scraped(),
-    career: calculated(),
-  };
-
-  for (const [index] of player.battingStats.entries()) {
-    const sourceId = player.statSourceIds?.batting[index] ?? NPB_SOURCE_ID;
-    provenance[`battingStats[${index}].raw`] =
-      sourceId === NPB_SOURCE_ID
-        ? scraped()
-        : {
-            sourceId,
-            method: "imported",
-            updatedAt: generatedAt,
-          };
-    provenance[`battingStats[${index}].totals`] = {
-      sourceId,
-      method: "normalized",
-      updatedAt: generatedAt,
-    };
-    provenance[`battingStats[${index}].metrics`] = calculated();
-  }
-  for (const [index] of player.pitchingStats.entries()) {
-    const sourceId = player.statSourceIds?.pitching[index] ?? NPB_SOURCE_ID;
-    provenance[`pitchingStats[${index}].raw`] =
-      sourceId === NPB_SOURCE_ID
-        ? scraped()
-        : {
-            sourceId,
-            method: "imported",
-            updatedAt: generatedAt,
-          };
-    provenance[`pitchingStats[${index}].totals`] = {
-      sourceId,
-      method: "normalized",
-      updatedAt: generatedAt,
-    };
-    provenance[`pitchingStats[${index}].metrics`] = calculated();
-  }
-  const generatedKeys = new Set(Object.keys(provenance));
-  const preservedProvenance = Object.fromEntries(
-    Object.entries(player.provenance ?? {}).filter(([key, value]) => {
-      if (!generatedKeys.has(key)) return true;
-      return (
-        value.sourceId !== NPB_SOURCE_ID &&
-        value.sourceId !== COMPUTED_SOURCE_ID
-      );
-    }),
-  );
-  return { ...provenance, ...preservedProvenance };
-}
-
-function createMeta(
-  player: EnrichedPlayer,
-  generatedAt: string,
-): PlayerApiDocument["meta"] {
-  return {
-    sources: createSources(player, generatedAt),
-    provenance: createProvenance(player, generatedAt),
-    generatedAt,
-  };
-}
-
-function writeValue<T>(value: T): string {
+function writeValue(value: unknown): string {
   return `${JSON.stringify(value, null, 2)}\n`;
 }
 
-async function writeJsonFile<T>(filePath: string, value: T): Promise<void> {
+async function writeJsonFile(filePath: string, value: unknown): Promise<void> {
   await mkdir(path.dirname(filePath), { recursive: true });
   const temporaryPath = `${filePath}.tmp-${process.pid}`;
   await writeFile(temporaryPath, writeValue(value));
   await rename(temporaryPath, filePath);
+}
+
+function stringValue(value: number | null | undefined): string {
+  return value === null || value === undefined ? "" : String(value);
 }
 
 function battingTotals(
@@ -223,7 +78,7 @@ function pitchingTotals(
     noWalkCompleteGames: toNumber(row.無四球),
     winningPercentage: toNumber(row.勝率),
     battersFaced: toNumber(row.打者),
-    innings: parseInnings(row.投球回),
+    innings: round(parseInnings(row.投球回)),
     hitsAllowed: toNumber(row.安打),
     homeRunsAllowed: toNumber(row.本塁打),
     walksAllowed: toNumber(row.四球),
@@ -262,9 +117,6 @@ function createAttributes(player: EnrichedPlayer): PlayerApiAttributes {
   const name = parsePlayerName(player.playerName, player.kanaName);
   const details =
     player.profileDetails ?? parsePlayerDetails(player.detailInfo);
-  const rawDetails = player.sourceDetails ?? {
-    [NPB_SOURCE_ID]: player.detailInfo,
-  };
 
   return {
     profile: {
@@ -272,7 +124,6 @@ function createAttributes(player: EnrichedPlayer): PlayerApiAttributes {
       url: player.playerUrl,
       isActive: player.isActive,
       details,
-      rawDetails,
     },
     battingStats: player.battingStats.map((row, index) => {
       const computed = player.computedStats.batting[index];
@@ -284,8 +135,6 @@ function createAttributes(player: EnrichedPlayer): PlayerApiAttributes {
       return {
         season: parseSeason(row),
         team: row.所属球団?.trim() || null,
-        sourceId: player.statSourceIds?.batting[index] ?? NPB_SOURCE_ID,
-        raw: row,
         totals: battingTotals(row),
         metrics: battingMetrics(computed),
       } satisfies PlayerApiBattingStat;
@@ -300,14 +149,52 @@ function createAttributes(player: EnrichedPlayer): PlayerApiAttributes {
       return {
         season: parseSeason(row),
         team: row.所属球団?.trim() || null,
-        sourceId: player.statSourceIds?.pitching[index] ?? NPB_SOURCE_ID,
-        raw: row,
         totals: pitchingTotals(row),
         metrics: pitchingMetrics(computed),
       } satisfies PlayerApiPitchingStat;
     }),
     career: player.computedStats.career,
   };
+}
+
+export function toPlayerApiDocument(player: EnrichedPlayer): PlayerApiDocument {
+  return {
+    data: {
+      type: "player",
+      id: player.id,
+      attributes: createAttributes(player),
+      links: {
+        self: `/players/${player.id}.json`,
+      },
+    },
+  };
+}
+
+function isRecord(value: unknown): value is UnknownRecord {
+  return Boolean(value) && typeof value === "object" && !Array.isArray(value);
+}
+
+function isRawRow(value: unknown): value is Record<string, string> {
+  return (
+    isRecord(value) &&
+    Object.values(value).every((entry) => typeof entry === "string")
+  );
+}
+
+function rawRows(value: unknown): Array<Record<string, string>> {
+  if (!Array.isArray(value)) return [];
+  return value.flatMap((row) => {
+    if (!isRecord(row)) return [];
+    if (isRawRow(row)) return [row];
+    return isRawRow(row.raw) ? [row.raw] : [];
+  });
+}
+
+function rawDetails(value: unknown): Record<string, string> {
+  if (!isRecord(value)) return {};
+  if (isRawRow(value)) return value;
+  if (isRawRow(value.npb)) return value.npb;
+  return {};
 }
 
 function composeSourceName(
@@ -331,263 +218,365 @@ function composeSourceName(
   return `${registeredName}（${nameForParts}）`;
 }
 
-export function toPlayerApiDocument(
-  player: EnrichedPlayer,
-  generatedAt = new Date().toISOString(),
-): PlayerApiDocument {
+function detailsToRaw(details: PlayerDetails): Record<string, string> {
+  const result: Record<string, string> = {};
+  if (details.position) result.ポジション = details.position;
+  if (details.throws || details.bats) {
+    result.投打 = `${details.throws ?? ""}投${details.bats ?? ""}打`;
+  }
+  if (details.heightCm !== null || details.weightKg !== null) {
+    result["身長／体重"] =
+      `${stringValue(details.heightCm)}cm／${stringValue(details.weightKg)}kg`;
+  }
+  if (details.birthDate.iso) {
+    const { year, month, day } = details.birthDate;
+    result.生年月日 = `${year}年${month}月${day}日`;
+  }
+  if (details.career.raw) result.経歴 = details.career.raw;
+  if (details.draft.raw) result.ドラフト = details.draft.raw;
+  return result;
+}
+
+function battingStatToRaw(stat: PlayerApiBattingStat): BattingStatRow {
+  const totals = stat.totals;
   return {
-    data: {
-      type: "player",
-      id: player.id,
-      attributes: createAttributes(player),
-      links: {
-        self: `/players/${player.id}.json`,
-      },
-    },
-    meta: createMeta(player, generatedAt),
+    年度: stringValue(stat.season),
+    所属球団: stat.team ?? "",
+    試合: stringValue(totals.games),
+    打席: stringValue(totals.plateAppearances),
+    打数: stringValue(totals.atBats),
+    得点: stringValue(totals.runs),
+    安打: stringValue(totals.hits),
+    二塁打: stringValue(totals.doubles),
+    三塁打: stringValue(totals.triples),
+    本塁打: stringValue(totals.homeRuns),
+    塁打: stringValue(totals.totalBases),
+    打点: stringValue(totals.rbi),
+    盗塁: stringValue(totals.steals),
+    盗塁刺: stringValue(totals.caughtStealing),
+    犠打: stringValue(totals.sacrificeHits),
+    犠飛: stringValue(totals.sacrificeFlies),
+    四球: stringValue(totals.walks),
+    死球: stringValue(totals.hitByPitch),
+    三振: stringValue(totals.strikeouts),
+    併殺打: stringValue(totals.groundedIntoDoublePlays),
+    打率: stringValue(stat.metrics.battingAverage),
+    出塁率: stringValue(stat.metrics.onBasePercentage),
+    長打率: stringValue(stat.metrics.sluggingPercentage),
   };
 }
 
-function fromDocument(document: PlayerApiDocument): EnrichedPlayer {
+function pitchingStatToRaw(stat: PlayerApiPitchingStat): PitchingStatRow {
+  const totals = stat.totals;
+  const innings = totals.innings;
+  let rawInnings = "";
+  if (innings !== null) {
+    const wholeInnings = Math.floor(innings);
+    const fractionalInnings = innings - wholeInnings;
+    if (Math.abs(fractionalInnings - 1 / 3) < 0.01) {
+      rawInnings = `${wholeInnings}.1`;
+    } else if (Math.abs(fractionalInnings - 2 / 3) < 0.01) {
+      rawInnings = `${wholeInnings}.2`;
+    } else {
+      rawInnings = String(innings);
+    }
+  }
+  return {
+    年度: stringValue(stat.season),
+    所属球団: stat.team ?? "",
+    登板: stringValue(totals.games),
+    勝利: stringValue(totals.wins),
+    敗北: stringValue(totals.losses),
+    セーブ: stringValue(totals.saves),
+    ホールド: stringValue(totals.holds),
+    HP: stringValue(totals.holdPoints),
+    完投: stringValue(totals.completeGames),
+    完封勝: stringValue(totals.shutouts),
+    無四球: stringValue(totals.noWalkCompleteGames),
+    勝率: stringValue(totals.winningPercentage),
+    打者: stringValue(totals.battersFaced),
+    投球回: rawInnings,
+    安打: stringValue(totals.hitsAllowed),
+    本塁打: stringValue(totals.homeRunsAllowed),
+    四球: stringValue(totals.walksAllowed),
+    死球: stringValue(totals.hitByPitch),
+    奪三振: stringValue(totals.strikeouts),
+    暴投: stringValue(totals.wildPitches),
+    ボーク: stringValue(totals.balks),
+    失点: stringValue(totals.runsAllowed),
+    自責点: stringValue(totals.earnedRuns),
+    防御率: stringValue(stat.metrics.era),
+  };
+}
+
+function apiStatsToRaw(
+  attributes: PlayerApiAttributes,
+): Pick<RawPlayer, "battingStats" | "pitchingStats"> {
+  return {
+    battingStats: attributes.battingStats.map(battingStatToRaw),
+    pitchingStats: attributes.pitchingStats.map(pitchingStatToRaw),
+  };
+}
+
+function documentToRawPlayer(document: PlayerApiDocument): RawPlayer {
   const profile = document.data.attributes.profile;
-  const battingStats = document.data.attributes.battingStats;
-  const pitchingStats = document.data.attributes.pitchingStats;
+  const details = profile.details;
+  const name = composeSourceName(
+    profile.registeredName,
+    profile.familyName,
+    profile.givenName,
+    " ",
+  );
+  const kana = composeSourceName(
+    profile.registeredNameKana,
+    profile.familyNameKana,
+    profile.givenNameKana,
+    "・",
+  );
+  const stats = apiStatsToRaw(document.data.attributes);
 
   return {
     id: document.data.id,
     playerUrl: profile.url,
-    playerName: composeSourceName(
-      profile.registeredName,
-      profile.familyName,
-      profile.givenName,
-      " ",
-    ),
-    kanaName: composeSourceName(
-      profile.registeredNameKana,
-      profile.familyNameKana,
-      profile.givenNameKana,
-      "・",
-    ),
+    playerName: name,
+    kanaName: kana,
     isActive: profile.isActive,
-    detailInfo:
-      profile.rawDetails[NPB_SOURCE_ID] ??
-      Object.values(profile.rawDetails)[0] ??
-      {},
-    profileDetails: profile.details,
-    sourceDetails: profile.rawDetails,
-    sources: document.meta.sources,
-    provenance: document.meta.provenance,
-    battingStats: battingStats.map((row) => row.raw),
-    pitchingStats: pitchingStats.map((row) => row.raw),
-    statSourceIds: {
-      batting: battingStats.map((row) => row.sourceId),
-      pitching: pitchingStats.map((row) => row.sourceId),
-    },
-    computedStats: {
-      batting: battingStats.map((row) => ({
-        season: row.season,
-        team: row.team,
-        ...row.metrics,
-      })),
-      pitching: pitchingStats.map((row) => ({
-        season: row.season,
-        team: row.team,
-        ...row.metrics,
-      })),
-      career: document.data.attributes.career,
+    detailInfo: detailsToRaw(details),
+    profileDetails: details,
+    ...stats,
+  };
+}
+
+function normalizeStat<
+  TStat extends PlayerApiBattingStat | PlayerApiPitchingStat,
+>(value: unknown): TStat {
+  const stat = isRecord(value) ? value : {};
+  return {
+    season: typeof stat.season === "number" ? stat.season : null,
+    team: typeof stat.team === "string" ? stat.team : null,
+    totals: isRecord(stat.totals) ? stat.totals : {},
+    metrics: isRecord(stat.metrics) ? stat.metrics : {},
+  } as TStat;
+}
+
+function normalizeDocument(value: unknown): PlayerApiDocument {
+  if (!isRecord(value) || !isRecord(value.data)) {
+    throw new Error("Unsupported player document");
+  }
+  const data = value.data;
+  const attributes = isRecord(data.attributes) ? data.attributes : {};
+  const originalProfile = isRecord(attributes.profile)
+    ? attributes.profile
+    : {};
+  const rawProfile =
+    isRecord(value.raw) && isRecord(value.raw.profile) ? value.raw.profile : {};
+  const rawProfileDetails = rawDetails(
+    originalProfile.rawDetails ?? rawProfile.details,
+  );
+  const oldName =
+    typeof originalProfile.name === "string" ? originalProfile.name : "";
+  const oldKana =
+    typeof originalProfile.kana === "string" ? originalProfile.kana : "";
+  const parsedName = parsePlayerName(oldName, oldKana);
+  const registeredName =
+    typeof originalProfile.registeredName === "string"
+      ? originalProfile.registeredName
+      : parsedName.registeredName;
+  const registeredNameKana =
+    typeof originalProfile.registeredNameKana === "string"
+      ? originalProfile.registeredNameKana
+      : parsedName.registeredNameKana;
+  const details = isPlayerDetails(originalProfile.details)
+    ? originalProfile.details
+    : parsePlayerDetails(rawProfileDetails);
+  const battingStats = Array.isArray(attributes.battingStats)
+    ? attributes.battingStats.map((stat) =>
+        normalizeStat<PlayerApiBattingStat>(stat),
+      )
+    : [];
+  const pitchingStats = Array.isArray(attributes.pitchingStats)
+    ? attributes.pitchingStats.map((stat) =>
+        normalizeStat<PlayerApiPitchingStat>(stat),
+      )
+    : [];
+  const url =
+    typeof originalProfile.url === "string"
+      ? originalProfile.url
+      : typeof rawProfile.url === "string"
+        ? rawProfile.url
+        : "";
+  const isActive =
+    typeof originalProfile.isActive === "boolean"
+      ? originalProfile.isActive
+      : Boolean(rawProfile.isActive);
+  const id = typeof data.id === "string" ? data.id : "";
+
+  return {
+    data: {
+      type: "player",
+      id,
+      attributes: {
+        profile: {
+          familyName:
+            typeof originalProfile.familyName === "string"
+              ? originalProfile.familyName
+              : parsedName.familyName,
+          givenName:
+            typeof originalProfile.givenName === "string"
+              ? originalProfile.givenName
+              : parsedName.givenName,
+          familyNameKana:
+            typeof originalProfile.familyNameKana === "string"
+              ? originalProfile.familyNameKana
+              : parsedName.familyNameKana,
+          givenNameKana:
+            typeof originalProfile.givenNameKana === "string"
+              ? originalProfile.givenNameKana
+              : parsedName.givenNameKana,
+          registeredName,
+          registeredNameKana,
+          url,
+          isActive,
+          details,
+        },
+        battingStats,
+        pitchingStats,
+        career: isRecord(attributes.career)
+          ? attributes.career
+          : { batting: {}, pitching: {} },
+      } as PlayerApiAttributes,
+      links: {
+        self:
+          isRecord(data.links) && typeof data.links.self === "string"
+            ? data.links.self
+            : `/players/${id}.json`,
+      },
     },
   };
 }
 
-function migrateLegacyDocument(
-  document: LegacyPlayerApiDocument,
-): PlayerApiDocument {
-  const legacyProfile = document.data.attributes.profile;
-  const name = parsePlayerName(legacyProfile.name, legacyProfile.kana);
+function mergeRecords(
+  base: UnknownRecord,
+  patch: UnknownRecord,
+): UnknownRecord {
+  const result: UnknownRecord = { ...base };
+  for (const [key, value] of Object.entries(patch)) {
+    const current = result[key];
+    result[key] =
+      isRecord(current) && isRecord(value)
+        ? mergeRecords(current, value)
+        : value;
+  }
+  return result;
+}
 
+function overrideAttributes(value: unknown): UnknownRecord {
+  if (!isRecord(value)) return {};
+  if (isRecord(value.data) && isRecord(value.data.attributes)) {
+    return value.data.attributes;
+  }
+  if (isRecord(value.attributes)) return value.attributes;
+  return value;
+}
+
+function applyPlayerOverride(
+  document: PlayerApiDocument,
+  override: unknown,
+): PlayerApiDocument {
   return {
     data: {
       ...document.data,
-      attributes: {
-        ...document.data.attributes,
-        profile: {
-          ...name,
-          url: legacyProfile.url,
-          isActive: legacyProfile.isActive,
-          details: parsePlayerDetails(legacyProfile.details),
-          rawDetails: { [NPB_SOURCE_ID]: legacyProfile.details },
-        },
-      },
-    },
-    meta: {
-      sources: [
-        {
-          id: NPB_SOURCE_ID,
-          kind: "official",
-          name: document.meta.source?.name ?? "NPB公式サイト",
-          ...(document.meta.source?.url
-            ? { url: document.meta.source.url }
-            : {}),
-        },
-      ],
-      provenance: {},
-      generatedAt: document.meta.generatedAt ?? "unknown",
+      attributes: mergeRecords(
+        document.data.attributes,
+        overrideAttributes(override),
+      ) as PlayerApiAttributes,
     },
   };
+}
+
+async function readPlayerOverride(
+  overridesDir: string,
+  playerId: string,
+): Promise<unknown | null> {
+  try {
+    return JSON.parse(
+      await readFile(path.join(overridesDir, `${playerId}.json`), "utf8"),
+    ) as unknown;
+  } catch (error: unknown) {
+    if (
+      error &&
+      typeof error === "object" &&
+      "code" in error &&
+      error.code === "ENOENT"
+    ) {
+      return null;
+    }
+    throw error;
+  }
 }
 
 function isPlayerDetails(value: unknown): value is PlayerDetails {
-  if (!value || typeof value !== "object") {
-    return false;
-  }
-  const details = value as {
-    birthDate?: unknown;
-    career?: unknown;
-    draft?: unknown;
-  };
-  return Boolean(
-    details.birthDate &&
-      typeof details.birthDate === "object" &&
-      details.career &&
-      typeof details.career === "object" &&
-      details.draft &&
-      typeof details.draft === "object",
+  if (!isRecord(value)) return false;
+  return (
+    isRecord(value.birthDate) && isRecord(value.career) && isRecord(value.draft)
   );
 }
 
-function isFlatRawDetails(value: unknown): value is Record<string, string> {
-  if (!value || typeof value !== "object" || Array.isArray(value)) {
-    return false;
-  }
-  return Object.values(value).every((entry) => typeof entry === "string");
-}
-
-function isRawDetailsBySource(
+function extractRawPlayer(
   value: unknown,
-): value is Record<string, Record<string, string>> {
-  if (!value || typeof value !== "object" || Array.isArray(value)) {
-    return false;
-  }
-  return Object.values(value).every((entry) => isFlatRawDetails(entry));
-}
-
-function normalizeRawDetails(
-  rawDetails: unknown,
-  details: unknown,
-): Record<string, Record<string, string>> {
-  if (isRawDetailsBySource(rawDetails) && Object.keys(rawDetails).length > 0) {
-    return rawDetails;
-  }
-  if (isFlatRawDetails(rawDetails)) {
-    return { [NPB_SOURCE_ID]: rawDetails };
-  }
-  if (isFlatRawDetails(details)) {
-    return { [NPB_SOURCE_ID]: details };
-  }
-  return {};
-}
-
-function primaryRawDetails(
-  rawDetails: Record<string, Record<string, string>>,
-): Record<string, string> {
-  return rawDetails[NPB_SOURCE_ID] ?? Object.values(rawDetails)[0] ?? {};
-}
-
-function normalizeMeta(
-  meta: unknown,
-  playerUrl: string,
-): PlayerApiDocument["meta"] {
-  if (!meta || typeof meta !== "object" || Array.isArray(meta)) {
-    return {
-      sources: [
-        {
-          id: NPB_SOURCE_ID,
-          kind: "official",
-          name: "NPB公式サイト",
-          url: playerUrl,
-        },
-      ],
-      provenance: {},
-      generatedAt: "unknown",
-    };
-  }
-  const candidate = meta as {
-    sources?: unknown;
-    provenance?: unknown;
-    generatedAt?: unknown;
-    source?: { name?: unknown; url?: unknown };
-  };
-  if (
-    Array.isArray(candidate.sources) &&
-    candidate.sources.every((source) => source && typeof source === "object") &&
-    candidate.provenance &&
-    typeof candidate.provenance === "object" &&
-    typeof candidate.generatedAt === "string"
-  ) {
-    return meta as PlayerApiDocument["meta"];
-  }
-  return {
-    sources: [
-      {
-        id: NPB_SOURCE_ID,
-        kind: "official",
-        name:
-          typeof candidate.source?.name === "string"
-            ? candidate.source.name
-            : "NPB公式サイト",
-        url:
-          typeof candidate.source?.url === "string"
-            ? candidate.source.url
-            : playerUrl,
-      },
-    ],
-    provenance: {},
-    generatedAt:
-      typeof candidate.generatedAt === "string"
-        ? candidate.generatedAt
-        : "unknown",
-  };
-}
-
-function migrateCurrentDocument(
   document: PlayerApiDocument,
-): PlayerApiDocument {
-  const profile = document.data.attributes
-    .profile as PlayerApiAttributes["profile"] & {
-    rawDetails?: unknown;
-    details: unknown;
-  };
-  const rawDetails = normalizeRawDetails(profile.rawDetails, profile.details);
-  const primaryDetails = primaryRawDetails(rawDetails);
-  const details = isPlayerDetails(profile.details)
-    ? profile.details
-    : parsePlayerDetails(primaryDetails);
-
+): RawPlayer | null {
+  if (!isRecord(value) || !isRecord(value.data)) return null;
+  const attributes = isRecord(value.data.attributes)
+    ? value.data.attributes
+    : {};
+  const profile = isRecord(attributes.profile) ? attributes.profile : {};
+  const raw = isRecord(value.raw) ? value.raw : {};
+  const rawProfile = isRecord(raw.profile) ? raw.profile : {};
+  const rawBatting = rawRows(raw.battingStats ?? attributes.battingStats);
+  const rawPitching = rawRows(raw.pitchingStats ?? attributes.pitchingStats);
+  const parsed = documentToRawPlayer(document);
+  const details = rawDetails(profile.rawDetails ?? rawProfile.details);
+  if (
+    !rawBatting.length &&
+    !rawPitching.length &&
+    !Object.keys(details).length
+  ) {
+    return null;
+  }
   return {
-    ...document,
-    data: {
-      ...document.data,
-      attributes: {
-        ...document.data.attributes,
-        profile: {
-          ...profile,
-          details,
-          rawDetails,
-        },
-      },
-    },
-    meta: normalizeMeta(document.meta, profile.url),
+    ...parsed,
+    playerName:
+      typeof rawProfile.name === "string" ? rawProfile.name : parsed.playerName,
+    kanaName:
+      typeof rawProfile.kana === "string" ? rawProfile.kana : parsed.kanaName,
+    playerUrl:
+      typeof rawProfile.url === "string" ? rawProfile.url : parsed.playerUrl,
+    isActive:
+      typeof rawProfile.isActive === "boolean"
+        ? rawProfile.isActive
+        : parsed.isActive,
+    detailInfo: Object.keys(details).length ? details : parsed.detailInfo,
+    battingStats: rawBatting.length ? rawBatting : parsed.battingStats,
+    pitchingStats: rawPitching.length ? rawPitching : parsed.pitchingStats,
   };
 }
 
 export async function writePlayerDocuments(
   outputDir: string,
   players: EnrichedPlayer[],
-  generatedAt = new Date().toISOString(),
+  overridesDir?: string,
 ): Promise<void> {
-  const documents = players.map((player) =>
-    toPlayerApiDocument(player, generatedAt),
-  );
+  const documents: PlayerApiDocument[] = [];
+  for (const player of players) {
+    const document = toPlayerApiDocument(player);
+    const override = overridesDir
+      ? await readPlayerOverride(overridesDir, player.id)
+      : null;
+    documents.push(
+      override ? applyPlayerOverride(document, override) : document,
+    );
+  }
   await mkdir(outputDir, { recursive: true });
 
   for (const document of documents) {
@@ -615,25 +604,6 @@ export async function writePlayerDocuments(
         links: document.data.links,
       }))
       .sort((left, right) => left.id.localeCompare(right.id)),
-    meta: {
-      sources: [
-        {
-          id: NPB_SOURCE_ID,
-          kind: "official",
-          name: "NPB公式サイト",
-          url: "https://npb.jp/bis/players/",
-          retrievedAt: generatedAt,
-        },
-        {
-          id: COMPUTED_SOURCE_ID,
-          kind: "computed",
-          name: "baseball-stats",
-          retrievedAt: generatedAt,
-        },
-      ],
-      provenance: {},
-      generatedAt,
-    },
   };
   await writeJsonFile(path.join(outputDir, "index.json"), index);
 }
@@ -656,30 +626,13 @@ export async function readPlayerDocuments(
   for (const fileName of fileNames) {
     const filePath = path.join(inputDir, fileName);
     const parsed: unknown = JSON.parse(await readFile(filePath, "utf8"));
-    if (!parsed || typeof parsed !== "object") {
-      throw new Error(`Unsupported player document: ${filePath}`);
+    const document = normalizeDocument(parsed);
+    if (!document.data.id) {
+      throw new Error(`Player document has no id: ${filePath}`);
     }
-    const profile = (
-      parsed as {
-        data?: { attributes?: { profile?: Record<string, unknown> } };
-      }
-    ).data?.attributes?.profile;
-    if (!profile) {
-      throw new Error(`Unsupported player document: ${filePath}`);
-    }
-    if (typeof profile.registeredName === "string") {
-      players.push(
-        fromDocument(migrateCurrentDocument(parsed as PlayerApiDocument)),
-      );
-      continue;
-    }
-    if (typeof profile.name === "string" && typeof profile.kana === "string") {
-      players.push(
-        fromDocument(migrateLegacyDocument(parsed as LegacyPlayerApiDocument)),
-      );
-      continue;
-    }
-    throw new Error(`Unsupported player document: ${filePath}`);
+    const rawPlayer =
+      extractRawPlayer(parsed, document) ?? documentToRawPlayer(document);
+    players.push(calculatePlayerStats(rawPlayer));
   }
   return players;
 }

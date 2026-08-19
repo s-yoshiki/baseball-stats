@@ -429,29 +429,5 @@
         "self": "/masters/teams/taiyo_robins.json"
       }
     }
-  ],
-  "meta": {
-    "sources": [
-      {
-        "id": "npb",
-        "kind": "official",
-        "name": "NPB公式サイト",
-        "retrievedAt": "2026-08-19"
-      },
-      {
-        "id": "npb-analysis",
-        "kind": "manual",
-        "name": "npb-analysis team seed reference",
-        "retrievedAt": "2026-08-19"
-      }
-    ],
-    "provenance": {
-      "data": {
-        "sourceId": "npb-analysis",
-        "method": "imported",
-        "updatedAt": "2026-08-19"
-      }
-    },
-    "generatedAt": "2026-08-19"
-  }
+  ]
 }

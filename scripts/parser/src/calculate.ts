@@ -7,7 +7,10 @@ import {
   readSnapshot,
   writePlayerDocuments,
 } from "@repo/baseball-data";
-import { DEFAULT_PLAYER_DATA_DIR } from "./constants.js";
+import {
+  DEFAULT_PLAYER_DATA_DIR,
+  DEFAULT_PLAYER_OVERRIDES_DIR,
+} from "./constants.js";
 
 function getOption(
   args: string[],
@@ -27,6 +30,11 @@ async function main(): Promise<void> {
       DEFAULT_PLAYER_DATA_DIR,
   );
   const legacyInput = getOption(args, "--input");
+  const overridesDir = path.resolve(
+    process.cwd(),
+    getOption(args, "--overrides-dir", DEFAULT_PLAYER_OVERRIDES_DIR) ??
+      DEFAULT_PLAYER_OVERRIDES_DIR,
+  );
 
   let players: EnrichedPlayer[];
   if (legacyInput) {
@@ -45,7 +53,7 @@ async function main(): Promise<void> {
     players = existingPlayers.map(calculatePlayerStats);
   }
 
-  await writePlayerDocuments(outputDir, players);
+  await writePlayerDocuments(outputDir, players, overridesDir);
   console.log(`Calculated stats for ${players.length} players`);
   console.log(`Saved player documents to ${outputDir}`);
 }

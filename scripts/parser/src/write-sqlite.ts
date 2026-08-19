@@ -19,7 +19,6 @@ function getOption(args: string[], flag: string, fallback: string): string {
 
 function createSnapshot(players: EnrichedPlayer[]): EnrichedSnapshot {
   return {
-    schemaVersion: 1,
     pipeline: "calculate",
     generatedAt: new Date().toISOString(),
     source: {

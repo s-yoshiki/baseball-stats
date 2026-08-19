@@ -9,7 +9,7 @@ NPBから取得した値を将来のアプリケーションでも再利用し�
 
 ## Decision
 
-取得した値と派生値は、1選手1ファイルの `data/players/<player-id>.json` にJSON APIリソースとして保存する。プロフィールは姓・名・かな姓・かな名・登録名・登録名かなに分け、詳細情報は構造化した `details` とNPB原文を保持する `rawDetails` に分ける。NPB由来の行データは `data.attributes.*Stats[].raw`、数値化した集計値は `totals`、計算した派生値は `metrics` に置く。`data/players/index.json` は一覧リソースとする。SQLiteはJSONから再生成する出力とする。
+整形済みの値と派生値は、1選手1ファイルの `data/players/<player-id>.json` にJSON APIリソースとして保存する。プロフィールは姓・名・かな姓・かな名・登録名・登録名かなに分け、詳細情報は構造化した `details` に置く。NPB由来の未加工行データは `data/raw/raw.sqlite` に保存し、JSONの成績要素には数値化した集計値を `totals`、計算した派生値を `metrics` として置く。`data/players/index.json` は一覧リソースとする。アプリ向けSQLiteはJSONから再生成する出力とする。
 
 ## Consequences
 

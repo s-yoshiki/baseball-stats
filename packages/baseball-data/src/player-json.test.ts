@@ -1,4 +1,4 @@
-import { mkdtemp, readFile, rm } from "node:fs/promises";
+import { mkdir, mkdtemp, readFile, rm, writeFile } from "node:fs/promises";
 import os from "node:os";
 import path from "node:path";
 import { describe, expect, it } from "vitest";
@@ -32,8 +32,8 @@ const player: RawPlayer = {
 };
 
 describe("player API JSON", () => {
-  it("creates a JSON API resource with raw and derived stats", () => {
-    const document = toPlayerApiDocument(calculatePlayerStats(player), "now");
+  it("separates formatted API data from raw scrape data", () => {
+    const document = toPlayerApiDocument(calculatePlayerStats(player));
 
     expect(document).toMatchObject({
       data: {
@@ -51,8 +51,6 @@ describe("player API JSON", () => {
           battingStats: [
             {
               season: 2024,
-              sourceId: "npb",
-              raw: { 年度: "2024", 安打: "10" },
               totals: { hits: 10 },
               metrics: { battingAverage: 0.333 },
             },
@@ -60,19 +58,15 @@ describe("player API JSON", () => {
         },
         links: { self: "/players/test-player.json" },
       },
-      meta: { generatedAt: "now" },
     });
-    expect(document.data.attributes.profile.rawDetails).toEqual({
-      npb: { 所属球団: "テスト" },
-    });
-    expect(document.meta.sources.map((source) => source.id)).toEqual([
-      "npb",
-      "baseball-stats",
-    ]);
-    expect(document.meta.provenance["battingStats[0].metrics"]).toMatchObject({
-      sourceId: "baseball-stats",
-      method: "calculated",
-    });
+    expect(document.data.attributes.profile).not.toHaveProperty("raw");
+    expect(document.data.attributes.profile).not.toHaveProperty("rawDetails");
+    expect(document.data.attributes.battingStats[0]).not.toHaveProperty("raw");
+    expect(document.data.attributes.battingStats[0]).not.toHaveProperty(
+      "sourceId",
+    );
+    expect(document).not.toHaveProperty("meta");
+    expect(document).not.toHaveProperty("raw");
   });
 
   it("writes one player document per file and reads it back", async () => {
@@ -82,7 +76,7 @@ describe("player API JSON", () => {
 
     try {
       const enriched = calculatePlayerStats(player);
-      await writePlayerDocuments(temporaryDirectory, [enriched], "now");
+      await writePlayerDocuments(temporaryDirectory, [enriched]);
 
       const index = JSON.parse(
         await readFile(path.join(temporaryDirectory, "index.json"), "utf8"),
@@ -105,9 +99,12 @@ describe("player API JSON", () => {
       ]);
       const readPlayers = await readPlayerDocuments(temporaryDirectory);
       expect(readPlayers).toHaveLength(1);
-      expect(readPlayers[0]).toMatchObject(enriched);
-      expect(readPlayers[0]?.sourceDetails).toEqual({
-        npb: { 所属球団: "テスト" },
+      expect(readPlayers[0]).toMatchObject({
+        id: enriched.id,
+        playerName: enriched.playerName,
+        kanaName: enriched.kanaName,
+        battingStats: enriched.battingStats,
+        computedStats: enriched.computedStats,
       });
     } finally {
       await rm(temporaryDirectory, { recursive: true, force: true });
@@ -120,7 +117,7 @@ describe("player API JSON", () => {
       playerName: "イチロー（鈴木 一朗）",
       kanaName: "いちろー（すずき・いちろう）",
     });
-    const document = toPlayerApiDocument(aliasPlayer, "now");
+    const document = toPlayerApiDocument(aliasPlayer);
 
     expect(document.data.attributes.profile).toMatchObject({
       familyName: "鈴木",
@@ -132,39 +129,56 @@ describe("player API JSON", () => {
     });
   });
 
-  it("keeps alternative source data when recalculating", () => {
-    const enriched = calculatePlayerStats({
-      ...player,
-      sourceDetails: {
-        npb: player.detailInfo,
-        "wikipedia-ja": { 身長: "180cm" },
-      },
-      sources: [
-        {
-          id: "wikipedia-ja",
-          kind: "encyclopedia",
-          name: "Wikipedia日本語版",
-        },
-      ],
-      provenance: {
-        "profile.details": {
-          sourceId: "wikipedia-ja",
-          method: "imported",
-          updatedAt: "now",
-        },
-      },
-    });
-    const document = toPlayerApiDocument(enriched, "later");
+  it("reads a clean document without requiring raw fields", async () => {
+    const temporaryDirectory = await mkdtemp(
+      path.join(os.tmpdir(), "baseball-stats-clean-player-json-"),
+    );
 
-    expect(document.data.attributes.profile.rawDetails["wikipedia-ja"]).toEqual(
-      { 身長: "180cm" },
+    try {
+      await writePlayerDocuments(temporaryDirectory, [
+        calculatePlayerStats(player),
+      ]);
+      const parsed = JSON.parse(
+        await readFile(
+          path.join(temporaryDirectory, "test-player.json"),
+          "utf8",
+        ),
+      ) as Record<string, unknown>;
+      expect(parsed).not.toHaveProperty("raw");
+      expect(await readPlayerDocuments(temporaryDirectory)).toHaveLength(1);
+    } finally {
+      await rm(temporaryDirectory, { recursive: true, force: true });
+    }
+  });
+
+  it("applies sparse player overrides after generating API data", async () => {
+    const temporaryDirectory = await mkdtemp(
+      path.join(os.tmpdir(), "baseball-stats-player-overrides-"),
     );
-    expect(document.meta.sources.map((source) => source.id)).toContain(
-      "wikipedia-ja",
-    );
-    expect(document.meta.provenance["profile.details"]).toMatchObject({
-      sourceId: "wikipedia-ja",
-      method: "imported",
-    });
+    const overridesDirectory = path.join(temporaryDirectory, "overrides");
+    const outputDirectory = path.join(temporaryDirectory, "players");
+
+    try {
+      await mkdir(overridesDirectory, { recursive: true });
+      await writeFile(
+        path.join(overridesDirectory, "test-player.json"),
+        `${JSON.stringify({
+          profile: { details: { position: "捕手" } },
+        })}\n`,
+      );
+      await writePlayerDocuments(
+        outputDirectory,
+        [calculatePlayerStats(player)],
+        overridesDirectory,
+      );
+      const document = JSON.parse(
+        await readFile(path.join(outputDirectory, "test-player.json"), "utf8"),
+      ) as {
+        data: { attributes: { profile: { details: { position: string } } } };
+      };
+      expect(document.data.attributes.profile.details.position).toBe("捕手");
+    } finally {
+      await rm(temporaryDirectory, { recursive: true, force: true });
+    }
   });
 });

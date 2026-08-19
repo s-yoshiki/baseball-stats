@@ -62,13 +62,6 @@ export type RawPlayer = {
   isActive: boolean;
   detailInfo: Record<string, string>;
   profileDetails?: PlayerDetails;
-  sourceDetails?: Record<string, Record<string, string>>;
-  sources?: PlayerSource[];
-  provenance?: Record<string, FieldProvenance>;
-  statSourceIds?: {
-    batting: string[];
-    pitching: string[];
-  };
   battingStats: BattingStatRow[];
   pitchingStats: PitchingStatRow[];
 };
@@ -104,34 +97,6 @@ export type PlayerDetails = {
     rank: number | null;
     selection: "regular" | "development" | "outside" | null;
   };
-};
-
-export type PlayerSourceKind =
-  | "official"
-  | "encyclopedia"
-  | "manual"
-  | "computed";
-
-export type PlayerSource = {
-  id: string;
-  kind: PlayerSourceKind;
-  name: string;
-  url?: string;
-  retrievedAt?: string;
-};
-
-export type ProvenanceMethod =
-  | "scraped"
-  | "imported"
-  | "manual"
-  | "normalized"
-  | "calculated";
-
-export type FieldProvenance = {
-  sourceId: string;
-  method: ProvenanceMethod;
-  updatedAt: string;
-  note?: string;
 };
 
 export type ComputedBattingSeason = {
@@ -215,7 +180,6 @@ export type EnrichedPlayer = RawPlayer & {
 export type DataPipeline = "scrape" | "calculate";
 
 export type DataSnapshot<TPlayer> = {
-  schemaVersion: 1;
   pipeline: DataPipeline;
   generatedAt: string;
   source: {
@@ -276,8 +240,6 @@ export type PitchingTotals = {
 export type PlayerApiBattingStat = {
   season: number | null;
   team: string | null;
-  sourceId: string;
-  raw: BattingStatRow;
   totals: BattingTotals;
   metrics: Omit<ComputedBattingSeason, "season" | "team">;
 };
@@ -285,8 +247,6 @@ export type PlayerApiBattingStat = {
 export type PlayerApiPitchingStat = {
   season: number | null;
   team: string | null;
-  sourceId: string;
-  raw: PitchingStatRow;
   totals: PitchingTotals;
   metrics: Omit<ComputedPitchingSeason, "season" | "team">;
 };
@@ -302,7 +262,6 @@ export type PlayerApiAttributes = {
     url: string;
     isActive: boolean;
     details: PlayerDetails;
-    rawDetails: Record<string, Record<string, string>>;
   };
   battingStats: PlayerApiBattingStat[];
   pitchingStats: PlayerApiPitchingStat[];
@@ -320,11 +279,6 @@ export type PlayerApiResource = {
 
 export type PlayerApiDocument = {
   data: PlayerApiResource;
-  meta: {
-    sources: PlayerSource[];
-    provenance: Record<string, FieldProvenance>;
-    generatedAt: string;
-  };
 };
 
 export type PlayerApiIndexDocument = {
@@ -344,9 +298,4 @@ export type PlayerApiIndexDocument = {
       self: string;
     };
   }>;
-  meta: {
-    sources: PlayerSource[];
-    provenance: Record<string, FieldProvenance>;
-    generatedAt: string;
-  };
 };

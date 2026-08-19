@@ -12,7 +12,7 @@ export async function readSnapshot<TPlayer>(
   }
 
   const snapshot = parsed as Partial<DataSnapshot<TPlayer>>;
-  if (snapshot.schemaVersion !== 1 || !Array.isArray(snapshot.players)) {
+  if (!Array.isArray(snapshot.players)) {
     throw new Error(`Unsupported snapshot format: ${filePath}`);
   }
   return snapshot as DataSnapshot<TPlayer>;
@@ -33,7 +33,6 @@ export function createSnapshot<TPlayer>(
   players: TPlayer[],
 ): DataSnapshot<TPlayer> {
   return {
-    schemaVersion: 1,
     pipeline,
     generatedAt: new Date().toISOString(),
     source: {

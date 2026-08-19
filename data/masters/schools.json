@@ -1368,24 +1368,5 @@
         "self": "/masters/schools/university%3A%E7%AB%8B%E6%95%99%E5%A4%A7.json"
       }
     }
-  ],
-  "meta": {
-    "sources": [
-      {
-        "id": "npb",
-        "kind": "official",
-        "name": "NPB公式サイト",
-        "retrievedAt": "2026-08-19"
-      }
-    ],
-    "provenance": {
-      "data": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19",
-        "note": "100選手の経歴から学校種別を判定"
-      }
-    },
-    "generatedAt": "2026-08-19"
-  }
+  ]
 }

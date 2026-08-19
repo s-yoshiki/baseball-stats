@@ -1,6 +1,7 @@
 import path from "node:path";
 import {
   calculatePlayerStats,
+  createSnapshot,
   type EnrichedPlayer,
   type EnrichedSnapshot,
   loadMasterData,
@@ -13,6 +14,7 @@ import {
 } from "@repo/baseball-data";
 import BetterSqlite3 from "better-sqlite3";
 import { type Generated, Kysely, SqliteDialect, sql } from "kysely";
+import { readLatestRawPlayers } from "./raw-sqlite.js";
 
 export interface PlayersTable {
   id: string;
@@ -451,8 +453,8 @@ export async function writeSnapshotToSqlite(
         const battingComputed = player.computedStats.batting;
         for (const [index, row] of player.battingStats.entries()) {
           const computed = battingComputed[index];
-          const season = toNumber(row.年度);
-          const team = row.所属球団?.trim() || null;
+          const season = toNumber(row.season);
+          const team = row.team?.trim() || null;
           const resolvedTeam = resolveTeamSeason(team, season, masterData);
           await trx
             .insertInto("batting_stats")
@@ -462,20 +464,20 @@ export async function writeSnapshotToSqlite(
               team,
               team_id: resolvedTeam?.teamId ?? null,
               league_id: resolvedTeam?.leagueId ?? null,
-              games: toNumber(row.試合),
-              plate_appearances: toNumber(row.打席),
-              at_bats: toNumber(row.打数),
-              runs: toNumber(row.得点),
-              hits: toNumber(row.安打),
-              doubles: toNumber(row.二塁打),
-              triples: toNumber(row.三塁打),
-              home_runs: toNumber(row.本塁打),
-              total_bases: toNumber(row.塁打),
-              rbi: toNumber(row.打点),
-              steals: toNumber(row.盗塁),
-              walks: toNumber(row.四球),
-              hit_by_pitch: toNumber(row.死球),
-              strikeouts: toNumber(row.三振),
+              games: toNumber(row.games),
+              plate_appearances: toNumber(row.plateAppearances),
+              at_bats: toNumber(row.atBats),
+              runs: toNumber(row.runs),
+              hits: toNumber(row.hits),
+              doubles: toNumber(row.doubles),
+              triples: toNumber(row.triples),
+              home_runs: toNumber(row.homeRuns),
+              total_bases: toNumber(row.totalBases),
+              rbi: toNumber(row.rbi),
+              steals: toNumber(row.steals),
+              walks: toNumber(row.walks),
+              hit_by_pitch: toNumber(row.hitByPitch),
+              strikeouts: toNumber(row.strikeouts),
               batting_average: computed?.battingAverage ?? null,
               on_base_percentage: computed?.onBasePercentage ?? null,
               slugging_percentage: computed?.sluggingPercentage ?? null,
@@ -491,8 +493,8 @@ export async function writeSnapshotToSqlite(
         const pitchingComputed = player.computedStats.pitching;
         for (const [index, row] of player.pitchingStats.entries()) {
           const computed = pitchingComputed[index];
-          const season = toNumber(row.年度);
-          const team = row.所属球団?.trim() || null;
+          const season = toNumber(row.season);
+          const team = row.team?.trim() || null;
           const resolvedTeam = resolveTeamSeason(team, season, masterData);
           await trx
             .insertInto("pitching_stats")
@@ -502,16 +504,16 @@ export async function writeSnapshotToSqlite(
               team,
               team_id: resolvedTeam?.teamId ?? null,
               league_id: resolvedTeam?.leagueId ?? null,
-              games: toNumber(row.登板),
-              wins: toNumber(row.勝利),
-              losses: toNumber(row.敗北),
-              saves: toNumber(row.セーブ),
-              holds: toNumber(row.ホールド ?? row.H),
-              innings: parseInnings(row.投球回),
-              hits_allowed: toNumber(row.安打),
-              walks_allowed: toNumber(row.四球),
-              strikeouts: toNumber(row.奪三振 ?? row.三振),
-              earned_runs: toNumber(row.自責点),
+              games: toNumber(row.games),
+              wins: toNumber(row.wins),
+              losses: toNumber(row.losses),
+              saves: toNumber(row.saves),
+              holds: toNumber(row.holds),
+              innings: parseInnings(row.innings),
+              hits_allowed: toNumber(row.hitsAllowed),
+              walks_allowed: toNumber(row.walksAllowed),
+              strikeouts: toNumber(row.strikeouts),
+              earned_runs: toNumber(row.earnedRuns),
               era: computed?.era ?? null,
               whip: computed?.whip ?? null,
               strikeouts_per_nine: computed?.strikeoutsPerNine ?? null,
@@ -527,4 +529,17 @@ export async function writeSnapshotToSqlite(
   } finally {
     await db.destroy();
   }
+}
+
+export async function writeRawSqliteToSqlite(
+  rawDbPath: string,
+  dbPath: string,
+  masterDir = path.resolve(process.cwd(), "../../data/masters"),
+): Promise<{ players: number; battingRows: number; pitchingRows: number }> {
+  const rawPlayers = await readLatestRawPlayers(rawDbPath);
+  const snapshot = createSnapshot(
+    "calculate",
+    rawPlayers.map(calculatePlayerStats),
+  );
+  return writeSnapshotToSqlite(snapshot, dbPath, masterDir);
 }

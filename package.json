@@ -3,6 +3,7 @@
   "private": true,
   "scripts": {
     "build": "turbo run build",
+    "atlas:validate": "atlas migrate validate --env published && atlas migrate validate --env raw",
     "check": "biome check .",
     "check:fix": "biome check --write .",
     "dev": "turbo run dev",

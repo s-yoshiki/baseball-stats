@@ -1,31 +1,34 @@
 # baseball-stats
 
-NPB公式サイトの選手プロフィール・打撃成績・投手成績をJSONで保存し、派生スタッツを計算してSQLiteへ書き出すためのデータ基盤です。`npb-analysis` と同じく pnpm + Turborepo のモノレポ構成ですが、Webアプリから独立したデータリポジトリとして設計しています。
+NPB公式サイトの選手プロフィール・打撃成績・投手成績をSQLiteで保存し、派生スタッツを計算して公開用SQLiteへ書き出すためのデータ基盤です。必要な場合だけ選手JSON APIを生成できます。`npb-analysis` と同じく pnpm + Turborepo のモノレポ構成ですが、Webアプリから独立したデータリポジトリとして設計しています。
 
 ## Data pipeline
 
 ```text
 NPB HTML
-  ↓ scrape
+  ↓ scrape + normalize + calculate
 data/raw/raw.sqlite
-  ↓ normalize + calculate
-data/players/<player-id>.json
-  ↓ write-sqlite
+  ↓ build with Kysely
 data/sqlite/data.sqlite
+  ↓ optional export
+data/export/players/*.json
 ```
 
-GitHub Actionsでは、`Daily scrape` が毎日03:00 JSTに選手JSONの更新PRを作成します。mainへマージすると `Publish SQLite` がSQLiteを検証し、Actions artifactとして公開したうえで `npb-analysis` に更新通知を送ります。必要なGitHub secretsと、npb-analysis側でのPR・デプロイまでの手順は [npb-analysisの同期運用ドキュメント](https://github.com/s-yoshiki/npb-analysis/blob/develop/docs/operations/baseball-stats-sync.md) を参照してください。
+GitHub Actionsでは、`Daily scrape` が毎日03:00 JSTにraw SQLiteと公開用SQLiteを生成し、Actions artifactとして公開したうえで `npb-analysis` に更新通知を送ります。必要なGitHub secretsと、npb-analysis側でのPR・デプロイまでの手順は [npb-analysisの同期運用ドキュメント](https://github.com/s-yoshiki/npb-analysis/blob/develop/docs/operations/baseball-stats-sync.md) を参照してください。
 
-`data/players/index.json` は選手一覧、`data/players/<player-id>.json` は1選手分のJSON APIリソースです。プロフィールには `familyName`、`givenName`、`familyNameKana`、`givenNameKana`、`registeredName`、`registeredNameKana` を持たせます。`details` には投打、身長・体重、生年月日、経歴、ドラフトを構造化して保存します。JSONはAPI向けの整形済みデータだけを持ち、出典情報やprovenanceは管理しません。
+選手データの正本は `data/raw/raw.sqlite` とし、公開用の整形済みデータは `data/sqlite/data.sqlite` に生成します。選手JSONはGit管理せず、必要な場合だけ `export-json` で生成します。プロフィールには `familyName`、`givenName`、`familyNameKana`、`givenNameKana`、`registeredName`、`registeredNameKana` を持たせ、`details` には投打、身長・体重、生年月日、経歴、ドラフトを構造化します。
 
-NPBの取得値は `data/raw/raw.sqlite` に実行単位で保存します。選手JSONの成績要素には `totals` と `metrics` に数値化した集計値・OPS、ISO、BB%、K%、ERA、WHIP、K/9、BB/9、K/BBを追加します。`data/masters` にはリーグ、球団、球団名・年度、学校のJSON APIマスタを置きます。アプリ向けSQLiteは選手JSONとマスタJSONから再生成可能な出力です。
+NPBの取得値は `data/raw/raw.sqlite` に実行単位で保存します。raw SQLiteのテーブル列とJSONキーは英語で統一し、NPBの値（成績の文字列やプロフィールの表記）は保持します。成績行は `season`、`team`、`games`、`hits` など、プロフィールは `position`、`batsThrows`、`heightWeight` などに正規化します。未知のプロフィール項目は `additional[{ sourceKey, value }]` に保持します。`data/masters` にはリーグ、球団、球団名・年度、学校のJSON APIマスタを置きます。SQLiteの型・クエリはKysely、スキーマ差分とマイグレーションはAtlasで管理します。
 
 ## Setup
 
 要件は Node.js 26 と pnpm 11 です。
+Atlasのスキーマ差分・マイグレーション操作にはAtlas CLIも必要です。
 
 ```sh
 pnpm install
+# macOS / Homebrew
+brew install ariga/tap/atlas
 ```
 
 ## Usage
@@ -41,30 +44,25 @@ pnpm --filter @repo/parser run scrape -- \
   --debug
 ```
 
-`scrape` は取得した純粋なスクレイピングデータを `data/raw/raw.sqlite` に保存し、整形済みの選手JSONを `data/players` に生成します。保存先は `--raw-db` で変更できます。
-
-Wikipediaや人手による修正は `data/overrides/players/<player-id>.json` に疎なJSONパッチとして保存します。`scrape` と `calculate` はこのディレクトリを自動的に適用します。
-
-取得後、選手ごとのJSON APIリソースとSQLiteを生成します。
+`scrape` は選手を1件取得するたびにスクレイピングデータを `data/raw/raw.sqlite` へ保存し、取得完了後に `data/sqlite/data.sqlite` も再生成します。選手データ全件をメモリに保持しません。保存先は `--raw-db` と `--db` で変更できます。
 
 ```sh
-pnpm --filter @repo/parser run calculate
 pnpm --filter @repo/parser run write-sqlite
+
+pnpm --filter @repo/parser run export-json -- \
+  --raw-db ../../data/raw/raw.sqlite \
+  --output-dir ../../data/export/players
 ```
 
 パスを指定する場合:
 
 ```sh
-pnpm --filter @repo/parser run calculate -- \
-  --input-dir ../../data/players \
-  --output-dir ../../data/players
-
 pnpm --filter @repo/parser run write-sqlite -- \
-  --input-dir ../../data/players \
+  --raw-db ../../data/raw/raw.sqlite \
   --db ../../data/sqlite/data.sqlite
 ```
 
-`calculate` は個別リソースを再計算して同じディレクトリへ書き戻します。`--input <legacy-snapshot>` を指定すると、旧形式の集約JSONから個別リソースへ移行できます。`write-sqlite` は選手JSON全体からSQLiteを再構築します。
+`export-json` はraw.sqliteの最新スクレイプ実行から、必要なときだけ選手JSON APIリソースを生成します。`write-sqlite` はraw.sqliteから公開用SQLiteを再構築します。
 
 SQLiteを手動で検証する場合:
 
@@ -77,15 +75,25 @@ pnpm --filter @repo/parser exec tsx src/validate-sqlite.ts \
 
 ## Repository layout
 
-- `packages/baseball-data`: 型、JSON I/O、派生スタッツ計算
-- `scripts/parser`: NPBスクレイパー、派生JSON生成、Kysely + `better-sqlite3` writer
-- `data/players/index.json`: 選手一覧のJSON APIリソース
-- `data/players/<player-id>.json`: 1選手分のAPI向け整形済みデータ
-- `data/overrides/players`: Wikipedia・手動編集の選手別override
+- `packages/baseball-data`: 型、JSON export、派生スタッツ計算
+- `scripts/parser`: NPBスクレイパー、raw SQLite reader/writer、Kysely + `better-sqlite3` writer
+- `atlas.hcl` / `atlas/migrations`: Kysely外部スキーマとAtlasマイグレーション
+- `data/export/players`: 必要時に生成する選手JSON APIリソース（Git管理外）
 - `data/masters`: リーグ、球団、球団名・年度、学校のマスタ
 - `data/raw`: スクレイピングデータSQLite（Git管理外）
 - `data/sqlite`: SQLite出力（Git管理外）
 - `docs/adr`: データ形式とSQLite出力の設計判断
+
+## Schema management
+
+Kyselyの型定義・スキーマビルダーを外部スキーマローダーとしてAtlasから読み込みます。公開DBとraw DBは別々のAtlas migration directoryを持ちます。
+
+```sh
+atlas migrate diff --env published
+atlas migrate diff --env raw
+atlas migrate validate --env published
+atlas migrate validate --env raw
+```
 
 ## Verification
 

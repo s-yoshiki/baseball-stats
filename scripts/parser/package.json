@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "build": "tsc --noEmit",
-    "calculate": "tsx src/calculate.ts",
+    "atlas-schema": "node --import tsx src/atlas-schema.ts",
+    "export-json": "tsx src/export-json.ts",
     "scrape": "tsx src/main.ts",
     "test": "vitest run",
     "typecheck": "tsc --noEmit",

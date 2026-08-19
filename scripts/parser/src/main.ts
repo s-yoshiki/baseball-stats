@@ -1,21 +1,17 @@
-import fs from "node:fs";
 import path from "node:path";
 import {
-  calculatePlayerStats,
-  writePlayerDocuments,
-} from "@repo/baseball-data";
-import {
-  DEFAULT_PLAYER_DATA_DIR,
-  DEFAULT_PLAYER_OVERRIDES_DIR,
+  DEFAULT_MASTER_DATA_DIR,
   DEFAULT_RAW_SQLITE_PATH,
+  DEFAULT_SQLITE_PATH,
 } from "./constants.js";
-import { writeRawPlayersToSqlite } from "./raw-sqlite.js";
+import { openRawSqliteWriter } from "./raw-sqlite.js";
 import { type ScrapeOptions, scrapePlayers } from "./scrape.js";
+import { writeRawSqliteToSqlite } from "./sqlite.js";
 
 type CliOptions = ScrapeOptions & {
-  outputDir: string;
+  db: string;
+  mastersDir: string;
   rawDb: string;
-  overridesDir: string;
 };
 
 function parseNumber(value: string, flag: string): number {
@@ -31,8 +27,8 @@ export function readCliOptions(args: string[]): CliOptions {
     debug: false,
     delayMs: 300,
     includeRetired: false,
-    outputDir: DEFAULT_PLAYER_DATA_DIR,
-    overridesDir: DEFAULT_PLAYER_OVERRIDES_DIR,
+    db: DEFAULT_SQLITE_PATH,
+    mastersDir: DEFAULT_MASTER_DATA_DIR,
     rawDb: DEFAULT_RAW_SQLITE_PATH,
   };
 
@@ -50,9 +46,9 @@ Options:
   --limit <number>      scrape only the first N players
   --kana-limit <number> scrape only the first N kana index pages
   --delay <ms>          wait between requests (default: 300)
-  --output-dir <path>   player JSON directory (default: ${DEFAULT_PLAYER_DATA_DIR})
-  --overrides-dir <path> manual override directory (default: ${DEFAULT_PLAYER_OVERRIDES_DIR})
   --raw-db <path>       raw scrape SQLite path (default: ${DEFAULT_RAW_SQLITE_PATH})
+  --db <path>           generated application SQLite path (default: ${DEFAULT_SQLITE_PATH})
+  --masters-dir <path>  master data directory (default: ${DEFAULT_MASTER_DATA_DIR})
   --debug               print progress and row counts`);
       process.exit(0);
     }
@@ -89,18 +85,18 @@ Options:
       index += 1;
       continue;
     }
-    if ((arg === "--output-dir" || arg === "--output") && next) {
-      options.outputDir = next;
-      index += 1;
-      continue;
-    }
     if (arg === "--raw-db" && next) {
       options.rawDb = next;
       index += 1;
       continue;
     }
-    if (arg === "--overrides-dir" && next) {
-      options.overridesDir = next;
+    if (arg === "--db" && next) {
+      options.db = next;
+      index += 1;
+      continue;
+    }
+    if (arg === "--masters-dir" && next) {
+      options.mastersDir = next;
       index += 1;
       continue;
     }
@@ -111,17 +107,27 @@ Options:
 
 export async function main(args = process.argv.slice(2)): Promise<void> {
   const options = readCliOptions(args);
-  const players = await scrapePlayers(options);
   const rawDbPath = path.resolve(process.cwd(), options.rawDb);
-  fs.mkdirSync(path.dirname(rawDbPath), { recursive: true });
-  const rawResult = writeRawPlayersToSqlite(players, rawDbPath);
-  const enrichedPlayers = players.map(calculatePlayerStats);
-  const outputDir = path.resolve(process.cwd(), options.outputDir);
-  const overridesDir = path.resolve(process.cwd(), options.overridesDir);
-  await writePlayerDocuments(outputDir, enrichedPlayers, overridesDir);
-  console.log(`Saved ${players.length} player documents to ${outputDir}`);
+  const writer = await openRawSqliteWriter(rawDbPath);
+  let rawResult: Awaited<ReturnType<typeof writer.finish>>;
+  try {
+    await scrapePlayers(options, writer.writePlayer);
+    rawResult = await writer.finish();
+  } finally {
+    await writer.close();
+  }
+  const dbPath = path.resolve(process.cwd(), options.db);
+  const mastersDir = path.resolve(process.cwd(), options.mastersDir);
+  const sqliteResult = await writeRawSqliteToSqlite(
+    rawDbPath,
+    dbPath,
+    mastersDir,
+  );
   console.log(
     `Saved raw scrape run ${rawResult.runId} (${rawResult.players} players) to ${rawDbPath}`,
+  );
+  console.log(
+    `Wrote ${sqliteResult.players} players, ${sqliteResult.battingRows} batting rows, and ${sqliteResult.pitchingRows} pitching rows to ${dbPath}`,
   );
 }
 

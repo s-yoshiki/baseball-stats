@@ -8,6 +8,11 @@ export {
   resolveTeamSeason,
 } from "./masters.js";
 export {
+  normalizeBattingStat,
+  normalizePitchingStat,
+  normalizeScrapedPlayer,
+} from "./normalize-player.js";
+export {
   addNullable,
   parseInnings,
   parseSeason,

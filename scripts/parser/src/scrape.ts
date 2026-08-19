@@ -1,4 +1,4 @@
-import type { RawPlayer } from "@repo/baseball-data";
+import type { ScrapedPlayer } from "@repo/baseball-data";
 import { ACTIVE_INDEX_ROOT_URL, ALL_INDEX_ROOT_URL } from "./constants.js";
 import { fetchHtml } from "./fetch.js";
 import {
@@ -19,6 +19,8 @@ export type ScrapeOptions = {
   limit?: number;
   debug: boolean;
 };
+
+export type ScrapedPlayerHandler = (player: ScrapedPlayer) => Promise<void>;
 
 async function collectPlayerUrls(
   indexRootUrl: string,
@@ -53,21 +55,14 @@ async function collectPlayerUrls(
 
 export async function scrapePlayers(
   options: ScrapeOptions,
-): Promise<RawPlayer[]> {
+  onPlayer: ScrapedPlayerHandler,
+): Promise<{ players: number }> {
   const activeUrls = await collectPlayerUrls(ACTIVE_INDEX_ROOT_URL, options);
-  const urls = options.includeRetired
-    ? await collectPlayerUrls(ALL_INDEX_ROOT_URL, options)
-    : activeUrls;
-  const sortedUrls = [...urls].sort();
-  const urlsToScrape =
-    options.limit === undefined
-      ? sortedUrls
-      : sortedUrls.slice(0, options.limit);
+  let playerCount = 0;
 
-  const players: RawPlayer[] = [];
-  for (const [index, url] of urlsToScrape.entries()) {
+  const scrapePlayer = async (url: string): Promise<void> => {
     const parsed = parsePlayerPage(await fetchHtml(url));
-    const player: RawPlayer = {
+    const player: ScrapedPlayer = {
       id: toBase36PlayerIdFromUrl(url),
       playerUrl: url,
       playerName: parsed.playerName,
@@ -77,13 +72,60 @@ export async function scrapePlayers(
       battingStats: parsed.battingStats,
       pitchingStats: parsed.pitchingStats,
     };
-    players.push(player);
+    await onPlayer(player);
+    playerCount += 1;
     if (options.debug) {
       console.log(
-        `[debug] ${index + 1}/${urlsToScrape.length} ${player.id} ${player.playerName || "(empty)"} batting=${player.battingStats.length} pitching=${player.pitchingStats.length}`,
+        `[debug] ${playerCount} ${player.id} ${player.playerName || "(empty)"} batting=${player.battingStats.length} pitching=${player.pitchingStats.length}`,
       );
     }
     await sleep(options.delayMs);
+  };
+
+  if (!options.includeRetired) {
+    for (const url of [...activeUrls].sort()) {
+      if (options.limit !== undefined && playerCount >= options.limit) {
+        break;
+      }
+      await scrapePlayer(url);
+    }
+    return { players: playerCount };
   }
-  return players;
+
+  const seenUrls = new Set<string>();
+
+  const rootHtml = await fetchHtml(ALL_INDEX_ROOT_URL);
+  const allKanaPages = parseKanaIndexUrls(rootHtml, ALL_INDEX_ROOT_URL);
+  const kanaPages =
+    options.kanaLimit === undefined
+      ? allKanaPages
+      : allKanaPages.slice(0, options.kanaLimit);
+
+  if (!kanaPages.length) {
+    throw new Error(`Kana index pages not found from ${ALL_INDEX_ROOT_URL}`);
+  }
+  if (options.debug) {
+    console.log(
+      `[debug] ${ALL_INDEX_ROOT_URL}: ${kanaPages.length}/${allKanaPages.length} kana pages`,
+    );
+  }
+
+  for (const pageUrl of kanaPages) {
+    const pageHtml = await fetchHtml(pageUrl);
+    const playerUrls = parsePlayerUrlsFromKanaPage(pageHtml, pageUrl);
+    for (const url of playerUrls) {
+      if (seenUrls.has(url)) {
+        continue;
+      }
+      if (options.limit !== undefined && playerCount >= options.limit) {
+        return { players: playerCount };
+      }
+
+      seenUrls.add(url);
+      await scrapePlayer(url);
+    }
+    await sleep(options.delayMs);
+  }
+
+  return { players: playerCount };
 }

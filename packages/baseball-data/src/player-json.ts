@@ -1,6 +1,10 @@
 import { mkdir, readdir, readFile, rename, writeFile } from "node:fs/promises";
 import path from "node:path";
-import { parseInnings, parseSeason, round, toNumber } from "./parse-values.js";
+import {
+  normalizeBattingStat,
+  normalizePitchingStat,
+} from "./normalize-player.js";
+import { parseInnings, round, toNumber } from "./parse-values.js";
 import { parsePlayerDetails } from "./player-details.js";
 import { parsePlayerName } from "./player-name.js";
 import { calculatePlayerStats } from "./stats.js";
@@ -10,6 +14,8 @@ import type {
   ComputedBattingSeason,
   ComputedPitchingSeason,
   EnrichedPlayer,
+  NpbBattingStatRow,
+  NpbPitchingStatRow,
   PitchingStatRow,
   PitchingTotals,
   PlayerApiAttributes,
@@ -42,24 +48,24 @@ function battingTotals(
   row: EnrichedPlayer["battingStats"][number],
 ): BattingTotals {
   return {
-    games: toNumber(row.試合),
-    plateAppearances: toNumber(row.打席),
-    atBats: toNumber(row.打数),
-    runs: toNumber(row.得点),
-    hits: toNumber(row.安打),
-    doubles: toNumber(row.二塁打),
-    triples: toNumber(row.三塁打),
-    homeRuns: toNumber(row.本塁打),
-    totalBases: toNumber(row.塁打),
-    rbi: toNumber(row.打点),
-    steals: toNumber(row.盗塁),
-    caughtStealing: toNumber(row.盗塁刺),
-    sacrificeHits: toNumber(row.犠打),
-    sacrificeFlies: toNumber(row.犠飛),
-    walks: toNumber(row.四球),
-    hitByPitch: toNumber(row.死球),
-    strikeouts: toNumber(row.三振),
-    groundedIntoDoublePlays: toNumber(row.併殺打),
+    games: toNumber(row.games),
+    plateAppearances: toNumber(row.plateAppearances),
+    atBats: toNumber(row.atBats),
+    runs: toNumber(row.runs),
+    hits: toNumber(row.hits),
+    doubles: toNumber(row.doubles),
+    triples: toNumber(row.triples),
+    homeRuns: toNumber(row.homeRuns),
+    totalBases: toNumber(row.totalBases),
+    rbi: toNumber(row.rbi),
+    steals: toNumber(row.steals),
+    caughtStealing: toNumber(row.caughtStealing),
+    sacrificeHits: toNumber(row.sacrificeHits),
+    sacrificeFlies: toNumber(row.sacrificeFlies),
+    walks: toNumber(row.walks),
+    hitByPitch: toNumber(row.hitByPitch),
+    strikeouts: toNumber(row.strikeouts),
+    groundedIntoDoublePlays: toNumber(row.groundedIntoDoublePlays),
   };
 }
 
@@ -67,27 +73,27 @@ function pitchingTotals(
   row: EnrichedPlayer["pitchingStats"][number],
 ): PitchingTotals {
   return {
-    games: toNumber(row.登板),
-    wins: toNumber(row.勝利),
-    losses: toNumber(row.敗北),
-    saves: toNumber(row.セーブ),
-    holds: toNumber(row.ホールド ?? row.H),
-    holdPoints: toNumber(row.HP),
-    completeGames: toNumber(row.完投),
-    shutouts: toNumber(row.完封勝),
-    noWalkCompleteGames: toNumber(row.無四球),
-    winningPercentage: toNumber(row.勝率),
-    battersFaced: toNumber(row.打者),
-    innings: round(parseInnings(row.投球回)),
-    hitsAllowed: toNumber(row.安打),
-    homeRunsAllowed: toNumber(row.本塁打),
-    walksAllowed: toNumber(row.四球),
-    hitByPitch: toNumber(row.死球),
-    strikeouts: toNumber(row.奪三振 ?? row.三振),
-    wildPitches: toNumber(row.暴投),
-    balks: toNumber(row.ボーク),
-    runsAllowed: toNumber(row.失点),
-    earnedRuns: toNumber(row.自責点),
+    games: toNumber(row.games),
+    wins: toNumber(row.wins),
+    losses: toNumber(row.losses),
+    saves: toNumber(row.saves),
+    holds: toNumber(row.holds),
+    holdPoints: toNumber(row.holdPoints),
+    completeGames: toNumber(row.completeGames),
+    shutouts: toNumber(row.shutouts),
+    noWalkCompleteGames: toNumber(row.noWalkCompleteGames),
+    winningPercentage: toNumber(row.winningPercentage),
+    battersFaced: toNumber(row.battersFaced),
+    innings: round(parseInnings(row.innings)),
+    hitsAllowed: toNumber(row.hitsAllowed),
+    homeRunsAllowed: toNumber(row.homeRunsAllowed),
+    walksAllowed: toNumber(row.walksAllowed),
+    hitByPitch: toNumber(row.hitByPitch),
+    strikeouts: toNumber(row.strikeouts),
+    wildPitches: toNumber(row.wildPitches),
+    balks: toNumber(row.balks),
+    runsAllowed: toNumber(row.runsAllowed),
+    earnedRuns: toNumber(row.earnedRuns),
   };
 }
 
@@ -133,8 +139,8 @@ function createAttributes(player: EnrichedPlayer): PlayerApiAttributes {
         );
       }
       return {
-        season: parseSeason(row),
-        team: row.所属球団?.trim() || null,
+        season: toNumber(row.season),
+        team: row.team?.trim() || null,
         totals: battingTotals(row),
         metrics: battingMetrics(computed),
       } satisfies PlayerApiBattingStat;
@@ -147,8 +153,8 @@ function createAttributes(player: EnrichedPlayer): PlayerApiAttributes {
         );
       }
       return {
-        season: parseSeason(row),
-        team: row.所属球団?.trim() || null,
+        season: toNumber(row.season),
+        team: row.team?.trim() || null,
         totals: pitchingTotals(row),
         metrics: pitchingMetrics(computed),
       } satisfies PlayerApiPitchingStat;
@@ -240,29 +246,29 @@ function detailsToRaw(details: PlayerDetails): Record<string, string> {
 function battingStatToRaw(stat: PlayerApiBattingStat): BattingStatRow {
   const totals = stat.totals;
   return {
-    年度: stringValue(stat.season),
-    所属球団: stat.team ?? "",
-    試合: stringValue(totals.games),
-    打席: stringValue(totals.plateAppearances),
-    打数: stringValue(totals.atBats),
-    得点: stringValue(totals.runs),
-    安打: stringValue(totals.hits),
-    二塁打: stringValue(totals.doubles),
-    三塁打: stringValue(totals.triples),
-    本塁打: stringValue(totals.homeRuns),
-    塁打: stringValue(totals.totalBases),
-    打点: stringValue(totals.rbi),
-    盗塁: stringValue(totals.steals),
-    盗塁刺: stringValue(totals.caughtStealing),
-    犠打: stringValue(totals.sacrificeHits),
-    犠飛: stringValue(totals.sacrificeFlies),
-    四球: stringValue(totals.walks),
-    死球: stringValue(totals.hitByPitch),
-    三振: stringValue(totals.strikeouts),
-    併殺打: stringValue(totals.groundedIntoDoublePlays),
-    打率: stringValue(stat.metrics.battingAverage),
-    出塁率: stringValue(stat.metrics.onBasePercentage),
-    長打率: stringValue(stat.metrics.sluggingPercentage),
+    season: stringValue(stat.season),
+    team: stat.team ?? "",
+    games: stringValue(totals.games),
+    plateAppearances: stringValue(totals.plateAppearances),
+    atBats: stringValue(totals.atBats),
+    runs: stringValue(totals.runs),
+    hits: stringValue(totals.hits),
+    doubles: stringValue(totals.doubles),
+    triples: stringValue(totals.triples),
+    homeRuns: stringValue(totals.homeRuns),
+    totalBases: stringValue(totals.totalBases),
+    rbi: stringValue(totals.rbi),
+    steals: stringValue(totals.steals),
+    caughtStealing: stringValue(totals.caughtStealing),
+    sacrificeHits: stringValue(totals.sacrificeHits),
+    sacrificeFlies: stringValue(totals.sacrificeFlies),
+    walks: stringValue(totals.walks),
+    hitByPitch: stringValue(totals.hitByPitch),
+    strikeouts: stringValue(totals.strikeouts),
+    groundedIntoDoublePlays: stringValue(totals.groundedIntoDoublePlays),
+    battingAverage: stringValue(stat.metrics.battingAverage),
+    onBasePercentage: stringValue(stat.metrics.onBasePercentage),
+    sluggingPercentage: stringValue(stat.metrics.sluggingPercentage),
   };
 }
 
@@ -282,30 +288,30 @@ function pitchingStatToRaw(stat: PlayerApiPitchingStat): PitchingStatRow {
     }
   }
   return {
-    年度: stringValue(stat.season),
-    所属球団: stat.team ?? "",
-    登板: stringValue(totals.games),
-    勝利: stringValue(totals.wins),
-    敗北: stringValue(totals.losses),
-    セーブ: stringValue(totals.saves),
-    ホールド: stringValue(totals.holds),
-    HP: stringValue(totals.holdPoints),
-    完投: stringValue(totals.completeGames),
-    完封勝: stringValue(totals.shutouts),
-    無四球: stringValue(totals.noWalkCompleteGames),
-    勝率: stringValue(totals.winningPercentage),
-    打者: stringValue(totals.battersFaced),
-    投球回: rawInnings,
-    安打: stringValue(totals.hitsAllowed),
-    本塁打: stringValue(totals.homeRunsAllowed),
-    四球: stringValue(totals.walksAllowed),
-    死球: stringValue(totals.hitByPitch),
-    奪三振: stringValue(totals.strikeouts),
-    暴投: stringValue(totals.wildPitches),
-    ボーク: stringValue(totals.balks),
-    失点: stringValue(totals.runsAllowed),
-    自責点: stringValue(totals.earnedRuns),
-    防御率: stringValue(stat.metrics.era),
+    season: stringValue(stat.season),
+    team: stat.team ?? "",
+    games: stringValue(totals.games),
+    wins: stringValue(totals.wins),
+    losses: stringValue(totals.losses),
+    saves: stringValue(totals.saves),
+    holds: stringValue(totals.holds),
+    holdPoints: stringValue(totals.holdPoints),
+    completeGames: stringValue(totals.completeGames),
+    shutouts: stringValue(totals.shutouts),
+    noWalkCompleteGames: stringValue(totals.noWalkCompleteGames),
+    winningPercentage: stringValue(totals.winningPercentage),
+    battersFaced: stringValue(totals.battersFaced),
+    innings: rawInnings,
+    hitsAllowed: stringValue(totals.hitsAllowed),
+    homeRunsAllowed: stringValue(totals.homeRunsAllowed),
+    walksAllowed: stringValue(totals.walksAllowed),
+    hitByPitch: stringValue(totals.hitByPitch),
+    strikeouts: stringValue(totals.strikeouts),
+    wildPitches: stringValue(totals.wildPitches),
+    balks: stringValue(totals.balks),
+    runsAllowed: stringValue(totals.runsAllowed),
+    earnedRuns: stringValue(totals.earnedRuns),
+    era: stringValue(stat.metrics.era),
   };
 }
 
@@ -522,6 +528,20 @@ function isPlayerDetails(value: unknown): value is PlayerDetails {
   );
 }
 
+function normalizedBattingRows(value: unknown): BattingStatRow[] {
+  return rawRows(value).map((row) => {
+    if ("season" in row) return row as BattingStatRow;
+    return normalizeBattingStat(row as NpbBattingStatRow);
+  });
+}
+
+function normalizedPitchingRows(value: unknown): PitchingStatRow[] {
+  return rawRows(value).map((row) => {
+    if ("season" in row) return row as PitchingStatRow;
+    return normalizePitchingStat(row as NpbPitchingStatRow);
+  });
+}
+
 function extractRawPlayer(
   value: unknown,
   document: PlayerApiDocument,
@@ -533,8 +553,12 @@ function extractRawPlayer(
   const profile = isRecord(attributes.profile) ? attributes.profile : {};
   const raw = isRecord(value.raw) ? value.raw : {};
   const rawProfile = isRecord(raw.profile) ? raw.profile : {};
-  const rawBatting = rawRows(raw.battingStats ?? attributes.battingStats);
-  const rawPitching = rawRows(raw.pitchingStats ?? attributes.pitchingStats);
+  const rawBatting = normalizedBattingRows(
+    raw.battingStats ?? attributes.battingStats,
+  );
+  const rawPitching = normalizedPitchingRows(
+    raw.pitchingStats ?? attributes.pitchingStats,
+  );
   const parsed = documentToRawPlayer(document);
   const details = rawDetails(profile.rawDetails ?? rawProfile.details);
   if (

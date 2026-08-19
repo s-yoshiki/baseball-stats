@@ -1,4 +1,55 @@
 export type BattingStatColumn =
+  | "season"
+  | "team"
+  | "games"
+  | "plateAppearances"
+  | "atBats"
+  | "runs"
+  | "hits"
+  | "doubles"
+  | "triples"
+  | "homeRuns"
+  | "totalBases"
+  | "rbi"
+  | "steals"
+  | "caughtStealing"
+  | "sacrificeHits"
+  | "sacrificeFlies"
+  | "walks"
+  | "hitByPitch"
+  | "strikeouts"
+  | "groundedIntoDoublePlays"
+  | "battingAverage"
+  | "onBasePercentage"
+  | "sluggingPercentage";
+
+export type PitchingStatColumn =
+  | "season"
+  | "team"
+  | "games"
+  | "wins"
+  | "losses"
+  | "saves"
+  | "holds"
+  | "holdPoints"
+  | "completeGames"
+  | "shutouts"
+  | "noWalkCompleteGames"
+  | "winningPercentage"
+  | "battersFaced"
+  | "innings"
+  | "hitsAllowed"
+  | "homeRunsAllowed"
+  | "walksAllowed"
+  | "hitByPitch"
+  | "strikeouts"
+  | "wildPitches"
+  | "balks"
+  | "runsAllowed"
+  | "earnedRuns"
+  | "era";
+
+export type NpbBattingStatColumn =
   | "年度"
   | "所属球団"
   | "試合"
@@ -23,7 +74,7 @@ export type BattingStatColumn =
   | "出塁率"
   | "長打率";
 
-export type PitchingStatColumn =
+export type NpbPitchingStatColumn =
   | "年度"
   | "所属球団"
   | "登板"
@@ -53,6 +104,19 @@ export type PitchingStatColumn =
 
 export type BattingStatRow = Partial<Record<BattingStatColumn, string>>;
 export type PitchingStatRow = Partial<Record<PitchingStatColumn, string>>;
+export type NpbBattingStatRow = Partial<Record<NpbBattingStatColumn, string>>;
+export type NpbPitchingStatRow = Partial<Record<NpbPitchingStatColumn, string>>;
+
+export type ScrapedPlayer = {
+  id: string;
+  playerUrl: string;
+  playerName: string;
+  kanaName: string;
+  isActive: boolean;
+  detailInfo: Record<string, string>;
+  battingStats: NpbBattingStatRow[];
+  pitchingStats: NpbPitchingStatRow[];
+};
 
 export type RawPlayer = {
   id: string;

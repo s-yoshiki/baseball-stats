@@ -1,7 +1,6 @@
 import {
   addNullable,
   parseInnings,
-  parseSeason,
   ratio,
   round,
   subtractNullable,
@@ -29,26 +28,28 @@ function text(value: string | undefined): string | null {
 function calculateBattingCareer(
   rows: RawPlayer["battingStats"],
 ): ComputedBattingCareer {
-  const games = sum(rows.map((row) => toNumber(row.試合)));
-  const plateAppearances = sum(rows.map((row) => toNumber(row.打席)));
-  const atBats = sum(rows.map((row) => toNumber(row.打数)));
-  const runs = sum(rows.map((row) => toNumber(row.得点)));
-  const hits = sum(rows.map((row) => toNumber(row.安打)));
-  const doubles = sum(rows.map((row) => toNumber(row.二塁打)));
-  const triples = sum(rows.map((row) => toNumber(row.三塁打)));
-  const homeRuns = sum(rows.map((row) => toNumber(row.本塁打)));
-  const totalBases = sum(rows.map((row) => toNumber(row.塁打)));
-  const rbi = sum(rows.map((row) => toNumber(row.打点)));
-  const steals = sum(rows.map((row) => toNumber(row.盗塁)));
-  const walks = sum(rows.map((row) => toNumber(row.四球)));
-  const hitByPitch = sum(rows.map((row) => toNumber(row.死球)));
-  const strikeouts = sum(rows.map((row) => toNumber(row.三振)));
+  const games = sum(rows.map((row) => toNumber(row.games)));
+  const plateAppearances = sum(
+    rows.map((row) => toNumber(row.plateAppearances)),
+  );
+  const atBats = sum(rows.map((row) => toNumber(row.atBats)));
+  const runs = sum(rows.map((row) => toNumber(row.runs)));
+  const hits = sum(rows.map((row) => toNumber(row.hits)));
+  const doubles = sum(rows.map((row) => toNumber(row.doubles)));
+  const triples = sum(rows.map((row) => toNumber(row.triples)));
+  const homeRuns = sum(rows.map((row) => toNumber(row.homeRuns)));
+  const totalBases = sum(rows.map((row) => toNumber(row.totalBases)));
+  const rbi = sum(rows.map((row) => toNumber(row.rbi)));
+  const steals = sum(rows.map((row) => toNumber(row.steals)));
+  const walks = sum(rows.map((row) => toNumber(row.walks)));
+  const hitByPitch = sum(rows.map((row) => toNumber(row.hitByPitch)));
+  const strikeouts = sum(rows.map((row) => toNumber(row.strikeouts)));
   const battingAverage = ratio(hits, atBats);
   const onBasePercentage = ratio(hits + walks + hitByPitch, plateAppearances);
   const sluggingPercentage = ratio(totalBases, atBats);
 
   return {
-    seasons: rows.filter((row) => parseSeason(row) !== null).length,
+    seasons: rows.filter((row) => toNumber(row.season) !== null).length,
     games,
     plateAppearances,
     atBats,
@@ -74,20 +75,20 @@ function calculateBattingCareer(
 function calculatePitchingCareer(
   rows: RawPlayer["pitchingStats"],
 ): ComputedPitchingCareer {
-  const games = sum(rows.map((row) => toNumber(row.登板)));
-  const wins = sum(rows.map((row) => toNumber(row.勝利)));
-  const losses = sum(rows.map((row) => toNumber(row.敗北)));
-  const saves = sum(rows.map((row) => toNumber(row.セーブ)));
-  const holds = sum(rows.map((row) => toNumber(row.ホールド ?? row.H)));
-  const innings = sum(rows.map((row) => parseInnings(row.投球回)));
-  const hitsAllowed = sum(rows.map((row) => toNumber(row.安打)));
-  const walksAllowed = sum(rows.map((row) => toNumber(row.四球)));
-  const strikeouts = sum(rows.map((row) => toNumber(row.奪三振 ?? row.三振)));
-  const earnedRuns = sum(rows.map((row) => toNumber(row.自責点)));
+  const games = sum(rows.map((row) => toNumber(row.games)));
+  const wins = sum(rows.map((row) => toNumber(row.wins)));
+  const losses = sum(rows.map((row) => toNumber(row.losses)));
+  const saves = sum(rows.map((row) => toNumber(row.saves)));
+  const holds = sum(rows.map((row) => toNumber(row.holds)));
+  const innings = sum(rows.map((row) => parseInnings(row.innings)));
+  const hitsAllowed = sum(rows.map((row) => toNumber(row.hitsAllowed)));
+  const walksAllowed = sum(rows.map((row) => toNumber(row.walksAllowed)));
+  const strikeouts = sum(rows.map((row) => toNumber(row.strikeouts)));
+  const earnedRuns = sum(rows.map((row) => toNumber(row.earnedRuns)));
   const decisions = wins + losses;
 
   return {
-    seasons: rows.filter((row) => parseSeason(row) !== null).length,
+    seasons: rows.filter((row) => toNumber(row.season) !== null).length,
     games,
     wins,
     losses,
@@ -110,21 +111,23 @@ function calculatePitchingCareer(
 function calculateBattingSeason(
   row: RawPlayer["battingStats"][number],
 ): ComputedBattingSeason {
-  const plateAppearances = toNumber(row.打席) ?? 0;
-  const atBats = toNumber(row.打数) ?? 0;
-  const hits = toNumber(row.安打) ?? 0;
-  const walks = toNumber(row.四球) ?? 0;
-  const hitByPitch = toNumber(row.死球) ?? 0;
-  const strikeouts = toNumber(row.三振) ?? 0;
-  const battingAverage = toNumber(row.打率) ?? ratio(hits, atBats);
+  const plateAppearances = toNumber(row.plateAppearances) ?? 0;
+  const atBats = toNumber(row.atBats) ?? 0;
+  const hits = toNumber(row.hits) ?? 0;
+  const walks = toNumber(row.walks) ?? 0;
+  const hitByPitch = toNumber(row.hitByPitch) ?? 0;
+  const strikeouts = toNumber(row.strikeouts) ?? 0;
+  const battingAverage = toNumber(row.battingAverage) ?? ratio(hits, atBats);
   const onBasePercentage =
-    toNumber(row.出塁率) ?? ratio(hits + walks + hitByPitch, plateAppearances);
+    toNumber(row.onBasePercentage) ??
+    ratio(hits + walks + hitByPitch, plateAppearances);
   const sluggingPercentage =
-    toNumber(row.長打率) ?? ratio(toNumber(row.塁打) ?? 0, atBats);
+    toNumber(row.sluggingPercentage) ??
+    ratio(toNumber(row.totalBases) ?? 0, atBats);
 
   return {
-    season: parseSeason(row),
-    team: text(row.所属球団),
+    season: toNumber(row.season),
+    team: text(row.team),
     battingAverage,
     onBasePercentage,
     sluggingPercentage,
@@ -138,17 +141,17 @@ function calculateBattingSeason(
 function calculatePitchingSeason(
   row: RawPlayer["pitchingStats"][number],
 ): ComputedPitchingSeason {
-  const innings = parseInnings(row.投球回);
-  const hits = toNumber(row.安打) ?? 0;
-  const walks = toNumber(row.四球) ?? 0;
-  const strikeouts = toNumber(row.奪三振 ?? row.三振) ?? 0;
-  const earnedRuns = toNumber(row.自責点);
+  const innings = parseInnings(row.innings);
+  const hits = toNumber(row.hitsAllowed) ?? 0;
+  const walks = toNumber(row.walksAllowed) ?? 0;
+  const strikeouts = toNumber(row.strikeouts) ?? 0;
+  const earnedRuns = toNumber(row.earnedRuns);
 
   return {
-    season: parseSeason(row),
-    team: text(row.所属球団),
+    season: toNumber(row.season),
+    team: text(row.team),
     era:
-      toNumber(row.防御率) ??
+      toNumber(row.era) ??
       (innings && earnedRuns !== null
         ? round((earnedRuns * 9) / innings)
         : null),

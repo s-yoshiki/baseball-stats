@@ -32,8 +32,7 @@ on:
         required: true
 
 permissions:
-  contents: write
-  pull-requests: write
+  contents: read
 
 concurrency:
   group: daily-scrape
@@ -59,7 +58,7 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Scrape player JSON
+      - name: Scrape and build SQLite
         env:
           SCRAPE_SCOPE: ${{ inputs.scope || 'active' }}
           SCRAPE_LIMIT: ${{ inputs.limit || '' }}
@@ -79,18 +78,32 @@ jobs:
           if-no-files-found: error
           retention-days: 30
 
-      - name: Open data update pull request
-        uses: peter-evans/create-pull-request@v7
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          base: main
-          branch: automation/daily-scrape
-          delete-branch: true
-          commit-message: "data: update player JSON from NPB"
-          title: "data: update player JSON from NPB"
-          body: |
-            Automated player-data refresh from NPB公式サイト.
+      - name: Validate published SQLite
+        run: >-
+          pnpm --filter @repo/parser run validate-sqlite --
+          --db ../../data/sqlite/data.sqlite
 
-            - Source workflow: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
-            - Scope: `${{ inputs.scope || 'active' }}`
-            - The SQLite artifact is generated after this PR is merged.
+      - name: Upload published SQLite
+        uses: actions/upload-artifact@v4
+        with:
+          name: baseball-stats-sqlite
+          path: data/sqlite/data.sqlite
+          if-no-files-found: error
+          retention-days: 14
+
+      - name: Notify npb-analysis
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.NPB_ANALYSIS_DISPATCH_TOKEN }}
+          script: |
+            await github.rest.repos.createDispatchEvent({
+              owner: "s-yoshiki",
+              repo: "npb-analysis",
+              event_type: "baseball-stats-updated",
+              client_payload: {
+                source_repo: context.repo.owner + "/" + context.repo.repo,
+                source_sha: context.sha,
+                source_run_id: Number(context.runId),
+                artifact_name: "baseball-stats-sqlite",
+              },
+            });

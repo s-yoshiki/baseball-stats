@@ -1,16 +1,19 @@
 name: Publish SQLite
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - "data/players/**"
-      - "data/masters/**"
-      - "packages/**"
-      - "scripts/parser/**"
-      - "pnpm-lock.yaml"
-      - "pnpm-workspace.yaml"
   workflow_dispatch:
+    inputs:
+      scope:
+        description: "Player scope"
+        type: choice
+        options: [active, all]
+        default: active
+        required: true
+      delay:
+        description: "Delay between requests in milliseconds"
+        type: string
+        default: "300"
+        required: true
 
 permissions:
   contents: read
@@ -39,10 +42,12 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Build SQLite snapshot
+      - name: Scrape and build SQLite snapshot
         run: >-
-          pnpm --filter @repo/parser run write-sqlite --
-          --db ../../data/sqlite/data.sqlite
+          pnpm --filter @repo/parser run scrape --
+          --scope ${{ inputs.scope || 'active' }}
+          --delay ${{ inputs.delay || '300' }}
+          --debug
 
       - name: Validate SQLite snapshot
         run: >-

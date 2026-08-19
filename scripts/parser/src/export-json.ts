@@ -1,11 +1,13 @@
-import fs from "node:fs";
 import path from "node:path";
 import {
-  DEFAULT_MASTER_DATA_DIR,
+  calculatePlayerStats,
+  writePlayerDocuments,
+} from "@repo/baseball-data";
+import {
+  DEFAULT_EXPORT_PLAYER_DATA_DIR,
   DEFAULT_RAW_SQLITE_PATH,
-  DEFAULT_SQLITE_PATH,
 } from "./constants.js";
-import { writeRawSqliteToSqlite } from "./sqlite.js";
+import { readLatestRawPlayers } from "./raw-sqlite.js";
 
 function getOption(args: string[], flag: string, fallback: string): string {
   const index = args.indexOf(flag);
@@ -18,19 +20,16 @@ async function main(): Promise<void> {
     process.cwd(),
     getOption(args, "--raw-db", DEFAULT_RAW_SQLITE_PATH),
   );
-  const dbPath = path.resolve(
+  const outputDir = path.resolve(
     process.cwd(),
-    getOption(args, "--db", DEFAULT_SQLITE_PATH),
+    getOption(args, "--output-dir", DEFAULT_EXPORT_PLAYER_DATA_DIR),
   );
-  const masterPath = path.resolve(
-    process.cwd(),
-    getOption(args, "--masters-dir", DEFAULT_MASTER_DATA_DIR),
+  const players = (await readLatestRawPlayers(rawDbPath)).map(
+    calculatePlayerStats,
   );
-  fs.mkdirSync(path.dirname(dbPath), { recursive: true });
-
-  const result = await writeRawSqliteToSqlite(rawDbPath, dbPath, masterPath);
+  await writePlayerDocuments(outputDir, players);
   console.log(
-    `Wrote ${result.players} players, ${result.battingRows} batting rows, and ${result.pitchingRows} pitching rows to ${dbPath}`,
+    `Exported ${players.length} player JSON documents to ${outputDir}`,
   );
 }
 

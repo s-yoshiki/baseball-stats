@@ -17,9 +17,11 @@ pnpm --filter @repo/parser run scrape -- \
 - `--limit <number>`: 取得する選手数
 - `--kana-limit <number>`: 取得するかな別インデックス数
 - `--delay <ms>`: リクエスト間隔。デフォルトは300ms
-- `--output-dir <path>`: 選手JSONディレクトリの出力先。`--output` も互換エイリアスとして利用可能
+- `--raw-db <path>`: raw SQLiteの出力先
+- `--db <path>`: 公開SQLiteの出力先
+- `--masters-dir <path>`: マスタJSONディレクトリ
 - `--debug`: URL、選手、抽出行数を表示
 
 サイトの負荷を避けるため、開発・検証では必ず小さいlimitを指定します。フルスクレイプでは `--scope all` と十分な `--delay` を明示してください。
 
-HTMLの変更により列名が変わる可能性があるため、抽出した `data/players/*.json` の差分を確認してから `write-sqlite` を実行します。スクレイプ時に派生スタッツも計算して保存します。
+HTMLの変更により列名が変わる可能性があるため、raw SQLiteの最新実行を検証します。選手ページは全件をメモリに保持せず、1選手を取得するたびにraw SQLiteへ保存します。スクレイプ時に派生スタッツを計算し、公開SQLiteまで再生成します。必要な場合だけ `export-json` でJSON APIリソースを出力します。

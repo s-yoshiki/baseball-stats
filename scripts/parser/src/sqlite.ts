@@ -1,9 +1,14 @@
+import path from "node:path";
 import {
   calculatePlayerStats,
   type EnrichedPlayer,
   type EnrichedSnapshot,
+  loadMasterData,
   parseInnings,
+  parsePlayerDetails,
   type RawPlayer,
+  resolveSchool,
+  resolveTeamSeason,
   toNumber,
 } from "@repo/baseball-data";
 import BetterSqlite3 from "better-sqlite3";
@@ -27,6 +32,8 @@ export interface BattingStatsTable {
   player_id: string;
   season: number | null;
   team: string | null;
+  team_id: string | null;
+  league_id: "one_league" | "central" | "pacific" | null;
   games: number | null;
   plate_appearances: number | null;
   at_bats: number | null;
@@ -55,6 +62,8 @@ export interface PitchingStatsTable {
   player_id: string;
   season: number | null;
   team: string | null;
+  team_id: string | null;
+  league_id: "one_league" | "central" | "pacific" | null;
   games: number | null;
   wins: number | null;
   losses: number | null;
@@ -72,10 +81,52 @@ export interface PitchingStatsTable {
   strikeout_to_walk_ratio: number | null;
 }
 
+export interface LeaguesTable {
+  id: string;
+  name: string;
+  short_name: string;
+  start_season: number;
+  end_season: number | null;
+}
+
+export interface TeamsTable {
+  id: string;
+  current_name: string;
+  current_league_id: "central" | "pacific" | null;
+  founded_season: number | null;
+  dissolved_season: number | null;
+}
+
+export interface TeamSeasonsTable {
+  team_id: string;
+  season: number;
+  league_id: "one_league" | "central" | "pacific";
+  name: string;
+}
+
+export interface SchoolsTable {
+  id: string;
+  name: string;
+  normalized_name: string;
+  kind: "high_school" | "university" | "other";
+}
+
+export interface PlayerSchoolsTable {
+  player_id: string;
+  school_id: string;
+  sequence: number;
+  raw_name: string;
+}
+
 export interface DatabaseSchema {
   players: PlayersTable;
   batting_stats: BattingStatsTable;
   pitching_stats: PitchingStatsTable;
+  leagues: LeaguesTable;
+  teams: TeamsTable;
+  team_seasons: TeamSeasonsTable;
+  schools: SchoolsTable;
+  player_schools: PlayerSchoolsTable;
 }
 
 export function createKyselyDb(dbPath: string): Kysely<DatabaseSchema> {
@@ -113,6 +164,8 @@ export async function createSchema(db: Kysely<DatabaseSchema>): Promise<void> {
     )
     .addColumn("season", "integer")
     .addColumn("team", "text")
+    .addColumn("team_id", "text")
+    .addColumn("league_id", "text")
     .addColumn("games", "integer")
     .addColumn("plate_appearances", "integer")
     .addColumn("at_bats", "integer")
@@ -145,6 +198,8 @@ export async function createSchema(db: Kysely<DatabaseSchema>): Promise<void> {
     )
     .addColumn("season", "integer")
     .addColumn("team", "text")
+    .addColumn("team_id", "text")
+    .addColumn("league_id", "text")
     .addColumn("games", "integer")
     .addColumn("wins", "integer")
     .addColumn("losses", "integer")
@@ -162,6 +217,73 @@ export async function createSchema(db: Kysely<DatabaseSchema>): Promise<void> {
     .addColumn("strikeout_to_walk_ratio", "real")
     .execute();
 
+  await db.schema
+    .createTable("leagues")
+    .ifNotExists()
+    .addColumn("id", "text", (column) => column.primaryKey())
+    .addColumn("name", "text", (column) => column.notNull())
+    .addColumn("short_name", "text", (column) => column.notNull())
+    .addColumn("start_season", "integer", (column) => column.notNull())
+    .addColumn("end_season", "integer")
+    .execute();
+
+  await db.schema
+    .createTable("teams")
+    .ifNotExists()
+    .addColumn("id", "text", (column) => column.primaryKey())
+    .addColumn("current_name", "text", (column) => column.notNull())
+    .addColumn("current_league_id", "text")
+    .addColumn("founded_season", "integer")
+    .addColumn("dissolved_season", "integer")
+    .execute();
+
+  await db.schema
+    .createTable("team_seasons")
+    .ifNotExists()
+    .addColumn("team_id", "text", (column) => column.notNull())
+    .addColumn("season", "integer", (column) => column.notNull())
+    .addColumn("league_id", "text", (column) => column.notNull())
+    .addColumn("name", "text", (column) => column.notNull())
+    .addPrimaryKeyConstraint("team_seasons_pk", ["team_id", "season"])
+    .execute();
+
+  await db.schema
+    .createTable("schools")
+    .ifNotExists()
+    .addColumn("id", "text", (column) => column.primaryKey())
+    .addColumn("name", "text", (column) => column.notNull())
+    .addColumn("normalized_name", "text", (column) => column.notNull())
+    .addColumn("kind", "text", (column) => column.notNull())
+    .execute();
+
+  await db.schema
+    .createTable("player_schools")
+    .ifNotExists()
+    .addColumn("player_id", "text", (column) => column.notNull())
+    .addColumn("school_id", "text", (column) => column.notNull())
+    .addColumn("sequence", "integer", (column) => column.notNull())
+    .addColumn("raw_name", "text", (column) => column.notNull())
+    .addPrimaryKeyConstraint("player_schools_pk", [
+      "player_id",
+      "school_id",
+      "sequence",
+    ])
+    .execute();
+
+  // Keep existing local SQLite files usable after adding the master columns.
+  for (const statement of [
+    sql`ALTER TABLE batting_stats ADD COLUMN team_id TEXT`,
+    sql`ALTER TABLE batting_stats ADD COLUMN league_id TEXT`,
+    sql`ALTER TABLE pitching_stats ADD COLUMN team_id TEXT`,
+    sql`ALTER TABLE pitching_stats ADD COLUMN league_id TEXT`,
+  ]) {
+    try {
+      await statement.execute(db);
+    } catch {
+      // SQLite raises a duplicate-column error when the column already exists.
+    }
+  }
+
   await sql`CREATE INDEX IF NOT EXISTS idx_batting_player ON batting_stats(player_id)`.execute(
     db,
   );
@@ -172,6 +294,21 @@ export async function createSchema(db: Kysely<DatabaseSchema>): Promise<void> {
     db,
   );
   await sql`CREATE INDEX IF NOT EXISTS idx_pitching_season ON pitching_stats(season)`.execute(
+    db,
+  );
+  await sql`CREATE INDEX IF NOT EXISTS idx_batting_season_league ON batting_stats(season, league_id)`.execute(
+    db,
+  );
+  await sql`CREATE INDEX IF NOT EXISTS idx_pitching_season_league ON pitching_stats(season, league_id)`.execute(
+    db,
+  );
+  await sql`CREATE UNIQUE INDEX IF NOT EXISTS idx_team_seasons_name_season ON team_seasons(name, season)`.execute(
+    db,
+  );
+  await sql`CREATE INDEX IF NOT EXISTS idx_schools_normalized_name ON schools(normalized_name)`.execute(
+    db,
+  );
+  await sql`CREATE INDEX IF NOT EXISTS idx_player_schools_player ON player_schools(player_id)`.execute(
     db,
   );
 }
@@ -186,13 +323,85 @@ function detail(player: RawPlayer, key: string): string | null {
   return player.detailInfo[key]?.trim() || null;
 }
 
+async function replaceMasterData(
+  db: Kysely<DatabaseSchema>,
+  masterData: Awaited<ReturnType<typeof loadMasterData>>,
+): Promise<void> {
+  await db.deleteFrom("player_schools").execute();
+  await db.deleteFrom("schools").execute();
+  await db.deleteFrom("team_seasons").execute();
+  await db.deleteFrom("teams").execute();
+  await db.deleteFrom("leagues").execute();
+
+  for (const league of masterData.leagues) {
+    await db
+      .insertInto("leagues")
+      .values({
+        id: league.id,
+        name: league.attributes.name,
+        short_name: league.attributes.shortName,
+        start_season: league.attributes.startSeason,
+        end_season: league.attributes.endSeason,
+      })
+      .execute();
+  }
+
+  for (const team of masterData.teams) {
+    await db
+      .insertInto("teams")
+      .values({
+        id: team.id,
+        current_name: team.attributes.currentName,
+        current_league_id: team.attributes.currentLeagueId,
+        founded_season: team.attributes.foundedSeason,
+        dissolved_season: team.attributes.dissolvedSeason,
+      })
+      .execute();
+  }
+
+  const openSeasonEnd = new Date().getFullYear() + 5;
+  for (const teamName of masterData.teamNames) {
+    const attributes = teamName.attributes;
+    const endSeason = attributes.endSeason ?? openSeasonEnd;
+    for (
+      let season = attributes.startSeason;
+      season <= endSeason;
+      season += 1
+    ) {
+      await db
+        .insertInto("team_seasons")
+        .values({
+          team_id: attributes.teamId,
+          season,
+          league_id: attributes.leagueId,
+          name: attributes.name,
+        })
+        .execute();
+    }
+  }
+
+  for (const school of masterData.schools) {
+    await db
+      .insertInto("schools")
+      .values({
+        id: school.id,
+        name: school.attributes.name,
+        normalized_name: school.attributes.normalizedName,
+        kind: school.attributes.kind,
+      })
+      .execute();
+  }
+}
+
 export async function writeSnapshotToSqlite(
   snapshot: EnrichedSnapshot,
   dbPath: string,
+  masterDir = path.resolve(process.cwd(), "../../data/masters"),
 ): Promise<{ players: number; battingRows: number; pitchingRows: number }> {
   const db = createKyselyDb(dbPath);
   try {
     await createSchema(db);
+    const masterData = await loadMasterData(masterDir);
     const players = snapshot.players.map((player) =>
       isEnrichedPlayer(player) ? player : calculatePlayerStats(player),
     );
@@ -203,6 +412,7 @@ export async function writeSnapshotToSqlite(
       await trx.deleteFrom("batting_stats").execute();
       await trx.deleteFrom("pitching_stats").execute();
       await trx.deleteFrom("players").execute();
+      await replaceMasterData(trx, masterData);
 
       for (const player of players) {
         await trx
@@ -220,15 +430,36 @@ export async function writeSnapshotToSqlite(
           })
           .execute();
 
+        for (const [index, careerEntry] of parsePlayerDetails(
+          player.detailInfo,
+        ).career.entries.entries()) {
+          const school = resolveSchool(careerEntry, masterData);
+          if (!school) continue;
+          await trx
+            .insertInto("player_schools")
+            .values({
+              player_id: player.id,
+              school_id: school.id,
+              sequence: index + 1,
+              raw_name: careerEntry,
+            })
+            .execute();
+        }
+
         const battingComputed = player.computedStats.batting;
         for (const [index, row] of player.battingStats.entries()) {
           const computed = battingComputed[index];
+          const season = toNumber(row.年度);
+          const team = row.所属球団?.trim() || null;
+          const resolvedTeam = resolveTeamSeason(team, season, masterData);
           await trx
             .insertInto("batting_stats")
             .values({
               player_id: player.id,
-              season: toNumber(row.年度),
-              team: row.所属球団 ?? null,
+              season,
+              team,
+              team_id: resolvedTeam?.teamId ?? null,
+              league_id: resolvedTeam?.leagueId ?? null,
               games: toNumber(row.試合),
               plate_appearances: toNumber(row.打席),
               at_bats: toNumber(row.打数),
@@ -258,12 +489,17 @@ export async function writeSnapshotToSqlite(
         const pitchingComputed = player.computedStats.pitching;
         for (const [index, row] of player.pitchingStats.entries()) {
           const computed = pitchingComputed[index];
+          const season = toNumber(row.年度);
+          const team = row.所属球団?.trim() || null;
+          const resolvedTeam = resolveTeamSeason(team, season, masterData);
           await trx
             .insertInto("pitching_stats")
             .values({
               player_id: player.id,
-              season: toNumber(row.年度),
-              team: row.所属球団 ?? null,
+              season,
+              team,
+              team_id: resolvedTeam?.teamId ?? null,
+              league_id: resolvedTeam?.leagueId ?? null,
               games: toNumber(row.登板),
               wins: toNumber(row.勝利),
               losses: toNumber(row.敗北),

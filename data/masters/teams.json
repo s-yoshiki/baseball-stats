@@ -1,0 +1,457 @@
+{
+  "data": [
+    {
+      "type": "team",
+      "id": "giants",
+      "attributes": {
+        "currentName": "読売ジャイアンツ",
+        "currentLeagueId": "central",
+        "foundedSeason": 1936,
+        "dissolvedSeason": null
+      },
+      "links": {
+        "self": "/masters/teams/giants.json"
+      }
+    },
+    {
+      "type": "team",
+      "id": "tigers",
+      "attributes": {
+        "currentName": "阪神タイガース",
+        "currentLeagueId": "central",
+        "foundedSeason": 1936,
+        "dissolvedSeason": null
+      },
+      "links": {
+        "self": "/masters/teams/tigers.json"
+      }
+    },
+    {
+      "type": "team",
+      "id": "dragons",
+      "attributes": {
+        "currentName": "中日ドラゴンズ",
+        "currentLeagueId": "central",
+        "foundedSeason": 1936,
+        "dissolvedSeason": null
+      },
+      "links": {
+        "self": "/masters/teams/dragons.json"
+      }
+    },
+    {
+      "type": "team",
+      "id": "swallows",
+      "attributes": {
+        "currentName": "東京ヤクルトスワローズ",
+        "currentLeagueId": "central",
+        "foundedSeason": 1950,
+        "dissolvedSeason": null
+      },
+      "links": {
+        "self": "/masters/teams/swallows.json"
+      }
+    },
+    {
+      "type": "team",
+      "id": "baystars",
+      "attributes": {
+        "currentName": "横浜DeNAベイスターズ",
+        "currentLeagueId": "central",
+        "foundedSeason": 1950,
+        "dissolvedSeason": null
+      },
+      "links": {
+        "self": "/masters/teams/baystars.json"
+      }
+    },
+    {
+      "type": "team",
+      "id": "carp",
+      "attributes": {
+        "currentName": "広島東洋カープ",
+        "currentLeagueId": "central",
+        "foundedSeason": 1950,
+        "dissolvedSeason": null
+      },
+      "links": {
+        "self": "/masters/teams/carp.json"
+      }
+    },
+    {
+      "type": "team",
+      "id": "hawks",
+      "attributes": {
+        "currentName": "福岡ソフトバンクホークス",
+        "currentLeagueId": "pacific",
+        "foundedSeason": 1938,
+        "dissolvedSeason": null
+      },
+      "links": {
+        "self": "/masters/teams/hawks.json"
+      }
+    },
+    {
+      "type": "team",
+      "id": "buffaloes",
+      "attributes": {
+        "currentName": "オリックス・バファローズ",
+        "currentLeagueId": "pacific",
+        "foundedSeason": 1936,
+        "dissolvedSeason": null
+      },
+      "links": {
+        "self": "/masters/teams/buffaloes.json"
+      }
+    },
+    {
+      "type": "team",
+      "id": "lions",
+      "attributes": {
+        "currentName": "埼玉西武ライオンズ",
+        "currentLeagueId": "pacific",
+        "foundedSeason": 1950,
+        "dissolvedSeason": null
+      },
+      "links": {
+        "self": "/masters/teams/lions.json"
+      }
+    },
+    {
+      "type": "team",
+      "id": "marines",
+      "attributes": {
+        "currentName": "千葉ロッテマリーンズ",
+        "currentLeagueId": "pacific",
+        "foundedSeason": 1950,
+        "dissolvedSeason": null
+      },
+      "links": {
+        "self": "/masters/teams/marines.json"
+      }
+    },
+    {
+      "type": "team",
+      "id": "fighters",
+      "attributes": {
+        "currentName": "北海道日本ハムファイターズ",
+        "currentLeagueId": "pacific",
+        "foundedSeason": 1947,
+        "dissolvedSeason": null
+      },
+      "links": {
+        "self": "/masters/teams/fighters.json"
+      }
+    },
+    {
+      "type": "team",
+      "id": "eagles",
+      "attributes": {
+        "currentName": "東北楽天ゴールデンイーグルス",
+        "currentLeagueId": "pacific",
+        "foundedSeason": 2005,
+        "dissolvedSeason": null
+      },
+      "links": {
+        "self": "/masters/teams/eagles.json"
+      }
+    },
+    {
+      "type": "team",
+      "id": "shochiku",
+      "attributes": {
+        "currentName": "松竹ロビンス",
+        "currentLeagueId": null,
+        "foundedSeason": 1950,
+        "dissolvedSeason": 1952
+      },
+      "links": {
+        "self": "/masters/teams/shochiku.json"
+      }
+    },
+    {
+      "type": "team",
+      "id": "nishinihon",
+      "attributes": {
+        "currentName": "西日本パイレーツ",
+        "currentLeagueId": null,
+        "foundedSeason": 1950,
+        "dissolvedSeason": 1950
+      },
+      "links": {
+        "self": "/masters/teams/nishinihon.json"
+      }
+    },
+    {
+      "type": "team",
+      "id": "kintetsu",
+      "attributes": {
+        "currentName": "近鉄バファローズ",
+        "currentLeagueId": null,
+        "foundedSeason": 1950,
+        "dissolvedSeason": 2004
+      },
+      "links": {
+        "self": "/masters/teams/kintetsu.json"
+      }
+    },
+    {
+      "type": "team",
+      "id": "takahashi_unions",
+      "attributes": {
+        "currentName": "高橋ユニオンズ",
+        "currentLeagueId": null,
+        "foundedSeason": 1954,
+        "dissolvedSeason": 1956
+      },
+      "links": {
+        "self": "/masters/teams/takahashi_unions.json"
+      }
+    },
+    {
+      "type": "team",
+      "id": "daiei_stars",
+      "attributes": {
+        "currentName": "大映スターズ",
+        "currentLeagueId": null,
+        "foundedSeason": 1949,
+        "dissolvedSeason": 1957
+      },
+      "links": {
+        "self": "/masters/teams/daiei_stars.json"
+      }
+    },
+    {
+      "type": "team",
+      "id": "kinshachi",
+      "attributes": {
+        "currentName": "名古屋金鯱軍",
+        "currentLeagueId": null,
+        "foundedSeason": 1939,
+        "dissolvedSeason": 1940
+      },
+      "links": {
+        "self": "/masters/teams/kinshachi.json"
+      }
+    },
+    {
+      "type": "team",
+      "id": "senators_prewar",
+      "attributes": {
+        "currentName": "セネタース",
+        "currentLeagueId": null,
+        "foundedSeason": 1939,
+        "dissolvedSeason": 1946
+      },
+      "links": {
+        "self": "/masters/teams/senators_prewar.json"
+      }
+    },
+    {
+      "type": "team",
+      "id": "raion_1939",
+      "attributes": {
+        "currentName": "ライオン軍",
+        "currentLeagueId": null,
+        "foundedSeason": 1939,
+        "dissolvedSeason": 1940
+      },
+      "links": {
+        "self": "/masters/teams/raion_1939.json"
+      }
+    },
+    {
+      "type": "team",
+      "id": "eagles_1939",
+      "attributes": {
+        "currentName": "イーグルス",
+        "currentLeagueId": null,
+        "foundedSeason": 1939,
+        "dissolvedSeason": 1939
+      },
+      "links": {
+        "self": "/masters/teams/eagles_1939.json"
+      }
+    },
+    {
+      "type": "team",
+      "id": "tsubasa",
+      "attributes": {
+        "currentName": "翼軍",
+        "currentLeagueId": null,
+        "foundedSeason": 1940,
+        "dissolvedSeason": 1940
+      },
+      "links": {
+        "self": "/masters/teams/tsubasa.json"
+      }
+    },
+    {
+      "type": "team",
+      "id": "kurowashi",
+      "attributes": {
+        "currentName": "黒鷲軍",
+        "currentLeagueId": null,
+        "foundedSeason": 1940,
+        "dissolvedSeason": 1941
+      },
+      "links": {
+        "self": "/masters/teams/kurowashi.json"
+      }
+    },
+    {
+      "type": "team",
+      "id": "taiyo_gun_1941",
+      "attributes": {
+        "currentName": "大洋軍",
+        "currentLeagueId": null,
+        "foundedSeason": 1941,
+        "dissolvedSeason": 1942
+      },
+      "links": {
+        "self": "/masters/teams/taiyo_gun_1941.json"
+      }
+    },
+    {
+      "type": "team",
+      "id": "asahi",
+      "attributes": {
+        "currentName": "朝日軍",
+        "currentLeagueId": null,
+        "foundedSeason": 1941,
+        "dissolvedSeason": 1944
+      },
+      "links": {
+        "self": "/masters/teams/asahi.json"
+      }
+    },
+    {
+      "type": "team",
+      "id": "yamato",
+      "attributes": {
+        "currentName": "大和軍",
+        "currentLeagueId": null,
+        "foundedSeason": 1942,
+        "dissolvedSeason": 1943
+      },
+      "links": {
+        "self": "/masters/teams/yamato.json"
+      }
+    },
+    {
+      "type": "team",
+      "id": "nishitetsu_1943",
+      "attributes": {
+        "currentName": "西鉄軍",
+        "currentLeagueId": null,
+        "foundedSeason": 1943,
+        "dissolvedSeason": 1943
+      },
+      "links": {
+        "self": "/masters/teams/nishitetsu_1943.json"
+      }
+    },
+    {
+      "type": "team",
+      "id": "kinki_nippon",
+      "attributes": {
+        "currentName": "近畿日本軍",
+        "currentLeagueId": null,
+        "foundedSeason": 1944,
+        "dissolvedSeason": 1944
+      },
+      "links": {
+        "self": "/masters/teams/kinki_nippon.json"
+      }
+    },
+    {
+      "type": "team",
+      "id": "great_ring",
+      "attributes": {
+        "currentName": "グレートリング",
+        "currentLeagueId": null,
+        "foundedSeason": 1946,
+        "dissolvedSeason": 1946
+      },
+      "links": {
+        "self": "/masters/teams/great_ring.json"
+      }
+    },
+    {
+      "type": "team",
+      "id": "gold_star",
+      "attributes": {
+        "currentName": "ゴールドスター",
+        "currentLeagueId": null,
+        "foundedSeason": 1946,
+        "dissolvedSeason": 1946
+      },
+      "links": {
+        "self": "/masters/teams/gold_star.json"
+      }
+    },
+    {
+      "type": "team",
+      "id": "pacific_1946",
+      "attributes": {
+        "currentName": "パシフィック",
+        "currentLeagueId": null,
+        "foundedSeason": 1946,
+        "dissolvedSeason": 1946
+      },
+      "links": {
+        "self": "/masters/teams/pacific_1946.json"
+      }
+    },
+    {
+      "type": "team",
+      "id": "kinsei",
+      "attributes": {
+        "currentName": "金星スターズ",
+        "currentLeagueId": null,
+        "foundedSeason": 1947,
+        "dissolvedSeason": 1948
+      },
+      "links": {
+        "self": "/masters/teams/kinsei.json"
+      }
+    },
+    {
+      "type": "team",
+      "id": "taiyo_robins",
+      "attributes": {
+        "currentName": "太陽ロビンス",
+        "currentLeagueId": null,
+        "foundedSeason": 1947,
+        "dissolvedSeason": 1949
+      },
+      "links": {
+        "self": "/masters/teams/taiyo_robins.json"
+      }
+    }
+  ],
+  "meta": {
+    "sources": [
+      {
+        "id": "npb",
+        "kind": "official",
+        "name": "NPB公式サイト",
+        "retrievedAt": "2026-08-19"
+      },
+      {
+        "id": "npb-analysis",
+        "kind": "manual",
+        "name": "npb-analysis team seed reference",
+        "retrievedAt": "2026-08-19"
+      }
+    ],
+    "provenance": {
+      "data": {
+        "sourceId": "npb-analysis",
+        "method": "imported",
+        "updatedAt": "2026-08-19"
+      }
+    },
+    "generatedAt": "2026-08-19"
+  }
+}

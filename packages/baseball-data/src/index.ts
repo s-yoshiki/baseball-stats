@@ -1,4 +1,12 @@
 export { createSnapshot, readSnapshot, writeSnapshot } from "./json.js";
+export type * from "./masters.js";
+export {
+  classifySchoolKind,
+  loadMasterData,
+  normalizeMasterName,
+  resolveSchool,
+  resolveTeamSeason,
+} from "./masters.js";
 export {
   addNullable,
   parseInnings,

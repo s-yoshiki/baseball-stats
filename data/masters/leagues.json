@@ -1,0 +1,67 @@
+{
+  "data": [
+    {
+      "type": "league",
+      "id": "one_league",
+      "attributes": {
+        "name": "一リーグ",
+        "shortName": "一",
+        "startSeason": 1936,
+        "endSeason": 1949
+      },
+      "links": {
+        "self": "/masters/leagues/one_league.json"
+      }
+    },
+    {
+      "type": "league",
+      "id": "central",
+      "attributes": {
+        "name": "セ・リーグ",
+        "shortName": "セ",
+        "startSeason": 1950,
+        "endSeason": null
+      },
+      "links": {
+        "self": "/masters/leagues/central.json"
+      }
+    },
+    {
+      "type": "league",
+      "id": "pacific",
+      "attributes": {
+        "name": "パ・リーグ",
+        "shortName": "パ",
+        "startSeason": 1950,
+        "endSeason": null
+      },
+      "links": {
+        "self": "/masters/leagues/pacific.json"
+      }
+    }
+  ],
+  "meta": {
+    "sources": [
+      {
+        "id": "npb",
+        "kind": "official",
+        "name": "NPB公式サイト",
+        "retrievedAt": "2026-08-19"
+      },
+      {
+        "id": "npb-analysis",
+        "kind": "manual",
+        "name": "npb-analysis team seed reference",
+        "retrievedAt": "2026-08-19"
+      }
+    ],
+    "provenance": {
+      "data": {
+        "sourceId": "npb-analysis",
+        "method": "imported",
+        "updatedAt": "2026-08-19"
+      }
+    },
+    "generatedAt": "2026-08-19"
+  }
+}

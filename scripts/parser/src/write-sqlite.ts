@@ -5,7 +5,11 @@ import {
   type EnrichedSnapshot,
   readPlayerDocuments,
 } from "@repo/baseball-data";
-import { DEFAULT_PLAYER_DATA_DIR, DEFAULT_SQLITE_PATH } from "./constants.js";
+import {
+  DEFAULT_MASTER_DATA_DIR,
+  DEFAULT_PLAYER_DATA_DIR,
+  DEFAULT_SQLITE_PATH,
+} from "./constants.js";
 import { writeSnapshotToSqlite } from "./sqlite.js";
 
 function getOption(args: string[], flag: string, fallback: string): string {
@@ -40,10 +44,18 @@ async function main(): Promise<void> {
     process.cwd(),
     getOption(args, "--db", DEFAULT_SQLITE_PATH),
   );
+  const masterPath = path.resolve(
+    process.cwd(),
+    getOption(args, "--masters-dir", DEFAULT_MASTER_DATA_DIR),
+  );
   fs.mkdirSync(path.dirname(dbPath), { recursive: true });
 
   const players = await readPlayerDocuments(inputPath);
-  const result = await writeSnapshotToSqlite(createSnapshot(players), dbPath);
+  const result = await writeSnapshotToSqlite(
+    createSnapshot(players),
+    dbPath,
+    masterPath,
+  );
   console.log(
     `Wrote ${result.players} players, ${result.battingRows} batting rows, and ${result.pitchingRows} pitching rows to ${dbPath}`,
   );

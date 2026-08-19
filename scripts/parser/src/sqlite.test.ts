@@ -16,8 +16,16 @@ const player: RawPlayer = {
   playerName: "テスト 太郎",
   kanaName: "テスト タロウ",
   isActive: true,
-  detailInfo: { 所属球団: "テスト" },
-  battingStats: [{ 年度: "2024", 打席: "30", 安打: "10", 打数: "30" }],
+  detailInfo: { 所属球団: "福岡ソフトバンク" },
+  battingStats: [
+    {
+      年度: "2024",
+      所属球団: "福岡ソフトバンク",
+      打席: "30",
+      安打: "10",
+      打数: "30",
+    },
+  ],
   pitchingStats: [],
 };
 
@@ -42,6 +50,12 @@ describe("writeSnapshotToSqlite", () => {
       expect(
         db.prepare("select ops, batting_average from batting_stats").get(),
       ).toMatchObject({ batting_average: 0.333, ops: 0.333 });
+      expect(
+        db.prepare("select team_id, league_id from batting_stats").get(),
+      ).toEqual({ team_id: "hawks", league_id: "pacific" });
+      expect(db.prepare("select count(*) as count from leagues").get()).toEqual(
+        { count: 3 },
+      );
       db.close();
     } finally {
       await rm(temporaryDirectory, { recursive: true, force: true });

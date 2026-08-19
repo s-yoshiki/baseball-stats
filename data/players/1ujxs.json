@@ -36,18 +36,21 @@
           }
         },
         "rawDetails": {
-          "ポジション": "投手",
-          "投打": "右投右打",
-          "身長／体重": "167cm／84kg",
-          "生年月日": "2000年1月31日",
-          "経歴": "市立西宮高",
-          "ドラフト": "2017年ドラフト6位"
+          "npb": {
+            "ポジション": "投手",
+            "投打": "右投右打",
+            "身長／体重": "167cm／84kg",
+            "生年月日": "2000年1月31日",
+            "経歴": "市立西宮高",
+            "ドラフト": "2017年ドラフト6位"
+          }
         }
       },
       "battingStats": [
         {
           "season": 2018,
           "team": "中 日",
+          "sourceId": "npb",
           "raw": {
             "年度": "2018",
             "所属球団": "中 日",
@@ -106,6 +109,7 @@
         {
           "season": 2019,
           "team": "中 日",
+          "sourceId": "npb",
           "raw": {
             "年度": "2019",
             "所属球団": "中 日",
@@ -164,6 +168,7 @@
         {
           "season": 2020,
           "team": "中 日",
+          "sourceId": "npb",
           "raw": {
             "年度": "2020",
             "所属球団": "中 日",
@@ -222,6 +227,7 @@
         {
           "season": 2021,
           "team": "中 日",
+          "sourceId": "npb",
           "raw": {
             "年度": "2021",
             "所属球団": "中 日",
@@ -280,6 +286,7 @@
         {
           "season": 2022,
           "team": "中 日",
+          "sourceId": "npb",
           "raw": {
             "年度": "2022",
             "所属球団": "中 日",
@@ -338,6 +345,7 @@
         {
           "season": 2023,
           "team": "中 日",
+          "sourceId": "npb",
           "raw": {
             "年度": "2023",
             "所属球団": "中 日",
@@ -396,6 +404,7 @@
         {
           "season": 2023,
           "team": "北海道日本ハム",
+          "sourceId": "npb",
           "raw": {
             "年度": "2023",
             "所属球団": "北海道日本ハム",
@@ -454,6 +463,7 @@
         {
           "season": 2024,
           "team": "北海道日本ハム",
+          "sourceId": "npb",
           "raw": {
             "年度": "2024",
             "所属球団": "北海道日本ハム",
@@ -512,6 +522,7 @@
         {
           "season": 2025,
           "team": "北海道日本ハム",
+          "sourceId": "npb",
           "raw": {
             "年度": "2025",
             "所属球団": "北海道日本ハム",
@@ -570,6 +581,7 @@
         {
           "season": 2026,
           "team": "北海道日本ハム",
+          "sourceId": "npb",
           "raw": {
             "年度": "2026",
             "所属球団": "北海道日本ハム",
@@ -630,6 +642,7 @@
         {
           "season": 2018,
           "team": "中 日",
+          "sourceId": "npb",
           "raw": {
             "年度": "2018",
             "所属球団": "中 日",
@@ -690,6 +703,7 @@
         {
           "season": 2019,
           "team": "中 日",
+          "sourceId": "npb",
           "raw": {
             "年度": "2019",
             "所属球団": "中 日",
@@ -750,6 +764,7 @@
         {
           "season": 2020,
           "team": "中 日",
+          "sourceId": "npb",
           "raw": {
             "年度": "2020",
             "所属球団": "中 日",
@@ -810,6 +825,7 @@
         {
           "season": 2021,
           "team": "中 日",
+          "sourceId": "npb",
           "raw": {
             "年度": "2021",
             "所属球団": "中 日",
@@ -870,6 +886,7 @@
         {
           "season": 2022,
           "team": "中 日",
+          "sourceId": "npb",
           "raw": {
             "年度": "2022",
             "所属球団": "中 日",
@@ -930,6 +947,7 @@
         {
           "season": 2023,
           "team": "中 日",
+          "sourceId": "npb",
           "raw": {
             "年度": "2023",
             "所属球団": "中 日",
@@ -990,6 +1008,7 @@
         {
           "season": 2023,
           "team": "北海道日本ハム",
+          "sourceId": "npb",
           "raw": {
             "年度": "2023",
             "所属球団": "北海道日本ハム",
@@ -1050,6 +1069,7 @@
         {
           "season": 2024,
           "team": "北海道日本ハム",
+          "sourceId": "npb",
           "raw": {
             "年度": "2024",
             "所属球団": "北海道日本ハム",
@@ -1110,6 +1130,7 @@
         {
           "season": 2025,
           "team": "北海道日本ハム",
+          "sourceId": "npb",
           "raw": {
             "年度": "2025",
             "所属球団": "北海道日本ハム",
@@ -1170,6 +1191,7 @@
         {
           "season": 2026,
           "team": "北海道日本ハム",
+          "sourceId": "npb",
           "raw": {
             "年度": "2026",
             "所属球団": "北海道日本ハム",
@@ -1277,10 +1299,378 @@
     }
   },
   "meta": {
-    "source": {
-      "name": "npb.jp",
-      "url": "https://npb.jp/bis/players/03105136.html"
+    "sources": [
+      {
+        "id": "npb",
+        "kind": "official",
+        "name": "NPB公式サイト",
+        "url": "https://npb.jp/bis/players/03105136.html",
+        "retrievedAt": "2026-08-19T08:04:13.503Z"
+      },
+      {
+        "id": "baseball-stats",
+        "kind": "computed",
+        "name": "baseball-stats",
+        "retrievedAt": "2026-08-19T08:04:13.503Z"
+      }
+    ],
+    "provenance": {
+      "profile.familyName": {
+        "sourceId": "npb",
+        "method": "normalized",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "profile.givenName": {
+        "sourceId": "npb",
+        "method": "normalized",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "profile.familyNameKana": {
+        "sourceId": "npb",
+        "method": "normalized",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "profile.givenNameKana": {
+        "sourceId": "npb",
+        "method": "normalized",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "profile.registeredName": {
+        "sourceId": "npb",
+        "method": "normalized",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "profile.registeredNameKana": {
+        "sourceId": "npb",
+        "method": "normalized",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "profile.url": {
+        "sourceId": "npb",
+        "method": "scraped",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "profile.isActive": {
+        "sourceId": "npb",
+        "method": "scraped",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "profile.details": {
+        "sourceId": "npb",
+        "method": "normalized",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "profile.rawDetails.npb": {
+        "sourceId": "npb",
+        "method": "scraped",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "career": {
+        "sourceId": "baseball-stats",
+        "method": "calculated",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "battingStats[0].raw": {
+        "sourceId": "npb",
+        "method": "scraped",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "battingStats[0].totals": {
+        "sourceId": "npb",
+        "method": "normalized",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "battingStats[0].metrics": {
+        "sourceId": "baseball-stats",
+        "method": "calculated",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "battingStats[1].raw": {
+        "sourceId": "npb",
+        "method": "scraped",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "battingStats[1].totals": {
+        "sourceId": "npb",
+        "method": "normalized",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "battingStats[1].metrics": {
+        "sourceId": "baseball-stats",
+        "method": "calculated",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "battingStats[2].raw": {
+        "sourceId": "npb",
+        "method": "scraped",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "battingStats[2].totals": {
+        "sourceId": "npb",
+        "method": "normalized",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "battingStats[2].metrics": {
+        "sourceId": "baseball-stats",
+        "method": "calculated",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "battingStats[3].raw": {
+        "sourceId": "npb",
+        "method": "scraped",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "battingStats[3].totals": {
+        "sourceId": "npb",
+        "method": "normalized",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "battingStats[3].metrics": {
+        "sourceId": "baseball-stats",
+        "method": "calculated",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "battingStats[4].raw": {
+        "sourceId": "npb",
+        "method": "scraped",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "battingStats[4].totals": {
+        "sourceId": "npb",
+        "method": "normalized",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "battingStats[4].metrics": {
+        "sourceId": "baseball-stats",
+        "method": "calculated",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "battingStats[5].raw": {
+        "sourceId": "npb",
+        "method": "scraped",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "battingStats[5].totals": {
+        "sourceId": "npb",
+        "method": "normalized",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "battingStats[5].metrics": {
+        "sourceId": "baseball-stats",
+        "method": "calculated",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "battingStats[6].raw": {
+        "sourceId": "npb",
+        "method": "scraped",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "battingStats[6].totals": {
+        "sourceId": "npb",
+        "method": "normalized",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "battingStats[6].metrics": {
+        "sourceId": "baseball-stats",
+        "method": "calculated",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "battingStats[7].raw": {
+        "sourceId": "npb",
+        "method": "scraped",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "battingStats[7].totals": {
+        "sourceId": "npb",
+        "method": "normalized",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "battingStats[7].metrics": {
+        "sourceId": "baseball-stats",
+        "method": "calculated",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "battingStats[8].raw": {
+        "sourceId": "npb",
+        "method": "scraped",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "battingStats[8].totals": {
+        "sourceId": "npb",
+        "method": "normalized",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "battingStats[8].metrics": {
+        "sourceId": "baseball-stats",
+        "method": "calculated",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "battingStats[9].raw": {
+        "sourceId": "npb",
+        "method": "scraped",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "battingStats[9].totals": {
+        "sourceId": "npb",
+        "method": "normalized",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "battingStats[9].metrics": {
+        "sourceId": "baseball-stats",
+        "method": "calculated",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "pitchingStats[0].raw": {
+        "sourceId": "npb",
+        "method": "scraped",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "pitchingStats[0].totals": {
+        "sourceId": "npb",
+        "method": "normalized",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "pitchingStats[0].metrics": {
+        "sourceId": "baseball-stats",
+        "method": "calculated",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "pitchingStats[1].raw": {
+        "sourceId": "npb",
+        "method": "scraped",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "pitchingStats[1].totals": {
+        "sourceId": "npb",
+        "method": "normalized",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "pitchingStats[1].metrics": {
+        "sourceId": "baseball-stats",
+        "method": "calculated",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "pitchingStats[2].raw": {
+        "sourceId": "npb",
+        "method": "scraped",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "pitchingStats[2].totals": {
+        "sourceId": "npb",
+        "method": "normalized",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "pitchingStats[2].metrics": {
+        "sourceId": "baseball-stats",
+        "method": "calculated",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "pitchingStats[3].raw": {
+        "sourceId": "npb",
+        "method": "scraped",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "pitchingStats[3].totals": {
+        "sourceId": "npb",
+        "method": "normalized",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "pitchingStats[3].metrics": {
+        "sourceId": "baseball-stats",
+        "method": "calculated",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "pitchingStats[4].raw": {
+        "sourceId": "npb",
+        "method": "scraped",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "pitchingStats[4].totals": {
+        "sourceId": "npb",
+        "method": "normalized",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "pitchingStats[4].metrics": {
+        "sourceId": "baseball-stats",
+        "method": "calculated",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "pitchingStats[5].raw": {
+        "sourceId": "npb",
+        "method": "scraped",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "pitchingStats[5].totals": {
+        "sourceId": "npb",
+        "method": "normalized",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "pitchingStats[5].metrics": {
+        "sourceId": "baseball-stats",
+        "method": "calculated",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "pitchingStats[6].raw": {
+        "sourceId": "npb",
+        "method": "scraped",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "pitchingStats[6].totals": {
+        "sourceId": "npb",
+        "method": "normalized",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "pitchingStats[6].metrics": {
+        "sourceId": "baseball-stats",
+        "method": "calculated",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "pitchingStats[7].raw": {
+        "sourceId": "npb",
+        "method": "scraped",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "pitchingStats[7].totals": {
+        "sourceId": "npb",
+        "method": "normalized",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "pitchingStats[7].metrics": {
+        "sourceId": "baseball-stats",
+        "method": "calculated",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "pitchingStats[8].raw": {
+        "sourceId": "npb",
+        "method": "scraped",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "pitchingStats[8].totals": {
+        "sourceId": "npb",
+        "method": "normalized",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "pitchingStats[8].metrics": {
+        "sourceId": "baseball-stats",
+        "method": "calculated",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "pitchingStats[9].raw": {
+        "sourceId": "npb",
+        "method": "scraped",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "pitchingStats[9].totals": {
+        "sourceId": "npb",
+        "method": "normalized",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "pitchingStats[9].metrics": {
+        "sourceId": "baseball-stats",
+        "method": "calculated",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      }
     },
-    "generatedAt": "2026-08-19T07:28:50.124Z"
+    "generatedAt": "2026-08-19T08:04:13.503Z"
   }
 }

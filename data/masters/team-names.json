@@ -1,0 +1,1134 @@
+{
+  "data": [
+    {
+      "type": "teamName",
+      "id": "giants-0",
+      "attributes": {
+        "teamId": "giants",
+        "name": "巨人",
+        "leagueId": "one_league",
+        "startSeason": 1936,
+        "endSeason": 1946
+      },
+      "links": {
+        "self": "/masters/team-names/giants-0.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "giants-1",
+      "attributes": {
+        "teamId": "giants",
+        "name": "読売",
+        "leagueId": "one_league",
+        "startSeason": 1947,
+        "endSeason": 1949
+      },
+      "links": {
+        "self": "/masters/team-names/giants-1.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "giants-2",
+      "attributes": {
+        "teamId": "giants",
+        "name": "読売",
+        "leagueId": "central",
+        "startSeason": 1950,
+        "endSeason": null
+      },
+      "links": {
+        "self": "/masters/team-names/giants-2.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "tigers-0",
+      "attributes": {
+        "teamId": "tigers",
+        "name": "タイガース",
+        "leagueId": "one_league",
+        "startSeason": 1939,
+        "endSeason": 1939
+      },
+      "links": {
+        "self": "/masters/team-names/tigers-0.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "tigers-1",
+      "attributes": {
+        "teamId": "tigers",
+        "name": "阪神",
+        "leagueId": "one_league",
+        "startSeason": 1940,
+        "endSeason": 1949
+      },
+      "links": {
+        "self": "/masters/team-names/tigers-1.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "tigers-2",
+      "attributes": {
+        "teamId": "tigers",
+        "name": "阪神",
+        "leagueId": "central",
+        "startSeason": 1950,
+        "endSeason": null
+      },
+      "links": {
+        "self": "/masters/team-names/tigers-2.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "dragons-0",
+      "attributes": {
+        "teamId": "dragons",
+        "name": "名古屋",
+        "leagueId": "one_league",
+        "startSeason": 1936,
+        "endSeason": 1943
+      },
+      "links": {
+        "self": "/masters/team-names/dragons-0.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "dragons-1",
+      "attributes": {
+        "teamId": "dragons",
+        "name": "産業",
+        "leagueId": "one_league",
+        "startSeason": 1944,
+        "endSeason": 1944
+      },
+      "links": {
+        "self": "/masters/team-names/dragons-1.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "dragons-2",
+      "attributes": {
+        "teamId": "dragons",
+        "name": "中部日本",
+        "leagueId": "one_league",
+        "startSeason": 1946,
+        "endSeason": 1946
+      },
+      "links": {
+        "self": "/masters/team-names/dragons-2.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "dragons-3",
+      "attributes": {
+        "teamId": "dragons",
+        "name": "中日",
+        "leagueId": "one_league",
+        "startSeason": 1947,
+        "endSeason": 1949
+      },
+      "links": {
+        "self": "/masters/team-names/dragons-3.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "dragons-4",
+      "attributes": {
+        "teamId": "dragons",
+        "name": "中日",
+        "leagueId": "central",
+        "startSeason": 1950,
+        "endSeason": 1950
+      },
+      "links": {
+        "self": "/masters/team-names/dragons-4.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "dragons-5",
+      "attributes": {
+        "teamId": "dragons",
+        "name": "名古屋",
+        "leagueId": "central",
+        "startSeason": 1951,
+        "endSeason": 1953
+      },
+      "links": {
+        "self": "/masters/team-names/dragons-5.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "dragons-6",
+      "attributes": {
+        "teamId": "dragons",
+        "name": "中日",
+        "leagueId": "central",
+        "startSeason": 1954,
+        "endSeason": null
+      },
+      "links": {
+        "self": "/masters/team-names/dragons-6.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "swallows-0",
+      "attributes": {
+        "teamId": "swallows",
+        "name": "国鉄",
+        "leagueId": "central",
+        "startSeason": 1950,
+        "endSeason": 1964
+      },
+      "links": {
+        "self": "/masters/team-names/swallows-0.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "swallows-1",
+      "attributes": {
+        "teamId": "swallows",
+        "name": "サンケイ",
+        "leagueId": "central",
+        "startSeason": 1965,
+        "endSeason": 1968
+      },
+      "links": {
+        "self": "/masters/team-names/swallows-1.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "swallows-2",
+      "attributes": {
+        "teamId": "swallows",
+        "name": "アトムズ",
+        "leagueId": "central",
+        "startSeason": 1969,
+        "endSeason": 1969
+      },
+      "links": {
+        "self": "/masters/team-names/swallows-2.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "swallows-3",
+      "attributes": {
+        "teamId": "swallows",
+        "name": "ヤクルト",
+        "leagueId": "central",
+        "startSeason": 1970,
+        "endSeason": 2005
+      },
+      "links": {
+        "self": "/masters/team-names/swallows-3.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "swallows-4",
+      "attributes": {
+        "teamId": "swallows",
+        "name": "東京ヤクルト",
+        "leagueId": "central",
+        "startSeason": 2006,
+        "endSeason": null
+      },
+      "links": {
+        "self": "/masters/team-names/swallows-4.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "baystars-0",
+      "attributes": {
+        "teamId": "baystars",
+        "name": "大洋",
+        "leagueId": "central",
+        "startSeason": 1950,
+        "endSeason": 1952
+      },
+      "links": {
+        "self": "/masters/team-names/baystars-0.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "baystars-1",
+      "attributes": {
+        "teamId": "baystars",
+        "name": "洋松",
+        "leagueId": "central",
+        "startSeason": 1953,
+        "endSeason": 1954
+      },
+      "links": {
+        "self": "/masters/team-names/baystars-1.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "baystars-2",
+      "attributes": {
+        "teamId": "baystars",
+        "name": "大洋",
+        "leagueId": "central",
+        "startSeason": 1955,
+        "endSeason": 1977
+      },
+      "links": {
+        "self": "/masters/team-names/baystars-2.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "baystars-3",
+      "attributes": {
+        "teamId": "baystars",
+        "name": "横浜大洋",
+        "leagueId": "central",
+        "startSeason": 1978,
+        "endSeason": 1992
+      },
+      "links": {
+        "self": "/masters/team-names/baystars-3.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "baystars-4",
+      "attributes": {
+        "teamId": "baystars",
+        "name": "横浜",
+        "leagueId": "central",
+        "startSeason": 1993,
+        "endSeason": 2011
+      },
+      "links": {
+        "self": "/masters/team-names/baystars-4.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "baystars-5",
+      "attributes": {
+        "teamId": "baystars",
+        "name": "横浜DeNA",
+        "leagueId": "central",
+        "startSeason": 2012,
+        "endSeason": null
+      },
+      "links": {
+        "self": "/masters/team-names/baystars-5.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "carp-0",
+      "attributes": {
+        "teamId": "carp",
+        "name": "広島",
+        "leagueId": "central",
+        "startSeason": 1950,
+        "endSeason": 1967
+      },
+      "links": {
+        "self": "/masters/team-names/carp-0.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "carp-1",
+      "attributes": {
+        "teamId": "carp",
+        "name": "広島東洋",
+        "leagueId": "central",
+        "startSeason": 1968,
+        "endSeason": null
+      },
+      "links": {
+        "self": "/masters/team-names/carp-1.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "hawks-0",
+      "attributes": {
+        "teamId": "hawks",
+        "name": "南海",
+        "leagueId": "one_league",
+        "startSeason": 1938,
+        "endSeason": 1949
+      },
+      "links": {
+        "self": "/masters/team-names/hawks-0.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "hawks-1",
+      "attributes": {
+        "teamId": "hawks",
+        "name": "南海",
+        "leagueId": "pacific",
+        "startSeason": 1950,
+        "endSeason": 1988
+      },
+      "links": {
+        "self": "/masters/team-names/hawks-1.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "hawks-2",
+      "attributes": {
+        "teamId": "hawks",
+        "name": "福岡ダイエー",
+        "leagueId": "pacific",
+        "startSeason": 1989,
+        "endSeason": 2004
+      },
+      "links": {
+        "self": "/masters/team-names/hawks-2.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "hawks-3",
+      "attributes": {
+        "teamId": "hawks",
+        "name": "福岡ソフトバンク",
+        "leagueId": "pacific",
+        "startSeason": 2005,
+        "endSeason": null
+      },
+      "links": {
+        "self": "/masters/team-names/hawks-3.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "buffaloes-0",
+      "attributes": {
+        "teamId": "buffaloes",
+        "name": "阪急",
+        "leagueId": "one_league",
+        "startSeason": 1936,
+        "endSeason": 1949
+      },
+      "links": {
+        "self": "/masters/team-names/buffaloes-0.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "buffaloes-1",
+      "attributes": {
+        "teamId": "buffaloes",
+        "name": "阪急",
+        "leagueId": "pacific",
+        "startSeason": 1950,
+        "endSeason": 1988
+      },
+      "links": {
+        "self": "/masters/team-names/buffaloes-1.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "buffaloes-2",
+      "attributes": {
+        "teamId": "buffaloes",
+        "name": "オリックス",
+        "leagueId": "pacific",
+        "startSeason": 1989,
+        "endSeason": null
+      },
+      "links": {
+        "self": "/masters/team-names/buffaloes-2.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "lions-0",
+      "attributes": {
+        "teamId": "lions",
+        "name": "西鉄",
+        "leagueId": "pacific",
+        "startSeason": 1950,
+        "endSeason": 1972
+      },
+      "links": {
+        "self": "/masters/team-names/lions-0.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "lions-1",
+      "attributes": {
+        "teamId": "lions",
+        "name": "太平洋",
+        "leagueId": "pacific",
+        "startSeason": 1973,
+        "endSeason": 1976
+      },
+      "links": {
+        "self": "/masters/team-names/lions-1.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "lions-2",
+      "attributes": {
+        "teamId": "lions",
+        "name": "クラウン",
+        "leagueId": "pacific",
+        "startSeason": 1977,
+        "endSeason": 1978
+      },
+      "links": {
+        "self": "/masters/team-names/lions-2.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "lions-3",
+      "attributes": {
+        "teamId": "lions",
+        "name": "西武",
+        "leagueId": "pacific",
+        "startSeason": 1979,
+        "endSeason": 2007
+      },
+      "links": {
+        "self": "/masters/team-names/lions-3.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "lions-4",
+      "attributes": {
+        "teamId": "lions",
+        "name": "埼玉西武",
+        "leagueId": "pacific",
+        "startSeason": 2008,
+        "endSeason": null
+      },
+      "links": {
+        "self": "/masters/team-names/lions-4.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "marines-0",
+      "attributes": {
+        "teamId": "marines",
+        "name": "毎日",
+        "leagueId": "pacific",
+        "startSeason": 1950,
+        "endSeason": 1957
+      },
+      "links": {
+        "self": "/masters/team-names/marines-0.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "marines-1",
+      "attributes": {
+        "teamId": "marines",
+        "name": "大毎",
+        "leagueId": "pacific",
+        "startSeason": 1958,
+        "endSeason": 1963
+      },
+      "links": {
+        "self": "/masters/team-names/marines-1.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "marines-2",
+      "attributes": {
+        "teamId": "marines",
+        "name": "東京",
+        "leagueId": "pacific",
+        "startSeason": 1964,
+        "endSeason": 1968
+      },
+      "links": {
+        "self": "/masters/team-names/marines-2.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "marines-3",
+      "attributes": {
+        "teamId": "marines",
+        "name": "ロッテ",
+        "leagueId": "pacific",
+        "startSeason": 1969,
+        "endSeason": 1991
+      },
+      "links": {
+        "self": "/masters/team-names/marines-3.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "marines-4",
+      "attributes": {
+        "teamId": "marines",
+        "name": "千葉ロッテ",
+        "leagueId": "pacific",
+        "startSeason": 1992,
+        "endSeason": null
+      },
+      "links": {
+        "self": "/masters/team-names/marines-4.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "fighters-0",
+      "attributes": {
+        "teamId": "fighters",
+        "name": "東急",
+        "leagueId": "one_league",
+        "startSeason": 1947,
+        "endSeason": 1947
+      },
+      "links": {
+        "self": "/masters/team-names/fighters-0.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "fighters-1",
+      "attributes": {
+        "teamId": "fighters",
+        "name": "急映",
+        "leagueId": "one_league",
+        "startSeason": 1948,
+        "endSeason": 1948
+      },
+      "links": {
+        "self": "/masters/team-names/fighters-1.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "fighters-2",
+      "attributes": {
+        "teamId": "fighters",
+        "name": "東急",
+        "leagueId": "one_league",
+        "startSeason": 1949,
+        "endSeason": 1949
+      },
+      "links": {
+        "self": "/masters/team-names/fighters-2.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "fighters-3",
+      "attributes": {
+        "teamId": "fighters",
+        "name": "東急",
+        "leagueId": "pacific",
+        "startSeason": 1950,
+        "endSeason": 1953
+      },
+      "links": {
+        "self": "/masters/team-names/fighters-3.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "fighters-4",
+      "attributes": {
+        "teamId": "fighters",
+        "name": "東映",
+        "leagueId": "pacific",
+        "startSeason": 1954,
+        "endSeason": 1972
+      },
+      "links": {
+        "self": "/masters/team-names/fighters-4.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "fighters-5",
+      "attributes": {
+        "teamId": "fighters",
+        "name": "日拓",
+        "leagueId": "pacific",
+        "startSeason": 1973,
+        "endSeason": 1973
+      },
+      "links": {
+        "self": "/masters/team-names/fighters-5.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "fighters-6",
+      "attributes": {
+        "teamId": "fighters",
+        "name": "日本ハム",
+        "leagueId": "pacific",
+        "startSeason": 1974,
+        "endSeason": 2003
+      },
+      "links": {
+        "self": "/masters/team-names/fighters-6.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "fighters-7",
+      "attributes": {
+        "teamId": "fighters",
+        "name": "北海道日本ハム",
+        "leagueId": "pacific",
+        "startSeason": 2004,
+        "endSeason": null
+      },
+      "links": {
+        "self": "/masters/team-names/fighters-7.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "eagles-0",
+      "attributes": {
+        "teamId": "eagles",
+        "name": "東北楽天",
+        "leagueId": "pacific",
+        "startSeason": 2005,
+        "endSeason": null
+      },
+      "links": {
+        "self": "/masters/team-names/eagles-0.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "shochiku-0",
+      "attributes": {
+        "teamId": "shochiku",
+        "name": "松竹",
+        "leagueId": "central",
+        "startSeason": 1950,
+        "endSeason": 1952
+      },
+      "links": {
+        "self": "/masters/team-names/shochiku-0.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "nishinihon-0",
+      "attributes": {
+        "teamId": "nishinihon",
+        "name": "西日本",
+        "leagueId": "pacific",
+        "startSeason": 1950,
+        "endSeason": 1950
+      },
+      "links": {
+        "self": "/masters/team-names/nishinihon-0.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "kintetsu-0",
+      "attributes": {
+        "teamId": "kintetsu",
+        "name": "近鉄",
+        "leagueId": "pacific",
+        "startSeason": 1950,
+        "endSeason": 1998
+      },
+      "links": {
+        "self": "/masters/team-names/kintetsu-0.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "kintetsu-1",
+      "attributes": {
+        "teamId": "kintetsu",
+        "name": "大阪近鉄",
+        "leagueId": "pacific",
+        "startSeason": 1999,
+        "endSeason": 2004
+      },
+      "links": {
+        "self": "/masters/team-names/kintetsu-1.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "takahashi_unions-0",
+      "attributes": {
+        "teamId": "takahashi_unions",
+        "name": "高橋",
+        "leagueId": "pacific",
+        "startSeason": 1954,
+        "endSeason": 1954
+      },
+      "links": {
+        "self": "/masters/team-names/takahashi_unions-0.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "takahashi_unions-1",
+      "attributes": {
+        "teamId": "takahashi_unions",
+        "name": "トンボ",
+        "leagueId": "pacific",
+        "startSeason": 1955,
+        "endSeason": 1955
+      },
+      "links": {
+        "self": "/masters/team-names/takahashi_unions-1.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "takahashi_unions-2",
+      "attributes": {
+        "teamId": "takahashi_unions",
+        "name": "高橋",
+        "leagueId": "pacific",
+        "startSeason": 1956,
+        "endSeason": 1956
+      },
+      "links": {
+        "self": "/masters/team-names/takahashi_unions-2.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "daiei_stars-0",
+      "attributes": {
+        "teamId": "daiei_stars",
+        "name": "大映",
+        "leagueId": "one_league",
+        "startSeason": 1949,
+        "endSeason": 1949
+      },
+      "links": {
+        "self": "/masters/team-names/daiei_stars-0.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "daiei_stars-1",
+      "attributes": {
+        "teamId": "daiei_stars",
+        "name": "大映",
+        "leagueId": "pacific",
+        "startSeason": 1950,
+        "endSeason": 1957
+      },
+      "links": {
+        "self": "/masters/team-names/daiei_stars-1.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "kinshachi-0",
+      "attributes": {
+        "teamId": "kinshachi",
+        "name": "金鯱",
+        "leagueId": "one_league",
+        "startSeason": 1939,
+        "endSeason": 1940
+      },
+      "links": {
+        "self": "/masters/team-names/kinshachi-0.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "senators_prewar-0",
+      "attributes": {
+        "teamId": "senators_prewar",
+        "name": "セネタース",
+        "leagueId": "one_league",
+        "startSeason": 1939,
+        "endSeason": 1939
+      },
+      "links": {
+        "self": "/masters/team-names/senators_prewar-0.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "senators_prewar-1",
+      "attributes": {
+        "teamId": "senators_prewar",
+        "name": "セネタース",
+        "leagueId": "one_league",
+        "startSeason": 1946,
+        "endSeason": 1946
+      },
+      "links": {
+        "self": "/masters/team-names/senators_prewar-1.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "raion_1939-0",
+      "attributes": {
+        "teamId": "raion_1939",
+        "name": "ライオン",
+        "leagueId": "one_league",
+        "startSeason": 1939,
+        "endSeason": 1940
+      },
+      "links": {
+        "self": "/masters/team-names/raion_1939-0.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "eagles_1939-0",
+      "attributes": {
+        "teamId": "eagles_1939",
+        "name": "イーグルス",
+        "leagueId": "one_league",
+        "startSeason": 1939,
+        "endSeason": 1939
+      },
+      "links": {
+        "self": "/masters/team-names/eagles_1939-0.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "tsubasa-0",
+      "attributes": {
+        "teamId": "tsubasa",
+        "name": "翼",
+        "leagueId": "one_league",
+        "startSeason": 1940,
+        "endSeason": 1940
+      },
+      "links": {
+        "self": "/masters/team-names/tsubasa-0.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "kurowashi-0",
+      "attributes": {
+        "teamId": "kurowashi",
+        "name": "黒鷲",
+        "leagueId": "one_league",
+        "startSeason": 1940,
+        "endSeason": 1941
+      },
+      "links": {
+        "self": "/masters/team-names/kurowashi-0.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "taiyo_gun_1941-0",
+      "attributes": {
+        "teamId": "taiyo_gun_1941",
+        "name": "大洋",
+        "leagueId": "one_league",
+        "startSeason": 1941,
+        "endSeason": 1942
+      },
+      "links": {
+        "self": "/masters/team-names/taiyo_gun_1941-0.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "asahi-0",
+      "attributes": {
+        "teamId": "asahi",
+        "name": "朝日",
+        "leagueId": "one_league",
+        "startSeason": 1941,
+        "endSeason": 1944
+      },
+      "links": {
+        "self": "/masters/team-names/asahi-0.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "yamato-0",
+      "attributes": {
+        "teamId": "yamato",
+        "name": "大和",
+        "leagueId": "one_league",
+        "startSeason": 1942,
+        "endSeason": 1943
+      },
+      "links": {
+        "self": "/masters/team-names/yamato-0.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "nishitetsu_1943-0",
+      "attributes": {
+        "teamId": "nishitetsu_1943",
+        "name": "西鉄",
+        "leagueId": "one_league",
+        "startSeason": 1943,
+        "endSeason": 1943
+      },
+      "links": {
+        "self": "/masters/team-names/nishitetsu_1943-0.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "kinki_nippon-0",
+      "attributes": {
+        "teamId": "kinki_nippon",
+        "name": "近畿日本",
+        "leagueId": "one_league",
+        "startSeason": 1944,
+        "endSeason": 1944
+      },
+      "links": {
+        "self": "/masters/team-names/kinki_nippon-0.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "great_ring-0",
+      "attributes": {
+        "teamId": "great_ring",
+        "name": "グレートリング",
+        "leagueId": "one_league",
+        "startSeason": 1946,
+        "endSeason": 1946
+      },
+      "links": {
+        "self": "/masters/team-names/great_ring-0.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "gold_star-0",
+      "attributes": {
+        "teamId": "gold_star",
+        "name": "ゴールドスター",
+        "leagueId": "one_league",
+        "startSeason": 1946,
+        "endSeason": 1946
+      },
+      "links": {
+        "self": "/masters/team-names/gold_star-0.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "pacific_1946-0",
+      "attributes": {
+        "teamId": "pacific_1946",
+        "name": "パシフィック",
+        "leagueId": "one_league",
+        "startSeason": 1946,
+        "endSeason": 1946
+      },
+      "links": {
+        "self": "/masters/team-names/pacific_1946-0.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "kinsei-0",
+      "attributes": {
+        "teamId": "kinsei",
+        "name": "金星",
+        "leagueId": "one_league",
+        "startSeason": 1947,
+        "endSeason": 1948
+      },
+      "links": {
+        "self": "/masters/team-names/kinsei-0.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "taiyo_robins-0",
+      "attributes": {
+        "teamId": "taiyo_robins",
+        "name": "太陽",
+        "leagueId": "one_league",
+        "startSeason": 1947,
+        "endSeason": 1947
+      },
+      "links": {
+        "self": "/masters/team-names/taiyo_robins-0.json"
+      }
+    },
+    {
+      "type": "teamName",
+      "id": "taiyo_robins-1",
+      "attributes": {
+        "teamId": "taiyo_robins",
+        "name": "大陽",
+        "leagueId": "one_league",
+        "startSeason": 1948,
+        "endSeason": 1949
+      },
+      "links": {
+        "self": "/masters/team-names/taiyo_robins-1.json"
+      }
+    }
+  ],
+  "meta": {
+    "sources": [
+      {
+        "id": "npb",
+        "kind": "official",
+        "name": "NPB公式サイト",
+        "retrievedAt": "2026-08-19"
+      },
+      {
+        "id": "npb-analysis",
+        "kind": "manual",
+        "name": "npb-analysis team seed reference",
+        "retrievedAt": "2026-08-19"
+      }
+    ],
+    "provenance": {
+      "data": {
+        "sourceId": "npb-analysis",
+        "method": "imported",
+        "updatedAt": "2026-08-19"
+      }
+    },
+    "generatedAt": "2026-08-19"
+  }
+}

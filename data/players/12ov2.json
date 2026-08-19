@@ -36,12 +36,14 @@
           }
         },
         "rawDetails": {
-          "ポジション": "投手",
-          "投打": "左投左打",
-          "身長／体重": "198cm／107kg",
-          "生年月日": "2006年11月17日",
-          "経歴": "東海大相模高",
-          "ドラフト": "2024年ドラフト2位"
+          "npb": {
+            "ポジション": "投手",
+            "投打": "左投左打",
+            "身長／体重": "198cm／107kg",
+            "生年月日": "2006年11月17日",
+            "経歴": "東海大相模高",
+            "ドラフト": "2024年ドラフト2位"
+          }
         }
       },
       "battingStats": [],
@@ -95,10 +97,78 @@
     }
   },
   "meta": {
-    "source": {
-      "name": "npb.jp",
-      "url": "https://npb.jp/bis/players/01805150.html"
+    "sources": [
+      {
+        "id": "npb",
+        "kind": "official",
+        "name": "NPB公式サイト",
+        "url": "https://npb.jp/bis/players/01805150.html",
+        "retrievedAt": "2026-08-19T08:04:13.503Z"
+      },
+      {
+        "id": "baseball-stats",
+        "kind": "computed",
+        "name": "baseball-stats",
+        "retrievedAt": "2026-08-19T08:04:13.503Z"
+      }
+    ],
+    "provenance": {
+      "profile.familyName": {
+        "sourceId": "npb",
+        "method": "normalized",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "profile.givenName": {
+        "sourceId": "npb",
+        "method": "normalized",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "profile.familyNameKana": {
+        "sourceId": "npb",
+        "method": "normalized",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "profile.givenNameKana": {
+        "sourceId": "npb",
+        "method": "normalized",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "profile.registeredName": {
+        "sourceId": "npb",
+        "method": "normalized",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "profile.registeredNameKana": {
+        "sourceId": "npb",
+        "method": "normalized",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "profile.url": {
+        "sourceId": "npb",
+        "method": "scraped",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "profile.isActive": {
+        "sourceId": "npb",
+        "method": "scraped",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "profile.details": {
+        "sourceId": "npb",
+        "method": "normalized",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "profile.rawDetails.npb": {
+        "sourceId": "npb",
+        "method": "scraped",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      },
+      "career": {
+        "sourceId": "baseball-stats",
+        "method": "calculated",
+        "updatedAt": "2026-08-19T08:04:13.503Z"
+      }
     },
-    "generatedAt": "2026-08-19T07:28:50.124Z"
+    "generatedAt": "2026-08-19T08:04:13.503Z"
   }
 }

@@ -12,7 +12,9 @@ data/players/<player-id>.json
 data/sqlite/baseball.sqlite
 ```
 
-`data/players/index.json` は選手一覧、`data/players/<player-id>.json` は1選手分のJSON APIリソースです。プロフィールには `familyName`、`givenName`、`familyNameKana`、`givenNameKana`、`registeredName`、`registeredNameKana` を持たせます。`details` には投打、身長・体重、生年月日、経歴、ドラフトを構造化して保存し、NPBの原表記は `rawDetails` に保持します。各リソースの `data.attributes.*Stats[].raw` にNPBから取得した行データを保持し、同じ要素の `totals` と `metrics` に数値化した集計値・OPS、ISO、BB%、K%、ERA、WHIP、K/9、BB/9、K/BBを追加します。SQLiteはWebアプリなどから検索しやすい形に正規化した再生成可能な出力です。
+`data/players/index.json` は選手一覧、`data/players/<player-id>.json` は1選手分のJSON APIリソースです。プロフィールには `familyName`、`givenName`、`familyNameKana`、`givenNameKana`、`registeredName`、`registeredNameKana` を持たせます。`details` には投打、身長・体重、生年月日、経歴、ドラフトを構造化して保存し、各ソースの原表記は `rawDetails.<sourceId>` に保持します。NPB由来の初期データは `rawDetails.npb`、将来のWikipediaや手動修正は別の `sourceId` として追加できます。`meta.sources` に出典、`meta.provenance` に項目ごとの採用元と更新方法を記録します。
+
+各リソースの `data.attributes.*Stats[].raw` に取得元の行データを保持し、同じ要素の `totals` と `metrics` に数値化した集計値・OPS、ISO、BB%、K%、ERA、WHIP、K/9、BB/9、K/BBを追加します。`data/masters` にはリーグ、球団、球団名・年度、学校のJSON APIマスタを置きます。SQLiteは選手JSONとマスタJSONから再生成可能な出力です。
 
 ## Setup
 
@@ -56,12 +58,15 @@ pnpm --filter @repo/parser run write-sqlite -- \
 
 `calculate` は個別リソースを再計算して同じディレクトリへ書き戻します。`--input <legacy-snapshot>` を指定すると、旧形式の集約JSONから個別リソースへ移行できます。`write-sqlite` は選手JSON全体からSQLiteを再構築します。
 
+`write-sqlite` は `data/masters` も読み込み、`leagues`、`teams`、`team_seasons`、`schools`、`player_schools` を作成します。成績行には表示用の球団名に加え、年度と球団マスタから解決した `team_id` / `league_id` を保存します。別のマスタディレクトリを使う場合は `--masters-dir` を指定してください。
+
 ## Repository layout
 
 - `packages/baseball-data`: 型、JSON I/O、派生スタッツ計算
 - `scripts/parser`: NPBスクレイパー、派生JSON生成、Kysely + `better-sqlite3` writer
 - `data/players/index.json`: 選手一覧のJSON APIリソース
 - `data/players/<player-id>.json`: 1選手分のraw・集計値・派生スタッツ
+- `data/masters`: リーグ、球団、球団名・年度、学校のマスタ
 - `data/sqlite`: SQLite出力（Git管理外）
 - `docs/adr`: データ形式とSQLite出力の設計判断
 

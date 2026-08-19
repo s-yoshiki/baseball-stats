@@ -8,6 +8,7 @@ import type {
   ComputedBattingSeason,
   ComputedPitchingSeason,
   EnrichedPlayer,
+  FieldProvenance,
   PitchingTotals,
   PlayerApiAttributes,
   PlayerApiBattingStat,
@@ -15,7 +16,13 @@ import type {
   PlayerApiIndexDocument,
   PlayerApiPitchingStat,
   PlayerDetails,
+  PlayerSource,
 } from "./types.js";
+
+type LegacyMeta = {
+  source?: { name: string; url: string };
+  generatedAt?: string;
+};
 
 type LegacyPlayerApiDocument = {
   schemaVersion?: number;
@@ -36,8 +43,134 @@ type LegacyPlayerApiDocument = {
     };
     links: { self: string };
   };
-  meta: PlayerApiDocument["meta"];
+  meta: LegacyMeta;
 };
+
+const NPB_SOURCE_ID = "npb";
+const COMPUTED_SOURCE_ID = "baseball-stats";
+
+function createSources(
+  player: EnrichedPlayer,
+  generatedAt: string,
+): PlayerSource[] {
+  const defaults: PlayerSource[] = [
+    {
+      id: NPB_SOURCE_ID,
+      kind: "official",
+      name: "NPB公式サイト",
+      url: player.playerUrl,
+      retrievedAt: generatedAt,
+    },
+    {
+      id: COMPUTED_SOURCE_ID,
+      kind: "computed",
+      name: "baseball-stats",
+      retrievedAt: generatedAt,
+    },
+  ];
+  const customSources = (player.sources ?? []).filter(
+    (source) => source.id !== NPB_SOURCE_ID && source.id !== COMPUTED_SOURCE_ID,
+  );
+  const sources = new Map(
+    [...defaults, ...customSources].map((source) => [source.id, source]),
+  );
+  return [...sources.values()];
+}
+
+function createProvenance(
+  player: EnrichedPlayer,
+  generatedAt: string,
+): Record<string, FieldProvenance> {
+  const normalized = (note?: string): FieldProvenance => ({
+    sourceId: NPB_SOURCE_ID,
+    method: "normalized",
+    updatedAt: generatedAt,
+    ...(note ? { note } : {}),
+  });
+  const scraped = (note?: string): FieldProvenance => ({
+    sourceId: NPB_SOURCE_ID,
+    method: "scraped",
+    updatedAt: generatedAt,
+    ...(note ? { note } : {}),
+  });
+  const calculated = (note?: string): FieldProvenance => ({
+    sourceId: COMPUTED_SOURCE_ID,
+    method: "calculated",
+    updatedAt: generatedAt,
+    ...(note ? { note } : {}),
+  });
+
+  const provenance: Record<string, FieldProvenance> = {
+    "profile.familyName": normalized(),
+    "profile.givenName": normalized(),
+    "profile.familyNameKana": normalized(),
+    "profile.givenNameKana": normalized(),
+    "profile.registeredName": normalized(),
+    "profile.registeredNameKana": normalized(),
+    "profile.url": scraped(),
+    "profile.isActive": scraped(),
+    "profile.details": normalized(),
+    "profile.rawDetails.npb": scraped(),
+    career: calculated(),
+  };
+
+  for (const [index] of player.battingStats.entries()) {
+    const sourceId = player.statSourceIds?.batting[index] ?? NPB_SOURCE_ID;
+    provenance[`battingStats[${index}].raw`] =
+      sourceId === NPB_SOURCE_ID
+        ? scraped()
+        : {
+            sourceId,
+            method: "imported",
+            updatedAt: generatedAt,
+          };
+    provenance[`battingStats[${index}].totals`] = {
+      sourceId,
+      method: "normalized",
+      updatedAt: generatedAt,
+    };
+    provenance[`battingStats[${index}].metrics`] = calculated();
+  }
+  for (const [index] of player.pitchingStats.entries()) {
+    const sourceId = player.statSourceIds?.pitching[index] ?? NPB_SOURCE_ID;
+    provenance[`pitchingStats[${index}].raw`] =
+      sourceId === NPB_SOURCE_ID
+        ? scraped()
+        : {
+            sourceId,
+            method: "imported",
+            updatedAt: generatedAt,
+          };
+    provenance[`pitchingStats[${index}].totals`] = {
+      sourceId,
+      method: "normalized",
+      updatedAt: generatedAt,
+    };
+    provenance[`pitchingStats[${index}].metrics`] = calculated();
+  }
+  const generatedKeys = new Set(Object.keys(provenance));
+  const preservedProvenance = Object.fromEntries(
+    Object.entries(player.provenance ?? {}).filter(([key, value]) => {
+      if (!generatedKeys.has(key)) return true;
+      return (
+        value.sourceId !== NPB_SOURCE_ID &&
+        value.sourceId !== COMPUTED_SOURCE_ID
+      );
+    }),
+  );
+  return { ...provenance, ...preservedProvenance };
+}
+
+function createMeta(
+  player: EnrichedPlayer,
+  generatedAt: string,
+): PlayerApiDocument["meta"] {
+  return {
+    sources: createSources(player, generatedAt),
+    provenance: createProvenance(player, generatedAt),
+    generatedAt,
+  };
+}
 
 function writeValue<T>(value: T): string {
   return `${JSON.stringify(value, null, 2)}\n`;
@@ -127,7 +260,11 @@ function pitchingMetrics(value: ComputedPitchingSeason) {
 
 function createAttributes(player: EnrichedPlayer): PlayerApiAttributes {
   const name = parsePlayerName(player.playerName, player.kanaName);
-  const details = parsePlayerDetails(player.detailInfo);
+  const details =
+    player.profileDetails ?? parsePlayerDetails(player.detailInfo);
+  const rawDetails = player.sourceDetails ?? {
+    [NPB_SOURCE_ID]: player.detailInfo,
+  };
 
   return {
     profile: {
@@ -135,7 +272,7 @@ function createAttributes(player: EnrichedPlayer): PlayerApiAttributes {
       url: player.playerUrl,
       isActive: player.isActive,
       details,
-      rawDetails: player.detailInfo,
+      rawDetails,
     },
     battingStats: player.battingStats.map((row, index) => {
       const computed = player.computedStats.batting[index];
@@ -147,6 +284,7 @@ function createAttributes(player: EnrichedPlayer): PlayerApiAttributes {
       return {
         season: parseSeason(row),
         team: row.所属球団?.trim() || null,
+        sourceId: player.statSourceIds?.batting[index] ?? NPB_SOURCE_ID,
         raw: row,
         totals: battingTotals(row),
         metrics: battingMetrics(computed),
@@ -162,6 +300,7 @@ function createAttributes(player: EnrichedPlayer): PlayerApiAttributes {
       return {
         season: parseSeason(row),
         team: row.所属球団?.trim() || null,
+        sourceId: player.statSourceIds?.pitching[index] ?? NPB_SOURCE_ID,
         raw: row,
         totals: pitchingTotals(row),
         metrics: pitchingMetrics(computed),
@@ -205,13 +344,7 @@ export function toPlayerApiDocument(
         self: `/players/${player.id}.json`,
       },
     },
-    meta: {
-      source: {
-        name: "npb.jp",
-        url: player.playerUrl,
-      },
-      generatedAt,
-    },
+    meta: createMeta(player, generatedAt),
   };
 }
 
@@ -236,9 +369,20 @@ function fromDocument(document: PlayerApiDocument): EnrichedPlayer {
       "・",
     ),
     isActive: profile.isActive,
-    detailInfo: profile.rawDetails,
+    detailInfo:
+      profile.rawDetails[NPB_SOURCE_ID] ??
+      Object.values(profile.rawDetails)[0] ??
+      {},
+    profileDetails: profile.details,
+    sourceDetails: profile.rawDetails,
+    sources: document.meta.sources,
+    provenance: document.meta.provenance,
     battingStats: battingStats.map((row) => row.raw),
     pitchingStats: pitchingStats.map((row) => row.raw),
+    statSourceIds: {
+      batting: battingStats.map((row) => row.sourceId),
+      pitching: pitchingStats.map((row) => row.sourceId),
+    },
     computedStats: {
       batting: battingStats.map((row) => ({
         season: row.season,
@@ -271,11 +415,24 @@ function migrateLegacyDocument(
           url: legacyProfile.url,
           isActive: legacyProfile.isActive,
           details: parsePlayerDetails(legacyProfile.details),
-          rawDetails: legacyProfile.details,
+          rawDetails: { [NPB_SOURCE_ID]: legacyProfile.details },
         },
       },
     },
-    meta: document.meta,
+    meta: {
+      sources: [
+        {
+          id: NPB_SOURCE_ID,
+          kind: "official",
+          name: document.meta.source?.name ?? "NPB公式サイト",
+          ...(document.meta.source?.url
+            ? { url: document.meta.source.url }
+            : {}),
+        },
+      ],
+      provenance: {},
+      generatedAt: document.meta.generatedAt ?? "unknown",
+    },
   };
 }
 
@@ -298,20 +455,113 @@ function isPlayerDetails(value: unknown): value is PlayerDetails {
   );
 }
 
+function isFlatRawDetails(value: unknown): value is Record<string, string> {
+  if (!value || typeof value !== "object" || Array.isArray(value)) {
+    return false;
+  }
+  return Object.values(value).every((entry) => typeof entry === "string");
+}
+
+function isRawDetailsBySource(
+  value: unknown,
+): value is Record<string, Record<string, string>> {
+  if (!value || typeof value !== "object" || Array.isArray(value)) {
+    return false;
+  }
+  return Object.values(value).every((entry) => isFlatRawDetails(entry));
+}
+
+function normalizeRawDetails(
+  rawDetails: unknown,
+  details: unknown,
+): Record<string, Record<string, string>> {
+  if (isRawDetailsBySource(rawDetails) && Object.keys(rawDetails).length > 0) {
+    return rawDetails;
+  }
+  if (isFlatRawDetails(rawDetails)) {
+    return { [NPB_SOURCE_ID]: rawDetails };
+  }
+  if (isFlatRawDetails(details)) {
+    return { [NPB_SOURCE_ID]: details };
+  }
+  return {};
+}
+
+function primaryRawDetails(
+  rawDetails: Record<string, Record<string, string>>,
+): Record<string, string> {
+  return rawDetails[NPB_SOURCE_ID] ?? Object.values(rawDetails)[0] ?? {};
+}
+
+function normalizeMeta(
+  meta: unknown,
+  playerUrl: string,
+): PlayerApiDocument["meta"] {
+  if (!meta || typeof meta !== "object" || Array.isArray(meta)) {
+    return {
+      sources: [
+        {
+          id: NPB_SOURCE_ID,
+          kind: "official",
+          name: "NPB公式サイト",
+          url: playerUrl,
+        },
+      ],
+      provenance: {},
+      generatedAt: "unknown",
+    };
+  }
+  const candidate = meta as {
+    sources?: unknown;
+    provenance?: unknown;
+    generatedAt?: unknown;
+    source?: { name?: unknown; url?: unknown };
+  };
+  if (
+    Array.isArray(candidate.sources) &&
+    candidate.sources.every((source) => source && typeof source === "object") &&
+    candidate.provenance &&
+    typeof candidate.provenance === "object" &&
+    typeof candidate.generatedAt === "string"
+  ) {
+    return meta as PlayerApiDocument["meta"];
+  }
+  return {
+    sources: [
+      {
+        id: NPB_SOURCE_ID,
+        kind: "official",
+        name:
+          typeof candidate.source?.name === "string"
+            ? candidate.source.name
+            : "NPB公式サイト",
+        url:
+          typeof candidate.source?.url === "string"
+            ? candidate.source.url
+            : playerUrl,
+      },
+    ],
+    provenance: {},
+    generatedAt:
+      typeof candidate.generatedAt === "string"
+        ? candidate.generatedAt
+        : "unknown",
+  };
+}
+
 function migrateCurrentDocument(
   document: PlayerApiDocument,
 ): PlayerApiDocument {
   const profile = document.data.attributes
     .profile as PlayerApiAttributes["profile"] & {
-    rawDetails?: Record<string, string>;
-    details: PlayerDetails | Record<string, string>;
+    rawDetails?: unknown;
+    details: unknown;
   };
-  const rawDetails =
-    profile.rawDetails ??
-    (isPlayerDetails(profile.details) ? {} : profile.details);
+  const rawDetails = normalizeRawDetails(profile.rawDetails, profile.details);
+  const primaryDetails = primaryRawDetails(rawDetails);
   const details = isPlayerDetails(profile.details)
     ? profile.details
-    : parsePlayerDetails(rawDetails);
+    : parsePlayerDetails(primaryDetails);
 
   return {
     ...document,
@@ -326,6 +576,7 @@ function migrateCurrentDocument(
         },
       },
     },
+    meta: normalizeMeta(document.meta, profile.url),
   };
 }
 
@@ -365,10 +616,22 @@ export async function writePlayerDocuments(
       }))
       .sort((left, right) => left.id.localeCompare(right.id)),
     meta: {
-      source: {
-        name: "npb.jp",
-        url: "https://npb.jp/bis/players/",
-      },
+      sources: [
+        {
+          id: NPB_SOURCE_ID,
+          kind: "official",
+          name: "NPB公式サイト",
+          url: "https://npb.jp/bis/players/",
+          retrievedAt: generatedAt,
+        },
+        {
+          id: COMPUTED_SOURCE_ID,
+          kind: "computed",
+          name: "baseball-stats",
+          retrievedAt: generatedAt,
+        },
+      ],
+      provenance: {},
       generatedAt,
     },
   };

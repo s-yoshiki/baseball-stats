@@ -51,6 +51,7 @@ describe("player API JSON", () => {
           battingStats: [
             {
               season: 2024,
+              sourceId: "npb",
               raw: { 年度: "2024", 安打: "10" },
               totals: { hits: 10 },
               metrics: { battingAverage: 0.333 },
@@ -60,6 +61,17 @@ describe("player API JSON", () => {
         links: { self: "/players/test-player.json" },
       },
       meta: { generatedAt: "now" },
+    });
+    expect(document.data.attributes.profile.rawDetails).toEqual({
+      npb: { 所属球団: "テスト" },
+    });
+    expect(document.meta.sources.map((source) => source.id)).toEqual([
+      "npb",
+      "baseball-stats",
+    ]);
+    expect(document.meta.provenance["battingStats[0].metrics"]).toMatchObject({
+      sourceId: "baseball-stats",
+      method: "calculated",
     });
   });
 
@@ -91,7 +103,12 @@ describe("player API JSON", () => {
           links: { self: "/players/test-player.json" },
         },
       ]);
-      expect(await readPlayerDocuments(temporaryDirectory)).toEqual([enriched]);
+      const readPlayers = await readPlayerDocuments(temporaryDirectory);
+      expect(readPlayers).toHaveLength(1);
+      expect(readPlayers[0]).toMatchObject(enriched);
+      expect(readPlayers[0]?.sourceDetails).toEqual({
+        npb: { 所属球団: "テスト" },
+      });
     } finally {
       await rm(temporaryDirectory, { recursive: true, force: true });
     }
@@ -112,6 +129,42 @@ describe("player API JSON", () => {
       givenNameKana: "いちろう",
       registeredName: "イチロー",
       registeredNameKana: "いちろー",
+    });
+  });
+
+  it("keeps alternative source data when recalculating", () => {
+    const enriched = calculatePlayerStats({
+      ...player,
+      sourceDetails: {
+        npb: player.detailInfo,
+        "wikipedia-ja": { 身長: "180cm" },
+      },
+      sources: [
+        {
+          id: "wikipedia-ja",
+          kind: "encyclopedia",
+          name: "Wikipedia日本語版",
+        },
+      ],
+      provenance: {
+        "profile.details": {
+          sourceId: "wikipedia-ja",
+          method: "imported",
+          updatedAt: "now",
+        },
+      },
+    });
+    const document = toPlayerApiDocument(enriched, "later");
+
+    expect(document.data.attributes.profile.rawDetails["wikipedia-ja"]).toEqual(
+      { 身長: "180cm" },
+    );
+    expect(document.meta.sources.map((source) => source.id)).toContain(
+      "wikipedia-ja",
+    );
+    expect(document.meta.provenance["profile.details"]).toMatchObject({
+      sourceId: "wikipedia-ja",
+      method: "imported",
     });
   });
 });

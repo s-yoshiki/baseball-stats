@@ -13,6 +13,29 @@
         "url": "https://npb.jp/bis/players/01705130.html",
         "isActive": true,
         "details": {
+          "position": "内野手",
+          "throws": "右",
+          "bats": "左",
+          "heightCm": 178,
+          "weightKg": 84,
+          "birthDate": {
+            "iso": "1996-07-04",
+            "year": 1996,
+            "month": 7,
+            "day": 4
+          },
+          "career": {
+            "raw": "春江工",
+            "entries": ["春江工"]
+          },
+          "draft": {
+            "raw": "2014年ドラフト2位",
+            "year": 2014,
+            "rank": 2,
+            "selection": "regular"
+          }
+        },
+        "rawDetails": {
           "ポジション": "内野手",
           "投打": "右投左打",
           "身長／体重": "178cm／84kg",
@@ -657,6 +680,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01705130.html"
     },
-    "generatedAt": "2026-08-19T06:42:56.699Z"
+    "generatedAt": "2026-08-19T07:28:50.124Z"
   }
 }

@@ -13,6 +13,29 @@
         "url": "https://npb.jp/bis/players/01505151.html",
         "isActive": true,
         "details": {
+          "position": "投手",
+          "throws": "左",
+          "bats": "左",
+          "heightCm": 185,
+          "weightKg": 84,
+          "birthDate": {
+            "iso": "1997-12-14",
+            "year": 1997,
+            "month": 12,
+            "day": 14
+          },
+          "career": {
+            "raw": "土浦湖北高 - 仙台大",
+            "entries": ["土浦湖北高", "仙台大"]
+          },
+          "draft": {
+            "raw": "2019年育成選手ドラフト2位",
+            "year": 2019,
+            "rank": 2,
+            "selection": "development"
+          }
+        },
+        "rawDetails": {
           "ポジション": "投手",
           "投打": "左投左打",
           "身長／体重": "185cm／84kg",
@@ -786,6 +809,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01505151.html"
     },
-    "generatedAt": "2026-08-19T06:42:56.699Z"
+    "generatedAt": "2026-08-19T07:28:50.124Z"
   }
 }

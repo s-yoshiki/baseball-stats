@@ -12,7 +12,7 @@ data/players/<player-id>.json
 data/sqlite/baseball.sqlite
 ```
 
-`data/players/index.json` は選手一覧、`data/players/<player-id>.json` は1選手分のJSON APIリソースです。プロフィールには `familyName`、`givenName`、`familyNameKana`、`givenNameKana`、`registeredName`、`registeredNameKana` を持たせます。各リソースの `data.attributes.*Stats[].raw` にNPBから取得した行データを保持し、同じ要素の `totals` と `metrics` に数値化した集計値・OPS、ISO、BB%、K%、ERA、WHIP、K/9、BB/9、K/BBを追加します。SQLiteはWebアプリなどから検索しやすい形に正規化した再生成可能な出力です。
+`data/players/index.json` は選手一覧、`data/players/<player-id>.json` は1選手分のJSON APIリソースです。プロフィールには `familyName`、`givenName`、`familyNameKana`、`givenNameKana`、`registeredName`、`registeredNameKana` を持たせます。`details` には投打、身長・体重、生年月日、経歴、ドラフトを構造化して保存し、NPBの原表記は `rawDetails` に保持します。各リソースの `data.attributes.*Stats[].raw` にNPBから取得した行データを保持し、同じ要素の `totals` と `metrics` に数値化した集計値・OPS、ISO、BB%、K%、ERA、WHIP、K/9、BB/9、K/BBを追加します。SQLiteはWebアプリなどから検索しやすい形に正規化した再生成可能な出力です。
 
 ## Setup
 

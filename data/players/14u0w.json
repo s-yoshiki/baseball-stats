@@ -13,6 +13,29 @@
         "url": "https://npb.jp/bis/players/01905152.html",
         "isActive": true,
         "details": {
+          "position": "内野手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 180,
+          "weightKg": 90,
+          "birthDate": {
+            "iso": "2007-06-30",
+            "year": 2007,
+            "month": 6,
+            "day": 30
+          },
+          "career": {
+            "raw": "昌平高",
+            "entries": ["昌平高"]
+          },
+          "draft": {
+            "raw": "2025年ドラフト4位",
+            "year": 2025,
+            "rank": 4,
+            "selection": "regular"
+          }
+        },
+        "rawDetails": {
           "ポジション": "内野手",
           "投打": "右投右打",
           "身長／体重": "180cm／90kg",
@@ -135,6 +158,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01905152.html"
     },
-    "generatedAt": "2026-08-19T06:42:56.699Z"
+    "generatedAt": "2026-08-19T07:28:50.124Z"
   }
 }

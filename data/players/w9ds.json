@@ -13,6 +13,29 @@
         "url": "https://npb.jp/bis/players/01505152.html",
         "isActive": true,
         "details": {
+          "position": "捕手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 172,
+          "weightKg": 77,
+          "birthDate": {
+            "iso": "2007-05-03",
+            "year": 2007,
+            "month": 5,
+            "day": 3
+          },
+          "career": {
+            "raw": "富島高",
+            "entries": ["富島高"]
+          },
+          "draft": {
+            "raw": "2025年ドラフト6位",
+            "year": 2025,
+            "rank": 6,
+            "selection": "regular"
+          }
+        },
+        "rawDetails": {
           "ポジション": "捕手",
           "投打": "右投右打",
           "身長／体重": "172cm／77kg",
@@ -76,6 +99,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01505152.html"
     },
-    "generatedAt": "2026-08-19T06:42:56.699Z"
+    "generatedAt": "2026-08-19T07:28:50.124Z"
   }
 }

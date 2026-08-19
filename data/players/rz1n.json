@@ -13,6 +13,29 @@
         "url": "https://npb.jp/bis/players/01305131.html",
         "isActive": true,
         "details": {
+          "position": "外野手",
+          "throws": "左",
+          "bats": "左",
+          "heightCm": 176,
+          "weightKg": 75,
+          "birthDate": {
+            "iso": "1985-11-09",
+            "year": 1985,
+            "month": 11,
+            "day": 9
+          },
+          "career": {
+            "raw": "享栄高 - 駒沢大 - 日本生命",
+            "entries": ["享栄高", "駒沢大", "日本生命"]
+          },
+          "draft": {
+            "raw": "2009年ドラフト5位",
+            "year": 2009,
+            "rank": 5,
+            "selection": "regular"
+          }
+        },
+        "rawDetails": {
           "ポジション": "外野手",
           "投打": "左投左打",
           "身長／体重": "176cm／75kg",
@@ -1063,6 +1086,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01305131.html"
     },
-    "generatedAt": "2026-08-19T06:42:56.699Z"
+    "generatedAt": "2026-08-19T07:28:50.124Z"
   }
 }

@@ -13,6 +13,34 @@
         "url": "https://npb.jp/bis/players/01905159.html",
         "isActive": true,
         "details": {
+          "position": "投手",
+          "throws": "左",
+          "bats": "左",
+          "heightCm": 193,
+          "weightKg": 94,
+          "birthDate": {
+            "iso": "2001-06-12",
+            "year": 2001,
+            "month": 6,
+            "day": 12
+          },
+          "career": {
+            "raw": "ジョンオリバー高 - コチス短大 - メアリー大 - 四国・徳島",
+            "entries": [
+              "ジョンオリバー高",
+              "コチス短大",
+              "メアリー大",
+              "四国・徳島"
+            ]
+          },
+          "draft": {
+            "raw": "2023年育成選手ドラフト1位",
+            "year": 2023,
+            "rank": 1,
+            "selection": "development"
+          }
+        },
+        "rawDetails": {
           "ポジション": "投手",
           "投打": "左投左打",
           "身長／体重": "193cm／94kg",
@@ -76,6 +104,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01905159.html"
     },
-    "generatedAt": "2026-08-19T06:42:56.699Z"
+    "generatedAt": "2026-08-19T07:28:50.124Z"
   }
 }

@@ -13,6 +13,33 @@
         "url": "https://npb.jp/bis/players/03305157.html",
         "isActive": true,
         "details": {
+          "position": "外野手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 179,
+          "weightKg": 95,
+          "birthDate": {
+            "iso": "1999-05-28",
+            "year": 1999,
+            "month": 5,
+            "day": 28
+          },
+          "career": {
+            "raw": "ブリタニア高 - コルビーコミュニティカレッジ - テキサス大タイラー校中退",
+            "entries": [
+              "ブリタニア高",
+              "コルビーコミュニティカレッジ",
+              "テキサス大タイラー校中退"
+            ]
+          },
+          "draft": {
+            "raw": "2022年育成選手ドラフト3位",
+            "year": 2022,
+            "rank": 3,
+            "selection": "development"
+          }
+        },
+        "rawDetails": {
           "ポジション": "外野手",
           "投打": "右投右打",
           "身長／体重": "179cm／95kg",
@@ -76,6 +103,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/03305157.html"
     },
-    "generatedAt": "2026-08-19T06:42:56.699Z"
+    "generatedAt": "2026-08-19T07:28:50.124Z"
   }
 }

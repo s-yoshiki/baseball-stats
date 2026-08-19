@@ -13,6 +13,29 @@
         "url": "https://npb.jp/bis/players/03105150.html",
         "isActive": true,
         "details": {
+          "position": "内野手",
+          "throws": "右",
+          "bats": "左",
+          "heightCm": 188,
+          "weightKg": 93,
+          "birthDate": {
+            "iso": "2006-12-25",
+            "year": 2006,
+            "month": 12,
+            "day": 25
+          },
+          "career": {
+            "raw": "桐光学園高",
+            "entries": ["桐光学園高"]
+          },
+          "draft": {
+            "raw": "2024年ドラフト3位",
+            "year": 2024,
+            "rank": 3,
+            "selection": "regular"
+          }
+        },
+        "rawDetails": {
           "ポジション": "内野手",
           "投打": "右投左打",
           "身長／体重": "188cm／93kg",
@@ -135,6 +158,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/03105150.html"
     },
-    "generatedAt": "2026-08-19T06:42:56.699Z"
+    "generatedAt": "2026-08-19T07:28:50.124Z"
   }
 }

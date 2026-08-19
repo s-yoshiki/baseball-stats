@@ -13,6 +13,29 @@
         "url": "https://npb.jp/bis/players/03505132.html",
         "isActive": true,
         "details": {
+          "position": "投手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 196,
+          "weightKg": 106,
+          "birthDate": {
+            "iso": "1988-01-10",
+            "year": 1988,
+            "month": 1,
+            "day": 10
+          },
+          "career": {
+            "raw": "ディビナプロビデンシア校 - カブス",
+            "entries": ["ディビナプロビデンシア校", "カブス"]
+          },
+          "draft": {
+            "raw": null,
+            "year": null,
+            "rank": null,
+            "selection": null
+          }
+        },
+        "rawDetails": {
           "ポジション": "投手",
           "投打": "右投右打",
           "身長／体重": "196cm／106kg",
@@ -786,6 +809,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/03505132.html"
     },
-    "generatedAt": "2026-08-19T06:42:56.699Z"
+    "generatedAt": "2026-08-19T07:28:50.124Z"
   }
 }

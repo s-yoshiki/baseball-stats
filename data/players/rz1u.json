@@ -13,6 +13,29 @@
         "url": "https://npb.jp/bis/players/01305138.html",
         "isActive": true,
         "details": {
+          "position": "投手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 181,
+          "weightKg": 76,
+          "birthDate": {
+            "iso": "1994-02-03",
+            "year": 1994,
+            "month": 2,
+            "day": 3
+          },
+          "career": {
+            "raw": "桐陽高 - 日本体育大 - 新日鉄住金鹿島",
+            "entries": ["桐陽高", "日本体育大", "新日鉄住金鹿島"]
+          },
+          "draft": {
+            "raw": "2018年ドラフト3位",
+            "year": 2018,
+            "rank": 3,
+            "selection": "regular"
+          }
+        },
+        "rawDetails": {
           "ポジション": "投手",
           "投打": "右投右打",
           "身長／体重": "181cm／76kg",
@@ -904,6 +927,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01305138.html"
     },
-    "generatedAt": "2026-08-19T06:42:56.699Z"
+    "generatedAt": "2026-08-19T07:28:50.124Z"
   }
 }

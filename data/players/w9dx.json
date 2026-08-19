@@ -13,6 +13,29 @@
         "url": "https://npb.jp/bis/players/01505157.html",
         "isActive": true,
         "details": {
+          "position": "内野手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 182,
+          "weightKg": 90,
+          "birthDate": {
+            "iso": "2000-12-18",
+            "year": 2000,
+            "month": 12,
+            "day": 18
+          },
+          "career": {
+            "raw": "近江高 - 中央大",
+            "entries": ["近江高", "中央大"]
+          },
+          "draft": {
+            "raw": "2022年ドラフト5位",
+            "year": 2022,
+            "rank": 5,
+            "selection": "regular"
+          }
+        },
+        "rawDetails": {
           "ポジション": "内野手",
           "投打": "右投右打",
           "身長／体重": "182cm／90kg",
@@ -251,6 +274,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01505157.html"
     },
-    "generatedAt": "2026-08-19T06:42:56.699Z"
+    "generatedAt": "2026-08-19T07:28:50.124Z"
   }
 }

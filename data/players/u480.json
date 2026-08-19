@@ -13,6 +13,29 @@
         "url": "https://npb.jp/bis/players/01405152.html",
         "isActive": true,
         "details": {
+          "position": "内野手",
+          "throws": "右",
+          "bats": "左",
+          "heightCm": 184,
+          "weightKg": 77,
+          "birthDate": {
+            "iso": "2007-12-28",
+            "year": 2007,
+            "month": 12,
+            "day": 28
+          },
+          "career": {
+            "raw": "神村学園高伊賀",
+            "entries": ["神村学園高伊賀"]
+          },
+          "draft": {
+            "raw": "2025年ドラフト6位",
+            "year": 2025,
+            "rank": 6,
+            "selection": "regular"
+          }
+        },
+        "rawDetails": {
           "ポジション": "内野手",
           "投打": "右投左打",
           "身長／体重": "184cm／77kg",
@@ -135,6 +158,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01405152.html"
     },
-    "generatedAt": "2026-08-19T06:42:56.699Z"
+    "generatedAt": "2026-08-19T07:28:50.124Z"
   }
 }

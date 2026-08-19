@@ -13,6 +13,29 @@
         "url": "https://npb.jp/bis/players/03505136.html",
         "isActive": true,
         "details": {
+          "position": "内野手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 185,
+          "weightKg": 97,
+          "birthDate": {
+            "iso": "1989-02-28",
+            "year": 1989,
+            "month": 2,
+            "day": 28
+          },
+          "career": {
+            "raw": "マリスタデグアイナボ高 - レッズ",
+            "entries": ["マリスタデグアイナボ高", "レッズ"]
+          },
+          "draft": {
+            "raw": null,
+            "year": null,
+            "rank": null,
+            "selection": null
+          }
+        },
+        "rawDetails": {
           "ポジション": "内野手",
           "投打": "右投右打",
           "身長／体重": "185cm／97kg",
@@ -599,6 +622,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/03505136.html"
     },
-    "generatedAt": "2026-08-19T06:42:56.699Z"
+    "generatedAt": "2026-08-19T07:28:50.124Z"
   }
 }

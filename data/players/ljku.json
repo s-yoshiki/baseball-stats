@@ -13,6 +13,29 @@
         "url": "https://npb.jp/bis/players/01005150.html",
         "isActive": true,
         "details": {
+          "position": "外野手",
+          "throws": null,
+          "bats": null,
+          "heightCm": 170,
+          "weightKg": 68,
+          "birthDate": {
+            "iso": "2006-07-30",
+            "year": 2006,
+            "month": 7,
+            "day": 30
+          },
+          "career": {
+            "raw": "京都国際高",
+            "entries": ["京都国際高"]
+          },
+          "draft": {
+            "raw": "2024年育成選手ドラフト5位",
+            "year": 2024,
+            "rank": 5,
+            "selection": "development"
+          }
+        },
+        "rawDetails": {
           "ポジション": "外野手",
           "投打": "右投両打",
           "身長／体重": "170cm／68kg",
@@ -76,6 +99,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01005150.html"
     },
-    "generatedAt": "2026-08-19T06:42:56.699Z"
+    "generatedAt": "2026-08-19T07:28:50.124Z"
   }
 }

@@ -13,6 +13,29 @@
         "url": "https://npb.jp/bis/players/01905151.html",
         "isActive": true,
         "details": {
+          "position": "内野手",
+          "throws": "右",
+          "bats": "左",
+          "heightCm": 182,
+          "weightKg": 86,
+          "birthDate": {
+            "iso": "2001-04-17",
+            "year": 2001,
+            "month": 4,
+            "day": 17
+          },
+          "career": {
+            "raw": "智弁和歌山高",
+            "entries": ["智弁和歌山高"]
+          },
+          "draft": {
+            "raw": "2019年ドラフト2位",
+            "year": 2019,
+            "rank": 2,
+            "selection": "regular"
+          }
+        },
+        "rawDetails": {
           "ポジション": "内野手",
           "投打": "右投左打",
           "身長／体重": "182cm／86kg",
@@ -483,6 +506,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01905151.html"
     },
-    "generatedAt": "2026-08-19T06:42:56.699Z"
+    "generatedAt": "2026-08-19T07:28:50.124Z"
   }
 }

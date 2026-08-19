@@ -13,6 +13,29 @@
         "url": "https://npb.jp/bis/players/03005157.html",
         "isActive": true,
         "details": {
+          "position": "投手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 190,
+          "weightKg": 95,
+          "birthDate": {
+            "iso": "2000-02-15",
+            "year": 2000,
+            "month": 2,
+            "day": 15
+          },
+          "career": {
+            "raw": "ビタリーナモルダンデクルーズ校 - ブルージェイズ",
+            "entries": ["ビタリーナモルダンデクルーズ校", "ブルージェイズ"]
+          },
+          "draft": {
+            "raw": null,
+            "year": null,
+            "rank": null,
+            "selection": null
+          }
+        },
+        "rawDetails": {
           "ポジション": "投手",
           "投打": "右投右打",
           "身長／体重": "190cm／95kg",
@@ -196,6 +219,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/03005157.html"
     },
-    "generatedAt": "2026-08-19T06:42:56.699Z"
+    "generatedAt": "2026-08-19T07:28:50.124Z"
   }
 }

@@ -13,6 +13,29 @@
         "url": "https://npb.jp/bis/players/01005134.html",
         "isActive": true,
         "details": {
+          "position": "投手",
+          "throws": "左",
+          "bats": "左",
+          "heightCm": 182,
+          "weightKg": 91,
+          "birthDate": {
+            "iso": "1998-09-27",
+            "year": 1998,
+            "month": 9,
+            "day": 27
+          },
+          "career": {
+            "raw": "花咲徳栄高",
+            "entries": ["花咲徳栄高"]
+          },
+          "draft": {
+            "raw": "2016年ドラフト2位",
+            "year": 2016,
+            "rank": 2,
+            "selection": "regular"
+          }
+        },
+        "rawDetails": {
           "ポジション": "投手",
           "投打": "左投左打",
           "身長／体重": "182cm／91kg",
@@ -550,6 +573,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01005134.html"
     },
-    "generatedAt": "2026-08-19T06:42:56.699Z"
+    "generatedAt": "2026-08-19T07:28:50.124Z"
   }
 }

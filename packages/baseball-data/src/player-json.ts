@@ -1,6 +1,7 @@
 import { mkdir, readdir, readFile, rename, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { parseInnings, parseSeason, toNumber } from "./parse-values.js";
+import { parsePlayerDetails } from "./player-details.js";
 import { parsePlayerName } from "./player-name.js";
 import type {
   BattingTotals,
@@ -13,6 +14,7 @@ import type {
   PlayerApiDocument,
   PlayerApiIndexDocument,
   PlayerApiPitchingStat,
+  PlayerDetails,
 } from "./types.js";
 
 type LegacyPlayerApiDocument = {
@@ -125,13 +127,15 @@ function pitchingMetrics(value: ComputedPitchingSeason) {
 
 function createAttributes(player: EnrichedPlayer): PlayerApiAttributes {
   const name = parsePlayerName(player.playerName, player.kanaName);
+  const details = parsePlayerDetails(player.detailInfo);
 
   return {
     profile: {
       ...name,
       url: player.playerUrl,
       isActive: player.isActive,
-      details: player.detailInfo,
+      details,
+      rawDetails: player.detailInfo,
     },
     battingStats: player.battingStats.map((row, index) => {
       const computed = player.computedStats.batting[index];
@@ -232,7 +236,7 @@ function fromDocument(document: PlayerApiDocument): EnrichedPlayer {
       "・",
     ),
     isActive: profile.isActive,
-    detailInfo: profile.details,
+    detailInfo: profile.rawDetails,
     battingStats: battingStats.map((row) => row.raw),
     pitchingStats: pitchingStats.map((row) => row.raw),
     computedStats: {
@@ -266,11 +270,62 @@ function migrateLegacyDocument(
           ...name,
           url: legacyProfile.url,
           isActive: legacyProfile.isActive,
-          details: legacyProfile.details,
+          details: parsePlayerDetails(legacyProfile.details),
+          rawDetails: legacyProfile.details,
         },
       },
     },
     meta: document.meta,
+  };
+}
+
+function isPlayerDetails(value: unknown): value is PlayerDetails {
+  if (!value || typeof value !== "object") {
+    return false;
+  }
+  const details = value as {
+    birthDate?: unknown;
+    career?: unknown;
+    draft?: unknown;
+  };
+  return Boolean(
+    details.birthDate &&
+      typeof details.birthDate === "object" &&
+      details.career &&
+      typeof details.career === "object" &&
+      details.draft &&
+      typeof details.draft === "object",
+  );
+}
+
+function migrateCurrentDocument(
+  document: PlayerApiDocument,
+): PlayerApiDocument {
+  const profile = document.data.attributes
+    .profile as PlayerApiAttributes["profile"] & {
+    rawDetails?: Record<string, string>;
+    details: PlayerDetails | Record<string, string>;
+  };
+  const rawDetails =
+    profile.rawDetails ??
+    (isPlayerDetails(profile.details) ? {} : profile.details);
+  const details = isPlayerDetails(profile.details)
+    ? profile.details
+    : parsePlayerDetails(rawDetails);
+
+  return {
+    ...document,
+    data: {
+      ...document.data,
+      attributes: {
+        ...document.data.attributes,
+        profile: {
+          ...profile,
+          details,
+          rawDetails,
+        },
+      },
+    },
   };
 }
 
@@ -350,7 +405,9 @@ export async function readPlayerDocuments(
       throw new Error(`Unsupported player document: ${filePath}`);
     }
     if (typeof profile.registeredName === "string") {
-      players.push(fromDocument(parsed as PlayerApiDocument));
+      players.push(
+        fromDocument(migrateCurrentDocument(parsed as PlayerApiDocument)),
+      );
       continue;
     }
     if (typeof profile.name === "string" && typeof profile.kana === "string") {

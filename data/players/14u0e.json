@@ -13,6 +13,29 @@
         "url": "https://npb.jp/bis/players/01905134.html",
         "isActive": true,
         "details": {
+          "position": "投手",
+          "throws": "右",
+          "bats": "左",
+          "heightCm": 178,
+          "weightKg": 96,
+          "birthDate": {
+            "iso": "1994-04-27",
+            "year": 1994,
+            "month": 4,
+            "day": 27
+          },
+          "career": {
+            "raw": "大阪桐蔭高 - 立教大",
+            "entries": ["大阪桐蔭高", "立教大"]
+          },
+          "draft": {
+            "raw": "2016年ドラフト8位",
+            "year": 2016,
+            "rank": 8,
+            "selection": "regular"
+          }
+        },
+        "rawDetails": {
           "ポジション": "投手",
           "投打": "右投左打",
           "身長／体重": "178cm／96kg",
@@ -1140,6 +1163,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01905134.html"
     },
-    "generatedAt": "2026-08-19T06:42:56.699Z"
+    "generatedAt": "2026-08-19T07:28:50.124Z"
   }
 }

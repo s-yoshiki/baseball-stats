@@ -13,6 +13,29 @@
         "url": "https://npb.jp/bis/players/03105152.html",
         "isActive": true,
         "details": {
+          "position": "外野手",
+          "throws": "右",
+          "bats": "左",
+          "heightCm": 174,
+          "weightKg": 67,
+          "birthDate": {
+            "iso": "2002-12-01",
+            "year": 2002,
+            "month": 12,
+            "day": 1
+          },
+          "career": {
+            "raw": "九州文化学園高 - 関西・兵庫",
+            "entries": ["九州文化学園高", "関西・兵庫"]
+          },
+          "draft": {
+            "raw": "2025年育成選手ドラフト2位",
+            "year": 2025,
+            "rank": 2,
+            "selection": "development"
+          }
+        },
+        "rawDetails": {
           "ポジション": "外野手",
           "投打": "右投左打",
           "身長／体重": "174cm／67kg",
@@ -76,6 +99,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/03105152.html"
     },
-    "generatedAt": "2026-08-19T06:42:56.699Z"
+    "generatedAt": "2026-08-19T07:28:50.124Z"
   }
 }

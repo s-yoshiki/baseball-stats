@@ -13,6 +13,29 @@
         "url": "https://npb.jp/bis/players/01705155.html",
         "isActive": true,
         "details": {
+          "position": "投手",
+          "throws": "左",
+          "bats": "左",
+          "heightCm": 179,
+          "weightKg": 92,
+          "birthDate": {
+            "iso": "1999-06-20",
+            "year": 1999,
+            "month": 6,
+            "day": 20
+          },
+          "career": {
+            "raw": "本庄東高 - 新潟医療福祉大",
+            "entries": ["本庄東高", "新潟医療福祉大"]
+          },
+          "draft": {
+            "raw": "2021年ドラフト3位",
+            "year": 2021,
+            "rank": 3,
+            "selection": "regular"
+          }
+        },
+        "rawDetails": {
           "ポジション": "投手",
           "投打": "左投左打",
           "身長／体重": "179cm／92kg",
@@ -668,6 +691,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01705155.html"
     },
-    "generatedAt": "2026-08-19T06:42:56.699Z"
+    "generatedAt": "2026-08-19T07:28:50.124Z"
   }
 }

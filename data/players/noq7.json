@@ -13,6 +13,29 @@
         "url": "https://npb.jp/bis/players/01105135.html",
         "isActive": true,
         "details": {
+          "position": "外野手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 178,
+          "weightKg": 80,
+          "birthDate": {
+            "iso": "1993-04-27",
+            "year": 1993,
+            "month": 4,
+            "day": 27
+          },
+          "career": {
+            "raw": "東大阪大柏原高",
+            "entries": ["東大阪大柏原高"]
+          },
+          "draft": {
+            "raw": "2011年ドラフト3位",
+            "year": 2011,
+            "rank": 3,
+            "selection": "regular"
+          }
+        },
+        "rawDetails": {
           "ポジション": "外野手",
           "投打": "右投右打",
           "身長／体重": "178cm／80kg",
@@ -889,6 +912,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01105135.html"
     },
-    "generatedAt": "2026-08-19T06:42:56.699Z"
+    "generatedAt": "2026-08-19T07:28:50.124Z"
   }
 }

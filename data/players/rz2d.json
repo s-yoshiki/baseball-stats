@@ -13,6 +13,29 @@
         "url": "https://npb.jp/bis/players/01305157.html",
         "isActive": true,
         "details": {
+          "position": "投手",
+          "throws": "右",
+          "bats": "左",
+          "heightCm": 175,
+          "weightKg": 67,
+          "birthDate": {
+            "iso": "1999-01-13",
+            "year": 1999,
+            "month": 1,
+            "day": 13
+          },
+          "career": {
+            "raw": "九州産大九州高 - 帝京大 - 日本製鉄鹿島",
+            "entries": ["九州産大九州高", "帝京大", "日本製鉄鹿島"]
+          },
+          "draft": {
+            "raw": "2022年ドラフト2位",
+            "year": 2022,
+            "rank": 2,
+            "selection": "regular"
+          }
+        },
+        "rawDetails": {
           "ポジション": "投手",
           "投打": "右投左打",
           "身長／体重": "175cm／67kg",
@@ -550,6 +573,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01305157.html"
     },
-    "generatedAt": "2026-08-19T06:42:56.699Z"
+    "generatedAt": "2026-08-19T07:28:50.124Z"
   }
 }

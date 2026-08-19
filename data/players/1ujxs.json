@@ -13,6 +13,29 @@
         "url": "https://npb.jp/bis/players/03105136.html",
         "isActive": true,
         "details": {
+          "position": "投手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 167,
+          "weightKg": 84,
+          "birthDate": {
+            "iso": "2000-01-31",
+            "year": 2000,
+            "month": 1,
+            "day": 31
+          },
+          "career": {
+            "raw": "市立西宮高",
+            "entries": ["市立西宮高"]
+          },
+          "draft": {
+            "raw": "2017年ドラフト6位",
+            "year": 2017,
+            "rank": 6,
+            "selection": "regular"
+          }
+        },
+        "rawDetails": {
           "ポジション": "投手",
           "投打": "右投右打",
           "身長／体重": "167cm／84kg",
@@ -1258,6 +1281,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/03105136.html"
     },
-    "generatedAt": "2026-08-19T06:42:56.699Z"
+    "generatedAt": "2026-08-19T07:28:50.124Z"
   }
 }

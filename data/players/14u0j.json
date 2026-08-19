@@ -13,6 +13,29 @@
         "url": "https://npb.jp/bis/players/01905139.html",
         "isActive": true,
         "details": {
+          "position": "投手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 180,
+          "weightKg": 80,
+          "birthDate": {
+            "iso": "1995-07-12",
+            "year": 1995,
+            "month": 7,
+            "day": 12
+          },
+          "career": {
+            "raw": "北山高",
+            "entries": ["北山高"]
+          },
+          "draft": {
+            "raw": "2013年ドラフト5位",
+            "year": 2013,
+            "rank": 5,
+            "selection": "regular"
+          }
+        },
+        "rawDetails": {
           "ポジション": "投手",
           "投打": "右投右打",
           "身長／体重": "180cm／80kg",
@@ -1258,6 +1281,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01905139.html"
     },
-    "generatedAt": "2026-08-19T06:42:56.699Z"
+    "generatedAt": "2026-08-19T07:28:50.124Z"
   }
 }

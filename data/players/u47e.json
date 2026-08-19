@@ -13,6 +13,29 @@
         "url": "https://npb.jp/bis/players/01405130.html",
         "isActive": true,
         "details": {
+          "position": "外野手",
+          "throws": "右",
+          "bats": "左",
+          "heightCm": 182,
+          "weightKg": 87,
+          "birthDate": {
+            "iso": "1993-01-28",
+            "year": 1993,
+            "month": 1,
+            "day": 28
+          },
+          "career": {
+            "raw": "村野工 - 中部学院大",
+            "entries": ["村野工", "中部学院大"]
+          },
+          "draft": {
+            "raw": "2014年ドラフト1位",
+            "year": 2014,
+            "rank": 1,
+            "selection": "regular"
+          }
+        },
+        "rawDetails": {
           "ポジション": "外野手",
           "投打": "右投左打",
           "身長／体重": "182cm／87kg",
@@ -773,6 +796,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01405130.html"
     },
-    "generatedAt": "2026-08-19T06:42:56.699Z"
+    "generatedAt": "2026-08-19T07:28:50.124Z"
   }
 }

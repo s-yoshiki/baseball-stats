@@ -74,6 +74,30 @@ export type PlayerName = {
   registeredNameKana: string;
 };
 
+export type PlayerDetails = {
+  position: string | null;
+  throws: string | null;
+  bats: string | null;
+  heightCm: number | null;
+  weightKg: number | null;
+  birthDate: {
+    iso: string | null;
+    year: number | null;
+    month: number | null;
+    day: number | null;
+  };
+  career: {
+    raw: string | null;
+    entries: string[];
+  };
+  draft: {
+    raw: string | null;
+    year: number | null;
+    rank: number | null;
+    selection: "regular" | "development" | "outside" | null;
+  };
+};
+
 export type ComputedBattingSeason = {
   season: number | null;
   team: string | null;
@@ -239,7 +263,8 @@ export type PlayerApiAttributes = {
     registeredNameKana: PlayerName["registeredNameKana"];
     url: string;
     isActive: boolean;
-    details: Record<string, string>;
+    details: PlayerDetails;
+    rawDetails: Record<string, string>;
   };
   battingStats: PlayerApiBattingStat[];
   pitchingStats: PlayerApiPitchingStat[];

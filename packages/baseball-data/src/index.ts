@@ -8,6 +8,7 @@ export {
   subtractNullable,
   toNumber,
 } from "./parse-values.js";
+export { parsePlayerDetails } from "./player-details.js";
 export {
   readPlayerDocuments,
   toPlayerApiDocument,

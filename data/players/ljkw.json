@@ -13,6 +13,29 @@
         "url": "https://npb.jp/bis/players/01005152.html",
         "isActive": true,
         "details": {
+          "position": "外野手",
+          "throws": "左",
+          "bats": "左",
+          "heightCm": 171,
+          "weightKg": 65,
+          "birthDate": {
+            "iso": "2003-11-22",
+            "year": 2003,
+            "month": 11,
+            "day": 22
+          },
+          "career": {
+            "raw": "愛知産大三河高 - 愛知学院大",
+            "entries": ["愛知産大三河高", "愛知学院大"]
+          },
+          "draft": {
+            "raw": "2025年育成選手ドラフト3位",
+            "year": 2025,
+            "rank": 3,
+            "selection": "development"
+          }
+        },
+        "rawDetails": {
           "ポジション": "外野手",
           "投打": "左投左打",
           "身長／体重": "171cm／65kg",
@@ -76,6 +99,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01005152.html"
     },
-    "generatedAt": "2026-08-19T06:42:56.699Z"
+    "generatedAt": "2026-08-19T07:28:50.124Z"
   }
 }

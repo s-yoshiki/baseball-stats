@@ -13,6 +13,29 @@
         "url": "https://npb.jp/bis/players/03305153.html",
         "isActive": true,
         "details": {
+          "position": "投手",
+          "throws": "右",
+          "bats": "左",
+          "heightCm": 181,
+          "weightKg": 81,
+          "birthDate": {
+            "iso": "1998-10-10",
+            "year": 1998,
+            "month": 10,
+            "day": 10
+          },
+          "career": {
+            "raw": "明石商 - 東海大",
+            "entries": ["明石商", "東海大"]
+          },
+          "draft": {
+            "raw": "2020年ドラフト2位",
+            "year": 2020,
+            "rank": 2,
+            "selection": "regular"
+          }
+        },
+        "rawDetails": {
           "ポジション": "投手",
           "投打": "右投左打",
           "身長／体重": "181cm／81kg",
@@ -668,6 +691,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/03305153.html"
     },
-    "generatedAt": "2026-08-19T06:42:56.699Z"
+    "generatedAt": "2026-08-19T07:28:50.124Z"
   }
 }

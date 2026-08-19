@@ -13,6 +13,29 @@
         "url": "https://npb.jp/bis/players/01105157.html",
         "isActive": true,
         "details": {
+          "position": "投手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 186,
+          "weightKg": 101,
+          "birthDate": {
+            "iso": "2004-11-13",
+            "year": 2004,
+            "month": 11,
+            "day": 13
+          },
+          "career": {
+            "raw": "常葉大菊川高",
+            "entries": ["常葉大菊川高"]
+          },
+          "draft": {
+            "raw": "2022年ドラフト4位",
+            "year": 2022,
+            "rank": 4,
+            "selection": "regular"
+          }
+        },
+        "rawDetails": {
           "ポジション": "投手",
           "投打": "右投右打",
           "身長／体重": "186cm／101kg",
@@ -76,6 +99,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01105157.html"
     },
-    "generatedAt": "2026-08-19T06:42:56.699Z"
+    "generatedAt": "2026-08-19T07:28:50.124Z"
   }
 }

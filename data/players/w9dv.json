@@ -13,6 +13,29 @@
         "url": "https://npb.jp/bis/players/01505155.html",
         "isActive": true,
         "details": {
+          "position": "内野手",
+          "throws": "右",
+          "bats": "左",
+          "heightCm": 167,
+          "weightKg": 73,
+          "birthDate": {
+            "iso": "1997-01-12",
+            "year": 1997,
+            "month": 1,
+            "day": 12
+          },
+          "career": {
+            "raw": "倉敷商 - 日本大 - NTT東日本",
+            "entries": ["倉敷商", "日本大", "NTT東日本"]
+          },
+          "draft": {
+            "raw": "2021年ドラフト9位",
+            "year": 2021,
+            "rank": 9,
+            "selection": "regular"
+          }
+        },
+        "rawDetails": {
           "ポジション": "内野手",
           "投打": "右投左打",
           "身長／体重": "167cm／73kg",
@@ -367,6 +390,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01505155.html"
     },
-    "generatedAt": "2026-08-19T06:42:56.699Z"
+    "generatedAt": "2026-08-19T07:28:50.124Z"
   }
 }

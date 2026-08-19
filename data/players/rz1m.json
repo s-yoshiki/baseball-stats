@@ -13,6 +13,29 @@
         "url": "https://npb.jp/bis/players/01305130.html",
         "isActive": true,
         "details": {
+          "position": "内野手",
+          "throws": null,
+          "bats": null,
+          "heightCm": 175,
+          "weightKg": 69,
+          "birthDate": {
+            "iso": "1996-04-19",
+            "year": 1996,
+            "month": 4,
+            "day": 19
+          },
+          "career": {
+            "raw": "近江高",
+            "entries": ["近江高"]
+          },
+          "draft": {
+            "raw": "2014年ドラフト5位",
+            "year": 2014,
+            "rank": 5,
+            "selection": "regular"
+          }
+        },
+        "rawDetails": {
           "ポジション": "内野手",
           "投打": "右投両打",
           "身長／体重": "175cm／69kg",
@@ -715,6 +738,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01305130.html"
     },
-    "generatedAt": "2026-08-19T06:42:56.699Z"
+    "generatedAt": "2026-08-19T07:28:50.124Z"
   }
 }

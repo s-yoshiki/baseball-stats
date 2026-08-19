@@ -13,6 +13,29 @@
         "url": "https://npb.jp/bis/players/01205150.html",
         "isActive": true,
         "details": {
+          "position": "内野手",
+          "throws": "右",
+          "bats": "左",
+          "heightCm": 176,
+          "weightKg": 74,
+          "birthDate": {
+            "iso": "2002-10-02",
+            "year": 2002,
+            "month": 10,
+            "day": 2
+          },
+          "career": {
+            "raw": "横浜高 - 神奈川大",
+            "entries": ["横浜高", "神奈川大"]
+          },
+          "draft": {
+            "raw": "2024年ドラフト2位",
+            "year": 2024,
+            "rank": 2,
+            "selection": "regular"
+          }
+        },
+        "rawDetails": {
           "ポジション": "内野手",
           "投打": "右投左打",
           "身長／体重": "176cm／74kg",
@@ -193,6 +216,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01205150.html"
     },
-    "generatedAt": "2026-08-19T06:42:56.699Z"
+    "generatedAt": "2026-08-19T07:28:50.124Z"
   }
 }

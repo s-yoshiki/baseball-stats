@@ -13,6 +13,29 @@
         "url": "https://npb.jp/bis/players/01605132.html",
         "isActive": true,
         "details": {
+          "position": "外野手",
+          "throws": "右",
+          "bats": "左",
+          "heightCm": 179,
+          "weightKg": 83,
+          "birthDate": {
+            "iso": "1997-08-16",
+            "year": 1997,
+            "month": 8,
+            "day": 16
+          },
+          "career": {
+            "raw": "敦賀気比高",
+            "entries": ["敦賀気比高"]
+          },
+          "draft": {
+            "raw": "2015年ドラフト4位",
+            "year": 2015,
+            "rank": 4,
+            "selection": "regular"
+          }
+        },
+        "rawDetails": {
           "ポジション": "外野手",
           "投打": "右投左打",
           "身長／体重": "179cm／83kg",
@@ -715,6 +738,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01605132.html"
     },
-    "generatedAt": "2026-08-19T06:42:56.699Z"
+    "generatedAt": "2026-08-19T07:28:50.124Z"
   }
 }

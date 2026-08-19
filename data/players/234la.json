@@ -13,6 +13,29 @@
         "url": "https://npb.jp/bis/players/03505150.html",
         "isActive": true,
         "details": {
+          "position": "外野手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 190,
+          "weightKg": 93,
+          "birthDate": {
+            "iso": "2000-09-24",
+            "year": 2000,
+            "month": 9,
+            "day": 24
+          },
+          "career": {
+            "raw": "セナペック高 - 米マイナー",
+            "entries": ["セナペック高", "米マイナー"]
+          },
+          "draft": {
+            "raw": null,
+            "year": null,
+            "rank": null,
+            "selection": null
+          }
+        },
+        "rawDetails": {
           "ポジション": "外野手",
           "投打": "右投右打",
           "身長／体重": "190cm／93kg",
@@ -76,6 +99,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/03505150.html"
     },
-    "generatedAt": "2026-08-19T06:42:56.699Z"
+    "generatedAt": "2026-08-19T07:28:50.124Z"
   }
 }

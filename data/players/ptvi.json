@@ -13,6 +13,29 @@
         "url": "https://npb.jp/bis/players/01205118.html",
         "isActive": true,
         "details": {
+          "position": "投手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 183,
+          "weightKg": 90,
+          "birthDate": {
+            "iso": "1991-03-06",
+            "year": 1991,
+            "month": 3,
+            "day": 6
+          },
+          "career": {
+            "raw": "新湊高",
+            "entries": ["新湊高"]
+          },
+          "draft": {
+            "raw": "2008年育成選手ドラフト5位",
+            "year": 2008,
+            "rank": 5,
+            "selection": "development"
+          }
+        },
+        "rawDetails": {
           "ポジション": "投手",
           "投打": "右投右打",
           "身長／体重": "183cm／90kg",
@@ -1494,6 +1517,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01205118.html"
     },
-    "generatedAt": "2026-08-19T06:42:56.699Z"
+    "generatedAt": "2026-08-19T07:28:50.124Z"
   }
 }

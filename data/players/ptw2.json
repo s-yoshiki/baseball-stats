@@ -13,6 +13,29 @@
         "url": "https://npb.jp/bis/players/01205138.html",
         "isActive": true,
         "details": {
+          "position": "投手",
+          "throws": "左",
+          "bats": "左",
+          "heightCm": 178,
+          "weightKg": 84,
+          "birthDate": {
+            "iso": "1996-07-08",
+            "year": 1996,
+            "month": 7,
+            "day": 8
+          },
+          "career": {
+            "raw": "清峰高 - 亜細亜大",
+            "entries": ["清峰高", "亜細亜大"]
+          },
+          "draft": {
+            "raw": "2018年ドラフト5位",
+            "year": 2018,
+            "rank": 5,
+            "selection": "regular"
+          }
+        },
+        "rawDetails": {
           "ポジション": "投手",
           "投打": "左投左打",
           "身長／体重": "178cm／84kg",
@@ -1022,6 +1045,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01205138.html"
     },
-    "generatedAt": "2026-08-19T06:42:56.699Z"
+    "generatedAt": "2026-08-19T07:28:50.124Z"
   }
 }

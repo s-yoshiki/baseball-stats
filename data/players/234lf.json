@@ -13,6 +13,29 @@
         "url": "https://npb.jp/bis/players/03505155.html",
         "isActive": true,
         "details": {
+          "position": "投手",
+          "throws": null,
+          "bats": null,
+          "heightCm": 181,
+          "weightKg": 91,
+          "birthDate": {
+            "iso": "1997-12-28",
+            "year": 1997,
+            "month": 12,
+            "day": 28
+          },
+          "career": {
+            "raw": "宮崎学園高 - 国学院大 - セガサミー",
+            "entries": ["宮崎学園高", "国学院大", "セガサミー"]
+          },
+          "draft": {
+            "raw": "2021年ドラフト6位",
+            "year": 2021,
+            "rank": 6,
+            "selection": "regular"
+          }
+        },
+        "rawDetails": {
           "ポジション": "投手",
           "投打": "右投両打",
           "身長／体重": "181cm／91kg",
@@ -432,6 +455,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/03505155.html"
     },
-    "generatedAt": "2026-08-19T06:42:56.699Z"
+    "generatedAt": "2026-08-19T07:28:50.124Z"
   }
 }

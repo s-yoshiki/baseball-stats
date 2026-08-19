@@ -13,6 +13,29 @@
         "url": "https://npb.jp/bis/players/03705159.html",
         "isActive": true,
         "details": {
+          "position": "投手",
+          "throws": "左",
+          "bats": "左",
+          "heightCm": 186,
+          "weightKg": 81,
+          "birthDate": {
+            "iso": "2005-11-12",
+            "year": 2005,
+            "month": 11,
+            "day": 12
+          },
+          "career": {
+            "raw": "エイデヘクトルルイスペレスサンタクララ高",
+            "entries": ["エイデヘクトルルイスペレスサンタクララ高"]
+          },
+          "draft": {
+            "raw": null,
+            "year": null,
+            "rank": null,
+            "selection": null
+          }
+        },
+        "rawDetails": {
           "ポジション": "投手",
           "投打": "左投左打",
           "身長／体重": "186cm／81kg",
@@ -76,6 +99,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/03705159.html"
     },
-    "generatedAt": "2026-08-19T06:42:56.699Z"
+    "generatedAt": "2026-08-19T07:28:50.124Z"
   }
 }

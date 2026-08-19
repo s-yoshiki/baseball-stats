@@ -13,6 +13,29 @@
         "url": "https://npb.jp/bis/players/03305159.html",
         "isActive": true,
         "details": {
+          "position": "内野手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 180,
+          "weightKg": 73,
+          "birthDate": {
+            "iso": "2005-06-27",
+            "year": 2005,
+            "month": 6,
+            "day": 27
+          },
+          "career": {
+            "raw": "鹿屋中央高",
+            "entries": ["鹿屋中央高"]
+          },
+          "draft": {
+            "raw": "2023年育成選手ドラフト2位",
+            "year": 2023,
+            "rank": 2,
+            "selection": "development"
+          }
+        },
+        "rawDetails": {
           "ポジション": "内野手",
           "投打": "右投右打",
           "身長／体重": "180cm／73kg",
@@ -76,6 +99,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/03305159.html"
     },
-    "generatedAt": "2026-08-19T06:42:56.699Z"
+    "generatedAt": "2026-08-19T07:28:50.124Z"
   }
 }

@@ -13,6 +13,29 @@
         "url": "https://npb.jp/bis/players/03505152.html",
         "isActive": true,
         "details": {
+          "position": "投手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 213,
+          "weightKg": 113,
+          "birthDate": {
+            "iso": "1997-05-07",
+            "year": 1997,
+            "month": 5,
+            "day": 7
+          },
+          "career": {
+            "raw": "ケンタッキー大 - ジャイアンツ",
+            "entries": ["ケンタッキー大", "ジャイアンツ"]
+          },
+          "draft": {
+            "raw": null,
+            "year": null,
+            "rank": null,
+            "selection": null
+          }
+        },
+        "rawDetails": {
           "ポジション": "投手",
           "投打": "右投右打",
           "身長／体重": "213cm／113kg",
@@ -196,6 +219,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/03505152.html"
     },
-    "generatedAt": "2026-08-19T06:42:56.699Z"
+    "generatedAt": "2026-08-19T07:28:50.124Z"
   }
 }

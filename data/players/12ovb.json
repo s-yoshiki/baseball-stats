@@ -13,6 +13,29 @@
         "url": "https://npb.jp/bis/players/01805159.html",
         "isActive": true,
         "details": {
+          "position": "投手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 177,
+          "weightKg": 73,
+          "birthDate": {
+            "iso": "2005-12-26",
+            "year": 2005,
+            "month": 12,
+            "day": 26
+          },
+          "career": {
+            "raw": "飯塚高",
+            "entries": ["飯塚高"]
+          },
+          "draft": {
+            "raw": "2023年育成選手ドラフト6位",
+            "year": 2023,
+            "rank": 6,
+            "selection": "development"
+          }
+        },
+        "rawDetails": {
           "ポジション": "投手",
           "投打": "右投右打",
           "身長／体重": "177cm／73kg",
@@ -196,6 +219,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01805159.html"
     },
-    "generatedAt": "2026-08-19T06:42:56.699Z"
+    "generatedAt": "2026-08-19T07:28:50.124Z"
   }
 }

@@ -13,6 +13,29 @@
         "url": "https://npb.jp/bis/players/01005153.html",
         "isActive": true,
         "details": {
+          "position": "投手",
+          "throws": "左",
+          "bats": "左",
+          "heightCm": 179,
+          "weightKg": 87,
+          "birthDate": {
+            "iso": "1996-05-13",
+            "year": 1996,
+            "month": 5,
+            "day": 13
+          },
+          "career": {
+            "raw": "木造高 - 富士大 - NTT東日本",
+            "entries": ["木造高", "富士大", "NTT東日本"]
+          },
+          "draft": {
+            "raw": "2020年ドラフト2位",
+            "year": 2020,
+            "rank": 2,
+            "selection": "regular"
+          }
+        },
+        "rawDetails": {
           "ポジション": "投手",
           "投打": "左投左打",
           "身長／体重": "179cm／87kg",
@@ -550,6 +573,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01005153.html"
     },
-    "generatedAt": "2026-08-19T06:42:56.699Z"
+    "generatedAt": "2026-08-19T07:28:50.124Z"
   }
 }

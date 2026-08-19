@@ -13,6 +13,29 @@
         "url": "https://npb.jp/bis/players/01805152.html",
         "isActive": true,
         "details": {
+          "position": "投手",
+          "throws": "左",
+          "bats": "左",
+          "heightCm": 173,
+          "weightKg": 74,
+          "birthDate": {
+            "iso": "2000-05-25",
+            "year": 2000,
+            "month": 5,
+            "day": 25
+          },
+          "career": {
+            "raw": "彦根東高 - 慶応大 - トヨタ自動車",
+            "entries": ["彦根東高", "慶応大", "トヨタ自動車"]
+          },
+          "draft": {
+            "raw": "2025年ドラフト4位",
+            "year": 2025,
+            "rank": 4,
+            "selection": "regular"
+          }
+        },
+        "rawDetails": {
           "ポジション": "投手",
           "投打": "左投左打",
           "身長／体重": "173cm／74kg",
@@ -196,6 +219,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01805152.html"
     },
-    "generatedAt": "2026-08-19T06:42:56.699Z"
+    "generatedAt": "2026-08-19T07:28:50.124Z"
   }
 }

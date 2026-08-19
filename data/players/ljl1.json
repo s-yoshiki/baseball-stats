@@ -13,6 +13,29 @@
         "url": "https://npb.jp/bis/players/01005157.html",
         "isActive": true,
         "details": {
+          "position": "投手",
+          "throws": "右",
+          "bats": "左",
+          "heightCm": 186,
+          "weightKg": 92,
+          "birthDate": {
+            "iso": "2004-06-06",
+            "year": 2004,
+            "month": 6,
+            "day": 6
+          },
+          "career": {
+            "raw": "日本文理高",
+            "entries": ["日本文理高"]
+          },
+          "draft": {
+            "raw": "2022年ドラフト3位",
+            "year": 2022,
+            "rank": 3,
+            "selection": "regular"
+          }
+        },
+        "rawDetails": {
           "ポジション": "投手",
           "投打": "右投左打",
           "身長／体重": "186cm／92kg",
@@ -432,6 +455,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01005157.html"
     },
-    "generatedAt": "2026-08-19T06:42:56.699Z"
+    "generatedAt": "2026-08-19T07:28:50.124Z"
   }
 }

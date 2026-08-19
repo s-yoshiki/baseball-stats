@@ -13,6 +13,29 @@
         "url": "https://npb.jp/bis/players/01505118.html",
         "isActive": true,
         "details": {
+          "position": "投手",
+          "throws": "左",
+          "bats": "左",
+          "heightCm": 173,
+          "weightKg": 72,
+          "birthDate": {
+            "iso": "1990-10-18",
+            "year": 1990,
+            "month": 10,
+            "day": 18
+          },
+          "career": {
+            "raw": "飯塚高",
+            "entries": ["飯塚高"]
+          },
+          "draft": {
+            "raw": "2008年ドラフト6位",
+            "year": 2008,
+            "rank": 6,
+            "selection": "regular"
+          }
+        },
+        "rawDetails": {
           "ポジション": "投手",
           "投打": "左投左打",
           "身長／体重": "173cm／72kg",
@@ -1730,6 +1753,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01505118.html"
     },
-    "generatedAt": "2026-08-19T06:42:56.699Z"
+    "generatedAt": "2026-08-19T07:28:50.124Z"
   }
 }

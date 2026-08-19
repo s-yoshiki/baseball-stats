@@ -13,6 +13,29 @@
         "url": "https://npb.jp/bis/players/03105153.html",
         "isActive": true,
         "details": {
+          "position": "投手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 188,
+          "weightKg": 100,
+          "birthDate": {
+            "iso": "2002-05-17",
+            "year": 2002,
+            "month": 5,
+            "day": 17
+          },
+          "career": {
+            "raw": "花巻東高",
+            "entries": ["花巻東高"]
+          },
+          "draft": {
+            "raw": "2020年育成選手ドラフト1位",
+            "year": 2020,
+            "rank": 1,
+            "selection": "development"
+          }
+        },
+        "rawDetails": {
           "ポジション": "投手",
           "投打": "右投右打",
           "身長／体重": "188cm／100kg",
@@ -76,6 +99,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/03105153.html"
     },
-    "generatedAt": "2026-08-19T06:42:56.699Z"
+    "generatedAt": "2026-08-19T07:28:50.124Z"
   }
 }

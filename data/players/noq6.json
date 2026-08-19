@@ -13,6 +13,29 @@
         "url": "https://npb.jp/bis/players/01105134.html",
         "isActive": true,
         "details": {
+          "position": "投手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 181,
+          "weightKg": 93,
+          "birthDate": {
+            "iso": "1994-10-01",
+            "year": 1994,
+            "month": 10,
+            "day": 1
+          },
+          "career": {
+            "raw": "創価高 - 創価大",
+            "entries": ["創価高", "創価大"]
+          },
+          "draft": {
+            "raw": "2016年ドラフト2位",
+            "year": 2016,
+            "rank": 2,
+            "selection": "regular"
+          }
+        },
+        "rawDetails": {
           "ポジション": "投手",
           "投打": "右投右打",
           "身長／体重": "181cm／93kg",
@@ -904,6 +927,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01105134.html"
     },
-    "generatedAt": "2026-08-19T06:42:56.699Z"
+    "generatedAt": "2026-08-19T07:28:50.124Z"
   }
 }

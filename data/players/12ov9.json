@@ -13,6 +13,29 @@
         "url": "https://npb.jp/bis/players/01805157.html",
         "isActive": true,
         "details": {
+          "position": "投手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 180,
+          "weightKg": 85,
+          "birthDate": {
+            "iso": "2000-09-14",
+            "year": 2000,
+            "month": 9,
+            "day": 14
+          },
+          "career": {
+            "raw": "花咲徳栄高 - 明星大",
+            "entries": ["花咲徳栄高", "明星大"]
+          },
+          "draft": {
+            "raw": "2022年育成選手ドラフト1位",
+            "year": 2022,
+            "rank": 1,
+            "selection": "development"
+          }
+        },
+        "rawDetails": {
           "ポジション": "投手",
           "投打": "右投右打",
           "身長／体重": "180cm／85kg",
@@ -314,6 +337,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01805157.html"
     },
-    "generatedAt": "2026-08-19T06:42:56.699Z"
+    "generatedAt": "2026-08-19T07:28:50.124Z"
   }
 }

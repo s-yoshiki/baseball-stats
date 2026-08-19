@@ -13,6 +13,29 @@
         "url": "https://npb.jp/bis/players/01005137.html",
         "isActive": true,
         "details": {
+          "position": "投手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 182,
+          "weightKg": 81,
+          "birthDate": {
+            "iso": "1990-06-20",
+            "year": 1990,
+            "month": 6,
+            "day": 20
+          },
+          "career": {
+            "raw": "沖縄尚学高 - 亜細亜大",
+            "entries": ["沖縄尚学高", "亜細亜大"]
+          },
+          "draft": {
+            "raw": "2012年ドラフト1位",
+            "year": 2012,
+            "rank": 1,
+            "selection": "regular"
+          }
+        },
+        "rawDetails": {
           "ポジション": "投手",
           "投打": "右投右打",
           "身長／体重": "182cm／81kg",
@@ -1612,6 +1635,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01005137.html"
     },
-    "generatedAt": "2026-08-19T06:42:56.699Z"
+    "generatedAt": "2026-08-19T07:28:50.124Z"
   }
 }

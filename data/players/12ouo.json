@@ -13,6 +13,29 @@
         "url": "https://npb.jp/bis/players/01805136.html",
         "isActive": true,
         "details": {
+          "position": "内野手",
+          "throws": "右",
+          "bats": "左",
+          "heightCm": 181,
+          "weightKg": 82,
+          "birthDate": {
+            "iso": "1995-04-03",
+            "year": 1995,
+            "month": 4,
+            "day": 3
+          },
+          "career": {
+            "raw": "履正社高 - 奈良学園大",
+            "entries": ["履正社高", "奈良学園大"]
+          },
+          "draft": {
+            "raw": "2017年ドラフト6位",
+            "year": 2017,
+            "rank": 6,
+            "selection": "regular"
+          }
+        },
+        "rawDetails": {
           "ポジション": "内野手",
           "投打": "右投左打",
           "身長／体重": "181cm／82kg",
@@ -599,6 +622,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01805136.html"
     },
-    "generatedAt": "2026-08-19T06:42:56.699Z"
+    "generatedAt": "2026-08-19T07:28:50.124Z"
   }
 }

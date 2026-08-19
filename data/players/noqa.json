@@ -13,6 +13,29 @@
         "url": "https://npb.jp/bis/players/01105138.html",
         "isActive": true,
         "details": {
+          "position": "投手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 188,
+          "weightKg": 87,
+          "birthDate": {
+            "iso": "1997-03-02",
+            "year": 1997,
+            "month": 3,
+            "day": 2
+          },
+          "career": {
+            "raw": "金沢西高 - 金沢星稜大",
+            "entries": ["金沢西高", "金沢星稜大"]
+          },
+          "draft": {
+            "raw": "2018年ドラフト6位",
+            "year": 2018,
+            "rank": 6,
+            "selection": "regular"
+          }
+        },
+        "rawDetails": {
           "ポジション": "投手",
           "投打": "右投右打",
           "身長／体重": "188cm／87kg",
@@ -1022,6 +1045,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01105138.html"
     },
-    "generatedAt": "2026-08-19T06:42:56.699Z"
+    "generatedAt": "2026-08-19T07:28:50.124Z"
   }
 }

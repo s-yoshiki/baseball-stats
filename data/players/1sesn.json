@@ -13,6 +13,29 @@
         "url": "https://npb.jp/bis/players/03005159.html",
         "isActive": true,
         "details": {
+          "position": "内野手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 189,
+          "weightKg": 90,
+          "birthDate": {
+            "iso": "2002-03-31",
+            "year": 2002,
+            "month": 3,
+            "day": 31
+          },
+          "career": {
+            "raw": "エスクエラエイデ高 - キューバ・ビジャクララ",
+            "entries": ["エスクエラエイデ高", "キューバ・ビジャクララ"]
+          },
+          "draft": {
+            "raw": null,
+            "year": null,
+            "rank": null,
+            "selection": null
+          }
+        },
+        "rawDetails": {
           "ポジション": "内野手",
           "投打": "右投右打",
           "身長／体重": "189cm／90kg",
@@ -251,6 +274,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/03005159.html"
     },
-    "generatedAt": "2026-08-19T06:42:56.699Z"
+    "generatedAt": "2026-08-19T07:28:50.124Z"
   }
 }

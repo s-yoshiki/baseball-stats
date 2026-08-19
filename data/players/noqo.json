@@ -13,6 +13,29 @@
         "url": "https://npb.jp/bis/players/01105152.html",
         "isActive": true,
         "details": {
+          "position": "投手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 187,
+          "weightKg": 100,
+          "birthDate": {
+            "iso": "1999-06-24",
+            "year": 1999,
+            "month": 6,
+            "day": 24
+          },
+          "career": {
+            "raw": "向上高 - 横浜商科大 - ENEOS",
+            "entries": ["向上高", "横浜商科大", "ENEOS"]
+          },
+          "draft": {
+            "raw": "2025年ドラフト7位",
+            "year": 2025,
+            "rank": 7,
+            "selection": "regular"
+          }
+        },
+        "rawDetails": {
           "ポジション": "投手",
           "投打": "右投右打",
           "身長／体重": "187cm／100kg",
@@ -196,6 +219,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01105152.html"
     },
-    "generatedAt": "2026-08-19T06:42:56.699Z"
+    "generatedAt": "2026-08-19T07:28:50.124Z"
   }
 }

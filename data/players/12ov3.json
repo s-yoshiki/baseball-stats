@@ -13,6 +13,29 @@
         "url": "https://npb.jp/bis/players/01805151.html",
         "isActive": true,
         "details": {
+          "position": "外野手",
+          "throws": "左",
+          "bats": "左",
+          "heightCm": 178,
+          "weightKg": 73,
+          "birthDate": {
+            "iso": "2001-06-15",
+            "year": 2001,
+            "month": 6,
+            "day": 15
+          },
+          "career": {
+            "raw": "都城東高",
+            "entries": ["都城東高"]
+          },
+          "draft": {
+            "raw": "2019年ドラフト4位",
+            "year": 2019,
+            "rank": 4,
+            "selection": "regular"
+          }
+        },
+        "rawDetails": {
           "ポジション": "外野手",
           "投打": "左投左打",
           "身長／体重": "178cm／73kg",
@@ -367,6 +390,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01805151.html"
     },
-    "generatedAt": "2026-08-19T06:42:56.699Z"
+    "generatedAt": "2026-08-19T07:28:50.124Z"
   }
 }

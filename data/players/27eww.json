@@ -13,6 +13,29 @@
         "url": "https://npb.jp/bis/players/03705152.html",
         "isActive": true,
         "details": {
+          "position": "投手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 188,
+          "weightKg": 102,
+          "birthDate": {
+            "iso": "1996-04-15",
+            "year": 1996,
+            "month": 4,
+            "day": 15
+          },
+          "career": {
+            "raw": "ビクトルエステバンロレンソ校 - レッズ - パイレーツ",
+            "entries": ["ビクトルエステバンロレンソ校", "レッズ", "パイレーツ"]
+          },
+          "draft": {
+            "raw": null,
+            "year": null,
+            "rank": null,
+            "selection": null
+          }
+        },
+        "rawDetails": {
           "ポジション": "投手",
           "投打": "右投右打",
           "身長／体重": "188cm／102kg",
@@ -196,6 +219,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/03705152.html"
     },
-    "generatedAt": "2026-08-19T06:42:56.699Z"
+    "generatedAt": "2026-08-19T07:28:50.124Z"
   }
 }

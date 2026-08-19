@@ -13,6 +13,36 @@
         "url": "https://npb.jp/bis/players/03005150.html",
         "isActive": true,
         "details": {
+          "position": "内野手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 188,
+          "weightKg": 117,
+          "birthDate": {
+            "iso": "1991-02-13",
+            "year": 1991,
+            "month": 2,
+            "day": 13
+          },
+          "career": {
+            "raw": "ミズーリ州大 - カージナルス - ヤンキース - パドレス - ナショナルズ - ブルワーズ",
+            "entries": [
+              "ミズーリ州大",
+              "カージナルス",
+              "ヤンキース",
+              "パドレス",
+              "ナショナルズ",
+              "ブルワーズ"
+            ]
+          },
+          "draft": {
+            "raw": null,
+            "year": null,
+            "rank": null,
+            "selection": null
+          }
+        },
+        "rawDetails": {
           "ポジション": "内野手",
           "投打": "右投右打",
           "身長／体重": "188cm／117kg",
@@ -193,6 +223,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/03005150.html"
     },
-    "generatedAt": "2026-08-19T06:42:56.699Z"
+    "generatedAt": "2026-08-19T07:28:50.124Z"
   }
 }

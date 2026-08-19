@@ -13,6 +13,29 @@
         "url": "https://npb.jp/bis/players/01305155.html",
         "isActive": true,
         "details": {
+          "position": "内野手",
+          "throws": "右",
+          "bats": "左",
+          "heightCm": 178,
+          "weightKg": 76,
+          "birthDate": {
+            "iso": "1999-07-07",
+            "year": 1999,
+            "month": 7,
+            "day": 7
+          },
+          "career": {
+            "raw": "盛岡大付高 - 東北福祉大",
+            "entries": ["盛岡大付高", "東北福祉大"]
+          },
+          "draft": {
+            "raw": "2021年育成選手ドラフト3位",
+            "year": 2021,
+            "rank": 3,
+            "selection": "development"
+          }
+        },
+        "rawDetails": {
           "ポジション": "内野手",
           "投打": "右投左打",
           "身長／体重": "178cm／76kg",
@@ -251,6 +274,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01305155.html"
     },
-    "generatedAt": "2026-08-19T06:42:56.699Z"
+    "generatedAt": "2026-08-19T07:28:50.124Z"
   }
 }

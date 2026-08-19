@@ -13,6 +13,29 @@
         "url": "https://npb.jp/bis/players/01105150.html",
         "isActive": true,
         "details": {
+          "position": "投手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 177,
+          "weightKg": 83,
+          "birthDate": {
+            "iso": "2002-05-18",
+            "year": 2002,
+            "month": 5,
+            "day": 18
+          },
+          "career": {
+            "raw": "久留米商 - 富士大",
+            "entries": ["久留米商", "富士大"]
+          },
+          "draft": {
+            "raw": "2024年ドラフト3位",
+            "year": 2024,
+            "rank": 3,
+            "selection": "regular"
+          }
+        },
+        "rawDetails": {
           "ポジション": "投手",
           "投打": "右投右打",
           "身長／体重": "177cm／83kg",
@@ -76,6 +99,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01105150.html"
     },
-    "generatedAt": "2026-08-19T06:42:56.699Z"
+    "generatedAt": "2026-08-19T07:28:50.124Z"
   }
 }

@@ -9,7 +9,7 @@ NPB HTML
   ↓ scrape
 data/players/<player-id>.json
   ↓ write-sqlite
-data/sqlite/baseball.sqlite
+data/sqlite/data.sqlite
 ```
 
 `data/players/index.json` は選手一覧、`data/players/<player-id>.json` は1選手分のJSON APIリソースです。プロフィールには `familyName`、`givenName`、`familyNameKana`、`givenNameKana`、`registeredName`、`registeredNameKana` を持たせます。`details` には投打、身長・体重、生年月日、経歴、ドラフトを構造化して保存し、各ソースの原表記は `rawDetails.<sourceId>` に保持します。NPB由来の初期データは `rawDetails.npb`、将来のWikipediaや手動修正は別の `sourceId` として追加できます。`meta.sources` に出典、`meta.provenance` に項目ごとの採用元と更新方法を記録します。
@@ -53,7 +53,7 @@ pnpm --filter @repo/parser run calculate -- \
 
 pnpm --filter @repo/parser run write-sqlite -- \
   --input-dir ../../data/players \
-  --db ../../data/sqlite/baseball.sqlite
+  --db ../../data/sqlite/data.sqlite
 ```
 
 `calculate` は個別リソースを再計算して同じディレクトリへ書き戻します。`--input <legacy-snapshot>` を指定すると、旧形式の集約JSONから個別リソースへ移行できます。`write-sqlite` は選手JSON全体からSQLiteを再構築します。

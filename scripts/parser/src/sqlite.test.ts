@@ -34,7 +34,7 @@ describe("writeSnapshotToSqlite", () => {
     const temporaryDirectory = await mkdtemp(
       path.join(os.tmpdir(), "baseball-stats-"),
     );
-    const dbPath = path.join(temporaryDirectory, "baseball.sqlite");
+    const dbPath = path.join(temporaryDirectory, "data.sqlite");
 
     try {
       const snapshot = createSnapshot("calculate", [

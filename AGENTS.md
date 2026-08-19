@@ -6,7 +6,7 @@ NPB公式サイトの公開選手データを取得し、選手ごとのJSON API
 
 1. `data/players/index.json`: 選手一覧
 2. `data/players/<player-id>.json`: 1選手分の原データ、集計値、派生スタッツ
-3. `data/sqlite/baseball.sqlite`: アプリケーション向けの再生成可能なSQLite出力
+3. `data/sqlite/data.sqlite`: アプリケーション向けの再生成可能なSQLite出力
 
 選手JSONを正本とし、SQLiteはJSONと `data/masters` から再生成できる成果物として扱います。NPBの表記を保持する原データは `data.attributes.battingStats[].raw`、`data.attributes.pitchingStats[].raw`、`data.attributes.profile.rawDetails.npb` に入れます。Wikipediaや手動編集の原データは別の source ID に保存し、API利用向けの採用値は `data.attributes.profile.details` に構造化して入れます。出典は `meta.sources`、項目ごとの採用元は `meta.provenance` で管理します。
 

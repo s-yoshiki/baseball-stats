@@ -1,0 +1,1212 @@
+{
+  "schemaVersion": 2,
+  "data": [
+    {
+      "type": "player",
+      "id": "10joq",
+      "attributes": {
+        "name": "栗原 陵矢",
+        "kana": "くりはら・りょうや",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/10joq.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "10jos",
+      "attributes": {
+        "name": "小澤 怜史",
+        "kana": "こざわ・れいじ",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/10jos.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "10jou",
+      "attributes": {
+        "name": "古賀 優大",
+        "kana": "こが・ゆうだい",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/10jou.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "10joy",
+      "attributes": {
+        "name": "小園 海斗",
+        "kana": "こぞの・かいと",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/10joy.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "10jpa",
+      "attributes": {
+        "name": "岸本 佑也",
+        "kana": "きしもと・ゆうや",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/10jpa.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "10jpc",
+      "attributes": {
+        "name": "窪田 洋祐",
+        "kana": "くぼた・ようすけ",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/10jpc.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "10jpf",
+      "attributes": {
+        "name": "桐敷 拓馬",
+        "kana": "きりしき・たくま",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/10jpf.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "10jpj",
+      "attributes": {
+        "name": "髙野 光海",
+        "kana": "こうの・ひかる",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/10jpj.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "12ouo",
+      "attributes": {
+        "name": "宮本 丈",
+        "kana": "みやもと・たけし",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/12ouo.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "12ov2",
+      "attributes": {
+        "name": "藤田 琉生",
+        "kana": "ふじた・りゅうせい",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/12ov2.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "12ov3",
+      "attributes": {
+        "name": "武藤 敦貴",
+        "kana": "むとう・あつき",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/12ov3.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "12ov4",
+      "attributes": {
+        "name": "増居 翔太",
+        "kana": "ますい・しょうた",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/12ov4.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "12ov9",
+      "attributes": {
+        "name": "松井 颯",
+        "kana": "まつい・はやて",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/12ov9.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "12ovb",
+      "attributes": {
+        "name": "藤原 大翔",
+        "kana": "ふじわら・はると",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/12ovb.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "14u0e",
+      "attributes": {
+        "name": "澤田 圭佑",
+        "kana": "さわだ・けいすけ",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/14u0e.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "14u0g",
+      "attributes": {
+        "name": "清水 達也",
+        "kana": "しみず・たつや",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/14u0g.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "14u0i",
+      "attributes": {
+        "name": "鈴木 翔天",
+        "kana": "すずき・そら",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/14u0i.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "14u0j",
+      "attributes": {
+        "name": "平良 拳太郎",
+        "kana": "たいら・けんたろう",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/14u0j.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "14u0u",
+      "attributes": {
+        "name": "ザイレン （曽布川 ザイレン）",
+        "kana": "ざいれん（そぶかわ・ざいれん）",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/14u0u.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "14u0v",
+      "attributes": {
+        "name": "黒川 史陽",
+        "kana": "くろかわ・ふみや",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/14u0v.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "14u0w",
+      "attributes": {
+        "name": "櫻井 ユウヤ",
+        "kana": "さくらい・ゆうや",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/14u0w.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "14u0x",
+      "attributes": {
+        "name": "桑原 秀侍",
+        "kana": "くわはら・しゅうじ",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/14u0x.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "14u11",
+      "attributes": {
+        "name": "上甲 凌大",
+        "kana": "じょうこう・りょうた",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/14u11.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "14u13",
+      "attributes": {
+        "name": "シンクレア （シンクレア ジョセフ 孝ノ助）",
+        "kana": "しんくれあ（しんくれあ・じょせふこうのすけ）",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/14u13.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "1sese",
+      "attributes": {
+        "name": "Ｌ．ボイト",
+        "kana": "ルーク・ボイト (LUKE VOIT)",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/1sese.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "1sesg",
+      "attributes": {
+        "name": "Ａ．モーレ",
+        "kana": "アクシャイ・モーレ (AKSHAY MORE)",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/1sesg.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "1sesl",
+      "attributes": {
+        "name": "Ｅ．ルシアーノ",
+        "kana": "エルビス・ルシアーノ (ELVIS LUCIANO)",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/1sesl.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "1sesn",
+      "attributes": {
+        "name": "Ｃ．ロドリゲス",
+        "kana": "クリスチャン・ロドリゲス (CHRISTIAN RODRIGUEZ)",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/1sesn.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "1ujxs",
+      "attributes": {
+        "name": "山本 拓実",
+        "kana": "やまもと・たくみ",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/1ujxs.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "1ujy6",
+      "attributes": {
+        "name": "森 駿太",
+        "kana": "もり・しゅんた",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/1ujy6.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "1ujy7",
+      "attributes": {
+        "name": "山瀬 慎之助",
+        "kana": "やませ・しんのすけ",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/1ujy7.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "1ujy8",
+      "attributes": {
+        "name": "山﨑 照英",
+        "kana": "やまさき・しょうえい",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/1ujy8.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "1ujy9",
+      "attributes": {
+        "name": "松本 遼大",
+        "kana": "まつもと・りょうだい",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/1ujy9.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "1ujyd",
+      "attributes": {
+        "name": "村松 開人",
+        "kana": "むらまつ・かいと",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/1ujyd.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "1ujyf",
+      "attributes": {
+        "name": "松本 健吾",
+        "kana": "まつもと・けんご",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/1ujyf.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "1yu9q",
+      "attributes": {
+        "name": "吉納 翼",
+        "kana": "よしのう・つばさ",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/1yu9q.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "1yu9s",
+      "attributes": {
+        "name": "Ｊ．カスティーヨ",
+        "kana": "ホセ・カスティーヨ (JOSE CASTILLO)",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/1yu9s.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "1yu9t",
+      "attributes": {
+        "name": "山﨑 伊織",
+        "kana": "やまさき・いおり",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/1yu9t.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "1yu9x",
+      "attributes": {
+        "name": "山口 アタル",
+        "kana": "やまぐち・あたる",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/1yu9x.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "1yu9z",
+      "attributes": {
+        "name": "村山 源",
+        "kana": "むらやま・げん",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/1yu9z.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "234ks",
+      "attributes": {
+        "name": "Ｒ．ドリス",
+        "kana": "ラファエル・ドリス (RAFAEL DOLIS)",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/234ks.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "234kw",
+      "attributes": {
+        "name": "Ｎ．ソト",
+        "kana": "ネフタリ・ソト (NEFTALI SOTO)",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/234kw.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "234la",
+      "attributes": {
+        "name": "Ｓ．コンスエグラ",
+        "kana": "スタンリー・コンスエグラ (STANLEY CONSUEGRA)",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/234la.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "234lc",
+      "attributes": {
+        "name": "Ｓ．ジェリー",
+        "kana": "ショーン・ジェリー (SEAN HJELLE)",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/234lc.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "234lf",
+      "attributes": {
+        "name": "横山 楓",
+        "kana": "よこやま・かえで",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/234lf.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "27eww",
+      "attributes": {
+        "name": "Ｄ．モレッタ",
+        "kana": "ダウリ・モレッタ (DAURI MORETA)",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/27eww.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "27ex3",
+      "attributes": {
+        "name": "Ｄ．サルディ",
+        "kana": "ダリオ・サルディ (DARIO SARDUY)",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/27ex3.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "ljke",
+      "attributes": {
+        "name": "高橋 昂也",
+        "kana": "たかはし・こうや",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/ljke.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "ljkg",
+      "attributes": {
+        "name": "高橋 礼",
+        "kana": "たかはし・れい",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/ljkg.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "ljkh",
+      "attributes": {
+        "name": "東浜 巨",
+        "kana": "ひがしはま・なお",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/ljkh.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "ljku",
+      "attributes": {
+        "name": "澤田 遥斗",
+        "kana": "さわだ・はると",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/ljku.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "ljkw",
+      "attributes": {
+        "name": "杉山 諒",
+        "kana": "すぎやま・りょう",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/ljkw.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "ljkx",
+      "attributes": {
+        "name": "佐々木 健",
+        "kana": "ささき・たける",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/ljkx.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "ljl1",
+      "attributes": {
+        "name": "田中 晴也",
+        "kana": "たなか・はるや",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/ljl1.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "ljl3",
+      "attributes": {
+        "name": "鈴木 叶",
+        "kana": "すずき・きょう",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/ljl3.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "noq6",
+      "attributes": {
+        "name": "池田 隆英",
+        "kana": "いけだ・たかひで",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/noq6.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "noq7",
+      "attributes": {
+        "name": "石川 慎吾",
+        "kana": "いしかわ・しんご",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/noq7.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "noqa",
+      "attributes": {
+        "name": "泉 圭輔",
+        "kana": "いずみ・けいすけ",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/noqa.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "noqm",
+      "attributes": {
+        "name": "安德 駿",
+        "kana": "あんとく・しゅん",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/noqm.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "noqn",
+      "attributes": {
+        "name": "石塚 綜一郎",
+        "kana": "いしづか・そういちろう",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/noqn.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "noqo",
+      "attributes": {
+        "name": "飯田 琉斗",
+        "kana": "いいだ・りゅうと",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/noqo.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "noqp",
+      "attributes": {
+        "name": "阿部 翔太",
+        "kana": "あべ・しょうた",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/noqp.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "noqr",
+      "attributes": {
+        "name": "有薗 直輝",
+        "kana": "ありぞの・なおき",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/noqr.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "noqt",
+      "attributes": {
+        "name": "安西 叶翔",
+        "kana": "あんざい・かなと",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/noqt.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "noqv",
+      "attributes": {
+        "name": "石黒 佑弥",
+        "kana": "いしぐろ・ゆうや",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/noqv.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "ptvi",
+      "attributes": {
+        "name": "西野 勇士",
+        "kana": "にしの・ゆうじ",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/ptvi.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "ptw2",
+      "attributes": {
+        "name": "中村 稔弥",
+        "kana": "なかむら・としや",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/ptw2.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "ptwe",
+      "attributes": {
+        "name": "庄子 雄大",
+        "kana": "しょうじ・ゆうだい",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/ptwe.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "ptwg",
+      "attributes": {
+        "name": "谷端 将伍",
+        "kana": "たにはた・しょうご",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/ptwg.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "ptwj",
+      "attributes": {
+        "name": "達 孝太",
+        "kana": "たつ・こうた",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/ptwj.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "ptwl",
+      "attributes": {
+        "name": "中田 歩夢",
+        "kana": "なかた・あゆむ",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/ptwl.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "ptwn",
+      "attributes": {
+        "name": "谷口 朝陽",
+        "kana": "たにぐち・あさひ",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/ptwn.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "rz1m",
+      "attributes": {
+        "name": "植田 海",
+        "kana": "うえだ・かい",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/rz1m.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "rz1n",
+      "attributes": {
+        "name": "大島 洋平",
+        "kana": "おおしま・ようへい",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/rz1n.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "rz1u",
+      "attributes": {
+        "name": "大貫 晋一",
+        "kana": "おおぬき・しんいち",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/rz1u.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "rz26",
+      "attributes": {
+        "name": "今坂 幸暉",
+        "kana": "いまさか・ともき",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/rz26.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "rz28",
+      "attributes": {
+        "name": "エドポロ ケイン",
+        "kana": "えどぽろ・けいん",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/rz28.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "rz29",
+      "attributes": {
+        "name": "井上 朋也",
+        "kana": "いのうえ・ともや",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/rz29.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "rz2b",
+      "attributes": {
+        "name": "大里 昂生",
+        "kana": "おおさと・こうせい",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/rz2b.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "rz2d",
+      "attributes": {
+        "name": "大津 亮介",
+        "kana": "おおつ・りょうすけ",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/rz2d.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "rz2f",
+      "attributes": {
+        "name": "宇都宮 葵星",
+        "kana": "うつのみや・きさら",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/rz2f.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "u47e",
+      "attributes": {
+        "name": "野間 峻祥",
+        "kana": "のま・たかよし",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/u47e.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "u47m",
+      "attributes": {
+        "name": "林 晃汰",
+        "kana": "はやし・こうた",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/u47m.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "u47y",
+      "attributes": {
+        "name": "田中 陽翔",
+        "kana": "たなか・はると",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/u47y.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "u480",
+      "attributes": {
+        "name": "西川 篤夢",
+        "kana": "にしかわ・あつむ",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/u480.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "u481",
+      "attributes": {
+        "name": "中川 拓真",
+        "kana": "なかがわ・たくま",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/u481.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "u487",
+      "attributes": {
+        "name": "中澤 恒貴",
+        "kana": "なかざわ・こうき",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/u487.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "w9cu",
+      "attributes": {
+        "name": "辛島 航",
+        "kana": "からしま・わたる",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/w9cu.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "w9dc",
+      "attributes": {
+        "name": "北浦 竜次",
+        "kana": "きたうら・りゅうじ",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/w9dc.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "w9dq",
+      "attributes": {
+        "name": "片山 楽生",
+        "kana": "かたやま・らいく",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/w9dq.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "w9dr",
+      "attributes": {
+        "name": "大関 友久",
+        "kana": "おおぜき・ともひさ",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/w9dr.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "w9ds",
+      "attributes": {
+        "name": "岡村 了樹",
+        "kana": "おかむら・りょうじゅ",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/w9ds.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "w9dv",
+      "attributes": {
+        "name": "上川畑 大悟",
+        "kana": "かみかわばた・だいご",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/w9dv.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "w9dx",
+      "attributes": {
+        "name": "北村 恵吾",
+        "kana": "きたむら・けいご",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/w9dx.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "yej0",
+      "attributes": {
+        "name": "平沼 翔太",
+        "kana": "ひらぬま・しょうた",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/yej0.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "yej6",
+      "attributes": {
+        "name": "増田 陸",
+        "kana": "ますだ・りく",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/yej6.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "yeji",
+      "attributes": {
+        "name": "西川 歩",
+        "kana": "にしかわ・あゆむ",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/yeji.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "yejk",
+      "attributes": {
+        "name": "冨士 隼斗",
+        "kana": "ふじ・はやと",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/yejk.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "yejp",
+      "attributes": {
+        "name": "林 優樹",
+        "kana": "はやし・ゆうき",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/yejp.json"
+      }
+    },
+    {
+      "type": "player",
+      "id": "yejr",
+      "attributes": {
+        "name": "日當 直喜",
+        "kana": "ひなた・なおき",
+        "isActive": true
+      },
+      "links": {
+        "self": "/players/yejr.json"
+      }
+    }
+  ],
+  "meta": {
+    "source": {
+      "name": "npb.jp",
+      "url": "https://npb.jp/bis/players/"
+    },
+    "generatedAt": "2026-08-19T05:22:21.578Z"
+  }
+}

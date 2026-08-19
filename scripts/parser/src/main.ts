@@ -1,14 +1,13 @@
 import path from "node:path";
 import {
-  createSnapshot,
-  type RawSnapshot,
-  writeSnapshot,
+  calculatePlayerStats,
+  writePlayerDocuments,
 } from "@repo/baseball-data";
-import { DEFAULT_RAW_JSON_PATH } from "./constants.js";
+import { DEFAULT_PLAYER_DATA_DIR } from "./constants.js";
 import { type ScrapeOptions, scrapePlayers } from "./scrape.js";
 
 type CliOptions = ScrapeOptions & {
-  outputPath: string;
+  outputDir: string;
 };
 
 function parseNumber(value: string, flag: string): number {
@@ -24,7 +23,7 @@ export function readCliOptions(args: string[]): CliOptions {
     debug: false,
     delayMs: 300,
     includeRetired: false,
-    outputPath: DEFAULT_RAW_JSON_PATH,
+    outputDir: DEFAULT_PLAYER_DATA_DIR,
   };
 
   for (let index = 0; index < args.length; index += 1) {
@@ -41,7 +40,7 @@ Options:
   --limit <number>      scrape only the first N players
   --kana-limit <number> scrape only the first N kana index pages
   --delay <ms>          wait between requests (default: 300)
-  --output <path>       raw JSON path (default: ${DEFAULT_RAW_JSON_PATH})
+  --output-dir <path>   player JSON directory (default: ${DEFAULT_PLAYER_DATA_DIR})
   --debug               print progress and row counts`);
       process.exit(0);
     }
@@ -78,8 +77,8 @@ Options:
       index += 1;
       continue;
     }
-    if (arg === "--output" && next) {
-      options.outputPath = next;
+    if ((arg === "--output-dir" || arg === "--output") && next) {
+      options.outputDir = next;
       index += 1;
       continue;
     }
@@ -91,10 +90,10 @@ Options:
 export async function main(args = process.argv.slice(2)): Promise<void> {
   const options = readCliOptions(args);
   const players = await scrapePlayers(options);
-  const snapshot: RawSnapshot = createSnapshot("scrape", players);
-  const outputPath = path.resolve(process.cwd(), options.outputPath);
-  await writeSnapshot(outputPath, snapshot);
-  console.log(`Saved ${players.length} players to ${outputPath}`);
+  const enrichedPlayers = players.map(calculatePlayerStats);
+  const outputDir = path.resolve(process.cwd(), options.outputDir);
+  await writePlayerDocuments(outputDir, enrichedPlayers);
+  console.log(`Saved ${players.length} player documents to ${outputDir}`);
 }
 
 main().catch((error: unknown) => {

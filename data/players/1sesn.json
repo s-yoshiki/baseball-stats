@@ -1,0 +1,253 @@
+{
+  "schemaVersion": 2,
+  "data": {
+    "type": "player",
+    "id": "1sesn",
+    "attributes": {
+      "profile": {
+        "name": "Ｃ．ロドリゲス",
+        "kana": "クリスチャン・ロドリゲス (CHRISTIAN RODRIGUEZ)",
+        "url": "https://npb.jp/bis/players/03005159.html",
+        "isActive": true,
+        "details": {
+          "ポジション": "内野手",
+          "投打": "右投右打",
+          "身長／体重": "189cm／90kg",
+          "生年月日": "2002年3月31日",
+          "経歴": "エスクエラエイデ高 - キューバ・ビジャクララ",
+          "ドラフト": ""
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2024,
+          "team": "中 日",
+          "raw": {
+            "年度": "2024",
+            "所属球団": "中 日",
+            "試合": "23",
+            "打席": "59",
+            "打数": "54",
+            "得点": "3",
+            "安打": "7",
+            "二塁打": "0",
+            "三塁打": "0",
+            "本塁打": "0",
+            "塁打": "7",
+            "打点": "1",
+            "盗塁": "0",
+            "盗塁刺": "0",
+            "犠打": "3",
+            "犠飛": "0",
+            "四球": "2",
+            "死球": "0",
+            "三振": "16",
+            "併殺打": "0",
+            "打率": ".130",
+            "長打率": ".130",
+            "出塁率": ".161"
+          },
+          "totals": {
+            "games": 23,
+            "plateAppearances": 59,
+            "atBats": 54,
+            "runs": 3,
+            "hits": 7,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 7,
+            "rbi": 1,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 3,
+            "sacrificeFlies": 0,
+            "walks": 2,
+            "hitByPitch": 0,
+            "strikeouts": 16,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0.13,
+            "onBasePercentage": 0.161,
+            "sluggingPercentage": 0.13,
+            "ops": 0.291,
+            "iso": 0,
+            "walkPercentage": 0.034,
+            "strikeoutPercentage": 0.271
+          }
+        },
+        {
+          "season": 2025,
+          "team": "中 日",
+          "raw": {
+            "年度": "2025",
+            "所属球団": "中 日",
+            "試合": "20",
+            "打席": "34",
+            "打数": "29",
+            "得点": "3",
+            "安打": "6",
+            "二塁打": "1",
+            "三塁打": "0",
+            "本塁打": "0",
+            "塁打": "7",
+            "打点": "1",
+            "盗塁": "0",
+            "盗塁刺": "0",
+            "犠打": "1",
+            "犠飛": "0",
+            "四球": "4",
+            "死球": "0",
+            "三振": "11",
+            "併殺打": "1",
+            "打率": ".207",
+            "長打率": ".241",
+            "出塁率": ".303"
+          },
+          "totals": {
+            "games": 20,
+            "plateAppearances": 34,
+            "atBats": 29,
+            "runs": 3,
+            "hits": 6,
+            "doubles": 1,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 7,
+            "rbi": 1,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 1,
+            "sacrificeFlies": 0,
+            "walks": 4,
+            "hitByPitch": 0,
+            "strikeouts": 11,
+            "groundedIntoDoublePlays": 1
+          },
+          "metrics": {
+            "battingAverage": 0.207,
+            "onBasePercentage": 0.303,
+            "sluggingPercentage": 0.241,
+            "ops": 0.544,
+            "iso": 0.034,
+            "walkPercentage": 0.118,
+            "strikeoutPercentage": 0.324
+          }
+        },
+        {
+          "season": 2026,
+          "team": "中 日",
+          "raw": {
+            "年度": "2026",
+            "所属球団": "中 日",
+            "試合": "3",
+            "打席": "10",
+            "打数": "9",
+            "得点": "0",
+            "安打": "0",
+            "二塁打": "0",
+            "三塁打": "0",
+            "本塁打": "0",
+            "塁打": "0",
+            "打点": "0",
+            "盗塁": "0",
+            "盗塁刺": "0",
+            "犠打": "0",
+            "犠飛": "0",
+            "四球": "1",
+            "死球": "0",
+            "三振": "4",
+            "併殺打": "1",
+            "打率": ".000",
+            "長打率": ".000",
+            "出塁率": ".100"
+          },
+          "totals": {
+            "games": 3,
+            "plateAppearances": 10,
+            "atBats": 9,
+            "runs": 0,
+            "hits": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 0,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 1,
+            "hitByPitch": 0,
+            "strikeouts": 4,
+            "groundedIntoDoublePlays": 1
+          },
+          "metrics": {
+            "battingAverage": 0,
+            "onBasePercentage": 0.1,
+            "sluggingPercentage": 0,
+            "ops": 0.1,
+            "iso": 0,
+            "walkPercentage": 0.1,
+            "strikeoutPercentage": 0.4
+          }
+        }
+      ],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 3,
+          "games": 46,
+          "plateAppearances": 103,
+          "atBats": 92,
+          "runs": 6,
+          "hits": 13,
+          "doubles": 1,
+          "triples": 0,
+          "homeRuns": 0,
+          "totalBases": 14,
+          "rbi": 2,
+          "steals": 0,
+          "walks": 7,
+          "hitByPitch": 0,
+          "strikeouts": 31,
+          "battingAverage": 0.141,
+          "onBasePercentage": 0.194,
+          "sluggingPercentage": 0.152,
+          "ops": 0.346,
+          "iso": 0.011
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/1sesn.json"
+    }
+  },
+  "meta": {
+    "source": {
+      "name": "npb.jp",
+      "url": "https://npb.jp/bis/players/03005159.html"
+    },
+    "generatedAt": "2026-08-19T05:22:21.578Z"
+  }
+}

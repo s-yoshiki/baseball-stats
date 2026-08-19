@@ -158,3 +158,120 @@ export type DataSnapshot<TPlayer> = {
 
 export type RawSnapshot = DataSnapshot<RawPlayer>;
 export type EnrichedSnapshot = DataSnapshot<EnrichedPlayer>;
+
+export type BattingTotals = {
+  games: number | null;
+  plateAppearances: number | null;
+  atBats: number | null;
+  runs: number | null;
+  hits: number | null;
+  doubles: number | null;
+  triples: number | null;
+  homeRuns: number | null;
+  totalBases: number | null;
+  rbi: number | null;
+  steals: number | null;
+  caughtStealing: number | null;
+  sacrificeHits: number | null;
+  sacrificeFlies: number | null;
+  walks: number | null;
+  hitByPitch: number | null;
+  strikeouts: number | null;
+  groundedIntoDoublePlays: number | null;
+};
+
+export type PitchingTotals = {
+  games: number | null;
+  wins: number | null;
+  losses: number | null;
+  saves: number | null;
+  holds: number | null;
+  holdPoints: number | null;
+  completeGames: number | null;
+  shutouts: number | null;
+  noWalkCompleteGames: number | null;
+  winningPercentage: number | null;
+  battersFaced: number | null;
+  innings: number | null;
+  hitsAllowed: number | null;
+  homeRunsAllowed: number | null;
+  walksAllowed: number | null;
+  hitByPitch: number | null;
+  strikeouts: number | null;
+  wildPitches: number | null;
+  balks: number | null;
+  runsAllowed: number | null;
+  earnedRuns: number | null;
+};
+
+export type PlayerApiBattingStat = {
+  season: number | null;
+  team: string | null;
+  raw: BattingStatRow;
+  totals: BattingTotals;
+  metrics: Omit<ComputedBattingSeason, "season" | "team">;
+};
+
+export type PlayerApiPitchingStat = {
+  season: number | null;
+  team: string | null;
+  raw: PitchingStatRow;
+  totals: PitchingTotals;
+  metrics: Omit<ComputedPitchingSeason, "season" | "team">;
+};
+
+export type PlayerApiAttributes = {
+  profile: {
+    name: string;
+    kana: string;
+    url: string;
+    isActive: boolean;
+    details: Record<string, string>;
+  };
+  battingStats: PlayerApiBattingStat[];
+  pitchingStats: PlayerApiPitchingStat[];
+  career: PlayerComputedStats["career"];
+};
+
+export type PlayerApiResource = {
+  type: "player";
+  id: string;
+  attributes: PlayerApiAttributes;
+  links: {
+    self: string;
+  };
+};
+
+export type PlayerApiDocument = {
+  schemaVersion: 2;
+  data: PlayerApiResource;
+  meta: {
+    source: {
+      name: "npb.jp";
+      url: string;
+    };
+    generatedAt: string;
+  };
+};
+
+export type PlayerApiIndexDocument = {
+  schemaVersion: 2;
+  data: Array<{
+    type: "player";
+    id: string;
+    attributes: Pick<
+      PlayerApiAttributes["profile"],
+      "name" | "kana" | "isActive"
+    >;
+    links: {
+      self: string;
+    };
+  }>;
+  meta: {
+    source: {
+      name: "npb.jp";
+      url: string;
+    };
+    generatedAt: string;
+  };
+};

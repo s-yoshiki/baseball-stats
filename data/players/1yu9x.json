@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 2,
+  "data": {
+    "type": "player",
+    "id": "1yu9x",
+    "attributes": {
+      "profile": {
+        "name": "山口 アタル",
+        "kana": "やまぐち・あたる",
+        "url": "https://npb.jp/bis/players/03305157.html",
+        "isActive": true,
+        "details": {
+          "ポジション": "外野手",
+          "投打": "右投右打",
+          "身長／体重": "179cm／95kg",
+          "生年月日": "1999年5月28日",
+          "経歴": "ブリタニア高 - コルビーコミュニティカレッジ - テキサス大タイラー校中退",
+          "ドラフト": "2022年育成選手ドラフト3位"
+        }
+      },
+      "battingStats": [],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 0,
+          "games": 0,
+          "plateAppearances": 0,
+          "atBats": 0,
+          "runs": 0,
+          "hits": 0,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 0,
+          "totalBases": 0,
+          "rbi": 0,
+          "steals": 0,
+          "walks": 0,
+          "hitByPitch": 0,
+          "strikeouts": 0,
+          "battingAverage": null,
+          "onBasePercentage": null,
+          "sluggingPercentage": null,
+          "ops": null,
+          "iso": null
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/1yu9x.json"
+    }
+  },
+  "meta": {
+    "source": {
+      "name": "npb.jp",
+      "url": "https://npb.jp/bis/players/03305157.html"
+    },
+    "generatedAt": "2026-08-19T05:22:21.578Z"
+  }
+}

@@ -9,8 +9,8 @@ NPBから取得した値を将来のアプリケーションでも再利用し�
 
 ## Decision
 
-取得した値は `data/raw/players.json` に保存し、派生値は `data/derived/players.json` の `computedStats` に追加する。SQLiteはJSONから再生成する出力とする。
+取得した値と派生値は、1選手1ファイルの `data/players/<player-id>.json` にJSON APIリソースとして保存する。NPB由来の行データは `data.attributes.*Stats[].raw`、数値化した集計値は `totals`、計算した派生値は `metrics` に置く。`data/players/index.json` は一覧リソースとする。SQLiteはJSONから再生成する出力とする。
 
 ## Consequences
 
-raw値と計算値の責務が分かれ、計算式の変更を追跡しやすい。一方、スナップショットは選手数に応じて大きくなるため、更新時は差分と生成日時を確認する。
+raw値を保持したまま計算値を追加でき、個別選手の変更をGit差分とAPIレスポンスの単位で確認できる。計算式の変更時は全選手JSONを再計算する。

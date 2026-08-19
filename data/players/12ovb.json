@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 2,
+  "data": {
+    "type": "player",
+    "id": "12ovb",
+    "attributes": {
+      "profile": {
+        "name": "藤原 大翔",
+        "kana": "ふじわら・はると",
+        "url": "https://npb.jp/bis/players/01805159.html",
+        "isActive": true,
+        "details": {
+          "ポジション": "投手",
+          "投打": "右投右打",
+          "身長／体重": "177cm／73kg",
+          "生年月日": "2005年12月26日",
+          "経歴": "飯塚高",
+          "ドラフト": "2023年育成選手ドラフト6位"
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2026,
+          "team": "福岡ソフトバンク",
+          "raw": {
+            "年度": "2026",
+            "所属球団": "福岡ソフトバンク",
+            "試合": "2",
+            "打席": "0",
+            "打数": "0",
+            "得点": "0",
+            "安打": "0",
+            "二塁打": "0",
+            "三塁打": "0",
+            "本塁打": "0",
+            "塁打": "0",
+            "打点": "0",
+            "盗塁": "0",
+            "盗塁刺": "0",
+            "犠打": "0",
+            "犠飛": "0",
+            "四球": "0",
+            "死球": "0",
+            "三振": "0",
+            "併殺打": "0",
+            "打率": ".000",
+            "長打率": ".000",
+            "出塁率": ".000"
+          },
+          "totals": {
+            "games": 2,
+            "plateAppearances": 0,
+            "atBats": 0,
+            "runs": 0,
+            "hits": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 0,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 0,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0,
+            "onBasePercentage": 0,
+            "sluggingPercentage": 0,
+            "ops": 0,
+            "iso": 0,
+            "walkPercentage": null,
+            "strikeoutPercentage": null
+          }
+        }
+      ],
+      "pitchingStats": [
+        {
+          "season": 2026,
+          "team": "福岡ソフトバンク",
+          "raw": {
+            "年度": "2026",
+            "所属球団": "福岡ソフトバンク",
+            "登板": "2",
+            "勝利": "0",
+            "敗北": "2",
+            "セーブ": "0",
+            "H": "0",
+            "HP": "0",
+            "完投": "0",
+            "完封勝": "0",
+            "無四球": "0",
+            "勝率": ".000",
+            "打者": "34",
+            "投球回": "6.2",
+            "安打": "8",
+            "本塁打": "0",
+            "四球": "6",
+            "死球": "0",
+            "三振": "5",
+            "暴投": "1",
+            "ボーク": "0",
+            "失点": "7",
+            "自責点": "7",
+            "防御率": "9.45"
+          },
+          "totals": {
+            "games": 2,
+            "wins": 0,
+            "losses": 2,
+            "saves": 0,
+            "holds": 0,
+            "holdPoints": 0,
+            "completeGames": 0,
+            "shutouts": 0,
+            "noWalkCompleteGames": 0,
+            "winningPercentage": 0,
+            "battersFaced": 34,
+            "innings": 6.666666666666667,
+            "hitsAllowed": 8,
+            "homeRunsAllowed": 0,
+            "walksAllowed": 6,
+            "hitByPitch": 0,
+            "strikeouts": 5,
+            "wildPitches": 1,
+            "balks": 0,
+            "runsAllowed": 7,
+            "earnedRuns": 7
+          },
+          "metrics": {
+            "era": 9.45,
+            "whip": 2.1,
+            "strikeoutsPerNine": 6.75,
+            "walksPerNine": 8.1,
+            "strikeoutToWalkRatio": 0.833
+          }
+        }
+      ],
+      "career": {
+        "batting": {
+          "seasons": 1,
+          "games": 2,
+          "plateAppearances": 0,
+          "atBats": 0,
+          "runs": 0,
+          "hits": 0,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 0,
+          "totalBases": 0,
+          "rbi": 0,
+          "steals": 0,
+          "walks": 0,
+          "hitByPitch": 0,
+          "strikeouts": 0,
+          "battingAverage": null,
+          "onBasePercentage": null,
+          "sluggingPercentage": null,
+          "ops": null,
+          "iso": null
+        },
+        "pitching": {
+          "seasons": 1,
+          "games": 2,
+          "wins": 0,
+          "losses": 2,
+          "saves": 0,
+          "holds": 0,
+          "innings": 6.667,
+          "hitsAllowed": 8,
+          "walksAllowed": 6,
+          "strikeouts": 5,
+          "earnedRuns": 7,
+          "winningPercentage": 0,
+          "era": 9.45,
+          "whip": 2.1,
+          "strikeoutsPerNine": 6.75,
+          "walksPerNine": 8.1,
+          "strikeoutToWalkRatio": 0.833
+        }
+      }
+    },
+    "links": {
+      "self": "/players/12ovb.json"
+    }
+  },
+  "meta": {
+    "source": {
+      "name": "npb.jp",
+      "url": "https://npb.jp/bis/players/01805159.html"
+    },
+    "generatedAt": "2026-08-19T05:22:21.578Z"
+  }
+}

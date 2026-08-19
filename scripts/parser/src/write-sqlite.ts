@@ -1,13 +1,11 @@
 import fs from "node:fs";
 import path from "node:path";
 import {
-  calculatePlayerStats,
   type EnrichedPlayer,
   type EnrichedSnapshot,
-  type RawPlayer,
-  readSnapshot,
+  readPlayerDocuments,
 } from "@repo/baseball-data";
-import { DEFAULT_DERIVED_JSON_PATH, DEFAULT_SQLITE_PATH } from "./constants.js";
+import { DEFAULT_PLAYER_DATA_DIR, DEFAULT_SQLITE_PATH } from "./constants.js";
 import { writeSnapshotToSqlite } from "./sqlite.js";
 
 function getOption(args: string[], flag: string, fallback: string): string {
@@ -15,9 +13,7 @@ function getOption(args: string[], flag: string, fallback: string): string {
   return index === -1 ? fallback : (args[index + 1] ?? fallback);
 }
 
-function enrichSnapshot(
-  snapshot: EnrichedSnapshot | { players: RawPlayer[] },
-): EnrichedSnapshot {
+function createSnapshot(players: EnrichedPlayer[]): EnrichedSnapshot {
   return {
     schemaVersion: 1,
     pipeline: "calculate",
@@ -26,11 +22,7 @@ function enrichSnapshot(
       name: "npb.jp",
       url: "https://npb.jp/bis/players/",
     },
-    players: snapshot.players.map((player) =>
-      "computedStats" in player
-        ? (player as EnrichedPlayer)
-        : calculatePlayerStats(player),
-    ),
+    players,
   };
 }
 
@@ -38,7 +30,11 @@ async function main(): Promise<void> {
   const args = process.argv.slice(2);
   const inputPath = path.resolve(
     process.cwd(),
-    getOption(args, "--input", DEFAULT_DERIVED_JSON_PATH),
+    getOption(
+      args,
+      "--input-dir",
+      getOption(args, "--input", DEFAULT_PLAYER_DATA_DIR),
+    ),
   );
   const dbPath = path.resolve(
     process.cwd(),
@@ -46,9 +42,8 @@ async function main(): Promise<void> {
   );
   fs.mkdirSync(path.dirname(dbPath), { recursive: true });
 
-  const snapshot = await readSnapshot<RawPlayer | EnrichedPlayer>(inputPath);
-  const enriched = enrichSnapshot(snapshot);
-  const result = await writeSnapshotToSqlite(enriched, dbPath);
+  const players = await readPlayerDocuments(inputPath);
+  const result = await writeSnapshotToSqlite(createSnapshot(players), dbPath);
   console.log(
     `Wrote ${result.players} players, ${result.battingRows} batting rows, and ${result.pitchingRows} pitching rows to ${dbPath}`,
   );

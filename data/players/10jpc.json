@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 2,
+  "data": {
+    "type": "player",
+    "id": "10jpc",
+    "attributes": {
+      "profile": {
+        "name": "窪田 洋祐",
+        "kana": "くぼた・ようすけ",
+        "url": "https://npb.jp/bis/players/01705152.html",
+        "isActive": true,
+        "details": {
+          "ポジション": "外野手",
+          "投打": "右投右打",
+          "身長／体重": "185cm／87kg",
+          "生年月日": "2007年7月31日",
+          "経歴": "札幌日大高",
+          "ドラフト": "2025年ドラフト4位"
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2026,
+          "team": "オリックス",
+          "raw": {
+            "年度": "2026",
+            "所属球団": "オリックス",
+            "試合": "2",
+            "打席": "1",
+            "打数": "1",
+            "得点": "0",
+            "安打": "0",
+            "二塁打": "0",
+            "三塁打": "0",
+            "本塁打": "0",
+            "塁打": "0",
+            "打点": "0",
+            "盗塁": "0",
+            "盗塁刺": "0",
+            "犠打": "0",
+            "犠飛": "0",
+            "四球": "0",
+            "死球": "0",
+            "三振": "1",
+            "併殺打": "0",
+            "打率": ".000",
+            "長打率": ".000",
+            "出塁率": ".000"
+          },
+          "totals": {
+            "games": 2,
+            "plateAppearances": 1,
+            "atBats": 1,
+            "runs": 0,
+            "hits": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 0,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 1,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0,
+            "onBasePercentage": 0,
+            "sluggingPercentage": 0,
+            "ops": 0,
+            "iso": 0,
+            "walkPercentage": 0,
+            "strikeoutPercentage": 1
+          }
+        }
+      ],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 1,
+          "games": 2,
+          "plateAppearances": 1,
+          "atBats": 1,
+          "runs": 0,
+          "hits": 0,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 0,
+          "totalBases": 0,
+          "rbi": 0,
+          "steals": 0,
+          "walks": 0,
+          "hitByPitch": 0,
+          "strikeouts": 1,
+          "battingAverage": 0,
+          "onBasePercentage": 0,
+          "sluggingPercentage": 0,
+          "ops": 0,
+          "iso": 0
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/10jpc.json"
+    }
+  },
+  "meta": {
+    "source": {
+      "name": "npb.jp",
+      "url": "https://npb.jp/bis/players/01705152.html"
+    },
+    "generatedAt": "2026-08-19T05:22:21.578Z"
+  }
+}

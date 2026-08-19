@@ -7,14 +7,12 @@ NPB公式サイトの選手プロフィール・打撃成績・投手成績をJS
 ```text
 NPB HTML
   ↓ scrape
-data/raw/players.json
-  ↓ calculate
-data/derived/players.json
+data/players/<player-id>.json
   ↓ write-sqlite
 data/sqlite/baseball.sqlite
 ```
 
-raw JSONは取得した値を保持し、派生JSONでは OPS、ISO、BB%、K%、ERA、WHIP、K/9、BB/9、K/BB と通算値を `computedStats` に追加します。SQLiteはWebアプリなどから検索しやすい形に正規化した出力です。
+`data/players/index.json` は選手一覧、`data/players/<player-id>.json` は1選手分のJSON APIリソースです。各リソースの `data.attributes.*Stats[].raw` にNPBから取得した行データを保持し、同じ要素の `totals` と `metrics` に数値化した集計値・OPS、ISO、BB%、K%、ERA、WHIP、K/9、BB/9、K/BBを追加します。SQLiteはWebアプリなどから検索しやすい形に正規化した再生成可能な出力です。
 
 ## Setup
 
@@ -37,7 +35,7 @@ pnpm --filter @repo/parser run scrape -- \
   --debug
 ```
 
-取得後、派生スタッツJSONとSQLiteを生成します。
+取得後、選手ごとのJSON APIリソースとSQLiteを生成します。
 
 ```sh
 pnpm --filter @repo/parser run calculate
@@ -48,22 +46,22 @@ pnpm --filter @repo/parser run write-sqlite
 
 ```sh
 pnpm --filter @repo/parser run calculate -- \
-  --input ../../data/raw/players.json \
-  --output ../../data/derived/players.json
+  --input-dir ../../data/players \
+  --output-dir ../../data/players
 
 pnpm --filter @repo/parser run write-sqlite -- \
-  --input ../../data/derived/players.json \
+  --input-dir ../../data/players \
   --db ../../data/sqlite/baseball.sqlite
 ```
 
-`write-sqlite` はスナップショット全体をSQLiteへ再構築します。派生JSONがない場合でも、raw JSONを `--input` に渡せば計算してから書き出せます。
+`calculate` は個別リソースを再計算して同じディレクトリへ書き戻します。`--input <legacy-snapshot>` を指定すると、旧形式の集約JSONから個別リソースへ移行できます。`write-sqlite` は選手JSON全体からSQLiteを再構築します。
 
 ## Repository layout
 
 - `packages/baseball-data`: 型、JSON I/O、派生スタッツ計算
 - `scripts/parser`: NPBスクレイパー、派生JSON生成、Kysely + `better-sqlite3` writer
-- `data/raw`: NPBから取得したraw JSON
-- `data/derived`: 計算済みのJSON
+- `data/players/index.json`: 選手一覧のJSON APIリソース
+- `data/players/<player-id>.json`: 1選手分のraw・集計値・派生スタッツ
 - `data/sqlite`: SQLite出力（Git管理外）
 - `docs/adr`: データ形式とSQLite出力の設計判断
 

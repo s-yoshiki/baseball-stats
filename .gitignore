@@ -11,7 +11,7 @@ build
 .env.*
 !.env.example
 
-# SQLite is a rebuildable delivery artifact. Raw and derived JSON snapshots
-# are the canonical data and are intentionally kept under version control.
+# SQLite is a rebuildable delivery artifact. Player JSON API resources are the
+# canonical data and are intentionally kept under version control.
 data/sqlite/*.sqlite
 data/sqlite/*.sqlite-*

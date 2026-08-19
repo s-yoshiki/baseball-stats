@@ -2,13 +2,13 @@
 
 ## 目的
 
-NPB公式サイトの公開選手データを取得し、次の3段階で管理するリポジトリです。
+NPB公式サイトの公開選手データを取得し、選手ごとのJSON APIリソースを正本として管理するリポジトリです。
 
-1. `data/raw/players.json`: NPBページから抽出した原データ
-2. `data/derived/players.json`: 原データから計算した派生スタッツ付きデータ
-3. `data/sqlite/baseball.sqlite`: アプリケーション向けのSQLite出力
+1. `data/players/index.json`: 選手一覧
+2. `data/players/<player-id>.json`: 1選手分の原データ、集計値、派生スタッツ
+3. `data/sqlite/baseball.sqlite`: アプリケーション向けの再生成可能なSQLite出力
 
-原データと派生JSONを正本とし、SQLiteはJSONから再生成できる成果物として扱います。
+選手JSONを正本とし、SQLiteはJSONから再生成できる成果物として扱います。NPBの表記を保持する原データは `data.attributes.battingStats[].raw` と `data.attributes.pitchingStats[].raw` に入れます。
 
 ## Runtime and package manager
 
@@ -32,7 +32,7 @@ pnpm --filter @repo/parser run write-sqlite
 
 ## Change rules
 
-- `npb.jp` のレスポンスは raw JSON にそのまま保持し、計算値を上書きしない。
+- `npb.jp` のレスポンスは各選手JSONの `data.attributes.*Stats[].raw` にそのまま保持し、計算値を上書きしない。
 - 派生値は `packages/baseball-data/src/stats.ts` の純粋関数で計算する。
 - JSONのスキーマを変更した場合は `schemaVersion`、README、関連テストを更新する。
 - SQLiteのテーブルや列を変更する場合は `scripts/parser/src/sqlite.ts` とドキュメントを同時に更新する。

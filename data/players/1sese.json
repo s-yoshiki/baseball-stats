@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 2,
+  "data": {
+    "type": "player",
+    "id": "1sese",
+    "attributes": {
+      "profile": {
+        "name": "Ｌ．ボイト",
+        "kana": "ルーク・ボイト (LUKE VOIT)",
+        "url": "https://npb.jp/bis/players/03005150.html",
+        "isActive": true,
+        "details": {
+          "ポジション": "内野手",
+          "投打": "右投右打",
+          "身長／体重": "188cm／117kg",
+          "生年月日": "1991年2月13日",
+          "経歴": "ミズーリ州大 - カージナルス - ヤンキース - パドレス - ナショナルズ - ブルワーズ",
+          "ドラフト": ""
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2025,
+          "team": "東北楽天",
+          "raw": {
+            "年度": "2025",
+            "所属球団": "東北楽天",
+            "試合": "67",
+            "打席": "276",
+            "打数": "243",
+            "得点": "29",
+            "安打": "73",
+            "二塁打": "9",
+            "三塁打": "0",
+            "本塁打": "13",
+            "塁打": "121",
+            "打点": "39",
+            "盗塁": "0",
+            "盗塁刺": "0",
+            "犠打": "0",
+            "犠飛": "0",
+            "四球": "27",
+            "死球": "6",
+            "三振": "59",
+            "併殺打": "5",
+            "打率": ".300",
+            "長打率": ".498",
+            "出塁率": ".384"
+          },
+          "totals": {
+            "games": 67,
+            "plateAppearances": 276,
+            "atBats": 243,
+            "runs": 29,
+            "hits": 73,
+            "doubles": 9,
+            "triples": 0,
+            "homeRuns": 13,
+            "totalBases": 121,
+            "rbi": 39,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 27,
+            "hitByPitch": 6,
+            "strikeouts": 59,
+            "groundedIntoDoublePlays": 5
+          },
+          "metrics": {
+            "battingAverage": 0.3,
+            "onBasePercentage": 0.384,
+            "sluggingPercentage": 0.498,
+            "ops": 0.882,
+            "iso": 0.198,
+            "walkPercentage": 0.098,
+            "strikeoutPercentage": 0.214
+          }
+        },
+        {
+          "season": 2026,
+          "team": "東北楽天",
+          "raw": {
+            "年度": "2026",
+            "所属球団": "東北楽天",
+            "試合": "20",
+            "打席": "74",
+            "打数": "67",
+            "得点": "3",
+            "安打": "8",
+            "二塁打": "3",
+            "三塁打": "0",
+            "本塁打": "0",
+            "塁打": "11",
+            "打点": "3",
+            "盗塁": "0",
+            "盗塁刺": "0",
+            "犠打": "0",
+            "犠飛": "1",
+            "四球": "4",
+            "死球": "2",
+            "三振": "19",
+            "併殺打": "3",
+            "打率": ".119",
+            "長打率": ".164",
+            "出塁率": ".189"
+          },
+          "totals": {
+            "games": 20,
+            "plateAppearances": 74,
+            "atBats": 67,
+            "runs": 3,
+            "hits": 8,
+            "doubles": 3,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 11,
+            "rbi": 3,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 1,
+            "walks": 4,
+            "hitByPitch": 2,
+            "strikeouts": 19,
+            "groundedIntoDoublePlays": 3
+          },
+          "metrics": {
+            "battingAverage": 0.119,
+            "onBasePercentage": 0.189,
+            "sluggingPercentage": 0.164,
+            "ops": 0.353,
+            "iso": 0.045,
+            "walkPercentage": 0.054,
+            "strikeoutPercentage": 0.257
+          }
+        }
+      ],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 2,
+          "games": 87,
+          "plateAppearances": 350,
+          "atBats": 310,
+          "runs": 32,
+          "hits": 81,
+          "doubles": 12,
+          "triples": 0,
+          "homeRuns": 13,
+          "totalBases": 132,
+          "rbi": 42,
+          "steals": 0,
+          "walks": 31,
+          "hitByPitch": 8,
+          "strikeouts": 78,
+          "battingAverage": 0.261,
+          "onBasePercentage": 0.343,
+          "sluggingPercentage": 0.426,
+          "ops": 0.769,
+          "iso": 0.165
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/1sese.json"
+    }
+  },
+  "meta": {
+    "source": {
+      "name": "npb.jp",
+      "url": "https://npb.jp/bis/players/03005150.html"
+    },
+    "generatedAt": "2026-08-19T05:22:21.578Z"
+  }
+}

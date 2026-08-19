@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 2,
+  "data": {
+    "type": "player",
+    "id": "1ujy6",
+    "attributes": {
+      "profile": {
+        "name": "森 駿太",
+        "kana": "もり・しゅんた",
+        "url": "https://npb.jp/bis/players/03105150.html",
+        "isActive": true,
+        "details": {
+          "ポジション": "内野手",
+          "投打": "右投左打",
+          "身長／体重": "188cm／93kg",
+          "生年月日": "2006年12月25日",
+          "経歴": "桐光学園高",
+          "ドラフト": "2024年ドラフト3位"
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2025,
+          "team": "中 日",
+          "raw": {
+            "年度": "2025",
+            "所属球団": "中 日",
+            "試合": "6",
+            "打席": "22",
+            "打数": "20",
+            "得点": "1",
+            "安打": "4",
+            "二塁打": "0",
+            "三塁打": "1",
+            "本塁打": "0",
+            "塁打": "6",
+            "打点": "0",
+            "盗塁": "0",
+            "盗塁刺": "0",
+            "犠打": "0",
+            "犠飛": "0",
+            "四球": "1",
+            "死球": "1",
+            "三振": "8",
+            "併殺打": "0",
+            "打率": ".200",
+            "長打率": ".300",
+            "出塁率": ".273"
+          },
+          "totals": {
+            "games": 6,
+            "plateAppearances": 22,
+            "atBats": 20,
+            "runs": 1,
+            "hits": 4,
+            "doubles": 0,
+            "triples": 1,
+            "homeRuns": 0,
+            "totalBases": 6,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 1,
+            "hitByPitch": 1,
+            "strikeouts": 8,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0.2,
+            "onBasePercentage": 0.273,
+            "sluggingPercentage": 0.3,
+            "ops": 0.573,
+            "iso": 0.1,
+            "walkPercentage": 0.045,
+            "strikeoutPercentage": 0.364
+          }
+        }
+      ],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 1,
+          "games": 6,
+          "plateAppearances": 22,
+          "atBats": 20,
+          "runs": 1,
+          "hits": 4,
+          "doubles": 0,
+          "triples": 1,
+          "homeRuns": 0,
+          "totalBases": 6,
+          "rbi": 0,
+          "steals": 0,
+          "walks": 1,
+          "hitByPitch": 1,
+          "strikeouts": 8,
+          "battingAverage": 0.2,
+          "onBasePercentage": 0.273,
+          "sluggingPercentage": 0.3,
+          "ops": 0.573,
+          "iso": 0.1
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/1ujy6.json"
+    }
+  },
+  "meta": {
+    "source": {
+      "name": "npb.jp",
+      "url": "https://npb.jp/bis/players/03105150.html"
+    },
+    "generatedAt": "2026-08-19T05:22:21.578Z"
+  }
+}

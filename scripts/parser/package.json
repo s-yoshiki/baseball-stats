@@ -1,0 +1,28 @@
+{
+  "name": "@repo/parser",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc --noEmit",
+    "calculate": "tsx src/calculate.ts",
+    "scrape": "tsx src/main.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "write-sqlite": "tsx src/write-sqlite.ts"
+  },
+  "dependencies": {
+    "@repo/baseball-data": "workspace:*",
+    "better-sqlite3": "13.0.2",
+    "cheerio": "1.2.0",
+    "kysely": "0.29.4"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "@types/better-sqlite3": "7.6.13",
+    "@types/node": "22.15.3",
+    "tsx": "4.22.3",
+    "typescript": "7.0.2",
+    "vitest": "4.1.10"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "baseball-stats",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "check": "biome check .",
+    "check:fix": "biome check --write .",
+    "dev": "turbo run dev",
+    "format": "biome format --write .",
+    "format:check": "biome format .",
+    "lint": "biome lint .",
+    "test": "turbo run test",
+    "typecheck": "turbo run typecheck",
+    "verify": "pnpm check && pnpm typecheck && pnpm test && pnpm build"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.5",
+    "turbo": "2.10.7",
+    "typescript": "7.0.2"
+  },
+  "packageManager": "pnpm@11.15.0",
+  "engines": {
+    "node": ">=26"
+  }
+}

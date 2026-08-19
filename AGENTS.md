@@ -1,0 +1,51 @@
+# baseball-stats 開発ガイド
+
+## 目的
+
+NPB公式サイトの公開選手データを取得し、次の3段階で管理するリポジトリです。
+
+1. `data/raw/players.json`: NPBページから抽出した原データ
+2. `data/derived/players.json`: 原データから計算した派生スタッツ付きデータ
+3. `data/sqlite/baseball.sqlite`: アプリケーション向けのSQLite出力
+
+原データと派生JSONを正本とし、SQLiteはJSONから再生成できる成果物として扱います。
+
+## Runtime and package manager
+
+- Node.js 26
+- pnpm 11
+- pnpm workspace + Turborepo
+- SQLite access: Kysely + `better-sqlite3`
+
+## Commands
+
+```sh
+pnpm install
+pnpm verify
+
+pnpm --filter @repo/parser run scrape -- --limit 3 --kana-limit 1 --debug --delay 300
+pnpm --filter @repo/parser run calculate
+pnpm --filter @repo/parser run write-sqlite
+```
+
+フルスクレイプはアクセス間隔を設け、依頼がない限り実行しません。NPBサイトへアクセスする検証では、必ず `--limit` と `--kana-limit` を使います。
+
+## Change rules
+
+- `npb.jp` のレスポンスは raw JSON にそのまま保持し、計算値を上書きしない。
+- 派生値は `packages/baseball-data/src/stats.ts` の純粋関数で計算する。
+- JSONのスキーマを変更した場合は `schemaVersion`、README、関連テストを更新する。
+- SQLiteのテーブルや列を変更する場合は `scripts/parser/src/sqlite.ts` とドキュメントを同時に更新する。
+- APIキー、Cookie、個人情報、認証情報はコミットしない。
+- commit、push、PR作成、フルスクレイプは明示的な依頼がある場合だけ行う。
+
+## Verification
+
+変更後は、対象範囲に応じて次を実行します。
+
+```sh
+pnpm check
+pnpm typecheck
+pnpm test
+pnpm build
+```

@@ -9,6 +9,7 @@
     "scrape": "tsx src/main.ts",
     "test": "vitest run",
     "typecheck": "tsc --noEmit",
+    "validate-sqlite": "tsx src/validate-sqlite.ts",
     "write-sqlite": "tsx src/write-sqlite.ts"
   },
   "dependencies": {

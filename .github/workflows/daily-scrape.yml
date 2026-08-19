@@ -1,0 +1,88 @@
+name: Daily scrape
+
+on:
+  schedule:
+    # 03:00 JST. Keep the request interval in the command below so the
+    # scheduled job is polite to npb.jp.
+    - cron: "0 18 * * *"
+  workflow_dispatch:
+    inputs:
+      scope:
+        description: "Player scope"
+        type: choice
+        options:
+          - active
+          - all
+        default: active
+        required: true
+      limit:
+        description: "Optional player limit for a small verification run"
+        type: string
+        default: ""
+        required: false
+      kana_limit:
+        description: "Optional kana-page limit for a small verification run"
+        type: string
+        default: ""
+        required: false
+      delay:
+        description: "Delay between requests in milliseconds"
+        type: string
+        default: "300"
+        required: true
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: daily-scrape
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .node-version
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Scrape player JSON
+        env:
+          SCRAPE_SCOPE: ${{ inputs.scope || 'active' }}
+          SCRAPE_LIMIT: ${{ inputs.limit || '' }}
+          SCRAPE_KANA_LIMIT: ${{ inputs.kana_limit || '' }}
+          SCRAPE_DELAY: ${{ inputs.delay || '300' }}
+        run: |
+          args=(--scope "$SCRAPE_SCOPE" --delay "$SCRAPE_DELAY" --debug)
+          if [ -n "$SCRAPE_LIMIT" ]; then args+=(--limit "$SCRAPE_LIMIT"); fi
+          if [ -n "$SCRAPE_KANA_LIMIT" ]; then args+=(--kana-limit "$SCRAPE_KANA_LIMIT"); fi
+          pnpm --filter @repo/parser run scrape -- "${args[@]}"
+
+      - name: Open data update pull request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          base: main
+          branch: automation/daily-scrape
+          delete-branch: true
+          commit-message: "data: update player JSON from NPB"
+          title: "data: update player JSON from NPB"
+          body: |
+            Automated player-data refresh from NPB公式サイト.
+
+            - Source workflow: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+            - Scope: `${{ inputs.scope || 'active' }}`
+            - The SQLite artifact is generated after this PR is merged.

@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "234kw",
     "attributes": {
       "profile": {
-        "name": "Ｎ．ソト",
-        "kana": "ネフタリ・ソト (NEFTALI SOTO)",
+        "familyName": "N.ソト",
+        "givenName": null,
+        "familyNameKana": "NEFTALI",
+        "givenNameKana": "SOTO",
+        "registeredName": "N.ソト",
+        "registeredNameKana": "ネフタリ・ソト",
         "url": "https://npb.jp/bis/players/03505136.html",
         "isActive": true,
         "details": {
@@ -596,6 +599,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/03505136.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

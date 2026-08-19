@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "noqa",
     "attributes": {
       "profile": {
-        "name": "泉 圭輔",
-        "kana": "いずみ・けいすけ",
+        "familyName": "泉",
+        "givenName": "圭輔",
+        "familyNameKana": "いずみ",
+        "givenNameKana": "けいすけ",
+        "registeredName": "泉 圭輔",
+        "registeredNameKana": "いずみ・けいすけ",
         "url": "https://npb.jp/bis/players/01105138.html",
         "isActive": true,
         "details": {
@@ -1019,6 +1022,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01105138.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

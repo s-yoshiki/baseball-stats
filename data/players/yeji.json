@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "yeji",
     "attributes": {
       "profile": {
-        "name": "西川 歩",
-        "kana": "にしかわ・あゆむ",
+        "familyName": "西川",
+        "givenName": "歩",
+        "familyNameKana": "にしかわ",
+        "givenNameKana": "あゆむ",
+        "registeredName": "西川 歩",
+        "registeredNameKana": "にしかわ・あゆむ",
         "url": "https://npb.jp/bis/players/01605150.html",
         "isActive": true,
         "details": {
@@ -73,6 +76,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01605150.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

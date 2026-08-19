@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "10jpc",
     "attributes": {
       "profile": {
-        "name": "窪田 洋祐",
-        "kana": "くぼた・ようすけ",
+        "familyName": "窪田",
+        "givenName": "洋祐",
+        "familyNameKana": "くぼた",
+        "givenNameKana": "ようすけ",
+        "registeredName": "窪田 洋祐",
+        "registeredNameKana": "くぼた・ようすけ",
         "url": "https://npb.jp/bis/players/01705152.html",
         "isActive": true,
         "details": {
@@ -132,6 +135,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01705152.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

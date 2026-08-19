@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "rz1m",
     "attributes": {
       "profile": {
-        "name": "植田 海",
-        "kana": "うえだ・かい",
+        "familyName": "植田",
+        "givenName": "海",
+        "familyNameKana": "うえだ",
+        "givenNameKana": "かい",
+        "registeredName": "植田 海",
+        "registeredNameKana": "うえだ・かい",
         "url": "https://npb.jp/bis/players/01305130.html",
         "isActive": true,
         "details": {
@@ -712,6 +715,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01305130.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

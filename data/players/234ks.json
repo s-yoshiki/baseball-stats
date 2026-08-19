@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "234ks",
     "attributes": {
       "profile": {
-        "name": "Ｒ．ドリス",
-        "kana": "ラファエル・ドリス (RAFAEL DOLIS)",
+        "familyName": "R.ドリス",
+        "givenName": null,
+        "familyNameKana": "RAFAEL",
+        "givenNameKana": "DOLIS",
+        "registeredName": "R.ドリス",
+        "registeredNameKana": "ラファエル・ドリス",
         "url": "https://npb.jp/bis/players/03505132.html",
         "isActive": true,
         "details": {
@@ -783,6 +786,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/03505132.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

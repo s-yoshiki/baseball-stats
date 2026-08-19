@@ -65,6 +65,15 @@ export type RawPlayer = {
   pitchingStats: PitchingStatRow[];
 };
 
+export type PlayerName = {
+  familyName: string | null;
+  givenName: string | null;
+  familyNameKana: string | null;
+  givenNameKana: string | null;
+  registeredName: string;
+  registeredNameKana: string;
+};
+
 export type ComputedBattingSeason = {
   season: number | null;
   team: string | null;
@@ -222,8 +231,12 @@ export type PlayerApiPitchingStat = {
 
 export type PlayerApiAttributes = {
   profile: {
-    name: string;
-    kana: string;
+    familyName: PlayerName["familyName"];
+    givenName: PlayerName["givenName"];
+    familyNameKana: PlayerName["familyNameKana"];
+    givenNameKana: PlayerName["givenNameKana"];
+    registeredName: PlayerName["registeredName"];
+    registeredNameKana: PlayerName["registeredNameKana"];
     url: string;
     isActive: boolean;
     details: Record<string, string>;
@@ -243,7 +256,6 @@ export type PlayerApiResource = {
 };
 
 export type PlayerApiDocument = {
-  schemaVersion: 2;
   data: PlayerApiResource;
   meta: {
     source: {
@@ -255,14 +267,18 @@ export type PlayerApiDocument = {
 };
 
 export type PlayerApiIndexDocument = {
-  schemaVersion: 2;
   data: Array<{
     type: "player";
     id: string;
     attributes: Pick<
       PlayerApiAttributes["profile"],
-      "name" | "kana" | "isActive"
-    >;
+      | "familyName"
+      | "givenName"
+      | "familyNameKana"
+      | "givenNameKana"
+      | "registeredName"
+      | "registeredNameKana"
+    > & { isActive: boolean };
     links: {
       self: string;
     };

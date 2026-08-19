@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "27ex3",
     "attributes": {
       "profile": {
-        "name": "Ｄ．サルディ",
-        "kana": "ダリオ・サルディ (DARIO SARDUY)",
+        "familyName": "D.サルディ",
+        "givenName": null,
+        "familyNameKana": "DARIO",
+        "givenNameKana": "SARDUY",
+        "registeredName": "D.サルディ",
+        "registeredNameKana": "ダリオ・サルディ",
         "url": "https://npb.jp/bis/players/03705159.html",
         "isActive": true,
         "details": {
@@ -73,6 +76,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/03705159.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

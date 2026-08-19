@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "noq7",
     "attributes": {
       "profile": {
-        "name": "石川 慎吾",
-        "kana": "いしかわ・しんご",
+        "familyName": "石川",
+        "givenName": "慎吾",
+        "familyNameKana": "いしかわ",
+        "givenNameKana": "しんご",
+        "registeredName": "石川 慎吾",
+        "registeredNameKana": "いしかわ・しんご",
         "url": "https://npb.jp/bis/players/01105135.html",
         "isActive": true,
         "details": {
@@ -886,6 +889,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01105135.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

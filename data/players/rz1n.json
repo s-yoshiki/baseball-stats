@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "rz1n",
     "attributes": {
       "profile": {
-        "name": "大島 洋平",
-        "kana": "おおしま・ようへい",
+        "familyName": "大島",
+        "givenName": "洋平",
+        "familyNameKana": "おおしま",
+        "givenNameKana": "ようへい",
+        "registeredName": "大島 洋平",
+        "registeredNameKana": "おおしま・ようへい",
         "url": "https://npb.jp/bis/players/01305131.html",
         "isActive": true,
         "details": {
@@ -1060,6 +1063,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01305131.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

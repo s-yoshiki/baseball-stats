@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "14u11",
     "attributes": {
       "profile": {
-        "name": "上甲 凌大",
-        "kana": "じょうこう・りょうた",
+        "familyName": "上甲",
+        "givenName": "凌大",
+        "familyNameKana": "じょうこう",
+        "givenNameKana": "りょうた",
+        "registeredName": "上甲 凌大",
+        "registeredNameKana": "じょうこう・りょうた",
         "url": "https://npb.jp/bis/players/01905157.html",
         "isActive": true,
         "details": {
@@ -73,6 +76,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01905157.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

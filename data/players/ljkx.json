@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "ljkx",
     "attributes": {
       "profile": {
-        "name": "佐々木 健",
-        "kana": "ささき・たける",
+        "familyName": "佐々木",
+        "givenName": "健",
+        "familyNameKana": "ささき",
+        "givenNameKana": "たける",
+        "registeredName": "佐々木 健",
+        "registeredNameKana": "ささき・たける",
         "url": "https://npb.jp/bis/players/01005153.html",
         "isActive": true,
         "details": {
@@ -547,6 +550,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01005153.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "12ov4",
     "attributes": {
       "profile": {
-        "name": "増居 翔太",
-        "kana": "ますい・しょうた",
+        "familyName": "増居",
+        "givenName": "翔太",
+        "familyNameKana": "ますい",
+        "givenNameKana": "しょうた",
+        "registeredName": "増居 翔太",
+        "registeredNameKana": "ますい・しょうた",
         "url": "https://npb.jp/bis/players/01805152.html",
         "isActive": true,
         "details": {
@@ -193,6 +196,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01805152.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

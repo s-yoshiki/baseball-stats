@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "12ovb",
     "attributes": {
       "profile": {
-        "name": "藤原 大翔",
-        "kana": "ふじわら・はると",
+        "familyName": "藤原",
+        "givenName": "大翔",
+        "familyNameKana": "ふじわら",
+        "givenNameKana": "はると",
+        "registeredName": "藤原 大翔",
+        "registeredNameKana": "ふじわら・はると",
         "url": "https://npb.jp/bis/players/01805159.html",
         "isActive": true,
         "details": {
@@ -193,6 +196,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01805159.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

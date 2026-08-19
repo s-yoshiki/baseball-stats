@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "w9dq",
     "attributes": {
       "profile": {
-        "name": "片山 楽生",
-        "kana": "かたやま・らいく",
+        "familyName": "片山",
+        "givenName": "楽生",
+        "familyNameKana": "かたやま",
+        "givenNameKana": "らいく",
+        "registeredName": "片山 楽生",
+        "registeredNameKana": "かたやま・らいく",
         "url": "https://npb.jp/bis/players/01505150.html",
         "isActive": true,
         "details": {
@@ -311,6 +314,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01505150.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

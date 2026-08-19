@@ -34,7 +34,7 @@ pnpm --filter @repo/parser run write-sqlite
 
 - `npb.jp` のレスポンスは各選手JSONの `data.attributes.*Stats[].raw` にそのまま保持し、計算値を上書きしない。
 - 派生値は `packages/baseball-data/src/stats.ts` の純粋関数で計算する。
-- JSONのスキーマを変更した場合は `schemaVersion`、README、関連テストを更新する。
+- JSONのスキーマを変更した場合は README、関連テスト、サンプルデータを更新する。
 - SQLiteのテーブルや列を変更する場合は `scripts/parser/src/sqlite.ts` とドキュメントを同時に更新する。
 - APIキー、Cookie、個人情報、認証情報はコミットしない。
 - commit、push、PR作成、フルスクレイプは明示的な依頼がある場合だけ行う。

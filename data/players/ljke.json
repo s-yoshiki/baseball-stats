@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "ljke",
     "attributes": {
       "profile": {
-        "name": "高橋 昂也",
-        "kana": "たかはし・こうや",
+        "familyName": "高橋",
+        "givenName": "昂也",
+        "familyNameKana": "たかはし",
+        "givenNameKana": "こうや",
+        "registeredName": "高橋 昂也",
+        "registeredNameKana": "たかはし・こうや",
         "url": "https://npb.jp/bis/players/01005134.html",
         "isActive": true,
         "details": {
@@ -547,6 +550,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01005134.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

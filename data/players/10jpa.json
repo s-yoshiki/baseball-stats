@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "10jpa",
     "attributes": {
       "profile": {
-        "name": "岸本 佑也",
-        "kana": "きしもと・ゆうや",
+        "familyName": "岸本",
+        "givenName": "佑也",
+        "familyNameKana": "きしもと",
+        "givenNameKana": "ゆうや",
+        "registeredName": "岸本 佑也",
+        "registeredNameKana": "きしもと・ゆうや",
         "url": "https://npb.jp/bis/players/01705150.html",
         "isActive": true,
         "details": {
@@ -73,6 +76,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01705150.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

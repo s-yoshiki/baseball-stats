@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "noqm",
     "attributes": {
       "profile": {
-        "name": "安德 駿",
-        "kana": "あんとく・しゅん",
+        "familyName": "安德",
+        "givenName": "駿",
+        "familyNameKana": "あんとく",
+        "givenNameKana": "しゅん",
+        "registeredName": "安德 駿",
+        "registeredNameKana": "あんとく・しゅん",
         "url": "https://npb.jp/bis/players/01105150.html",
         "isActive": true,
         "details": {
@@ -73,6 +76,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01105150.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

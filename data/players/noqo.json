@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "noqo",
     "attributes": {
       "profile": {
-        "name": "飯田 琉斗",
-        "kana": "いいだ・りゅうと",
+        "familyName": "飯田",
+        "givenName": "琉斗",
+        "familyNameKana": "いいだ",
+        "givenNameKana": "りゅうと",
+        "registeredName": "飯田 琉斗",
+        "registeredNameKana": "いいだ・りゅうと",
         "url": "https://npb.jp/bis/players/01105152.html",
         "isActive": true,
         "details": {
@@ -193,6 +196,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01105152.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

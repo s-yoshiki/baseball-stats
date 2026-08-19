@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "rz26",
     "attributes": {
       "profile": {
-        "name": "今坂 幸暉",
-        "kana": "いまさか・ともき",
+        "familyName": "今坂",
+        "givenName": "幸暉",
+        "familyNameKana": "いまさか",
+        "givenNameKana": "ともき",
+        "registeredName": "今坂 幸暉",
+        "registeredNameKana": "いまさか・ともき",
         "url": "https://npb.jp/bis/players/01305150.html",
         "isActive": true,
         "details": {
@@ -73,6 +76,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01305150.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

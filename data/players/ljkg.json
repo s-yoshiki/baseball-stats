@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "ljkg",
     "attributes": {
       "profile": {
-        "name": "高橋 礼",
-        "kana": "たかはし・れい",
+        "familyName": "高橋",
+        "givenName": "礼",
+        "familyNameKana": "たかはし",
+        "givenNameKana": "れい",
+        "registeredName": "高橋 礼",
+        "registeredNameKana": "たかはし・れい",
         "url": "https://npb.jp/bis/players/01005136.html",
         "isActive": true,
         "details": {
@@ -901,6 +904,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01005136.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "14u13",
     "attributes": {
       "profile": {
-        "name": "シンクレア （シンクレア ジョセフ 孝ノ助）",
-        "kana": "しんくれあ（しんくれあ・じょせふこうのすけ）",
+        "familyName": "シンクレア",
+        "givenName": "ジョセフ 孝ノ助",
+        "familyNameKana": "しんくれあ",
+        "givenNameKana": "じょせふこうのすけ",
+        "registeredName": "シンクレア",
+        "registeredNameKana": "しんくれあ",
         "url": "https://npb.jp/bis/players/01905159.html",
         "isActive": true,
         "details": {
@@ -73,6 +76,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01905159.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

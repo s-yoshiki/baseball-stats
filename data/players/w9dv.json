@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "w9dv",
     "attributes": {
       "profile": {
-        "name": "上川畑 大悟",
-        "kana": "かみかわばた・だいご",
+        "familyName": "上川畑",
+        "givenName": "大悟",
+        "familyNameKana": "かみかわばた",
+        "givenNameKana": "だいご",
+        "registeredName": "上川畑 大悟",
+        "registeredNameKana": "かみかわばた・だいご",
         "url": "https://npb.jp/bis/players/01505155.html",
         "isActive": true,
         "details": {
@@ -364,6 +367,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01505155.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

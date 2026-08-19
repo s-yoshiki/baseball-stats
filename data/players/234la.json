@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "234la",
     "attributes": {
       "profile": {
-        "name": "Ｓ．コンスエグラ",
-        "kana": "スタンリー・コンスエグラ (STANLEY CONSUEGRA)",
+        "familyName": "S.コンスエグラ",
+        "givenName": null,
+        "familyNameKana": "STANLEY",
+        "givenNameKana": "CONSUEGRA",
+        "registeredName": "S.コンスエグラ",
+        "registeredNameKana": "スタンリー・コンスエグラ",
         "url": "https://npb.jp/bis/players/03505150.html",
         "isActive": true,
         "details": {
@@ -73,6 +76,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/03505150.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

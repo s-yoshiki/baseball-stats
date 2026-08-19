@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "10jou",
     "attributes": {
       "profile": {
-        "name": "古賀 優大",
-        "kana": "こが・ゆうだい",
+        "familyName": "古賀",
+        "givenName": "優大",
+        "familyNameKana": "こが",
+        "givenNameKana": "ゆうだい",
+        "registeredName": "古賀 優大",
+        "registeredNameKana": "こが・ゆうだい",
         "url": "https://npb.jp/bis/players/01705134.html",
         "isActive": true,
         "details": {
@@ -538,6 +541,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01705134.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

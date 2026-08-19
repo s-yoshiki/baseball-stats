@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "14u0v",
     "attributes": {
       "profile": {
-        "name": "黒川 史陽",
-        "kana": "くろかわ・ふみや",
+        "familyName": "黒川",
+        "givenName": "史陽",
+        "familyNameKana": "くろかわ",
+        "givenNameKana": "ふみや",
+        "registeredName": "黒川 史陽",
+        "registeredNameKana": "くろかわ・ふみや",
         "url": "https://npb.jp/bis/players/01905151.html",
         "isActive": true,
         "details": {
@@ -480,6 +483,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01905151.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

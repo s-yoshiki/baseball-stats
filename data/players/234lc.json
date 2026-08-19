@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "234lc",
     "attributes": {
       "profile": {
-        "name": "Ｓ．ジェリー",
-        "kana": "ショーン・ジェリー (SEAN HJELLE)",
+        "familyName": "S.ジェリー",
+        "givenName": null,
+        "familyNameKana": "SEAN",
+        "givenNameKana": "HJELLE",
+        "registeredName": "S.ジェリー",
+        "registeredNameKana": "ショーン・ジェリー",
         "url": "https://npb.jp/bis/players/03505152.html",
         "isActive": true,
         "details": {
@@ -193,6 +196,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/03505152.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

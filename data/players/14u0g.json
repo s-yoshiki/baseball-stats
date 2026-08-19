@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "14u0g",
     "attributes": {
       "profile": {
-        "name": "清水 達也",
-        "kana": "しみず・たつや",
+        "familyName": "清水",
+        "givenName": "達也",
+        "familyNameKana": "しみず",
+        "givenNameKana": "たつや",
+        "registeredName": "清水 達也",
+        "registeredNameKana": "しみず・たつや",
         "url": "https://npb.jp/bis/players/01905136.html",
         "isActive": true,
         "details": {
@@ -1137,6 +1140,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01905136.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

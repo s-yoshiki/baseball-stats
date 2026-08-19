@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "1sesg",
     "attributes": {
       "profile": {
-        "name": "Ａ．モーレ",
-        "kana": "アクシャイ・モーレ (AKSHAY MORE)",
+        "familyName": "A.モーレ",
+        "givenName": null,
+        "familyNameKana": "AKSHAY",
+        "givenNameKana": "MORE",
+        "registeredName": "A.モーレ",
+        "registeredNameKana": "アクシャイ・モーレ",
         "url": "https://npb.jp/bis/players/03005152.html",
         "isActive": true,
         "details": {
@@ -73,6 +76,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/03005152.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

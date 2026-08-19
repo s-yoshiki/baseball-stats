@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "ptvi",
     "attributes": {
       "profile": {
-        "name": "西野 勇士",
-        "kana": "にしの・ゆうじ",
+        "familyName": "西野",
+        "givenName": "勇士",
+        "familyNameKana": "にしの",
+        "givenNameKana": "ゆうじ",
+        "registeredName": "西野 勇士",
+        "registeredNameKana": "にしの・ゆうじ",
         "url": "https://npb.jp/bis/players/01205118.html",
         "isActive": true,
         "details": {
@@ -1491,6 +1494,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01205118.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

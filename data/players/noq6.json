@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "noq6",
     "attributes": {
       "profile": {
-        "name": "池田 隆英",
-        "kana": "いけだ・たかひで",
+        "familyName": "池田",
+        "givenName": "隆英",
+        "familyNameKana": "いけだ",
+        "givenNameKana": "たかひで",
+        "registeredName": "池田 隆英",
+        "registeredNameKana": "いけだ・たかひで",
         "url": "https://npb.jp/bis/players/01105134.html",
         "isActive": true,
         "details": {
@@ -901,6 +904,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01105134.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

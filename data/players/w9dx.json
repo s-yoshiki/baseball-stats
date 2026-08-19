@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "w9dx",
     "attributes": {
       "profile": {
-        "name": "北村 恵吾",
-        "kana": "きたむら・けいご",
+        "familyName": "北村",
+        "givenName": "恵吾",
+        "familyNameKana": "きたむら",
+        "givenNameKana": "けいご",
+        "registeredName": "北村 恵吾",
+        "registeredNameKana": "きたむら・けいご",
         "url": "https://npb.jp/bis/players/01505157.html",
         "isActive": true,
         "details": {
@@ -248,6 +251,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01505157.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

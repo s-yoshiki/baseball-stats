@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "yejr",
     "attributes": {
       "profile": {
-        "name": "日當 直喜",
-        "kana": "ひなた・なおき",
+        "familyName": "日當",
+        "givenName": "直喜",
+        "familyNameKana": "ひなた",
+        "givenNameKana": "なおき",
+        "registeredName": "日當 直喜",
+        "registeredNameKana": "ひなた・なおき",
         "url": "https://npb.jp/bis/players/01605159.html",
         "isActive": true,
         "details": {
@@ -429,6 +432,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01605159.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

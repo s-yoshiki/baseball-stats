@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "yejk",
     "attributes": {
       "profile": {
-        "name": "冨士 隼斗",
-        "kana": "ふじ・はやと",
+        "familyName": "冨士",
+        "givenName": "隼斗",
+        "familyNameKana": "ふじ",
+        "givenNameKana": "はやと",
+        "registeredName": "冨士 隼斗",
+        "registeredNameKana": "ふじ・はやと",
         "url": "https://npb.jp/bis/players/01605152.html",
         "isActive": true,
         "details": {
@@ -73,6 +76,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01605152.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

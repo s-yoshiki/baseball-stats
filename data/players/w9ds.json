@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "w9ds",
     "attributes": {
       "profile": {
-        "name": "岡村 了樹",
-        "kana": "おかむら・りょうじゅ",
+        "familyName": "岡村",
+        "givenName": "了樹",
+        "familyNameKana": "おかむら",
+        "givenNameKana": "りょうじゅ",
+        "registeredName": "岡村 了樹",
+        "registeredNameKana": "おかむら・りょうじゅ",
         "url": "https://npb.jp/bis/players/01505152.html",
         "isActive": true,
         "details": {
@@ -73,6 +76,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01505152.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

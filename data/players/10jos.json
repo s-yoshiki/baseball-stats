@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "10jos",
     "attributes": {
       "profile": {
-        "name": "小澤 怜史",
-        "kana": "こざわ・れいじ",
+        "familyName": "小澤",
+        "givenName": "怜史",
+        "familyNameKana": "こざわ",
+        "givenNameKana": "れいじ",
+        "registeredName": "小澤 怜史",
+        "registeredNameKana": "こざわ・れいじ",
         "url": "https://npb.jp/bis/players/01705132.html",
         "isActive": true,
         "details": {
@@ -783,6 +786,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01705132.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "14u0j",
     "attributes": {
       "profile": {
-        "name": "平良 拳太郎",
-        "kana": "たいら・けんたろう",
+        "familyName": "平良",
+        "givenName": "拳太郎",
+        "familyNameKana": "たいら",
+        "givenNameKana": "けんたろう",
+        "registeredName": "平良 拳太郎",
+        "registeredNameKana": "たいら・けんたろう",
         "url": "https://npb.jp/bis/players/01905139.html",
         "isActive": true,
         "details": {
@@ -1255,6 +1258,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01905139.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

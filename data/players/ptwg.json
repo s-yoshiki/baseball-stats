@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "ptwg",
     "attributes": {
       "profile": {
-        "name": "谷端 将伍",
-        "kana": "たにはた・しょうご",
+        "familyName": "谷端",
+        "givenName": "将伍",
+        "familyNameKana": "たにはた",
+        "givenNameKana": "しょうご",
+        "registeredName": "谷端 将伍",
+        "registeredNameKana": "たにはた・しょうご",
         "url": "https://npb.jp/bis/players/01205152.html",
         "isActive": true,
         "details": {
@@ -73,6 +76,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01205152.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

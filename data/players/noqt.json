@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "noqt",
     "attributes": {
       "profile": {
-        "name": "安西 叶翔",
-        "kana": "あんざい・かなと",
+        "familyName": "安西",
+        "givenName": "叶翔",
+        "familyNameKana": "あんざい",
+        "givenNameKana": "かなと",
+        "registeredName": "安西 叶翔",
+        "registeredNameKana": "あんざい・かなと",
         "url": "https://npb.jp/bis/players/01105157.html",
         "isActive": true,
         "details": {
@@ -73,6 +76,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01105157.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

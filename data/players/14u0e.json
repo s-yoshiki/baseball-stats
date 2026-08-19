@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "14u0e",
     "attributes": {
       "profile": {
-        "name": "澤田 圭佑",
-        "kana": "さわだ・けいすけ",
+        "familyName": "澤田",
+        "givenName": "圭佑",
+        "familyNameKana": "さわだ",
+        "givenNameKana": "けいすけ",
+        "registeredName": "澤田 圭佑",
+        "registeredNameKana": "さわだ・けいすけ",
         "url": "https://npb.jp/bis/players/01905134.html",
         "isActive": true,
         "details": {
@@ -1137,6 +1140,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01905134.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

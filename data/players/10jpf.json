@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "10jpf",
     "attributes": {
       "profile": {
-        "name": "桐敷 拓馬",
-        "kana": "きりしき・たくま",
+        "familyName": "桐敷",
+        "givenName": "拓馬",
+        "familyNameKana": "きりしき",
+        "givenNameKana": "たくま",
+        "registeredName": "桐敷 拓馬",
+        "registeredNameKana": "きりしき・たくま",
         "url": "https://npb.jp/bis/players/01705155.html",
         "isActive": true,
         "details": {
@@ -665,6 +668,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01705155.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

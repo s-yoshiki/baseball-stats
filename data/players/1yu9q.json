@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "1yu9q",
     "attributes": {
       "profile": {
-        "name": "吉納 翼",
-        "kana": "よしのう・つばさ",
+        "familyName": "吉納",
+        "givenName": "翼",
+        "familyNameKana": "よしのう",
+        "givenNameKana": "つばさ",
+        "registeredName": "吉納 翼",
+        "registeredNameKana": "よしのう・つばさ",
         "url": "https://npb.jp/bis/players/03305150.html",
         "isActive": true,
         "details": {
@@ -132,6 +135,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/03305150.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

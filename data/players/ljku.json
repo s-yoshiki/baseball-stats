@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "ljku",
     "attributes": {
       "profile": {
-        "name": "澤田 遥斗",
-        "kana": "さわだ・はると",
+        "familyName": "澤田",
+        "givenName": "遥斗",
+        "familyNameKana": "さわだ",
+        "givenNameKana": "はると",
+        "registeredName": "澤田 遥斗",
+        "registeredNameKana": "さわだ・はると",
         "url": "https://npb.jp/bis/players/01005150.html",
         "isActive": true,
         "details": {
@@ -73,6 +76,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01005150.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

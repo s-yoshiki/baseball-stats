@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "rz2b",
     "attributes": {
       "profile": {
-        "name": "大里 昂生",
-        "kana": "おおさと・こうせい",
+        "familyName": "大里",
+        "givenName": "昂生",
+        "familyNameKana": "おおさと",
+        "givenNameKana": "こうせい",
+        "registeredName": "大里 昂生",
+        "registeredNameKana": "おおさと・こうせい",
         "url": "https://npb.jp/bis/players/01305155.html",
         "isActive": true,
         "details": {
@@ -248,6 +251,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01305155.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

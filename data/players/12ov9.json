@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "12ov9",
     "attributes": {
       "profile": {
-        "name": "松井 颯",
-        "kana": "まつい・はやて",
+        "familyName": "松井",
+        "givenName": "颯",
+        "familyNameKana": "まつい",
+        "givenNameKana": "はやて",
+        "registeredName": "松井 颯",
+        "registeredNameKana": "まつい・はやて",
         "url": "https://npb.jp/bis/players/01805157.html",
         "isActive": true,
         "details": {
@@ -311,6 +314,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01805157.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

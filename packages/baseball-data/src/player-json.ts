@@ -1,6 +1,7 @@
 import { mkdir, readdir, readFile, rename, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { parseInnings, parseSeason, toNumber } from "./parse-values.js";
+import { parsePlayerName } from "./player-name.js";
 import type {
   BattingTotals,
   ComputedBattingSeason,
@@ -13,6 +14,28 @@ import type {
   PlayerApiIndexDocument,
   PlayerApiPitchingStat,
 } from "./types.js";
+
+type LegacyPlayerApiDocument = {
+  schemaVersion?: number;
+  data: {
+    type: "player";
+    id: string;
+    attributes: {
+      profile: {
+        name: string;
+        kana: string;
+        url: string;
+        isActive: boolean;
+        details: Record<string, string>;
+      };
+      battingStats: PlayerApiBattingStat[];
+      pitchingStats: PlayerApiPitchingStat[];
+      career: PlayerApiAttributes["career"];
+    };
+    links: { self: string };
+  };
+  meta: PlayerApiDocument["meta"];
+};
 
 function writeValue<T>(value: T): string {
   return `${JSON.stringify(value, null, 2)}\n`;
@@ -101,10 +124,11 @@ function pitchingMetrics(value: ComputedPitchingSeason) {
 }
 
 function createAttributes(player: EnrichedPlayer): PlayerApiAttributes {
+  const name = parsePlayerName(player.playerName, player.kanaName);
+
   return {
     profile: {
-      name: player.playerName,
-      kana: player.kanaName,
+      ...name,
       url: player.playerUrl,
       isActive: player.isActive,
       details: player.detailInfo,
@@ -143,12 +167,32 @@ function createAttributes(player: EnrichedPlayer): PlayerApiAttributes {
   };
 }
 
+function composeSourceName(
+  registeredName: string,
+  familyName: string | null,
+  givenName: string | null,
+  separator: string,
+): string {
+  const nameForParts = [familyName, givenName].filter(Boolean).join(separator);
+  const normalizedRegisteredName = registeredName
+    .split(/[・･\s]+/)
+    .filter(Boolean)
+    .join(separator);
+  if (
+    !nameForParts ||
+    nameForParts === registeredName ||
+    nameForParts === normalizedRegisteredName
+  ) {
+    return registeredName;
+  }
+  return `${registeredName}（${nameForParts}）`;
+}
+
 export function toPlayerApiDocument(
   player: EnrichedPlayer,
   generatedAt = new Date().toISOString(),
 ): PlayerApiDocument {
   return {
-    schemaVersion: 2,
     data: {
       type: "player",
       id: player.id,
@@ -175,8 +219,18 @@ function fromDocument(document: PlayerApiDocument): EnrichedPlayer {
   return {
     id: document.data.id,
     playerUrl: profile.url,
-    playerName: profile.name,
-    kanaName: profile.kana,
+    playerName: composeSourceName(
+      profile.registeredName,
+      profile.familyName,
+      profile.givenName,
+      " ",
+    ),
+    kanaName: composeSourceName(
+      profile.registeredNameKana,
+      profile.familyNameKana,
+      profile.givenNameKana,
+      "・",
+    ),
     isActive: profile.isActive,
     detailInfo: profile.details,
     battingStats: battingStats.map((row) => row.raw),
@@ -194,6 +248,29 @@ function fromDocument(document: PlayerApiDocument): EnrichedPlayer {
       })),
       career: document.data.attributes.career,
     },
+  };
+}
+
+function migrateLegacyDocument(
+  document: LegacyPlayerApiDocument,
+): PlayerApiDocument {
+  const legacyProfile = document.data.attributes.profile;
+  const name = parsePlayerName(legacyProfile.name, legacyProfile.kana);
+
+  return {
+    data: {
+      ...document.data,
+      attributes: {
+        ...document.data.attributes,
+        profile: {
+          ...name,
+          url: legacyProfile.url,
+          isActive: legacyProfile.isActive,
+          details: legacyProfile.details,
+        },
+      },
+    },
+    meta: document.meta,
   };
 }
 
@@ -215,14 +292,18 @@ export async function writePlayerDocuments(
   }
 
   const index: PlayerApiIndexDocument = {
-    schemaVersion: 2,
     data: documents
       .map((document) => ({
         type: "player" as const,
         id: document.data.id,
         attributes: {
-          name: document.data.attributes.profile.name,
-          kana: document.data.attributes.profile.kana,
+          familyName: document.data.attributes.profile.familyName,
+          givenName: document.data.attributes.profile.givenName,
+          familyNameKana: document.data.attributes.profile.familyNameKana,
+          givenNameKana: document.data.attributes.profile.givenNameKana,
+          registeredName: document.data.attributes.profile.registeredName,
+          registeredNameKana:
+            document.data.attributes.profile.registeredNameKana,
           isActive: document.data.attributes.profile.isActive,
         },
         links: document.data.links,
@@ -257,14 +338,28 @@ export async function readPlayerDocuments(
   for (const fileName of fileNames) {
     const filePath = path.join(inputDir, fileName);
     const parsed: unknown = JSON.parse(await readFile(filePath, "utf8"));
-    if (
-      !parsed ||
-      typeof parsed !== "object" ||
-      (parsed as { schemaVersion?: unknown }).schemaVersion !== 2
-    ) {
+    if (!parsed || typeof parsed !== "object") {
       throw new Error(`Unsupported player document: ${filePath}`);
     }
-    players.push(fromDocument(parsed as PlayerApiDocument));
+    const profile = (
+      parsed as {
+        data?: { attributes?: { profile?: Record<string, unknown> } };
+      }
+    ).data?.attributes?.profile;
+    if (!profile) {
+      throw new Error(`Unsupported player document: ${filePath}`);
+    }
+    if (typeof profile.registeredName === "string") {
+      players.push(fromDocument(parsed as PlayerApiDocument));
+      continue;
+    }
+    if (typeof profile.name === "string" && typeof profile.kana === "string") {
+      players.push(
+        fromDocument(migrateLegacyDocument(parsed as LegacyPlayerApiDocument)),
+      );
+      continue;
+    }
+    throw new Error(`Unsupported player document: ${filePath}`);
   }
   return players;
 }

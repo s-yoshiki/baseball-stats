@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "12ov3",
     "attributes": {
       "profile": {
-        "name": "武藤 敦貴",
-        "kana": "むとう・あつき",
+        "familyName": "武藤",
+        "givenName": "敦貴",
+        "familyNameKana": "むとう",
+        "givenNameKana": "あつき",
+        "registeredName": "武藤 敦貴",
+        "registeredNameKana": "むとう・あつき",
         "url": "https://npb.jp/bis/players/01805151.html",
         "isActive": true,
         "details": {
@@ -364,6 +367,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01805151.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "ptwl",
     "attributes": {
       "profile": {
-        "name": "中田 歩夢",
-        "kana": "なかた・あゆむ",
+        "familyName": "中田",
+        "givenName": "歩夢",
+        "familyNameKana": "なかた",
+        "givenNameKana": "あゆむ",
+        "registeredName": "中田 歩夢",
+        "registeredNameKana": "なかた・あゆむ",
         "url": "https://npb.jp/bis/players/01205157.html",
         "isActive": true,
         "details": {
@@ -73,6 +76,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01205157.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

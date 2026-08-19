@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "1ujy7",
     "attributes": {
       "profile": {
-        "name": "山瀬 慎之助",
-        "kana": "やませ・しんのすけ",
+        "familyName": "山瀬",
+        "givenName": "慎之助",
+        "familyNameKana": "やませ",
+        "givenNameKana": "しんのすけ",
+        "registeredName": "山瀬 慎之助",
+        "registeredNameKana": "やませ・しんのすけ",
         "url": "https://npb.jp/bis/players/03105151.html",
         "isActive": true,
         "details": {
@@ -364,6 +367,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/03105151.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

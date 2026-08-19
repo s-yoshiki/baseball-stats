@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "noqr",
     "attributes": {
       "profile": {
-        "name": "有薗 直輝",
-        "kana": "ありぞの・なおき",
+        "familyName": "有薗",
+        "givenName": "直輝",
+        "familyNameKana": "ありぞの",
+        "givenNameKana": "なおき",
+        "registeredName": "有薗 直輝",
+        "registeredNameKana": "ありぞの・なおき",
         "url": "https://npb.jp/bis/players/01105155.html",
         "isActive": true,
         "details": {
@@ -306,6 +309,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01105155.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

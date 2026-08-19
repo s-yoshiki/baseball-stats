@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "rz29",
     "attributes": {
       "profile": {
-        "name": "井上 朋也",
-        "kana": "いのうえ・ともや",
+        "familyName": "井上",
+        "givenName": "朋也",
+        "familyNameKana": "いのうえ",
+        "givenNameKana": "ともや",
+        "registeredName": "井上 朋也",
+        "registeredNameKana": "いのうえ・ともや",
         "url": "https://npb.jp/bis/players/01305153.html",
         "isActive": true,
         "details": {
@@ -306,6 +309,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01305153.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

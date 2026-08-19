@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "ljl1",
     "attributes": {
       "profile": {
-        "name": "田中 晴也",
-        "kana": "たなか・はるや",
+        "familyName": "田中",
+        "givenName": "晴也",
+        "familyNameKana": "たなか",
+        "givenNameKana": "はるや",
+        "registeredName": "田中 晴也",
+        "registeredNameKana": "たなか・はるや",
         "url": "https://npb.jp/bis/players/01005157.html",
         "isActive": true,
         "details": {
@@ -429,6 +432,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01005157.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "w9dc",
     "attributes": {
       "profile": {
-        "name": "北浦 竜次",
-        "kana": "きたうら・りゅうじ",
+        "familyName": "北浦",
+        "givenName": "竜次",
+        "familyNameKana": "きたうら",
+        "givenNameKana": "りゅうじ",
+        "registeredName": "北浦 竜次",
+        "registeredNameKana": "きたうら・りゅうじ",
         "url": "https://npb.jp/bis/players/01505136.html",
         "isActive": true,
         "details": {
@@ -1019,6 +1022,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01505136.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

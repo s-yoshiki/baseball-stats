@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "ptwj",
     "attributes": {
       "profile": {
-        "name": "達 孝太",
-        "kana": "たつ・こうた",
+        "familyName": "達",
+        "givenName": "孝太",
+        "familyNameKana": "たつ",
+        "givenNameKana": "こうた",
+        "registeredName": "達 孝太",
+        "registeredNameKana": "たつ・こうた",
         "url": "https://npb.jp/bis/players/01205155.html",
         "isActive": true,
         "details": {
@@ -547,6 +550,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01205155.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "u47e",
     "attributes": {
       "profile": {
-        "name": "野間 峻祥",
-        "kana": "のま・たかよし",
+        "familyName": "野間",
+        "givenName": "峻祥",
+        "familyNameKana": "のま",
+        "givenNameKana": "たかよし",
+        "registeredName": "野間 峻祥",
+        "registeredNameKana": "のま・たかよし",
         "url": "https://npb.jp/bis/players/01405130.html",
         "isActive": true,
         "details": {
@@ -770,6 +773,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01405130.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

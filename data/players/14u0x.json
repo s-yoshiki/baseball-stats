@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "14u0x",
     "attributes": {
       "profile": {
-        "name": "桑原 秀侍",
-        "kana": "くわはら・しゅうじ",
+        "familyName": "桑原",
+        "givenName": "秀侍",
+        "familyNameKana": "くわはら",
+        "givenNameKana": "しゅうじ",
+        "registeredName": "桑原 秀侍",
+        "registeredNameKana": "くわはら・しゅうじ",
         "url": "https://npb.jp/bis/players/01905153.html",
         "isActive": true,
         "details": {
@@ -73,6 +76,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01905153.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "12ouo",
     "attributes": {
       "profile": {
-        "name": "宮本 丈",
-        "kana": "みやもと・たけし",
+        "familyName": "宮本",
+        "givenName": "丈",
+        "familyNameKana": "みやもと",
+        "givenNameKana": "たけし",
+        "registeredName": "宮本 丈",
+        "registeredNameKana": "みやもと・たけし",
         "url": "https://npb.jp/bis/players/01805136.html",
         "isActive": true,
         "details": {
@@ -596,6 +599,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01805136.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

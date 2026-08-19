@@ -13,5 +13,6 @@ export {
   toPlayerApiDocument,
   writePlayerDocuments,
 } from "./player-json.js";
+export { normalizePlayerText, parsePlayerName } from "./player-name.js";
 export { calculatePlayerStats, calculateSnapshot } from "./stats.js";
 export type * from "./types.js";

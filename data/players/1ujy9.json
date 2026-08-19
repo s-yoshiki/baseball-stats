@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "1ujy9",
     "attributes": {
       "profile": {
-        "name": "松本 遼大",
-        "kana": "まつもと・りょうだい",
+        "familyName": "松本",
+        "givenName": "遼大",
+        "familyNameKana": "まつもと",
+        "givenNameKana": "りょうだい",
+        "registeredName": "松本 遼大",
+        "registeredNameKana": "まつもと・りょうだい",
         "url": "https://npb.jp/bis/players/03105153.html",
         "isActive": true,
         "details": {
@@ -73,6 +76,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/03105153.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

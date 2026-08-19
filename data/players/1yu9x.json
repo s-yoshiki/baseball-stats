@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "1yu9x",
     "attributes": {
       "profile": {
-        "name": "山口 アタル",
-        "kana": "やまぐち・あたる",
+        "familyName": "山口",
+        "givenName": "アタル",
+        "familyNameKana": "やまぐち",
+        "givenNameKana": "あたる",
+        "registeredName": "山口 アタル",
+        "registeredNameKana": "やまぐち・あたる",
         "url": "https://npb.jp/bis/players/03305157.html",
         "isActive": true,
         "details": {
@@ -73,6 +76,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/03305157.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

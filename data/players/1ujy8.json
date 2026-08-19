@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "1ujy8",
     "attributes": {
       "profile": {
-        "name": "山﨑 照英",
-        "kana": "やまさき・しょうえい",
+        "familyName": "山﨑",
+        "givenName": "照英",
+        "familyNameKana": "やまさき",
+        "givenNameKana": "しょうえい",
+        "registeredName": "山﨑 照英",
+        "registeredNameKana": "やまさき・しょうえい",
         "url": "https://npb.jp/bis/players/03105152.html",
         "isActive": true,
         "details": {
@@ -73,6 +76,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/03105152.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

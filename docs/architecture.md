@@ -10,12 +10,19 @@
 
 ```json
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "01005153",
     "attributes": {
-      "profile": { "name": "選手名", "kana": "せんしゅめい", "isActive": true },
+      "profile": {
+        "familyName": "鈴木",
+        "givenName": "一朗",
+        "familyNameKana": "すずき",
+        "givenNameKana": "いちろう",
+        "registeredName": "イチロー",
+        "registeredNameKana": "いちろー",
+        "isActive": false
+      },
       "battingStats": [{
         "season": 2025,
         "team": "球団名",
@@ -35,7 +42,7 @@
 }
 ```
 
-`data/players/index.json` は同じ `data` 形式で選手リソースの一覧を返します。ファイル名と `data.id` は一致させます。`raw` はNPBページの表記をなるべく保ち、`totals` はAPI利用向けに数値化した基本集計値、`metrics` は派生スタッツです。
+`data/players/index.json` は同じ `data` 形式で選手リソースの一覧を返します。ファイル名と `data.id` は一致させます。NPBページに括弧付きの本名がある場合は、括弧内を姓・名として分割し、括弧の外を登録名として保持します。括弧付きでない場合は表示名を登録名と姓・名の抽出元にします。`raw` はNPBページの表記をなるべく保ち、`totals` はAPI利用向けに数値化した基本集計値、`metrics` は派生スタッツです。
 
 ## SQLite
 

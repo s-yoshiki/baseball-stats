@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "1yu9t",
     "attributes": {
       "profile": {
-        "name": "山﨑 伊織",
-        "kana": "やまさき・いおり",
+        "familyName": "山﨑",
+        "givenName": "伊織",
+        "familyNameKana": "やまさき",
+        "givenNameKana": "いおり",
+        "registeredName": "山﨑 伊織",
+        "registeredNameKana": "やまさき・いおり",
         "url": "https://npb.jp/bis/players/03305153.html",
         "isActive": true,
         "details": {
@@ -665,6 +668,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/03305153.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

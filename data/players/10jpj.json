@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "10jpj",
     "attributes": {
       "profile": {
-        "name": "髙野 光海",
-        "kana": "こうの・ひかる",
+        "familyName": "髙野",
+        "givenName": "光海",
+        "familyNameKana": "こうの",
+        "givenNameKana": "ひかる",
+        "registeredName": "髙野 光海",
+        "registeredNameKana": "こうの・ひかる",
         "url": "https://npb.jp/bis/players/01705159.html",
         "isActive": true,
         "details": {
@@ -73,6 +76,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01705159.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

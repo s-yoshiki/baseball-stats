@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "u47y",
     "attributes": {
       "profile": {
-        "name": "田中 陽翔",
-        "kana": "たなか・はると",
+        "familyName": "田中",
+        "givenName": "陽翔",
+        "familyNameKana": "たなか",
+        "givenNameKana": "はると",
+        "registeredName": "田中 陽翔",
+        "registeredNameKana": "たなか・はると",
         "url": "https://npb.jp/bis/players/01405150.html",
         "isActive": true,
         "details": {
@@ -190,6 +193,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01405150.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

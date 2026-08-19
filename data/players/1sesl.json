@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "1sesl",
     "attributes": {
       "profile": {
-        "name": "Ｅ．ルシアーノ",
-        "kana": "エルビス・ルシアーノ (ELVIS LUCIANO)",
+        "familyName": "E.ルシアーノ",
+        "givenName": null,
+        "familyNameKana": "ELVIS",
+        "givenNameKana": "LUCIANO",
+        "registeredName": "E.ルシアーノ",
+        "registeredNameKana": "エルビス・ルシアーノ",
         "url": "https://npb.jp/bis/players/03005157.html",
         "isActive": true,
         "details": {
@@ -193,6 +196,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/03005157.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

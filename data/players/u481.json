@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "u481",
     "attributes": {
       "profile": {
-        "name": "中川 拓真",
-        "kana": "なかがわ・たくま",
+        "familyName": "中川",
+        "givenName": "拓真",
+        "familyNameKana": "なかがわ",
+        "givenNameKana": "たくま",
+        "registeredName": "中川 拓真",
+        "registeredNameKana": "なかがわ・たくま",
         "url": "https://npb.jp/bis/players/01405153.html",
         "isActive": true,
         "details": {
@@ -73,6 +76,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01405153.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

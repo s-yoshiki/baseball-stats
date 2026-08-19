@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "yej0",
     "attributes": {
       "profile": {
-        "name": "平沼 翔太",
-        "kana": "ひらぬま・しょうた",
+        "familyName": "平沼",
+        "givenName": "翔太",
+        "familyNameKana": "ひらぬま",
+        "givenNameKana": "しょうた",
+        "registeredName": "平沼 翔太",
+        "registeredNameKana": "ひらぬま・しょうた",
         "url": "https://npb.jp/bis/players/01605132.html",
         "isActive": true,
         "details": {
@@ -712,6 +715,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01605132.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

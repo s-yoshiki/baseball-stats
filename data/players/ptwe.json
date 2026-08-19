@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "ptwe",
     "attributes": {
       "profile": {
-        "name": "庄子 雄大",
-        "kana": "しょうじ・ゆうだい",
+        "familyName": "庄子",
+        "givenName": "雄大",
+        "familyNameKana": "しょうじ",
+        "givenNameKana": "ゆうだい",
+        "registeredName": "庄子 雄大",
+        "registeredNameKana": "しょうじ・ゆうだい",
         "url": "https://npb.jp/bis/players/01205150.html",
         "isActive": true,
         "details": {
@@ -190,6 +193,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01205150.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "yejp",
     "attributes": {
       "profile": {
-        "name": "林 優樹",
-        "kana": "はやし・ゆうき",
+        "familyName": "林",
+        "givenName": "優樹",
+        "familyNameKana": "はやし",
+        "givenNameKana": "ゆうき",
+        "registeredName": "林 優樹",
+        "registeredNameKana": "はやし・ゆうき",
         "url": "https://npb.jp/bis/players/01605157.html",
         "isActive": true,
         "details": {
@@ -193,6 +196,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01605157.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

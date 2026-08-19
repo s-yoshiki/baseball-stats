@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "ljkw",
     "attributes": {
       "profile": {
-        "name": "杉山 諒",
-        "kana": "すぎやま・りょう",
+        "familyName": "杉山",
+        "givenName": "諒",
+        "familyNameKana": "すぎやま",
+        "givenNameKana": "りょう",
+        "registeredName": "杉山 諒",
+        "registeredNameKana": "すぎやま・りょう",
         "url": "https://npb.jp/bis/players/01005152.html",
         "isActive": true,
         "details": {
@@ -73,6 +76,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01005152.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "u47m",
     "attributes": {
       "profile": {
-        "name": "林 晃汰",
-        "kana": "はやし・こうた",
+        "familyName": "林",
+        "givenName": "晃汰",
+        "familyNameKana": "はやし",
+        "givenNameKana": "こうた",
+        "registeredName": "林 晃汰",
+        "registeredNameKana": "はやし・こうた",
         "url": "https://npb.jp/bis/players/01405138.html",
         "isActive": true,
         "details": {
@@ -422,6 +425,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01405138.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

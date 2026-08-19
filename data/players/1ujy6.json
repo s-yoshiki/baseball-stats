@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "1ujy6",
     "attributes": {
       "profile": {
-        "name": "森 駿太",
-        "kana": "もり・しゅんた",
+        "familyName": "森",
+        "givenName": "駿太",
+        "familyNameKana": "もり",
+        "givenNameKana": "しゅんた",
+        "registeredName": "森 駿太",
+        "registeredNameKana": "もり・しゅんた",
         "url": "https://npb.jp/bis/players/03105150.html",
         "isActive": true,
         "details": {
@@ -132,6 +135,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/03105150.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

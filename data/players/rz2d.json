@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "rz2d",
     "attributes": {
       "profile": {
-        "name": "大津 亮介",
-        "kana": "おおつ・りょうすけ",
+        "familyName": "大津",
+        "givenName": "亮介",
+        "familyNameKana": "おおつ",
+        "givenNameKana": "りょうすけ",
+        "registeredName": "大津 亮介",
+        "registeredNameKana": "おおつ・りょうすけ",
         "url": "https://npb.jp/bis/players/01305157.html",
         "isActive": true,
         "details": {
@@ -547,6 +550,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01305157.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

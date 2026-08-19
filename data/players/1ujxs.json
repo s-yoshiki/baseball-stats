@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "1ujxs",
     "attributes": {
       "profile": {
-        "name": "山本 拓実",
-        "kana": "やまもと・たくみ",
+        "familyName": "山本",
+        "givenName": "拓実",
+        "familyNameKana": "やまもと",
+        "givenNameKana": "たくみ",
+        "registeredName": "山本 拓実",
+        "registeredNameKana": "やまもと・たくみ",
         "url": "https://npb.jp/bis/players/03105136.html",
         "isActive": true,
         "details": {
@@ -1255,6 +1258,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/03105136.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

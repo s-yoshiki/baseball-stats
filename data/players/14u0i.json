@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "14u0i",
     "attributes": {
       "profile": {
-        "name": "鈴木 翔天",
-        "kana": "すずき・そら",
+        "familyName": "鈴木",
+        "givenName": "翔天",
+        "familyNameKana": "すずき",
+        "givenNameKana": "そら",
+        "registeredName": "鈴木 翔天",
+        "registeredNameKana": "すずき・そら",
         "url": "https://npb.jp/bis/players/01905138.html",
         "isActive": true,
         "details": {
@@ -901,6 +904,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01905138.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

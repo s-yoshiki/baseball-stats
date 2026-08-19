@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "12ov2",
     "attributes": {
       "profile": {
-        "name": "藤田 琉生",
-        "kana": "ふじた・りゅうせい",
+        "familyName": "藤田",
+        "givenName": "琉生",
+        "familyNameKana": "ふじた",
+        "givenNameKana": "りゅうせい",
+        "registeredName": "藤田 琉生",
+        "registeredNameKana": "ふじた・りゅうせい",
         "url": "https://npb.jp/bis/players/01805150.html",
         "isActive": true,
         "details": {
@@ -73,6 +76,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01805150.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

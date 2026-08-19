@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "1sese",
     "attributes": {
       "profile": {
-        "name": "Ｌ．ボイト",
-        "kana": "ルーク・ボイト (LUKE VOIT)",
+        "familyName": "L.ボイト",
+        "givenName": null,
+        "familyNameKana": "LUKE",
+        "givenNameKana": "VOIT",
+        "registeredName": "L.ボイト",
+        "registeredNameKana": "ルーク・ボイト",
         "url": "https://npb.jp/bis/players/03005150.html",
         "isActive": true,
         "details": {
@@ -190,6 +193,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/03005150.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

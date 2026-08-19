@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "10joq",
     "attributes": {
       "profile": {
-        "name": "栗原 陵矢",
-        "kana": "くりはら・りょうや",
+        "familyName": "栗原",
+        "givenName": "陵矢",
+        "familyNameKana": "くりはら",
+        "givenNameKana": "りょうや",
+        "registeredName": "栗原 陵矢",
+        "registeredNameKana": "くりはら・りょうや",
         "url": "https://npb.jp/bis/players/01705130.html",
         "isActive": true,
         "details": {
@@ -654,6 +657,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01705130.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "ptwn",
     "attributes": {
       "profile": {
-        "name": "谷口 朝陽",
-        "kana": "たにぐち・あさひ",
+        "familyName": "谷口",
+        "givenName": "朝陽",
+        "familyNameKana": "たにぐち",
+        "givenNameKana": "あさひ",
+        "registeredName": "谷口 朝陽",
+        "registeredNameKana": "たにぐち・あさひ",
         "url": "https://npb.jp/bis/players/01205159.html",
         "isActive": true,
         "details": {
@@ -73,6 +76,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01205159.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

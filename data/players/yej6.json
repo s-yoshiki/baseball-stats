@@ -1,12 +1,15 @@
 {
-  "schemaVersion": 2,
   "data": {
     "type": "player",
     "id": "yej6",
     "attributes": {
       "profile": {
-        "name": "増田 陸",
-        "kana": "ますだ・りく",
+        "familyName": "増田",
+        "givenName": "陸",
+        "familyNameKana": "ますだ",
+        "givenNameKana": "りく",
+        "registeredName": "増田 陸",
+        "registeredNameKana": "ますだ・りく",
         "url": "https://npb.jp/bis/players/01605138.html",
         "isActive": true,
         "details": {
@@ -306,6 +309,6 @@
       "name": "npb.jp",
       "url": "https://npb.jp/bis/players/01605138.html"
     },
-    "generatedAt": "2026-08-19T05:22:21.578Z"
+    "generatedAt": "2026-08-19T06:42:56.699Z"
   }
 }

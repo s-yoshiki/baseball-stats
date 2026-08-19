@@ -36,12 +36,18 @@ describe("player API JSON", () => {
     const document = toPlayerApiDocument(calculatePlayerStats(player), "now");
 
     expect(document).toMatchObject({
-      schemaVersion: 2,
       data: {
         type: "player",
         id: "test-player",
         attributes: {
-          profile: { name: "テスト 太郎" },
+          profile: {
+            familyName: "テスト",
+            givenName: "太郎",
+            familyNameKana: "テスト",
+            givenNameKana: "タロウ",
+            registeredName: "テスト 太郎",
+            registeredNameKana: "テスト タロウ",
+          },
           battingStats: [
             {
               season: 2024,
@@ -74,8 +80,12 @@ describe("player API JSON", () => {
           type: "player",
           id: "test-player",
           attributes: {
-            name: "テスト 太郎",
-            kana: "テスト タロウ",
+            familyName: "テスト",
+            givenName: "太郎",
+            familyNameKana: "テスト",
+            givenNameKana: "タロウ",
+            registeredName: "テスト 太郎",
+            registeredNameKana: "テスト タロウ",
             isActive: true,
           },
           links: { self: "/players/test-player.json" },
@@ -85,5 +95,23 @@ describe("player API JSON", () => {
     } finally {
       await rm(temporaryDirectory, { recursive: true, force: true });
     }
+  });
+
+  it("splits a registered name and the name in parentheses", () => {
+    const aliasPlayer = calculatePlayerStats({
+      ...player,
+      playerName: "イチロー（鈴木 一朗）",
+      kanaName: "いちろー（すずき・いちろう）",
+    });
+    const document = toPlayerApiDocument(aliasPlayer, "now");
+
+    expect(document.data.attributes.profile).toMatchObject({
+      familyName: "鈴木",
+      givenName: "一朗",
+      familyNameKana: "すずき",
+      givenNameKana: "いちろう",
+      registeredName: "イチロー",
+      registeredNameKana: "いちろー",
+    });
   });
 });

@@ -1,0 +1,191 @@
+{
+  "data": {
+    "type": "player",
+    "id": "d1xk1",
+    "attributes": {
+      "profile": {
+        "familyName": "元",
+        "givenName": "謙太",
+        "familyNameKana": "げん",
+        "givenNameKana": "けんだい",
+        "registeredName": "元 謙太",
+        "registeredNameKana": "げん・けんだい",
+        "url": "https://npb.jp/bis/players/21925153.html",
+        "isActive": true,
+        "details": {
+          "position": "外野手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 186,
+          "weightKg": 88,
+          "birthDate": {
+            "iso": "2002-05-17",
+            "year": 2002,
+            "month": 5,
+            "day": 17
+          },
+          "career": {
+            "raw": "岐阜・中京高",
+            "entries": [
+              "岐阜・中京高"
+            ]
+          },
+          "draft": {
+            "raw": "2020年ドラフト2位",
+            "year": 2020,
+            "rank": 2,
+            "selection": "regular"
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2022,
+          "team": "オリックス",
+          "totals": {
+            "games": 5,
+            "plateAppearances": 9,
+            "atBats": 8,
+            "runs": 1,
+            "hits": 2,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 2,
+            "rbi": 1,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 1,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 3,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0.25,
+            "onBasePercentage": 0.25,
+            "sluggingPercentage": 0.25,
+            "ops": 0.5,
+            "iso": 0,
+            "walkPercentage": 0,
+            "strikeoutPercentage": 0.333
+          }
+        },
+        {
+          "season": 2024,
+          "team": "オリックス",
+          "totals": {
+            "games": 5,
+            "plateAppearances": 8,
+            "atBats": 8,
+            "runs": 0,
+            "hits": 1,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 1,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 3,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0.125,
+            "onBasePercentage": 0.125,
+            "sluggingPercentage": 0.125,
+            "ops": 0.25,
+            "iso": 0,
+            "walkPercentage": 0,
+            "strikeoutPercentage": 0.375
+          }
+        },
+        {
+          "season": 2025,
+          "team": "オリックス",
+          "totals": {
+            "games": 31,
+            "plateAppearances": 10,
+            "atBats": 7,
+            "runs": 6,
+            "hits": 1,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 1,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 1,
+            "sacrificeFlies": 0,
+            "walks": 2,
+            "hitByPitch": 0,
+            "strikeouts": 3,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0.143,
+            "onBasePercentage": 0.333,
+            "sluggingPercentage": 0.143,
+            "ops": 0.476,
+            "iso": 0,
+            "walkPercentage": 0.2,
+            "strikeoutPercentage": 0.3
+          }
+        }
+      ],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 3,
+          "games": 41,
+          "plateAppearances": 27,
+          "atBats": 23,
+          "runs": 7,
+          "hits": 4,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 0,
+          "totalBases": 4,
+          "rbi": 1,
+          "steals": 0,
+          "walks": 2,
+          "hitByPitch": 0,
+          "strikeouts": 9,
+          "battingAverage": 0.174,
+          "onBasePercentage": 0.222,
+          "sluggingPercentage": 0.174,
+          "ops": 0.396,
+          "iso": 0
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/d1xk1.json"
+    }
+  }
+}

@@ -1,0 +1,231 @@
+{
+  "data": {
+    "type": "player",
+    "id": "vvvf2",
+    "attributes": {
+      "profile": {
+        "familyName": "T.ウィンゲンター",
+        "givenName": null,
+        "familyNameKana": "TREY",
+        "givenNameKana": "WINGENTER",
+        "registeredName": "T.ウィンゲンター",
+        "registeredNameKana": "トレイ・ウィンゲンター",
+        "url": "https://npb.jp/bis/players/53555150.html",
+        "isActive": true,
+        "details": {
+          "position": "投手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 201,
+          "weightKg": 107,
+          "birthDate": {
+            "iso": "1994-04-15",
+            "year": 1994,
+            "month": 4,
+            "day": 15
+          },
+          "career": {
+            "raw": "オーバーン大 - パドレス - タイガース - レッドソックス - カブス",
+            "entries": [
+              "オーバーン大",
+              "パドレス",
+              "タイガース",
+              "レッドソックス",
+              "カブス"
+            ]
+          },
+          "draft": {
+            "raw": null,
+            "year": null,
+            "rank": null,
+            "selection": null
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2025,
+          "team": "埼玉西武",
+          "totals": {
+            "games": 49,
+            "plateAppearances": 0,
+            "atBats": 0,
+            "runs": 0,
+            "hits": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 0,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 0,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0,
+            "onBasePercentage": 0,
+            "sluggingPercentage": 0,
+            "ops": 0,
+            "iso": 0,
+            "walkPercentage": null,
+            "strikeoutPercentage": null
+          }
+        },
+        {
+          "season": 2026,
+          "team": "埼玉西武",
+          "totals": {
+            "games": 22,
+            "plateAppearances": 0,
+            "atBats": 0,
+            "runs": 0,
+            "hits": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 0,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 0,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0,
+            "onBasePercentage": 0,
+            "sluggingPercentage": 0,
+            "ops": 0,
+            "iso": 0,
+            "walkPercentage": null,
+            "strikeoutPercentage": null
+          }
+        }
+      ],
+      "pitchingStats": [
+        {
+          "season": 2025,
+          "team": "埼玉西武",
+          "totals": {
+            "games": 49,
+            "wins": 1,
+            "losses": 4,
+            "saves": 0,
+            "holds": 31,
+            "holdPoints": 32,
+            "completeGames": 0,
+            "shutouts": 0,
+            "noWalkCompleteGames": 0,
+            "winningPercentage": 0.2,
+            "battersFaced": 188,
+            "innings": 46.667,
+            "hitsAllowed": 26,
+            "homeRunsAllowed": 2,
+            "walksAllowed": 20,
+            "hitByPitch": 2,
+            "strikeouts": 69,
+            "wildPitches": 4,
+            "balks": 0,
+            "runsAllowed": 11,
+            "earnedRuns": 9
+          },
+          "metrics": {
+            "era": 1.74,
+            "whip": 0.986,
+            "strikeoutsPerNine": 13.307,
+            "walksPerNine": 3.857,
+            "strikeoutToWalkRatio": 3.45
+          }
+        },
+        {
+          "season": 2026,
+          "team": "埼玉西武",
+          "totals": {
+            "games": 22,
+            "wins": 0,
+            "losses": 1,
+            "saves": 0,
+            "holds": 21,
+            "holdPoints": 21,
+            "completeGames": 0,
+            "shutouts": 0,
+            "noWalkCompleteGames": 0,
+            "winningPercentage": 0,
+            "battersFaced": 81,
+            "innings": 20,
+            "hitsAllowed": 13,
+            "homeRunsAllowed": 0,
+            "walksAllowed": 8,
+            "hitByPitch": 0,
+            "strikeouts": 23,
+            "wildPitches": 0,
+            "balks": 0,
+            "runsAllowed": 3,
+            "earnedRuns": 3
+          },
+          "metrics": {
+            "era": 1.35,
+            "whip": 1.05,
+            "strikeoutsPerNine": 10.35,
+            "walksPerNine": 3.6,
+            "strikeoutToWalkRatio": 2.875
+          }
+        }
+      ],
+      "career": {
+        "batting": {
+          "seasons": 2,
+          "games": 71,
+          "plateAppearances": 0,
+          "atBats": 0,
+          "runs": 0,
+          "hits": 0,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 0,
+          "totalBases": 0,
+          "rbi": 0,
+          "steals": 0,
+          "walks": 0,
+          "hitByPitch": 0,
+          "strikeouts": 0,
+          "battingAverage": null,
+          "onBasePercentage": null,
+          "sluggingPercentage": null,
+          "ops": null,
+          "iso": null
+        },
+        "pitching": {
+          "seasons": 2,
+          "games": 71,
+          "wins": 1,
+          "losses": 5,
+          "saves": 0,
+          "holds": 52,
+          "innings": 66.667,
+          "hitsAllowed": 39,
+          "walksAllowed": 28,
+          "strikeouts": 92,
+          "earnedRuns": 12,
+          "winningPercentage": 0.167,
+          "era": 1.62,
+          "whip": 1.005,
+          "strikeoutsPerNine": 12.42,
+          "walksPerNine": 3.78,
+          "strikeoutToWalkRatio": 3.286
+        }
+      }
+    },
+    "links": {
+      "self": "/players/vvvf2.json"
+    }
+  }
+}

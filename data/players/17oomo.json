@@ -1,0 +1,171 @@
+{
+  "data": {
+    "type": "player",
+    "id": "17oomo",
+    "attributes": {
+      "profile": {
+        "familyName": "J.ウレーニャ",
+        "givenName": null,
+        "familyNameKana": "JOSE",
+        "givenNameKana": "URENA",
+        "registeredName": "J.ウレーニャ",
+        "registeredNameKana": "ホセ・ウレーニャ",
+        "url": "https://npb.jp/bis/players/73375152.html",
+        "isActive": true,
+        "details": {
+          "position": "投手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 188,
+          "weightKg": 94,
+          "birthDate": {
+            "iso": "1991-09-12",
+            "year": 1991,
+            "month": 9,
+            "day": 12
+          },
+          "career": {
+            "raw": "エクスエラフアンパブロドゥアルテ校 - マーリンズ - タイガース - ブルワーズ - ロッキーズ - ホワイトソックス - レンジャーズ - メッツ - ブルージェイズ - ドジャース - ツインズ - エンゼルス",
+            "entries": [
+              "エクスエラフアンパブロドゥアルテ校",
+              "マーリンズ",
+              "タイガース",
+              "ブルワーズ",
+              "ロッキーズ",
+              "ホワイトソックス",
+              "レンジャーズ",
+              "メッツ",
+              "ブルージェイズ",
+              "ドジャース",
+              "ツインズ",
+              "エンゼルス"
+            ]
+          },
+          "draft": {
+            "raw": null,
+            "year": null,
+            "rank": null,
+            "selection": null
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2026,
+          "team": "東北楽天",
+          "totals": {
+            "games": 11,
+            "plateAppearances": 0,
+            "atBats": 0,
+            "runs": 0,
+            "hits": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 0,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 0,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0,
+            "onBasePercentage": 0,
+            "sluggingPercentage": 0,
+            "ops": 0,
+            "iso": 0,
+            "walkPercentage": null,
+            "strikeoutPercentage": null
+          }
+        }
+      ],
+      "pitchingStats": [
+        {
+          "season": 2026,
+          "team": "東北楽天",
+          "totals": {
+            "games": 11,
+            "wins": 2,
+            "losses": 4,
+            "saves": 0,
+            "holds": 0,
+            "holdPoints": 0,
+            "completeGames": 0,
+            "shutouts": 0,
+            "noWalkCompleteGames": 0,
+            "winningPercentage": 0.333,
+            "battersFaced": 244,
+            "innings": 53.667,
+            "hitsAllowed": 60,
+            "homeRunsAllowed": 5,
+            "walksAllowed": 23,
+            "hitByPitch": 6,
+            "strikeouts": 37,
+            "wildPitches": 2,
+            "balks": 0,
+            "runsAllowed": 27,
+            "earnedRuns": 26
+          },
+          "metrics": {
+            "era": 4.36,
+            "whip": 1.547,
+            "strikeoutsPerNine": 6.205,
+            "walksPerNine": 3.857,
+            "strikeoutToWalkRatio": 1.609
+          }
+        }
+      ],
+      "career": {
+        "batting": {
+          "seasons": 1,
+          "games": 11,
+          "plateAppearances": 0,
+          "atBats": 0,
+          "runs": 0,
+          "hits": 0,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 0,
+          "totalBases": 0,
+          "rbi": 0,
+          "steals": 0,
+          "walks": 0,
+          "hitByPitch": 0,
+          "strikeouts": 0,
+          "battingAverage": null,
+          "onBasePercentage": null,
+          "sluggingPercentage": null,
+          "ops": null,
+          "iso": null
+        },
+        "pitching": {
+          "seasons": 1,
+          "games": 11,
+          "wins": 2,
+          "losses": 4,
+          "saves": 0,
+          "holds": 0,
+          "innings": 53.667,
+          "hitsAllowed": 60,
+          "walksAllowed": 23,
+          "strikeouts": 37,
+          "earnedRuns": 26,
+          "winningPercentage": 0.333,
+          "era": 4.36,
+          "whip": 1.547,
+          "strikeoutsPerNine": 6.205,
+          "walksPerNine": 3.857,
+          "strikeoutToWalkRatio": 1.609
+        }
+      }
+    },
+    "links": {
+      "self": "/players/17oomo.json"
+    }
+  }
+}

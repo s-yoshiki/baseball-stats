@@ -1,0 +1,161 @@
+{
+  "data": {
+    "type": "player",
+    "id": "cp2la",
+    "attributes": {
+      "profile": {
+        "familyName": "岩崎",
+        "givenName": "峻典",
+        "familyNameKana": "いわさき",
+        "givenNameKana": "しゅんすけ",
+        "registeredName": "岩崎 峻典",
+        "registeredNameKana": "いわさき・しゅんすけ",
+        "url": "https://npb.jp/bis/players/21325150.html",
+        "isActive": true,
+        "details": {
+          "position": "投手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 177,
+          "weightKg": 85,
+          "birthDate": {
+            "iso": "2003-03-11",
+            "year": 2003,
+            "month": 3,
+            "day": 11
+          },
+          "career": {
+            "raw": "履正社高 - 東洋大",
+            "entries": [
+              "履正社高",
+              "東洋大"
+            ]
+          },
+          "draft": {
+            "raw": "2024年ドラフト6位",
+            "year": 2024,
+            "rank": 6,
+            "selection": "regular"
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2025,
+          "team": "福岡ソフトバンク",
+          "totals": {
+            "games": 1,
+            "plateAppearances": 0,
+            "atBats": 0,
+            "runs": 0,
+            "hits": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 0,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 0,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0,
+            "onBasePercentage": 0,
+            "sluggingPercentage": 0,
+            "ops": 0,
+            "iso": 0,
+            "walkPercentage": null,
+            "strikeoutPercentage": null
+          }
+        }
+      ],
+      "pitchingStats": [
+        {
+          "season": 2025,
+          "team": "福岡ソフトバンク",
+          "totals": {
+            "games": 1,
+            "wins": 0,
+            "losses": 0,
+            "saves": 0,
+            "holds": 0,
+            "holdPoints": 0,
+            "completeGames": 0,
+            "shutouts": 0,
+            "noWalkCompleteGames": 0,
+            "winningPercentage": 0,
+            "battersFaced": 8,
+            "innings": 1,
+            "hitsAllowed": 4,
+            "homeRunsAllowed": 0,
+            "walksAllowed": 1,
+            "hitByPitch": 0,
+            "strikeouts": 2,
+            "wildPitches": 0,
+            "balks": 0,
+            "runsAllowed": 3,
+            "earnedRuns": 3
+          },
+          "metrics": {
+            "era": 27,
+            "whip": 5,
+            "strikeoutsPerNine": 18,
+            "walksPerNine": 9,
+            "strikeoutToWalkRatio": 2
+          }
+        }
+      ],
+      "career": {
+        "batting": {
+          "seasons": 1,
+          "games": 1,
+          "plateAppearances": 0,
+          "atBats": 0,
+          "runs": 0,
+          "hits": 0,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 0,
+          "totalBases": 0,
+          "rbi": 0,
+          "steals": 0,
+          "walks": 0,
+          "hitByPitch": 0,
+          "strikeouts": 0,
+          "battingAverage": null,
+          "onBasePercentage": null,
+          "sluggingPercentage": null,
+          "ops": null,
+          "iso": null
+        },
+        "pitching": {
+          "seasons": 1,
+          "games": 1,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 1,
+          "hitsAllowed": 4,
+          "walksAllowed": 1,
+          "strikeouts": 2,
+          "earnedRuns": 3,
+          "winningPercentage": null,
+          "era": 27,
+          "whip": 5,
+          "strikeoutsPerNine": 18,
+          "walksPerNine": 9,
+          "strikeoutToWalkRatio": 2
+        }
+      }
+    },
+    "links": {
+      "self": "/players/cp2la.json"
+    }
+  }
+}

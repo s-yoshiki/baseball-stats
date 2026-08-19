@@ -1,0 +1,161 @@
+{
+  "data": {
+    "type": "player",
+    "id": "1ct85j",
+    "attributes": {
+      "profile": {
+        "familyName": "庄司",
+        "givenName": "陽斗",
+        "familyNameKana": "しょうじ",
+        "givenNameKana": "はると",
+        "registeredName": "庄司 陽斗",
+        "registeredNameKana": "しょうじ・はると",
+        "url": "https://npb.jp/bis/players/81985159.html",
+        "isActive": true,
+        "details": {
+          "position": "投手",
+          "throws": "左",
+          "bats": "左",
+          "heightCm": 184,
+          "weightKg": 93,
+          "birthDate": {
+            "iso": "2001-05-31",
+            "year": 2001,
+            "month": 5,
+            "day": 31
+          },
+          "career": {
+            "raw": "聖和学園高 - 青森大",
+            "entries": [
+              "聖和学園高",
+              "青森大"
+            ]
+          },
+          "draft": {
+            "raw": "2023年育成選手ドラフト4位",
+            "year": 2023,
+            "rank": 4,
+            "selection": "development"
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2026,
+          "team": "横浜DeNA",
+          "totals": {
+            "games": 1,
+            "plateAppearances": 1,
+            "atBats": 1,
+            "runs": 0,
+            "hits": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 0,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 1,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0,
+            "onBasePercentage": 0,
+            "sluggingPercentage": 0,
+            "ops": 0,
+            "iso": 0,
+            "walkPercentage": 0,
+            "strikeoutPercentage": 1
+          }
+        }
+      ],
+      "pitchingStats": [
+        {
+          "season": 2026,
+          "team": "横浜DeNA",
+          "totals": {
+            "games": 1,
+            "wins": 0,
+            "losses": 1,
+            "saves": 0,
+            "holds": 0,
+            "holdPoints": 0,
+            "completeGames": 0,
+            "shutouts": 0,
+            "noWalkCompleteGames": 0,
+            "winningPercentage": 0,
+            "battersFaced": 20,
+            "innings": 5,
+            "hitsAllowed": 5,
+            "homeRunsAllowed": 1,
+            "walksAllowed": 1,
+            "hitByPitch": 0,
+            "strikeouts": 3,
+            "wildPitches": 0,
+            "balks": 0,
+            "runsAllowed": 4,
+            "earnedRuns": 4
+          },
+          "metrics": {
+            "era": 7.2,
+            "whip": 1.2,
+            "strikeoutsPerNine": 5.4,
+            "walksPerNine": 1.8,
+            "strikeoutToWalkRatio": 3
+          }
+        }
+      ],
+      "career": {
+        "batting": {
+          "seasons": 1,
+          "games": 1,
+          "plateAppearances": 1,
+          "atBats": 1,
+          "runs": 0,
+          "hits": 0,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 0,
+          "totalBases": 0,
+          "rbi": 0,
+          "steals": 0,
+          "walks": 0,
+          "hitByPitch": 0,
+          "strikeouts": 1,
+          "battingAverage": 0,
+          "onBasePercentage": 0,
+          "sluggingPercentage": 0,
+          "ops": 0,
+          "iso": 0
+        },
+        "pitching": {
+          "seasons": 1,
+          "games": 1,
+          "wins": 0,
+          "losses": 1,
+          "saves": 0,
+          "holds": 0,
+          "innings": 5,
+          "hitsAllowed": 5,
+          "walksAllowed": 1,
+          "strikeouts": 3,
+          "earnedRuns": 4,
+          "winningPercentage": 0,
+          "era": 7.2,
+          "whip": 1.2,
+          "strikeoutsPerNine": 5.4,
+          "walksPerNine": 1.8,
+          "strikeoutToWalkRatio": 3
+        }
+      }
+    },
+    "links": {
+      "self": "/players/1ct85j.json"
+    }
+  }
+}

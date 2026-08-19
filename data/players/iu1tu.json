@@ -1,0 +1,356 @@
+{
+  "data": {
+    "type": "player",
+    "id": "iu1tu",
+    "attributes": {
+      "profile": {
+        "familyName": "藤原",
+        "givenName": "恭大",
+        "familyNameKana": "ふじわら",
+        "givenNameKana": "きょうた",
+        "registeredName": "藤原 恭大",
+        "registeredNameKana": "ふじわら・きょうた",
+        "url": "https://npb.jp/bis/players/31635138.html",
+        "isActive": true,
+        "details": {
+          "position": "外野手",
+          "throws": "左",
+          "bats": "左",
+          "heightCm": 181,
+          "weightKg": 80,
+          "birthDate": {
+            "iso": "2000-05-06",
+            "year": 2000,
+            "month": 5,
+            "day": 6
+          },
+          "career": {
+            "raw": "大阪桐蔭高",
+            "entries": [
+              "大阪桐蔭高"
+            ]
+          },
+          "draft": {
+            "raw": "2018年ドラフト1位",
+            "year": 2018,
+            "rank": 1,
+            "selection": "regular"
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2019,
+          "team": "千葉ロッテ",
+          "totals": {
+            "games": 6,
+            "plateAppearances": 19,
+            "atBats": 19,
+            "runs": 0,
+            "hits": 2,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 2,
+            "rbi": 2,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 6,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0.105,
+            "onBasePercentage": 0.105,
+            "sluggingPercentage": 0.105,
+            "ops": 0.21,
+            "iso": 0,
+            "walkPercentage": 0,
+            "strikeoutPercentage": 0.316
+          }
+        },
+        {
+          "season": 2020,
+          "team": "千葉ロッテ",
+          "totals": {
+            "games": 26,
+            "plateAppearances": 105,
+            "atBats": 96,
+            "runs": 10,
+            "hits": 25,
+            "doubles": 5,
+            "triples": 0,
+            "homeRuns": 3,
+            "totalBases": 39,
+            "rbi": 10,
+            "steals": 4,
+            "caughtStealing": 1,
+            "sacrificeHits": 2,
+            "sacrificeFlies": 1,
+            "walks": 6,
+            "hitByPitch": 0,
+            "strikeouts": 33,
+            "groundedIntoDoublePlays": 1
+          },
+          "metrics": {
+            "battingAverage": 0.26,
+            "onBasePercentage": 0.301,
+            "sluggingPercentage": 0.406,
+            "ops": 0.707,
+            "iso": 0.146,
+            "walkPercentage": 0.057,
+            "strikeoutPercentage": 0.314
+          }
+        },
+        {
+          "season": 2021,
+          "team": "千葉ロッテ",
+          "totals": {
+            "games": 78,
+            "plateAppearances": 254,
+            "atBats": 217,
+            "runs": 27,
+            "hits": 47,
+            "doubles": 12,
+            "triples": 1,
+            "homeRuns": 5,
+            "totalBases": 76,
+            "rbi": 22,
+            "steals": 7,
+            "caughtStealing": 2,
+            "sacrificeHits": 5,
+            "sacrificeFlies": 4,
+            "walks": 23,
+            "hitByPitch": 5,
+            "strikeouts": 55,
+            "groundedIntoDoublePlays": 3
+          },
+          "metrics": {
+            "battingAverage": 0.217,
+            "onBasePercentage": 0.301,
+            "sluggingPercentage": 0.35,
+            "ops": 0.651,
+            "iso": 0.133,
+            "walkPercentage": 0.091,
+            "strikeoutPercentage": 0.217
+          }
+        },
+        {
+          "season": 2022,
+          "team": "千葉ロッテ",
+          "totals": {
+            "games": 49,
+            "plateAppearances": 126,
+            "atBats": 115,
+            "runs": 10,
+            "hits": 24,
+            "doubles": 2,
+            "triples": 0,
+            "homeRuns": 1,
+            "totalBases": 29,
+            "rbi": 5,
+            "steals": 9,
+            "caughtStealing": 0,
+            "sacrificeHits": 1,
+            "sacrificeFlies": 0,
+            "walks": 9,
+            "hitByPitch": 1,
+            "strikeouts": 23,
+            "groundedIntoDoublePlays": 1
+          },
+          "metrics": {
+            "battingAverage": 0.209,
+            "onBasePercentage": 0.272,
+            "sluggingPercentage": 0.252,
+            "ops": 0.524,
+            "iso": 0.043,
+            "walkPercentage": 0.071,
+            "strikeoutPercentage": 0.183
+          }
+        },
+        {
+          "season": 2023,
+          "team": "千葉ロッテ",
+          "totals": {
+            "games": 103,
+            "plateAppearances": 361,
+            "atBats": 328,
+            "runs": 35,
+            "hits": 78,
+            "doubles": 15,
+            "triples": 2,
+            "homeRuns": 3,
+            "totalBases": 106,
+            "rbi": 21,
+            "steals": 5,
+            "caughtStealing": 2,
+            "sacrificeHits": 10,
+            "sacrificeFlies": 1,
+            "walks": 18,
+            "hitByPitch": 4,
+            "strikeouts": 78,
+            "groundedIntoDoublePlays": 3
+          },
+          "metrics": {
+            "battingAverage": 0.238,
+            "onBasePercentage": 0.285,
+            "sluggingPercentage": 0.323,
+            "ops": 0.608,
+            "iso": 0.085,
+            "walkPercentage": 0.05,
+            "strikeoutPercentage": 0.216
+          }
+        },
+        {
+          "season": 2024,
+          "team": "千葉ロッテ",
+          "totals": {
+            "games": 74,
+            "plateAppearances": 264,
+            "atBats": 231,
+            "runs": 30,
+            "hits": 67,
+            "doubles": 8,
+            "triples": 4,
+            "homeRuns": 2,
+            "totalBases": 89,
+            "rbi": 21,
+            "steals": 4,
+            "caughtStealing": 1,
+            "sacrificeHits": 3,
+            "sacrificeFlies": 2,
+            "walks": 25,
+            "hitByPitch": 3,
+            "strikeouts": 39,
+            "groundedIntoDoublePlays": 2
+          },
+          "metrics": {
+            "battingAverage": 0.29,
+            "onBasePercentage": 0.364,
+            "sluggingPercentage": 0.385,
+            "ops": 0.749,
+            "iso": 0.095,
+            "walkPercentage": 0.095,
+            "strikeoutPercentage": 0.148
+          }
+        },
+        {
+          "season": 2025,
+          "team": "千葉ロッテ",
+          "totals": {
+            "games": 107,
+            "plateAppearances": 452,
+            "atBats": 409,
+            "runs": 38,
+            "hits": 111,
+            "doubles": 12,
+            "triples": 6,
+            "homeRuns": 4,
+            "totalBases": 147,
+            "rbi": 24,
+            "steals": 15,
+            "caughtStealing": 6,
+            "sacrificeHits": 4,
+            "sacrificeFlies": 0,
+            "walks": 33,
+            "hitByPitch": 6,
+            "strikeouts": 80,
+            "groundedIntoDoublePlays": 3
+          },
+          "metrics": {
+            "battingAverage": 0.271,
+            "onBasePercentage": 0.335,
+            "sluggingPercentage": 0.359,
+            "ops": 0.694,
+            "iso": 0.088,
+            "walkPercentage": 0.073,
+            "strikeoutPercentage": 0.177
+          }
+        },
+        {
+          "season": 2026,
+          "team": "千葉ロッテ",
+          "totals": {
+            "games": 72,
+            "plateAppearances": 317,
+            "atBats": 276,
+            "runs": 42,
+            "hits": 79,
+            "doubles": 11,
+            "triples": 1,
+            "homeRuns": 6,
+            "totalBases": 110,
+            "rbi": 34,
+            "steals": 8,
+            "caughtStealing": 2,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 1,
+            "walks": 30,
+            "hitByPitch": 10,
+            "strikeouts": 58,
+            "groundedIntoDoublePlays": 6
+          },
+          "metrics": {
+            "battingAverage": 0.286,
+            "onBasePercentage": 0.375,
+            "sluggingPercentage": 0.399,
+            "ops": 0.774,
+            "iso": 0.113,
+            "walkPercentage": 0.095,
+            "strikeoutPercentage": 0.183
+          }
+        }
+      ],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 8,
+          "games": 515,
+          "plateAppearances": 1898,
+          "atBats": 1691,
+          "runs": 192,
+          "hits": 433,
+          "doubles": 65,
+          "triples": 14,
+          "homeRuns": 24,
+          "totalBases": 598,
+          "rbi": 139,
+          "steals": 52,
+          "walks": 144,
+          "hitByPitch": 29,
+          "strikeouts": 372,
+          "battingAverage": 0.256,
+          "onBasePercentage": 0.319,
+          "sluggingPercentage": 0.354,
+          "ops": 0.673,
+          "iso": 0.098
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/iu1tu.json"
+    }
+  }
+}

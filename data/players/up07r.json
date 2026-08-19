@@ -1,0 +1,127 @@
+{
+  "data": {
+    "type": "player",
+    "id": "up07r",
+    "attributes": {
+      "profile": {
+        "familyName": "奥村",
+        "givenName": "光一",
+        "familyNameKana": "おくむら",
+        "givenNameKana": "こういち",
+        "registeredName": "奥村 光一",
+        "registeredNameKana": "おくむら・こういち",
+        "url": "https://npb.jp/bis/players/51555159.html",
+        "isActive": true,
+        "details": {
+          "position": "外野手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 178,
+          "weightKg": 89,
+          "birthDate": {
+            "iso": "1999-12-24",
+            "year": 1999,
+            "month": 12,
+            "day": 24
+          },
+          "career": {
+            "raw": "東海大静岡翔洋高 - 東海大 - BC・群馬",
+            "entries": [
+              "東海大静岡翔洋高",
+              "東海大",
+              "BC・群馬"
+            ]
+          },
+          "draft": {
+            "raw": "2023年育成選手ドラフト6位",
+            "year": 2023,
+            "rank": 6,
+            "selection": "development"
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2024,
+          "team": "埼玉西武",
+          "totals": {
+            "games": 45,
+            "plateAppearances": 84,
+            "atBats": 79,
+            "runs": 3,
+            "hits": 14,
+            "doubles": 2,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 16,
+            "rbi": 3,
+            "steals": 2,
+            "caughtStealing": 3,
+            "sacrificeHits": 1,
+            "sacrificeFlies": 0,
+            "walks": 2,
+            "hitByPitch": 2,
+            "strikeouts": 12,
+            "groundedIntoDoublePlays": 1
+          },
+          "metrics": {
+            "battingAverage": 0.177,
+            "onBasePercentage": 0.217,
+            "sluggingPercentage": 0.203,
+            "ops": 0.42,
+            "iso": 0.026,
+            "walkPercentage": 0.024,
+            "strikeoutPercentage": 0.143
+          }
+        }
+      ],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 1,
+          "games": 45,
+          "plateAppearances": 84,
+          "atBats": 79,
+          "runs": 3,
+          "hits": 14,
+          "doubles": 2,
+          "triples": 0,
+          "homeRuns": 0,
+          "totalBases": 16,
+          "rbi": 3,
+          "steals": 2,
+          "walks": 2,
+          "hitByPitch": 2,
+          "strikeouts": 12,
+          "battingAverage": 0.177,
+          "onBasePercentage": 0.214,
+          "sluggingPercentage": 0.203,
+          "ops": 0.417,
+          "iso": 0.026
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/up07r.json"
+    }
+  }
+}

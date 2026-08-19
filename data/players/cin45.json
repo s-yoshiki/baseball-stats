@@ -1,0 +1,192 @@
+{
+  "data": {
+    "type": "player",
+    "id": "cin45",
+    "attributes": {
+      "profile": {
+        "familyName": "田中",
+        "givenName": "幹也",
+        "familyNameKana": "たなか",
+        "givenNameKana": "みきや",
+        "registeredName": "田中 幹也",
+        "registeredNameKana": "たなか・みきや",
+        "url": "https://npb.jp/bis/players/21025157.html",
+        "isActive": true,
+        "details": {
+          "position": "内野手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 166,
+          "weightKg": 68,
+          "birthDate": {
+            "iso": "2000-11-28",
+            "year": 2000,
+            "month": 11,
+            "day": 28
+          },
+          "career": {
+            "raw": "東海大菅生高 - 亜細亜大",
+            "entries": [
+              "東海大菅生高",
+              "亜細亜大"
+            ]
+          },
+          "draft": {
+            "raw": "2022年ドラフト6位",
+            "year": 2022,
+            "rank": 6,
+            "selection": "regular"
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2024,
+          "team": "中 日",
+          "totals": {
+            "games": 112,
+            "plateAppearances": 343,
+            "atBats": 313,
+            "runs": 26,
+            "hits": 70,
+            "doubles": 8,
+            "triples": 2,
+            "homeRuns": 2,
+            "totalBases": 88,
+            "rbi": 23,
+            "steals": 5,
+            "caughtStealing": 1,
+            "sacrificeHits": 10,
+            "sacrificeFlies": 0,
+            "walks": 20,
+            "hitByPitch": 0,
+            "strikeouts": 46,
+            "groundedIntoDoublePlays": 3
+          },
+          "metrics": {
+            "battingAverage": 0.224,
+            "onBasePercentage": 0.27,
+            "sluggingPercentage": 0.281,
+            "ops": 0.551,
+            "iso": 0.057,
+            "walkPercentage": 0.058,
+            "strikeoutPercentage": 0.134
+          }
+        },
+        {
+          "season": 2025,
+          "team": "中 日",
+          "totals": {
+            "games": 95,
+            "plateAppearances": 365,
+            "atBats": 315,
+            "runs": 33,
+            "hits": 85,
+            "doubles": 13,
+            "triples": 1,
+            "homeRuns": 1,
+            "totalBases": 103,
+            "rbi": 21,
+            "steals": 12,
+            "caughtStealing": 2,
+            "sacrificeHits": 22,
+            "sacrificeFlies": 2,
+            "walks": 24,
+            "hitByPitch": 2,
+            "strikeouts": 35,
+            "groundedIntoDoublePlays": 2
+          },
+          "metrics": {
+            "battingAverage": 0.27,
+            "onBasePercentage": 0.324,
+            "sluggingPercentage": 0.327,
+            "ops": 0.651,
+            "iso": 0.057,
+            "walkPercentage": 0.066,
+            "strikeoutPercentage": 0.096
+          }
+        },
+        {
+          "season": 2026,
+          "team": "中 日",
+          "totals": {
+            "games": 73,
+            "plateAppearances": 247,
+            "atBats": 213,
+            "runs": 24,
+            "hits": 50,
+            "doubles": 9,
+            "triples": 1,
+            "homeRuns": 0,
+            "totalBases": 61,
+            "rbi": 11,
+            "steals": 8,
+            "caughtStealing": 2,
+            "sacrificeHits": 12,
+            "sacrificeFlies": 2,
+            "walks": 17,
+            "hitByPitch": 3,
+            "strikeouts": 25,
+            "groundedIntoDoublePlays": 2
+          },
+          "metrics": {
+            "battingAverage": 0.235,
+            "onBasePercentage": 0.298,
+            "sluggingPercentage": 0.286,
+            "ops": 0.584,
+            "iso": 0.051,
+            "walkPercentage": 0.069,
+            "strikeoutPercentage": 0.101
+          }
+        }
+      ],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 3,
+          "games": 280,
+          "plateAppearances": 955,
+          "atBats": 841,
+          "runs": 83,
+          "hits": 205,
+          "doubles": 30,
+          "triples": 4,
+          "homeRuns": 3,
+          "totalBases": 252,
+          "rbi": 55,
+          "steals": 25,
+          "walks": 61,
+          "hitByPitch": 5,
+          "strikeouts": 106,
+          "battingAverage": 0.244,
+          "onBasePercentage": 0.284,
+          "sluggingPercentage": 0.3,
+          "ops": 0.584,
+          "iso": 0.056
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/cin45.json"
+    }
+  }
+}

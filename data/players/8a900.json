@@ -1,0 +1,161 @@
+{
+  "data": {
+    "type": "player",
+    "id": "8a900",
+    "attributes": {
+      "profile": {
+        "familyName": "J.リランソ",
+        "givenName": null,
+        "familyNameKana": "JESUS",
+        "givenNameKana": "LIRANZO",
+        "registeredName": "J.リランソ",
+        "registeredNameKana": "ヘスス・リランソ",
+        "url": "https://npb.jp/bis/players/13915152.html",
+        "isActive": true,
+        "details": {
+          "position": "投手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 188,
+          "weightKg": 112,
+          "birthDate": {
+            "iso": "1995-03-07",
+            "year": 1995,
+            "month": 3,
+            "day": 7
+          },
+          "career": {
+            "raw": "コレヒオヌエバエスペランサ高 - 米マイナー",
+            "entries": [
+              "コレヒオヌエバエスペランサ高",
+              "米マイナー"
+            ]
+          },
+          "draft": {
+            "raw": null,
+            "year": null,
+            "rank": null,
+            "selection": null
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2026,
+          "team": "東京ヤクルト",
+          "totals": {
+            "games": 26,
+            "plateAppearances": 0,
+            "atBats": 0,
+            "runs": 0,
+            "hits": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 0,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 0,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0,
+            "onBasePercentage": 0,
+            "sluggingPercentage": 0,
+            "ops": 0,
+            "iso": 0,
+            "walkPercentage": null,
+            "strikeoutPercentage": null
+          }
+        }
+      ],
+      "pitchingStats": [
+        {
+          "season": 2026,
+          "team": "東京ヤクルト",
+          "totals": {
+            "games": 26,
+            "wins": 2,
+            "losses": 2,
+            "saves": 0,
+            "holds": 9,
+            "holdPoints": 11,
+            "completeGames": 0,
+            "shutouts": 0,
+            "noWalkCompleteGames": 0,
+            "winningPercentage": 0.5,
+            "battersFaced": 95,
+            "innings": 23.333,
+            "hitsAllowed": 12,
+            "homeRunsAllowed": 1,
+            "walksAllowed": 11,
+            "hitByPitch": 3,
+            "strikeouts": 27,
+            "wildPitches": 0,
+            "balks": 0,
+            "runsAllowed": 6,
+            "earnedRuns": 4
+          },
+          "metrics": {
+            "era": 1.54,
+            "whip": 0.986,
+            "strikeoutsPerNine": 10.414,
+            "walksPerNine": 4.243,
+            "strikeoutToWalkRatio": 2.455
+          }
+        }
+      ],
+      "career": {
+        "batting": {
+          "seasons": 1,
+          "games": 26,
+          "plateAppearances": 0,
+          "atBats": 0,
+          "runs": 0,
+          "hits": 0,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 0,
+          "totalBases": 0,
+          "rbi": 0,
+          "steals": 0,
+          "walks": 0,
+          "hitByPitch": 0,
+          "strikeouts": 0,
+          "battingAverage": null,
+          "onBasePercentage": null,
+          "sluggingPercentage": null,
+          "ops": null,
+          "iso": null
+        },
+        "pitching": {
+          "seasons": 1,
+          "games": 26,
+          "wins": 2,
+          "losses": 2,
+          "saves": 0,
+          "holds": 9,
+          "innings": 23.333,
+          "hitsAllowed": 12,
+          "walksAllowed": 11,
+          "strikeouts": 27,
+          "earnedRuns": 4,
+          "winningPercentage": 0.5,
+          "era": 1.543,
+          "whip": 0.986,
+          "strikeoutsPerNine": 10.414,
+          "walksPerNine": 4.243,
+          "strikeoutToWalkRatio": 2.455
+        }
+      }
+    },
+    "links": {
+      "self": "/players/8a900.json"
+    }
+  }
+}

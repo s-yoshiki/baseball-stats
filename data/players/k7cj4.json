@@ -1,0 +1,126 @@
+{
+  "data": {
+    "type": "player",
+    "id": "k7cj4",
+    "attributes": {
+      "profile": {
+        "familyName": "林",
+        "givenName": "安可",
+        "familyNameKana": "りん",
+        "givenNameKana": "あんこー",
+        "registeredName": "林 安可",
+        "registeredNameKana": "りん・あんこー",
+        "url": "https://npb.jp/bis/players/33935152.html",
+        "isActive": true,
+        "details": {
+          "position": "外野手",
+          "throws": "左",
+          "bats": "左",
+          "heightCm": 184,
+          "weightKg": 90,
+          "birthDate": {
+            "iso": "1997-05-19",
+            "year": 1997,
+            "month": 5,
+            "day": 19
+          },
+          "career": {
+            "raw": "中国文化大 - 台湾・統一",
+            "entries": [
+              "中国文化大",
+              "台湾・統一"
+            ]
+          },
+          "draft": {
+            "raw": null,
+            "year": null,
+            "rank": null,
+            "selection": null
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2026,
+          "team": "埼玉西武",
+          "totals": {
+            "games": 59,
+            "plateAppearances": 205,
+            "atBats": 184,
+            "runs": 15,
+            "hits": 42,
+            "doubles": 12,
+            "triples": 0,
+            "homeRuns": 6,
+            "totalBases": 72,
+            "rbi": 22,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 1,
+            "walks": 13,
+            "hitByPitch": 7,
+            "strikeouts": 51,
+            "groundedIntoDoublePlays": 4
+          },
+          "metrics": {
+            "battingAverage": 0.228,
+            "onBasePercentage": 0.302,
+            "sluggingPercentage": 0.391,
+            "ops": 0.693,
+            "iso": 0.163,
+            "walkPercentage": 0.063,
+            "strikeoutPercentage": 0.249
+          }
+        }
+      ],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 1,
+          "games": 59,
+          "plateAppearances": 205,
+          "atBats": 184,
+          "runs": 15,
+          "hits": 42,
+          "doubles": 12,
+          "triples": 0,
+          "homeRuns": 6,
+          "totalBases": 72,
+          "rbi": 22,
+          "steals": 0,
+          "walks": 13,
+          "hitByPitch": 7,
+          "strikeouts": 51,
+          "battingAverage": 0.228,
+          "onBasePercentage": 0.302,
+          "sluggingPercentage": 0.391,
+          "ops": 0.693,
+          "iso": 0.163
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/k7cj4.json"
+    }
+  }
+}

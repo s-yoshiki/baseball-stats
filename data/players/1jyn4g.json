@@ -1,0 +1,161 @@
+{
+  "data": {
+    "type": "player",
+    "id": "1jyn4g",
+    "attributes": {
+      "profile": {
+        "familyName": "S.レイノルズ",
+        "givenName": null,
+        "familyNameKana": "SEAN",
+        "givenNameKana": "REYNOLDS",
+        "registeredName": "S.レイノルズ",
+        "registeredNameKana": "ショーン・レイノルズ",
+        "url": "https://npb.jp/bis/players/93995152.html",
+        "isActive": true,
+        "details": {
+          "position": "投手",
+          "throws": "右",
+          "bats": "左",
+          "heightCm": 203,
+          "weightKg": 113,
+          "birthDate": {
+            "iso": "1998-04-19",
+            "year": 1998,
+            "month": 4,
+            "day": 19
+          },
+          "career": {
+            "raw": "レドンドユニオン高 - パドレス",
+            "entries": [
+              "レドンドユニオン高",
+              "パドレス"
+            ]
+          },
+          "draft": {
+            "raw": null,
+            "year": null,
+            "rank": null,
+            "selection": null
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2026,
+          "team": "横浜DeNA",
+          "totals": {
+            "games": 47,
+            "plateAppearances": 0,
+            "atBats": 0,
+            "runs": 0,
+            "hits": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 0,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 0,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0,
+            "onBasePercentage": 0,
+            "sluggingPercentage": 0,
+            "ops": 0,
+            "iso": 0,
+            "walkPercentage": null,
+            "strikeoutPercentage": null
+          }
+        }
+      ],
+      "pitchingStats": [
+        {
+          "season": 2026,
+          "team": "横浜DeNA",
+          "totals": {
+            "games": 47,
+            "wins": 3,
+            "losses": 0,
+            "saves": 10,
+            "holds": 26,
+            "holdPoints": 29,
+            "completeGames": 0,
+            "shutouts": 0,
+            "noWalkCompleteGames": 0,
+            "winningPercentage": 1,
+            "battersFaced": 189,
+            "innings": 48.333,
+            "hitsAllowed": 26,
+            "homeRunsAllowed": 2,
+            "walksAllowed": 14,
+            "hitByPitch": 2,
+            "strikeouts": 68,
+            "wildPitches": 0,
+            "balks": 0,
+            "runsAllowed": 7,
+            "earnedRuns": 6
+          },
+          "metrics": {
+            "era": 1.12,
+            "whip": 0.828,
+            "strikeoutsPerNine": 12.662,
+            "walksPerNine": 2.607,
+            "strikeoutToWalkRatio": 4.857
+          }
+        }
+      ],
+      "career": {
+        "batting": {
+          "seasons": 1,
+          "games": 47,
+          "plateAppearances": 0,
+          "atBats": 0,
+          "runs": 0,
+          "hits": 0,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 0,
+          "totalBases": 0,
+          "rbi": 0,
+          "steals": 0,
+          "walks": 0,
+          "hitByPitch": 0,
+          "strikeouts": 0,
+          "battingAverage": null,
+          "onBasePercentage": null,
+          "sluggingPercentage": null,
+          "ops": null,
+          "iso": null
+        },
+        "pitching": {
+          "seasons": 1,
+          "games": 47,
+          "wins": 3,
+          "losses": 0,
+          "saves": 10,
+          "holds": 26,
+          "innings": 48.333,
+          "hitsAllowed": 26,
+          "walksAllowed": 14,
+          "strikeouts": 68,
+          "earnedRuns": 6,
+          "winningPercentage": 1,
+          "era": 1.117,
+          "whip": 0.828,
+          "strikeoutsPerNine": 12.662,
+          "walksPerNine": 2.607,
+          "strikeoutToWalkRatio": 4.857
+        }
+      }
+    },
+    "links": {
+      "self": "/players/1jyn4g.json"
+    }
+  }
+}

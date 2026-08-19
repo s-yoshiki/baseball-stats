@@ -1,0 +1,127 @@
+{
+  "data": {
+    "type": "player",
+    "id": "17syy8",
+    "attributes": {
+      "profile": {
+        "familyName": "M.サノー",
+        "givenName": null,
+        "familyNameKana": "MIGUEL",
+        "givenNameKana": "SANO",
+        "registeredName": "M.サノー",
+        "registeredNameKana": "ミゲル・サノー",
+        "url": "https://npb.jp/bis/players/73575152.html",
+        "isActive": true,
+        "details": {
+          "position": "内野手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 196,
+          "weightKg": 126,
+          "birthDate": {
+            "iso": "1993-05-11",
+            "year": 1993,
+            "month": 5,
+            "day": 11
+          },
+          "career": {
+            "raw": "ラパロマ高 - ツインズ - エンゼルス",
+            "entries": [
+              "ラパロマ高",
+              "ツインズ",
+              "エンゼルス"
+            ]
+          },
+          "draft": {
+            "raw": null,
+            "year": null,
+            "rank": null,
+            "selection": null
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2026,
+          "team": "中 日",
+          "totals": {
+            "games": 65,
+            "plateAppearances": 243,
+            "atBats": 212,
+            "runs": 23,
+            "hits": 48,
+            "doubles": 6,
+            "triples": 0,
+            "homeRuns": 17,
+            "totalBases": 105,
+            "rbi": 36,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 4,
+            "walks": 25,
+            "hitByPitch": 2,
+            "strikeouts": 66,
+            "groundedIntoDoublePlays": 5
+          },
+          "metrics": {
+            "battingAverage": 0.226,
+            "onBasePercentage": 0.309,
+            "sluggingPercentage": 0.495,
+            "ops": 0.804,
+            "iso": 0.269,
+            "walkPercentage": 0.103,
+            "strikeoutPercentage": 0.272
+          }
+        }
+      ],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 1,
+          "games": 65,
+          "plateAppearances": 243,
+          "atBats": 212,
+          "runs": 23,
+          "hits": 48,
+          "doubles": 6,
+          "triples": 0,
+          "homeRuns": 17,
+          "totalBases": 105,
+          "rbi": 36,
+          "steals": 0,
+          "walks": 25,
+          "hitByPitch": 2,
+          "strikeouts": 66,
+          "battingAverage": 0.226,
+          "onBasePercentage": 0.309,
+          "sluggingPercentage": 0.495,
+          "ops": 0.804,
+          "iso": 0.269
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/17syy8.json"
+    }
+  }
+}

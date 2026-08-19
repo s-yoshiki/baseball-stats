@@ -1,0 +1,161 @@
+{
+  "data": {
+    "type": "player",
+    "id": "1dvt1a",
+    "attributes": {
+      "profile": {
+        "familyName": "J.ボスラー",
+        "givenName": null,
+        "familyNameKana": "JASON",
+        "givenNameKana": "VOSLER",
+        "registeredName": "J.ボスラー",
+        "registeredNameKana": "ジェイソン・ボスラー",
+        "url": "https://npb.jp/bis/players/83785150.html",
+        "isActive": true,
+        "details": {
+          "position": "外野手",
+          "throws": "右",
+          "bats": "左",
+          "heightCm": 186,
+          "weightKg": 98,
+          "birthDate": {
+            "iso": "1993-09-06",
+            "year": 1993,
+            "month": 9,
+            "day": 6
+          },
+          "career": {
+            "raw": "ノースイースタン大 - ジャイアンツ - レッズ - マリナーズ",
+            "entries": [
+              "ノースイースタン大",
+              "ジャイアンツ",
+              "レッズ",
+              "マリナーズ"
+            ]
+          },
+          "draft": {
+            "raw": null,
+            "year": null,
+            "rank": null,
+            "selection": null
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2025,
+          "team": "中 日",
+          "totals": {
+            "games": 122,
+            "plateAppearances": 493,
+            "atBats": 452,
+            "runs": 37,
+            "hits": 118,
+            "doubles": 33,
+            "triples": 2,
+            "homeRuns": 13,
+            "totalBases": 194,
+            "rbi": 58,
+            "steals": 0,
+            "caughtStealing": 1,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 5,
+            "walks": 30,
+            "hitByPitch": 6,
+            "strikeouts": 101,
+            "groundedIntoDoublePlays": 5
+          },
+          "metrics": {
+            "battingAverage": 0.261,
+            "onBasePercentage": 0.312,
+            "sluggingPercentage": 0.429,
+            "ops": 0.741,
+            "iso": 0.168,
+            "walkPercentage": 0.061,
+            "strikeoutPercentage": 0.205
+          }
+        },
+        {
+          "season": 2026,
+          "team": "中 日",
+          "totals": {
+            "games": 74,
+            "plateAppearances": 241,
+            "atBats": 224,
+            "runs": 14,
+            "hits": 42,
+            "doubles": 6,
+            "triples": 1,
+            "homeRuns": 7,
+            "totalBases": 71,
+            "rbi": 19,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 2,
+            "walks": 12,
+            "hitByPitch": 3,
+            "strikeouts": 73,
+            "groundedIntoDoublePlays": 2
+          },
+          "metrics": {
+            "battingAverage": 0.188,
+            "onBasePercentage": 0.237,
+            "sluggingPercentage": 0.317,
+            "ops": 0.554,
+            "iso": 0.129,
+            "walkPercentage": 0.05,
+            "strikeoutPercentage": 0.303
+          }
+        }
+      ],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 2,
+          "games": 196,
+          "plateAppearances": 734,
+          "atBats": 676,
+          "runs": 51,
+          "hits": 160,
+          "doubles": 39,
+          "triples": 3,
+          "homeRuns": 20,
+          "totalBases": 265,
+          "rbi": 77,
+          "steals": 0,
+          "walks": 42,
+          "hitByPitch": 9,
+          "strikeouts": 174,
+          "battingAverage": 0.237,
+          "onBasePercentage": 0.287,
+          "sluggingPercentage": 0.392,
+          "ops": 0.679,
+          "iso": 0.155
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/1dvt1a.json"
+    }
+  }
+}

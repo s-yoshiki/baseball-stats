@@ -1,0 +1,686 @@
+{
+  "data": {
+    "type": "player",
+    "id": "uikpa",
+    "attributes": {
+      "profile": {
+        "familyName": "中村",
+        "givenName": "悠平",
+        "familyNameKana": "なかむら",
+        "givenNameKana": "ゆうへい",
+        "registeredName": "中村 悠平",
+        "registeredNameKana": "なかむら・ゆうへい",
+        "url": "https://npb.jp/bis/players/51255118.html",
+        "isActive": true,
+        "details": {
+          "position": "捕手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 176,
+          "weightKg": 79,
+          "birthDate": {
+            "iso": "1990-06-17",
+            "year": 1990,
+            "month": 6,
+            "day": 17
+          },
+          "career": {
+            "raw": "福井商",
+            "entries": [
+              "福井商"
+            ]
+          },
+          "draft": {
+            "raw": "2008年ドラフト3位",
+            "year": 2008,
+            "rank": 3,
+            "selection": "regular"
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2009,
+          "team": "東京ヤクルト",
+          "totals": {
+            "games": 5,
+            "plateAppearances": 5,
+            "atBats": 4,
+            "runs": 1,
+            "hits": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 0,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 1,
+            "strikeouts": 0,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0,
+            "onBasePercentage": 0.2,
+            "sluggingPercentage": 0,
+            "ops": 0.2,
+            "iso": 0,
+            "walkPercentage": 0,
+            "strikeoutPercentage": 0
+          }
+        },
+        {
+          "season": 2010,
+          "team": "東京ヤクルト",
+          "totals": {
+            "games": 3,
+            "plateAppearances": 6,
+            "atBats": 6,
+            "runs": 1,
+            "hits": 2,
+            "doubles": 1,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 3,
+            "rbi": 1,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 4,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0.333,
+            "onBasePercentage": 0.333,
+            "sluggingPercentage": 0.5,
+            "ops": 0.833,
+            "iso": 0.167,
+            "walkPercentage": 0,
+            "strikeoutPercentage": 0.667
+          }
+        },
+        {
+          "season": 2011,
+          "team": "東京ヤクルト",
+          "totals": {
+            "games": 13,
+            "plateAppearances": 6,
+            "atBats": 6,
+            "runs": 1,
+            "hits": 2,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 2,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 0,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0.333,
+            "onBasePercentage": 0.333,
+            "sluggingPercentage": 0.333,
+            "ops": 0.666,
+            "iso": 0,
+            "walkPercentage": 0,
+            "strikeoutPercentage": 0
+          }
+        },
+        {
+          "season": 2012,
+          "team": "東京ヤクルト",
+          "totals": {
+            "games": 91,
+            "plateAppearances": 249,
+            "atBats": 209,
+            "runs": 19,
+            "hits": 53,
+            "doubles": 5,
+            "triples": 0,
+            "homeRuns": 1,
+            "totalBases": 61,
+            "rbi": 15,
+            "steals": 1,
+            "caughtStealing": 1,
+            "sacrificeHits": 8,
+            "sacrificeFlies": 2,
+            "walks": 28,
+            "hitByPitch": 2,
+            "strikeouts": 31,
+            "groundedIntoDoublePlays": 10
+          },
+          "metrics": {
+            "battingAverage": 0.254,
+            "onBasePercentage": 0.344,
+            "sluggingPercentage": 0.292,
+            "ops": 0.636,
+            "iso": 0.038,
+            "walkPercentage": 0.112,
+            "strikeoutPercentage": 0.124
+          }
+        },
+        {
+          "season": 2013,
+          "team": "東京ヤクルト",
+          "totals": {
+            "games": 84,
+            "plateAppearances": 286,
+            "atBats": 239,
+            "runs": 17,
+            "hits": 56,
+            "doubles": 5,
+            "triples": 2,
+            "homeRuns": 4,
+            "totalBases": 77,
+            "rbi": 24,
+            "steals": 1,
+            "caughtStealing": 1,
+            "sacrificeHits": 12,
+            "sacrificeFlies": 2,
+            "walks": 30,
+            "hitByPitch": 3,
+            "strikeouts": 37,
+            "groundedIntoDoublePlays": 8
+          },
+          "metrics": {
+            "battingAverage": 0.234,
+            "onBasePercentage": 0.325,
+            "sluggingPercentage": 0.322,
+            "ops": 0.647,
+            "iso": 0.088,
+            "walkPercentage": 0.105,
+            "strikeoutPercentage": 0.129
+          }
+        },
+        {
+          "season": 2014,
+          "team": "東京ヤクルト",
+          "totals": {
+            "games": 99,
+            "plateAppearances": 365,
+            "atBats": 325,
+            "runs": 26,
+            "hits": 97,
+            "doubles": 9,
+            "triples": 1,
+            "homeRuns": 5,
+            "totalBases": 123,
+            "rbi": 41,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 7,
+            "sacrificeFlies": 3,
+            "walks": 26,
+            "hitByPitch": 4,
+            "strikeouts": 51,
+            "groundedIntoDoublePlays": 8
+          },
+          "metrics": {
+            "battingAverage": 0.298,
+            "onBasePercentage": 0.355,
+            "sluggingPercentage": 0.378,
+            "ops": 0.733,
+            "iso": 0.08,
+            "walkPercentage": 0.071,
+            "strikeoutPercentage": 0.14
+          }
+        },
+        {
+          "season": 2015,
+          "team": "東京ヤクルト",
+          "totals": {
+            "games": 136,
+            "plateAppearances": 502,
+            "atBats": 442,
+            "runs": 36,
+            "hits": 102,
+            "doubles": 14,
+            "triples": 0,
+            "homeRuns": 2,
+            "totalBases": 122,
+            "rbi": 33,
+            "steals": 3,
+            "caughtStealing": 2,
+            "sacrificeHits": 14,
+            "sacrificeFlies": 2,
+            "walks": 40,
+            "hitByPitch": 4,
+            "strikeouts": 80,
+            "groundedIntoDoublePlays": 9
+          },
+          "metrics": {
+            "battingAverage": 0.231,
+            "onBasePercentage": 0.299,
+            "sluggingPercentage": 0.276,
+            "ops": 0.575,
+            "iso": 0.045,
+            "walkPercentage": 0.08,
+            "strikeoutPercentage": 0.159
+          }
+        },
+        {
+          "season": 2016,
+          "team": "東京ヤクルト",
+          "totals": {
+            "games": 106,
+            "plateAppearances": 378,
+            "atBats": 321,
+            "runs": 24,
+            "hits": 60,
+            "doubles": 14,
+            "triples": 0,
+            "homeRuns": 3,
+            "totalBases": 83,
+            "rbi": 37,
+            "steals": 2,
+            "caughtStealing": 0,
+            "sacrificeHits": 14,
+            "sacrificeFlies": 6,
+            "walks": 31,
+            "hitByPitch": 6,
+            "strikeouts": 47,
+            "groundedIntoDoublePlays": 9
+          },
+          "metrics": {
+            "battingAverage": 0.187,
+            "onBasePercentage": 0.266,
+            "sluggingPercentage": 0.259,
+            "ops": 0.525,
+            "iso": 0.072,
+            "walkPercentage": 0.082,
+            "strikeoutPercentage": 0.124
+          }
+        },
+        {
+          "season": 2017,
+          "team": "東京ヤクルト",
+          "totals": {
+            "games": 127,
+            "plateAppearances": 486,
+            "atBats": 419,
+            "runs": 42,
+            "hits": 102,
+            "doubles": 14,
+            "triples": 4,
+            "homeRuns": 4,
+            "totalBases": 136,
+            "rbi": 34,
+            "steals": 2,
+            "caughtStealing": 1,
+            "sacrificeHits": 11,
+            "sacrificeFlies": 4,
+            "walks": 42,
+            "hitByPitch": 10,
+            "strikeouts": 65,
+            "groundedIntoDoublePlays": 14
+          },
+          "metrics": {
+            "battingAverage": 0.243,
+            "onBasePercentage": 0.324,
+            "sluggingPercentage": 0.325,
+            "ops": 0.649,
+            "iso": 0.082,
+            "walkPercentage": 0.086,
+            "strikeoutPercentage": 0.134
+          }
+        },
+        {
+          "season": 2018,
+          "team": "東京ヤクルト",
+          "totals": {
+            "games": 123,
+            "plateAppearances": 401,
+            "atBats": 341,
+            "runs": 32,
+            "hits": 72,
+            "doubles": 9,
+            "triples": 1,
+            "homeRuns": 5,
+            "totalBases": 98,
+            "rbi": 26,
+            "steals": 2,
+            "caughtStealing": 0,
+            "sacrificeHits": 22,
+            "sacrificeFlies": 2,
+            "walks": 31,
+            "hitByPitch": 5,
+            "strikeouts": 39,
+            "groundedIntoDoublePlays": 7
+          },
+          "metrics": {
+            "battingAverage": 0.211,
+            "onBasePercentage": 0.285,
+            "sluggingPercentage": 0.287,
+            "ops": 0.572,
+            "iso": 0.076,
+            "walkPercentage": 0.077,
+            "strikeoutPercentage": 0.097
+          }
+        },
+        {
+          "season": 2019,
+          "team": "東京ヤクルト",
+          "totals": {
+            "games": 126,
+            "plateAppearances": 450,
+            "atBats": 372,
+            "runs": 42,
+            "hits": 100,
+            "doubles": 24,
+            "triples": 2,
+            "homeRuns": 5,
+            "totalBases": 143,
+            "rbi": 36,
+            "steals": 1,
+            "caughtStealing": 4,
+            "sacrificeHits": 13,
+            "sacrificeFlies": 2,
+            "walks": 53,
+            "hitByPitch": 10,
+            "strikeouts": 64,
+            "groundedIntoDoublePlays": 11
+          },
+          "metrics": {
+            "battingAverage": 0.269,
+            "onBasePercentage": 0.373,
+            "sluggingPercentage": 0.384,
+            "ops": 0.757,
+            "iso": 0.115,
+            "walkPercentage": 0.118,
+            "strikeoutPercentage": 0.142
+          }
+        },
+        {
+          "season": 2020,
+          "team": "東京ヤクルト",
+          "totals": {
+            "games": 29,
+            "plateAppearances": 92,
+            "atBats": 80,
+            "runs": 10,
+            "hits": 14,
+            "doubles": 2,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 16,
+            "rbi": 3,
+            "steals": 0,
+            "caughtStealing": 1,
+            "sacrificeHits": 2,
+            "sacrificeFlies": 1,
+            "walks": 9,
+            "hitByPitch": 0,
+            "strikeouts": 14,
+            "groundedIntoDoublePlays": 2
+          },
+          "metrics": {
+            "battingAverage": 0.175,
+            "onBasePercentage": 0.256,
+            "sluggingPercentage": 0.2,
+            "ops": 0.456,
+            "iso": 0.025,
+            "walkPercentage": 0.098,
+            "strikeoutPercentage": 0.152
+          }
+        },
+        {
+          "season": 2021,
+          "team": "東京ヤクルト",
+          "totals": {
+            "games": 123,
+            "plateAppearances": 445,
+            "atBats": 377,
+            "runs": 47,
+            "hits": 105,
+            "doubles": 24,
+            "triples": 0,
+            "homeRuns": 2,
+            "totalBases": 135,
+            "rbi": 36,
+            "steals": 0,
+            "caughtStealing": 3,
+            "sacrificeHits": 14,
+            "sacrificeFlies": 4,
+            "walks": 46,
+            "hitByPitch": 4,
+            "strikeouts": 66,
+            "groundedIntoDoublePlays": 10
+          },
+          "metrics": {
+            "battingAverage": 0.279,
+            "onBasePercentage": 0.36,
+            "sluggingPercentage": 0.358,
+            "ops": 0.718,
+            "iso": 0.079,
+            "walkPercentage": 0.103,
+            "strikeoutPercentage": 0.148
+          }
+        },
+        {
+          "season": 2022,
+          "team": "東京ヤクルト",
+          "totals": {
+            "games": 86,
+            "plateAppearances": 307,
+            "atBats": 266,
+            "runs": 23,
+            "hits": 70,
+            "doubles": 9,
+            "triples": 1,
+            "homeRuns": 5,
+            "totalBases": 96,
+            "rbi": 28,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 8,
+            "sacrificeFlies": 3,
+            "walks": 26,
+            "hitByPitch": 4,
+            "strikeouts": 36,
+            "groundedIntoDoublePlays": 10
+          },
+          "metrics": {
+            "battingAverage": 0.263,
+            "onBasePercentage": 0.334,
+            "sluggingPercentage": 0.361,
+            "ops": 0.695,
+            "iso": 0.098,
+            "walkPercentage": 0.085,
+            "strikeoutPercentage": 0.117
+          }
+        },
+        {
+          "season": 2023,
+          "team": "東京ヤクルト",
+          "totals": {
+            "games": 106,
+            "plateAppearances": 376,
+            "atBats": 310,
+            "runs": 24,
+            "hits": 70,
+            "doubles": 14,
+            "triples": 0,
+            "homeRuns": 4,
+            "totalBases": 96,
+            "rbi": 33,
+            "steals": 0,
+            "caughtStealing": 1,
+            "sacrificeHits": 21,
+            "sacrificeFlies": 4,
+            "walks": 33,
+            "hitByPitch": 8,
+            "strikeouts": 59,
+            "groundedIntoDoublePlays": 6
+          },
+          "metrics": {
+            "battingAverage": 0.226,
+            "onBasePercentage": 0.313,
+            "sluggingPercentage": 0.31,
+            "ops": 0.623,
+            "iso": 0.084,
+            "walkPercentage": 0.088,
+            "strikeoutPercentage": 0.157
+          }
+        },
+        {
+          "season": 2024,
+          "team": "東京ヤクルト",
+          "totals": {
+            "games": 96,
+            "plateAppearances": 353,
+            "atBats": 291,
+            "runs": 16,
+            "hits": 69,
+            "doubles": 9,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 78,
+            "rbi": 23,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 26,
+            "sacrificeFlies": 2,
+            "walks": 30,
+            "hitByPitch": 4,
+            "strikeouts": 54,
+            "groundedIntoDoublePlays": 7
+          },
+          "metrics": {
+            "battingAverage": 0.237,
+            "onBasePercentage": 0.315,
+            "sluggingPercentage": 0.268,
+            "ops": 0.583,
+            "iso": 0.031,
+            "walkPercentage": 0.085,
+            "strikeoutPercentage": 0.153
+          }
+        },
+        {
+          "season": 2025,
+          "team": "東京ヤクルト",
+          "totals": {
+            "games": 74,
+            "plateAppearances": 221,
+            "atBats": 187,
+            "runs": 13,
+            "hits": 43,
+            "doubles": 6,
+            "triples": 0,
+            "homeRuns": 1,
+            "totalBases": 52,
+            "rbi": 11,
+            "steals": 1,
+            "caughtStealing": 0,
+            "sacrificeHits": 8,
+            "sacrificeFlies": 1,
+            "walks": 22,
+            "hitByPitch": 3,
+            "strikeouts": 30,
+            "groundedIntoDoublePlays": 6
+          },
+          "metrics": {
+            "battingAverage": 0.23,
+            "onBasePercentage": 0.319,
+            "sluggingPercentage": 0.278,
+            "ops": 0.597,
+            "iso": 0.048,
+            "walkPercentage": 0.1,
+            "strikeoutPercentage": 0.136
+          }
+        },
+        {
+          "season": 2026,
+          "team": "東京ヤクルト",
+          "totals": {
+            "games": 32,
+            "plateAppearances": 65,
+            "atBats": 58,
+            "runs": 2,
+            "hits": 11,
+            "doubles": 5,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 16,
+            "rbi": 1,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 2,
+            "sacrificeFlies": 0,
+            "walks": 4,
+            "hitByPitch": 1,
+            "strikeouts": 5,
+            "groundedIntoDoublePlays": 3
+          },
+          "metrics": {
+            "battingAverage": 0.19,
+            "onBasePercentage": 0.254,
+            "sluggingPercentage": 0.276,
+            "ops": 0.53,
+            "iso": 0.086,
+            "walkPercentage": 0.062,
+            "strikeoutPercentage": 0.077
+          }
+        }
+      ],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 18,
+          "games": 1459,
+          "plateAppearances": 4993,
+          "atBats": 4253,
+          "runs": 376,
+          "hits": 1028,
+          "doubles": 164,
+          "triples": 11,
+          "homeRuns": 41,
+          "totalBases": 1337,
+          "rbi": 382,
+          "steals": 13,
+          "walks": 451,
+          "hitByPitch": 69,
+          "strikeouts": 682,
+          "battingAverage": 0.242,
+          "onBasePercentage": 0.31,
+          "sluggingPercentage": 0.314,
+          "ops": 0.624,
+          "iso": 0.072
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/uikpa.json"
+    }
+  }
+}

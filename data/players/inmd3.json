@@ -1,0 +1,160 @@
+{
+  "data": {
+    "type": "player",
+    "id": "inmd3",
+    "attributes": {
+      "profile": {
+        "familyName": "井上",
+        "givenName": "絢登",
+        "familyNameKana": "いのうえ",
+        "givenNameKana": "けんと",
+        "registeredName": "井上 絢登",
+        "registeredNameKana": "いのうえ・けんと",
+        "url": "https://npb.jp/bis/players/31335159.html",
+        "isActive": true,
+        "details": {
+          "position": "外野手",
+          "throws": "右",
+          "bats": "左",
+          "heightCm": 178,
+          "weightKg": 90,
+          "birthDate": {
+            "iso": "2000-02-23",
+            "year": 2000,
+            "month": 2,
+            "day": 23
+          },
+          "career": {
+            "raw": "久留米商 - 福岡大 - 四国・徳島",
+            "entries": [
+              "久留米商",
+              "福岡大",
+              "四国・徳島"
+            ]
+          },
+          "draft": {
+            "raw": "2023年ドラフト6位",
+            "year": 2023,
+            "rank": 6,
+            "selection": "regular"
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2024,
+          "team": "横浜DeNA",
+          "totals": {
+            "games": 25,
+            "plateAppearances": 48,
+            "atBats": 42,
+            "runs": 2,
+            "hits": 8,
+            "doubles": 5,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 13,
+            "rbi": 4,
+            "steals": 1,
+            "caughtStealing": 0,
+            "sacrificeHits": 2,
+            "sacrificeFlies": 0,
+            "walks": 2,
+            "hitByPitch": 2,
+            "strikeouts": 8,
+            "groundedIntoDoublePlays": 1
+          },
+          "metrics": {
+            "battingAverage": 0.19,
+            "onBasePercentage": 0.261,
+            "sluggingPercentage": 0.31,
+            "ops": 0.571,
+            "iso": 0.12,
+            "walkPercentage": 0.042,
+            "strikeoutPercentage": 0.167
+          }
+        },
+        {
+          "season": 2025,
+          "team": "横浜DeNA",
+          "totals": {
+            "games": 12,
+            "plateAppearances": 31,
+            "atBats": 29,
+            "runs": 2,
+            "hits": 5,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 2,
+            "totalBases": 11,
+            "rbi": 7,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 1,
+            "walks": 1,
+            "hitByPitch": 0,
+            "strikeouts": 6,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0.172,
+            "onBasePercentage": 0.194,
+            "sluggingPercentage": 0.379,
+            "ops": 0.573,
+            "iso": 0.207,
+            "walkPercentage": 0.032,
+            "strikeoutPercentage": 0.194
+          }
+        }
+      ],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 2,
+          "games": 37,
+          "plateAppearances": 79,
+          "atBats": 71,
+          "runs": 4,
+          "hits": 13,
+          "doubles": 5,
+          "triples": 0,
+          "homeRuns": 2,
+          "totalBases": 24,
+          "rbi": 11,
+          "steals": 1,
+          "walks": 3,
+          "hitByPitch": 2,
+          "strikeouts": 14,
+          "battingAverage": 0.183,
+          "onBasePercentage": 0.228,
+          "sluggingPercentage": 0.338,
+          "ops": 0.566,
+          "iso": 0.155
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/inmd3.json"
+    }
+  }
+}

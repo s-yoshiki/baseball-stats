@@ -1,0 +1,92 @@
+{
+  "data": {
+    "type": "player",
+    "id": "16uodx",
+    "attributes": {
+      "profile": {
+        "familyName": "重松",
+        "givenName": "凱人",
+        "familyNameKana": "しげまつ",
+        "givenNameKana": "かいと",
+        "registeredName": "重松 凱人",
+        "registeredNameKana": "しげまつ・かいと",
+        "url": "https://npb.jp/bis/players/71975157.html",
+        "isActive": true,
+        "details": {
+          "position": "外野手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 187,
+          "weightKg": 97,
+          "birthDate": {
+            "iso": "2000-04-12",
+            "year": 2000,
+            "month": 4,
+            "day": 12
+          },
+          "career": {
+            "raw": "戸畑高 - 亜細亜大",
+            "entries": [
+              "戸畑高",
+              "亜細亜大"
+            ]
+          },
+          "draft": {
+            "raw": "2022年育成選手ドラフト9位",
+            "year": 2022,
+            "rank": 9,
+            "selection": "development"
+          }
+        }
+      },
+      "battingStats": [],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 0,
+          "games": 0,
+          "plateAppearances": 0,
+          "atBats": 0,
+          "runs": 0,
+          "hits": 0,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 0,
+          "totalBases": 0,
+          "rbi": 0,
+          "steals": 0,
+          "walks": 0,
+          "hitByPitch": 0,
+          "strikeouts": 0,
+          "battingAverage": null,
+          "onBasePercentage": null,
+          "sluggingPercentage": null,
+          "ops": null,
+          "iso": null
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/16uodx.json"
+    }
+  }
+}

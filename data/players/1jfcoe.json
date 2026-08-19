@@ -1,0 +1,160 @@
+{
+  "data": {
+    "type": "player",
+    "id": "1jfcoe",
+    "attributes": {
+      "profile": {
+        "familyName": "O.ゴンザレス",
+        "givenName": null,
+        "familyNameKana": "OSCAR",
+        "givenNameKana": "GONZALEZ",
+        "registeredName": "O.ゴンザレス",
+        "registeredNameKana": "オスカー・ゴンザレス",
+        "url": "https://npb.jp/bis/players/93095150.html",
+        "isActive": true,
+        "details": {
+          "position": "外野手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 196,
+          "weightKg": 108,
+          "birthDate": {
+            "iso": "1998-01-10",
+            "year": 1998,
+            "month": 1,
+            "day": 10
+          },
+          "career": {
+            "raw": "パドレボルボン高 - ガーディアンズ - パドレス",
+            "entries": [
+              "パドレボルボン高",
+              "ガーディアンズ",
+              "パドレス"
+            ]
+          },
+          "draft": {
+            "raw": null,
+            "year": null,
+            "rank": null,
+            "selection": null
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2025,
+          "team": "東北楽天",
+          "totals": {
+            "games": 53,
+            "plateAppearances": 208,
+            "atBats": 201,
+            "runs": 18,
+            "hits": 46,
+            "doubles": 5,
+            "triples": 1,
+            "homeRuns": 4,
+            "totalBases": 65,
+            "rbi": 19,
+            "steals": 0,
+            "caughtStealing": 2,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 1,
+            "walks": 4,
+            "hitByPitch": 2,
+            "strikeouts": 37,
+            "groundedIntoDoublePlays": 10
+          },
+          "metrics": {
+            "battingAverage": 0.229,
+            "onBasePercentage": 0.25,
+            "sluggingPercentage": 0.323,
+            "ops": 0.573,
+            "iso": 0.094,
+            "walkPercentage": 0.019,
+            "strikeoutPercentage": 0.178
+          }
+        },
+        {
+          "season": 2026,
+          "team": "東北楽天",
+          "totals": {
+            "games": 3,
+            "plateAppearances": 8,
+            "atBats": 8,
+            "runs": 0,
+            "hits": 1,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 1,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 6,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0.125,
+            "onBasePercentage": 0.125,
+            "sluggingPercentage": 0.125,
+            "ops": 0.25,
+            "iso": 0,
+            "walkPercentage": 0,
+            "strikeoutPercentage": 0.75
+          }
+        }
+      ],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 2,
+          "games": 56,
+          "plateAppearances": 216,
+          "atBats": 209,
+          "runs": 18,
+          "hits": 47,
+          "doubles": 5,
+          "triples": 1,
+          "homeRuns": 4,
+          "totalBases": 66,
+          "rbi": 19,
+          "steals": 0,
+          "walks": 4,
+          "hitByPitch": 2,
+          "strikeouts": 43,
+          "battingAverage": 0.225,
+          "onBasePercentage": 0.245,
+          "sluggingPercentage": 0.316,
+          "ops": 0.561,
+          "iso": 0.091
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/1jfcoe.json"
+    }
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "data": {
+    "type": "player",
+    "id": "ilh74",
+    "attributes": {
+      "profile": {
+        "familyName": "髙橋",
+        "givenName": "隆慶",
+        "familyNameKana": "たかはし",
+        "givenNameKana": "たかのり",
+        "registeredName": "髙橋 隆慶",
+        "registeredNameKana": "たかはし・たかのり",
+        "url": "https://npb.jp/bis/players/31235152.html",
+        "isActive": true,
+        "details": {
+          "position": "内野手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 186,
+          "weightKg": 93,
+          "birthDate": {
+            "iso": "2001-12-21",
+            "year": 2001,
+            "month": 12,
+            "day": 21
+          },
+          "career": {
+            "raw": "明秀学園日立高 - 中央大 - JR東日本",
+            "entries": [
+              "明秀学園日立高",
+              "中央大",
+              "JR東日本"
+            ]
+          },
+          "draft": {
+            "raw": "2025年ドラフト5位",
+            "year": 2025,
+            "rank": 5,
+            "selection": "regular"
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2026,
+          "team": "福岡ソフトバンク",
+          "totals": {
+            "games": 3,
+            "plateAppearances": 5,
+            "atBats": 5,
+            "runs": 1,
+            "hits": 2,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 1,
+            "totalBases": 5,
+            "rbi": 1,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 3,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0.4,
+            "onBasePercentage": 0.4,
+            "sluggingPercentage": 1,
+            "ops": 1.4,
+            "iso": 0.6,
+            "walkPercentage": 0,
+            "strikeoutPercentage": 0.6
+          }
+        }
+      ],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 1,
+          "games": 3,
+          "plateAppearances": 5,
+          "atBats": 5,
+          "runs": 1,
+          "hits": 2,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 1,
+          "totalBases": 5,
+          "rbi": 1,
+          "steals": 0,
+          "walks": 0,
+          "hitByPitch": 0,
+          "strikeouts": 3,
+          "battingAverage": 0.4,
+          "onBasePercentage": 0.4,
+          "sluggingPercentage": 1,
+          "ops": 1.4,
+          "iso": 0.6
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/ilh74.json"
+    }
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "data": {
+    "type": "player",
+    "id": "cr7r4",
+    "attributes": {
+      "profile": {
+        "familyName": "野上",
+        "givenName": "士耀",
+        "familyNameKana": "のがみ",
+        "givenNameKana": "しきら",
+        "registeredName": "野上 士耀",
+        "registeredNameKana": "のがみ・しきら",
+        "url": "https://npb.jp/bis/players/21425152.html",
+        "isActive": true,
+        "details": {
+          "position": "捕手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 170,
+          "weightKg": 80,
+          "birthDate": {
+            "iso": "2007-05-23",
+            "year": 2007,
+            "month": 5,
+            "day": 23
+          },
+          "career": {
+            "raw": "明秀学園日立高",
+            "entries": [
+              "明秀学園日立高"
+            ]
+          },
+          "draft": {
+            "raw": "2025年ドラフト7位",
+            "year": 2025,
+            "rank": 7,
+            "selection": "regular"
+          }
+        }
+      },
+      "battingStats": [],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 0,
+          "games": 0,
+          "plateAppearances": 0,
+          "atBats": 0,
+          "runs": 0,
+          "hits": 0,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 0,
+          "totalBases": 0,
+          "rbi": 0,
+          "steals": 0,
+          "walks": 0,
+          "hitByPitch": 0,
+          "strikeouts": 0,
+          "battingAverage": null,
+          "onBasePercentage": null,
+          "sluggingPercentage": null,
+          "ops": null,
+          "iso": null
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/cr7r4.json"
+    }
+  }
+}

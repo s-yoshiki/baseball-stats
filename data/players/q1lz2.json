@@ -1,0 +1,159 @@
+{
+  "data": {
+    "type": "player",
+    "id": "q1lz2",
+    "attributes": {
+      "profile": {
+        "familyName": "S.ファビアン",
+        "givenName": null,
+        "familyNameKana": "SANDRO",
+        "givenNameKana": "FABIAN",
+        "registeredName": "S.ファビアン",
+        "registeredNameKana": "サンドロ・ファビアン",
+        "url": "https://npb.jp/bis/players/43745150.html",
+        "isActive": true,
+        "details": {
+          "position": "外野手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 180,
+          "weightKg": 92,
+          "birthDate": {
+            "iso": "1998-03-06",
+            "year": 1998,
+            "month": 3,
+            "day": 6
+          },
+          "career": {
+            "raw": "ハポン中高 - レンジャーズ",
+            "entries": [
+              "ハポン中高",
+              "レンジャーズ"
+            ]
+          },
+          "draft": {
+            "raw": null,
+            "year": null,
+            "rank": null,
+            "selection": null
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2025,
+          "team": "広島東洋",
+          "totals": {
+            "games": 138,
+            "plateAppearances": 572,
+            "atBats": 539,
+            "runs": 60,
+            "hits": 149,
+            "doubles": 30,
+            "triples": 0,
+            "homeRuns": 17,
+            "totalBases": 230,
+            "rbi": 65,
+            "steals": 2,
+            "caughtStealing": 3,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 2,
+            "walks": 22,
+            "hitByPitch": 9,
+            "strikeouts": 84,
+            "groundedIntoDoublePlays": 8
+          },
+          "metrics": {
+            "battingAverage": 0.276,
+            "onBasePercentage": 0.315,
+            "sluggingPercentage": 0.427,
+            "ops": 0.742,
+            "iso": 0.151,
+            "walkPercentage": 0.038,
+            "strikeoutPercentage": 0.147
+          }
+        },
+        {
+          "season": 2026,
+          "team": "広島東洋",
+          "totals": {
+            "games": 72,
+            "plateAppearances": 284,
+            "atBats": 258,
+            "runs": 26,
+            "hits": 58,
+            "doubles": 9,
+            "triples": 1,
+            "homeRuns": 16,
+            "totalBases": 117,
+            "rbi": 36,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 4,
+            "walks": 15,
+            "hitByPitch": 7,
+            "strikeouts": 49,
+            "groundedIntoDoublePlays": 4
+          },
+          "metrics": {
+            "battingAverage": 0.225,
+            "onBasePercentage": 0.282,
+            "sluggingPercentage": 0.453,
+            "ops": 0.735,
+            "iso": 0.228,
+            "walkPercentage": 0.053,
+            "strikeoutPercentage": 0.173
+          }
+        }
+      ],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 2,
+          "games": 210,
+          "plateAppearances": 856,
+          "atBats": 797,
+          "runs": 86,
+          "hits": 207,
+          "doubles": 39,
+          "triples": 1,
+          "homeRuns": 33,
+          "totalBases": 347,
+          "rbi": 101,
+          "steals": 2,
+          "walks": 37,
+          "hitByPitch": 16,
+          "strikeouts": 133,
+          "battingAverage": 0.26,
+          "onBasePercentage": 0.304,
+          "sluggingPercentage": 0.435,
+          "ops": 0.739,
+          "iso": 0.175
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/q1lz2.json"
+    }
+  }
+}

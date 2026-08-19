@@ -1,0 +1,126 @@
+{
+  "data": {
+    "type": "player",
+    "id": "1icrsg",
+    "attributes": {
+      "profile": {
+        "familyName": "立石",
+        "givenName": "正広",
+        "familyNameKana": "たていし",
+        "givenNameKana": "まさひろ",
+        "registeredName": "立石 正広",
+        "registeredNameKana": "たていし・まさひろ",
+        "url": "https://npb.jp/bis/players/91295152.html",
+        "isActive": true,
+        "details": {
+          "position": "内野手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 180,
+          "weightKg": 87,
+          "birthDate": {
+            "iso": "2003-11-01",
+            "year": 2003,
+            "month": 11,
+            "day": 1
+          },
+          "career": {
+            "raw": "高川学園高 - 創価大",
+            "entries": [
+              "高川学園高",
+              "創価大"
+            ]
+          },
+          "draft": {
+            "raw": "2025年ドラフト1位",
+            "year": 2025,
+            "rank": 1,
+            "selection": "regular"
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2026,
+          "team": "阪 神",
+          "totals": {
+            "games": 32,
+            "plateAppearances": 113,
+            "atBats": 111,
+            "runs": 8,
+            "hits": 22,
+            "doubles": 2,
+            "triples": 0,
+            "homeRuns": 2,
+            "totalBases": 30,
+            "rbi": 10,
+            "steals": 1,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 2,
+            "hitByPitch": 0,
+            "strikeouts": 36,
+            "groundedIntoDoublePlays": 2
+          },
+          "metrics": {
+            "battingAverage": 0.198,
+            "onBasePercentage": 0.212,
+            "sluggingPercentage": 0.27,
+            "ops": 0.482,
+            "iso": 0.072,
+            "walkPercentage": 0.018,
+            "strikeoutPercentage": 0.319
+          }
+        }
+      ],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 1,
+          "games": 32,
+          "plateAppearances": 113,
+          "atBats": 111,
+          "runs": 8,
+          "hits": 22,
+          "doubles": 2,
+          "triples": 0,
+          "homeRuns": 2,
+          "totalBases": 30,
+          "rbi": 10,
+          "steals": 1,
+          "walks": 2,
+          "hitByPitch": 0,
+          "strikeouts": 36,
+          "battingAverage": 0.198,
+          "onBasePercentage": 0.212,
+          "sluggingPercentage": 0.27,
+          "ops": 0.482,
+          "iso": 0.072
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/1icrsg.json"
+    }
+  }
+}

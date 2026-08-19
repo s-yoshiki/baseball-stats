@@ -1,0 +1,126 @@
+{
+  "data": {
+    "type": "player",
+    "id": "16uods",
+    "attributes": {
+      "profile": {
+        "familyName": "阪上",
+        "givenName": "翔也",
+        "familyNameKana": "さかうえ",
+        "givenNameKana": "しょうや",
+        "registeredName": "阪上 翔也",
+        "registeredNameKana": "さかうえ・しょうや",
+        "url": "https://npb.jp/bis/players/71975152.html",
+        "isActive": true,
+        "details": {
+          "position": "外野手",
+          "throws": "右",
+          "bats": "左",
+          "heightCm": 180,
+          "weightKg": 90,
+          "birthDate": {
+            "iso": "2003-11-01",
+            "year": 2003,
+            "month": 11,
+            "day": 1
+          },
+          "career": {
+            "raw": "神戸国際大付高 - 近畿大",
+            "entries": [
+              "神戸国際大付高",
+              "近畿大"
+            ]
+          },
+          "draft": {
+            "raw": "2025年ドラフト7位",
+            "year": 2025,
+            "rank": 7,
+            "selection": "regular"
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2026,
+          "team": "東北楽天",
+          "totals": {
+            "games": 3,
+            "plateAppearances": 7,
+            "atBats": 7,
+            "runs": 0,
+            "hits": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 0,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 4,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0,
+            "onBasePercentage": 0,
+            "sluggingPercentage": 0,
+            "ops": 0,
+            "iso": 0,
+            "walkPercentage": 0,
+            "strikeoutPercentage": 0.571
+          }
+        }
+      ],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 1,
+          "games": 3,
+          "plateAppearances": 7,
+          "atBats": 7,
+          "runs": 0,
+          "hits": 0,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 0,
+          "totalBases": 0,
+          "rbi": 0,
+          "steals": 0,
+          "walks": 0,
+          "hitByPitch": 0,
+          "strikeouts": 4,
+          "battingAverage": 0,
+          "onBasePercentage": 0,
+          "sluggingPercentage": 0,
+          "ops": 0,
+          "iso": 0
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/16uods.json"
+    }
+  }
+}

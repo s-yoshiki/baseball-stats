@@ -1,0 +1,164 @@
+{
+  "data": {
+    "type": "player",
+    "id": "vvvf4",
+    "attributes": {
+      "profile": {
+        "familyName": "R.コントレラス",
+        "givenName": null,
+        "familyNameKana": "ROANSY",
+        "givenNameKana": "CONTRERAS",
+        "registeredName": "R.コントレラス",
+        "registeredNameKana": "ロアンシー・コントレラス",
+        "url": "https://npb.jp/bis/players/53555152.html",
+        "isActive": true,
+        "details": {
+          "position": "投手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 185,
+          "weightKg": 92,
+          "birthDate": {
+            "iso": "1999-11-07",
+            "year": 1999,
+            "month": 11,
+            "day": 7
+          },
+          "career": {
+            "raw": "エスクエラエドゥアルドクゥストディオ校 - パイレーツ - エンゼルス - オリオールズ - ロッキーズ",
+            "entries": [
+              "エスクエラエドゥアルドクゥストディオ校",
+              "パイレーツ",
+              "エンゼルス",
+              "オリオールズ",
+              "ロッキーズ"
+            ]
+          },
+          "draft": {
+            "raw": null,
+            "year": null,
+            "rank": null,
+            "selection": null
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2026,
+          "team": "東北楽天",
+          "totals": {
+            "games": 5,
+            "plateAppearances": 0,
+            "atBats": 0,
+            "runs": 0,
+            "hits": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 0,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 0,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0,
+            "onBasePercentage": 0,
+            "sluggingPercentage": 0,
+            "ops": 0,
+            "iso": 0,
+            "walkPercentage": null,
+            "strikeoutPercentage": null
+          }
+        }
+      ],
+      "pitchingStats": [
+        {
+          "season": 2026,
+          "team": "東北楽天",
+          "totals": {
+            "games": 5,
+            "wins": 0,
+            "losses": 1,
+            "saves": 0,
+            "holds": 0,
+            "holdPoints": 0,
+            "completeGames": 0,
+            "shutouts": 0,
+            "noWalkCompleteGames": 0,
+            "winningPercentage": 0,
+            "battersFaced": 62,
+            "innings": 13,
+            "hitsAllowed": 15,
+            "homeRunsAllowed": 3,
+            "walksAllowed": 10,
+            "hitByPitch": 2,
+            "strikeouts": 5,
+            "wildPitches": 0,
+            "balks": 0,
+            "runsAllowed": 10,
+            "earnedRuns": 10
+          },
+          "metrics": {
+            "era": 6.92,
+            "whip": 1.923,
+            "strikeoutsPerNine": 3.462,
+            "walksPerNine": 6.923,
+            "strikeoutToWalkRatio": 0.5
+          }
+        }
+      ],
+      "career": {
+        "batting": {
+          "seasons": 1,
+          "games": 5,
+          "plateAppearances": 0,
+          "atBats": 0,
+          "runs": 0,
+          "hits": 0,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 0,
+          "totalBases": 0,
+          "rbi": 0,
+          "steals": 0,
+          "walks": 0,
+          "hitByPitch": 0,
+          "strikeouts": 0,
+          "battingAverage": null,
+          "onBasePercentage": null,
+          "sluggingPercentage": null,
+          "ops": null,
+          "iso": null
+        },
+        "pitching": {
+          "seasons": 1,
+          "games": 5,
+          "wins": 0,
+          "losses": 1,
+          "saves": 0,
+          "holds": 0,
+          "innings": 13,
+          "hitsAllowed": 15,
+          "walksAllowed": 10,
+          "strikeouts": 5,
+          "earnedRuns": 10,
+          "winningPercentage": 0,
+          "era": 6.923,
+          "whip": 1.923,
+          "strikeoutsPerNine": 3.462,
+          "walksPerNine": 6.923,
+          "strikeoutToWalkRatio": 0.5
+        }
+      }
+    },
+    "links": {
+      "self": "/players/vvvf4.json"
+    }
+  }
+}

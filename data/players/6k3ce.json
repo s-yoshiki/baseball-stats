@@ -1,0 +1,159 @@
+{
+  "data": {
+    "type": "player",
+    "id": "6k3ce",
+    "attributes": {
+      "profile": {
+        "familyName": "佐々木",
+        "givenName": "泰",
+        "familyNameKana": "ささき",
+        "givenNameKana": "たい",
+        "registeredName": "佐々木 泰",
+        "registeredNameKana": "ささき・たい",
+        "url": "https://npb.jp/bis/players/11015150.html",
+        "isActive": true,
+        "details": {
+          "position": "内野手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 178,
+          "weightKg": 86,
+          "birthDate": {
+            "iso": "2002-12-24",
+            "year": 2002,
+            "month": 12,
+            "day": 24
+          },
+          "career": {
+            "raw": "県立岐阜商 - 青山学院大",
+            "entries": [
+              "県立岐阜商",
+              "青山学院大"
+            ]
+          },
+          "draft": {
+            "raw": "2024年ドラフト1位",
+            "year": 2024,
+            "rank": 1,
+            "selection": "regular"
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2025,
+          "team": "広島東洋",
+          "totals": {
+            "games": 54,
+            "plateAppearances": 187,
+            "atBats": 181,
+            "runs": 11,
+            "hits": 49,
+            "doubles": 2,
+            "triples": 1,
+            "homeRuns": 0,
+            "totalBases": 53,
+            "rbi": 6,
+            "steals": 2,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 5,
+            "hitByPitch": 1,
+            "strikeouts": 23,
+            "groundedIntoDoublePlays": 6
+          },
+          "metrics": {
+            "battingAverage": 0.271,
+            "onBasePercentage": 0.294,
+            "sluggingPercentage": 0.293,
+            "ops": 0.587,
+            "iso": 0.022,
+            "walkPercentage": 0.027,
+            "strikeoutPercentage": 0.123
+          }
+        },
+        {
+          "season": 2026,
+          "team": "広島東洋",
+          "totals": {
+            "games": 83,
+            "plateAppearances": 271,
+            "atBats": 255,
+            "runs": 19,
+            "hits": 68,
+            "doubles": 8,
+            "triples": 1,
+            "homeRuns": 4,
+            "totalBases": 90,
+            "rbi": 12,
+            "steals": 2,
+            "caughtStealing": 2,
+            "sacrificeHits": 1,
+            "sacrificeFlies": 0,
+            "walks": 14,
+            "hitByPitch": 1,
+            "strikeouts": 32,
+            "groundedIntoDoublePlays": 3
+          },
+          "metrics": {
+            "battingAverage": 0.267,
+            "onBasePercentage": 0.307,
+            "sluggingPercentage": 0.353,
+            "ops": 0.66,
+            "iso": 0.086,
+            "walkPercentage": 0.052,
+            "strikeoutPercentage": 0.118
+          }
+        }
+      ],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 2,
+          "games": 137,
+          "plateAppearances": 458,
+          "atBats": 436,
+          "runs": 30,
+          "hits": 117,
+          "doubles": 10,
+          "triples": 2,
+          "homeRuns": 4,
+          "totalBases": 143,
+          "rbi": 18,
+          "steals": 4,
+          "walks": 19,
+          "hitByPitch": 2,
+          "strikeouts": 55,
+          "battingAverage": 0.268,
+          "onBasePercentage": 0.301,
+          "sluggingPercentage": 0.328,
+          "ops": 0.629,
+          "iso": 0.06
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/6k3ce.json"
+    }
+  }
+}

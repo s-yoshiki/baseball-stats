@@ -1,0 +1,193 @@
+{
+  "data": {
+    "type": "player",
+    "id": "ukpw3",
+    "attributes": {
+      "profile": {
+        "familyName": "岩田",
+        "givenName": "幸宏",
+        "familyNameKana": "いわた",
+        "givenNameKana": "ゆきひろ",
+        "registeredName": "岩田 幸宏",
+        "registeredNameKana": "いわた・ゆきひろ",
+        "url": "https://npb.jp/bis/players/51355155.html",
+        "isActive": true,
+        "details": {
+          "position": "外野手",
+          "throws": "左",
+          "bats": "左",
+          "heightCm": 175,
+          "weightKg": 79,
+          "birthDate": {
+            "iso": "1997-07-31",
+            "year": 1997,
+            "month": 7,
+            "day": 31
+          },
+          "career": {
+            "raw": "東洋大姫路高 - ミキハウス - BC・信濃",
+            "entries": [
+              "東洋大姫路高",
+              "ミキハウス",
+              "BC・信濃"
+            ]
+          },
+          "draft": {
+            "raw": "2021年育成選手ドラフト1位",
+            "year": 2021,
+            "rank": 1,
+            "selection": "development"
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2024,
+          "team": "東京ヤクルト",
+          "totals": {
+            "games": 81,
+            "plateAppearances": 140,
+            "atBats": 123,
+            "runs": 19,
+            "hits": 28,
+            "doubles": 2,
+            "triples": 0,
+            "homeRuns": 1,
+            "totalBases": 33,
+            "rbi": 7,
+            "steals": 10,
+            "caughtStealing": 0,
+            "sacrificeHits": 9,
+            "sacrificeFlies": 0,
+            "walks": 6,
+            "hitByPitch": 2,
+            "strikeouts": 22,
+            "groundedIntoDoublePlays": 2
+          },
+          "metrics": {
+            "battingAverage": 0.228,
+            "onBasePercentage": 0.275,
+            "sluggingPercentage": 0.268,
+            "ops": 0.543,
+            "iso": 0.04,
+            "walkPercentage": 0.043,
+            "strikeoutPercentage": 0.157
+          }
+        },
+        {
+          "season": 2025,
+          "team": "東京ヤクルト",
+          "totals": {
+            "games": 126,
+            "plateAppearances": 401,
+            "atBats": 357,
+            "runs": 43,
+            "hits": 95,
+            "doubles": 8,
+            "triples": 5,
+            "homeRuns": 0,
+            "totalBases": 113,
+            "rbi": 13,
+            "steals": 14,
+            "caughtStealing": 6,
+            "sacrificeHits": 13,
+            "sacrificeFlies": 1,
+            "walks": 24,
+            "hitByPitch": 6,
+            "strikeouts": 46,
+            "groundedIntoDoublePlays": 2
+          },
+          "metrics": {
+            "battingAverage": 0.266,
+            "onBasePercentage": 0.322,
+            "sluggingPercentage": 0.317,
+            "ops": 0.639,
+            "iso": 0.051,
+            "walkPercentage": 0.06,
+            "strikeoutPercentage": 0.115
+          }
+        },
+        {
+          "season": 2026,
+          "team": "東京ヤクルト",
+          "totals": {
+            "games": 97,
+            "plateAppearances": 354,
+            "atBats": 333,
+            "runs": 34,
+            "hits": 85,
+            "doubles": 9,
+            "triples": 1,
+            "homeRuns": 1,
+            "totalBases": 99,
+            "rbi": 21,
+            "steals": 30,
+            "caughtStealing": 6,
+            "sacrificeHits": 3,
+            "sacrificeFlies": 1,
+            "walks": 14,
+            "hitByPitch": 3,
+            "strikeouts": 65,
+            "groundedIntoDoublePlays": 2
+          },
+          "metrics": {
+            "battingAverage": 0.255,
+            "onBasePercentage": 0.291,
+            "sluggingPercentage": 0.297,
+            "ops": 0.588,
+            "iso": 0.042,
+            "walkPercentage": 0.04,
+            "strikeoutPercentage": 0.184
+          }
+        }
+      ],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 3,
+          "games": 304,
+          "plateAppearances": 895,
+          "atBats": 813,
+          "runs": 96,
+          "hits": 208,
+          "doubles": 19,
+          "triples": 6,
+          "homeRuns": 2,
+          "totalBases": 245,
+          "rbi": 41,
+          "steals": 54,
+          "walks": 44,
+          "hitByPitch": 11,
+          "strikeouts": 133,
+          "battingAverage": 0.256,
+          "onBasePercentage": 0.294,
+          "sluggingPercentage": 0.301,
+          "ops": 0.595,
+          "iso": 0.045
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/ukpw3.json"
+    }
+  }
+}

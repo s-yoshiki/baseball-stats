@@ -1,0 +1,126 @@
+{
+  "data": {
+    "type": "player",
+    "id": "17x99s",
+    "attributes": {
+      "profile": {
+        "familyName": "C.マッカスカー",
+        "givenName": null,
+        "familyNameKana": "CARSON",
+        "givenNameKana": "McCUSKER",
+        "registeredName": "C.マッカスカー",
+        "registeredNameKana": "カーソン・マッカスカー",
+        "url": "https://npb.jp/bis/players/73775152.html",
+        "isActive": true,
+        "details": {
+          "position": "外野手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 203,
+          "weightKg": 113,
+          "birthDate": {
+            "iso": "1998-05-22",
+            "year": 1998,
+            "month": 5,
+            "day": 22
+          },
+          "career": {
+            "raw": "オクラホマ州大 - ツインズ",
+            "entries": [
+              "オクラホマ州大",
+              "ツインズ"
+            ]
+          },
+          "draft": {
+            "raw": null,
+            "year": null,
+            "rank": null,
+            "selection": null
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2026,
+          "team": "東北楽天",
+          "totals": {
+            "games": 68,
+            "plateAppearances": 263,
+            "atBats": 235,
+            "runs": 31,
+            "hits": 62,
+            "doubles": 9,
+            "triples": 1,
+            "homeRuns": 17,
+            "totalBases": 124,
+            "rbi": 48,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 1,
+            "walks": 26,
+            "hitByPitch": 1,
+            "strikeouts": 88,
+            "groundedIntoDoublePlays": 6
+          },
+          "metrics": {
+            "battingAverage": 0.264,
+            "onBasePercentage": 0.338,
+            "sluggingPercentage": 0.528,
+            "ops": 0.866,
+            "iso": 0.264,
+            "walkPercentage": 0.099,
+            "strikeoutPercentage": 0.335
+          }
+        }
+      ],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 1,
+          "games": 68,
+          "plateAppearances": 263,
+          "atBats": 235,
+          "runs": 31,
+          "hits": 62,
+          "doubles": 9,
+          "triples": 1,
+          "homeRuns": 17,
+          "totalBases": 124,
+          "rbi": 48,
+          "steals": 0,
+          "walks": 26,
+          "hitByPitch": 1,
+          "strikeouts": 88,
+          "battingAverage": 0.264,
+          "onBasePercentage": 0.338,
+          "sluggingPercentage": 0.528,
+          "ops": 0.866,
+          "iso": 0.264
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/17x99s.json"
+    }
+  }
+}

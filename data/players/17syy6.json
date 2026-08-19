@@ -1,0 +1,160 @@
+{
+  "data": {
+    "type": "player",
+    "id": "17syy6",
+    "attributes": {
+      "profile": {
+        "familyName": "T.キャベッジ",
+        "givenName": null,
+        "familyNameKana": "TREY",
+        "givenNameKana": "CABBAGE",
+        "registeredName": "T.キャベッジ",
+        "registeredNameKana": "トレイ・キャベッジ",
+        "url": "https://npb.jp/bis/players/73575150.html",
+        "isActive": true,
+        "details": {
+          "position": "外野手",
+          "throws": "右",
+          "bats": "左",
+          "heightCm": 188,
+          "weightKg": 92,
+          "birthDate": {
+            "iso": "1997-05-03",
+            "year": 1997,
+            "month": 5,
+            "day": 3
+          },
+          "career": {
+            "raw": "グレインジャー高 - エンゼルス - アストロズ",
+            "entries": [
+              "グレインジャー高",
+              "エンゼルス",
+              "アストロズ"
+            ]
+          },
+          "draft": {
+            "raw": null,
+            "year": null,
+            "rank": null,
+            "selection": null
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2025,
+          "team": "読 売",
+          "totals": {
+            "games": 123,
+            "plateAppearances": 476,
+            "atBats": 431,
+            "runs": 50,
+            "hits": 115,
+            "doubles": 26,
+            "triples": 1,
+            "homeRuns": 17,
+            "totalBases": 194,
+            "rbi": 51,
+            "steals": 5,
+            "caughtStealing": 3,
+            "sacrificeHits": 1,
+            "sacrificeFlies": 2,
+            "walks": 37,
+            "hitByPitch": 5,
+            "strikeouts": 144,
+            "groundedIntoDoublePlays": 4
+          },
+          "metrics": {
+            "battingAverage": 0.267,
+            "onBasePercentage": 0.331,
+            "sluggingPercentage": 0.45,
+            "ops": 0.781,
+            "iso": 0.183,
+            "walkPercentage": 0.078,
+            "strikeoutPercentage": 0.303
+          }
+        },
+        {
+          "season": 2026,
+          "team": "読 売",
+          "totals": {
+            "games": 95,
+            "plateAppearances": 345,
+            "atBats": 322,
+            "runs": 34,
+            "hits": 75,
+            "doubles": 13,
+            "triples": 0,
+            "homeRuns": 13,
+            "totalBases": 127,
+            "rbi": 29,
+            "steals": 4,
+            "caughtStealing": 4,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 19,
+            "hitByPitch": 4,
+            "strikeouts": 112,
+            "groundedIntoDoublePlays": 7
+          },
+          "metrics": {
+            "battingAverage": 0.233,
+            "onBasePercentage": 0.284,
+            "sluggingPercentage": 0.394,
+            "ops": 0.678,
+            "iso": 0.161,
+            "walkPercentage": 0.055,
+            "strikeoutPercentage": 0.325
+          }
+        }
+      ],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 2,
+          "games": 218,
+          "plateAppearances": 821,
+          "atBats": 753,
+          "runs": 84,
+          "hits": 190,
+          "doubles": 39,
+          "triples": 1,
+          "homeRuns": 30,
+          "totalBases": 321,
+          "rbi": 80,
+          "steals": 9,
+          "walks": 56,
+          "hitByPitch": 9,
+          "strikeouts": 256,
+          "battingAverage": 0.252,
+          "onBasePercentage": 0.311,
+          "sluggingPercentage": 0.426,
+          "ops": 0.737,
+          "iso": 0.174
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/17syy6.json"
+    }
+  }
+}

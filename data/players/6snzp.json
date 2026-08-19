@@ -1,0 +1,126 @@
+{
+  "data": {
+    "type": "player",
+    "id": "6snzp",
+    "attributes": {
+      "profile": {
+        "familyName": "名原",
+        "givenName": "典彦",
+        "familyNameKana": "なばら",
+        "givenNameKana": "のりひこ",
+        "registeredName": "名原 典彦",
+        "registeredNameKana": "なばら・のりひこ",
+        "url": "https://npb.jp/bis/players/11415157.html",
+        "isActive": true,
+        "details": {
+          "position": "外野手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 182,
+          "weightKg": 82,
+          "birthDate": {
+            "iso": "2000-06-24",
+            "year": 2000,
+            "month": 6,
+            "day": 24
+          },
+          "career": {
+            "raw": "瀬戸内高 - 青森大",
+            "entries": [
+              "瀬戸内高",
+              "青森大"
+            ]
+          },
+          "draft": {
+            "raw": "2022年育成選手ドラフト1位",
+            "year": 2022,
+            "rank": 1,
+            "selection": "development"
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2026,
+          "team": "広島東洋",
+          "totals": {
+            "games": 57,
+            "plateAppearances": 238,
+            "atBats": 222,
+            "runs": 28,
+            "hits": 57,
+            "doubles": 7,
+            "triples": 4,
+            "homeRuns": 3,
+            "totalBases": 81,
+            "rbi": 15,
+            "steals": 6,
+            "caughtStealing": 4,
+            "sacrificeHits": 2,
+            "sacrificeFlies": 1,
+            "walks": 10,
+            "hitByPitch": 3,
+            "strikeouts": 33,
+            "groundedIntoDoublePlays": 1
+          },
+          "metrics": {
+            "battingAverage": 0.257,
+            "onBasePercentage": 0.297,
+            "sluggingPercentage": 0.365,
+            "ops": 0.662,
+            "iso": 0.108,
+            "walkPercentage": 0.042,
+            "strikeoutPercentage": 0.139
+          }
+        }
+      ],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 1,
+          "games": 57,
+          "plateAppearances": 238,
+          "atBats": 222,
+          "runs": 28,
+          "hits": 57,
+          "doubles": 7,
+          "triples": 4,
+          "homeRuns": 3,
+          "totalBases": 81,
+          "rbi": 15,
+          "steals": 6,
+          "walks": 10,
+          "hitByPitch": 3,
+          "strikeouts": 33,
+          "battingAverage": 0.257,
+          "onBasePercentage": 0.294,
+          "sluggingPercentage": 0.365,
+          "ops": 0.659,
+          "iso": 0.108
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/6snzp.json"
+    }
+  }
+}

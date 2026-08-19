@@ -26,7 +26,9 @@
           },
           "career": {
             "raw": "北山高",
-            "entries": ["北山高"]
+            "entries": [
+              "北山高"
+            ]
           },
           "draft": {
             "raw": "2013年ドラフト5位",
@@ -34,48 +36,12 @@
             "rank": 5,
             "selection": "regular"
           }
-        },
-        "rawDetails": {
-          "npb": {
-            "ポジション": "投手",
-            "投打": "右投右打",
-            "身長／体重": "180cm／80kg",
-            "生年月日": "1995年7月12日",
-            "経歴": "北山高",
-            "ドラフト": "2013年ドラフト5位"
-          }
         }
       },
       "battingStats": [
         {
           "season": 2016,
           "team": "読 売",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2016",
-            "所属球団": "読 売",
-            "試合": "1",
-            "打席": "1",
-            "打数": "1",
-            "得点": "0",
-            "安打": "0",
-            "二塁打": "0",
-            "三塁打": "0",
-            "本塁打": "0",
-            "塁打": "0",
-            "打点": "0",
-            "盗塁": "0",
-            "盗塁刺": "0",
-            "犠打": "0",
-            "犠飛": "0",
-            "四球": "0",
-            "死球": "0",
-            "三振": "0",
-            "併殺打": "0",
-            "打率": ".000",
-            "長打率": ".000",
-            "出塁率": ".000"
-          },
           "totals": {
             "games": 1,
             "plateAppearances": 1,
@@ -109,32 +75,6 @@
         {
           "season": 2017,
           "team": "横浜DeNA",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2017",
-            "所属球団": "横浜DeNA",
-            "試合": "4",
-            "打席": "4",
-            "打数": "4",
-            "得点": "0",
-            "安打": "1",
-            "二塁打": "0",
-            "三塁打": "0",
-            "本塁打": "0",
-            "塁打": "1",
-            "打点": "0",
-            "盗塁": "0",
-            "盗塁刺": "0",
-            "犠打": "0",
-            "犠飛": "0",
-            "四球": "0",
-            "死球": "0",
-            "三振": "2",
-            "併殺打": "0",
-            "打率": ".250",
-            "長打率": ".250",
-            "出塁率": ".250"
-          },
           "totals": {
             "games": 4,
             "plateAppearances": 4,
@@ -168,32 +108,6 @@
         {
           "season": 2018,
           "team": "横浜DeNA",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2018",
-            "所属球団": "横浜DeNA",
-            "試合": "13",
-            "打席": "27",
-            "打数": "24",
-            "得点": "0",
-            "安打": "2",
-            "二塁打": "0",
-            "三塁打": "0",
-            "本塁打": "0",
-            "塁打": "2",
-            "打点": "0",
-            "盗塁": "0",
-            "盗塁刺": "0",
-            "犠打": "2",
-            "犠飛": "0",
-            "四球": "1",
-            "死球": "0",
-            "三振": "13",
-            "併殺打": "1",
-            "打率": ".083",
-            "長打率": ".083",
-            "出塁率": ".120"
-          },
           "totals": {
             "games": 13,
             "plateAppearances": 27,
@@ -227,32 +141,6 @@
         {
           "season": 2019,
           "team": "横浜DeNA",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2019",
-            "所属球団": "横浜DeNA",
-            "試合": "15",
-            "打席": "20",
-            "打数": "19",
-            "得点": "1",
-            "安打": "2",
-            "二塁打": "0",
-            "三塁打": "0",
-            "本塁打": "0",
-            "塁打": "2",
-            "打点": "0",
-            "盗塁": "0",
-            "盗塁刺": "0",
-            "犠打": "1",
-            "犠飛": "0",
-            "四球": "0",
-            "死球": "0",
-            "三振": "11",
-            "併殺打": "0",
-            "打率": ".105",
-            "長打率": ".105",
-            "出塁率": ".105"
-          },
           "totals": {
             "games": 15,
             "plateAppearances": 20,
@@ -286,32 +174,6 @@
         {
           "season": 2020,
           "team": "横浜DeNA",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2020",
-            "所属球団": "横浜DeNA",
-            "試合": "14",
-            "打席": "31",
-            "打数": "26",
-            "得点": "1",
-            "安打": "2",
-            "二塁打": "0",
-            "三塁打": "0",
-            "本塁打": "0",
-            "塁打": "2",
-            "打点": "0",
-            "盗塁": "0",
-            "盗塁刺": "0",
-            "犠打": "5",
-            "犠飛": "0",
-            "四球": "0",
-            "死球": "0",
-            "三振": "17",
-            "併殺打": "0",
-            "打率": ".077",
-            "長打率": ".077",
-            "出塁率": ".077"
-          },
           "totals": {
             "games": 14,
             "plateAppearances": 31,
@@ -345,32 +207,6 @@
         {
           "season": 2021,
           "team": "横浜DeNA",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2021",
-            "所属球団": "横浜DeNA",
-            "試合": "2",
-            "打席": "3",
-            "打数": "2",
-            "得点": "0",
-            "安打": "0",
-            "二塁打": "0",
-            "三塁打": "0",
-            "本塁打": "0",
-            "塁打": "0",
-            "打点": "0",
-            "盗塁": "0",
-            "盗塁刺": "0",
-            "犠打": "1",
-            "犠飛": "0",
-            "四球": "0",
-            "死球": "0",
-            "三振": "0",
-            "併殺打": "0",
-            "打率": ".000",
-            "長打率": ".000",
-            "出塁率": ".000"
-          },
           "totals": {
             "games": 2,
             "plateAppearances": 3,
@@ -404,32 +240,6 @@
         {
           "season": 2023,
           "team": "横浜DeNA",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2023",
-            "所属球団": "横浜DeNA",
-            "試合": "11",
-            "打席": "18",
-            "打数": "17",
-            "得点": "1",
-            "安打": "2",
-            "二塁打": "0",
-            "三塁打": "0",
-            "本塁打": "0",
-            "塁打": "2",
-            "打点": "0",
-            "盗塁": "0",
-            "盗塁刺": "0",
-            "犠打": "1",
-            "犠飛": "0",
-            "四球": "0",
-            "死球": "0",
-            "三振": "3",
-            "併殺打": "0",
-            "打率": ".118",
-            "長打率": ".118",
-            "出塁率": ".118"
-          },
           "totals": {
             "games": 11,
             "plateAppearances": 18,
@@ -463,32 +273,6 @@
         {
           "season": 2024,
           "team": "横浜DeNA",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2024",
-            "所属球団": "横浜DeNA",
-            "試合": "4",
-            "打席": "10",
-            "打数": "10",
-            "得点": "2",
-            "安打": "2",
-            "二塁打": "0",
-            "三塁打": "0",
-            "本塁打": "0",
-            "塁打": "2",
-            "打点": "1",
-            "盗塁": "0",
-            "盗塁刺": "0",
-            "犠打": "0",
-            "犠飛": "0",
-            "四球": "0",
-            "死球": "0",
-            "三振": "7",
-            "併殺打": "0",
-            "打率": ".200",
-            "長打率": ".200",
-            "出塁率": ".200"
-          },
           "totals": {
             "games": 4,
             "plateAppearances": 10,
@@ -522,32 +306,6 @@
         {
           "season": 2025,
           "team": "横浜DeNA",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2025",
-            "所属球団": "横浜DeNA",
-            "試合": "12",
-            "打席": "18",
-            "打数": "16",
-            "得点": "0",
-            "安打": "0",
-            "二塁打": "0",
-            "三塁打": "0",
-            "本塁打": "0",
-            "塁打": "0",
-            "打点": "0",
-            "盗塁": "0",
-            "盗塁刺": "0",
-            "犠打": "2",
-            "犠飛": "0",
-            "四球": "0",
-            "死球": "0",
-            "三振": "8",
-            "併殺打": "0",
-            "打率": ".000",
-            "長打率": ".000",
-            "出塁率": ".000"
-          },
           "totals": {
             "games": 12,
             "plateAppearances": 18,
@@ -581,32 +339,6 @@
         {
           "season": 2026,
           "team": "横浜DeNA",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2026",
-            "所属球団": "横浜DeNA",
-            "試合": "16",
-            "打席": "21",
-            "打数": "15",
-            "得点": "1",
-            "安打": "0",
-            "二塁打": "0",
-            "三塁打": "0",
-            "本塁打": "0",
-            "塁打": "0",
-            "打点": "0",
-            "盗塁": "0",
-            "盗塁刺": "0",
-            "犠打": "4",
-            "犠飛": "0",
-            "四球": "2",
-            "死球": "0",
-            "三振": "10",
-            "併殺打": "0",
-            "打率": ".000",
-            "長打率": ".000",
-            "出塁率": ".118"
-          },
           "totals": {
             "games": 16,
             "plateAppearances": 21,
@@ -642,33 +374,6 @@
         {
           "season": 2016,
           "team": "読 売",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2016",
-            "所属球団": "読 売",
-            "登板": "1",
-            "勝利": "0",
-            "敗北": "1",
-            "セーブ": "0",
-            "H": "0",
-            "HP": "0",
-            "完投": "0",
-            "完封勝": "0",
-            "無四球": "0",
-            "勝率": ".000",
-            "打者": "18",
-            "投球回": "3.2",
-            "安打": "4",
-            "本塁打": "1",
-            "四球": "3",
-            "死球": "0",
-            "三振": "4",
-            "暴投": "0",
-            "ボーク": "0",
-            "失点": "4",
-            "自責点": "4",
-            "防御率": "9.82"
-          },
           "totals": {
             "games": 1,
             "wins": 0,
@@ -681,7 +386,7 @@
             "noWalkCompleteGames": 0,
             "winningPercentage": 0,
             "battersFaced": 18,
-            "innings": 3.6666666666666665,
+            "innings": 3.667,
             "hitsAllowed": 4,
             "homeRunsAllowed": 1,
             "walksAllowed": 3,
@@ -703,33 +408,6 @@
         {
           "season": 2017,
           "team": "横浜DeNA",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2017",
-            "所属球団": "横浜DeNA",
-            "登板": "4",
-            "勝利": "1",
-            "敗北": "3",
-            "セーブ": "0",
-            "H": "0",
-            "HP": "0",
-            "完投": "0",
-            "完封勝": "0",
-            "無四球": "0",
-            "勝率": ".250",
-            "打者": "71",
-            "投球回": "14",
-            "安打": "21",
-            "本塁打": "4",
-            "四球": "9",
-            "死球": "1",
-            "三振": "6",
-            "暴投": "0",
-            "ボーク": "0",
-            "失点": "16",
-            "自責点": "11",
-            "防御率": "7.07"
-          },
           "totals": {
             "games": 4,
             "wins": 1,
@@ -764,33 +442,6 @@
         {
           "season": 2018,
           "team": "横浜DeNA",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2018",
-            "所属球団": "横浜DeNA",
-            "登板": "13",
-            "勝利": "5",
-            "敗北": "3",
-            "セーブ": "0",
-            "H": "0",
-            "HP": "0",
-            "完投": "0",
-            "完封勝": "0",
-            "無四球": "0",
-            "勝率": ".625",
-            "打者": "284",
-            "投球回": "67",
-            "安打": "65",
-            "本塁打": "9",
-            "四球": "29",
-            "死球": "0",
-            "三振": "53",
-            "暴投": "2",
-            "ボーク": "0",
-            "失点": "29",
-            "自責点": "26",
-            "防御率": "3.49"
-          },
           "totals": {
             "games": 13,
             "wins": 5,
@@ -825,33 +476,6 @@
         {
           "season": 2019,
           "team": "横浜DeNA",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2019",
-            "所属球団": "横浜DeNA",
-            "登板": "15",
-            "勝利": "5",
-            "敗北": "6",
-            "セーブ": "0",
-            "H": "0",
-            "HP": "0",
-            "完投": "0",
-            "完封勝": "0",
-            "無四球": "0",
-            "勝率": ".455",
-            "打者": "289",
-            "投球回": "70",
-            "安打": "68",
-            "本塁打": "9",
-            "四球": "17",
-            "死球": "0",
-            "三振": "55",
-            "暴投": "0",
-            "ボーク": "1",
-            "失点": "34",
-            "自責点": "32",
-            "防御率": "4.11"
-          },
           "totals": {
             "games": 15,
             "wins": 5,
@@ -886,33 +510,6 @@
         {
           "season": 2020,
           "team": "横浜DeNA",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2020",
-            "所属球団": "横浜DeNA",
-            "登板": "14",
-            "勝利": "4",
-            "敗北": "6",
-            "セーブ": "0",
-            "H": "0",
-            "HP": "0",
-            "完投": "1",
-            "完封勝": "0",
-            "無四球": "0",
-            "勝率": ".400",
-            "打者": "335",
-            "投球回": "83.1",
-            "安打": "75",
-            "本塁打": "3",
-            "四球": "17",
-            "死球": "2",
-            "三振": "65",
-            "暴投": "0",
-            "ボーク": "0",
-            "失点": "24",
-            "自責点": "21",
-            "防御率": "2.27"
-          },
           "totals": {
             "games": 14,
             "wins": 4,
@@ -925,7 +522,7 @@
             "noWalkCompleteGames": 0,
             "winningPercentage": 0.4,
             "battersFaced": 335,
-            "innings": 83.33333333333333,
+            "innings": 83.333,
             "hitsAllowed": 75,
             "homeRunsAllowed": 3,
             "walksAllowed": 17,
@@ -947,33 +544,6 @@
         {
           "season": 2021,
           "team": "横浜DeNA",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2021",
-            "所属球団": "横浜DeNA",
-            "登板": "2",
-            "勝利": "0",
-            "敗北": "0",
-            "セーブ": "0",
-            "H": "0",
-            "HP": "0",
-            "完投": "0",
-            "完封勝": "0",
-            "無四球": "0",
-            "勝率": ".000",
-            "打者": "39",
-            "投球回": "10",
-            "安打": "6",
-            "本塁打": "0",
-            "四球": "3",
-            "死球": "0",
-            "三振": "6",
-            "暴投": "0",
-            "ボーク": "0",
-            "失点": "1",
-            "自責点": "1",
-            "防御率": "0.90"
-          },
           "totals": {
             "games": 2,
             "wins": 0,
@@ -1008,33 +578,6 @@
         {
           "season": 2023,
           "team": "横浜DeNA",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2023",
-            "所属球団": "横浜DeNA",
-            "登板": "11",
-            "勝利": "4",
-            "敗北": "4",
-            "セーブ": "0",
-            "H": "0",
-            "HP": "0",
-            "完投": "0",
-            "完封勝": "0",
-            "無四球": "0",
-            "勝率": ".500",
-            "打者": "246",
-            "投球回": "59.1",
-            "安打": "58",
-            "本塁打": "5",
-            "四球": "13",
-            "死球": "0",
-            "三振": "61",
-            "暴投": "1",
-            "ボーク": "0",
-            "失点": "23",
-            "自責点": "23",
-            "防御率": "3.49"
-          },
           "totals": {
             "games": 11,
             "wins": 4,
@@ -1047,7 +590,7 @@
             "noWalkCompleteGames": 0,
             "winningPercentage": 0.5,
             "battersFaced": 246,
-            "innings": 59.333333333333336,
+            "innings": 59.333,
             "hitsAllowed": 58,
             "homeRunsAllowed": 5,
             "walksAllowed": 13,
@@ -1069,33 +612,6 @@
         {
           "season": 2024,
           "team": "横浜DeNA",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2024",
-            "所属球団": "横浜DeNA",
-            "登板": "4",
-            "勝利": "2",
-            "敗北": "0",
-            "セーブ": "0",
-            "H": "0",
-            "HP": "0",
-            "完投": "1",
-            "完封勝": "1",
-            "無四球": "1",
-            "勝率": "1.000",
-            "打者": "108",
-            "投球回": "29.2",
-            "安打": "24",
-            "本塁打": "1",
-            "四球": "2",
-            "死球": "0",
-            "三振": "22",
-            "暴投": "0",
-            "ボーク": "0",
-            "失点": "4",
-            "自責点": "4",
-            "防御率": "1.21"
-          },
           "totals": {
             "games": 4,
             "wins": 2,
@@ -1108,7 +624,7 @@
             "noWalkCompleteGames": 1,
             "winningPercentage": 1,
             "battersFaced": 108,
-            "innings": 29.666666666666668,
+            "innings": 29.667,
             "hitsAllowed": 24,
             "homeRunsAllowed": 1,
             "walksAllowed": 2,
@@ -1130,33 +646,6 @@
         {
           "season": 2025,
           "team": "横浜DeNA",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2025",
-            "所属球団": "横浜DeNA",
-            "登板": "12",
-            "勝利": "4",
-            "敗北": "3",
-            "セーブ": "0",
-            "H": "1",
-            "HP": "1",
-            "完投": "1",
-            "完封勝": "1",
-            "無四球": "1",
-            "勝率": ".571",
-            "打者": "228",
-            "投球回": "55",
-            "安打": "54",
-            "本塁打": "5",
-            "四球": "11",
-            "死球": "1",
-            "三振": "46",
-            "暴投": "0",
-            "ボーク": "0",
-            "失点": "19",
-            "自責点": "18",
-            "防御率": "2.95"
-          },
           "totals": {
             "games": 12,
             "wins": 4,
@@ -1191,33 +680,6 @@
         {
           "season": 2026,
           "team": "横浜DeNA",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2026",
-            "所属球団": "横浜DeNA",
-            "登板": "16",
-            "勝利": "4",
-            "敗北": "7",
-            "セーブ": "0",
-            "H": "0",
-            "HP": "0",
-            "完投": "0",
-            "完封勝": "0",
-            "無四球": "0",
-            "勝率": ".364",
-            "打者": "332",
-            "投球回": "79",
-            "安打": "76",
-            "本塁打": "7",
-            "四球": "16",
-            "死球": "5",
-            "三振": "78",
-            "暴投": "1",
-            "ボーク": "0",
-            "失点": "34",
-            "自責点": "32",
-            "防御率": "3.65"
-          },
           "totals": {
             "games": 16,
             "wins": 4,
@@ -1297,380 +759,5 @@
     "links": {
       "self": "/players/14u0j.json"
     }
-  },
-  "meta": {
-    "sources": [
-      {
-        "id": "npb",
-        "kind": "official",
-        "name": "NPB公式サイト",
-        "url": "https://npb.jp/bis/players/01905139.html",
-        "retrievedAt": "2026-08-19T08:04:13.503Z"
-      },
-      {
-        "id": "baseball-stats",
-        "kind": "computed",
-        "name": "baseball-stats",
-        "retrievedAt": "2026-08-19T08:04:13.503Z"
-      }
-    ],
-    "provenance": {
-      "profile.familyName": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "profile.givenName": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "profile.familyNameKana": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "profile.givenNameKana": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "profile.registeredName": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "profile.registeredNameKana": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "profile.url": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "profile.isActive": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "profile.details": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "profile.rawDetails.npb": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "career": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[0].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[0].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[0].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[1].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[1].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[1].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[2].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[2].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[2].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[3].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[3].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[3].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[4].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[4].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[4].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[5].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[5].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[5].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[6].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[6].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[6].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[7].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[7].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[7].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[8].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[8].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[8].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[9].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[9].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[9].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[0].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[0].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[0].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[1].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[1].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[1].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[2].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[2].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[2].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[3].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[3].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[3].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[4].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[4].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[4].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[5].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[5].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[5].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[6].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[6].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[6].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[7].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[7].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[7].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[8].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[8].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[8].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[9].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[9].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[9].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      }
-    },
-    "generatedAt": "2026-08-19T08:04:13.503Z"
   }
 }

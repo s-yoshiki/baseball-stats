@@ -1,0 +1,161 @@
+{
+  "data": {
+    "type": "player",
+    "id": "1ilcfi",
+    "attributes": {
+      "profile": {
+        "familyName": "中村",
+        "givenName": "優斗",
+        "familyNameKana": "なかむら",
+        "givenNameKana": "ゆうと",
+        "registeredName": "中村 優斗",
+        "registeredNameKana": "なかむら・ゆうと",
+        "url": "https://npb.jp/bis/players/91695150.html",
+        "isActive": true,
+        "details": {
+          "position": "投手",
+          "throws": "右",
+          "bats": "左",
+          "heightCm": 176,
+          "weightKg": 86,
+          "birthDate": {
+            "iso": "2003-02-08",
+            "year": 2003,
+            "month": 2,
+            "day": 8
+          },
+          "career": {
+            "raw": "諫早農 - 愛知工業大",
+            "entries": [
+              "諫早農",
+              "愛知工業大"
+            ]
+          },
+          "draft": {
+            "raw": "2024年ドラフト1位",
+            "year": 2024,
+            "rank": 1,
+            "selection": "regular"
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2025,
+          "team": "東京ヤクルト",
+          "totals": {
+            "games": 4,
+            "plateAppearances": 5,
+            "atBats": 4,
+            "runs": 1,
+            "hits": 1,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 1,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 1,
+            "hitByPitch": 0,
+            "strikeouts": 3,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0.25,
+            "onBasePercentage": 0.4,
+            "sluggingPercentage": 0.25,
+            "ops": 0.65,
+            "iso": 0,
+            "walkPercentage": 0.2,
+            "strikeoutPercentage": 0.6
+          }
+        }
+      ],
+      "pitchingStats": [
+        {
+          "season": 2025,
+          "team": "東京ヤクルト",
+          "totals": {
+            "games": 4,
+            "wins": 1,
+            "losses": 2,
+            "saves": 0,
+            "holds": 0,
+            "holdPoints": 0,
+            "completeGames": 0,
+            "shutouts": 0,
+            "noWalkCompleteGames": 0,
+            "winningPercentage": 0.333,
+            "battersFaced": 81,
+            "innings": 16.333,
+            "hitsAllowed": 25,
+            "homeRunsAllowed": 2,
+            "walksAllowed": 6,
+            "hitByPitch": 3,
+            "strikeouts": 13,
+            "wildPitches": 0,
+            "balks": 0,
+            "runsAllowed": 11,
+            "earnedRuns": 10
+          },
+          "metrics": {
+            "era": 5.51,
+            "whip": 1.898,
+            "strikeoutsPerNine": 7.163,
+            "walksPerNine": 3.306,
+            "strikeoutToWalkRatio": 2.167
+          }
+        }
+      ],
+      "career": {
+        "batting": {
+          "seasons": 1,
+          "games": 4,
+          "plateAppearances": 5,
+          "atBats": 4,
+          "runs": 1,
+          "hits": 1,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 0,
+          "totalBases": 1,
+          "rbi": 0,
+          "steals": 0,
+          "walks": 1,
+          "hitByPitch": 0,
+          "strikeouts": 3,
+          "battingAverage": 0.25,
+          "onBasePercentage": 0.4,
+          "sluggingPercentage": 0.25,
+          "ops": 0.65,
+          "iso": 0
+        },
+        "pitching": {
+          "seasons": 1,
+          "games": 4,
+          "wins": 1,
+          "losses": 2,
+          "saves": 0,
+          "holds": 0,
+          "innings": 16.333,
+          "hitsAllowed": 25,
+          "walksAllowed": 6,
+          "strikeouts": 13,
+          "earnedRuns": 10,
+          "winningPercentage": 0.333,
+          "era": 5.51,
+          "whip": 1.898,
+          "strikeoutsPerNine": 7.163,
+          "walksPerNine": 3.306,
+          "strikeoutToWalkRatio": 2.167
+        }
+      }
+    },
+    "links": {
+      "self": "/players/1ilcfi.json"
+    }
+  }
+}

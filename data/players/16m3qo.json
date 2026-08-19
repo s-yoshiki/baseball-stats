@@ -1,0 +1,92 @@
+{
+  "data": {
+    "type": "player",
+    "id": "16m3qo",
+    "attributes": {
+      "profile": {
+        "familyName": "大矢",
+        "givenName": "琉晟",
+        "familyNameKana": "おおや",
+        "givenNameKana": "りゅうせい",
+        "registeredName": "大矢 琉晟",
+        "registeredNameKana": "おおや・りゅうせい",
+        "url": "https://npb.jp/bis/players/71575152.html",
+        "isActive": true,
+        "details": {
+          "position": "投手",
+          "throws": "右",
+          "bats": "左",
+          "heightCm": 178,
+          "weightKg": 80,
+          "birthDate": {
+            "iso": "2003-06-28",
+            "year": 2003,
+            "month": 6,
+            "day": 28
+          },
+          "career": {
+            "raw": "中京大中京高 - 中京大",
+            "entries": [
+              "中京大中京高",
+              "中京大"
+            ]
+          },
+          "draft": {
+            "raw": "2025年育成選手ドラフト3位",
+            "year": 2025,
+            "rank": 3,
+            "selection": "development"
+          }
+        }
+      },
+      "battingStats": [],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 0,
+          "games": 0,
+          "plateAppearances": 0,
+          "atBats": 0,
+          "runs": 0,
+          "hits": 0,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 0,
+          "totalBases": 0,
+          "rbi": 0,
+          "steals": 0,
+          "walks": 0,
+          "hitByPitch": 0,
+          "strikeouts": 0,
+          "battingAverage": null,
+          "onBasePercentage": null,
+          "sluggingPercentage": null,
+          "ops": null,
+          "iso": null
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/16m3qo.json"
+    }
+  }
+}

@@ -1,0 +1,429 @@
+{
+  "data": {
+    "type": "player",
+    "id": "10letb",
+    "attributes": {
+      "profile": {
+        "familyName": "浜屋",
+        "givenName": "将太",
+        "familyNameKana": "はまや",
+        "givenNameKana": "しょうた",
+        "registeredName": "浜屋 将太",
+        "registeredNameKana": "はまや・しょうた",
+        "url": "https://npb.jp/bis/players/61465151.html",
+        "isActive": true,
+        "details": {
+          "position": "投手",
+          "throws": "左",
+          "bats": "左",
+          "heightCm": 176,
+          "weightKg": 79,
+          "birthDate": {
+            "iso": "1999-01-26",
+            "year": 1999,
+            "month": 1,
+            "day": 26
+          },
+          "career": {
+            "raw": "樟南高 - 三菱日立パワーシステムズ",
+            "entries": [
+              "樟南高",
+              "三菱日立パワーシステムズ"
+            ]
+          },
+          "draft": {
+            "raw": "2019年ドラフト2位",
+            "year": 2019,
+            "rank": 2,
+            "selection": "regular"
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2020,
+          "team": "埼玉西武",
+          "totals": {
+            "games": 12,
+            "plateAppearances": 0,
+            "atBats": 0,
+            "runs": 0,
+            "hits": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 0,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 0,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0,
+            "onBasePercentage": 0,
+            "sluggingPercentage": 0,
+            "ops": 0,
+            "iso": 0,
+            "walkPercentage": null,
+            "strikeoutPercentage": null
+          }
+        },
+        {
+          "season": 2021,
+          "team": "埼玉西武",
+          "totals": {
+            "games": 8,
+            "plateAppearances": 0,
+            "atBats": 0,
+            "runs": 0,
+            "hits": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 0,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 0,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0,
+            "onBasePercentage": 0,
+            "sluggingPercentage": 0,
+            "ops": 0,
+            "iso": 0,
+            "walkPercentage": null,
+            "strikeoutPercentage": null
+          }
+        },
+        {
+          "season": 2024,
+          "team": "埼玉西武",
+          "totals": {
+            "games": 1,
+            "plateAppearances": 0,
+            "atBats": 0,
+            "runs": 0,
+            "hits": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 0,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 0,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0,
+            "onBasePercentage": 0,
+            "sluggingPercentage": 0,
+            "ops": 0,
+            "iso": 0,
+            "walkPercentage": null,
+            "strikeoutPercentage": null
+          }
+        },
+        {
+          "season": 2025,
+          "team": "埼玉西武",
+          "totals": {
+            "games": 16,
+            "plateAppearances": 0,
+            "atBats": 0,
+            "runs": 0,
+            "hits": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 0,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 0,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0,
+            "onBasePercentage": 0,
+            "sluggingPercentage": 0,
+            "ops": 0,
+            "iso": 0,
+            "walkPercentage": null,
+            "strikeoutPercentage": null
+          }
+        },
+        {
+          "season": 2026,
+          "team": "埼玉西武",
+          "totals": {
+            "games": 21,
+            "plateAppearances": 0,
+            "atBats": 0,
+            "runs": 0,
+            "hits": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 0,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 0,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0,
+            "onBasePercentage": 0,
+            "sluggingPercentage": 0,
+            "ops": 0,
+            "iso": 0,
+            "walkPercentage": null,
+            "strikeoutPercentage": null
+          }
+        }
+      ],
+      "pitchingStats": [
+        {
+          "season": 2020,
+          "team": "埼玉西武",
+          "totals": {
+            "games": 12,
+            "wins": 3,
+            "losses": 3,
+            "saves": 0,
+            "holds": 0,
+            "holdPoints": 0,
+            "completeGames": 0,
+            "shutouts": 0,
+            "noWalkCompleteGames": 0,
+            "winningPercentage": 0.5,
+            "battersFaced": 217,
+            "innings": 50.667,
+            "hitsAllowed": 48,
+            "homeRunsAllowed": 7,
+            "walksAllowed": 21,
+            "hitByPitch": 3,
+            "strikeouts": 23,
+            "wildPitches": 1,
+            "balks": 0,
+            "runsAllowed": 30,
+            "earnedRuns": 28
+          },
+          "metrics": {
+            "era": 4.97,
+            "whip": 1.362,
+            "strikeoutsPerNine": 4.086,
+            "walksPerNine": 3.73,
+            "strikeoutToWalkRatio": 1.095
+          }
+        },
+        {
+          "season": 2021,
+          "team": "埼玉西武",
+          "totals": {
+            "games": 8,
+            "wins": 1,
+            "losses": 6,
+            "saves": 0,
+            "holds": 0,
+            "holdPoints": 0,
+            "completeGames": 0,
+            "shutouts": 0,
+            "noWalkCompleteGames": 0,
+            "winningPercentage": 0.143,
+            "battersFaced": 174,
+            "innings": 36.667,
+            "hitsAllowed": 39,
+            "homeRunsAllowed": 8,
+            "walksAllowed": 26,
+            "hitByPitch": 4,
+            "strikeouts": 26,
+            "wildPitches": 4,
+            "balks": 0,
+            "runsAllowed": 27,
+            "earnedRuns": 27
+          },
+          "metrics": {
+            "era": 6.63,
+            "whip": 1.773,
+            "strikeoutsPerNine": 6.382,
+            "walksPerNine": 6.382,
+            "strikeoutToWalkRatio": 1
+          }
+        },
+        {
+          "season": 2024,
+          "team": "埼玉西武",
+          "totals": {
+            "games": 1,
+            "wins": 0,
+            "losses": 0,
+            "saves": 0,
+            "holds": 0,
+            "holdPoints": 0,
+            "completeGames": 0,
+            "shutouts": 0,
+            "noWalkCompleteGames": 0,
+            "winningPercentage": 0,
+            "battersFaced": 15,
+            "innings": 2.333,
+            "hitsAllowed": 3,
+            "homeRunsAllowed": 0,
+            "walksAllowed": 3,
+            "hitByPitch": 1,
+            "strikeouts": 1,
+            "wildPitches": 0,
+            "balks": 0,
+            "runsAllowed": 4,
+            "earnedRuns": 3
+          },
+          "metrics": {
+            "era": 11.57,
+            "whip": 2.571,
+            "strikeoutsPerNine": 3.857,
+            "walksPerNine": 11.571,
+            "strikeoutToWalkRatio": 0.333
+          }
+        },
+        {
+          "season": 2025,
+          "team": "埼玉西武",
+          "totals": {
+            "games": 16,
+            "wins": 0,
+            "losses": 0,
+            "saves": 0,
+            "holds": 0,
+            "holdPoints": 0,
+            "completeGames": 0,
+            "shutouts": 0,
+            "noWalkCompleteGames": 0,
+            "winningPercentage": 0,
+            "battersFaced": 60,
+            "innings": 14,
+            "hitsAllowed": 13,
+            "homeRunsAllowed": 0,
+            "walksAllowed": 10,
+            "hitByPitch": 0,
+            "strikeouts": 12,
+            "wildPitches": 1,
+            "balks": 0,
+            "runsAllowed": 8,
+            "earnedRuns": 7
+          },
+          "metrics": {
+            "era": 4.5,
+            "whip": 1.643,
+            "strikeoutsPerNine": 7.714,
+            "walksPerNine": 6.429,
+            "strikeoutToWalkRatio": 1.2
+          }
+        },
+        {
+          "season": 2026,
+          "team": "埼玉西武",
+          "totals": {
+            "games": 21,
+            "wins": 0,
+            "losses": 1,
+            "saves": 0,
+            "holds": 4,
+            "holdPoints": 4,
+            "completeGames": 0,
+            "shutouts": 0,
+            "noWalkCompleteGames": 0,
+            "winningPercentage": 0,
+            "battersFaced": 78,
+            "innings": 17,
+            "hitsAllowed": 18,
+            "homeRunsAllowed": 0,
+            "walksAllowed": 13,
+            "hitByPitch": 0,
+            "strikeouts": 13,
+            "wildPitches": 0,
+            "balks": 1,
+            "runsAllowed": 8,
+            "earnedRuns": 4
+          },
+          "metrics": {
+            "era": 2.12,
+            "whip": 1.824,
+            "strikeoutsPerNine": 6.882,
+            "walksPerNine": 6.882,
+            "strikeoutToWalkRatio": 1
+          }
+        }
+      ],
+      "career": {
+        "batting": {
+          "seasons": 5,
+          "games": 58,
+          "plateAppearances": 0,
+          "atBats": 0,
+          "runs": 0,
+          "hits": 0,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 0,
+          "totalBases": 0,
+          "rbi": 0,
+          "steals": 0,
+          "walks": 0,
+          "hitByPitch": 0,
+          "strikeouts": 0,
+          "battingAverage": null,
+          "onBasePercentage": null,
+          "sluggingPercentage": null,
+          "ops": null,
+          "iso": null
+        },
+        "pitching": {
+          "seasons": 5,
+          "games": 58,
+          "wins": 4,
+          "losses": 10,
+          "saves": 0,
+          "holds": 4,
+          "innings": 120.667,
+          "hitsAllowed": 121,
+          "walksAllowed": 73,
+          "strikeouts": 75,
+          "earnedRuns": 69,
+          "winningPercentage": 0.286,
+          "era": 5.146,
+          "whip": 1.608,
+          "strikeoutsPerNine": 5.594,
+          "walksPerNine": 5.445,
+          "strikeoutToWalkRatio": 1.027
+        }
+      }
+    },
+    "links": {
+      "self": "/players/10letb.json"
+    }
+  }
+}

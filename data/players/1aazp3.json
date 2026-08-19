@@ -1,0 +1,126 @@
+{
+  "data": {
+    "type": "player",
+    "id": "1aazp3",
+    "attributes": {
+      "profile": {
+        "familyName": "知念",
+        "givenName": "大成",
+        "familyNameKana": "ちねん",
+        "givenNameKana": "たいせい",
+        "registeredName": "知念 大成",
+        "registeredNameKana": "ちねん・たいせい",
+        "url": "https://npb.jp/bis/players/77775159.html",
+        "isActive": true,
+        "details": {
+          "position": "外野手",
+          "throws": "左",
+          "bats": "左",
+          "heightCm": 181,
+          "weightKg": 85,
+          "birthDate": {
+            "iso": "2000-04-27",
+            "year": 2000,
+            "month": 4,
+            "day": 27
+          },
+          "career": {
+            "raw": "沖縄尚学高 - 沖縄電力",
+            "entries": [
+              "沖縄尚学高",
+              "沖縄電力"
+            ]
+          },
+          "draft": {
+            "raw": "2025年育成選手ドラフト5位",
+            "year": 2025,
+            "rank": 5,
+            "selection": "development"
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2026,
+          "team": "読 売",
+          "totals": {
+            "games": 15,
+            "plateAppearances": 29,
+            "atBats": 29,
+            "runs": 4,
+            "hits": 8,
+            "doubles": 1,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 9,
+            "rbi": 2,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 4,
+            "groundedIntoDoublePlays": 1
+          },
+          "metrics": {
+            "battingAverage": 0.276,
+            "onBasePercentage": 0.276,
+            "sluggingPercentage": 0.31,
+            "ops": 0.586,
+            "iso": 0.034,
+            "walkPercentage": 0,
+            "strikeoutPercentage": 0.138
+          }
+        }
+      ],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 1,
+          "games": 15,
+          "plateAppearances": 29,
+          "atBats": 29,
+          "runs": 4,
+          "hits": 8,
+          "doubles": 1,
+          "triples": 0,
+          "homeRuns": 0,
+          "totalBases": 9,
+          "rbi": 2,
+          "steals": 0,
+          "walks": 0,
+          "hitByPitch": 0,
+          "strikeouts": 4,
+          "battingAverage": 0.276,
+          "onBasePercentage": 0.276,
+          "sluggingPercentage": 0.31,
+          "ops": 0.586,
+          "iso": 0.034
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/1aazp3.json"
+    }
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "data": {
+    "type": "player",
+    "id": "1jhhu6",
+    "attributes": {
+      "profile": {
+        "familyName": "モイセエフ",
+        "givenName": "ニキータ",
+        "familyNameKana": "もいせえふ",
+        "givenNameKana": "にきーた",
+        "registeredName": "モイセエフ ニキータ",
+        "registeredNameKana": "もいせえふ・にきーた",
+        "url": "https://npb.jp/bis/players/93195150.html",
+        "isActive": true,
+        "details": {
+          "position": "外野手",
+          "throws": "左",
+          "bats": "左",
+          "heightCm": 182,
+          "weightKg": 87,
+          "birthDate": {
+            "iso": "2006-11-29",
+            "year": 2006,
+            "month": 11,
+            "day": 29
+          },
+          "career": {
+            "raw": "豊川高",
+            "entries": [
+              "豊川高"
+            ]
+          },
+          "draft": {
+            "raw": "2024年ドラフト2位",
+            "year": 2024,
+            "rank": 2,
+            "selection": "regular"
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2026,
+          "team": "東京ヤクルト",
+          "totals": {
+            "games": 4,
+            "plateAppearances": 6,
+            "atBats": 4,
+            "runs": 0,
+            "hits": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 0,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 2,
+            "hitByPitch": 0,
+            "strikeouts": 1,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0,
+            "onBasePercentage": 0.333,
+            "sluggingPercentage": 0,
+            "ops": 0.333,
+            "iso": 0,
+            "walkPercentage": 0.333,
+            "strikeoutPercentage": 0.167
+          }
+        }
+      ],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 1,
+          "games": 4,
+          "plateAppearances": 6,
+          "atBats": 4,
+          "runs": 0,
+          "hits": 0,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 0,
+          "totalBases": 0,
+          "rbi": 0,
+          "steals": 0,
+          "walks": 2,
+          "hitByPitch": 0,
+          "strikeouts": 1,
+          "battingAverage": 0,
+          "onBasePercentage": 0.333,
+          "sluggingPercentage": 0,
+          "ops": 0.333,
+          "iso": 0
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/1jhhu6.json"
+    }
+  }
+}

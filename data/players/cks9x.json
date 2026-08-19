@@ -1,0 +1,126 @@
+{
+  "data": {
+    "type": "player",
+    "id": "cks9x",
+    "attributes": {
+      "profile": {
+        "familyName": "甲斐",
+        "givenName": "生海",
+        "familyNameKana": "かい",
+        "givenNameKana": "いくみ",
+        "registeredName": "生海",
+        "registeredNameKana": "いくみ",
+        "url": "https://npb.jp/bis/players/21125157.html",
+        "isActive": true,
+        "details": {
+          "position": "外野手",
+          "throws": "右",
+          "bats": "左",
+          "heightCm": 184,
+          "weightKg": 103,
+          "birthDate": {
+            "iso": "2000-07-11",
+            "year": 2000,
+            "month": 7,
+            "day": 11
+          },
+          "career": {
+            "raw": "九州国際大付高 - 東北福祉大",
+            "entries": [
+              "九州国際大付高",
+              "東北福祉大"
+            ]
+          },
+          "draft": {
+            "raw": "2022年ドラフト3位",
+            "year": 2022,
+            "rank": 3,
+            "selection": "regular"
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2023,
+          "team": "福岡ソフトバンク",
+          "totals": {
+            "games": 13,
+            "plateAppearances": 21,
+            "atBats": 20,
+            "runs": 2,
+            "hits": 4,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 4,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 1,
+            "hitByPitch": 0,
+            "strikeouts": 5,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0.2,
+            "onBasePercentage": 0.238,
+            "sluggingPercentage": 0.2,
+            "ops": 0.438,
+            "iso": 0,
+            "walkPercentage": 0.048,
+            "strikeoutPercentage": 0.238
+          }
+        }
+      ],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 1,
+          "games": 13,
+          "plateAppearances": 21,
+          "atBats": 20,
+          "runs": 2,
+          "hits": 4,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 0,
+          "totalBases": 4,
+          "rbi": 0,
+          "steals": 0,
+          "walks": 1,
+          "hitByPitch": 0,
+          "strikeouts": 5,
+          "battingAverage": 0.2,
+          "onBasePercentage": 0.238,
+          "sluggingPercentage": 0.2,
+          "ops": 0.438,
+          "iso": 0
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/cks9x.json"
+    }
+  }
+}

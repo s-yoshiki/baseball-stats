@@ -1,0 +1,160 @@
+{
+  "data": {
+    "type": "player",
+    "id": "juhke",
+    "attributes": {
+      "profile": {
+        "familyName": "山中",
+        "givenName": "稜真",
+        "familyNameKana": "やまなか",
+        "givenNameKana": "りょうま",
+        "registeredName": "山中 稜真",
+        "registeredNameKana": "やまなか・りょうま",
+        "url": "https://npb.jp/bis/players/33335150.html",
+        "isActive": true,
+        "details": {
+          "position": "捕手",
+          "throws": "右",
+          "bats": "左",
+          "heightCm": 178,
+          "weightKg": 83,
+          "birthDate": {
+            "iso": "2000-12-14",
+            "year": 2000,
+            "month": 12,
+            "day": 14
+          },
+          "career": {
+            "raw": "木更津総合高 - 青山学院大 - 三菱重工East",
+            "entries": [
+              "木更津総合高",
+              "青山学院大",
+              "三菱重工East"
+            ]
+          },
+          "draft": {
+            "raw": "2024年ドラフト4位",
+            "year": 2024,
+            "rank": 4,
+            "selection": "regular"
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2025,
+          "team": "オリックス",
+          "totals": {
+            "games": 19,
+            "plateAppearances": 52,
+            "atBats": 49,
+            "runs": 2,
+            "hits": 6,
+            "doubles": 1,
+            "triples": 1,
+            "homeRuns": 1,
+            "totalBases": 12,
+            "rbi": 3,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 3,
+            "hitByPitch": 0,
+            "strikeouts": 9,
+            "groundedIntoDoublePlays": 2
+          },
+          "metrics": {
+            "battingAverage": 0.122,
+            "onBasePercentage": 0.173,
+            "sluggingPercentage": 0.245,
+            "ops": 0.418,
+            "iso": 0.123,
+            "walkPercentage": 0.058,
+            "strikeoutPercentage": 0.173
+          }
+        },
+        {
+          "season": 2026,
+          "team": "オリックス",
+          "totals": {
+            "games": 68,
+            "plateAppearances": 283,
+            "atBats": 250,
+            "runs": 32,
+            "hits": 70,
+            "doubles": 12,
+            "triples": 1,
+            "homeRuns": 2,
+            "totalBases": 90,
+            "rbi": 21,
+            "steals": 2,
+            "caughtStealing": 2,
+            "sacrificeHits": 1,
+            "sacrificeFlies": 3,
+            "walks": 26,
+            "hitByPitch": 3,
+            "strikeouts": 38,
+            "groundedIntoDoublePlays": 7
+          },
+          "metrics": {
+            "battingAverage": 0.28,
+            "onBasePercentage": 0.351,
+            "sluggingPercentage": 0.36,
+            "ops": 0.711,
+            "iso": 0.08,
+            "walkPercentage": 0.092,
+            "strikeoutPercentage": 0.134
+          }
+        }
+      ],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 2,
+          "games": 87,
+          "plateAppearances": 335,
+          "atBats": 299,
+          "runs": 34,
+          "hits": 76,
+          "doubles": 13,
+          "triples": 2,
+          "homeRuns": 3,
+          "totalBases": 102,
+          "rbi": 24,
+          "steals": 2,
+          "walks": 29,
+          "hitByPitch": 3,
+          "strikeouts": 47,
+          "battingAverage": 0.254,
+          "onBasePercentage": 0.322,
+          "sluggingPercentage": 0.341,
+          "ops": 0.663,
+          "iso": 0.087
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/juhke.json"
+    }
+  }
+}

@@ -26,7 +26,9 @@
           },
           "career": {
             "raw": "黒沢尻工",
-            "entries": ["黒沢尻工"]
+            "entries": [
+              "黒沢尻工"
+            ]
           },
           "draft": {
             "raw": "2019年育成選手ドラフト1位",
@@ -34,48 +36,12 @@
             "rank": 1,
             "selection": "development"
           }
-        },
-        "rawDetails": {
-          "npb": {
-            "ポジション": "捕手",
-            "投打": "右投右打",
-            "身長／体重": "182cm／92kg",
-            "生年月日": "2001年6月7日",
-            "経歴": "黒沢尻工",
-            "ドラフト": "2019年育成選手ドラフト1位"
-          }
         }
       },
       "battingStats": [
         {
           "season": 2024,
           "team": "福岡ソフトバンク",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2024",
-            "所属球団": "福岡ソフトバンク",
-            "試合": "15",
-            "打席": "40",
-            "打数": "31",
-            "得点": "2",
-            "安打": "6",
-            "二塁打": "0",
-            "三塁打": "0",
-            "本塁打": "1",
-            "塁打": "9",
-            "打点": "6",
-            "盗塁": "0",
-            "盗塁刺": "0",
-            "犠打": "0",
-            "犠飛": "1",
-            "四球": "3",
-            "死球": "4",
-            "三振": "10",
-            "併殺打": "0",
-            "打率": ".194",
-            "長打率": ".290",
-            "出塁率": ".333"
-          },
           "totals": {
             "games": 15,
             "plateAppearances": 40,
@@ -109,32 +75,6 @@
         {
           "season": 2025,
           "team": "福岡ソフトバンク",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2025",
-            "所属球団": "福岡ソフトバンク",
-            "試合": "24",
-            "打席": "60",
-            "打数": "55",
-            "得点": "4",
-            "安打": "13",
-            "二塁打": "4",
-            "三塁打": "0",
-            "本塁打": "0",
-            "塁打": "17",
-            "打点": "6",
-            "盗塁": "0",
-            "盗塁刺": "0",
-            "犠打": "0",
-            "犠飛": "0",
-            "四球": "1",
-            "死球": "4",
-            "三振": "17",
-            "併殺打": "2",
-            "打率": ".236",
-            "長打率": ".309",
-            "出塁率": ".300"
-          },
           "totals": {
             "games": 24,
             "plateAppearances": 60,
@@ -168,32 +108,6 @@
         {
           "season": 2026,
           "team": "福岡ソフトバンク",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2026",
-            "所属球団": "福岡ソフトバンク",
-            "試合": "7",
-            "打席": "23",
-            "打数": "20",
-            "得点": "2",
-            "安打": "5",
-            "二塁打": "3",
-            "三塁打": "0",
-            "本塁打": "0",
-            "塁打": "8",
-            "打点": "3",
-            "盗塁": "0",
-            "盗塁刺": "0",
-            "犠打": "0",
-            "犠飛": "0",
-            "四球": "2",
-            "死球": "1",
-            "三振": "7",
-            "併殺打": "0",
-            "打率": ".250",
-            "長打率": ".400",
-            "出塁率": ".348"
-          },
           "totals": {
             "games": 7,
             "plateAppearances": 23,
@@ -273,125 +187,5 @@
     "links": {
       "self": "/players/noqn.json"
     }
-  },
-  "meta": {
-    "sources": [
-      {
-        "id": "npb",
-        "kind": "official",
-        "name": "NPB公式サイト",
-        "url": "https://npb.jp/bis/players/01105151.html",
-        "retrievedAt": "2026-08-19T08:04:13.503Z"
-      },
-      {
-        "id": "baseball-stats",
-        "kind": "computed",
-        "name": "baseball-stats",
-        "retrievedAt": "2026-08-19T08:04:13.503Z"
-      }
-    ],
-    "provenance": {
-      "profile.familyName": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "profile.givenName": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "profile.familyNameKana": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "profile.givenNameKana": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "profile.registeredName": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "profile.registeredNameKana": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "profile.url": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "profile.isActive": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "profile.details": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "profile.rawDetails.npb": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "career": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[0].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[0].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[0].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[1].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[1].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[1].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[2].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[2].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[2].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      }
-    },
-    "generatedAt": "2026-08-19T08:04:13.503Z"
   }
 }

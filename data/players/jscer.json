@@ -1,0 +1,228 @@
+{
+  "data": {
+    "type": "player",
+    "id": "jscer",
+    "attributes": {
+      "profile": {
+        "familyName": "H.マルセリーノ",
+        "givenName": null,
+        "familyNameKana": "HANSEL",
+        "givenNameKana": "MARCELINO",
+        "registeredName": "H.マルセリーノ",
+        "registeredNameKana": "ハンセル・マルセリーノ",
+        "url": "https://npb.jp/bis/players/33235155.html",
+        "isActive": true,
+        "details": {
+          "position": "投手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 191,
+          "weightKg": 82,
+          "birthDate": {
+            "iso": "2002-06-16",
+            "year": 2002,
+            "month": 6,
+            "day": 16
+          },
+          "career": {
+            "raw": "ヘネーロペレス高 - 米マイナー",
+            "entries": [
+              "ヘネーロペレス高",
+              "米マイナー"
+            ]
+          },
+          "draft": {
+            "raw": null,
+            "year": null,
+            "rank": null,
+            "selection": null
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2025,
+          "team": "横浜DeNA",
+          "totals": {
+            "games": 2,
+            "plateAppearances": 0,
+            "atBats": 0,
+            "runs": 0,
+            "hits": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 0,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 0,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0,
+            "onBasePercentage": 0,
+            "sluggingPercentage": 0,
+            "ops": 0,
+            "iso": 0,
+            "walkPercentage": null,
+            "strikeoutPercentage": null
+          }
+        },
+        {
+          "season": 2026,
+          "team": "横浜DeNA",
+          "totals": {
+            "games": 26,
+            "plateAppearances": 0,
+            "atBats": 0,
+            "runs": 0,
+            "hits": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 0,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 0,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0,
+            "onBasePercentage": 0,
+            "sluggingPercentage": 0,
+            "ops": 0,
+            "iso": 0,
+            "walkPercentage": null,
+            "strikeoutPercentage": null
+          }
+        }
+      ],
+      "pitchingStats": [
+        {
+          "season": 2025,
+          "team": "横浜DeNA",
+          "totals": {
+            "games": 2,
+            "wins": 0,
+            "losses": 0,
+            "saves": 0,
+            "holds": 0,
+            "holdPoints": 0,
+            "completeGames": 0,
+            "shutouts": 0,
+            "noWalkCompleteGames": 0,
+            "winningPercentage": 0,
+            "battersFaced": 9,
+            "innings": 1.333,
+            "hitsAllowed": 1,
+            "homeRunsAllowed": 0,
+            "walksAllowed": 3,
+            "hitByPitch": 1,
+            "strikeouts": 3,
+            "wildPitches": 0,
+            "balks": 0,
+            "runsAllowed": 2,
+            "earnedRuns": 2
+          },
+          "metrics": {
+            "era": 13.5,
+            "whip": 3,
+            "strikeoutsPerNine": 20.25,
+            "walksPerNine": 20.25,
+            "strikeoutToWalkRatio": 1
+          }
+        },
+        {
+          "season": 2026,
+          "team": "横浜DeNA",
+          "totals": {
+            "games": 26,
+            "wins": 1,
+            "losses": 1,
+            "saves": 0,
+            "holds": 5,
+            "holdPoints": 6,
+            "completeGames": 0,
+            "shutouts": 0,
+            "noWalkCompleteGames": 0,
+            "winningPercentage": 0.5,
+            "battersFaced": 136,
+            "innings": 28.333,
+            "hitsAllowed": 34,
+            "homeRunsAllowed": 3,
+            "walksAllowed": 14,
+            "hitByPitch": 4,
+            "strikeouts": 30,
+            "wildPitches": 3,
+            "balks": 0,
+            "runsAllowed": 16,
+            "earnedRuns": 16
+          },
+          "metrics": {
+            "era": 5.08,
+            "whip": 1.694,
+            "strikeoutsPerNine": 9.529,
+            "walksPerNine": 4.447,
+            "strikeoutToWalkRatio": 2.143
+          }
+        }
+      ],
+      "career": {
+        "batting": {
+          "seasons": 2,
+          "games": 28,
+          "plateAppearances": 0,
+          "atBats": 0,
+          "runs": 0,
+          "hits": 0,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 0,
+          "totalBases": 0,
+          "rbi": 0,
+          "steals": 0,
+          "walks": 0,
+          "hitByPitch": 0,
+          "strikeouts": 0,
+          "battingAverage": null,
+          "onBasePercentage": null,
+          "sluggingPercentage": null,
+          "ops": null,
+          "iso": null
+        },
+        "pitching": {
+          "seasons": 2,
+          "games": 28,
+          "wins": 1,
+          "losses": 1,
+          "saves": 0,
+          "holds": 5,
+          "innings": 29.667,
+          "hitsAllowed": 35,
+          "walksAllowed": 17,
+          "strikeouts": 33,
+          "earnedRuns": 18,
+          "winningPercentage": 0.5,
+          "era": 5.461,
+          "whip": 1.753,
+          "strikeoutsPerNine": 10.011,
+          "walksPerNine": 5.157,
+          "strikeoutToWalkRatio": 1.941
+        }
+      }
+    },
+    "links": {
+      "self": "/players/jscer.json"
+    }
+  }
+}

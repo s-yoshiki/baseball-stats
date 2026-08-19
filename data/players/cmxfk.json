@@ -1,0 +1,161 @@
+{
+  "data": {
+    "type": "player",
+    "id": "cmxfk",
+    "attributes": {
+      "profile": {
+        "familyName": "田和",
+        "givenName": "廉",
+        "familyNameKana": "たわ",
+        "givenNameKana": "れん",
+        "registeredName": "田和 廉",
+        "registeredNameKana": "たわ・れん",
+        "url": "https://npb.jp/bis/players/21225152.html",
+        "isActive": true,
+        "details": {
+          "position": "投手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 183,
+          "weightKg": 87,
+          "birthDate": {
+            "iso": "2003-05-02",
+            "year": 2003,
+            "month": 5,
+            "day": 2
+          },
+          "career": {
+            "raw": "早稲田実 - 早稲田大",
+            "entries": [
+              "早稲田実",
+              "早稲田大"
+            ]
+          },
+          "draft": {
+            "raw": "2025年ドラフト2位",
+            "year": 2025,
+            "rank": 2,
+            "selection": "regular"
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2026,
+          "team": "読 売",
+          "totals": {
+            "games": 32,
+            "plateAppearances": 0,
+            "atBats": 0,
+            "runs": 0,
+            "hits": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 0,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 0,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0,
+            "onBasePercentage": 0,
+            "sluggingPercentage": 0,
+            "ops": 0,
+            "iso": 0,
+            "walkPercentage": null,
+            "strikeoutPercentage": null
+          }
+        }
+      ],
+      "pitchingStats": [
+        {
+          "season": 2026,
+          "team": "読 売",
+          "totals": {
+            "games": 32,
+            "wins": 0,
+            "losses": 0,
+            "saves": 0,
+            "holds": 3,
+            "holdPoints": 3,
+            "completeGames": 0,
+            "shutouts": 0,
+            "noWalkCompleteGames": 0,
+            "winningPercentage": 0,
+            "battersFaced": 120,
+            "innings": 28.333,
+            "hitsAllowed": 21,
+            "homeRunsAllowed": 1,
+            "walksAllowed": 13,
+            "hitByPitch": 4,
+            "strikeouts": 18,
+            "wildPitches": 2,
+            "balks": 0,
+            "runsAllowed": 6,
+            "earnedRuns": 6
+          },
+          "metrics": {
+            "era": 1.91,
+            "whip": 1.2,
+            "strikeoutsPerNine": 5.718,
+            "walksPerNine": 4.129,
+            "strikeoutToWalkRatio": 1.385
+          }
+        }
+      ],
+      "career": {
+        "batting": {
+          "seasons": 1,
+          "games": 32,
+          "plateAppearances": 0,
+          "atBats": 0,
+          "runs": 0,
+          "hits": 0,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 0,
+          "totalBases": 0,
+          "rbi": 0,
+          "steals": 0,
+          "walks": 0,
+          "hitByPitch": 0,
+          "strikeouts": 0,
+          "battingAverage": null,
+          "onBasePercentage": null,
+          "sluggingPercentage": null,
+          "ops": null,
+          "iso": null
+        },
+        "pitching": {
+          "seasons": 1,
+          "games": 32,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 3,
+          "innings": 28.333,
+          "hitsAllowed": 21,
+          "walksAllowed": 13,
+          "strikeouts": 18,
+          "earnedRuns": 6,
+          "winningPercentage": null,
+          "era": 1.906,
+          "whip": 1.2,
+          "strikeoutsPerNine": 5.718,
+          "walksPerNine": 4.129,
+          "strikeoutToWalkRatio": 1.385
+        }
+      }
+    },
+    "links": {
+      "self": "/players/cmxfk.json"
+    }
+  }
+}

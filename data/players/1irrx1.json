@@ -1,0 +1,125 @@
+{
+  "data": {
+    "type": "player",
+    "id": "1irrx1",
+    "attributes": {
+      "profile": {
+        "familyName": "清水",
+        "givenName": "叶人",
+        "familyNameKana": "しみず",
+        "givenNameKana": "かなと",
+        "registeredName": "清水 叶人",
+        "registeredNameKana": "しみず・かなと",
+        "url": "https://npb.jp/bis/players/91995157.html",
+        "isActive": true,
+        "details": {
+          "position": "捕手",
+          "throws": "右",
+          "bats": "左",
+          "heightCm": 176,
+          "weightKg": 92,
+          "birthDate": {
+            "iso": "2004-07-06",
+            "year": 2004,
+            "month": 7,
+            "day": 6
+          },
+          "career": {
+            "raw": "高崎健康福祉大高崎高",
+            "entries": [
+              "高崎健康福祉大高崎高"
+            ]
+          },
+          "draft": {
+            "raw": "2022年ドラフト4位",
+            "year": 2022,
+            "rank": 4,
+            "selection": "regular"
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2025,
+          "team": "広島東洋",
+          "totals": {
+            "games": 4,
+            "plateAppearances": 14,
+            "atBats": 13,
+            "runs": 1,
+            "hits": 2,
+            "doubles": 1,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 3,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 1,
+            "hitByPitch": 0,
+            "strikeouts": 4,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0.154,
+            "onBasePercentage": 0.214,
+            "sluggingPercentage": 0.231,
+            "ops": 0.445,
+            "iso": 0.077,
+            "walkPercentage": 0.071,
+            "strikeoutPercentage": 0.286
+          }
+        }
+      ],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 1,
+          "games": 4,
+          "plateAppearances": 14,
+          "atBats": 13,
+          "runs": 1,
+          "hits": 2,
+          "doubles": 1,
+          "triples": 0,
+          "homeRuns": 0,
+          "totalBases": 3,
+          "rbi": 0,
+          "steals": 0,
+          "walks": 1,
+          "hitByPitch": 0,
+          "strikeouts": 4,
+          "battingAverage": 0.154,
+          "onBasePercentage": 0.214,
+          "sluggingPercentage": 0.231,
+          "ops": 0.445,
+          "iso": 0.077
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/1irrx1.json"
+    }
+  }
+}

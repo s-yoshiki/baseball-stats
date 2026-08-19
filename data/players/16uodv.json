@@ -1,0 +1,158 @@
+{
+  "data": {
+    "type": "player",
+    "id": "16uodv",
+    "attributes": {
+      "profile": {
+        "familyName": "阪口",
+        "givenName": "樂",
+        "familyNameKana": "さかぐち",
+        "givenNameKana": "うた",
+        "registeredName": "阪口 樂",
+        "registeredNameKana": "さかぐち・うた",
+        "url": "https://npb.jp/bis/players/71975155.html",
+        "isActive": true,
+        "details": {
+          "position": "内野手",
+          "throws": "右",
+          "bats": "左",
+          "heightCm": 187,
+          "weightKg": 99,
+          "birthDate": {
+            "iso": "2003-06-24",
+            "year": 2003,
+            "month": 6,
+            "day": 24
+          },
+          "career": {
+            "raw": "岐阜第一高",
+            "entries": [
+              "岐阜第一高"
+            ]
+          },
+          "draft": {
+            "raw": "2021年ドラフト4位",
+            "year": 2021,
+            "rank": 4,
+            "selection": "regular"
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2022,
+          "team": "北海道日本ハム",
+          "totals": {
+            "games": 3,
+            "plateAppearances": 6,
+            "atBats": 6,
+            "runs": 0,
+            "hits": 1,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 1,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 4,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0.167,
+            "onBasePercentage": 0.167,
+            "sluggingPercentage": 0.167,
+            "ops": 0.334,
+            "iso": 0,
+            "walkPercentage": 0,
+            "strikeoutPercentage": 0.667
+          }
+        },
+        {
+          "season": 2025,
+          "team": "北海道日本ハム",
+          "totals": {
+            "games": 1,
+            "plateAppearances": 1,
+            "atBats": 1,
+            "runs": 0,
+            "hits": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 0,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 1,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0,
+            "onBasePercentage": 0,
+            "sluggingPercentage": 0,
+            "ops": 0,
+            "iso": 0,
+            "walkPercentage": 0,
+            "strikeoutPercentage": 1
+          }
+        }
+      ],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 2,
+          "games": 4,
+          "plateAppearances": 7,
+          "atBats": 7,
+          "runs": 0,
+          "hits": 1,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 0,
+          "totalBases": 1,
+          "rbi": 0,
+          "steals": 0,
+          "walks": 0,
+          "hitByPitch": 0,
+          "strikeouts": 5,
+          "battingAverage": 0.143,
+          "onBasePercentage": 0.143,
+          "sluggingPercentage": 0.143,
+          "ops": 0.286,
+          "iso": 0
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/16uodv.json"
+    }
+  }
+}

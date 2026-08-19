@@ -1,0 +1,163 @@
+{
+  "data": {
+    "type": "player",
+    "id": "16qe28",
+    "attributes": {
+      "profile": {
+        "familyName": "九谷",
+        "givenName": "瑠",
+        "familyNameKana": "くたに",
+        "givenNameKana": "りゅう",
+        "registeredName": "九谷 瑠",
+        "registeredNameKana": "くたに・りゅう",
+        "url": "https://npb.jp/bis/players/71775152.html",
+        "isActive": true,
+        "details": {
+          "position": "投手",
+          "throws": "右",
+          "bats": "左",
+          "heightCm": 177,
+          "weightKg": 80,
+          "birthDate": {
+            "iso": "1999-11-05",
+            "year": 1999,
+            "month": 11,
+            "day": 5
+          },
+          "career": {
+            "raw": "堅田高 - 大阪大谷大 - 矢場とんブースターズ - 王子",
+            "entries": [
+              "堅田高",
+              "大阪大谷大",
+              "矢場とんブースターズ",
+              "王子"
+            ]
+          },
+          "draft": {
+            "raw": "2025年ドラフト6位",
+            "year": 2025,
+            "rank": 6,
+            "selection": "regular"
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2026,
+          "team": "東北楽天",
+          "totals": {
+            "games": 28,
+            "plateAppearances": 0,
+            "atBats": 0,
+            "runs": 0,
+            "hits": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 0,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 0,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0,
+            "onBasePercentage": 0,
+            "sluggingPercentage": 0,
+            "ops": 0,
+            "iso": 0,
+            "walkPercentage": null,
+            "strikeoutPercentage": null
+          }
+        }
+      ],
+      "pitchingStats": [
+        {
+          "season": 2026,
+          "team": "東北楽天",
+          "totals": {
+            "games": 28,
+            "wins": 1,
+            "losses": 0,
+            "saves": 0,
+            "holds": 9,
+            "holdPoints": 10,
+            "completeGames": 0,
+            "shutouts": 0,
+            "noWalkCompleteGames": 0,
+            "winningPercentage": 1,
+            "battersFaced": 127,
+            "innings": 31.333,
+            "hitsAllowed": 20,
+            "homeRunsAllowed": 1,
+            "walksAllowed": 12,
+            "hitByPitch": 1,
+            "strikeouts": 29,
+            "wildPitches": 0,
+            "balks": 0,
+            "runsAllowed": 10,
+            "earnedRuns": 6
+          },
+          "metrics": {
+            "era": 1.72,
+            "whip": 1.021,
+            "strikeoutsPerNine": 8.33,
+            "walksPerNine": 3.447,
+            "strikeoutToWalkRatio": 2.417
+          }
+        }
+      ],
+      "career": {
+        "batting": {
+          "seasons": 1,
+          "games": 28,
+          "plateAppearances": 0,
+          "atBats": 0,
+          "runs": 0,
+          "hits": 0,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 0,
+          "totalBases": 0,
+          "rbi": 0,
+          "steals": 0,
+          "walks": 0,
+          "hitByPitch": 0,
+          "strikeouts": 0,
+          "battingAverage": null,
+          "onBasePercentage": null,
+          "sluggingPercentage": null,
+          "ops": null,
+          "iso": null
+        },
+        "pitching": {
+          "seasons": 1,
+          "games": 28,
+          "wins": 1,
+          "losses": 0,
+          "saves": 0,
+          "holds": 9,
+          "innings": 31.333,
+          "hitsAllowed": 20,
+          "walksAllowed": 12,
+          "strikeouts": 29,
+          "earnedRuns": 6,
+          "winningPercentage": 1,
+          "era": 1.723,
+          "whip": 1.021,
+          "strikeoutsPerNine": 8.33,
+          "walksPerNine": 3.447,
+          "strikeoutToWalkRatio": 2.417
+        }
+      }
+    },
+    "links": {
+      "self": "/players/16qe28.json"
+    }
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "data": {
+    "type": "player",
+    "id": "cin47",
+    "attributes": {
+      "profile": {
+        "familyName": "園田",
+        "givenName": "純規",
+        "familyNameKana": "そのだ",
+        "givenNameKana": "あつき",
+        "registeredName": "園田 純規",
+        "registeredNameKana": "そのだ・あつき",
+        "url": "https://npb.jp/bis/players/21025159.html",
+        "isActive": true,
+        "details": {
+          "position": "投手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 184,
+          "weightKg": 80,
+          "birthDate": {
+            "iso": "2005-07-07",
+            "year": 2005,
+            "month": 7,
+            "day": 7
+          },
+          "career": {
+            "raw": "福岡工大城東高",
+            "entries": [
+              "福岡工大城東高"
+            ]
+          },
+          "draft": {
+            "raw": "2023年育成選手ドラフト5位",
+            "year": 2023,
+            "rank": 5,
+            "selection": "development"
+          }
+        }
+      },
+      "battingStats": [],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 0,
+          "games": 0,
+          "plateAppearances": 0,
+          "atBats": 0,
+          "runs": 0,
+          "hits": 0,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 0,
+          "totalBases": 0,
+          "rbi": 0,
+          "steals": 0,
+          "walks": 0,
+          "hitByPitch": 0,
+          "strikeouts": 0,
+          "battingAverage": null,
+          "onBasePercentage": null,
+          "sluggingPercentage": null,
+          "ops": null,
+          "iso": null
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/cin47.json"
+    }
+  }
+}

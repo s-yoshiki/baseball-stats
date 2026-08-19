@@ -1,0 +1,196 @@
+{
+  "data": {
+    "type": "player",
+    "id": "17i95j",
+    "attributes": {
+      "profile": {
+        "familyName": "F.レイエス",
+        "givenName": null,
+        "familyNameKana": "FRANMIL",
+        "givenNameKana": "REYES",
+        "registeredName": "F.レイエス",
+        "registeredNameKana": "フランミル・レイエス",
+        "url": "https://npb.jp/bis/players/73075159.html",
+        "isActive": true,
+        "details": {
+          "position": "外野手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 196,
+          "weightKg": 139,
+          "birthDate": {
+            "iso": "1995-07-07",
+            "year": 1995,
+            "month": 7,
+            "day": 7
+          },
+          "career": {
+            "raw": "リセオアリーロパウリーノ高 - パドレス - インディアンス - ガーディアンズ - カブス - ロイヤルズ",
+            "entries": [
+              "リセオアリーロパウリーノ高",
+              "パドレス",
+              "インディアンス",
+              "ガーディアンズ",
+              "カブス",
+              "ロイヤルズ"
+            ]
+          },
+          "draft": {
+            "raw": null,
+            "year": null,
+            "rank": null,
+            "selection": null
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2024,
+          "team": "北海道日本ハム",
+          "totals": {
+            "games": 103,
+            "plateAppearances": 368,
+            "atBats": 335,
+            "runs": 39,
+            "hits": 97,
+            "doubles": 15,
+            "triples": 1,
+            "homeRuns": 25,
+            "totalBases": 189,
+            "rbi": 65,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 2,
+            "walks": 31,
+            "hitByPitch": 0,
+            "strikeouts": 90,
+            "groundedIntoDoublePlays": 9
+          },
+          "metrics": {
+            "battingAverage": 0.29,
+            "onBasePercentage": 0.348,
+            "sluggingPercentage": 0.564,
+            "ops": 0.912,
+            "iso": 0.274,
+            "walkPercentage": 0.084,
+            "strikeoutPercentage": 0.245
+          }
+        },
+        {
+          "season": 2025,
+          "team": "北海道日本ハム",
+          "totals": {
+            "games": 132,
+            "plateAppearances": 531,
+            "atBats": 476,
+            "runs": 62,
+            "hits": 132,
+            "doubles": 17,
+            "triples": 0,
+            "homeRuns": 32,
+            "totalBases": 245,
+            "rbi": 90,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 3,
+            "walks": 52,
+            "hitByPitch": 0,
+            "strikeouts": 129,
+            "groundedIntoDoublePlays": 8
+          },
+          "metrics": {
+            "battingAverage": 0.277,
+            "onBasePercentage": 0.347,
+            "sluggingPercentage": 0.515,
+            "ops": 0.862,
+            "iso": 0.238,
+            "walkPercentage": 0.098,
+            "strikeoutPercentage": 0.243
+          }
+        },
+        {
+          "season": 2026,
+          "team": "北海道日本ハム",
+          "totals": {
+            "games": 109,
+            "plateAppearances": 451,
+            "atBats": 405,
+            "runs": 48,
+            "hits": 128,
+            "doubles": 22,
+            "triples": 0,
+            "homeRuns": 26,
+            "totalBases": 228,
+            "rbi": 64,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 5,
+            "walks": 40,
+            "hitByPitch": 1,
+            "strikeouts": 85,
+            "groundedIntoDoublePlays": 17
+          },
+          "metrics": {
+            "battingAverage": 0.316,
+            "onBasePercentage": 0.375,
+            "sluggingPercentage": 0.563,
+            "ops": 0.938,
+            "iso": 0.247,
+            "walkPercentage": 0.089,
+            "strikeoutPercentage": 0.188
+          }
+        }
+      ],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 3,
+          "games": 344,
+          "plateAppearances": 1350,
+          "atBats": 1216,
+          "runs": 149,
+          "hits": 357,
+          "doubles": 54,
+          "triples": 1,
+          "homeRuns": 83,
+          "totalBases": 662,
+          "rbi": 219,
+          "steals": 0,
+          "walks": 123,
+          "hitByPitch": 1,
+          "strikeouts": 304,
+          "battingAverage": 0.294,
+          "onBasePercentage": 0.356,
+          "sluggingPercentage": 0.544,
+          "ops": 0.9,
+          "iso": 0.25
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/17i95j.json"
+    }
+  }
+}

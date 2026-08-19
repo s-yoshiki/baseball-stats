@@ -26,7 +26,10 @@
           },
           "career": {
             "raw": "土浦湖北高 - 仙台大",
-            "entries": ["土浦湖北高", "仙台大"]
+            "entries": [
+              "土浦湖北高",
+              "仙台大"
+            ]
           },
           "draft": {
             "raw": "2019年育成選手ドラフト2位",
@@ -34,48 +37,12 @@
             "rank": 2,
             "selection": "development"
           }
-        },
-        "rawDetails": {
-          "npb": {
-            "ポジション": "投手",
-            "投打": "左投左打",
-            "身長／体重": "185cm／84kg",
-            "生年月日": "1997年12月14日",
-            "経歴": "土浦湖北高 - 仙台大",
-            "ドラフト": "2019年育成選手ドラフト2位"
-          }
         }
       },
       "battingStats": [
         {
           "season": 2021,
           "team": "福岡ソフトバンク",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2021",
-            "所属球団": "福岡ソフトバンク",
-            "試合": "12",
-            "打席": "0",
-            "打数": "0",
-            "得点": "0",
-            "安打": "0",
-            "二塁打": "0",
-            "三塁打": "0",
-            "本塁打": "0",
-            "塁打": "0",
-            "打点": "0",
-            "盗塁": "0",
-            "盗塁刺": "0",
-            "犠打": "0",
-            "犠飛": "0",
-            "四球": "0",
-            "死球": "0",
-            "三振": "0",
-            "併殺打": "0",
-            "打率": ".000",
-            "長打率": ".000",
-            "出塁率": ".000"
-          },
           "totals": {
             "games": 12,
             "plateAppearances": 0,
@@ -109,32 +76,6 @@
         {
           "season": 2022,
           "team": "福岡ソフトバンク",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2022",
-            "所属球団": "福岡ソフトバンク",
-            "試合": "21",
-            "打席": "2",
-            "打数": "2",
-            "得点": "0",
-            "安打": "0",
-            "二塁打": "0",
-            "三塁打": "0",
-            "本塁打": "0",
-            "塁打": "0",
-            "打点": "0",
-            "盗塁": "0",
-            "盗塁刺": "0",
-            "犠打": "0",
-            "犠飛": "0",
-            "四球": "0",
-            "死球": "0",
-            "三振": "2",
-            "併殺打": "0",
-            "打率": ".000",
-            "長打率": ".000",
-            "出塁率": ".000"
-          },
           "totals": {
             "games": 21,
             "plateAppearances": 2,
@@ -168,32 +109,6 @@
         {
           "season": 2023,
           "team": "福岡ソフトバンク",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2023",
-            "所属球団": "福岡ソフトバンク",
-            "試合": "17",
-            "打席": "0",
-            "打数": "0",
-            "得点": "0",
-            "安打": "0",
-            "二塁打": "0",
-            "三塁打": "0",
-            "本塁打": "0",
-            "塁打": "0",
-            "打点": "0",
-            "盗塁": "0",
-            "盗塁刺": "0",
-            "犠打": "0",
-            "犠飛": "0",
-            "四球": "0",
-            "死球": "0",
-            "三振": "0",
-            "併殺打": "0",
-            "打率": ".000",
-            "長打率": ".000",
-            "出塁率": ".000"
-          },
           "totals": {
             "games": 17,
             "plateAppearances": 0,
@@ -227,32 +142,6 @@
         {
           "season": 2024,
           "team": "福岡ソフトバンク",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2024",
-            "所属球団": "福岡ソフトバンク",
-            "試合": "20",
-            "打席": "4",
-            "打数": "4",
-            "得点": "0",
-            "安打": "1",
-            "二塁打": "0",
-            "三塁打": "0",
-            "本塁打": "0",
-            "塁打": "1",
-            "打点": "0",
-            "盗塁": "0",
-            "盗塁刺": "0",
-            "犠打": "0",
-            "犠飛": "0",
-            "四球": "0",
-            "死球": "0",
-            "三振": "2",
-            "併殺打": "0",
-            "打率": ".250",
-            "長打率": ".250",
-            "出塁率": ".250"
-          },
           "totals": {
             "games": 20,
             "plateAppearances": 4,
@@ -286,32 +175,6 @@
         {
           "season": 2025,
           "team": "福岡ソフトバンク",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2025",
-            "所属球団": "福岡ソフトバンク",
-            "試合": "24",
-            "打席": "3",
-            "打数": "2",
-            "得点": "0",
-            "安打": "0",
-            "二塁打": "0",
-            "三塁打": "0",
-            "本塁打": "0",
-            "塁打": "0",
-            "打点": "1",
-            "盗塁": "0",
-            "盗塁刺": "0",
-            "犠打": "1",
-            "犠飛": "0",
-            "四球": "0",
-            "死球": "0",
-            "三振": "2",
-            "併殺打": "0",
-            "打率": ".000",
-            "長打率": ".000",
-            "出塁率": ".000"
-          },
           "totals": {
             "games": 24,
             "plateAppearances": 3,
@@ -345,32 +208,6 @@
         {
           "season": 2026,
           "team": "福岡ソフトバンク",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2026",
-            "所属球団": "福岡ソフトバンク",
-            "試合": "10",
-            "打席": "2",
-            "打数": "2",
-            "得点": "0",
-            "安打": "0",
-            "二塁打": "0",
-            "三塁打": "0",
-            "本塁打": "0",
-            "塁打": "0",
-            "打点": "0",
-            "盗塁": "0",
-            "盗塁刺": "0",
-            "犠打": "0",
-            "犠飛": "0",
-            "四球": "0",
-            "死球": "0",
-            "三振": "0",
-            "併殺打": "0",
-            "打率": ".000",
-            "長打率": ".000",
-            "出塁率": ".000"
-          },
           "totals": {
             "games": 10,
             "plateAppearances": 2,
@@ -406,33 +243,6 @@
         {
           "season": 2021,
           "team": "福岡ソフトバンク",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2021",
-            "所属球団": "福岡ソフトバンク",
-            "登板": "12",
-            "勝利": "0",
-            "敗北": "0",
-            "セーブ": "0",
-            "H": "0",
-            "HP": "0",
-            "完投": "0",
-            "完封勝": "0",
-            "無四球": "0",
-            "勝率": ".000",
-            "打者": "88",
-            "投球回": "23",
-            "安打": "12",
-            "本塁打": "1",
-            "四球": "10",
-            "死球": "2",
-            "三振": "13",
-            "暴投": "0",
-            "ボーク": "0",
-            "失点": "6",
-            "自責点": "6",
-            "防御率": "2.35"
-          },
           "totals": {
             "games": 12,
             "wins": 0,
@@ -467,33 +277,6 @@
         {
           "season": 2022,
           "team": "福岡ソフトバンク",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2022",
-            "所属球団": "福岡ソフトバンク",
-            "登板": "21",
-            "勝利": "7",
-            "敗北": "6",
-            "セーブ": "0",
-            "H": "0",
-            "HP": "2",
-            "完投": "2",
-            "完封勝": "2",
-            "無四球": "1",
-            "勝率": ".538",
-            "打者": "409",
-            "投球回": "101.1",
-            "安打": "88",
-            "本塁打": "8",
-            "四球": "28",
-            "死球": "4",
-            "三振": "70",
-            "暴投": "1",
-            "ボーク": "1",
-            "失点": "37",
-            "自責点": "33",
-            "防御率": "2.93"
-          },
           "totals": {
             "games": 21,
             "wins": 7,
@@ -506,7 +289,7 @@
             "noWalkCompleteGames": 1,
             "winningPercentage": 0.538,
             "battersFaced": 409,
-            "innings": 101.33333333333333,
+            "innings": 101.333,
             "hitsAllowed": 88,
             "homeRunsAllowed": 8,
             "walksAllowed": 28,
@@ -528,33 +311,6 @@
         {
           "season": 2023,
           "team": "福岡ソフトバンク",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2023",
-            "所属球団": "福岡ソフトバンク",
-            "登板": "17",
-            "勝利": "5",
-            "敗北": "7",
-            "セーブ": "0",
-            "H": "0",
-            "HP": "0",
-            "完投": "2",
-            "完封勝": "1",
-            "無四球": "0",
-            "勝率": ".417",
-            "打者": "427",
-            "投球回": "104.2",
-            "安打": "86",
-            "本塁打": "11",
-            "四球": "35",
-            "死球": "6",
-            "三振": "76",
-            "暴投": "1",
-            "ボーク": "0",
-            "失点": "36",
-            "自責点": "34",
-            "防御率": "2.92"
-          },
           "totals": {
             "games": 17,
             "wins": 5,
@@ -567,7 +323,7 @@
             "noWalkCompleteGames": 0,
             "winningPercentage": 0.417,
             "battersFaced": 427,
-            "innings": 104.66666666666667,
+            "innings": 104.667,
             "hitsAllowed": 86,
             "homeRunsAllowed": 11,
             "walksAllowed": 35,
@@ -589,33 +345,6 @@
         {
           "season": 2024,
           "team": "福岡ソフトバンク",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2024",
-            "所属球団": "福岡ソフトバンク",
-            "登板": "20",
-            "勝利": "8",
-            "敗北": "4",
-            "セーブ": "0",
-            "H": "0",
-            "HP": "0",
-            "完投": "0",
-            "完封勝": "0",
-            "無四球": "0",
-            "勝率": ".667",
-            "打者": "481",
-            "投球回": "122.1",
-            "安打": "84",
-            "本塁打": "10",
-            "四球": "29",
-            "死球": "10",
-            "三振": "77",
-            "暴投": "0",
-            "ボーク": "0",
-            "失点": "34",
-            "自責点": "34",
-            "防御率": "2.50"
-          },
           "totals": {
             "games": 20,
             "wins": 8,
@@ -628,7 +357,7 @@
             "noWalkCompleteGames": 0,
             "winningPercentage": 0.667,
             "battersFaced": 481,
-            "innings": 122.33333333333333,
+            "innings": 122.333,
             "hitsAllowed": 84,
             "homeRunsAllowed": 10,
             "walksAllowed": 29,
@@ -650,33 +379,6 @@
         {
           "season": 2025,
           "team": "福岡ソフトバンク",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2025",
-            "所属球団": "福岡ソフトバンク",
-            "登板": "24",
-            "勝利": "13",
-            "敗北": "5",
-            "セーブ": "0",
-            "H": "0",
-            "HP": "0",
-            "完投": "0",
-            "完封勝": "0",
-            "無四球": "0",
-            "勝率": ".722",
-            "打者": "586",
-            "投球回": "146.2",
-            "安打": "107",
-            "本塁打": "11",
-            "四球": "35",
-            "死球": "5",
-            "三振": "97",
-            "暴投": "0",
-            "ボーク": "0",
-            "失点": "36",
-            "自責点": "27",
-            "防御率": "1.66"
-          },
           "totals": {
             "games": 24,
             "wins": 13,
@@ -689,7 +391,7 @@
             "noWalkCompleteGames": 0,
             "winningPercentage": 0.722,
             "battersFaced": 586,
-            "innings": 146.66666666666666,
+            "innings": 146.667,
             "hitsAllowed": 107,
             "homeRunsAllowed": 11,
             "walksAllowed": 35,
@@ -711,33 +413,6 @@
         {
           "season": 2026,
           "team": "福岡ソフトバンク",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2026",
-            "所属球団": "福岡ソフトバンク",
-            "登板": "10",
-            "勝利": "3",
-            "敗北": "4",
-            "セーブ": "0",
-            "H": "0",
-            "HP": "0",
-            "完投": "1",
-            "完封勝": "1",
-            "無四球": "0",
-            "勝率": ".429",
-            "打者": "257",
-            "投球回": "57.1",
-            "安打": "69",
-            "本塁打": "11",
-            "四球": "20",
-            "死球": "1",
-            "三振": "36",
-            "暴投": "0",
-            "ボーク": "0",
-            "失点": "36",
-            "自責点": "34",
-            "防御率": "5.34"
-          },
           "totals": {
             "games": 10,
             "wins": 3,
@@ -750,7 +425,7 @@
             "noWalkCompleteGames": 0,
             "winningPercentage": 0.429,
             "battersFaced": 257,
-            "innings": 57.333333333333336,
+            "innings": 57.333,
             "hitsAllowed": 69,
             "homeRunsAllowed": 11,
             "walksAllowed": 20,
@@ -817,260 +492,5 @@
     "links": {
       "self": "/players/w9dr.json"
     }
-  },
-  "meta": {
-    "sources": [
-      {
-        "id": "npb",
-        "kind": "official",
-        "name": "NPB公式サイト",
-        "url": "https://npb.jp/bis/players/01505151.html",
-        "retrievedAt": "2026-08-19T08:04:13.503Z"
-      },
-      {
-        "id": "baseball-stats",
-        "kind": "computed",
-        "name": "baseball-stats",
-        "retrievedAt": "2026-08-19T08:04:13.503Z"
-      }
-    ],
-    "provenance": {
-      "profile.familyName": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "profile.givenName": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "profile.familyNameKana": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "profile.givenNameKana": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "profile.registeredName": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "profile.registeredNameKana": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "profile.url": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "profile.isActive": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "profile.details": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "profile.rawDetails.npb": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "career": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[0].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[0].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[0].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[1].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[1].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[1].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[2].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[2].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[2].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[3].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[3].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[3].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[4].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[4].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[4].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[5].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[5].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[5].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[0].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[0].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[0].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[1].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[1].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[1].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[2].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[2].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[2].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[3].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[3].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[3].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[4].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[4].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[4].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[5].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[5].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[5].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      }
-    },
-    "generatedAt": "2026-08-19T08:04:13.503Z"
   }
 }

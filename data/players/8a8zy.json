@@ -1,0 +1,229 @@
+{
+  "data": {
+    "type": "player",
+    "id": "8a8zy",
+    "attributes": {
+      "profile": {
+        "familyName": "K.マラー",
+        "givenName": null,
+        "familyNameKana": "KYLE",
+        "givenNameKana": "MULLER",
+        "registeredName": "K.マラー",
+        "registeredNameKana": "カイル・マラー",
+        "url": "https://npb.jp/bis/players/13915150.html",
+        "isActive": true,
+        "details": {
+          "position": "投手",
+          "throws": "左",
+          "bats": "右",
+          "heightCm": 201,
+          "weightKg": 118,
+          "birthDate": {
+            "iso": "1997-10-07",
+            "year": 1997,
+            "month": 10,
+            "day": 7
+          },
+          "career": {
+            "raw": "ジェスイト大プレパラトリー高 - ブレーブス - アスレチックス",
+            "entries": [
+              "ジェスイト大プレパラトリー高",
+              "ブレーブス",
+              "アスレチックス"
+            ]
+          },
+          "draft": {
+            "raw": null,
+            "year": null,
+            "rank": null,
+            "selection": null
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2025,
+          "team": "中 日",
+          "totals": {
+            "games": 18,
+            "plateAppearances": 33,
+            "atBats": 28,
+            "runs": 0,
+            "hits": 2,
+            "doubles": 1,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 3,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 3,
+            "sacrificeFlies": 0,
+            "walks": 1,
+            "hitByPitch": 1,
+            "strikeouts": 13,
+            "groundedIntoDoublePlays": 1
+          },
+          "metrics": {
+            "battingAverage": 0.071,
+            "onBasePercentage": 0.133,
+            "sluggingPercentage": 0.107,
+            "ops": 0.24,
+            "iso": 0.036,
+            "walkPercentage": 0.03,
+            "strikeoutPercentage": 0.394
+          }
+        },
+        {
+          "season": 2026,
+          "team": "中 日",
+          "totals": {
+            "games": 14,
+            "plateAppearances": 30,
+            "atBats": 29,
+            "runs": 3,
+            "hits": 5,
+            "doubles": 0,
+            "triples": 1,
+            "homeRuns": 1,
+            "totalBases": 10,
+            "rbi": 6,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 1,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 14,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0.172,
+            "onBasePercentage": 0.172,
+            "sluggingPercentage": 0.345,
+            "ops": 0.517,
+            "iso": 0.173,
+            "walkPercentage": 0,
+            "strikeoutPercentage": 0.467
+          }
+        }
+      ],
+      "pitchingStats": [
+        {
+          "season": 2025,
+          "team": "中 日",
+          "totals": {
+            "games": 18,
+            "wins": 4,
+            "losses": 9,
+            "saves": 0,
+            "holds": 0,
+            "holdPoints": 0,
+            "completeGames": 0,
+            "shutouts": 0,
+            "noWalkCompleteGames": 0,
+            "winningPercentage": 0.308,
+            "battersFaced": 436,
+            "innings": 101.667,
+            "hitsAllowed": 102,
+            "homeRunsAllowed": 7,
+            "walksAllowed": 28,
+            "hitByPitch": 3,
+            "strikeouts": 86,
+            "wildPitches": 5,
+            "balks": 0,
+            "runsAllowed": 44,
+            "earnedRuns": 40
+          },
+          "metrics": {
+            "era": 3.54,
+            "whip": 1.279,
+            "strikeoutsPerNine": 7.613,
+            "walksPerNine": 2.479,
+            "strikeoutToWalkRatio": 3.071
+          }
+        },
+        {
+          "season": 2026,
+          "team": "中 日",
+          "totals": {
+            "games": 14,
+            "wins": 5,
+            "losses": 6,
+            "saves": 0,
+            "holds": 0,
+            "holdPoints": 0,
+            "completeGames": 0,
+            "shutouts": 0,
+            "noWalkCompleteGames": 0,
+            "winningPercentage": 0.455,
+            "battersFaced": 359,
+            "innings": 89.333,
+            "hitsAllowed": 77,
+            "homeRunsAllowed": 8,
+            "walksAllowed": 18,
+            "hitByPitch": 2,
+            "strikeouts": 71,
+            "wildPitches": 0,
+            "balks": 0,
+            "runsAllowed": 28,
+            "earnedRuns": 25
+          },
+          "metrics": {
+            "era": 2.52,
+            "whip": 1.063,
+            "strikeoutsPerNine": 7.153,
+            "walksPerNine": 1.813,
+            "strikeoutToWalkRatio": 3.944
+          }
+        }
+      ],
+      "career": {
+        "batting": {
+          "seasons": 2,
+          "games": 32,
+          "plateAppearances": 63,
+          "atBats": 57,
+          "runs": 3,
+          "hits": 7,
+          "doubles": 1,
+          "triples": 1,
+          "homeRuns": 1,
+          "totalBases": 13,
+          "rbi": 6,
+          "steals": 0,
+          "walks": 1,
+          "hitByPitch": 1,
+          "strikeouts": 27,
+          "battingAverage": 0.123,
+          "onBasePercentage": 0.143,
+          "sluggingPercentage": 0.228,
+          "ops": 0.371,
+          "iso": 0.105
+        },
+        "pitching": {
+          "seasons": 2,
+          "games": 32,
+          "wins": 9,
+          "losses": 15,
+          "saves": 0,
+          "holds": 0,
+          "innings": 191,
+          "hitsAllowed": 179,
+          "walksAllowed": 46,
+          "strikeouts": 157,
+          "earnedRuns": 65,
+          "winningPercentage": 0.375,
+          "era": 3.063,
+          "whip": 1.178,
+          "strikeoutsPerNine": 7.398,
+          "walksPerNine": 2.168,
+          "strikeoutToWalkRatio": 3.413
+        }
+      }
+    },
+    "links": {
+      "self": "/players/8a8zy.json"
+    }
+  }
+}

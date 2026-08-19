@@ -1,0 +1,161 @@
+{
+  "data": {
+    "type": "player",
+    "id": "iyc5s",
+    "attributes": {
+      "profile": {
+        "familyName": "堀越",
+        "givenName": "啓太",
+        "familyNameKana": "ほりこし",
+        "givenNameKana": "けいた",
+        "registeredName": "堀越 啓太",
+        "registeredNameKana": "ほりこし・けいた",
+        "url": "https://npb.jp/bis/players/31835152.html",
+        "isActive": true,
+        "details": {
+          "position": "投手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 185,
+          "weightKg": 96,
+          "birthDate": {
+            "iso": "2003-07-15",
+            "year": 2003,
+            "month": 7,
+            "day": 15
+          },
+          "career": {
+            "raw": "花咲徳栄高 - 東北福祉大",
+            "entries": [
+              "花咲徳栄高",
+              "東北福祉大"
+            ]
+          },
+          "draft": {
+            "raw": "2025年ドラフト4位",
+            "year": 2025,
+            "rank": 4,
+            "selection": "regular"
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2026,
+          "team": "埼玉西武",
+          "totals": {
+            "games": 2,
+            "plateAppearances": 0,
+            "atBats": 0,
+            "runs": 0,
+            "hits": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 0,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 0,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0,
+            "onBasePercentage": 0,
+            "sluggingPercentage": 0,
+            "ops": 0,
+            "iso": 0,
+            "walkPercentage": null,
+            "strikeoutPercentage": null
+          }
+        }
+      ],
+      "pitchingStats": [
+        {
+          "season": 2026,
+          "team": "埼玉西武",
+          "totals": {
+            "games": 2,
+            "wins": 0,
+            "losses": 0,
+            "saves": 0,
+            "holds": 0,
+            "holdPoints": 0,
+            "completeGames": 0,
+            "shutouts": 0,
+            "noWalkCompleteGames": 0,
+            "winningPercentage": 0,
+            "battersFaced": 9,
+            "innings": 2,
+            "hitsAllowed": 3,
+            "homeRunsAllowed": 0,
+            "walksAllowed": 0,
+            "hitByPitch": 0,
+            "strikeouts": 1,
+            "wildPitches": 0,
+            "balks": 0,
+            "runsAllowed": 1,
+            "earnedRuns": 1
+          },
+          "metrics": {
+            "era": 4.5,
+            "whip": 1.5,
+            "strikeoutsPerNine": 4.5,
+            "walksPerNine": 0,
+            "strikeoutToWalkRatio": null
+          }
+        }
+      ],
+      "career": {
+        "batting": {
+          "seasons": 1,
+          "games": 2,
+          "plateAppearances": 0,
+          "atBats": 0,
+          "runs": 0,
+          "hits": 0,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 0,
+          "totalBases": 0,
+          "rbi": 0,
+          "steals": 0,
+          "walks": 0,
+          "hitByPitch": 0,
+          "strikeouts": 0,
+          "battingAverage": null,
+          "onBasePercentage": null,
+          "sluggingPercentage": null,
+          "ops": null,
+          "iso": null
+        },
+        "pitching": {
+          "seasons": 1,
+          "games": 2,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 2,
+          "hitsAllowed": 3,
+          "walksAllowed": 0,
+          "strikeouts": 1,
+          "earnedRuns": 1,
+          "winningPercentage": null,
+          "era": 4.5,
+          "whip": 1.5,
+          "strikeoutsPerNine": 4.5,
+          "walksPerNine": 0,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/iyc5s.json"
+    }
+  }
+}

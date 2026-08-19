@@ -26,7 +26,10 @@
           },
           "career": {
             "raw": "向上高 - 富士大",
-            "entries": ["向上高", "富士大"]
+            "entries": [
+              "向上高",
+              "富士大"
+            ]
           },
           "draft": {
             "raw": "2018年ドラフト8位",
@@ -34,48 +37,12 @@
             "rank": 8,
             "selection": "regular"
           }
-        },
-        "rawDetails": {
-          "npb": {
-            "ポジション": "投手",
-            "投打": "左投左打",
-            "身長／体重": "185cm／82kg",
-            "生年月日": "1996年8月19日",
-            "経歴": "向上高 - 富士大",
-            "ドラフト": "2018年ドラフト8位"
-          }
         }
       },
       "battingStats": [
         {
           "season": 2020,
           "team": "東北楽天",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2020",
-            "所属球団": "東北楽天",
-            "試合": "2",
-            "打席": "0",
-            "打数": "0",
-            "得点": "0",
-            "安打": "0",
-            "二塁打": "0",
-            "三塁打": "0",
-            "本塁打": "0",
-            "塁打": "0",
-            "打点": "0",
-            "盗塁": "0",
-            "盗塁刺": "0",
-            "犠打": "0",
-            "犠飛": "0",
-            "四球": "0",
-            "死球": "0",
-            "三振": "0",
-            "併殺打": "0",
-            "打率": ".000",
-            "長打率": ".000",
-            "出塁率": ".000"
-          },
           "totals": {
             "games": 2,
             "plateAppearances": 0,
@@ -109,32 +76,6 @@
         {
           "season": 2021,
           "team": "東北楽天",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2021",
-            "所属球団": "東北楽天",
-            "試合": "5",
-            "打席": "0",
-            "打数": "0",
-            "得点": "0",
-            "安打": "0",
-            "二塁打": "0",
-            "三塁打": "0",
-            "本塁打": "0",
-            "塁打": "0",
-            "打点": "0",
-            "盗塁": "0",
-            "盗塁刺": "0",
-            "犠打": "0",
-            "犠飛": "0",
-            "四球": "0",
-            "死球": "0",
-            "三振": "0",
-            "併殺打": "0",
-            "打率": ".000",
-            "長打率": ".000",
-            "出塁率": ".000"
-          },
           "totals": {
             "games": 5,
             "plateAppearances": 0,
@@ -168,32 +109,6 @@
         {
           "season": 2022,
           "team": "東北楽天",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2022",
-            "所属球団": "東北楽天",
-            "試合": "38",
-            "打席": "0",
-            "打数": "0",
-            "得点": "0",
-            "安打": "0",
-            "二塁打": "0",
-            "三塁打": "0",
-            "本塁打": "0",
-            "塁打": "0",
-            "打点": "0",
-            "盗塁": "0",
-            "盗塁刺": "0",
-            "犠打": "0",
-            "犠飛": "0",
-            "四球": "0",
-            "死球": "0",
-            "三振": "0",
-            "併殺打": "0",
-            "打率": ".000",
-            "長打率": ".000",
-            "出塁率": ".000"
-          },
           "totals": {
             "games": 38,
             "plateAppearances": 0,
@@ -227,32 +142,6 @@
         {
           "season": 2023,
           "team": "東北楽天",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2023",
-            "所属球団": "東北楽天",
-            "試合": "61",
-            "打席": "0",
-            "打数": "0",
-            "得点": "0",
-            "安打": "0",
-            "二塁打": "0",
-            "三塁打": "0",
-            "本塁打": "0",
-            "塁打": "0",
-            "打点": "0",
-            "盗塁": "0",
-            "盗塁刺": "0",
-            "犠打": "0",
-            "犠飛": "0",
-            "四球": "0",
-            "死球": "0",
-            "三振": "0",
-            "併殺打": "0",
-            "打率": ".000",
-            "長打率": ".000",
-            "出塁率": ".000"
-          },
           "totals": {
             "games": 61,
             "plateAppearances": 0,
@@ -286,32 +175,6 @@
         {
           "season": 2024,
           "team": "東北楽天",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2024",
-            "所属球団": "東北楽天",
-            "試合": "49",
-            "打席": "0",
-            "打数": "0",
-            "得点": "0",
-            "安打": "0",
-            "二塁打": "0",
-            "三塁打": "0",
-            "本塁打": "0",
-            "塁打": "0",
-            "打点": "0",
-            "盗塁": "0",
-            "盗塁刺": "0",
-            "犠打": "0",
-            "犠飛": "0",
-            "四球": "0",
-            "死球": "0",
-            "三振": "0",
-            "併殺打": "0",
-            "打率": ".000",
-            "長打率": ".000",
-            "出塁率": ".000"
-          },
           "totals": {
             "games": 49,
             "plateAppearances": 0,
@@ -345,32 +208,6 @@
         {
           "season": 2025,
           "team": "東北楽天",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2025",
-            "所属球団": "東北楽天",
-            "試合": "46",
-            "打席": "0",
-            "打数": "0",
-            "得点": "0",
-            "安打": "0",
-            "二塁打": "0",
-            "三塁打": "0",
-            "本塁打": "0",
-            "塁打": "0",
-            "打点": "0",
-            "盗塁": "0",
-            "盗塁刺": "0",
-            "犠打": "0",
-            "犠飛": "0",
-            "四球": "0",
-            "死球": "0",
-            "三振": "0",
-            "併殺打": "0",
-            "打率": ".000",
-            "長打率": ".000",
-            "出塁率": ".000"
-          },
           "totals": {
             "games": 46,
             "plateAppearances": 0,
@@ -404,32 +241,6 @@
         {
           "season": 2026,
           "team": "東北楽天",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2026",
-            "所属球団": "東北楽天",
-            "試合": "25",
-            "打席": "0",
-            "打数": "0",
-            "得点": "0",
-            "安打": "0",
-            "二塁打": "0",
-            "三塁打": "0",
-            "本塁打": "0",
-            "塁打": "0",
-            "打点": "0",
-            "盗塁": "0",
-            "盗塁刺": "0",
-            "犠打": "0",
-            "犠飛": "0",
-            "四球": "0",
-            "死球": "0",
-            "三振": "0",
-            "併殺打": "0",
-            "打率": ".000",
-            "長打率": ".000",
-            "出塁率": ".000"
-          },
           "totals": {
             "games": 25,
             "plateAppearances": 0,
@@ -465,33 +276,6 @@
         {
           "season": 2020,
           "team": "東北楽天",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2020",
-            "所属球団": "東北楽天",
-            "登板": "2",
-            "勝利": "0",
-            "敗北": "0",
-            "セーブ": "0",
-            "H": "0",
-            "HP": "0",
-            "完投": "0",
-            "完封勝": "0",
-            "無四球": "0",
-            "勝率": ".000",
-            "打者": "8",
-            "投球回": "1.1",
-            "安打": "2",
-            "本塁打": "1",
-            "四球": "1",
-            "死球": "2",
-            "三振": "1",
-            "暴投": "0",
-            "ボーク": "0",
-            "失点": "2",
-            "自責点": "2",
-            "防御率": "13.50"
-          },
           "totals": {
             "games": 2,
             "wins": 0,
@@ -504,7 +288,7 @@
             "noWalkCompleteGames": 0,
             "winningPercentage": 0,
             "battersFaced": 8,
-            "innings": 1.3333333333333333,
+            "innings": 1.333,
             "hitsAllowed": 2,
             "homeRunsAllowed": 1,
             "walksAllowed": 1,
@@ -526,33 +310,6 @@
         {
           "season": 2021,
           "team": "東北楽天",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2021",
-            "所属球団": "東北楽天",
-            "登板": "5",
-            "勝利": "0",
-            "敗北": "0",
-            "セーブ": "0",
-            "H": "0",
-            "HP": "0",
-            "完投": "0",
-            "完封勝": "0",
-            "無四球": "0",
-            "勝率": ".000",
-            "打者": "19",
-            "投球回": "4.1",
-            "安打": "3",
-            "本塁打": "0",
-            "四球": "4",
-            "死球": "0",
-            "三振": "5",
-            "暴投": "1",
-            "ボーク": "0",
-            "失点": "0",
-            "自責点": "0",
-            "防御率": "0.00"
-          },
           "totals": {
             "games": 5,
             "wins": 0,
@@ -565,7 +322,7 @@
             "noWalkCompleteGames": 0,
             "winningPercentage": 0,
             "battersFaced": 19,
-            "innings": 4.333333333333333,
+            "innings": 4.333,
             "hitsAllowed": 3,
             "homeRunsAllowed": 0,
             "walksAllowed": 4,
@@ -587,33 +344,6 @@
         {
           "season": 2022,
           "team": "東北楽天",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2022",
-            "所属球団": "東北楽天",
-            "登板": "38",
-            "勝利": "1",
-            "敗北": "3",
-            "セーブ": "0",
-            "H": "7",
-            "HP": "8",
-            "完投": "0",
-            "完封勝": "0",
-            "無四球": "0",
-            "勝率": ".250",
-            "打者": "162",
-            "投球回": "38",
-            "安打": "25",
-            "本塁打": "2",
-            "四球": "25",
-            "死球": "2",
-            "三振": "35",
-            "暴投": "2",
-            "ボーク": "1",
-            "失点": "17",
-            "自責点": "17",
-            "防御率": "4.03"
-          },
           "totals": {
             "games": 38,
             "wins": 1,
@@ -648,33 +378,6 @@
         {
           "season": 2023,
           "team": "東北楽天",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2023",
-            "所属球団": "東北楽天",
-            "登板": "61",
-            "勝利": "1",
-            "敗北": "1",
-            "セーブ": "1",
-            "H": "22",
-            "HP": "23",
-            "完投": "0",
-            "完封勝": "0",
-            "無四球": "0",
-            "勝率": ".500",
-            "打者": "195",
-            "投球回": "43.2",
-            "安打": "37",
-            "本塁打": "5",
-            "四球": "25",
-            "死球": "3",
-            "三振": "47",
-            "暴投": "4",
-            "ボーク": "0",
-            "失点": "18",
-            "自責点": "16",
-            "防御率": "3.30"
-          },
           "totals": {
             "games": 61,
             "wins": 1,
@@ -687,7 +390,7 @@
             "noWalkCompleteGames": 0,
             "winningPercentage": 0.5,
             "battersFaced": 195,
-            "innings": 43.666666666666664,
+            "innings": 43.667,
             "hitsAllowed": 37,
             "homeRunsAllowed": 5,
             "walksAllowed": 25,
@@ -709,33 +412,6 @@
         {
           "season": 2024,
           "team": "東北楽天",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2024",
-            "所属球団": "東北楽天",
-            "登板": "49",
-            "勝利": "2",
-            "敗北": "0",
-            "セーブ": "1",
-            "H": "24",
-            "HP": "26",
-            "完投": "0",
-            "完封勝": "0",
-            "無四球": "0",
-            "勝率": "1.000",
-            "打者": "186",
-            "投球回": "48.2",
-            "安打": "24",
-            "本塁打": "0",
-            "四球": "21",
-            "死球": "1",
-            "三振": "48",
-            "暴投": "3",
-            "ボーク": "1",
-            "失点": "9",
-            "自責点": "9",
-            "防御率": "1.66"
-          },
           "totals": {
             "games": 49,
             "wins": 2,
@@ -748,7 +424,7 @@
             "noWalkCompleteGames": 0,
             "winningPercentage": 1,
             "battersFaced": 186,
-            "innings": 48.666666666666664,
+            "innings": 48.667,
             "hitsAllowed": 24,
             "homeRunsAllowed": 0,
             "walksAllowed": 21,
@@ -770,33 +446,6 @@
         {
           "season": 2025,
           "team": "東北楽天",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2025",
-            "所属球団": "東北楽天",
-            "登板": "46",
-            "勝利": "2",
-            "敗北": "4",
-            "セーブ": "5",
-            "H": "19",
-            "HP": "21",
-            "完投": "0",
-            "完封勝": "0",
-            "無四球": "0",
-            "勝率": ".333",
-            "打者": "172",
-            "投球回": "42",
-            "安打": "33",
-            "本塁打": "2",
-            "四球": "15",
-            "死球": "0",
-            "三振": "52",
-            "暴投": "1",
-            "ボーク": "0",
-            "失点": "12",
-            "自責点": "11",
-            "防御率": "2.36"
-          },
           "totals": {
             "games": 46,
             "wins": 2,
@@ -831,33 +480,6 @@
         {
           "season": 2026,
           "team": "東北楽天",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2026",
-            "所属球団": "東北楽天",
-            "登板": "25",
-            "勝利": "0",
-            "敗北": "3",
-            "セーブ": "0",
-            "H": "13",
-            "HP": "13",
-            "完投": "0",
-            "完封勝": "0",
-            "無四球": "0",
-            "勝率": ".000",
-            "打者": "101",
-            "投球回": "22",
-            "安打": "24",
-            "本塁打": "3",
-            "四球": "10",
-            "死球": "1",
-            "三振": "24",
-            "暴投": "0",
-            "ボーク": "0",
-            "失点": "17",
-            "自責点": "14",
-            "防御率": "5.73"
-          },
           "totals": {
             "games": 25,
             "wins": 0,
@@ -937,290 +559,5 @@
     "links": {
       "self": "/players/14u0i.json"
     }
-  },
-  "meta": {
-    "sources": [
-      {
-        "id": "npb",
-        "kind": "official",
-        "name": "NPB公式サイト",
-        "url": "https://npb.jp/bis/players/01905138.html",
-        "retrievedAt": "2026-08-19T08:04:13.503Z"
-      },
-      {
-        "id": "baseball-stats",
-        "kind": "computed",
-        "name": "baseball-stats",
-        "retrievedAt": "2026-08-19T08:04:13.503Z"
-      }
-    ],
-    "provenance": {
-      "profile.familyName": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "profile.givenName": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "profile.familyNameKana": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "profile.givenNameKana": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "profile.registeredName": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "profile.registeredNameKana": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "profile.url": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "profile.isActive": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "profile.details": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "profile.rawDetails.npb": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "career": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[0].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[0].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[0].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[1].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[1].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[1].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[2].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[2].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[2].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[3].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[3].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[3].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[4].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[4].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[4].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[5].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[5].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[5].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[6].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[6].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[6].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[0].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[0].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[0].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[1].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[1].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[1].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[2].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[2].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[2].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[3].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[3].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[3].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[4].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[4].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[4].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[5].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[5].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[5].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[6].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[6].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[6].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      }
-    },
-    "generatedAt": "2026-08-19T08:04:13.503Z"
   }
 }

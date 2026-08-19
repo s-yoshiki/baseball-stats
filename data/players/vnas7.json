@@ -1,0 +1,91 @@
+{
+  "data": {
+    "type": "player",
+    "id": "vnas7",
+    "attributes": {
+      "profile": {
+        "familyName": "松石",
+        "givenName": "信八",
+        "familyNameKana": "まついし",
+        "givenNameKana": "しんや",
+        "registeredName": "松石 信八",
+        "registeredNameKana": "まついし・しんや",
+        "url": "https://npb.jp/bis/players/53155159.html",
+        "isActive": true,
+        "details": {
+          "position": "内野手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 175,
+          "weightKg": 80,
+          "birthDate": {
+            "iso": "2005-12-18",
+            "year": 2005,
+            "month": 12,
+            "day": 18
+          },
+          "career": {
+            "raw": "藤蔭高",
+            "entries": [
+              "藤蔭高"
+            ]
+          },
+          "draft": {
+            "raw": "2023年育成選手ドラフト2位",
+            "year": 2023,
+            "rank": 2,
+            "selection": "development"
+          }
+        }
+      },
+      "battingStats": [],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 0,
+          "games": 0,
+          "plateAppearances": 0,
+          "atBats": 0,
+          "runs": 0,
+          "hits": 0,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 0,
+          "totalBases": 0,
+          "rbi": 0,
+          "steals": 0,
+          "walks": 0,
+          "hitByPitch": 0,
+          "strikeouts": 0,
+          "battingAverage": null,
+          "onBasePercentage": null,
+          "sluggingPercentage": null,
+          "ops": null,
+          "iso": null
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/vnas7.json"
+    }
+  }
+}

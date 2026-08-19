@@ -1,0 +1,227 @@
+{
+  "data": {
+    "type": "player",
+    "id": "16jyl3",
+    "attributes": {
+      "profile": {
+        "familyName": "東松",
+        "givenName": "快征",
+        "familyNameKana": "とうまつ",
+        "givenNameKana": "かいせい",
+        "registeredName": "東松 快征",
+        "registeredNameKana": "とうまつ・かいせい",
+        "url": "https://npb.jp/bis/players/71475159.html",
+        "isActive": true,
+        "details": {
+          "position": "投手",
+          "throws": "左",
+          "bats": "左",
+          "heightCm": 179,
+          "weightKg": 86,
+          "birthDate": {
+            "iso": "2005-04-29",
+            "year": 2005,
+            "month": 4,
+            "day": 29
+          },
+          "career": {
+            "raw": "享栄高",
+            "entries": [
+              "享栄高"
+            ]
+          },
+          "draft": {
+            "raw": "2023年ドラフト3位",
+            "year": 2023,
+            "rank": 3,
+            "selection": "regular"
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2025,
+          "team": "オリックス",
+          "totals": {
+            "games": 7,
+            "plateAppearances": 0,
+            "atBats": 0,
+            "runs": 0,
+            "hits": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 0,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 0,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0,
+            "onBasePercentage": 0,
+            "sluggingPercentage": 0,
+            "ops": 0,
+            "iso": 0,
+            "walkPercentage": null,
+            "strikeoutPercentage": null
+          }
+        },
+        {
+          "season": 2026,
+          "team": "オリックス",
+          "totals": {
+            "games": 5,
+            "plateAppearances": 0,
+            "atBats": 0,
+            "runs": 0,
+            "hits": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 0,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 0,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0,
+            "onBasePercentage": 0,
+            "sluggingPercentage": 0,
+            "ops": 0,
+            "iso": 0,
+            "walkPercentage": null,
+            "strikeoutPercentage": null
+          }
+        }
+      ],
+      "pitchingStats": [
+        {
+          "season": 2025,
+          "team": "オリックス",
+          "totals": {
+            "games": 7,
+            "wins": 0,
+            "losses": 2,
+            "saves": 0,
+            "holds": 0,
+            "holdPoints": 0,
+            "completeGames": 0,
+            "shutouts": 0,
+            "noWalkCompleteGames": 0,
+            "winningPercentage": 0,
+            "battersFaced": 53,
+            "innings": 10,
+            "hitsAllowed": 17,
+            "homeRunsAllowed": 0,
+            "walksAllowed": 6,
+            "hitByPitch": 0,
+            "strikeouts": 9,
+            "wildPitches": 0,
+            "balks": 0,
+            "runsAllowed": 13,
+            "earnedRuns": 12
+          },
+          "metrics": {
+            "era": 10.8,
+            "whip": 2.3,
+            "strikeoutsPerNine": 8.1,
+            "walksPerNine": 5.4,
+            "strikeoutToWalkRatio": 1.5
+          }
+        },
+        {
+          "season": 2026,
+          "team": "オリックス",
+          "totals": {
+            "games": 5,
+            "wins": 0,
+            "losses": 0,
+            "saves": 0,
+            "holds": 0,
+            "holdPoints": 0,
+            "completeGames": 0,
+            "shutouts": 0,
+            "noWalkCompleteGames": 0,
+            "winningPercentage": 0,
+            "battersFaced": 21,
+            "innings": 4,
+            "hitsAllowed": 3,
+            "homeRunsAllowed": 2,
+            "walksAllowed": 7,
+            "hitByPitch": 0,
+            "strikeouts": 4,
+            "wildPitches": 0,
+            "balks": 0,
+            "runsAllowed": 4,
+            "earnedRuns": 4
+          },
+          "metrics": {
+            "era": 9,
+            "whip": 2.5,
+            "strikeoutsPerNine": 9,
+            "walksPerNine": 15.75,
+            "strikeoutToWalkRatio": 0.571
+          }
+        }
+      ],
+      "career": {
+        "batting": {
+          "seasons": 2,
+          "games": 12,
+          "plateAppearances": 0,
+          "atBats": 0,
+          "runs": 0,
+          "hits": 0,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 0,
+          "totalBases": 0,
+          "rbi": 0,
+          "steals": 0,
+          "walks": 0,
+          "hitByPitch": 0,
+          "strikeouts": 0,
+          "battingAverage": null,
+          "onBasePercentage": null,
+          "sluggingPercentage": null,
+          "ops": null,
+          "iso": null
+        },
+        "pitching": {
+          "seasons": 2,
+          "games": 12,
+          "wins": 0,
+          "losses": 2,
+          "saves": 0,
+          "holds": 0,
+          "innings": 14,
+          "hitsAllowed": 20,
+          "walksAllowed": 13,
+          "strikeouts": 13,
+          "earnedRuns": 16,
+          "winningPercentage": 0,
+          "era": 10.286,
+          "whip": 2.357,
+          "strikeoutsPerNine": 8.357,
+          "walksPerNine": 8.357,
+          "strikeoutToWalkRatio": 1
+        }
+      }
+    },
+    "links": {
+      "self": "/players/16jyl3.json"
+    }
+  }
+}

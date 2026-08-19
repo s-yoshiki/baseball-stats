@@ -1,0 +1,160 @@
+{
+  "data": {
+    "type": "player",
+    "id": "om64n",
+    "attributes": {
+      "profile": {
+        "familyName": "大内",
+        "givenName": "誠弥",
+        "familyNameKana": "おおうち",
+        "givenNameKana": "せいや",
+        "registeredName": "大内 誠弥",
+        "registeredNameKana": "おおうち・せいや",
+        "url": "https://npb.jp/bis/players/41345159.html",
+        "isActive": true,
+        "details": {
+          "position": "投手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 191,
+          "weightKg": 77,
+          "birthDate": {
+            "iso": "2006-03-09",
+            "year": 2006,
+            "month": 3,
+            "day": 9
+          },
+          "career": {
+            "raw": "日本ウェルネス宮城高",
+            "entries": [
+              "日本ウェルネス宮城高"
+            ]
+          },
+          "draft": {
+            "raw": "2023年ドラフト7位",
+            "year": 2023,
+            "rank": 7,
+            "selection": "regular"
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2025,
+          "team": "東北楽天",
+          "totals": {
+            "games": 2,
+            "plateAppearances": 1,
+            "atBats": 1,
+            "runs": 0,
+            "hits": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 0,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 1,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0,
+            "onBasePercentage": 0,
+            "sluggingPercentage": 0,
+            "ops": 0,
+            "iso": 0,
+            "walkPercentage": 0,
+            "strikeoutPercentage": 1
+          }
+        }
+      ],
+      "pitchingStats": [
+        {
+          "season": 2025,
+          "team": "東北楽天",
+          "totals": {
+            "games": 2,
+            "wins": 0,
+            "losses": 0,
+            "saves": 0,
+            "holds": 0,
+            "holdPoints": 0,
+            "completeGames": 0,
+            "shutouts": 0,
+            "noWalkCompleteGames": 0,
+            "winningPercentage": 0,
+            "battersFaced": 36,
+            "innings": 9,
+            "hitsAllowed": 5,
+            "homeRunsAllowed": 0,
+            "walksAllowed": 5,
+            "hitByPitch": 0,
+            "strikeouts": 6,
+            "wildPitches": 0,
+            "balks": 0,
+            "runsAllowed": 2,
+            "earnedRuns": 2
+          },
+          "metrics": {
+            "era": 2,
+            "whip": 1.111,
+            "strikeoutsPerNine": 6,
+            "walksPerNine": 5,
+            "strikeoutToWalkRatio": 1.2
+          }
+        }
+      ],
+      "career": {
+        "batting": {
+          "seasons": 1,
+          "games": 2,
+          "plateAppearances": 1,
+          "atBats": 1,
+          "runs": 0,
+          "hits": 0,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 0,
+          "totalBases": 0,
+          "rbi": 0,
+          "steals": 0,
+          "walks": 0,
+          "hitByPitch": 0,
+          "strikeouts": 1,
+          "battingAverage": 0,
+          "onBasePercentage": 0,
+          "sluggingPercentage": 0,
+          "ops": 0,
+          "iso": 0
+        },
+        "pitching": {
+          "seasons": 1,
+          "games": 2,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 9,
+          "hitsAllowed": 5,
+          "walksAllowed": 5,
+          "strikeouts": 6,
+          "earnedRuns": 2,
+          "winningPercentage": null,
+          "era": 2,
+          "whip": 1.111,
+          "strikeoutsPerNine": 6,
+          "walksPerNine": 5,
+          "strikeoutToWalkRatio": 1.2
+        }
+      }
+    },
+    "links": {
+      "self": "/players/om64n.json"
+    }
+  }
+}

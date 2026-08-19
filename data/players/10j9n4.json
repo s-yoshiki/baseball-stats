@@ -1,0 +1,629 @@
+{
+  "data": {
+    "type": "player",
+    "id": "10j9n4",
+    "attributes": {
+      "profile": {
+        "familyName": "尾形",
+        "givenName": "崇斗",
+        "familyNameKana": "おがた",
+        "givenNameKana": "しゅうと",
+        "registeredName": "尾形 崇斗",
+        "registeredNameKana": "おがた・しゅうと",
+        "url": "https://npb.jp/bis/players/61365136.html",
+        "isActive": true,
+        "details": {
+          "position": "投手",
+          "throws": "右",
+          "bats": "左",
+          "heightCm": 182,
+          "weightKg": 90,
+          "birthDate": {
+            "iso": "1999-05-15",
+            "year": 1999,
+            "month": 5,
+            "day": 15
+          },
+          "career": {
+            "raw": "学法石川高",
+            "entries": [
+              "学法石川高"
+            ]
+          },
+          "draft": {
+            "raw": "2017年育成選手ドラフト1位",
+            "year": 2017,
+            "rank": 1,
+            "selection": "development"
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2020,
+          "team": "福岡ソフトバンク",
+          "totals": {
+            "games": 1,
+            "plateAppearances": 0,
+            "atBats": 0,
+            "runs": 0,
+            "hits": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 0,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 0,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0,
+            "onBasePercentage": 0,
+            "sluggingPercentage": 0,
+            "ops": 0,
+            "iso": 0,
+            "walkPercentage": null,
+            "strikeoutPercentage": null
+          }
+        },
+        {
+          "season": 2021,
+          "team": "福岡ソフトバンク",
+          "totals": {
+            "games": 8,
+            "plateAppearances": 0,
+            "atBats": 0,
+            "runs": 0,
+            "hits": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 0,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 0,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0,
+            "onBasePercentage": 0,
+            "sluggingPercentage": 0,
+            "ops": 0,
+            "iso": 0,
+            "walkPercentage": null,
+            "strikeoutPercentage": null
+          }
+        },
+        {
+          "season": 2022,
+          "team": "福岡ソフトバンク",
+          "totals": {
+            "games": 9,
+            "plateAppearances": 0,
+            "atBats": 0,
+            "runs": 0,
+            "hits": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 0,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 0,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0,
+            "onBasePercentage": 0,
+            "sluggingPercentage": 0,
+            "ops": 0,
+            "iso": 0,
+            "walkPercentage": null,
+            "strikeoutPercentage": null
+          }
+        },
+        {
+          "season": 2023,
+          "team": "福岡ソフトバンク",
+          "totals": {
+            "games": 12,
+            "plateAppearances": 0,
+            "atBats": 0,
+            "runs": 0,
+            "hits": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 0,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 0,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0,
+            "onBasePercentage": 0,
+            "sluggingPercentage": 0,
+            "ops": 0,
+            "iso": 0,
+            "walkPercentage": null,
+            "strikeoutPercentage": null
+          }
+        },
+        {
+          "season": 2024,
+          "team": "福岡ソフトバンク",
+          "totals": {
+            "games": 12,
+            "plateAppearances": 0,
+            "atBats": 0,
+            "runs": 0,
+            "hits": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 0,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 0,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0,
+            "onBasePercentage": 0,
+            "sluggingPercentage": 0,
+            "ops": 0,
+            "iso": 0,
+            "walkPercentage": null,
+            "strikeoutPercentage": null
+          }
+        },
+        {
+          "season": 2025,
+          "team": "福岡ソフトバンク",
+          "totals": {
+            "games": 38,
+            "plateAppearances": 0,
+            "atBats": 0,
+            "runs": 0,
+            "hits": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 0,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 0,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0,
+            "onBasePercentage": 0,
+            "sluggingPercentage": 0,
+            "ops": 0,
+            "iso": 0,
+            "walkPercentage": null,
+            "strikeoutPercentage": null
+          }
+        },
+        {
+          "season": 2026,
+          "team": "福岡ソフトバンク",
+          "totals": {
+            "games": 10,
+            "plateAppearances": 0,
+            "atBats": 0,
+            "runs": 0,
+            "hits": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 0,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 0,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0,
+            "onBasePercentage": 0,
+            "sluggingPercentage": 0,
+            "ops": 0,
+            "iso": 0,
+            "walkPercentage": null,
+            "strikeoutPercentage": null
+          }
+        },
+        {
+          "season": 2026,
+          "team": "横浜DeNA",
+          "totals": {
+            "games": 11,
+            "plateAppearances": 15,
+            "atBats": 14,
+            "runs": 1,
+            "hits": 1,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 1,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 1,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 7,
+            "groundedIntoDoublePlays": 1
+          },
+          "metrics": {
+            "battingAverage": 0.071,
+            "onBasePercentage": 0.071,
+            "sluggingPercentage": 0.071,
+            "ops": 0.142,
+            "iso": 0,
+            "walkPercentage": 0,
+            "strikeoutPercentage": 0.467
+          }
+        }
+      ],
+      "pitchingStats": [
+        {
+          "season": 2020,
+          "team": "福岡ソフトバンク",
+          "totals": {
+            "games": 1,
+            "wins": 0,
+            "losses": 0,
+            "saves": 0,
+            "holds": 0,
+            "holdPoints": 0,
+            "completeGames": 0,
+            "shutouts": 0,
+            "noWalkCompleteGames": 0,
+            "winningPercentage": 0,
+            "battersFaced": 8,
+            "innings": 1,
+            "hitsAllowed": 2,
+            "homeRunsAllowed": 0,
+            "walksAllowed": 3,
+            "hitByPitch": 0,
+            "strikeouts": 2,
+            "wildPitches": 0,
+            "balks": 0,
+            "runsAllowed": 3,
+            "earnedRuns": 3
+          },
+          "metrics": {
+            "era": 27,
+            "whip": 5,
+            "strikeoutsPerNine": 18,
+            "walksPerNine": 27,
+            "strikeoutToWalkRatio": 0.667
+          }
+        },
+        {
+          "season": 2021,
+          "team": "福岡ソフトバンク",
+          "totals": {
+            "games": 8,
+            "wins": 0,
+            "losses": 0,
+            "saves": 0,
+            "holds": 0,
+            "holdPoints": 0,
+            "completeGames": 0,
+            "shutouts": 0,
+            "noWalkCompleteGames": 0,
+            "winningPercentage": 0,
+            "battersFaced": 34,
+            "innings": 10.333,
+            "hitsAllowed": 3,
+            "homeRunsAllowed": 1,
+            "walksAllowed": 2,
+            "hitByPitch": 0,
+            "strikeouts": 9,
+            "wildPitches": 0,
+            "balks": 0,
+            "runsAllowed": 1,
+            "earnedRuns": 1
+          },
+          "metrics": {
+            "era": 0.87,
+            "whip": 0.484,
+            "strikeoutsPerNine": 7.839,
+            "walksPerNine": 1.742,
+            "strikeoutToWalkRatio": 4.5
+          }
+        },
+        {
+          "season": 2022,
+          "team": "福岡ソフトバンク",
+          "totals": {
+            "games": 9,
+            "wins": 1,
+            "losses": 0,
+            "saves": 0,
+            "holds": 0,
+            "holdPoints": 1,
+            "completeGames": 0,
+            "shutouts": 0,
+            "noWalkCompleteGames": 0,
+            "winningPercentage": 1,
+            "battersFaced": 54,
+            "innings": 11.333,
+            "hitsAllowed": 14,
+            "homeRunsAllowed": 2,
+            "walksAllowed": 6,
+            "hitByPitch": 0,
+            "strikeouts": 11,
+            "wildPitches": 1,
+            "balks": 0,
+            "runsAllowed": 7,
+            "earnedRuns": 7
+          },
+          "metrics": {
+            "era": 5.56,
+            "whip": 1.765,
+            "strikeoutsPerNine": 8.735,
+            "walksPerNine": 4.765,
+            "strikeoutToWalkRatio": 1.833
+          }
+        },
+        {
+          "season": 2023,
+          "team": "福岡ソフトバンク",
+          "totals": {
+            "games": 12,
+            "wins": 0,
+            "losses": 1,
+            "saves": 0,
+            "holds": 0,
+            "holdPoints": 0,
+            "completeGames": 0,
+            "shutouts": 0,
+            "noWalkCompleteGames": 0,
+            "winningPercentage": 0,
+            "battersFaced": 75,
+            "innings": 18,
+            "hitsAllowed": 18,
+            "homeRunsAllowed": 3,
+            "walksAllowed": 3,
+            "hitByPitch": 1,
+            "strikeouts": 15,
+            "wildPitches": 0,
+            "balks": 0,
+            "runsAllowed": 11,
+            "earnedRuns": 8
+          },
+          "metrics": {
+            "era": 4,
+            "whip": 1.167,
+            "strikeoutsPerNine": 7.5,
+            "walksPerNine": 1.5,
+            "strikeoutToWalkRatio": 5
+          }
+        },
+        {
+          "season": 2024,
+          "team": "福岡ソフトバンク",
+          "totals": {
+            "games": 12,
+            "wins": 2,
+            "losses": 0,
+            "saves": 0,
+            "holds": 3,
+            "holdPoints": 5,
+            "completeGames": 0,
+            "shutouts": 0,
+            "noWalkCompleteGames": 0,
+            "winningPercentage": 1,
+            "battersFaced": 46,
+            "innings": 11.667,
+            "hitsAllowed": 8,
+            "homeRunsAllowed": 0,
+            "walksAllowed": 3,
+            "hitByPitch": 0,
+            "strikeouts": 15,
+            "wildPitches": 0,
+            "balks": 1,
+            "runsAllowed": 4,
+            "earnedRuns": 3
+          },
+          "metrics": {
+            "era": 2.31,
+            "whip": 0.943,
+            "strikeoutsPerNine": 11.571,
+            "walksPerNine": 2.314,
+            "strikeoutToWalkRatio": 5
+          }
+        },
+        {
+          "season": 2025,
+          "team": "福岡ソフトバンク",
+          "totals": {
+            "games": 38,
+            "wins": 1,
+            "losses": 1,
+            "saves": 0,
+            "holds": 5,
+            "holdPoints": 6,
+            "completeGames": 0,
+            "shutouts": 0,
+            "noWalkCompleteGames": 0,
+            "winningPercentage": 0.5,
+            "battersFaced": 154,
+            "innings": 34.667,
+            "hitsAllowed": 36,
+            "homeRunsAllowed": 7,
+            "walksAllowed": 12,
+            "hitByPitch": 0,
+            "strikeouts": 41,
+            "wildPitches": 2,
+            "balks": 0,
+            "runsAllowed": 21,
+            "earnedRuns": 18
+          },
+          "metrics": {
+            "era": 4.67,
+            "whip": 1.385,
+            "strikeoutsPerNine": 10.644,
+            "walksPerNine": 3.115,
+            "strikeoutToWalkRatio": 3.417
+          }
+        },
+        {
+          "season": 2026,
+          "team": "福岡ソフトバンク",
+          "totals": {
+            "games": 10,
+            "wins": 0,
+            "losses": 2,
+            "saves": 0,
+            "holds": 0,
+            "holdPoints": 0,
+            "completeGames": 0,
+            "shutouts": 0,
+            "noWalkCompleteGames": 0,
+            "winningPercentage": 0,
+            "battersFaced": 47,
+            "innings": 12,
+            "hitsAllowed": 8,
+            "homeRunsAllowed": 2,
+            "walksAllowed": 3,
+            "hitByPitch": 1,
+            "strikeouts": 19,
+            "wildPitches": 1,
+            "balks": 1,
+            "runsAllowed": 4,
+            "earnedRuns": 4
+          },
+          "metrics": {
+            "era": 3,
+            "whip": 0.917,
+            "strikeoutsPerNine": 14.25,
+            "walksPerNine": 2.25,
+            "strikeoutToWalkRatio": 6.333
+          }
+        },
+        {
+          "season": 2026,
+          "team": "横浜DeNA",
+          "totals": {
+            "games": 11,
+            "wins": 3,
+            "losses": 3,
+            "saves": 0,
+            "holds": 0,
+            "holdPoints": 0,
+            "completeGames": 0,
+            "shutouts": 0,
+            "noWalkCompleteGames": 0,
+            "winningPercentage": 0.5,
+            "battersFaced": 240,
+            "innings": 57,
+            "hitsAllowed": 40,
+            "homeRunsAllowed": 4,
+            "walksAllowed": 28,
+            "hitByPitch": 4,
+            "strikeouts": 63,
+            "wildPitches": 0,
+            "balks": 1,
+            "runsAllowed": 21,
+            "earnedRuns": 20
+          },
+          "metrics": {
+            "era": 3.16,
+            "whip": 1.193,
+            "strikeoutsPerNine": 9.947,
+            "walksPerNine": 4.421,
+            "strikeoutToWalkRatio": 2.25
+          }
+        }
+      ],
+      "career": {
+        "batting": {
+          "seasons": 8,
+          "games": 101,
+          "plateAppearances": 15,
+          "atBats": 14,
+          "runs": 1,
+          "hits": 1,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 0,
+          "totalBases": 1,
+          "rbi": 0,
+          "steals": 0,
+          "walks": 0,
+          "hitByPitch": 0,
+          "strikeouts": 7,
+          "battingAverage": 0.071,
+          "onBasePercentage": 0.067,
+          "sluggingPercentage": 0.071,
+          "ops": 0.138,
+          "iso": 0
+        },
+        "pitching": {
+          "seasons": 8,
+          "games": 101,
+          "wins": 7,
+          "losses": 7,
+          "saves": 0,
+          "holds": 8,
+          "innings": 156,
+          "hitsAllowed": 129,
+          "walksAllowed": 60,
+          "strikeouts": 175,
+          "earnedRuns": 64,
+          "winningPercentage": 0.5,
+          "era": 3.692,
+          "whip": 1.212,
+          "strikeoutsPerNine": 10.096,
+          "walksPerNine": 3.462,
+          "strikeoutToWalkRatio": 2.917
+        }
+      }
+    },
+    "links": {
+      "self": "/players/10j9n4.json"
+    }
+  }
+}

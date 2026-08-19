@@ -1,0 +1,93 @@
+{
+  "data": {
+    "type": "player",
+    "id": "1iammo",
+    "attributes": {
+      "profile": {
+        "familyName": "安藤",
+        "givenName": "銀杜",
+        "familyNameKana": "あんどう",
+        "givenNameKana": "ぎんと",
+        "registeredName": "安藤 銀杜",
+        "registeredNameKana": "あんどう・ぎんと",
+        "url": "https://npb.jp/bis/players/91195152.html",
+        "isActive": true,
+        "details": {
+          "position": "外野手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 198,
+          "weightKg": 110,
+          "birthDate": {
+            "iso": "2003-02-04",
+            "year": 2003,
+            "month": 2,
+            "day": 4
+          },
+          "career": {
+            "raw": "享栄高 - 城西国際大 - 四国・徳島",
+            "entries": [
+              "享栄高",
+              "城西国際大",
+              "四国・徳島"
+            ]
+          },
+          "draft": {
+            "raw": "2025年育成選手ドラフト7位",
+            "year": 2025,
+            "rank": 7,
+            "selection": "development"
+          }
+        }
+      },
+      "battingStats": [],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 0,
+          "games": 0,
+          "plateAppearances": 0,
+          "atBats": 0,
+          "runs": 0,
+          "hits": 0,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 0,
+          "totalBases": 0,
+          "rbi": 0,
+          "steals": 0,
+          "walks": 0,
+          "hitByPitch": 0,
+          "strikeouts": 0,
+          "battingAverage": null,
+          "onBasePercentage": null,
+          "sluggingPercentage": null,
+          "ops": null,
+          "iso": null
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/1iammo.json"
+    }
+  }
+}

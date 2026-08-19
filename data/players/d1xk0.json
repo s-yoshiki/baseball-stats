@@ -1,0 +1,161 @@
+{
+  "data": {
+    "type": "player",
+    "id": "d1xk0",
+    "attributes": {
+      "profile": {
+        "familyName": "櫻井",
+        "givenName": "頼之介",
+        "familyNameKana": "さくらい",
+        "givenNameKana": "よりのすけ",
+        "registeredName": "櫻井 頼之介",
+        "registeredNameKana": "さくらい・よりのすけ",
+        "url": "https://npb.jp/bis/players/21925152.html",
+        "isActive": true,
+        "details": {
+          "position": "投手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 175,
+          "weightKg": 68,
+          "birthDate": {
+            "iso": "2003-07-21",
+            "year": 2003,
+            "month": 7,
+            "day": 21
+          },
+          "career": {
+            "raw": "聖カタリナ学園高 - 東北福祉大",
+            "entries": [
+              "聖カタリナ学園高",
+              "東北福祉大"
+            ]
+          },
+          "draft": {
+            "raw": "2025年ドラフト2位",
+            "year": 2025,
+            "rank": 2,
+            "selection": "regular"
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2026,
+          "team": "中 日",
+          "totals": {
+            "games": 11,
+            "plateAppearances": 15,
+            "atBats": 12,
+            "runs": 0,
+            "hits": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 0,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 2,
+            "sacrificeFlies": 0,
+            "walks": 1,
+            "hitByPitch": 0,
+            "strikeouts": 9,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0,
+            "onBasePercentage": 0.077,
+            "sluggingPercentage": 0,
+            "ops": 0.077,
+            "iso": 0,
+            "walkPercentage": 0.067,
+            "strikeoutPercentage": 0.6
+          }
+        }
+      ],
+      "pitchingStats": [
+        {
+          "season": 2026,
+          "team": "中 日",
+          "totals": {
+            "games": 11,
+            "wins": 2,
+            "losses": 5,
+            "saves": 0,
+            "holds": 0,
+            "holdPoints": 0,
+            "completeGames": 0,
+            "shutouts": 0,
+            "noWalkCompleteGames": 0,
+            "winningPercentage": 0.286,
+            "battersFaced": 239,
+            "innings": 52.667,
+            "hitsAllowed": 63,
+            "homeRunsAllowed": 9,
+            "walksAllowed": 19,
+            "hitByPitch": 0,
+            "strikeouts": 54,
+            "wildPitches": 1,
+            "balks": 0,
+            "runsAllowed": 35,
+            "earnedRuns": 34
+          },
+          "metrics": {
+            "era": 5.81,
+            "whip": 1.557,
+            "strikeoutsPerNine": 9.228,
+            "walksPerNine": 3.247,
+            "strikeoutToWalkRatio": 2.842
+          }
+        }
+      ],
+      "career": {
+        "batting": {
+          "seasons": 1,
+          "games": 11,
+          "plateAppearances": 15,
+          "atBats": 12,
+          "runs": 0,
+          "hits": 0,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 0,
+          "totalBases": 0,
+          "rbi": 0,
+          "steals": 0,
+          "walks": 1,
+          "hitByPitch": 0,
+          "strikeouts": 9,
+          "battingAverage": 0,
+          "onBasePercentage": 0.067,
+          "sluggingPercentage": 0,
+          "ops": 0.067,
+          "iso": 0
+        },
+        "pitching": {
+          "seasons": 1,
+          "games": 11,
+          "wins": 2,
+          "losses": 5,
+          "saves": 0,
+          "holds": 0,
+          "innings": 52.667,
+          "hitsAllowed": 63,
+          "walksAllowed": 19,
+          "strikeouts": 54,
+          "earnedRuns": 34,
+          "winningPercentage": 0.286,
+          "era": 5.81,
+          "whip": 1.557,
+          "strikeoutsPerNine": 9.228,
+          "walksPerNine": 3.247,
+          "strikeoutToWalkRatio": 2.842
+        }
+      }
+    },
+    "links": {
+      "self": "/players/d1xk0.json"
+    }
+  }
+}

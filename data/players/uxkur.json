@@ -1,0 +1,191 @@
+{
+  "data": {
+    "type": "player",
+    "id": "uxkur",
+    "attributes": {
+      "profile": {
+        "familyName": "小森",
+        "givenName": "航大郎",
+        "familyNameKana": "こもり",
+        "givenNameKana": "こうたろう",
+        "registeredName": "小森 航大郎",
+        "registeredNameKana": "こもり・こうたろう",
+        "url": "https://npb.jp/bis/players/51955155.html",
+        "isActive": true,
+        "details": {
+          "position": "内野手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 173,
+          "weightKg": 83,
+          "birthDate": {
+            "iso": "2003-04-30",
+            "year": 2003,
+            "month": 4,
+            "day": 30
+          },
+          "career": {
+            "raw": "宇部工",
+            "entries": [
+              "宇部工"
+            ]
+          },
+          "draft": {
+            "raw": "2021年ドラフト4位",
+            "year": 2021,
+            "rank": 4,
+            "selection": "regular"
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2024,
+          "team": "東京ヤクルト",
+          "totals": {
+            "games": 4,
+            "plateAppearances": 5,
+            "atBats": 5,
+            "runs": 0,
+            "hits": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 0,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 0,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0,
+            "onBasePercentage": 0,
+            "sluggingPercentage": 0,
+            "ops": 0,
+            "iso": 0,
+            "walkPercentage": 0,
+            "strikeoutPercentage": 0
+          }
+        },
+        {
+          "season": 2025,
+          "team": "東北楽天",
+          "totals": {
+            "games": 33,
+            "plateAppearances": 80,
+            "atBats": 76,
+            "runs": 8,
+            "hits": 15,
+            "doubles": 1,
+            "triples": 0,
+            "homeRuns": 1,
+            "totalBases": 19,
+            "rbi": 3,
+            "steals": 5,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 1,
+            "walks": 2,
+            "hitByPitch": 1,
+            "strikeouts": 21,
+            "groundedIntoDoublePlays": 1
+          },
+          "metrics": {
+            "battingAverage": 0.197,
+            "onBasePercentage": 0.225,
+            "sluggingPercentage": 0.25,
+            "ops": 0.475,
+            "iso": 0.053,
+            "walkPercentage": 0.025,
+            "strikeoutPercentage": 0.263
+          }
+        },
+        {
+          "season": 2026,
+          "team": "東北楽天",
+          "totals": {
+            "games": 8,
+            "plateAppearances": 9,
+            "atBats": 8,
+            "runs": 1,
+            "hits": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 0,
+            "rbi": 1,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 1,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 5,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0,
+            "onBasePercentage": 0,
+            "sluggingPercentage": 0,
+            "ops": 0,
+            "iso": 0,
+            "walkPercentage": 0,
+            "strikeoutPercentage": 0.556
+          }
+        }
+      ],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 3,
+          "games": 45,
+          "plateAppearances": 94,
+          "atBats": 89,
+          "runs": 9,
+          "hits": 15,
+          "doubles": 1,
+          "triples": 0,
+          "homeRuns": 1,
+          "totalBases": 19,
+          "rbi": 4,
+          "steals": 5,
+          "walks": 2,
+          "hitByPitch": 1,
+          "strikeouts": 26,
+          "battingAverage": 0.169,
+          "onBasePercentage": 0.191,
+          "sluggingPercentage": 0.213,
+          "ops": 0.404,
+          "iso": 0.044
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/uxkur.json"
+    }
+  }
+}

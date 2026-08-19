@@ -1,0 +1,159 @@
+{
+  "data": {
+    "type": "player",
+    "id": "16bdxx",
+    "attributes": {
+      "profile": {
+        "familyName": "辰見",
+        "givenName": "鴻之介",
+        "familyNameKana": "たつみ",
+        "givenNameKana": "こうのすけ",
+        "registeredName": "辰見 鴻之介",
+        "registeredNameKana": "たつみ・こうのすけ",
+        "url": "https://npb.jp/bis/players/71075157.html",
+        "isActive": true,
+        "details": {
+          "position": "内野手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 176,
+          "weightKg": 67,
+          "birthDate": {
+            "iso": "2000-11-24",
+            "year": 2000,
+            "month": 11,
+            "day": 24
+          },
+          "career": {
+            "raw": "香住丘高 - 西南学院大",
+            "entries": [
+              "香住丘高",
+              "西南学院大"
+            ]
+          },
+          "draft": {
+            "raw": "2022年育成選手ドラフト1位",
+            "year": 2022,
+            "rank": 1,
+            "selection": "development"
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2024,
+          "team": "東北楽天",
+          "totals": {
+            "games": 2,
+            "plateAppearances": 3,
+            "atBats": 3,
+            "runs": 1,
+            "hits": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 0,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 2,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0,
+            "onBasePercentage": 0,
+            "sluggingPercentage": 0,
+            "ops": 0,
+            "iso": 0,
+            "walkPercentage": 0,
+            "strikeoutPercentage": 0.667
+          }
+        },
+        {
+          "season": 2026,
+          "team": "広島東洋",
+          "totals": {
+            "games": 49,
+            "plateAppearances": 20,
+            "atBats": 18,
+            "runs": 11,
+            "hits": 3,
+            "doubles": 1,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 4,
+            "rbi": 2,
+            "steals": 21,
+            "caughtStealing": 6,
+            "sacrificeHits": 1,
+            "sacrificeFlies": 0,
+            "walks": 1,
+            "hitByPitch": 0,
+            "strikeouts": 6,
+            "groundedIntoDoublePlays": 1
+          },
+          "metrics": {
+            "battingAverage": 0.167,
+            "onBasePercentage": 0.211,
+            "sluggingPercentage": 0.222,
+            "ops": 0.433,
+            "iso": 0.055,
+            "walkPercentage": 0.05,
+            "strikeoutPercentage": 0.3
+          }
+        }
+      ],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 2,
+          "games": 51,
+          "plateAppearances": 23,
+          "atBats": 21,
+          "runs": 12,
+          "hits": 3,
+          "doubles": 1,
+          "triples": 0,
+          "homeRuns": 0,
+          "totalBases": 4,
+          "rbi": 2,
+          "steals": 21,
+          "walks": 1,
+          "hitByPitch": 0,
+          "strikeouts": 8,
+          "battingAverage": 0.143,
+          "onBasePercentage": 0.174,
+          "sluggingPercentage": 0.19,
+          "ops": 0.364,
+          "iso": 0.047
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/16bdxx.json"
+    }
+  }
+}

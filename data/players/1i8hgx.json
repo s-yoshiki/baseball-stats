@@ -1,0 +1,191 @@
+{
+  "data": {
+    "type": "player",
+    "id": "1i8hgx",
+    "attributes": {
+      "profile": {
+        "familyName": "笹川",
+        "givenName": "吉康",
+        "familyNameKana": "ささがわ",
+        "givenNameKana": "よしやす",
+        "registeredName": "笹川 吉康",
+        "registeredNameKana": "ささがわ・よしやす",
+        "url": "https://npb.jp/bis/players/91095153.html",
+        "isActive": true,
+        "details": {
+          "position": "外野手",
+          "throws": "左",
+          "bats": "左",
+          "heightCm": 194,
+          "weightKg": 96,
+          "birthDate": {
+            "iso": "2002-05-31",
+            "year": 2002,
+            "month": 5,
+            "day": 31
+          },
+          "career": {
+            "raw": "横浜商",
+            "entries": [
+              "横浜商"
+            ]
+          },
+          "draft": {
+            "raw": "2020年ドラフト2位",
+            "year": 2020,
+            "rank": 2,
+            "selection": "regular"
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2024,
+          "team": "福岡ソフトバンク",
+          "totals": {
+            "games": 7,
+            "plateAppearances": 21,
+            "atBats": 21,
+            "runs": 3,
+            "hits": 6,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 1,
+            "totalBases": 9,
+            "rbi": 2,
+            "steals": 2,
+            "caughtStealing": 1,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 6,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0.286,
+            "onBasePercentage": 0.286,
+            "sluggingPercentage": 0.429,
+            "ops": 0.715,
+            "iso": 0.143,
+            "walkPercentage": 0,
+            "strikeoutPercentage": 0.286
+          }
+        },
+        {
+          "season": 2025,
+          "team": "福岡ソフトバンク",
+          "totals": {
+            "games": 26,
+            "plateAppearances": 63,
+            "atBats": 61,
+            "runs": 8,
+            "hits": 13,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 1,
+            "totalBases": 16,
+            "rbi": 8,
+            "steals": 2,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 1,
+            "walks": 0,
+            "hitByPitch": 1,
+            "strikeouts": 16,
+            "groundedIntoDoublePlays": 1
+          },
+          "metrics": {
+            "battingAverage": 0.213,
+            "onBasePercentage": 0.222,
+            "sluggingPercentage": 0.262,
+            "ops": 0.484,
+            "iso": 0.049,
+            "walkPercentage": 0,
+            "strikeoutPercentage": 0.254
+          }
+        },
+        {
+          "season": 2026,
+          "team": "福岡ソフトバンク",
+          "totals": {
+            "games": 10,
+            "plateAppearances": 25,
+            "atBats": 24,
+            "runs": 2,
+            "hits": 4,
+            "doubles": 3,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 7,
+            "rbi": 2,
+            "steals": 0,
+            "caughtStealing": 1,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 1,
+            "hitByPitch": 0,
+            "strikeouts": 5,
+            "groundedIntoDoublePlays": 1
+          },
+          "metrics": {
+            "battingAverage": 0.167,
+            "onBasePercentage": 0.2,
+            "sluggingPercentage": 0.292,
+            "ops": 0.492,
+            "iso": 0.125,
+            "walkPercentage": 0.04,
+            "strikeoutPercentage": 0.2
+          }
+        }
+      ],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 3,
+          "games": 43,
+          "plateAppearances": 109,
+          "atBats": 106,
+          "runs": 13,
+          "hits": 23,
+          "doubles": 3,
+          "triples": 0,
+          "homeRuns": 2,
+          "totalBases": 32,
+          "rbi": 12,
+          "steals": 4,
+          "walks": 1,
+          "hitByPitch": 1,
+          "strikeouts": 27,
+          "battingAverage": 0.217,
+          "onBasePercentage": 0.229,
+          "sluggingPercentage": 0.302,
+          "ops": 0.531,
+          "iso": 0.085
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/1i8hgx.json"
+    }
+  }
+}

@@ -1,0 +1,228 @@
+{
+  "data": {
+    "type": "player",
+    "id": "122ztq",
+    "attributes": {
+      "profile": {
+        "familyName": "N.ウォルターズ",
+        "givenName": null,
+        "familyNameKana": "NASH",
+        "givenNameKana": "WALTERS",
+        "registeredName": "N.ウォルターズ",
+        "registeredNameKana": "ナッシュ・ウォルターズ",
+        "url": "https://npb.jp/bis/players/63965150.html",
+        "isActive": true,
+        "details": {
+          "position": "投手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 195,
+          "weightKg": 102,
+          "birthDate": {
+            "iso": "1997-05-18",
+            "year": 1997,
+            "month": 5,
+            "day": 18
+          },
+          "career": {
+            "raw": "リンデール高 - エンゼルス",
+            "entries": [
+              "リンデール高",
+              "エンゼルス"
+            ]
+          },
+          "draft": {
+            "raw": null,
+            "year": null,
+            "rank": null,
+            "selection": null
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2025,
+          "team": "中 日",
+          "totals": {
+            "games": 3,
+            "plateAppearances": 0,
+            "atBats": 0,
+            "runs": 0,
+            "hits": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 0,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 0,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0,
+            "onBasePercentage": 0,
+            "sluggingPercentage": 0,
+            "ops": 0,
+            "iso": 0,
+            "walkPercentage": null,
+            "strikeoutPercentage": null
+          }
+        },
+        {
+          "season": 2026,
+          "team": "東京ヤクルト",
+          "totals": {
+            "games": 9,
+            "plateAppearances": 8,
+            "atBats": 7,
+            "runs": 0,
+            "hits": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 0,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 1,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 4,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0,
+            "onBasePercentage": 0,
+            "sluggingPercentage": 0,
+            "ops": 0,
+            "iso": 0,
+            "walkPercentage": 0,
+            "strikeoutPercentage": 0.5
+          }
+        }
+      ],
+      "pitchingStats": [
+        {
+          "season": 2025,
+          "team": "中 日",
+          "totals": {
+            "games": 3,
+            "wins": 0,
+            "losses": 0,
+            "saves": 0,
+            "holds": 0,
+            "holdPoints": 0,
+            "completeGames": 0,
+            "shutouts": 0,
+            "noWalkCompleteGames": 0,
+            "winningPercentage": 0,
+            "battersFaced": 22,
+            "innings": 5,
+            "hitsAllowed": 3,
+            "homeRunsAllowed": 0,
+            "walksAllowed": 5,
+            "hitByPitch": 0,
+            "strikeouts": 5,
+            "wildPitches": 0,
+            "balks": 0,
+            "runsAllowed": 0,
+            "earnedRuns": 0
+          },
+          "metrics": {
+            "era": 0,
+            "whip": 1.6,
+            "strikeoutsPerNine": 9,
+            "walksPerNine": 9,
+            "strikeoutToWalkRatio": 1
+          }
+        },
+        {
+          "season": 2026,
+          "team": "東京ヤクルト",
+          "totals": {
+            "games": 9,
+            "wins": 1,
+            "losses": 3,
+            "saves": 0,
+            "holds": 0,
+            "holdPoints": 0,
+            "completeGames": 0,
+            "shutouts": 0,
+            "noWalkCompleteGames": 0,
+            "winningPercentage": 0.25,
+            "battersFaced": 130,
+            "innings": 28.333,
+            "hitsAllowed": 30,
+            "homeRunsAllowed": 3,
+            "walksAllowed": 12,
+            "hitByPitch": 4,
+            "strikeouts": 26,
+            "wildPitches": 1,
+            "balks": 0,
+            "runsAllowed": 17,
+            "earnedRuns": 17
+          },
+          "metrics": {
+            "era": 5.4,
+            "whip": 1.482,
+            "strikeoutsPerNine": 8.259,
+            "walksPerNine": 3.812,
+            "strikeoutToWalkRatio": 2.167
+          }
+        }
+      ],
+      "career": {
+        "batting": {
+          "seasons": 2,
+          "games": 12,
+          "plateAppearances": 8,
+          "atBats": 7,
+          "runs": 0,
+          "hits": 0,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 0,
+          "totalBases": 0,
+          "rbi": 0,
+          "steals": 0,
+          "walks": 0,
+          "hitByPitch": 0,
+          "strikeouts": 4,
+          "battingAverage": 0,
+          "onBasePercentage": 0,
+          "sluggingPercentage": 0,
+          "ops": 0,
+          "iso": 0
+        },
+        "pitching": {
+          "seasons": 2,
+          "games": 12,
+          "wins": 1,
+          "losses": 3,
+          "saves": 0,
+          "holds": 0,
+          "innings": 33.333,
+          "hitsAllowed": 33,
+          "walksAllowed": 17,
+          "strikeouts": 31,
+          "earnedRuns": 17,
+          "winningPercentage": 0.25,
+          "era": 4.59,
+          "whip": 1.5,
+          "strikeoutsPerNine": 8.37,
+          "walksPerNine": 4.59,
+          "strikeoutToWalkRatio": 1.824
+        }
+      }
+    },
+    "links": {
+      "self": "/players/122ztq.json"
+    }
+  }
+}

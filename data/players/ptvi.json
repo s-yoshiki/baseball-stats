@@ -26,7 +26,9 @@
           },
           "career": {
             "raw": "新湊高",
-            "entries": ["新湊高"]
+            "entries": [
+              "新湊高"
+            ]
           },
           "draft": {
             "raw": "2008年育成選手ドラフト5位",
@@ -34,48 +36,12 @@
             "rank": 5,
             "selection": "development"
           }
-        },
-        "rawDetails": {
-          "npb": {
-            "ポジション": "投手",
-            "投打": "右投右打",
-            "身長／体重": "183cm／90kg",
-            "生年月日": "1991年3月6日",
-            "経歴": "新湊高",
-            "ドラフト": "2008年育成選手ドラフト5位"
-          }
         }
       },
       "battingStats": [
         {
           "season": 2013,
           "team": "千葉ロッテ",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2013",
-            "所属球団": "千葉ロッテ",
-            "試合": "24",
-            "打席": "4",
-            "打数": "1",
-            "得点": "0",
-            "安打": "0",
-            "二塁打": "0",
-            "三塁打": "0",
-            "本塁打": "0",
-            "塁打": "0",
-            "打点": "0",
-            "盗塁": "0",
-            "盗塁刺": "0",
-            "犠打": "1",
-            "犠飛": "0",
-            "四球": "2",
-            "死球": "0",
-            "三振": "1",
-            "併殺打": "0",
-            "打率": ".000",
-            "長打率": ".000",
-            "出塁率": ".667"
-          },
           "totals": {
             "games": 24,
             "plateAppearances": 4,
@@ -109,32 +75,6 @@
         {
           "season": 2014,
           "team": "千葉ロッテ",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2014",
-            "所属球団": "千葉ロッテ",
-            "試合": "57",
-            "打席": "0",
-            "打数": "0",
-            "得点": "0",
-            "安打": "0",
-            "二塁打": "0",
-            "三塁打": "0",
-            "本塁打": "0",
-            "塁打": "0",
-            "打点": "0",
-            "盗塁": "0",
-            "盗塁刺": "0",
-            "犠打": "0",
-            "犠飛": "0",
-            "四球": "0",
-            "死球": "0",
-            "三振": "0",
-            "併殺打": "0",
-            "打率": ".000",
-            "長打率": ".000",
-            "出塁率": ".000"
-          },
           "totals": {
             "games": 57,
             "plateAppearances": 0,
@@ -168,32 +108,6 @@
         {
           "season": 2015,
           "team": "千葉ロッテ",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2015",
-            "所属球団": "千葉ロッテ",
-            "試合": "54",
-            "打席": "0",
-            "打数": "0",
-            "得点": "0",
-            "安打": "0",
-            "二塁打": "0",
-            "三塁打": "0",
-            "本塁打": "0",
-            "塁打": "0",
-            "打点": "0",
-            "盗塁": "0",
-            "盗塁刺": "0",
-            "犠打": "0",
-            "犠飛": "0",
-            "四球": "0",
-            "死球": "0",
-            "三振": "0",
-            "併殺打": "0",
-            "打率": ".000",
-            "長打率": ".000",
-            "出塁率": ".000"
-          },
           "totals": {
             "games": 54,
             "plateAppearances": 0,
@@ -227,32 +141,6 @@
         {
           "season": 2016,
           "team": "千葉ロッテ",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2016",
-            "所属球団": "千葉ロッテ",
-            "試合": "42",
-            "打席": "0",
-            "打数": "0",
-            "得点": "0",
-            "安打": "0",
-            "二塁打": "0",
-            "三塁打": "0",
-            "本塁打": "0",
-            "塁打": "0",
-            "打点": "0",
-            "盗塁": "0",
-            "盗塁刺": "0",
-            "犠打": "0",
-            "犠飛": "0",
-            "四球": "0",
-            "死球": "0",
-            "三振": "0",
-            "併殺打": "0",
-            "打率": ".000",
-            "長打率": ".000",
-            "出塁率": ".000"
-          },
           "totals": {
             "games": 42,
             "plateAppearances": 0,
@@ -286,32 +174,6 @@
         {
           "season": 2017,
           "team": "千葉ロッテ",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2017",
-            "所属球団": "千葉ロッテ",
-            "試合": "5",
-            "打席": "0",
-            "打数": "0",
-            "得点": "0",
-            "安打": "0",
-            "二塁打": "0",
-            "三塁打": "0",
-            "本塁打": "0",
-            "塁打": "0",
-            "打点": "0",
-            "盗塁": "0",
-            "盗塁刺": "0",
-            "犠打": "0",
-            "犠飛": "0",
-            "四球": "0",
-            "死球": "0",
-            "三振": "0",
-            "併殺打": "0",
-            "打率": ".000",
-            "長打率": ".000",
-            "出塁率": ".000"
-          },
           "totals": {
             "games": 5,
             "plateAppearances": 0,
@@ -345,32 +207,6 @@
         {
           "season": 2018,
           "team": "千葉ロッテ",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2018",
-            "所属球団": "千葉ロッテ",
-            "試合": "14",
-            "打席": "0",
-            "打数": "0",
-            "得点": "0",
-            "安打": "0",
-            "二塁打": "0",
-            "三塁打": "0",
-            "本塁打": "0",
-            "塁打": "0",
-            "打点": "0",
-            "盗塁": "0",
-            "盗塁刺": "0",
-            "犠打": "0",
-            "犠飛": "0",
-            "四球": "0",
-            "死球": "0",
-            "三振": "0",
-            "併殺打": "0",
-            "打率": ".000",
-            "長打率": ".000",
-            "出塁率": ".000"
-          },
           "totals": {
             "games": 14,
             "plateAppearances": 0,
@@ -404,32 +240,6 @@
         {
           "season": 2019,
           "team": "千葉ロッテ",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2019",
-            "所属球団": "千葉ロッテ",
-            "試合": "37",
-            "打席": "0",
-            "打数": "0",
-            "得点": "0",
-            "安打": "0",
-            "二塁打": "0",
-            "三塁打": "0",
-            "本塁打": "0",
-            "塁打": "0",
-            "打点": "0",
-            "盗塁": "0",
-            "盗塁刺": "0",
-            "犠打": "0",
-            "犠飛": "0",
-            "四球": "0",
-            "死球": "0",
-            "三振": "0",
-            "併殺打": "0",
-            "打率": ".000",
-            "長打率": ".000",
-            "出塁率": ".000"
-          },
           "totals": {
             "games": 37,
             "plateAppearances": 0,
@@ -463,32 +273,6 @@
         {
           "season": 2022,
           "team": "千葉ロッテ",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2022",
-            "所属球団": "千葉ロッテ",
-            "試合": "37",
-            "打席": "0",
-            "打数": "0",
-            "得点": "0",
-            "安打": "0",
-            "二塁打": "0",
-            "三塁打": "0",
-            "本塁打": "0",
-            "塁打": "0",
-            "打点": "0",
-            "盗塁": "0",
-            "盗塁刺": "0",
-            "犠打": "0",
-            "犠飛": "0",
-            "四球": "0",
-            "死球": "0",
-            "三振": "0",
-            "併殺打": "0",
-            "打率": ".000",
-            "長打率": ".000",
-            "出塁率": ".000"
-          },
           "totals": {
             "games": 37,
             "plateAppearances": 0,
@@ -522,32 +306,6 @@
         {
           "season": 2023,
           "team": "千葉ロッテ",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2023",
-            "所属球団": "千葉ロッテ",
-            "試合": "18",
-            "打席": "0",
-            "打数": "0",
-            "得点": "0",
-            "安打": "0",
-            "二塁打": "0",
-            "三塁打": "0",
-            "本塁打": "0",
-            "塁打": "0",
-            "打点": "0",
-            "盗塁": "0",
-            "盗塁刺": "0",
-            "犠打": "0",
-            "犠飛": "0",
-            "四球": "0",
-            "死球": "0",
-            "三振": "0",
-            "併殺打": "0",
-            "打率": ".000",
-            "長打率": ".000",
-            "出塁率": ".000"
-          },
           "totals": {
             "games": 18,
             "plateAppearances": 0,
@@ -581,32 +339,6 @@
         {
           "season": 2024,
           "team": "千葉ロッテ",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2024",
-            "所属球団": "千葉ロッテ",
-            "試合": "20",
-            "打席": "3",
-            "打数": "3",
-            "得点": "0",
-            "安打": "0",
-            "二塁打": "0",
-            "三塁打": "0",
-            "本塁打": "0",
-            "塁打": "0",
-            "打点": "0",
-            "盗塁": "0",
-            "盗塁刺": "0",
-            "犠打": "0",
-            "犠飛": "0",
-            "四球": "0",
-            "死球": "0",
-            "三振": "3",
-            "併殺打": "0",
-            "打率": ".000",
-            "長打率": ".000",
-            "出塁率": ".000"
-          },
           "totals": {
             "games": 20,
             "plateAppearances": 3,
@@ -640,32 +372,6 @@
         {
           "season": 2025,
           "team": "千葉ロッテ",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2025",
-            "所属球団": "千葉ロッテ",
-            "試合": "9",
-            "打席": "0",
-            "打数": "0",
-            "得点": "0",
-            "安打": "0",
-            "二塁打": "0",
-            "三塁打": "0",
-            "本塁打": "0",
-            "塁打": "0",
-            "打点": "0",
-            "盗塁": "0",
-            "盗塁刺": "0",
-            "犠打": "0",
-            "犠飛": "0",
-            "四球": "0",
-            "死球": "0",
-            "三振": "0",
-            "併殺打": "0",
-            "打率": ".000",
-            "長打率": ".000",
-            "出塁率": ".000"
-          },
           "totals": {
             "games": 9,
             "plateAppearances": 0,
@@ -699,32 +405,6 @@
         {
           "season": 2026,
           "team": "千葉ロッテ",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2026",
-            "所属球団": "千葉ロッテ",
-            "試合": "6",
-            "打席": "0",
-            "打数": "0",
-            "得点": "0",
-            "安打": "0",
-            "二塁打": "0",
-            "三塁打": "0",
-            "本塁打": "0",
-            "塁打": "0",
-            "打点": "0",
-            "盗塁": "0",
-            "盗塁刺": "0",
-            "犠打": "0",
-            "犠飛": "0",
-            "四球": "0",
-            "死球": "0",
-            "三振": "0",
-            "併殺打": "0",
-            "打率": ".000",
-            "長打率": ".000",
-            "出塁率": ".000"
-          },
           "totals": {
             "games": 6,
             "plateAppearances": 0,
@@ -760,33 +440,6 @@
         {
           "season": 2013,
           "team": "千葉ロッテ",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2013",
-            "所属球団": "千葉ロッテ",
-            "登板": "24",
-            "勝利": "9",
-            "敗北": "6",
-            "セーブ": "0",
-            "H": "0",
-            "HP": "0",
-            "完投": "0",
-            "完封勝": "0",
-            "無四球": "0",
-            "勝率": ".600",
-            "打者": "588",
-            "投球回": "139.2",
-            "安打": "140",
-            "本塁打": "5",
-            "四球": "40",
-            "死球": "3",
-            "三振": "106",
-            "暴投": "8",
-            "ボーク": "0",
-            "失点": "61",
-            "自責点": "59",
-            "防御率": "3.80"
-          },
           "totals": {
             "games": 24,
             "wins": 9,
@@ -799,7 +452,7 @@
             "noWalkCompleteGames": 0,
             "winningPercentage": 0.6,
             "battersFaced": 588,
-            "innings": 139.66666666666666,
+            "innings": 139.667,
             "hitsAllowed": 140,
             "homeRunsAllowed": 5,
             "walksAllowed": 40,
@@ -821,33 +474,6 @@
         {
           "season": 2014,
           "team": "千葉ロッテ",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2014",
-            "所属球団": "千葉ロッテ",
-            "登板": "57",
-            "勝利": "1",
-            "敗北": "1",
-            "セーブ": "31",
-            "H": "9",
-            "HP": "10",
-            "完投": "0",
-            "完封勝": "0",
-            "無四球": "0",
-            "勝率": ".500",
-            "打者": "219",
-            "投球回": "58",
-            "安打": "33",
-            "本塁打": "4",
-            "四球": "15",
-            "死球": "0",
-            "三振": "63",
-            "暴投": "3",
-            "ボーク": "0",
-            "失点": "12",
-            "自責点": "12",
-            "防御率": "1.86"
-          },
           "totals": {
             "games": 57,
             "wins": 1,
@@ -882,33 +508,6 @@
         {
           "season": 2015,
           "team": "千葉ロッテ",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2015",
-            "所属球団": "千葉ロッテ",
-            "登板": "54",
-            "勝利": "1",
-            "敗北": "2",
-            "セーブ": "34",
-            "H": "4",
-            "HP": "5",
-            "完投": "0",
-            "完封勝": "0",
-            "無四球": "0",
-            "勝率": ".333",
-            "打者": "219",
-            "投球回": "54",
-            "安打": "44",
-            "本塁打": "1",
-            "四球": "12",
-            "死球": "1",
-            "三振": "71",
-            "暴投": "8",
-            "ボーク": "0",
-            "失点": "13",
-            "自責点": "11",
-            "防御率": "1.83"
-          },
           "totals": {
             "games": 54,
             "wins": 1,
@@ -943,33 +542,6 @@
         {
           "season": 2016,
           "team": "千葉ロッテ",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2016",
-            "所属球団": "千葉ロッテ",
-            "登板": "42",
-            "勝利": "3",
-            "敗北": "6",
-            "セーブ": "21",
-            "H": "5",
-            "HP": "8",
-            "完投": "0",
-            "完封勝": "0",
-            "無四球": "0",
-            "勝率": ".333",
-            "打者": "180",
-            "投球回": "43",
-            "安打": "39",
-            "本塁打": "4",
-            "四球": "11",
-            "死球": "1",
-            "三振": "36",
-            "暴投": "2",
-            "ボーク": "0",
-            "失点": "17",
-            "自責点": "16",
-            "防御率": "3.35"
-          },
           "totals": {
             "games": 42,
             "wins": 3,
@@ -1004,33 +576,6 @@
         {
           "season": 2017,
           "team": "千葉ロッテ",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2017",
-            "所属球団": "千葉ロッテ",
-            "登板": "5",
-            "勝利": "2",
-            "敗北": "3",
-            "セーブ": "0",
-            "H": "0",
-            "HP": "0",
-            "完投": "0",
-            "完封勝": "0",
-            "無四球": "0",
-            "勝率": ".400",
-            "打者": "123",
-            "投球回": "26.2",
-            "安打": "31",
-            "本塁打": "2",
-            "四球": "14",
-            "死球": "0",
-            "三振": "17",
-            "暴投": "2",
-            "ボーク": "0",
-            "失点": "15",
-            "自責点": "14",
-            "防御率": "4.73"
-          },
           "totals": {
             "games": 5,
             "wins": 2,
@@ -1043,7 +588,7 @@
             "noWalkCompleteGames": 0,
             "winningPercentage": 0.4,
             "battersFaced": 123,
-            "innings": 26.666666666666668,
+            "innings": 26.667,
             "hitsAllowed": 31,
             "homeRunsAllowed": 2,
             "walksAllowed": 14,
@@ -1065,33 +610,6 @@
         {
           "season": 2018,
           "team": "千葉ロッテ",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2018",
-            "所属球団": "千葉ロッテ",
-            "登板": "14",
-            "勝利": "0",
-            "敗北": "0",
-            "セーブ": "0",
-            "H": "0",
-            "HP": "0",
-            "完投": "0",
-            "完封勝": "0",
-            "無四球": "0",
-            "勝率": ".000",
-            "打者": "75",
-            "投球回": "16",
-            "安打": "20",
-            "本塁打": "2",
-            "四球": "6",
-            "死球": "0",
-            "三振": "19",
-            "暴投": "2",
-            "ボーク": "0",
-            "失点": "12",
-            "自責点": "11",
-            "防御率": "6.19"
-          },
           "totals": {
             "games": 14,
             "wins": 0,
@@ -1126,33 +644,6 @@
         {
           "season": 2019,
           "team": "千葉ロッテ",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2019",
-            "所属球団": "千葉ロッテ",
-            "登板": "37",
-            "勝利": "2",
-            "敗北": "3",
-            "セーブ": "2",
-            "H": "5",
-            "HP": "5",
-            "完投": "1",
-            "完封勝": "1",
-            "無四球": "0",
-            "勝率": ".400",
-            "打者": "277",
-            "投球回": "70",
-            "安打": "56",
-            "本塁打": "6",
-            "四球": "23",
-            "死球": "0",
-            "三振": "64",
-            "暴投": "1",
-            "ボーク": "0",
-            "失点": "23",
-            "自責点": "23",
-            "防御率": "2.96"
-          },
           "totals": {
             "games": 37,
             "wins": 2,
@@ -1187,33 +678,6 @@
         {
           "season": 2022,
           "team": "千葉ロッテ",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2022",
-            "所属球団": "千葉ロッテ",
-            "登板": "37",
-            "勝利": "3",
-            "敗北": "3",
-            "セーブ": "0",
-            "H": "15",
-            "HP": "18",
-            "完投": "0",
-            "完封勝": "0",
-            "無四球": "0",
-            "勝率": ".500",
-            "打者": "152",
-            "投球回": "36.1",
-            "安打": "28",
-            "本塁打": "4",
-            "四球": "17",
-            "死球": "0",
-            "三振": "35",
-            "暴投": "1",
-            "ボーク": "0",
-            "失点": "8",
-            "自責点": "7",
-            "防御率": "1.73"
-          },
           "totals": {
             "games": 37,
             "wins": 3,
@@ -1226,7 +690,7 @@
             "noWalkCompleteGames": 0,
             "winningPercentage": 0.5,
             "battersFaced": 152,
-            "innings": 36.333333333333336,
+            "innings": 36.333,
             "hitsAllowed": 28,
             "homeRunsAllowed": 4,
             "walksAllowed": 17,
@@ -1248,33 +712,6 @@
         {
           "season": 2023,
           "team": "千葉ロッテ",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2023",
-            "所属球団": "千葉ロッテ",
-            "登板": "18",
-            "勝利": "8",
-            "敗北": "5",
-            "セーブ": "0",
-            "H": "0",
-            "HP": "0",
-            "完投": "1",
-            "完封勝": "0",
-            "無四球": "0",
-            "勝率": ".615",
-            "打者": "464",
-            "投球回": "117",
-            "安打": "109",
-            "本塁打": "4",
-            "四球": "23",
-            "死球": "4",
-            "三振": "92",
-            "暴投": "1",
-            "ボーク": "0",
-            "失点": "39",
-            "自責点": "35",
-            "防御率": "2.69"
-          },
           "totals": {
             "games": 18,
             "wins": 8,
@@ -1309,33 +746,6 @@
         {
           "season": 2024,
           "team": "千葉ロッテ",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2024",
-            "所属球団": "千葉ロッテ",
-            "登板": "20",
-            "勝利": "9",
-            "敗北": "8",
-            "セーブ": "0",
-            "H": "0",
-            "HP": "0",
-            "完投": "1",
-            "完封勝": "0",
-            "無四球": "0",
-            "勝率": ".529",
-            "打者": "510",
-            "投球回": "122.1",
-            "安打": "120",
-            "本塁打": "8",
-            "四球": "31",
-            "死球": "4",
-            "三振": "77",
-            "暴投": "1",
-            "ボーク": "0",
-            "失点": "46",
-            "自責点": "44",
-            "防御率": "3.24"
-          },
           "totals": {
             "games": 20,
             "wins": 9,
@@ -1348,7 +758,7 @@
             "noWalkCompleteGames": 0,
             "winningPercentage": 0.529,
             "battersFaced": 510,
-            "innings": 122.33333333333333,
+            "innings": 122.333,
             "hitsAllowed": 120,
             "homeRunsAllowed": 8,
             "walksAllowed": 31,
@@ -1370,33 +780,6 @@
         {
           "season": 2025,
           "team": "千葉ロッテ",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2025",
-            "所属球団": "千葉ロッテ",
-            "登板": "9",
-            "勝利": "0",
-            "敗北": "4",
-            "セーブ": "0",
-            "H": "0",
-            "HP": "0",
-            "完投": "0",
-            "完封勝": "0",
-            "無四球": "0",
-            "勝率": ".000",
-            "打者": "207",
-            "投球回": "49.2",
-            "安打": "49",
-            "本塁打": "3",
-            "四球": "11",
-            "死球": "2",
-            "三振": "29",
-            "暴投": "0",
-            "ボーク": "0",
-            "失点": "17",
-            "自責点": "17",
-            "防御率": "3.08"
-          },
           "totals": {
             "games": 9,
             "wins": 0,
@@ -1409,7 +792,7 @@
             "noWalkCompleteGames": 0,
             "winningPercentage": 0,
             "battersFaced": 207,
-            "innings": 49.666666666666664,
+            "innings": 49.667,
             "hitsAllowed": 49,
             "homeRunsAllowed": 3,
             "walksAllowed": 11,
@@ -1431,33 +814,6 @@
         {
           "season": 2026,
           "team": "千葉ロッテ",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2026",
-            "所属球団": "千葉ロッテ",
-            "登板": "6",
-            "勝利": "1",
-            "敗北": "2",
-            "セーブ": "0",
-            "H": "0",
-            "HP": "0",
-            "完投": "0",
-            "完封勝": "0",
-            "無四球": "0",
-            "勝率": ".333",
-            "打者": "144",
-            "投球回": "34.2",
-            "安打": "37",
-            "本塁打": "5",
-            "四球": "7",
-            "死球": "0",
-            "三振": "18",
-            "暴投": "0",
-            "ボーク": "0",
-            "失点": "19",
-            "自責点": "17",
-            "防御率": "4.41"
-          },
           "totals": {
             "games": 6,
             "wins": 1,
@@ -1470,7 +826,7 @@
             "noWalkCompleteGames": 0,
             "winningPercentage": 0.333,
             "battersFaced": 144,
-            "innings": 34.666666666666664,
+            "innings": 34.667,
             "hitsAllowed": 37,
             "homeRunsAllowed": 5,
             "walksAllowed": 7,
@@ -1537,440 +893,5 @@
     "links": {
       "self": "/players/ptvi.json"
     }
-  },
-  "meta": {
-    "sources": [
-      {
-        "id": "npb",
-        "kind": "official",
-        "name": "NPB公式サイト",
-        "url": "https://npb.jp/bis/players/01205118.html",
-        "retrievedAt": "2026-08-19T08:04:13.503Z"
-      },
-      {
-        "id": "baseball-stats",
-        "kind": "computed",
-        "name": "baseball-stats",
-        "retrievedAt": "2026-08-19T08:04:13.503Z"
-      }
-    ],
-    "provenance": {
-      "profile.familyName": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "profile.givenName": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "profile.familyNameKana": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "profile.givenNameKana": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "profile.registeredName": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "profile.registeredNameKana": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "profile.url": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "profile.isActive": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "profile.details": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "profile.rawDetails.npb": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "career": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[0].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[0].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[0].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[1].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[1].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[1].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[2].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[2].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[2].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[3].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[3].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[3].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[4].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[4].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[4].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[5].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[5].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[5].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[6].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[6].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[6].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[7].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[7].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[7].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[8].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[8].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[8].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[9].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[9].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[9].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[10].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[10].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[10].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[11].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[11].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[11].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[0].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[0].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[0].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[1].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[1].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[1].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[2].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[2].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[2].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[3].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[3].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[3].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[4].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[4].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[4].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[5].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[5].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[5].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[6].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[6].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[6].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[7].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[7].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[7].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[8].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[8].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[8].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[9].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[9].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[9].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[10].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[10].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[10].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[11].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[11].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[11].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      }
-    },
-    "generatedAt": "2026-08-19T08:04:13.503Z"
   }
 }

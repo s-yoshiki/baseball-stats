@@ -1,0 +1,160 @@
+{
+  "data": {
+    "type": "player",
+    "id": "oz12q",
+    "attributes": {
+      "profile": {
+        "familyName": "清宮",
+        "givenName": "虎多朗",
+        "familyNameKana": "せいみや",
+        "givenNameKana": "こたろう",
+        "registeredName": "清宮 虎多朗",
+        "registeredNameKana": "せいみや・こたろう",
+        "url": "https://npb.jp/bis/players/41945138.html",
+        "isActive": true,
+        "details": {
+          "position": "投手",
+          "throws": "右",
+          "bats": "左",
+          "heightCm": 190,
+          "weightKg": 104,
+          "birthDate": {
+            "iso": "2000-05-26",
+            "year": 2000,
+            "month": 5,
+            "day": 26
+          },
+          "career": {
+            "raw": "八千代松陰高",
+            "entries": [
+              "八千代松陰高"
+            ]
+          },
+          "draft": {
+            "raw": "2018年育成選手ドラフト1位",
+            "year": 2018,
+            "rank": 1,
+            "selection": "development"
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2024,
+          "team": "東北楽天",
+          "totals": {
+            "games": 3,
+            "plateAppearances": 0,
+            "atBats": 0,
+            "runs": 0,
+            "hits": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 0,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 0,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0,
+            "onBasePercentage": 0,
+            "sluggingPercentage": 0,
+            "ops": 0,
+            "iso": 0,
+            "walkPercentage": null,
+            "strikeoutPercentage": null
+          }
+        }
+      ],
+      "pitchingStats": [
+        {
+          "season": 2024,
+          "team": "東北楽天",
+          "totals": {
+            "games": 3,
+            "wins": 0,
+            "losses": 0,
+            "saves": 0,
+            "holds": 0,
+            "holdPoints": 0,
+            "completeGames": 0,
+            "shutouts": 0,
+            "noWalkCompleteGames": 0,
+            "winningPercentage": 0,
+            "battersFaced": 16,
+            "innings": 3,
+            "hitsAllowed": 4,
+            "homeRunsAllowed": 0,
+            "walksAllowed": 3,
+            "hitByPitch": 0,
+            "strikeouts": 1,
+            "wildPitches": 1,
+            "balks": 0,
+            "runsAllowed": 4,
+            "earnedRuns": 4
+          },
+          "metrics": {
+            "era": 12,
+            "whip": 2.333,
+            "strikeoutsPerNine": 3,
+            "walksPerNine": 9,
+            "strikeoutToWalkRatio": 0.333
+          }
+        }
+      ],
+      "career": {
+        "batting": {
+          "seasons": 1,
+          "games": 3,
+          "plateAppearances": 0,
+          "atBats": 0,
+          "runs": 0,
+          "hits": 0,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 0,
+          "totalBases": 0,
+          "rbi": 0,
+          "steals": 0,
+          "walks": 0,
+          "hitByPitch": 0,
+          "strikeouts": 0,
+          "battingAverage": null,
+          "onBasePercentage": null,
+          "sluggingPercentage": null,
+          "ops": null,
+          "iso": null
+        },
+        "pitching": {
+          "seasons": 1,
+          "games": 3,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 3,
+          "hitsAllowed": 4,
+          "walksAllowed": 3,
+          "strikeouts": 1,
+          "earnedRuns": 4,
+          "winningPercentage": null,
+          "era": 12,
+          "whip": 2.333,
+          "strikeoutsPerNine": 3,
+          "walksPerNine": 9,
+          "strikeoutToWalkRatio": 0.333
+        }
+      }
+    },
+    "links": {
+      "self": "/players/oz12q.json"
+    }
+  }
+}

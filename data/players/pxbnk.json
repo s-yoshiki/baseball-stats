@@ -1,0 +1,163 @@
+{
+  "data": {
+    "type": "player",
+    "id": "pxbnk",
+    "attributes": {
+      "profile": {
+        "familyName": "F.ターノック",
+        "givenName": null,
+        "familyNameKana": "FREDDY",
+        "givenNameKana": "TARNOK",
+        "registeredName": "F.ターノック",
+        "registeredNameKana": "フレディ・ターノック",
+        "url": "https://npb.jp/bis/players/43545152.html",
+        "isActive": true,
+        "details": {
+          "position": "投手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 193,
+          "weightKg": 105,
+          "birthDate": {
+            "iso": "1998-11-24",
+            "year": 1998,
+            "month": 11,
+            "day": 24
+          },
+          "career": {
+            "raw": "リバービュー高 - ブレーブス - アスレチックス - マーリンズ",
+            "entries": [
+              "リバービュー高",
+              "ブレーブス",
+              "アスレチックス",
+              "マーリンズ"
+            ]
+          },
+          "draft": {
+            "raw": null,
+            "year": null,
+            "rank": null,
+            "selection": null
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2026,
+          "team": "広島東洋",
+          "totals": {
+            "games": 9,
+            "plateAppearances": 10,
+            "atBats": 7,
+            "runs": 0,
+            "hits": 2,
+            "doubles": 1,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 3,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 3,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 3,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0.286,
+            "onBasePercentage": 0.286,
+            "sluggingPercentage": 0.429,
+            "ops": 0.715,
+            "iso": 0.143,
+            "walkPercentage": 0,
+            "strikeoutPercentage": 0.3
+          }
+        }
+      ],
+      "pitchingStats": [
+        {
+          "season": 2026,
+          "team": "広島東洋",
+          "totals": {
+            "games": 9,
+            "wins": 0,
+            "losses": 4,
+            "saves": 0,
+            "holds": 0,
+            "holdPoints": 0,
+            "completeGames": 0,
+            "shutouts": 0,
+            "noWalkCompleteGames": 0,
+            "winningPercentage": 0,
+            "battersFaced": 188,
+            "innings": 42.667,
+            "hitsAllowed": 45,
+            "homeRunsAllowed": 0,
+            "walksAllowed": 14,
+            "hitByPitch": 3,
+            "strikeouts": 42,
+            "wildPitches": 1,
+            "balks": 1,
+            "runsAllowed": 20,
+            "earnedRuns": 19
+          },
+          "metrics": {
+            "era": 4.01,
+            "whip": 1.383,
+            "strikeoutsPerNine": 8.859,
+            "walksPerNine": 2.953,
+            "strikeoutToWalkRatio": 3
+          }
+        }
+      ],
+      "career": {
+        "batting": {
+          "seasons": 1,
+          "games": 9,
+          "plateAppearances": 10,
+          "atBats": 7,
+          "runs": 0,
+          "hits": 2,
+          "doubles": 1,
+          "triples": 0,
+          "homeRuns": 0,
+          "totalBases": 3,
+          "rbi": 0,
+          "steals": 0,
+          "walks": 0,
+          "hitByPitch": 0,
+          "strikeouts": 3,
+          "battingAverage": 0.286,
+          "onBasePercentage": 0.2,
+          "sluggingPercentage": 0.429,
+          "ops": 0.629,
+          "iso": 0.143
+        },
+        "pitching": {
+          "seasons": 1,
+          "games": 9,
+          "wins": 0,
+          "losses": 4,
+          "saves": 0,
+          "holds": 0,
+          "innings": 42.667,
+          "hitsAllowed": 45,
+          "walksAllowed": 14,
+          "strikeouts": 42,
+          "earnedRuns": 19,
+          "winningPercentage": 0,
+          "era": 4.008,
+          "whip": 1.383,
+          "strikeoutsPerNine": 8.859,
+          "walksPerNine": 2.953,
+          "strikeoutToWalkRatio": 3
+        }
+      }
+    },
+    "links": {
+      "self": "/players/pxbnk.json"
+    }
+  }
+}

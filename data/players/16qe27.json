@@ -1,0 +1,291 @@
+{
+  "data": {
+    "type": "player",
+    "id": "16qe27",
+    "attributes": {
+      "profile": {
+        "familyName": "小野寺",
+        "givenName": "暖",
+        "familyNameKana": "おのでら",
+        "givenNameKana": "だん",
+        "registeredName": "小野寺 暖",
+        "registeredNameKana": "おのでら・だん",
+        "url": "https://npb.jp/bis/players/71775151.html",
+        "isActive": true,
+        "details": {
+          "position": "外野手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 183,
+          "weightKg": 81,
+          "birthDate": {
+            "iso": "1998-03-17",
+            "year": 1998,
+            "month": 3,
+            "day": 17
+          },
+          "career": {
+            "raw": "京都翔英高 - 大阪商業大",
+            "entries": [
+              "京都翔英高",
+              "大阪商業大"
+            ]
+          },
+          "draft": {
+            "raw": "2019年育成選手ドラフト1位",
+            "year": 2019,
+            "rank": 1,
+            "selection": "development"
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2021,
+          "team": "阪 神",
+          "totals": {
+            "games": 34,
+            "plateAppearances": 73,
+            "atBats": 67,
+            "runs": 7,
+            "hits": 12,
+            "doubles": 2,
+            "triples": 0,
+            "homeRuns": 1,
+            "totalBases": 17,
+            "rbi": 2,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 5,
+            "hitByPitch": 1,
+            "strikeouts": 19,
+            "groundedIntoDoublePlays": 2
+          },
+          "metrics": {
+            "battingAverage": 0.179,
+            "onBasePercentage": 0.247,
+            "sluggingPercentage": 0.254,
+            "ops": 0.501,
+            "iso": 0.075,
+            "walkPercentage": 0.068,
+            "strikeoutPercentage": 0.26
+          }
+        },
+        {
+          "season": 2022,
+          "team": "阪 神",
+          "totals": {
+            "games": 32,
+            "plateAppearances": 45,
+            "atBats": 44,
+            "runs": 3,
+            "hits": 6,
+            "doubles": 1,
+            "triples": 1,
+            "homeRuns": 1,
+            "totalBases": 12,
+            "rbi": 7,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 1,
+            "hitByPitch": 0,
+            "strikeouts": 12,
+            "groundedIntoDoublePlays": 3
+          },
+          "metrics": {
+            "battingAverage": 0.136,
+            "onBasePercentage": 0.156,
+            "sluggingPercentage": 0.273,
+            "ops": 0.429,
+            "iso": 0.137,
+            "walkPercentage": 0.022,
+            "strikeoutPercentage": 0.267
+          }
+        },
+        {
+          "season": 2023,
+          "team": "阪 神",
+          "totals": {
+            "games": 43,
+            "plateAppearances": 83,
+            "atBats": 75,
+            "runs": 8,
+            "hits": 26,
+            "doubles": 2,
+            "triples": 2,
+            "homeRuns": 0,
+            "totalBases": 32,
+            "rbi": 11,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 1,
+            "sacrificeFlies": 0,
+            "walks": 7,
+            "hitByPitch": 0,
+            "strikeouts": 12,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0.347,
+            "onBasePercentage": 0.402,
+            "sluggingPercentage": 0.427,
+            "ops": 0.829,
+            "iso": 0.08,
+            "walkPercentage": 0.084,
+            "strikeoutPercentage": 0.145
+          }
+        },
+        {
+          "season": 2024,
+          "team": "阪 神",
+          "totals": {
+            "games": 25,
+            "plateAppearances": 29,
+            "atBats": 27,
+            "runs": 3,
+            "hits": 4,
+            "doubles": 0,
+            "triples": 1,
+            "homeRuns": 0,
+            "totalBases": 6,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 1,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 1,
+            "strikeouts": 10,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0.148,
+            "onBasePercentage": 0.179,
+            "sluggingPercentage": 0.222,
+            "ops": 0.401,
+            "iso": 0.074,
+            "walkPercentage": 0,
+            "strikeoutPercentage": 0.345
+          }
+        },
+        {
+          "season": 2025,
+          "team": "阪 神",
+          "totals": {
+            "games": 19,
+            "plateAppearances": 30,
+            "atBats": 29,
+            "runs": 3,
+            "hits": 7,
+            "doubles": 1,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 8,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 1,
+            "hitByPitch": 0,
+            "strikeouts": 9,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0.241,
+            "onBasePercentage": 0.267,
+            "sluggingPercentage": 0.276,
+            "ops": 0.543,
+            "iso": 0.035,
+            "walkPercentage": 0.033,
+            "strikeoutPercentage": 0.3
+          }
+        },
+        {
+          "season": 2026,
+          "team": "阪 神",
+          "totals": {
+            "games": 21,
+            "plateAppearances": 16,
+            "atBats": 16,
+            "runs": 1,
+            "hits": 2,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 2,
+            "rbi": 1,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 8,
+            "groundedIntoDoublePlays": 1
+          },
+          "metrics": {
+            "battingAverage": 0.125,
+            "onBasePercentage": 0.125,
+            "sluggingPercentage": 0.125,
+            "ops": 0.25,
+            "iso": 0,
+            "walkPercentage": 0,
+            "strikeoutPercentage": 0.5
+          }
+        }
+      ],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 6,
+          "games": 174,
+          "plateAppearances": 276,
+          "atBats": 258,
+          "runs": 25,
+          "hits": 57,
+          "doubles": 6,
+          "triples": 4,
+          "homeRuns": 2,
+          "totalBases": 77,
+          "rbi": 21,
+          "steals": 0,
+          "walks": 14,
+          "hitByPitch": 2,
+          "strikeouts": 70,
+          "battingAverage": 0.221,
+          "onBasePercentage": 0.264,
+          "sluggingPercentage": 0.298,
+          "ops": 0.562,
+          "iso": 0.077
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/16qe27.json"
+    }
+  }
+}

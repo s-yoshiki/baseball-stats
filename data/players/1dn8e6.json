@@ -1,0 +1,159 @@
+{
+  "data": {
+    "type": "player",
+    "id": "1dn8e6",
+    "attributes": {
+      "profile": {
+        "familyName": "渡部",
+        "givenName": "聖弥",
+        "familyNameKana": "わたなべ",
+        "givenNameKana": "せいや",
+        "registeredName": "渡部 聖弥",
+        "registeredNameKana": "わたなべ・せいや",
+        "url": "https://npb.jp/bis/players/83385150.html",
+        "isActive": true,
+        "details": {
+          "position": "外野手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 177,
+          "weightKg": 90,
+          "birthDate": {
+            "iso": "2002-08-31",
+            "year": 2002,
+            "month": 8,
+            "day": 31
+          },
+          "career": {
+            "raw": "広陵高 - 大阪商業大",
+            "entries": [
+              "広陵高",
+              "大阪商業大"
+            ]
+          },
+          "draft": {
+            "raw": "2024年ドラフト2位",
+            "year": 2024,
+            "rank": 2,
+            "selection": "regular"
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2025,
+          "team": "埼玉西武",
+          "totals": {
+            "games": 109,
+            "plateAppearances": 452,
+            "atBats": 425,
+            "runs": 42,
+            "hits": 110,
+            "doubles": 16,
+            "triples": 3,
+            "homeRuns": 12,
+            "totalBases": 168,
+            "rbi": 43,
+            "steals": 2,
+            "caughtStealing": 3,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 2,
+            "walks": 21,
+            "hitByPitch": 4,
+            "strikeouts": 85,
+            "groundedIntoDoublePlays": 11
+          },
+          "metrics": {
+            "battingAverage": 0.259,
+            "onBasePercentage": 0.299,
+            "sluggingPercentage": 0.395,
+            "ops": 0.694,
+            "iso": 0.136,
+            "walkPercentage": 0.046,
+            "strikeoutPercentage": 0.188
+          }
+        },
+        {
+          "season": 2026,
+          "team": "埼玉西武",
+          "totals": {
+            "games": 102,
+            "plateAppearances": 412,
+            "atBats": 389,
+            "runs": 31,
+            "hits": 100,
+            "doubles": 16,
+            "triples": 1,
+            "homeRuns": 7,
+            "totalBases": 139,
+            "rbi": 38,
+            "steals": 3,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 2,
+            "walks": 15,
+            "hitByPitch": 6,
+            "strikeouts": 72,
+            "groundedIntoDoublePlays": 11
+          },
+          "metrics": {
+            "battingAverage": 0.257,
+            "onBasePercentage": 0.294,
+            "sluggingPercentage": 0.357,
+            "ops": 0.651,
+            "iso": 0.1,
+            "walkPercentage": 0.036,
+            "strikeoutPercentage": 0.175
+          }
+        }
+      ],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 2,
+          "games": 211,
+          "plateAppearances": 864,
+          "atBats": 814,
+          "runs": 73,
+          "hits": 210,
+          "doubles": 32,
+          "triples": 4,
+          "homeRuns": 19,
+          "totalBases": 307,
+          "rbi": 81,
+          "steals": 5,
+          "walks": 36,
+          "hitByPitch": 10,
+          "strikeouts": 157,
+          "battingAverage": 0.258,
+          "onBasePercentage": 0.296,
+          "sluggingPercentage": 0.377,
+          "ops": 0.673,
+          "iso": 0.119
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/1dn8e6.json"
+    }
+  }
+}

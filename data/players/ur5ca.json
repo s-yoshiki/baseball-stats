@@ -1,0 +1,696 @@
+{
+  "data": {
+    "type": "player",
+    "id": "ur5ca",
+    "attributes": {
+      "profile": {
+        "familyName": "前田",
+        "givenName": "健太",
+        "familyNameKana": "まえだ",
+        "givenNameKana": "けんた",
+        "registeredName": "前田 健太",
+        "registeredNameKana": "まえだ・けんた",
+        "url": "https://npb.jp/bis/players/51655114.html",
+        "isActive": true,
+        "details": {
+          "position": "投手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 185,
+          "weightKg": 83,
+          "birthDate": {
+            "iso": "1988-04-11",
+            "year": 1988,
+            "month": 4,
+            "day": 11
+          },
+          "career": {
+            "raw": "PL学園高",
+            "entries": [
+              "PL学園高"
+            ]
+          },
+          "draft": {
+            "raw": "2006年高校生ドラフト1巡目",
+            "year": 2006,
+            "rank": 1,
+            "selection": "regular"
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2008,
+          "team": "広島東洋",
+          "totals": {
+            "games": 19,
+            "plateAppearances": 41,
+            "atBats": 33,
+            "runs": 3,
+            "hits": 6,
+            "doubles": 1,
+            "triples": 0,
+            "homeRuns": 1,
+            "totalBases": 10,
+            "rbi": 3,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 3,
+            "sacrificeFlies": 1,
+            "walks": 4,
+            "hitByPitch": 0,
+            "strikeouts": 8,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0.182,
+            "onBasePercentage": 0.263,
+            "sluggingPercentage": 0.303,
+            "ops": 0.566,
+            "iso": 0.121,
+            "walkPercentage": 0.098,
+            "strikeoutPercentage": 0.195
+          }
+        },
+        {
+          "season": 2009,
+          "team": "広島東洋",
+          "totals": {
+            "games": 29,
+            "plateAppearances": 62,
+            "atBats": 50,
+            "runs": 0,
+            "hits": 8,
+            "doubles": 3,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 11,
+            "rbi": 1,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 9,
+            "sacrificeFlies": 0,
+            "walks": 3,
+            "hitByPitch": 0,
+            "strikeouts": 12,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0.16,
+            "onBasePercentage": 0.208,
+            "sluggingPercentage": 0.22,
+            "ops": 0.428,
+            "iso": 0.06,
+            "walkPercentage": 0.048,
+            "strikeoutPercentage": 0.194
+          }
+        },
+        {
+          "season": 2010,
+          "team": "広島東洋",
+          "totals": {
+            "games": 28,
+            "plateAppearances": 67,
+            "atBats": 58,
+            "runs": 3,
+            "hits": 8,
+            "doubles": 1,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 9,
+            "rbi": 3,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 9,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 21,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0.138,
+            "onBasePercentage": 0.138,
+            "sluggingPercentage": 0.155,
+            "ops": 0.293,
+            "iso": 0.017,
+            "walkPercentage": 0,
+            "strikeoutPercentage": 0.313
+          }
+        },
+        {
+          "season": 2011,
+          "team": "広島東洋",
+          "totals": {
+            "games": 32,
+            "plateAppearances": 73,
+            "atBats": 61,
+            "runs": 0,
+            "hits": 5,
+            "doubles": 1,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 6,
+            "rbi": 3,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 9,
+            "sacrificeFlies": 1,
+            "walks": 2,
+            "hitByPitch": 0,
+            "strikeouts": 25,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0.082,
+            "onBasePercentage": 0.109,
+            "sluggingPercentage": 0.098,
+            "ops": 0.207,
+            "iso": 0.016,
+            "walkPercentage": 0.027,
+            "strikeoutPercentage": 0.342
+          }
+        },
+        {
+          "season": 2012,
+          "team": "広島東洋",
+          "totals": {
+            "games": 29,
+            "plateAppearances": 67,
+            "atBats": 56,
+            "runs": 1,
+            "hits": 6,
+            "doubles": 4,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 10,
+            "rbi": 6,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 8,
+            "sacrificeFlies": 1,
+            "walks": 2,
+            "hitByPitch": 0,
+            "strikeouts": 21,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0.107,
+            "onBasePercentage": 0.136,
+            "sluggingPercentage": 0.179,
+            "ops": 0.315,
+            "iso": 0.072,
+            "walkPercentage": 0.03,
+            "strikeoutPercentage": 0.313
+          }
+        },
+        {
+          "season": 2013,
+          "team": "広島東洋",
+          "totals": {
+            "games": 26,
+            "plateAppearances": 62,
+            "atBats": 56,
+            "runs": 5,
+            "hits": 10,
+            "doubles": 2,
+            "triples": 1,
+            "homeRuns": 0,
+            "totalBases": 14,
+            "rbi": 5,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 5,
+            "sacrificeFlies": 0,
+            "walks": 1,
+            "hitByPitch": 0,
+            "strikeouts": 23,
+            "groundedIntoDoublePlays": 1
+          },
+          "metrics": {
+            "battingAverage": 0.179,
+            "onBasePercentage": 0.193,
+            "sluggingPercentage": 0.25,
+            "ops": 0.443,
+            "iso": 0.071,
+            "walkPercentage": 0.016,
+            "strikeoutPercentage": 0.371
+          }
+        },
+        {
+          "season": 2014,
+          "team": "広島東洋",
+          "totals": {
+            "games": 27,
+            "plateAppearances": 64,
+            "atBats": 60,
+            "runs": 4,
+            "hits": 9,
+            "doubles": 1,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 10,
+            "rbi": 1,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 3,
+            "sacrificeFlies": 0,
+            "walks": 1,
+            "hitByPitch": 0,
+            "strikeouts": 22,
+            "groundedIntoDoublePlays": 2
+          },
+          "metrics": {
+            "battingAverage": 0.15,
+            "onBasePercentage": 0.164,
+            "sluggingPercentage": 0.167,
+            "ops": 0.331,
+            "iso": 0.017,
+            "walkPercentage": 0.016,
+            "strikeoutPercentage": 0.344
+          }
+        },
+        {
+          "season": 2015,
+          "team": "広島東洋",
+          "totals": {
+            "games": 29,
+            "plateAppearances": 73,
+            "atBats": 62,
+            "runs": 4,
+            "hits": 12,
+            "doubles": 2,
+            "triples": 0,
+            "homeRuns": 1,
+            "totalBases": 17,
+            "rbi": 5,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 9,
+            "sacrificeFlies": 0,
+            "walks": 2,
+            "hitByPitch": 0,
+            "strikeouts": 25,
+            "groundedIntoDoublePlays": 1
+          },
+          "metrics": {
+            "battingAverage": 0.194,
+            "onBasePercentage": 0.219,
+            "sluggingPercentage": 0.274,
+            "ops": 0.493,
+            "iso": 0.08,
+            "walkPercentage": 0.027,
+            "strikeoutPercentage": 0.342
+          }
+        },
+        {
+          "season": 2026,
+          "team": "東北楽天",
+          "totals": {
+            "games": 10,
+            "plateAppearances": 1,
+            "atBats": 1,
+            "runs": 0,
+            "hits": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 0,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 1,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0,
+            "onBasePercentage": 0,
+            "sluggingPercentage": 0,
+            "ops": 0,
+            "iso": 0,
+            "walkPercentage": 0,
+            "strikeoutPercentage": 1
+          }
+        }
+      ],
+      "pitchingStats": [
+        {
+          "season": 2008,
+          "team": "広島東洋",
+          "totals": {
+            "games": 19,
+            "wins": 9,
+            "losses": 2,
+            "saves": 0,
+            "holds": 0,
+            "holdPoints": 0,
+            "completeGames": 1,
+            "shutouts": 1,
+            "noWalkCompleteGames": 1,
+            "winningPercentage": 0.818,
+            "battersFaced": 462,
+            "innings": 109.667,
+            "hitsAllowed": 103,
+            "homeRunsAllowed": 10,
+            "walksAllowed": 35,
+            "hitByPitch": 3,
+            "strikeouts": 55,
+            "wildPitches": 0,
+            "balks": 1,
+            "runsAllowed": 43,
+            "earnedRuns": 39
+          },
+          "metrics": {
+            "era": 3.2,
+            "whip": 1.258,
+            "strikeoutsPerNine": 4.514,
+            "walksPerNine": 2.872,
+            "strikeoutToWalkRatio": 1.571
+          }
+        },
+        {
+          "season": 2009,
+          "team": "広島東洋",
+          "totals": {
+            "games": 29,
+            "wins": 8,
+            "losses": 14,
+            "saves": 0,
+            "holds": 0,
+            "holdPoints": 0,
+            "completeGames": 3,
+            "shutouts": 1,
+            "noWalkCompleteGames": 1,
+            "winningPercentage": 0.364,
+            "battersFaced": 795,
+            "innings": 193,
+            "hitsAllowed": 194,
+            "homeRunsAllowed": 22,
+            "walksAllowed": 29,
+            "hitByPitch": 3,
+            "strikeouts": 147,
+            "wildPitches": 2,
+            "balks": 0,
+            "runsAllowed": 82,
+            "earnedRuns": 72
+          },
+          "metrics": {
+            "era": 3.36,
+            "whip": 1.155,
+            "strikeoutsPerNine": 6.855,
+            "walksPerNine": 1.352,
+            "strikeoutToWalkRatio": 5.069
+          }
+        },
+        {
+          "season": 2010,
+          "team": "広島東洋",
+          "totals": {
+            "games": 28,
+            "wins": 15,
+            "losses": 8,
+            "saves": 0,
+            "holds": 0,
+            "holdPoints": 0,
+            "completeGames": 6,
+            "shutouts": 2,
+            "noWalkCompleteGames": 1,
+            "winningPercentage": 0.652,
+            "battersFaced": 848,
+            "innings": 215.667,
+            "hitsAllowed": 166,
+            "homeRunsAllowed": 15,
+            "walksAllowed": 46,
+            "hitByPitch": 7,
+            "strikeouts": 174,
+            "wildPitches": 2,
+            "balks": 0,
+            "runsAllowed": 55,
+            "earnedRuns": 53
+          },
+          "metrics": {
+            "era": 2.21,
+            "whip": 0.983,
+            "strikeoutsPerNine": 7.261,
+            "walksPerNine": 1.92,
+            "strikeoutToWalkRatio": 3.783
+          }
+        },
+        {
+          "season": 2011,
+          "team": "広島東洋",
+          "totals": {
+            "games": 31,
+            "wins": 10,
+            "losses": 12,
+            "saves": 0,
+            "holds": 0,
+            "holdPoints": 0,
+            "completeGames": 4,
+            "shutouts": 2,
+            "noWalkCompleteGames": 0,
+            "winningPercentage": 0.455,
+            "battersFaced": 864,
+            "innings": 216,
+            "hitsAllowed": 178,
+            "homeRunsAllowed": 14,
+            "walksAllowed": 43,
+            "hitByPitch": 6,
+            "strikeouts": 192,
+            "wildPitches": 4,
+            "balks": 0,
+            "runsAllowed": 61,
+            "earnedRuns": 59
+          },
+          "metrics": {
+            "era": 2.46,
+            "whip": 1.023,
+            "strikeoutsPerNine": 8,
+            "walksPerNine": 1.792,
+            "strikeoutToWalkRatio": 4.465
+          }
+        },
+        {
+          "season": 2012,
+          "team": "広島東洋",
+          "totals": {
+            "games": 29,
+            "wins": 14,
+            "losses": 7,
+            "saves": 0,
+            "holds": 0,
+            "holdPoints": 0,
+            "completeGames": 5,
+            "shutouts": 2,
+            "noWalkCompleteGames": 0,
+            "winningPercentage": 0.667,
+            "battersFaced": 820,
+            "innings": 206.333,
+            "hitsAllowed": 161,
+            "homeRunsAllowed": 6,
+            "walksAllowed": 44,
+            "hitByPitch": 9,
+            "strikeouts": 171,
+            "wildPitches": 2,
+            "balks": 0,
+            "runsAllowed": 46,
+            "earnedRuns": 35
+          },
+          "metrics": {
+            "era": 1.53,
+            "whip": 0.994,
+            "strikeoutsPerNine": 7.459,
+            "walksPerNine": 1.919,
+            "strikeoutToWalkRatio": 3.886
+          }
+        },
+        {
+          "season": 2013,
+          "team": "広島東洋",
+          "totals": {
+            "games": 26,
+            "wins": 15,
+            "losses": 7,
+            "saves": 0,
+            "holds": 0,
+            "holdPoints": 0,
+            "completeGames": 3,
+            "shutouts": 1,
+            "noWalkCompleteGames": 1,
+            "winningPercentage": 0.682,
+            "battersFaced": 690,
+            "innings": 175.667,
+            "hitsAllowed": 129,
+            "homeRunsAllowed": 13,
+            "walksAllowed": 40,
+            "hitByPitch": 2,
+            "strikeouts": 158,
+            "wildPitches": 1,
+            "balks": 0,
+            "runsAllowed": 46,
+            "earnedRuns": 41
+          },
+          "metrics": {
+            "era": 2.1,
+            "whip": 0.962,
+            "strikeoutsPerNine": 8.095,
+            "walksPerNine": 2.049,
+            "strikeoutToWalkRatio": 3.95
+          }
+        },
+        {
+          "season": 2014,
+          "team": "広島東洋",
+          "totals": {
+            "games": 27,
+            "wins": 11,
+            "losses": 9,
+            "saves": 0,
+            "holds": 0,
+            "holdPoints": 0,
+            "completeGames": 1,
+            "shutouts": 1,
+            "noWalkCompleteGames": 0,
+            "winningPercentage": 0.55,
+            "battersFaced": 746,
+            "innings": 187,
+            "hitsAllowed": 164,
+            "homeRunsAllowed": 12,
+            "walksAllowed": 41,
+            "hitByPitch": 2,
+            "strikeouts": 161,
+            "wildPitches": 4,
+            "balks": 1,
+            "runsAllowed": 61,
+            "earnedRuns": 54
+          },
+          "metrics": {
+            "era": 2.6,
+            "whip": 1.096,
+            "strikeoutsPerNine": 7.749,
+            "walksPerNine": 1.973,
+            "strikeoutToWalkRatio": 3.927
+          }
+        },
+        {
+          "season": 2015,
+          "team": "広島東洋",
+          "totals": {
+            "games": 29,
+            "wins": 15,
+            "losses": 8,
+            "saves": 0,
+            "holds": 0,
+            "holdPoints": 0,
+            "completeGames": 5,
+            "shutouts": 0,
+            "noWalkCompleteGames": 0,
+            "winningPercentage": 0.652,
+            "battersFaced": 821,
+            "innings": 206.333,
+            "hitsAllowed": 168,
+            "homeRunsAllowed": 5,
+            "walksAllowed": 41,
+            "hitByPitch": 6,
+            "strikeouts": 175,
+            "wildPitches": 3,
+            "balks": 0,
+            "runsAllowed": 49,
+            "earnedRuns": 48
+          },
+          "metrics": {
+            "era": 2.09,
+            "whip": 1.013,
+            "strikeoutsPerNine": 7.633,
+            "walksPerNine": 1.788,
+            "strikeoutToWalkRatio": 4.268
+          }
+        },
+        {
+          "season": 2026,
+          "team": "東北楽天",
+          "totals": {
+            "games": 10,
+            "wins": 3,
+            "losses": 3,
+            "saves": 0,
+            "holds": 0,
+            "holdPoints": 0,
+            "completeGames": 0,
+            "shutouts": 0,
+            "noWalkCompleteGames": 0,
+            "winningPercentage": 0.5,
+            "battersFaced": 211,
+            "innings": 53.333,
+            "hitsAllowed": 45,
+            "homeRunsAllowed": 4,
+            "walksAllowed": 15,
+            "hitByPitch": 0,
+            "strikeouts": 38,
+            "wildPitches": 1,
+            "balks": 0,
+            "runsAllowed": 17,
+            "earnedRuns": 17
+          },
+          "metrics": {
+            "era": 2.87,
+            "whip": 1.125,
+            "strikeoutsPerNine": 6.413,
+            "walksPerNine": 2.531,
+            "strikeoutToWalkRatio": 2.533
+          }
+        }
+      ],
+      "career": {
+        "batting": {
+          "seasons": 9,
+          "games": 229,
+          "plateAppearances": 510,
+          "atBats": 437,
+          "runs": 20,
+          "hits": 64,
+          "doubles": 15,
+          "triples": 1,
+          "homeRuns": 2,
+          "totalBases": 87,
+          "rbi": 27,
+          "steals": 0,
+          "walks": 15,
+          "hitByPitch": 0,
+          "strikeouts": 158,
+          "battingAverage": 0.146,
+          "onBasePercentage": 0.155,
+          "sluggingPercentage": 0.199,
+          "ops": 0.354,
+          "iso": 0.053
+        },
+        "pitching": {
+          "seasons": 9,
+          "games": 228,
+          "wins": 100,
+          "losses": 70,
+          "saves": 0,
+          "holds": 0,
+          "innings": 1563,
+          "hitsAllowed": 1308,
+          "walksAllowed": 334,
+          "strikeouts": 1271,
+          "earnedRuns": 418,
+          "winningPercentage": 0.588,
+          "era": 2.407,
+          "whip": 1.051,
+          "strikeoutsPerNine": 7.319,
+          "walksPerNine": 1.923,
+          "strikeoutToWalkRatio": 3.805
+        }
+      }
+    },
+    "links": {
+      "self": "/players/ur5ca.json"
+    }
+  }
+}

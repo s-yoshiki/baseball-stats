@@ -1,0 +1,161 @@
+{
+  "data": {
+    "type": "player",
+    "id": "w05qm",
+    "attributes": {
+      "profile": {
+        "familyName": "T.ネビン",
+        "givenName": null,
+        "familyNameKana": "TYLER",
+        "givenNameKana": "NEVIN",
+        "registeredName": "T.ネビン",
+        "registeredNameKana": "タイラー・ネビン",
+        "url": "https://npb.jp/bis/players/53755150.html",
+        "isActive": true,
+        "details": {
+          "position": "内野手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 193,
+          "weightKg": 102,
+          "birthDate": {
+            "iso": "1997-05-29",
+            "year": 1997,
+            "month": 5,
+            "day": 29
+          },
+          "career": {
+            "raw": "パウウェイ高 - オリオールズ - タイガース - アスレチックス",
+            "entries": [
+              "パウウェイ高",
+              "オリオールズ",
+              "タイガース",
+              "アスレチックス"
+            ]
+          },
+          "draft": {
+            "raw": null,
+            "year": null,
+            "rank": null,
+            "selection": null
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2025,
+          "team": "埼玉西武",
+          "totals": {
+            "games": 137,
+            "plateAppearances": 570,
+            "atBats": 509,
+            "runs": 51,
+            "hits": 141,
+            "doubles": 24,
+            "triples": 0,
+            "homeRuns": 21,
+            "totalBases": 228,
+            "rbi": 63,
+            "steals": 2,
+            "caughtStealing": 1,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 5,
+            "walks": 45,
+            "hitByPitch": 11,
+            "strikeouts": 78,
+            "groundedIntoDoublePlays": 13
+          },
+          "metrics": {
+            "battingAverage": 0.277,
+            "onBasePercentage": 0.346,
+            "sluggingPercentage": 0.448,
+            "ops": 0.794,
+            "iso": 0.171,
+            "walkPercentage": 0.079,
+            "strikeoutPercentage": 0.137
+          }
+        },
+        {
+          "season": 2026,
+          "team": "埼玉西武",
+          "totals": {
+            "games": 73,
+            "plateAppearances": 303,
+            "atBats": 266,
+            "runs": 32,
+            "hits": 75,
+            "doubles": 17,
+            "triples": 0,
+            "homeRuns": 17,
+            "totalBases": 143,
+            "rbi": 39,
+            "steals": 0,
+            "caughtStealing": 2,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 7,
+            "walks": 26,
+            "hitByPitch": 4,
+            "strikeouts": 48,
+            "groundedIntoDoublePlays": 5
+          },
+          "metrics": {
+            "battingAverage": 0.282,
+            "onBasePercentage": 0.347,
+            "sluggingPercentage": 0.538,
+            "ops": 0.885,
+            "iso": 0.256,
+            "walkPercentage": 0.086,
+            "strikeoutPercentage": 0.158
+          }
+        }
+      ],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 2,
+          "games": 210,
+          "plateAppearances": 873,
+          "atBats": 775,
+          "runs": 83,
+          "hits": 216,
+          "doubles": 41,
+          "triples": 0,
+          "homeRuns": 38,
+          "totalBases": 371,
+          "rbi": 102,
+          "steals": 2,
+          "walks": 71,
+          "hitByPitch": 15,
+          "strikeouts": 126,
+          "battingAverage": 0.279,
+          "onBasePercentage": 0.346,
+          "sluggingPercentage": 0.479,
+          "ops": 0.825,
+          "iso": 0.2
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/w05qm.json"
+    }
+  }
+}

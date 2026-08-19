@@ -26,7 +26,11 @@
           },
           "career": {
             "raw": "木造高 - 富士大 - NTT東日本",
-            "entries": ["木造高", "富士大", "NTT東日本"]
+            "entries": [
+              "木造高",
+              "富士大",
+              "NTT東日本"
+            ]
           },
           "draft": {
             "raw": "2020年ドラフト2位",
@@ -34,48 +38,12 @@
             "rank": 2,
             "selection": "regular"
           }
-        },
-        "rawDetails": {
-          "npb": {
-            "ポジション": "投手",
-            "投打": "左投左打",
-            "身長／体重": "179cm／87kg",
-            "生年月日": "1996年5月13日",
-            "経歴": "木造高 - 富士大 - NTT東日本",
-            "ドラフト": "2020年ドラフト2位"
-          }
         }
       },
       "battingStats": [
         {
           "season": 2021,
           "team": "埼玉西武",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2021",
-            "所属球団": "埼玉西武",
-            "試合": "5",
-            "打席": "1",
-            "打数": "0",
-            "得点": "0",
-            "安打": "0",
-            "二塁打": "0",
-            "三塁打": "0",
-            "本塁打": "0",
-            "塁打": "0",
-            "打点": "0",
-            "盗塁": "0",
-            "盗塁刺": "0",
-            "犠打": "0",
-            "犠飛": "0",
-            "四球": "1",
-            "死球": "0",
-            "三振": "0",
-            "併殺打": "0",
-            "打率": ".000",
-            "長打率": ".000",
-            "出塁率": "1.000"
-          },
           "totals": {
             "games": 5,
             "plateAppearances": 1,
@@ -109,32 +77,6 @@
         {
           "season": 2022,
           "team": "埼玉西武",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2022",
-            "所属球団": "埼玉西武",
-            "試合": "37",
-            "打席": "0",
-            "打数": "0",
-            "得点": "0",
-            "安打": "0",
-            "二塁打": "0",
-            "三塁打": "0",
-            "本塁打": "0",
-            "塁打": "0",
-            "打点": "0",
-            "盗塁": "0",
-            "盗塁刺": "0",
-            "犠打": "0",
-            "犠飛": "0",
-            "四球": "0",
-            "死球": "0",
-            "三振": "0",
-            "併殺打": "0",
-            "打率": ".000",
-            "長打率": ".000",
-            "出塁率": ".000"
-          },
           "totals": {
             "games": 37,
             "plateAppearances": 0,
@@ -168,32 +110,6 @@
         {
           "season": 2023,
           "team": "埼玉西武",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2023",
-            "所属球団": "埼玉西武",
-            "試合": "21",
-            "打席": "0",
-            "打数": "0",
-            "得点": "0",
-            "安打": "0",
-            "二塁打": "0",
-            "三塁打": "0",
-            "本塁打": "0",
-            "塁打": "0",
-            "打点": "0",
-            "盗塁": "0",
-            "盗塁刺": "0",
-            "犠打": "0",
-            "犠飛": "0",
-            "四球": "0",
-            "死球": "0",
-            "三振": "0",
-            "併殺打": "0",
-            "打率": ".000",
-            "長打率": ".000",
-            "出塁率": ".000"
-          },
           "totals": {
             "games": 21,
             "plateAppearances": 0,
@@ -227,32 +143,6 @@
         {
           "season": 2025,
           "team": "埼玉西武",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2025",
-            "所属球団": "埼玉西武",
-            "試合": "15",
-            "打席": "0",
-            "打数": "0",
-            "得点": "0",
-            "安打": "0",
-            "二塁打": "0",
-            "三塁打": "0",
-            "本塁打": "0",
-            "塁打": "0",
-            "打点": "0",
-            "盗塁": "0",
-            "盗塁刺": "0",
-            "犠打": "0",
-            "犠飛": "0",
-            "四球": "0",
-            "死球": "0",
-            "三振": "0",
-            "併殺打": "0",
-            "打率": ".000",
-            "長打率": ".000",
-            "出塁率": ".000"
-          },
           "totals": {
             "games": 15,
             "plateAppearances": 0,
@@ -288,33 +178,6 @@
         {
           "season": 2021,
           "team": "埼玉西武",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2021",
-            "所属球団": "埼玉西武",
-            "登板": "5",
-            "勝利": "0",
-            "敗北": "0",
-            "セーブ": "0",
-            "H": "0",
-            "HP": "0",
-            "完投": "0",
-            "完封勝": "0",
-            "無四球": "0",
-            "勝率": ".000",
-            "打者": "46",
-            "投球回": "8.2",
-            "安打": "13",
-            "本塁打": "1",
-            "四球": "8",
-            "死球": "1",
-            "三振": "4",
-            "暴投": "0",
-            "ボーク": "0",
-            "失点": "9",
-            "自責点": "8",
-            "防御率": "8.31"
-          },
           "totals": {
             "games": 5,
             "wins": 0,
@@ -327,7 +190,7 @@
             "noWalkCompleteGames": 0,
             "winningPercentage": 0,
             "battersFaced": 46,
-            "innings": 8.666666666666666,
+            "innings": 8.667,
             "hitsAllowed": 13,
             "homeRunsAllowed": 1,
             "walksAllowed": 8,
@@ -349,33 +212,6 @@
         {
           "season": 2022,
           "team": "埼玉西武",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2022",
-            "所属球団": "埼玉西武",
-            "登板": "37",
-            "勝利": "3",
-            "敗北": "0",
-            "セーブ": "0",
-            "H": "5",
-            "HP": "8",
-            "完投": "0",
-            "完封勝": "0",
-            "無四球": "0",
-            "勝率": "1.000",
-            "打者": "135",
-            "投球回": "29.2",
-            "安打": "29",
-            "本塁打": "0",
-            "四球": "18",
-            "死球": "4",
-            "三振": "24",
-            "暴投": "1",
-            "ボーク": "0",
-            "失点": "11",
-            "自責点": "10",
-            "防御率": "3.03"
-          },
           "totals": {
             "games": 37,
             "wins": 3,
@@ -388,7 +224,7 @@
             "noWalkCompleteGames": 0,
             "winningPercentage": 1,
             "battersFaced": 135,
-            "innings": 29.666666666666668,
+            "innings": 29.667,
             "hitsAllowed": 29,
             "homeRunsAllowed": 0,
             "walksAllowed": 18,
@@ -410,33 +246,6 @@
         {
           "season": 2023,
           "team": "埼玉西武",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2023",
-            "所属球団": "埼玉西武",
-            "登板": "21",
-            "勝利": "0",
-            "敗北": "1",
-            "セーブ": "0",
-            "H": "4",
-            "HP": "4",
-            "完投": "0",
-            "完封勝": "0",
-            "無四球": "0",
-            "勝率": ".000",
-            "打者": "83",
-            "投球回": "20.2",
-            "安打": "14",
-            "本塁打": "0",
-            "四球": "8",
-            "死球": "1",
-            "三振": "13",
-            "暴投": "0",
-            "ボーク": "0",
-            "失点": "5",
-            "自責点": "2",
-            "防御率": "0.87"
-          },
           "totals": {
             "games": 21,
             "wins": 0,
@@ -449,7 +258,7 @@
             "noWalkCompleteGames": 0,
             "winningPercentage": 0,
             "battersFaced": 83,
-            "innings": 20.666666666666668,
+            "innings": 20.667,
             "hitsAllowed": 14,
             "homeRunsAllowed": 0,
             "walksAllowed": 8,
@@ -471,33 +280,6 @@
         {
           "season": 2025,
           "team": "埼玉西武",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2025",
-            "所属球団": "埼玉西武",
-            "登板": "15",
-            "勝利": "0",
-            "敗北": "3",
-            "セーブ": "0",
-            "H": "1",
-            "HP": "1",
-            "完投": "0",
-            "完封勝": "0",
-            "無四球": "0",
-            "勝率": ".000",
-            "打者": "62",
-            "投球回": "14.1",
-            "安打": "13",
-            "本塁打": "1",
-            "四球": "4",
-            "死球": "3",
-            "三振": "8",
-            "暴投": "0",
-            "ボーク": "0",
-            "失点": "8",
-            "自責点": "8",
-            "防御率": "5.02"
-          },
           "totals": {
             "games": 15,
             "wins": 0,
@@ -510,7 +292,7 @@
             "noWalkCompleteGames": 0,
             "winningPercentage": 0,
             "battersFaced": 62,
-            "innings": 14.333333333333334,
+            "innings": 14.333,
             "hitsAllowed": 13,
             "homeRunsAllowed": 1,
             "walksAllowed": 4,
@@ -577,200 +359,5 @@
     "links": {
       "self": "/players/ljkx.json"
     }
-  },
-  "meta": {
-    "sources": [
-      {
-        "id": "npb",
-        "kind": "official",
-        "name": "NPB公式サイト",
-        "url": "https://npb.jp/bis/players/01005153.html",
-        "retrievedAt": "2026-08-19T08:04:13.503Z"
-      },
-      {
-        "id": "baseball-stats",
-        "kind": "computed",
-        "name": "baseball-stats",
-        "retrievedAt": "2026-08-19T08:04:13.503Z"
-      }
-    ],
-    "provenance": {
-      "profile.familyName": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "profile.givenName": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "profile.familyNameKana": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "profile.givenNameKana": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "profile.registeredName": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "profile.registeredNameKana": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "profile.url": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "profile.isActive": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "profile.details": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "profile.rawDetails.npb": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "career": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[0].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[0].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[0].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[1].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[1].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[1].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[2].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[2].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[2].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[3].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[3].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[3].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[0].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[0].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[0].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[1].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[1].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[1].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[2].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[2].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[2].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[3].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[3].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[3].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      }
-    },
-    "generatedAt": "2026-08-19T08:04:13.503Z"
   }
 }

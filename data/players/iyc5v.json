@@ -1,0 +1,159 @@
+{
+  "data": {
+    "type": "player",
+    "id": "iyc5v",
+    "attributes": {
+      "profile": {
+        "familyName": "福元",
+        "givenName": "悠真",
+        "familyNameKana": "ふくもと",
+        "givenNameKana": "ゆうま",
+        "registeredName": "福元 悠真",
+        "registeredNameKana": "ふくもと・ゆうま",
+        "url": "https://npb.jp/bis/players/31835155.html",
+        "isActive": true,
+        "details": {
+          "position": "外野手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 180,
+          "weightKg": 85,
+          "birthDate": {
+            "iso": "1999-12-01",
+            "year": 1999,
+            "month": 12,
+            "day": 1
+          },
+          "career": {
+            "raw": "智弁学園高 - 大阪商業大",
+            "entries": [
+              "智弁学園高",
+              "大阪商業大"
+            ]
+          },
+          "draft": {
+            "raw": "2021年ドラフト6位",
+            "year": 2021,
+            "rank": 6,
+            "selection": "regular"
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2022,
+          "team": "中 日",
+          "totals": {
+            "games": 1,
+            "plateAppearances": 4,
+            "atBats": 4,
+            "runs": 0,
+            "hits": 1,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 1,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 0,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0.25,
+            "onBasePercentage": 0.25,
+            "sluggingPercentage": 0.25,
+            "ops": 0.5,
+            "iso": 0,
+            "walkPercentage": 0,
+            "strikeoutPercentage": 0
+          }
+        },
+        {
+          "season": 2026,
+          "team": "中 日",
+          "totals": {
+            "games": 4,
+            "plateAppearances": 3,
+            "atBats": 3,
+            "runs": 0,
+            "hits": 2,
+            "doubles": 1,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 3,
+            "rbi": 2,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 0,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0.667,
+            "onBasePercentage": 0.667,
+            "sluggingPercentage": 1,
+            "ops": 1.667,
+            "iso": 0.333,
+            "walkPercentage": 0,
+            "strikeoutPercentage": 0
+          }
+        }
+      ],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 2,
+          "games": 5,
+          "plateAppearances": 7,
+          "atBats": 7,
+          "runs": 0,
+          "hits": 3,
+          "doubles": 1,
+          "triples": 0,
+          "homeRuns": 0,
+          "totalBases": 4,
+          "rbi": 2,
+          "steals": 0,
+          "walks": 0,
+          "hitByPitch": 0,
+          "strikeouts": 0,
+          "battingAverage": 0.429,
+          "onBasePercentage": 0.429,
+          "sluggingPercentage": 0.571,
+          "ops": 1,
+          "iso": 0.142
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/iyc5v.json"
+    }
+  }
+}

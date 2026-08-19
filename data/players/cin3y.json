@@ -1,0 +1,91 @@
+{
+  "data": {
+    "type": "player",
+    "id": "cin3y",
+    "attributes": {
+      "profile": {
+        "familyName": "塩士",
+        "givenName": "暖",
+        "familyNameKana": "しおじ",
+        "givenNameKana": "だん",
+        "registeredName": "塩士 暖",
+        "registeredNameKana": "しおじ・だん",
+        "url": "https://npb.jp/bis/players/21025150.html",
+        "isActive": true,
+        "details": {
+          "position": "投手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 185,
+          "weightKg": 84,
+          "birthDate": {
+            "iso": "2006-05-18",
+            "year": 2006,
+            "month": 5,
+            "day": 18
+          },
+          "career": {
+            "raw": "門前高",
+            "entries": [
+              "門前高"
+            ]
+          },
+          "draft": {
+            "raw": "2024年育成選手ドラフト13位",
+            "year": 2024,
+            "rank": 13,
+            "selection": "development"
+          }
+        }
+      },
+      "battingStats": [],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 0,
+          "games": 0,
+          "plateAppearances": 0,
+          "atBats": 0,
+          "runs": 0,
+          "hits": 0,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 0,
+          "totalBases": 0,
+          "rbi": 0,
+          "steals": 0,
+          "walks": 0,
+          "hitByPitch": 0,
+          "strikeouts": 0,
+          "battingAverage": null,
+          "onBasePercentage": null,
+          "sluggingPercentage": null,
+          "ops": null,
+          "iso": null
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/cin3y.json"
+    }
+  }
+}

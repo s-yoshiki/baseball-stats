@@ -1,0 +1,296 @@
+{
+  "data": {
+    "type": "player",
+    "id": "q5wav",
+    "attributes": {
+      "profile": {
+        "familyName": "A.マチャド",
+        "givenName": null,
+        "familyNameKana": "ANDRES",
+        "givenNameKana": "MACHADO",
+        "registeredName": "A.マチャド",
+        "registeredNameKana": "アンドレス・マチャド",
+        "url": "https://npb.jp/bis/players/43945159.html",
+        "isActive": true,
+        "details": {
+          "position": "投手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 185,
+          "weightKg": 105,
+          "birthDate": {
+            "iso": "1993-04-22",
+            "year": 1993,
+            "month": 4,
+            "day": 22
+          },
+          "career": {
+            "raw": "ウニダッドエデュカティバウラマ高 - ロイヤルズ - ナショナルズ",
+            "entries": [
+              "ウニダッドエデュカティバウラマ高",
+              "ロイヤルズ",
+              "ナショナルズ"
+            ]
+          },
+          "draft": {
+            "raw": null,
+            "year": null,
+            "rank": null,
+            "selection": null
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2024,
+          "team": "オリックス",
+          "totals": {
+            "games": 53,
+            "plateAppearances": 0,
+            "atBats": 0,
+            "runs": 0,
+            "hits": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 0,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 0,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0,
+            "onBasePercentage": 0,
+            "sluggingPercentage": 0,
+            "ops": 0,
+            "iso": 0,
+            "walkPercentage": null,
+            "strikeoutPercentage": null
+          }
+        },
+        {
+          "season": 2025,
+          "team": "オリックス",
+          "totals": {
+            "games": 58,
+            "plateAppearances": 0,
+            "atBats": 0,
+            "runs": 0,
+            "hits": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 0,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 0,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0,
+            "onBasePercentage": 0,
+            "sluggingPercentage": 0,
+            "ops": 0,
+            "iso": 0,
+            "walkPercentage": null,
+            "strikeoutPercentage": null
+          }
+        },
+        {
+          "season": 2026,
+          "team": "オリックス",
+          "totals": {
+            "games": 38,
+            "plateAppearances": 0,
+            "atBats": 0,
+            "runs": 0,
+            "hits": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 0,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 0,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0,
+            "onBasePercentage": 0,
+            "sluggingPercentage": 0,
+            "ops": 0,
+            "iso": 0,
+            "walkPercentage": null,
+            "strikeoutPercentage": null
+          }
+        }
+      ],
+      "pitchingStats": [
+        {
+          "season": 2024,
+          "team": "オリックス",
+          "totals": {
+            "games": 53,
+            "wins": 5,
+            "losses": 3,
+            "saves": 23,
+            "holds": 14,
+            "holdPoints": 19,
+            "completeGames": 0,
+            "shutouts": 0,
+            "noWalkCompleteGames": 0,
+            "winningPercentage": 0.625,
+            "battersFaced": 211,
+            "innings": 53.333,
+            "hitsAllowed": 36,
+            "homeRunsAllowed": 1,
+            "walksAllowed": 18,
+            "hitByPitch": 1,
+            "strikeouts": 58,
+            "wildPitches": 0,
+            "balks": 0,
+            "runsAllowed": 13,
+            "earnedRuns": 12
+          },
+          "metrics": {
+            "era": 2.03,
+            "whip": 1.013,
+            "strikeoutsPerNine": 9.788,
+            "walksPerNine": 3.037,
+            "strikeoutToWalkRatio": 3.222
+          }
+        },
+        {
+          "season": 2025,
+          "team": "オリックス",
+          "totals": {
+            "games": 58,
+            "wins": 3,
+            "losses": 6,
+            "saves": 28,
+            "holds": 9,
+            "holdPoints": 12,
+            "completeGames": 0,
+            "shutouts": 0,
+            "noWalkCompleteGames": 0,
+            "winningPercentage": 0.333,
+            "battersFaced": 233,
+            "innings": 55.333,
+            "hitsAllowed": 50,
+            "homeRunsAllowed": 0,
+            "walksAllowed": 16,
+            "hitByPitch": 3,
+            "strikeouts": 68,
+            "wildPitches": 0,
+            "balks": 0,
+            "runsAllowed": 16,
+            "earnedRuns": 14
+          },
+          "metrics": {
+            "era": 2.28,
+            "whip": 1.193,
+            "strikeoutsPerNine": 11.06,
+            "walksPerNine": 2.602,
+            "strikeoutToWalkRatio": 4.25
+          }
+        },
+        {
+          "season": 2026,
+          "team": "オリックス",
+          "totals": {
+            "games": 38,
+            "wins": 2,
+            "losses": 1,
+            "saves": 24,
+            "holds": 6,
+            "holdPoints": 8,
+            "completeGames": 0,
+            "shutouts": 0,
+            "noWalkCompleteGames": 0,
+            "winningPercentage": 0.667,
+            "battersFaced": 151,
+            "innings": 39.333,
+            "hitsAllowed": 28,
+            "homeRunsAllowed": 4,
+            "walksAllowed": 6,
+            "hitByPitch": 1,
+            "strikeouts": 39,
+            "wildPitches": 0,
+            "balks": 0,
+            "runsAllowed": 6,
+            "earnedRuns": 6
+          },
+          "metrics": {
+            "era": 1.37,
+            "whip": 0.864,
+            "strikeoutsPerNine": 8.924,
+            "walksPerNine": 1.373,
+            "strikeoutToWalkRatio": 6.5
+          }
+        }
+      ],
+      "career": {
+        "batting": {
+          "seasons": 3,
+          "games": 149,
+          "plateAppearances": 0,
+          "atBats": 0,
+          "runs": 0,
+          "hits": 0,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 0,
+          "totalBases": 0,
+          "rbi": 0,
+          "steals": 0,
+          "walks": 0,
+          "hitByPitch": 0,
+          "strikeouts": 0,
+          "battingAverage": null,
+          "onBasePercentage": null,
+          "sluggingPercentage": null,
+          "ops": null,
+          "iso": null
+        },
+        "pitching": {
+          "seasons": 3,
+          "games": 149,
+          "wins": 10,
+          "losses": 10,
+          "saves": 75,
+          "holds": 29,
+          "innings": 148,
+          "hitsAllowed": 114,
+          "walksAllowed": 40,
+          "strikeouts": 165,
+          "earnedRuns": 32,
+          "winningPercentage": 0.5,
+          "era": 1.946,
+          "whip": 1.041,
+          "strikeoutsPerNine": 10.034,
+          "walksPerNine": 2.432,
+          "strikeoutToWalkRatio": 4.125
+        }
+      }
+    },
+    "links": {
+      "self": "/players/q5wav.json"
+    }
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "data": {
+    "type": "player",
+    "id": "1cr2zi",
+    "attributes": {
+      "profile": {
+        "familyName": "宮崎",
+        "givenName": "竜成",
+        "familyNameKana": "みやざき",
+        "givenNameKana": "りゅうせい",
+        "registeredName": "宮崎 竜成",
+        "registeredNameKana": "みやざき・りゅうせい",
+        "url": "https://npb.jp/bis/players/81885150.html",
+        "isActive": true,
+        "details": {
+          "position": "内野手",
+          "throws": "右",
+          "bats": "左",
+          "heightCm": 173,
+          "weightKg": 90,
+          "birthDate": {
+            "iso": "2000-12-09",
+            "year": 2000,
+            "month": 12,
+            "day": 9
+          },
+          "career": {
+            "raw": "創志学園高 - 立命館大 - ヤマハ",
+            "entries": [
+              "創志学園高",
+              "立命館大",
+              "ヤマハ"
+            ]
+          },
+          "draft": {
+            "raw": "2024年ドラフト2位",
+            "year": 2024,
+            "rank": 2,
+            "selection": "regular"
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2025,
+          "team": "千葉ロッテ",
+          "totals": {
+            "games": 39,
+            "plateAppearances": 110,
+            "atBats": 98,
+            "runs": 7,
+            "hits": 19,
+            "doubles": 3,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 22,
+            "rbi": 3,
+            "steals": 1,
+            "caughtStealing": 0,
+            "sacrificeHits": 5,
+            "sacrificeFlies": 0,
+            "walks": 3,
+            "hitByPitch": 4,
+            "strikeouts": 31,
+            "groundedIntoDoublePlays": 1
+          },
+          "metrics": {
+            "battingAverage": 0.194,
+            "onBasePercentage": 0.248,
+            "sluggingPercentage": 0.224,
+            "ops": 0.472,
+            "iso": 0.03,
+            "walkPercentage": 0.027,
+            "strikeoutPercentage": 0.282
+          }
+        },
+        {
+          "season": 2026,
+          "team": "千葉ロッテ",
+          "totals": {
+            "games": 34,
+            "plateAppearances": 29,
+            "atBats": 28,
+            "runs": 6,
+            "hits": 4,
+            "doubles": 1,
+            "triples": 0,
+            "homeRuns": 1,
+            "totalBases": 8,
+            "rbi": 1,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 1,
+            "hitByPitch": 0,
+            "strikeouts": 11,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0.143,
+            "onBasePercentage": 0.172,
+            "sluggingPercentage": 0.286,
+            "ops": 0.458,
+            "iso": 0.143,
+            "walkPercentage": 0.034,
+            "strikeoutPercentage": 0.379
+          }
+        }
+      ],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 2,
+          "games": 73,
+          "plateAppearances": 139,
+          "atBats": 126,
+          "runs": 13,
+          "hits": 23,
+          "doubles": 4,
+          "triples": 0,
+          "homeRuns": 1,
+          "totalBases": 30,
+          "rbi": 4,
+          "steals": 1,
+          "walks": 4,
+          "hitByPitch": 4,
+          "strikeouts": 42,
+          "battingAverage": 0.183,
+          "onBasePercentage": 0.223,
+          "sluggingPercentage": 0.238,
+          "ops": 0.461,
+          "iso": 0.055
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/1cr2zi.json"
+    }
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "data": {
+    "type": "player",
+    "id": "10j9ni",
+    "attributes": {
+      "profile": {
+        "familyName": "宇野",
+        "givenName": "真仁朗",
+        "familyNameKana": "うの",
+        "givenNameKana": "しんじろう",
+        "registeredName": "宇野 真仁朗",
+        "registeredNameKana": "うの・しんじろう",
+        "url": "https://npb.jp/bis/players/61365150.html",
+        "isActive": true,
+        "details": {
+          "position": "内野手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 178,
+          "weightKg": 85,
+          "birthDate": {
+            "iso": "2006-07-05",
+            "year": 2006,
+            "month": 7,
+            "day": 5
+          },
+          "career": {
+            "raw": "早稲田実",
+            "entries": [
+              "早稲田実"
+            ]
+          },
+          "draft": {
+            "raw": "2024年ドラフト4位",
+            "year": 2024,
+            "rank": 4,
+            "selection": "regular"
+          }
+        }
+      },
+      "battingStats": [],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 0,
+          "games": 0,
+          "plateAppearances": 0,
+          "atBats": 0,
+          "runs": 0,
+          "hits": 0,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 0,
+          "totalBases": 0,
+          "rbi": 0,
+          "steals": 0,
+          "walks": 0,
+          "hitByPitch": 0,
+          "strikeouts": 0,
+          "battingAverage": null,
+          "onBasePercentage": null,
+          "sluggingPercentage": null,
+          "ops": null,
+          "iso": null
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/10j9ni.json"
+    }
+  }
+}

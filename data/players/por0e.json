@@ -1,0 +1,126 @@
+{
+  "data": {
+    "type": "player",
+    "id": "por0e",
+    "attributes": {
+      "profile": {
+        "familyName": "矢野",
+        "givenName": "泰二郎",
+        "familyNameKana": "やの",
+        "givenNameKana": "たいじろう",
+        "registeredName": "矢野 泰二郎",
+        "registeredNameKana": "やの・たいじろう",
+        "url": "https://npb.jp/bis/players/43145150.html",
+        "isActive": true,
+        "details": {
+          "position": "捕手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 178,
+          "weightKg": 82,
+          "birthDate": {
+            "iso": "2002-05-22",
+            "year": 2002,
+            "month": 5,
+            "day": 22
+          },
+          "career": {
+            "raw": "済美高 - 四国・愛媛",
+            "entries": [
+              "済美高",
+              "四国・愛媛"
+            ]
+          },
+          "draft": {
+            "raw": "2024年ドラフト5位",
+            "year": 2024,
+            "rank": 5,
+            "selection": "regular"
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2026,
+          "team": "東京ヤクルト",
+          "totals": {
+            "games": 7,
+            "plateAppearances": 5,
+            "atBats": 4,
+            "runs": 1,
+            "hits": 1,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 1,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 1,
+            "hitByPitch": 0,
+            "strikeouts": 0,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0.25,
+            "onBasePercentage": 0.4,
+            "sluggingPercentage": 0.25,
+            "ops": 0.65,
+            "iso": 0,
+            "walkPercentage": 0.2,
+            "strikeoutPercentage": 0
+          }
+        }
+      ],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 1,
+          "games": 7,
+          "plateAppearances": 5,
+          "atBats": 4,
+          "runs": 1,
+          "hits": 1,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 0,
+          "totalBases": 1,
+          "rbi": 0,
+          "steals": 0,
+          "walks": 1,
+          "hitByPitch": 0,
+          "strikeouts": 0,
+          "battingAverage": 0.25,
+          "onBasePercentage": 0.4,
+          "sluggingPercentage": 0.25,
+          "ops": 0.65,
+          "iso": 0
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/por0e.json"
+    }
+  }
+}

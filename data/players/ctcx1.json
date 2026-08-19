@@ -1,0 +1,91 @@
+{
+  "data": {
+    "type": "player",
+    "id": "ctcx1",
+    "attributes": {
+      "profile": {
+        "familyName": "北村",
+        "givenName": "流音",
+        "familyNameKana": "きたむら",
+        "givenNameKana": "りお",
+        "registeredName": "北村 流音",
+        "registeredNameKana": "きたむら・りお",
+        "url": "https://npb.jp/bis/players/21525157.html",
+        "isActive": true,
+        "details": {
+          "position": "内野手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 174,
+          "weightKg": 78,
+          "birthDate": {
+            "iso": "2005-02-20",
+            "year": 2005,
+            "month": 2,
+            "day": 20
+          },
+          "career": {
+            "raw": "桐生第一高",
+            "entries": [
+              "桐生第一高"
+            ]
+          },
+          "draft": {
+            "raw": "2022年育成選手ドラフト8位",
+            "year": 2022,
+            "rank": 8,
+            "selection": "development"
+          }
+        }
+      },
+      "battingStats": [],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 0,
+          "games": 0,
+          "plateAppearances": 0,
+          "atBats": 0,
+          "runs": 0,
+          "hits": 0,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 0,
+          "totalBases": 0,
+          "rbi": 0,
+          "steals": 0,
+          "walks": 0,
+          "hitByPitch": 0,
+          "strikeouts": 0,
+          "battingAverage": null,
+          "onBasePercentage": null,
+          "sluggingPercentage": null,
+          "ops": null,
+          "iso": null
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/ctcx1.json"
+    }
+  }
+}

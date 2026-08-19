@@ -1,0 +1,164 @@
+{
+  "data": {
+    "type": "player",
+    "id": "1jfcog",
+    "attributes": {
+      "profile": {
+        "familyName": "J.ルケーシー",
+        "givenName": null,
+        "familyNameKana": "JOEY",
+        "givenNameKana": "LUCCHESI",
+        "registeredName": "J.ルケーシー",
+        "registeredNameKana": "ジョーイ・ルケーシー",
+        "url": "https://npb.jp/bis/players/93095152.html",
+        "isActive": true,
+        "details": {
+          "position": "投手",
+          "throws": "左",
+          "bats": "左",
+          "heightCm": 198,
+          "weightKg": 103,
+          "birthDate": {
+            "iso": "1993-06-06",
+            "year": 1993,
+            "month": 6,
+            "day": 6
+          },
+          "career": {
+            "raw": "サウスイーストミズーリ州大 - パドレス - メッツ - ジャイアンツ - エンゼルス",
+            "entries": [
+              "サウスイーストミズーリ州大",
+              "パドレス",
+              "メッツ",
+              "ジャイアンツ",
+              "エンゼルス"
+            ]
+          },
+          "draft": {
+            "raw": null,
+            "year": null,
+            "rank": null,
+            "selection": null
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2026,
+          "team": "千葉ロッテ",
+          "totals": {
+            "games": 1,
+            "plateAppearances": 0,
+            "atBats": 0,
+            "runs": 0,
+            "hits": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 0,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 0,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0,
+            "onBasePercentage": 0,
+            "sluggingPercentage": 0,
+            "ops": 0,
+            "iso": 0,
+            "walkPercentage": null,
+            "strikeoutPercentage": null
+          }
+        }
+      ],
+      "pitchingStats": [
+        {
+          "season": 2026,
+          "team": "千葉ロッテ",
+          "totals": {
+            "games": 1,
+            "wins": 0,
+            "losses": 0,
+            "saves": 0,
+            "holds": 0,
+            "holdPoints": 0,
+            "completeGames": 0,
+            "shutouts": 0,
+            "noWalkCompleteGames": 0,
+            "winningPercentage": 0,
+            "battersFaced": 15,
+            "innings": 4,
+            "hitsAllowed": 2,
+            "homeRunsAllowed": 0,
+            "walksAllowed": 2,
+            "hitByPitch": 0,
+            "strikeouts": 4,
+            "wildPitches": 0,
+            "balks": 0,
+            "runsAllowed": 2,
+            "earnedRuns": 2
+          },
+          "metrics": {
+            "era": 4.5,
+            "whip": 1,
+            "strikeoutsPerNine": 9,
+            "walksPerNine": 4.5,
+            "strikeoutToWalkRatio": 2
+          }
+        }
+      ],
+      "career": {
+        "batting": {
+          "seasons": 1,
+          "games": 1,
+          "plateAppearances": 0,
+          "atBats": 0,
+          "runs": 0,
+          "hits": 0,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 0,
+          "totalBases": 0,
+          "rbi": 0,
+          "steals": 0,
+          "walks": 0,
+          "hitByPitch": 0,
+          "strikeouts": 0,
+          "battingAverage": null,
+          "onBasePercentage": null,
+          "sluggingPercentage": null,
+          "ops": null,
+          "iso": null
+        },
+        "pitching": {
+          "seasons": 1,
+          "games": 1,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 4,
+          "hitsAllowed": 2,
+          "walksAllowed": 2,
+          "strikeouts": 4,
+          "earnedRuns": 2,
+          "winningPercentage": null,
+          "era": 4.5,
+          "whip": 1,
+          "strikeoutsPerNine": 9,
+          "walksPerNine": 4.5,
+          "strikeoutToWalkRatio": 2
+        }
+      }
+    },
+    "links": {
+      "self": "/players/1jfcog.json"
+    }
+  }
+}

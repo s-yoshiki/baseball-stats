@@ -1,0 +1,126 @@
+{
+  "data": {
+    "type": "player",
+    "id": "1drips",
+    "attributes": {
+      "profile": {
+        "familyName": "C.ディベイニー",
+        "givenName": null,
+        "familyNameKana": "CAM",
+        "givenNameKana": "DEVANNEY",
+        "registeredName": "C.ディベイニー",
+        "registeredNameKana": "キャム・ディベイニー",
+        "url": "https://npb.jp/bis/players/83585152.html",
+        "isActive": true,
+        "details": {
+          "position": "内野手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 185,
+          "weightKg": 88,
+          "birthDate": {
+            "iso": "1997-04-13",
+            "year": 1997,
+            "month": 4,
+            "day": 13
+          },
+          "career": {
+            "raw": "イーロン大 - パイレーツ",
+            "entries": [
+              "イーロン大",
+              "パイレーツ"
+            ]
+          },
+          "draft": {
+            "raw": null,
+            "year": null,
+            "rank": null,
+            "selection": null
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2026,
+          "team": "阪 神",
+          "totals": {
+            "games": 5,
+            "plateAppearances": 8,
+            "atBats": 7,
+            "runs": 1,
+            "hits": 1,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 1,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 1,
+            "hitByPitch": 0,
+            "strikeouts": 3,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0.143,
+            "onBasePercentage": 0.25,
+            "sluggingPercentage": 0.143,
+            "ops": 0.393,
+            "iso": 0,
+            "walkPercentage": 0.125,
+            "strikeoutPercentage": 0.375
+          }
+        }
+      ],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 1,
+          "games": 5,
+          "plateAppearances": 8,
+          "atBats": 7,
+          "runs": 1,
+          "hits": 1,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 0,
+          "totalBases": 1,
+          "rbi": 0,
+          "steals": 0,
+          "walks": 1,
+          "hitByPitch": 0,
+          "strikeouts": 3,
+          "battingAverage": 0.143,
+          "onBasePercentage": 0.25,
+          "sluggingPercentage": 0.143,
+          "ops": 0.393,
+          "iso": 0
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/1drips.json"
+    }
+  }
+}

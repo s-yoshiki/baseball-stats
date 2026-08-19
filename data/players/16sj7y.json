@@ -1,0 +1,91 @@
+{
+  "data": {
+    "type": "player",
+    "id": "16sj7y",
+    "attributes": {
+      "profile": {
+        "familyName": "福尾",
+        "givenName": "遥真",
+        "familyNameKana": "ふくお",
+        "givenNameKana": "はるま",
+        "registeredName": "福尾 遥真",
+        "registeredNameKana": "ふくお・はるま",
+        "url": "https://npb.jp/bis/players/71875150.html",
+        "isActive": true,
+        "details": {
+          "position": "内野手",
+          "throws": "右",
+          "bats": "左",
+          "heightCm": 183,
+          "weightKg": 80,
+          "birthDate": {
+            "iso": "2006-04-06",
+            "year": 2006,
+            "month": 4,
+            "day": 6
+          },
+          "career": {
+            "raw": "学法石川高",
+            "entries": [
+              "学法石川高"
+            ]
+          },
+          "draft": {
+            "raw": "2024年育成選手ドラフト6位",
+            "year": 2024,
+            "rank": 6,
+            "selection": "development"
+          }
+        }
+      },
+      "battingStats": [],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 0,
+          "games": 0,
+          "plateAppearances": 0,
+          "atBats": 0,
+          "runs": 0,
+          "hits": 0,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 0,
+          "totalBases": 0,
+          "rbi": 0,
+          "steals": 0,
+          "walks": 0,
+          "hitByPitch": 0,
+          "strikeouts": 0,
+          "battingAverage": null,
+          "onBasePercentage": null,
+          "sluggingPercentage": null,
+          "ops": null,
+          "iso": null
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/16sj7y.json"
+    }
+  }
+}

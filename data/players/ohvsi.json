@@ -1,0 +1,390 @@
+{
+  "data": {
+    "type": "player",
+    "id": "ohvsi",
+    "attributes": {
+      "profile": {
+        "familyName": "伊藤",
+        "givenName": "裕季也",
+        "familyNameKana": "いとう",
+        "givenNameKana": "ゆきや",
+        "registeredName": "伊藤 裕季也",
+        "registeredNameKana": "いとう・ゆきや",
+        "url": "https://npb.jp/bis/players/41145138.html",
+        "isActive": true,
+        "details": {
+          "position": "内野手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 181,
+          "weightKg": 95,
+          "birthDate": {
+            "iso": "1996-08-30",
+            "year": 1996,
+            "month": 8,
+            "day": 30
+          },
+          "career": {
+            "raw": "日大三高 - 立正大",
+            "entries": [
+              "日大三高",
+              "立正大"
+            ]
+          },
+          "draft": {
+            "raw": "2018年ドラフト2位",
+            "year": 2018,
+            "rank": 2,
+            "selection": "regular"
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2019,
+          "team": "横浜DeNA",
+          "totals": {
+            "games": 21,
+            "plateAppearances": 57,
+            "atBats": 52,
+            "runs": 7,
+            "hits": 15,
+            "doubles": 4,
+            "triples": 0,
+            "homeRuns": 4,
+            "totalBases": 31,
+            "rbi": 7,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 1,
+            "walks": 3,
+            "hitByPitch": 1,
+            "strikeouts": 17,
+            "groundedIntoDoublePlays": 1
+          },
+          "metrics": {
+            "battingAverage": 0.288,
+            "onBasePercentage": 0.333,
+            "sluggingPercentage": 0.596,
+            "ops": 0.929,
+            "iso": 0.308,
+            "walkPercentage": 0.053,
+            "strikeoutPercentage": 0.298
+          }
+        },
+        {
+          "season": 2020,
+          "team": "横浜DeNA",
+          "totals": {
+            "games": 5,
+            "plateAppearances": 17,
+            "atBats": 14,
+            "runs": 1,
+            "hits": 4,
+            "doubles": 0,
+            "triples": 1,
+            "homeRuns": 0,
+            "totalBases": 6,
+            "rbi": 1,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 1,
+            "sacrificeFlies": 0,
+            "walks": 2,
+            "hitByPitch": 0,
+            "strikeouts": 2,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0.286,
+            "onBasePercentage": 0.375,
+            "sluggingPercentage": 0.429,
+            "ops": 0.804,
+            "iso": 0.143,
+            "walkPercentage": 0.118,
+            "strikeoutPercentage": 0.118
+          }
+        },
+        {
+          "season": 2021,
+          "team": "横浜DeNA",
+          "totals": {
+            "games": 3,
+            "plateAppearances": 2,
+            "atBats": 2,
+            "runs": 0,
+            "hits": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 0,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 1,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0,
+            "onBasePercentage": 0,
+            "sluggingPercentage": 0,
+            "ops": 0,
+            "iso": 0,
+            "walkPercentage": 0,
+            "strikeoutPercentage": 0.5
+          }
+        },
+        {
+          "season": 2022,
+          "team": "横浜DeNA",
+          "totals": {
+            "games": 7,
+            "plateAppearances": 13,
+            "atBats": 13,
+            "runs": 0,
+            "hits": 1,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 1,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 6,
+            "groundedIntoDoublePlays": 1
+          },
+          "metrics": {
+            "battingAverage": 0.077,
+            "onBasePercentage": 0.077,
+            "sluggingPercentage": 0.077,
+            "ops": 0.154,
+            "iso": 0,
+            "walkPercentage": 0,
+            "strikeoutPercentage": 0.462
+          }
+        },
+        {
+          "season": 2022,
+          "team": "東北楽天",
+          "totals": {
+            "games": 3,
+            "plateAppearances": 8,
+            "atBats": 8,
+            "runs": 0,
+            "hits": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 0,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 4,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0,
+            "onBasePercentage": 0,
+            "sluggingPercentage": 0,
+            "ops": 0,
+            "iso": 0,
+            "walkPercentage": 0,
+            "strikeoutPercentage": 0.5
+          }
+        },
+        {
+          "season": 2023,
+          "team": "東北楽天",
+          "totals": {
+            "games": 87,
+            "plateAppearances": 216,
+            "atBats": 188,
+            "runs": 20,
+            "hits": 46,
+            "doubles": 6,
+            "triples": 1,
+            "homeRuns": 5,
+            "totalBases": 69,
+            "rbi": 16,
+            "steals": 3,
+            "caughtStealing": 2,
+            "sacrificeHits": 10,
+            "sacrificeFlies": 2,
+            "walks": 15,
+            "hitByPitch": 1,
+            "strikeouts": 48,
+            "groundedIntoDoublePlays": 3
+          },
+          "metrics": {
+            "battingAverage": 0.245,
+            "onBasePercentage": 0.301,
+            "sluggingPercentage": 0.367,
+            "ops": 0.668,
+            "iso": 0.122,
+            "walkPercentage": 0.069,
+            "strikeoutPercentage": 0.222
+          }
+        },
+        {
+          "season": 2024,
+          "team": "東北楽天",
+          "totals": {
+            "games": 44,
+            "plateAppearances": 125,
+            "atBats": 115,
+            "runs": 10,
+            "hits": 30,
+            "doubles": 6,
+            "triples": 1,
+            "homeRuns": 2,
+            "totalBases": 44,
+            "rbi": 10,
+            "steals": 0,
+            "caughtStealing": 1,
+            "sacrificeHits": 4,
+            "sacrificeFlies": 0,
+            "walks": 5,
+            "hitByPitch": 1,
+            "strikeouts": 34,
+            "groundedIntoDoublePlays": 2
+          },
+          "metrics": {
+            "battingAverage": 0.261,
+            "onBasePercentage": 0.298,
+            "sluggingPercentage": 0.383,
+            "ops": 0.681,
+            "iso": 0.122,
+            "walkPercentage": 0.04,
+            "strikeoutPercentage": 0.272
+          }
+        },
+        {
+          "season": 2025,
+          "team": "東北楽天",
+          "totals": {
+            "games": 51,
+            "plateAppearances": 130,
+            "atBats": 117,
+            "runs": 7,
+            "hits": 25,
+            "doubles": 8,
+            "triples": 1,
+            "homeRuns": 1,
+            "totalBases": 38,
+            "rbi": 7,
+            "steals": 2,
+            "caughtStealing": 0,
+            "sacrificeHits": 2,
+            "sacrificeFlies": 1,
+            "walks": 9,
+            "hitByPitch": 1,
+            "strikeouts": 34,
+            "groundedIntoDoublePlays": 3
+          },
+          "metrics": {
+            "battingAverage": 0.214,
+            "onBasePercentage": 0.273,
+            "sluggingPercentage": 0.325,
+            "ops": 0.598,
+            "iso": 0.111,
+            "walkPercentage": 0.069,
+            "strikeoutPercentage": 0.262
+          }
+        },
+        {
+          "season": 2026,
+          "team": "東北楽天",
+          "totals": {
+            "games": 19,
+            "plateAppearances": 53,
+            "atBats": 48,
+            "runs": 5,
+            "hits": 9,
+            "doubles": 3,
+            "triples": 0,
+            "homeRuns": 3,
+            "totalBases": 21,
+            "rbi": 8,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 1,
+            "walks": 4,
+            "hitByPitch": 0,
+            "strikeouts": 17,
+            "groundedIntoDoublePlays": 3
+          },
+          "metrics": {
+            "battingAverage": 0.188,
+            "onBasePercentage": 0.245,
+            "sluggingPercentage": 0.438,
+            "ops": 0.683,
+            "iso": 0.25,
+            "walkPercentage": 0.075,
+            "strikeoutPercentage": 0.321
+          }
+        }
+      ],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 9,
+          "games": 240,
+          "plateAppearances": 621,
+          "atBats": 557,
+          "runs": 50,
+          "hits": 130,
+          "doubles": 27,
+          "triples": 4,
+          "homeRuns": 15,
+          "totalBases": 210,
+          "rbi": 49,
+          "steals": 5,
+          "walks": 38,
+          "hitByPitch": 4,
+          "strikeouts": 163,
+          "battingAverage": 0.233,
+          "onBasePercentage": 0.277,
+          "sluggingPercentage": 0.377,
+          "ops": 0.654,
+          "iso": 0.144
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/ohvsi.json"
+    }
+  }
+}

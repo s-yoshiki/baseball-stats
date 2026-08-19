@@ -1,0 +1,92 @@
+{
+  "data": {
+    "type": "player",
+    "id": "6wyb2",
+    "attributes": {
+      "profile": {
+        "familyName": "德山",
+        "givenName": "一翔",
+        "familyNameKana": "とくやま",
+        "givenNameKana": "かずと",
+        "registeredName": "德山 一翔",
+        "registeredNameKana": "とくやま・かずと",
+        "url": "https://npb.jp/bis/players/11615150.html",
+        "isActive": true,
+        "details": {
+          "position": "投手",
+          "throws": "左",
+          "bats": "左",
+          "heightCm": 177,
+          "weightKg": 87,
+          "birthDate": {
+            "iso": "2002-04-11",
+            "year": 2002,
+            "month": 4,
+            "day": 11
+          },
+          "career": {
+            "raw": "鳴門渦潮高 - 環太平洋大",
+            "entries": [
+              "鳴門渦潮高",
+              "環太平洋大"
+            ]
+          },
+          "draft": {
+            "raw": "2024年ドラフト2位",
+            "year": 2024,
+            "rank": 2,
+            "selection": "regular"
+          }
+        }
+      },
+      "battingStats": [],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 0,
+          "games": 0,
+          "plateAppearances": 0,
+          "atBats": 0,
+          "runs": 0,
+          "hits": 0,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 0,
+          "totalBases": 0,
+          "rbi": 0,
+          "steals": 0,
+          "walks": 0,
+          "hitByPitch": 0,
+          "strikeouts": 0,
+          "battingAverage": null,
+          "onBasePercentage": null,
+          "sluggingPercentage": null,
+          "ops": null,
+          "iso": null
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/6wyb2.json"
+    }
+  }
+}

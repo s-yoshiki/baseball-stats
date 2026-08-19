@@ -1,0 +1,91 @@
+{
+  "data": {
+    "type": "player",
+    "id": "juhkl",
+    "attributes": {
+      "profile": {
+        "familyName": "森山",
+        "givenName": "暁生",
+        "familyNameKana": "もりやま",
+        "givenNameKana": "あきお",
+        "registeredName": "森山 暁生",
+        "registeredNameKana": "もりやま・あきお",
+        "url": "https://npb.jp/bis/players/33335157.html",
+        "isActive": true,
+        "details": {
+          "position": "投手",
+          "throws": "左",
+          "bats": "左",
+          "heightCm": 183,
+          "weightKg": 90,
+          "birthDate": {
+            "iso": "2005-01-11",
+            "year": 2005,
+            "month": 1,
+            "day": 11
+          },
+          "career": {
+            "raw": "阿南光高",
+            "entries": [
+              "阿南光高"
+            ]
+          },
+          "draft": {
+            "raw": "2022年ドラフト3位",
+            "year": 2022,
+            "rank": 3,
+            "selection": "regular"
+          }
+        }
+      },
+      "battingStats": [],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 0,
+          "games": 0,
+          "plateAppearances": 0,
+          "atBats": 0,
+          "runs": 0,
+          "hits": 0,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 0,
+          "totalBases": 0,
+          "rbi": 0,
+          "steals": 0,
+          "walks": 0,
+          "hitByPitch": 0,
+          "strikeouts": 0,
+          "battingAverage": null,
+          "onBasePercentage": null,
+          "sluggingPercentage": null,
+          "ops": null,
+          "iso": null
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/juhkl.json"
+    }
+  }
+}

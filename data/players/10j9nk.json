@@ -1,0 +1,161 @@
+{
+  "data": {
+    "type": "player",
+    "id": "10j9nk",
+    "attributes": {
+      "profile": {
+        "familyName": "大川",
+        "givenName": "慈英",
+        "familyNameKana": "おおかわ",
+        "givenNameKana": "じぇい",
+        "registeredName": "大川 慈英",
+        "registeredNameKana": "おおかわ・じぇい",
+        "url": "https://npb.jp/bis/players/61365152.html",
+        "isActive": true,
+        "details": {
+          "position": "投手",
+          "throws": "右",
+          "bats": "左",
+          "heightCm": 178,
+          "weightKg": 70,
+          "birthDate": {
+            "iso": "2003-10-28",
+            "year": 2003,
+            "month": 10,
+            "day": 28
+          },
+          "career": {
+            "raw": "常総学院高 - 明治大",
+            "entries": [
+              "常総学院高",
+              "明治大"
+            ]
+          },
+          "draft": {
+            "raw": "2025年ドラフト1位",
+            "year": 2025,
+            "rank": 1,
+            "selection": "regular"
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2026,
+          "team": "北海道日本ハム",
+          "totals": {
+            "games": 2,
+            "plateAppearances": 0,
+            "atBats": 0,
+            "runs": 0,
+            "hits": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 0,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 0,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0,
+            "onBasePercentage": 0,
+            "sluggingPercentage": 0,
+            "ops": 0,
+            "iso": 0,
+            "walkPercentage": null,
+            "strikeoutPercentage": null
+          }
+        }
+      ],
+      "pitchingStats": [
+        {
+          "season": 2026,
+          "team": "北海道日本ハム",
+          "totals": {
+            "games": 2,
+            "wins": 0,
+            "losses": 0,
+            "saves": 0,
+            "holds": 0,
+            "holdPoints": 0,
+            "completeGames": 0,
+            "shutouts": 0,
+            "noWalkCompleteGames": 0,
+            "winningPercentage": 0,
+            "battersFaced": 10,
+            "innings": 0.667,
+            "hitsAllowed": 4,
+            "homeRunsAllowed": 0,
+            "walksAllowed": 1,
+            "hitByPitch": 0,
+            "strikeouts": 0,
+            "wildPitches": 1,
+            "balks": 0,
+            "runsAllowed": 5,
+            "earnedRuns": 2
+          },
+          "metrics": {
+            "era": 27,
+            "whip": 7.5,
+            "strikeoutsPerNine": 0,
+            "walksPerNine": 13.5,
+            "strikeoutToWalkRatio": 0
+          }
+        }
+      ],
+      "career": {
+        "batting": {
+          "seasons": 1,
+          "games": 2,
+          "plateAppearances": 0,
+          "atBats": 0,
+          "runs": 0,
+          "hits": 0,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 0,
+          "totalBases": 0,
+          "rbi": 0,
+          "steals": 0,
+          "walks": 0,
+          "hitByPitch": 0,
+          "strikeouts": 0,
+          "battingAverage": null,
+          "onBasePercentage": null,
+          "sluggingPercentage": null,
+          "ops": null,
+          "iso": null
+        },
+        "pitching": {
+          "seasons": 1,
+          "games": 2,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0.667,
+          "hitsAllowed": 4,
+          "walksAllowed": 1,
+          "strikeouts": 0,
+          "earnedRuns": 2,
+          "winningPercentage": null,
+          "era": 27,
+          "whip": 7.5,
+          "strikeoutsPerNine": 0,
+          "walksPerNine": 13.5,
+          "strikeoutToWalkRatio": 0
+        }
+      }
+    },
+    "links": {
+      "self": "/players/10j9nk.json"
+    }
+  }
+}

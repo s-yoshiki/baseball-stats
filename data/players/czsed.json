@@ -1,0 +1,191 @@
+{
+  "data": {
+    "type": "player",
+    "id": "czsed",
+    "attributes": {
+      "profile": {
+        "familyName": "松尾",
+        "givenName": "汐恩",
+        "familyNameKana": "まつお",
+        "givenNameKana": "しおん",
+        "registeredName": "松尾 汐恩",
+        "registeredNameKana": "まつお・しおん",
+        "url": "https://npb.jp/bis/players/21825157.html",
+        "isActive": true,
+        "details": {
+          "position": "捕手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 178,
+          "weightKg": 82,
+          "birthDate": {
+            "iso": "2004-07-06",
+            "year": 2004,
+            "month": 7,
+            "day": 6
+          },
+          "career": {
+            "raw": "大阪桐蔭高",
+            "entries": [
+              "大阪桐蔭高"
+            ]
+          },
+          "draft": {
+            "raw": "2022年ドラフト1位",
+            "year": 2022,
+            "rank": 1,
+            "selection": "regular"
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2024,
+          "team": "横浜DeNA",
+          "totals": {
+            "games": 27,
+            "plateAppearances": 40,
+            "atBats": 38,
+            "runs": 3,
+            "hits": 8,
+            "doubles": 3,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 11,
+            "rbi": 1,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 1,
+            "hitByPitch": 1,
+            "strikeouts": 8,
+            "groundedIntoDoublePlays": 1
+          },
+          "metrics": {
+            "battingAverage": 0.211,
+            "onBasePercentage": 0.25,
+            "sluggingPercentage": 0.289,
+            "ops": 0.539,
+            "iso": 0.078,
+            "walkPercentage": 0.025,
+            "strikeoutPercentage": 0.2
+          }
+        },
+        {
+          "season": 2025,
+          "team": "横浜DeNA",
+          "totals": {
+            "games": 77,
+            "plateAppearances": 191,
+            "atBats": 176,
+            "runs": 19,
+            "hits": 44,
+            "doubles": 5,
+            "triples": 0,
+            "homeRuns": 4,
+            "totalBases": 61,
+            "rbi": 18,
+            "steals": 1,
+            "caughtStealing": 1,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 3,
+            "walks": 9,
+            "hitByPitch": 3,
+            "strikeouts": 17,
+            "groundedIntoDoublePlays": 8
+          },
+          "metrics": {
+            "battingAverage": 0.25,
+            "onBasePercentage": 0.293,
+            "sluggingPercentage": 0.347,
+            "ops": 0.64,
+            "iso": 0.097,
+            "walkPercentage": 0.047,
+            "strikeoutPercentage": 0.089
+          }
+        },
+        {
+          "season": 2026,
+          "team": "横浜DeNA",
+          "totals": {
+            "games": 71,
+            "plateAppearances": 248,
+            "atBats": 227,
+            "runs": 26,
+            "hits": 57,
+            "doubles": 11,
+            "triples": 1,
+            "homeRuns": 4,
+            "totalBases": 82,
+            "rbi": 14,
+            "steals": 1,
+            "caughtStealing": 1,
+            "sacrificeHits": 1,
+            "sacrificeFlies": 1,
+            "walks": 16,
+            "hitByPitch": 2,
+            "strikeouts": 27,
+            "groundedIntoDoublePlays": 6
+          },
+          "metrics": {
+            "battingAverage": 0.251,
+            "onBasePercentage": 0.305,
+            "sluggingPercentage": 0.361,
+            "ops": 0.666,
+            "iso": 0.11,
+            "walkPercentage": 0.065,
+            "strikeoutPercentage": 0.109
+          }
+        }
+      ],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 3,
+          "games": 175,
+          "plateAppearances": 479,
+          "atBats": 441,
+          "runs": 48,
+          "hits": 109,
+          "doubles": 19,
+          "triples": 1,
+          "homeRuns": 8,
+          "totalBases": 154,
+          "rbi": 33,
+          "steals": 2,
+          "walks": 26,
+          "hitByPitch": 6,
+          "strikeouts": 52,
+          "battingAverage": 0.247,
+          "onBasePercentage": 0.294,
+          "sluggingPercentage": 0.349,
+          "ops": 0.643,
+          "iso": 0.102
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/czsed.json"
+    }
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "data": {
+    "type": "player",
+    "id": "1cr2zr",
+    "attributes": {
+      "profile": {
+        "familyName": "堀",
+        "givenName": "柊那",
+        "familyNameKana": "ほり",
+        "givenNameKana": "しゅうな",
+        "registeredName": "堀 柊那",
+        "registeredNameKana": "ほり・しゅうな",
+        "url": "https://npb.jp/bis/players/81885159.html",
+        "isActive": true,
+        "details": {
+          "position": "捕手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 179,
+          "weightKg": 82,
+          "birthDate": {
+            "iso": "2005-07-16",
+            "year": 2005,
+            "month": 7,
+            "day": 16
+          },
+          "career": {
+            "raw": "報徳学園高",
+            "entries": [
+              "報徳学園高"
+            ]
+          },
+          "draft": {
+            "raw": "2023年ドラフト4位",
+            "year": 2023,
+            "rank": 4,
+            "selection": "regular"
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2025,
+          "team": "オリックス",
+          "totals": {
+            "games": 3,
+            "plateAppearances": 3,
+            "atBats": 3,
+            "runs": 0,
+            "hits": 1,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 1,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 1,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0.333,
+            "onBasePercentage": 0.333,
+            "sluggingPercentage": 0.333,
+            "ops": 0.666,
+            "iso": 0,
+            "walkPercentage": 0,
+            "strikeoutPercentage": 0.333
+          }
+        }
+      ],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 1,
+          "games": 3,
+          "plateAppearances": 3,
+          "atBats": 3,
+          "runs": 0,
+          "hits": 1,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 0,
+          "totalBases": 1,
+          "rbi": 0,
+          "steals": 0,
+          "walks": 0,
+          "hitByPitch": 0,
+          "strikeouts": 1,
+          "battingAverage": 0.333,
+          "onBasePercentage": 0.333,
+          "sluggingPercentage": 0.333,
+          "ops": 0.666,
+          "iso": 0
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/1cr2zr.json"
+    }
+  }
+}

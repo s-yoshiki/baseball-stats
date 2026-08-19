@@ -26,7 +26,10 @@
           },
           "career": {
             "raw": "ケンタッキー大 - ジャイアンツ",
-            "entries": ["ケンタッキー大", "ジャイアンツ"]
+            "entries": [
+              "ケンタッキー大",
+              "ジャイアンツ"
+            ]
           },
           "draft": {
             "raw": null,
@@ -34,50 +37,14 @@
             "rank": null,
             "selection": null
           }
-        },
-        "rawDetails": {
-          "npb": {
-            "ポジション": "投手",
-            "投打": "右投右打",
-            "身長／体重": "213cm／113kg",
-            "生年月日": "1997年5月7日",
-            "経歴": "ケンタッキー大 - ジャイアンツ",
-            "ドラフト": ""
-          }
         }
       },
       "battingStats": [
         {
           "season": 2026,
           "team": "オリックス",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2026",
-            "所属球団": "オリックス",
-            "試合": "17",
-            "打席": "1",
-            "打数": "1",
-            "得点": "0",
-            "安打": "0",
-            "二塁打": "0",
-            "三塁打": "0",
-            "本塁打": "0",
-            "塁打": "0",
-            "打点": "0",
-            "盗塁": "0",
-            "盗塁刺": "0",
-            "犠打": "0",
-            "犠飛": "0",
-            "四球": "0",
-            "死球": "0",
-            "三振": "1",
-            "併殺打": "0",
-            "打率": ".000",
-            "長打率": ".000",
-            "出塁率": ".000"
-          },
           "totals": {
-            "games": 17,
+            "games": 18,
             "plateAppearances": 1,
             "atBats": 1,
             "runs": 0,
@@ -111,35 +78,8 @@
         {
           "season": 2026,
           "team": "オリックス",
-          "sourceId": "npb",
-          "raw": {
-            "年度": "2026",
-            "所属球団": "オリックス",
-            "登板": "17",
-            "勝利": "3",
-            "敗北": "7",
-            "セーブ": "0",
-            "H": "0",
-            "HP": "0",
-            "完投": "0",
-            "完封勝": "0",
-            "無四球": "0",
-            "勝率": ".300",
-            "打者": "378",
-            "投球回": "89",
-            "安打": "89",
-            "本塁打": "4",
-            "四球": "23",
-            "死球": "9",
-            "三振": "74",
-            "暴投": "2",
-            "ボーク": "0",
-            "失点": "31",
-            "自責点": "27",
-            "防御率": "2.73"
-          },
           "totals": {
-            "games": 17,
+            "games": 18,
             "wins": 3,
             "losses": 7,
             "saves": 0,
@@ -149,31 +89,31 @@
             "shutouts": 0,
             "noWalkCompleteGames": 0,
             "winningPercentage": 0.3,
-            "battersFaced": 378,
-            "innings": 89,
-            "hitsAllowed": 89,
+            "battersFaced": 404,
+            "innings": 96,
+            "hitsAllowed": 94,
             "homeRunsAllowed": 4,
-            "walksAllowed": 23,
+            "walksAllowed": 24,
             "hitByPitch": 9,
-            "strikeouts": 74,
+            "strikeouts": 77,
             "wildPitches": 2,
             "balks": 0,
-            "runsAllowed": 31,
-            "earnedRuns": 27
+            "runsAllowed": 32,
+            "earnedRuns": 28
           },
           "metrics": {
-            "era": 2.73,
-            "whip": 1.258,
-            "strikeoutsPerNine": 7.483,
-            "walksPerNine": 2.326,
-            "strikeoutToWalkRatio": 3.217
+            "era": 2.63,
+            "whip": 1.229,
+            "strikeoutsPerNine": 7.219,
+            "walksPerNine": 2.25,
+            "strikeoutToWalkRatio": 3.208
           }
         }
       ],
       "career": {
         "batting": {
           "seasons": 1,
-          "games": 17,
+          "games": 18,
           "plateAppearances": 1,
           "atBats": 1,
           "runs": 0,
@@ -195,132 +135,27 @@
         },
         "pitching": {
           "seasons": 1,
-          "games": 17,
+          "games": 18,
           "wins": 3,
           "losses": 7,
           "saves": 0,
           "holds": 0,
-          "innings": 89,
-          "hitsAllowed": 89,
-          "walksAllowed": 23,
-          "strikeouts": 74,
-          "earnedRuns": 27,
+          "innings": 96,
+          "hitsAllowed": 94,
+          "walksAllowed": 24,
+          "strikeouts": 77,
+          "earnedRuns": 28,
           "winningPercentage": 0.3,
-          "era": 2.73,
-          "whip": 1.258,
-          "strikeoutsPerNine": 7.483,
-          "walksPerNine": 2.326,
-          "strikeoutToWalkRatio": 3.217
+          "era": 2.625,
+          "whip": 1.229,
+          "strikeoutsPerNine": 7.219,
+          "walksPerNine": 2.25,
+          "strikeoutToWalkRatio": 3.208
         }
       }
     },
     "links": {
       "self": "/players/234lc.json"
     }
-  },
-  "meta": {
-    "sources": [
-      {
-        "id": "npb",
-        "kind": "official",
-        "name": "NPB公式サイト",
-        "url": "https://npb.jp/bis/players/03505152.html",
-        "retrievedAt": "2026-08-19T08:04:13.503Z"
-      },
-      {
-        "id": "baseball-stats",
-        "kind": "computed",
-        "name": "baseball-stats",
-        "retrievedAt": "2026-08-19T08:04:13.503Z"
-      }
-    ],
-    "provenance": {
-      "profile.familyName": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "profile.givenName": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "profile.familyNameKana": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "profile.givenNameKana": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "profile.registeredName": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "profile.registeredNameKana": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "profile.url": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "profile.isActive": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "profile.details": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "profile.rawDetails.npb": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "career": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[0].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[0].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "battingStats[0].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[0].raw": {
-        "sourceId": "npb",
-        "method": "scraped",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[0].totals": {
-        "sourceId": "npb",
-        "method": "normalized",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      },
-      "pitchingStats[0].metrics": {
-        "sourceId": "baseball-stats",
-        "method": "calculated",
-        "updatedAt": "2026-08-19T08:04:13.503Z"
-      }
-    },
-    "generatedAt": "2026-08-19T08:04:13.503Z"
   }
 }

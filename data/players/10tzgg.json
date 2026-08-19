@@ -1,0 +1,126 @@
+{
+  "data": {
+    "type": "player",
+    "id": "10tzgg",
+    "attributes": {
+      "profile": {
+        "familyName": "松下",
+        "givenName": "歩叶",
+        "familyNameKana": "まつした",
+        "givenNameKana": "あゆと",
+        "registeredName": "松下 歩叶",
+        "registeredNameKana": "まつした・あゆと",
+        "url": "https://npb.jp/bis/players/61865152.html",
+        "isActive": true,
+        "details": {
+          "position": "内野手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 181,
+          "weightKg": 87,
+          "birthDate": {
+            "iso": "2003-04-14",
+            "year": 2003,
+            "month": 4,
+            "day": 14
+          },
+          "career": {
+            "raw": "桐蔭学園高 - 法政大",
+            "entries": [
+              "桐蔭学園高",
+              "法政大"
+            ]
+          },
+          "draft": {
+            "raw": "2025年ドラフト1位",
+            "year": 2025,
+            "rank": 1,
+            "selection": "regular"
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2026,
+          "team": "東京ヤクルト",
+          "totals": {
+            "games": 24,
+            "plateAppearances": 69,
+            "atBats": 66,
+            "runs": 6,
+            "hits": 14,
+            "doubles": 3,
+            "triples": 0,
+            "homeRuns": 1,
+            "totalBases": 20,
+            "rbi": 4,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 1,
+            "hitByPitch": 2,
+            "strikeouts": 19,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0.212,
+            "onBasePercentage": 0.246,
+            "sluggingPercentage": 0.303,
+            "ops": 0.549,
+            "iso": 0.091,
+            "walkPercentage": 0.014,
+            "strikeoutPercentage": 0.275
+          }
+        }
+      ],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 1,
+          "games": 24,
+          "plateAppearances": 69,
+          "atBats": 66,
+          "runs": 6,
+          "hits": 14,
+          "doubles": 3,
+          "triples": 0,
+          "homeRuns": 1,
+          "totalBases": 20,
+          "rbi": 4,
+          "steals": 0,
+          "walks": 1,
+          "hitByPitch": 2,
+          "strikeouts": 19,
+          "battingAverage": 0.212,
+          "onBasePercentage": 0.246,
+          "sluggingPercentage": 0.303,
+          "ops": 0.549,
+          "iso": 0.091
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/10tzgg.json"
+    }
+  }
+}

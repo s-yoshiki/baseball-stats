@@ -1,0 +1,161 @@
+{
+  "data": {
+    "type": "player",
+    "id": "16bdxq",
+    "attributes": {
+      "profile": {
+        "familyName": "佐藤",
+        "givenName": "柳之介",
+        "familyNameKana": "さとう",
+        "givenNameKana": "りゅうのすけ",
+        "registeredName": "佐藤 柳之介",
+        "registeredNameKana": "さとう・りゅうのすけ",
+        "url": "https://npb.jp/bis/players/71075150.html",
+        "isActive": true,
+        "details": {
+          "position": "投手",
+          "throws": "左",
+          "bats": "左",
+          "heightCm": 179,
+          "weightKg": 88,
+          "birthDate": {
+            "iso": "2002-11-01",
+            "year": 2002,
+            "month": 11,
+            "day": 1
+          },
+          "career": {
+            "raw": "東陵高 - 富士大",
+            "entries": [
+              "東陵高",
+              "富士大"
+            ]
+          },
+          "draft": {
+            "raw": "2024年ドラフト2位",
+            "year": 2024,
+            "rank": 2,
+            "selection": "regular"
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2025,
+          "team": "広島東洋",
+          "totals": {
+            "games": 6,
+            "plateAppearances": 5,
+            "atBats": 4,
+            "runs": 0,
+            "hits": 1,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 1,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 1,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 2,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0.25,
+            "onBasePercentage": 0.25,
+            "sluggingPercentage": 0.25,
+            "ops": 0.5,
+            "iso": 0,
+            "walkPercentage": 0,
+            "strikeoutPercentage": 0.4
+          }
+        }
+      ],
+      "pitchingStats": [
+        {
+          "season": 2025,
+          "team": "広島東洋",
+          "totals": {
+            "games": 6,
+            "wins": 1,
+            "losses": 2,
+            "saves": 0,
+            "holds": 0,
+            "holdPoints": 0,
+            "completeGames": 0,
+            "shutouts": 0,
+            "noWalkCompleteGames": 0,
+            "winningPercentage": 0.333,
+            "battersFaced": 108,
+            "innings": 25,
+            "hitsAllowed": 22,
+            "homeRunsAllowed": 1,
+            "walksAllowed": 13,
+            "hitByPitch": 0,
+            "strikeouts": 17,
+            "wildPitches": 1,
+            "balks": 0,
+            "runsAllowed": 11,
+            "earnedRuns": 10
+          },
+          "metrics": {
+            "era": 3.6,
+            "whip": 1.4,
+            "strikeoutsPerNine": 6.12,
+            "walksPerNine": 4.68,
+            "strikeoutToWalkRatio": 1.308
+          }
+        }
+      ],
+      "career": {
+        "batting": {
+          "seasons": 1,
+          "games": 6,
+          "plateAppearances": 5,
+          "atBats": 4,
+          "runs": 0,
+          "hits": 1,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 0,
+          "totalBases": 1,
+          "rbi": 0,
+          "steals": 0,
+          "walks": 0,
+          "hitByPitch": 0,
+          "strikeouts": 2,
+          "battingAverage": 0.25,
+          "onBasePercentage": 0.2,
+          "sluggingPercentage": 0.25,
+          "ops": 0.45,
+          "iso": 0
+        },
+        "pitching": {
+          "seasons": 1,
+          "games": 6,
+          "wins": 1,
+          "losses": 2,
+          "saves": 0,
+          "holds": 0,
+          "innings": 25,
+          "hitsAllowed": 22,
+          "walksAllowed": 13,
+          "strikeouts": 17,
+          "earnedRuns": 10,
+          "winningPercentage": 0.333,
+          "era": 3.6,
+          "whip": 1.4,
+          "strikeoutsPerNine": 6.12,
+          "walksPerNine": 4.68,
+          "strikeoutToWalkRatio": 1.308
+        }
+      }
+    },
+    "links": {
+      "self": "/players/16bdxq.json"
+    }
+  }
+}

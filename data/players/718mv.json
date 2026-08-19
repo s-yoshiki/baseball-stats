@@ -1,0 +1,126 @@
+{
+  "data": {
+    "type": "player",
+    "id": "718mv",
+    "attributes": {
+      "profile": {
+        "familyName": "福島",
+        "givenName": "圭音",
+        "familyNameKana": "ふくしま",
+        "givenNameKana": "けいん",
+        "registeredName": "福島 圭音",
+        "registeredNameKana": "ふくしま・けいん",
+        "url": "https://npb.jp/bis/players/11815159.html",
+        "isActive": true,
+        "details": {
+          "position": "外野手",
+          "throws": "右",
+          "bats": "左",
+          "heightCm": 171,
+          "weightKg": 69,
+          "birthDate": {
+            "iso": "2001-10-06",
+            "year": 2001,
+            "month": 10,
+            "day": 6
+          },
+          "career": {
+            "raw": "聖望学園高 - 白鴎大",
+            "entries": [
+              "聖望学園高",
+              "白鴎大"
+            ]
+          },
+          "draft": {
+            "raw": "2023年育成選手ドラフト2位",
+            "year": 2023,
+            "rank": 2,
+            "selection": "development"
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2026,
+          "team": "阪 神",
+          "totals": {
+            "games": 63,
+            "plateAppearances": 145,
+            "atBats": 128,
+            "runs": 12,
+            "hits": 30,
+            "doubles": 8,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 38,
+            "rbi": 4,
+            "steals": 6,
+            "caughtStealing": 3,
+            "sacrificeHits": 2,
+            "sacrificeFlies": 0,
+            "walks": 9,
+            "hitByPitch": 6,
+            "strikeouts": 27,
+            "groundedIntoDoublePlays": 3
+          },
+          "metrics": {
+            "battingAverage": 0.234,
+            "onBasePercentage": 0.315,
+            "sluggingPercentage": 0.297,
+            "ops": 0.612,
+            "iso": 0.063,
+            "walkPercentage": 0.062,
+            "strikeoutPercentage": 0.186
+          }
+        }
+      ],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 1,
+          "games": 63,
+          "plateAppearances": 145,
+          "atBats": 128,
+          "runs": 12,
+          "hits": 30,
+          "doubles": 8,
+          "triples": 0,
+          "homeRuns": 0,
+          "totalBases": 38,
+          "rbi": 4,
+          "steals": 6,
+          "walks": 9,
+          "hitByPitch": 6,
+          "strikeouts": 27,
+          "battingAverage": 0.234,
+          "onBasePercentage": 0.31,
+          "sluggingPercentage": 0.297,
+          "ops": 0.607,
+          "iso": 0.063
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/718mv.json"
+    }
+  }
+}

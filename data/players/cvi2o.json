@@ -1,0 +1,91 @@
+{
+  "data": {
+    "type": "player",
+    "id": "cvi2o",
+    "attributes": {
+      "profile": {
+        "familyName": "藤井",
+        "givenName": "健翔",
+        "familyNameKana": "ふじい",
+        "givenNameKana": "けんしょう",
+        "registeredName": "藤井 健翔",
+        "registeredNameKana": "ふじい・けんしょう",
+        "url": "https://npb.jp/bis/players/21625152.html",
+        "isActive": true,
+        "details": {
+          "position": "内野手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 181,
+          "weightKg": 96,
+          "birthDate": {
+            "iso": "2007-08-15",
+            "year": 2007,
+            "month": 8,
+            "day": 15
+          },
+          "career": {
+            "raw": "浦和学院高",
+            "entries": [
+              "浦和学院高"
+            ]
+          },
+          "draft": {
+            "raw": "2025年ドラフト6位",
+            "year": 2025,
+            "rank": 6,
+            "selection": "regular"
+          }
+        }
+      },
+      "battingStats": [],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 0,
+          "games": 0,
+          "plateAppearances": 0,
+          "atBats": 0,
+          "runs": 0,
+          "hits": 0,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 0,
+          "totalBases": 0,
+          "rbi": 0,
+          "steals": 0,
+          "walks": 0,
+          "hitByPitch": 0,
+          "strikeouts": 0,
+          "battingAverage": null,
+          "onBasePercentage": null,
+          "sluggingPercentage": null,
+          "ops": null,
+          "iso": null
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/cvi2o.json"
+    }
+  }
+}

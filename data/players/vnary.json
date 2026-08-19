@@ -1,0 +1,159 @@
+{
+  "data": {
+    "type": "player",
+    "id": "vnary",
+    "attributes": {
+      "profile": {
+        "familyName": "宗山",
+        "givenName": "塁",
+        "familyNameKana": "むねやま",
+        "givenNameKana": "るい",
+        "registeredName": "宗山 塁",
+        "registeredNameKana": "むねやま・るい",
+        "url": "https://npb.jp/bis/players/53155150.html",
+        "isActive": true,
+        "details": {
+          "position": "内野手",
+          "throws": "右",
+          "bats": "左",
+          "heightCm": 175,
+          "weightKg": 79,
+          "birthDate": {
+            "iso": "2003-02-27",
+            "year": 2003,
+            "month": 2,
+            "day": 27
+          },
+          "career": {
+            "raw": "広陵高 - 明治大",
+            "entries": [
+              "広陵高",
+              "明治大"
+            ]
+          },
+          "draft": {
+            "raw": "2024年ドラフト1位",
+            "year": 2024,
+            "rank": 1,
+            "selection": "regular"
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2025,
+          "team": "東北楽天",
+          "totals": {
+            "games": 122,
+            "plateAppearances": 460,
+            "atBats": 430,
+            "runs": 32,
+            "hits": 112,
+            "doubles": 19,
+            "triples": 3,
+            "homeRuns": 3,
+            "totalBases": 146,
+            "rbi": 27,
+            "steals": 7,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 9,
+            "walks": 20,
+            "hitByPitch": 1,
+            "strikeouts": 82,
+            "groundedIntoDoublePlays": 10
+          },
+          "metrics": {
+            "battingAverage": 0.26,
+            "onBasePercentage": 0.289,
+            "sluggingPercentage": 0.34,
+            "ops": 0.629,
+            "iso": 0.08,
+            "walkPercentage": 0.043,
+            "strikeoutPercentage": 0.178
+          }
+        },
+        {
+          "season": 2026,
+          "team": "東北楽天",
+          "totals": {
+            "games": 33,
+            "plateAppearances": 121,
+            "atBats": 110,
+            "runs": 13,
+            "hits": 31,
+            "doubles": 5,
+            "triples": 0,
+            "homeRuns": 4,
+            "totalBases": 48,
+            "rbi": 12,
+            "steals": 3,
+            "caughtStealing": 3,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 1,
+            "walks": 10,
+            "hitByPitch": 0,
+            "strikeouts": 14,
+            "groundedIntoDoublePlays": 3
+          },
+          "metrics": {
+            "battingAverage": 0.282,
+            "onBasePercentage": 0.339,
+            "sluggingPercentage": 0.436,
+            "ops": 0.775,
+            "iso": 0.154,
+            "walkPercentage": 0.083,
+            "strikeoutPercentage": 0.116
+          }
+        }
+      ],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 2,
+          "games": 155,
+          "plateAppearances": 581,
+          "atBats": 540,
+          "runs": 45,
+          "hits": 143,
+          "doubles": 24,
+          "triples": 3,
+          "homeRuns": 7,
+          "totalBases": 194,
+          "rbi": 39,
+          "steals": 10,
+          "walks": 30,
+          "hitByPitch": 1,
+          "strikeouts": 96,
+          "battingAverage": 0.265,
+          "onBasePercentage": 0.299,
+          "sluggingPercentage": 0.359,
+          "ops": 0.658,
+          "iso": 0.094
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/vnary.json"
+    }
+  }
+}

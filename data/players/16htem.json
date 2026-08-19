@@ -1,0 +1,629 @@
+{
+  "data": {
+    "type": "player",
+    "id": "16htem",
+    "attributes": {
+      "profile": {
+        "familyName": "大江",
+        "givenName": "竜聖",
+        "familyNameKana": "おおえ",
+        "givenNameKana": "りゅうせい",
+        "registeredName": "大江 竜聖",
+        "registeredNameKana": "おおえ・りゅうせい",
+        "url": "https://npb.jp/bis/players/71375134.html",
+        "isActive": true,
+        "details": {
+          "position": "投手",
+          "throws": "左",
+          "bats": "左",
+          "heightCm": 173,
+          "weightKg": 79,
+          "birthDate": {
+            "iso": "1999-01-15",
+            "year": 1999,
+            "month": 1,
+            "day": 15
+          },
+          "career": {
+            "raw": "二松学舎大付高",
+            "entries": [
+              "二松学舎大付高"
+            ]
+          },
+          "draft": {
+            "raw": "2016年ドラフト6位",
+            "year": 2016,
+            "rank": 6,
+            "selection": "regular"
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2019,
+          "team": "読 売",
+          "totals": {
+            "games": 8,
+            "plateAppearances": 1,
+            "atBats": 0,
+            "runs": 0,
+            "hits": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 0,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 1,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 0,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0,
+            "onBasePercentage": 0,
+            "sluggingPercentage": 0,
+            "ops": 0,
+            "iso": 0,
+            "walkPercentage": 0,
+            "strikeoutPercentage": 0
+          }
+        },
+        {
+          "season": 2020,
+          "team": "読 売",
+          "totals": {
+            "games": 43,
+            "plateAppearances": 1,
+            "atBats": 1,
+            "runs": 0,
+            "hits": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 0,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 1,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0,
+            "onBasePercentage": 0,
+            "sluggingPercentage": 0,
+            "ops": 0,
+            "iso": 0,
+            "walkPercentage": 0,
+            "strikeoutPercentage": 1
+          }
+        },
+        {
+          "season": 2021,
+          "team": "読 売",
+          "totals": {
+            "games": 47,
+            "plateAppearances": 1,
+            "atBats": 1,
+            "runs": 0,
+            "hits": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 0,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 0,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0,
+            "onBasePercentage": 0,
+            "sluggingPercentage": 0,
+            "ops": 0,
+            "iso": 0,
+            "walkPercentage": 0,
+            "strikeoutPercentage": 0
+          }
+        },
+        {
+          "season": 2022,
+          "team": "読 売",
+          "totals": {
+            "games": 3,
+            "plateAppearances": 0,
+            "atBats": 0,
+            "runs": 0,
+            "hits": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 0,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 0,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0,
+            "onBasePercentage": 0,
+            "sluggingPercentage": 0,
+            "ops": 0,
+            "iso": 0,
+            "walkPercentage": null,
+            "strikeoutPercentage": null
+          }
+        },
+        {
+          "season": 2023,
+          "team": "読 売",
+          "totals": {
+            "games": 32,
+            "plateAppearances": 0,
+            "atBats": 0,
+            "runs": 0,
+            "hits": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 0,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 0,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0,
+            "onBasePercentage": 0,
+            "sluggingPercentage": 0,
+            "ops": 0,
+            "iso": 0,
+            "walkPercentage": null,
+            "strikeoutPercentage": null
+          }
+        },
+        {
+          "season": 2024,
+          "team": "読 売",
+          "totals": {
+            "games": 16,
+            "plateAppearances": 0,
+            "atBats": 0,
+            "runs": 0,
+            "hits": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 0,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 0,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0,
+            "onBasePercentage": 0,
+            "sluggingPercentage": 0,
+            "ops": 0,
+            "iso": 0,
+            "walkPercentage": null,
+            "strikeoutPercentage": null
+          }
+        },
+        {
+          "season": 2025,
+          "team": "福岡ソフトバンク",
+          "totals": {
+            "games": 16,
+            "plateAppearances": 0,
+            "atBats": 0,
+            "runs": 0,
+            "hits": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 0,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 0,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0,
+            "onBasePercentage": 0,
+            "sluggingPercentage": 0,
+            "ops": 0,
+            "iso": 0,
+            "walkPercentage": null,
+            "strikeoutPercentage": null
+          }
+        },
+        {
+          "season": 2026,
+          "team": "福岡ソフトバンク",
+          "totals": {
+            "games": 3,
+            "plateAppearances": 0,
+            "atBats": 0,
+            "runs": 0,
+            "hits": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 0,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 0,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0,
+            "onBasePercentage": 0,
+            "sluggingPercentage": 0,
+            "ops": 0,
+            "iso": 0,
+            "walkPercentage": null,
+            "strikeoutPercentage": null
+          }
+        }
+      ],
+      "pitchingStats": [
+        {
+          "season": 2019,
+          "team": "読 売",
+          "totals": {
+            "games": 8,
+            "wins": 0,
+            "losses": 0,
+            "saves": 0,
+            "holds": 1,
+            "holdPoints": 1,
+            "completeGames": 0,
+            "shutouts": 0,
+            "noWalkCompleteGames": 0,
+            "winningPercentage": 0,
+            "battersFaced": 49,
+            "innings": 10.667,
+            "hitsAllowed": 13,
+            "homeRunsAllowed": 3,
+            "walksAllowed": 3,
+            "hitByPitch": 0,
+            "strikeouts": 7,
+            "wildPitches": 1,
+            "balks": 0,
+            "runsAllowed": 9,
+            "earnedRuns": 8
+          },
+          "metrics": {
+            "era": 6.75,
+            "whip": 1.5,
+            "strikeoutsPerNine": 5.906,
+            "walksPerNine": 2.531,
+            "strikeoutToWalkRatio": 2.333
+          }
+        },
+        {
+          "season": 2020,
+          "team": "読 売",
+          "totals": {
+            "games": 43,
+            "wins": 3,
+            "losses": 0,
+            "saves": 0,
+            "holds": 9,
+            "holdPoints": 12,
+            "completeGames": 0,
+            "shutouts": 0,
+            "noWalkCompleteGames": 0,
+            "winningPercentage": 1,
+            "battersFaced": 156,
+            "innings": 37.667,
+            "hitsAllowed": 21,
+            "homeRunsAllowed": 5,
+            "walksAllowed": 22,
+            "hitByPitch": 5,
+            "strikeouts": 30,
+            "wildPitches": 0,
+            "balks": 0,
+            "runsAllowed": 15,
+            "earnedRuns": 13
+          },
+          "metrics": {
+            "era": 3.11,
+            "whip": 1.142,
+            "strikeoutsPerNine": 7.168,
+            "walksPerNine": 5.257,
+            "strikeoutToWalkRatio": 1.364
+          }
+        },
+        {
+          "season": 2021,
+          "team": "読 売",
+          "totals": {
+            "games": 47,
+            "wins": 0,
+            "losses": 0,
+            "saves": 0,
+            "holds": 13,
+            "holdPoints": 13,
+            "completeGames": 0,
+            "shutouts": 0,
+            "noWalkCompleteGames": 0,
+            "winningPercentage": 0,
+            "battersFaced": 145,
+            "innings": 33,
+            "hitsAllowed": 29,
+            "homeRunsAllowed": 2,
+            "walksAllowed": 17,
+            "hitByPitch": 2,
+            "strikeouts": 23,
+            "wildPitches": 0,
+            "balks": 0,
+            "runsAllowed": 16,
+            "earnedRuns": 15
+          },
+          "metrics": {
+            "era": 4.09,
+            "whip": 1.394,
+            "strikeoutsPerNine": 6.273,
+            "walksPerNine": 4.636,
+            "strikeoutToWalkRatio": 1.353
+          }
+        },
+        {
+          "season": 2022,
+          "team": "読 売",
+          "totals": {
+            "games": 3,
+            "wins": 0,
+            "losses": 0,
+            "saves": 0,
+            "holds": 0,
+            "holdPoints": 0,
+            "completeGames": 0,
+            "shutouts": 0,
+            "noWalkCompleteGames": 0,
+            "winningPercentage": 0,
+            "battersFaced": 26,
+            "innings": 5.333,
+            "hitsAllowed": 5,
+            "homeRunsAllowed": 1,
+            "walksAllowed": 3,
+            "hitByPitch": 1,
+            "strikeouts": 5,
+            "wildPitches": 0,
+            "balks": 0,
+            "runsAllowed": 2,
+            "earnedRuns": 1
+          },
+          "metrics": {
+            "era": 1.69,
+            "whip": 1.5,
+            "strikeoutsPerNine": 8.438,
+            "walksPerNine": 5.063,
+            "strikeoutToWalkRatio": 1.667
+          }
+        },
+        {
+          "season": 2023,
+          "team": "読 売",
+          "totals": {
+            "games": 32,
+            "wins": 4,
+            "losses": 0,
+            "saves": 0,
+            "holds": 6,
+            "holdPoints": 10,
+            "completeGames": 0,
+            "shutouts": 0,
+            "noWalkCompleteGames": 0,
+            "winningPercentage": 1,
+            "battersFaced": 89,
+            "innings": 22,
+            "hitsAllowed": 15,
+            "homeRunsAllowed": 3,
+            "walksAllowed": 10,
+            "hitByPitch": 2,
+            "strikeouts": 16,
+            "wildPitches": 1,
+            "balks": 0,
+            "runsAllowed": 10,
+            "earnedRuns": 10
+          },
+          "metrics": {
+            "era": 4.09,
+            "whip": 1.136,
+            "strikeoutsPerNine": 6.545,
+            "walksPerNine": 4.091,
+            "strikeoutToWalkRatio": 1.6
+          }
+        },
+        {
+          "season": 2024,
+          "team": "読 売",
+          "totals": {
+            "games": 16,
+            "wins": 0,
+            "losses": 0,
+            "saves": 0,
+            "holds": 5,
+            "holdPoints": 5,
+            "completeGames": 0,
+            "shutouts": 0,
+            "noWalkCompleteGames": 0,
+            "winningPercentage": 0,
+            "battersFaced": 56,
+            "innings": 13.667,
+            "hitsAllowed": 9,
+            "homeRunsAllowed": 1,
+            "walksAllowed": 8,
+            "hitByPitch": 0,
+            "strikeouts": 13,
+            "wildPitches": 0,
+            "balks": 0,
+            "runsAllowed": 4,
+            "earnedRuns": 4
+          },
+          "metrics": {
+            "era": 2.63,
+            "whip": 1.244,
+            "strikeoutsPerNine": 8.561,
+            "walksPerNine": 5.268,
+            "strikeoutToWalkRatio": 1.625
+          }
+        },
+        {
+          "season": 2025,
+          "team": "福岡ソフトバンク",
+          "totals": {
+            "games": 16,
+            "wins": 0,
+            "losses": 1,
+            "saves": 0,
+            "holds": 1,
+            "holdPoints": 1,
+            "completeGames": 0,
+            "shutouts": 0,
+            "noWalkCompleteGames": 0,
+            "winningPercentage": 0,
+            "battersFaced": 69,
+            "innings": 17.667,
+            "hitsAllowed": 8,
+            "homeRunsAllowed": 1,
+            "walksAllowed": 9,
+            "hitByPitch": 2,
+            "strikeouts": 17,
+            "wildPitches": 0,
+            "balks": 0,
+            "runsAllowed": 3,
+            "earnedRuns": 3
+          },
+          "metrics": {
+            "era": 1.53,
+            "whip": 0.962,
+            "strikeoutsPerNine": 8.66,
+            "walksPerNine": 4.585,
+            "strikeoutToWalkRatio": 1.889
+          }
+        },
+        {
+          "season": 2026,
+          "team": "福岡ソフトバンク",
+          "totals": {
+            "games": 3,
+            "wins": 0,
+            "losses": 0,
+            "saves": 0,
+            "holds": 0,
+            "holdPoints": 0,
+            "completeGames": 0,
+            "shutouts": 0,
+            "noWalkCompleteGames": 0,
+            "winningPercentage": 0,
+            "battersFaced": 12,
+            "innings": 3,
+            "hitsAllowed": 3,
+            "homeRunsAllowed": 0,
+            "walksAllowed": 0,
+            "hitByPitch": 1,
+            "strikeouts": 3,
+            "wildPitches": 0,
+            "balks": 0,
+            "runsAllowed": 0,
+            "earnedRuns": 0
+          },
+          "metrics": {
+            "era": 0,
+            "whip": 1,
+            "strikeoutsPerNine": 9,
+            "walksPerNine": 0,
+            "strikeoutToWalkRatio": null
+          }
+        }
+      ],
+      "career": {
+        "batting": {
+          "seasons": 8,
+          "games": 168,
+          "plateAppearances": 3,
+          "atBats": 2,
+          "runs": 0,
+          "hits": 0,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 0,
+          "totalBases": 0,
+          "rbi": 0,
+          "steals": 0,
+          "walks": 0,
+          "hitByPitch": 0,
+          "strikeouts": 1,
+          "battingAverage": 0,
+          "onBasePercentage": 0,
+          "sluggingPercentage": 0,
+          "ops": 0,
+          "iso": 0
+        },
+        "pitching": {
+          "seasons": 8,
+          "games": 168,
+          "wins": 7,
+          "losses": 1,
+          "saves": 0,
+          "holds": 35,
+          "innings": 143,
+          "hitsAllowed": 103,
+          "walksAllowed": 72,
+          "strikeouts": 114,
+          "earnedRuns": 54,
+          "winningPercentage": 0.875,
+          "era": 3.399,
+          "whip": 1.224,
+          "strikeoutsPerNine": 7.175,
+          "walksPerNine": 4.531,
+          "strikeoutToWalkRatio": 1.583
+        }
+      }
+    },
+    "links": {
+      "self": "/players/16htem.json"
+    }
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "data": {
+    "type": "player",
+    "id": "1ipmr7",
+    "attributes": {
+      "profile": {
+        "familyName": "古市",
+        "givenName": "尊",
+        "familyNameKana": "ふるいち",
+        "givenNameKana": "たける",
+        "registeredName": "古市 尊",
+        "registeredNameKana": "ふるいち・たける",
+        "url": "https://npb.jp/bis/players/91895155.html",
+        "isActive": true,
+        "details": {
+          "position": "捕手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 176,
+          "weightKg": 74,
+          "birthDate": {
+            "iso": "2002-06-15",
+            "year": 2002,
+            "month": 6,
+            "day": 15
+          },
+          "career": {
+            "raw": "高松南高 - 四国・徳島",
+            "entries": [
+              "高松南高",
+              "四国・徳島"
+            ]
+          },
+          "draft": {
+            "raw": "2021年育成選手ドラフト1位",
+            "year": 2021,
+            "rank": 1,
+            "selection": "development"
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2023,
+          "team": "埼玉西武",
+          "totals": {
+            "games": 29,
+            "plateAppearances": 56,
+            "atBats": 50,
+            "runs": 2,
+            "hits": 8,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 8,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 1,
+            "sacrificeHits": 3,
+            "sacrificeFlies": 0,
+            "walks": 2,
+            "hitByPitch": 1,
+            "strikeouts": 13,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0.16,
+            "onBasePercentage": 0.208,
+            "sluggingPercentage": 0.16,
+            "ops": 0.368,
+            "iso": 0,
+            "walkPercentage": 0.036,
+            "strikeoutPercentage": 0.232
+          }
+        },
+        {
+          "season": 2024,
+          "team": "埼玉西武",
+          "totals": {
+            "games": 6,
+            "plateAppearances": 6,
+            "atBats": 6,
+            "runs": 0,
+            "hits": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 0,
+            "rbi": 0,
+            "steals": 1,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 0,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0,
+            "onBasePercentage": 0,
+            "sluggingPercentage": 0,
+            "ops": 0,
+            "iso": 0,
+            "walkPercentage": 0,
+            "strikeoutPercentage": 0
+          }
+        },
+        {
+          "season": 2025,
+          "team": "埼玉西武",
+          "totals": {
+            "games": 10,
+            "plateAppearances": 19,
+            "atBats": 18,
+            "runs": 1,
+            "hits": 8,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 8,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 1,
+            "hitByPitch": 0,
+            "strikeouts": 1,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0.444,
+            "onBasePercentage": 0.474,
+            "sluggingPercentage": 0.444,
+            "ops": 0.918,
+            "iso": 0,
+            "walkPercentage": 0.053,
+            "strikeoutPercentage": 0.053
+          }
+        },
+        {
+          "season": 2026,
+          "team": "横浜DeNA",
+          "totals": {
+            "games": 9,
+            "plateAppearances": 25,
+            "atBats": 24,
+            "runs": 2,
+            "hits": 5,
+            "doubles": 2,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 7,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 1,
+            "hitByPitch": 0,
+            "strikeouts": 4,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0.208,
+            "onBasePercentage": 0.24,
+            "sluggingPercentage": 0.292,
+            "ops": 0.532,
+            "iso": 0.084,
+            "walkPercentage": 0.04,
+            "strikeoutPercentage": 0.16
+          }
+        }
+      ],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 4,
+          "games": 54,
+          "plateAppearances": 106,
+          "atBats": 98,
+          "runs": 5,
+          "hits": 21,
+          "doubles": 2,
+          "triples": 0,
+          "homeRuns": 0,
+          "totalBases": 23,
+          "rbi": 0,
+          "steals": 1,
+          "walks": 4,
+          "hitByPitch": 1,
+          "strikeouts": 18,
+          "battingAverage": 0.214,
+          "onBasePercentage": 0.245,
+          "sluggingPercentage": 0.235,
+          "ops": 0.48,
+          "iso": 0.021
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/1ipmr7.json"
+    }
+  }
+}

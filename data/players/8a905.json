@@ -1,0 +1,225 @@
+{
+  "data": {
+    "type": "player",
+    "id": "8a905",
+    "attributes": {
+      "profile": {
+        "familyName": "L.セデーニョ",
+        "givenName": null,
+        "familyNameKana": "LEANDRO",
+        "givenNameKana": "CEDENO",
+        "registeredName": "L.セデーニョ",
+        "registeredNameKana": "レアンドロ・セデーニョ",
+        "url": "https://npb.jp/bis/players/13915157.html",
+        "isActive": true,
+        "details": {
+          "position": "内野手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 194,
+          "weightKg": 118,
+          "birthDate": {
+            "iso": "1998-08-22",
+            "year": 1998,
+            "month": 8,
+            "day": 22
+          },
+          "career": {
+            "raw": "リセオヴィルヘンデルロサリオ高 - 米マイナー",
+            "entries": [
+              "リセオヴィルヘンデルロサリオ高",
+              "米マイナー"
+            ]
+          },
+          "draft": {
+            "raw": null,
+            "year": null,
+            "rank": null,
+            "selection": null
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2023,
+          "team": "オリックス",
+          "totals": {
+            "games": 57,
+            "plateAppearances": 187,
+            "atBats": 176,
+            "runs": 12,
+            "hits": 43,
+            "doubles": 7,
+            "triples": 0,
+            "homeRuns": 9,
+            "totalBases": 77,
+            "rbi": 34,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 2,
+            "walks": 8,
+            "hitByPitch": 1,
+            "strikeouts": 47,
+            "groundedIntoDoublePlays": 5
+          },
+          "metrics": {
+            "battingAverage": 0.244,
+            "onBasePercentage": 0.278,
+            "sluggingPercentage": 0.438,
+            "ops": 0.716,
+            "iso": 0.194,
+            "walkPercentage": 0.043,
+            "strikeoutPercentage": 0.251
+          }
+        },
+        {
+          "season": 2024,
+          "team": "オリックス",
+          "totals": {
+            "games": 98,
+            "plateAppearances": 334,
+            "atBats": 304,
+            "runs": 29,
+            "hits": 79,
+            "doubles": 9,
+            "triples": 0,
+            "homeRuns": 15,
+            "totalBases": 133,
+            "rbi": 37,
+            "steals": 0,
+            "caughtStealing": 2,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 2,
+            "walks": 23,
+            "hitByPitch": 5,
+            "strikeouts": 97,
+            "groundedIntoDoublePlays": 15
+          },
+          "metrics": {
+            "battingAverage": 0.26,
+            "onBasePercentage": 0.32,
+            "sluggingPercentage": 0.438,
+            "ops": 0.758,
+            "iso": 0.178,
+            "walkPercentage": 0.069,
+            "strikeoutPercentage": 0.29
+          }
+        },
+        {
+          "season": 2025,
+          "team": "埼玉西武",
+          "totals": {
+            "games": 74,
+            "plateAppearances": 243,
+            "atBats": 224,
+            "runs": 13,
+            "hits": 51,
+            "doubles": 6,
+            "triples": 1,
+            "homeRuns": 7,
+            "totalBases": 80,
+            "rbi": 26,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 2,
+            "walks": 15,
+            "hitByPitch": 2,
+            "strikeouts": 50,
+            "groundedIntoDoublePlays": 9
+          },
+          "metrics": {
+            "battingAverage": 0.228,
+            "onBasePercentage": 0.28,
+            "sluggingPercentage": 0.357,
+            "ops": 0.637,
+            "iso": 0.129,
+            "walkPercentage": 0.062,
+            "strikeoutPercentage": 0.206
+          }
+        },
+        {
+          "season": 2026,
+          "team": "東京ヤクルト",
+          "totals": {
+            "games": 10,
+            "plateAppearances": 28,
+            "atBats": 27,
+            "runs": 1,
+            "hits": 5,
+            "doubles": 2,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 7,
+            "rbi": 2,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 1,
+            "hitByPitch": 0,
+            "strikeouts": 4,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0.185,
+            "onBasePercentage": 0.214,
+            "sluggingPercentage": 0.259,
+            "ops": 0.473,
+            "iso": 0.074,
+            "walkPercentage": 0.036,
+            "strikeoutPercentage": 0.143
+          }
+        }
+      ],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 4,
+          "games": 239,
+          "plateAppearances": 792,
+          "atBats": 731,
+          "runs": 55,
+          "hits": 178,
+          "doubles": 24,
+          "triples": 1,
+          "homeRuns": 31,
+          "totalBases": 297,
+          "rbi": 99,
+          "steals": 0,
+          "walks": 47,
+          "hitByPitch": 8,
+          "strikeouts": 198,
+          "battingAverage": 0.244,
+          "onBasePercentage": 0.294,
+          "sluggingPercentage": 0.406,
+          "ops": 0.7,
+          "iso": 0.162
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/8a905.json"
+    }
+  }
+}

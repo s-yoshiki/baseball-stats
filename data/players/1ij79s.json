@@ -1,0 +1,126 @@
+{
+  "data": {
+    "type": "player",
+    "id": "1ij79s",
+    "attributes": {
+      "profile": {
+        "familyName": "岡城",
+        "givenName": "快生",
+        "familyNameKana": "おかしろ",
+        "givenNameKana": "かいせい",
+        "registeredName": "岡城 快生",
+        "registeredNameKana": "おかしろ・かいせい",
+        "url": "https://npb.jp/bis/players/91595152.html",
+        "isActive": true,
+        "details": {
+          "position": "外野手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 183,
+          "weightKg": 83,
+          "birthDate": {
+            "iso": "2003-06-23",
+            "year": 2003,
+            "month": 6,
+            "day": 23
+          },
+          "career": {
+            "raw": "岡山一宮高 - 筑波大",
+            "entries": [
+              "岡山一宮高",
+              "筑波大"
+            ]
+          },
+          "draft": {
+            "raw": "2025年ドラフト3位",
+            "year": 2025,
+            "rank": 3,
+            "selection": "regular"
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2026,
+          "team": "阪 神",
+          "totals": {
+            "games": 15,
+            "plateAppearances": 34,
+            "atBats": 33,
+            "runs": 5,
+            "hits": 5,
+            "doubles": 2,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 7,
+            "rbi": 1,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 1,
+            "strikeouts": 11,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0.152,
+            "onBasePercentage": 0.176,
+            "sluggingPercentage": 0.212,
+            "ops": 0.388,
+            "iso": 0.06,
+            "walkPercentage": 0,
+            "strikeoutPercentage": 0.324
+          }
+        }
+      ],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 1,
+          "games": 15,
+          "plateAppearances": 34,
+          "atBats": 33,
+          "runs": 5,
+          "hits": 5,
+          "doubles": 2,
+          "triples": 0,
+          "homeRuns": 0,
+          "totalBases": 7,
+          "rbi": 1,
+          "steals": 0,
+          "walks": 0,
+          "hitByPitch": 1,
+          "strikeouts": 11,
+          "battingAverage": 0.152,
+          "onBasePercentage": 0.176,
+          "sluggingPercentage": 0.212,
+          "ops": 0.388,
+          "iso": 0.06
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/1ij79s.json"
+    }
+  }
+}

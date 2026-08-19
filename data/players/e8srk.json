@@ -1,0 +1,162 @@
+{
+  "data": {
+    "type": "player",
+    "id": "e8srk",
+    "attributes": {
+      "profile": {
+        "familyName": "A.ワイナンス",
+        "givenName": null,
+        "familyNameKana": "ALLAN",
+        "givenNameKana": "WINANS",
+        "registeredName": "A.ワイナンス",
+        "registeredNameKana": "アラン・ワイナンス",
+        "url": "https://npb.jp/bis/players/23925152.html",
+        "isActive": true,
+        "details": {
+          "position": "投手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 188,
+          "weightKg": 81,
+          "birthDate": {
+            "iso": "1995-08-10",
+            "year": 1995,
+            "month": 8,
+            "day": 10
+          },
+          "career": {
+            "raw": "キャンベル大 - ブレーブス - ヤンキース",
+            "entries": [
+              "キャンベル大",
+              "ブレーブス",
+              "ヤンキース"
+            ]
+          },
+          "draft": {
+            "raw": null,
+            "year": null,
+            "rank": null,
+            "selection": null
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2026,
+          "team": "埼玉西武",
+          "totals": {
+            "games": 8,
+            "plateAppearances": 2,
+            "atBats": 1,
+            "runs": 0,
+            "hits": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 0,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 1,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 1,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0,
+            "onBasePercentage": 0,
+            "sluggingPercentage": 0,
+            "ops": 0,
+            "iso": 0,
+            "walkPercentage": 0,
+            "strikeoutPercentage": 0.5
+          }
+        }
+      ],
+      "pitchingStats": [
+        {
+          "season": 2026,
+          "team": "埼玉西武",
+          "totals": {
+            "games": 8,
+            "wins": 2,
+            "losses": 4,
+            "saves": 0,
+            "holds": 0,
+            "holdPoints": 0,
+            "completeGames": 0,
+            "shutouts": 0,
+            "noWalkCompleteGames": 0,
+            "winningPercentage": 0.333,
+            "battersFaced": 187,
+            "innings": 43.333,
+            "hitsAllowed": 40,
+            "homeRunsAllowed": 6,
+            "walksAllowed": 19,
+            "hitByPitch": 3,
+            "strikeouts": 41,
+            "wildPitches": 0,
+            "balks": 0,
+            "runsAllowed": 27,
+            "earnedRuns": 25
+          },
+          "metrics": {
+            "era": 5.19,
+            "whip": 1.362,
+            "strikeoutsPerNine": 8.515,
+            "walksPerNine": 3.946,
+            "strikeoutToWalkRatio": 2.158
+          }
+        }
+      ],
+      "career": {
+        "batting": {
+          "seasons": 1,
+          "games": 8,
+          "plateAppearances": 2,
+          "atBats": 1,
+          "runs": 0,
+          "hits": 0,
+          "doubles": 0,
+          "triples": 0,
+          "homeRuns": 0,
+          "totalBases": 0,
+          "rbi": 0,
+          "steals": 0,
+          "walks": 0,
+          "hitByPitch": 0,
+          "strikeouts": 1,
+          "battingAverage": 0,
+          "onBasePercentage": 0,
+          "sluggingPercentage": 0,
+          "ops": 0,
+          "iso": 0
+        },
+        "pitching": {
+          "seasons": 1,
+          "games": 8,
+          "wins": 2,
+          "losses": 4,
+          "saves": 0,
+          "holds": 0,
+          "innings": 43.333,
+          "hitsAllowed": 40,
+          "walksAllowed": 19,
+          "strikeouts": 41,
+          "earnedRuns": 25,
+          "winningPercentage": 0.333,
+          "era": 5.192,
+          "whip": 1.362,
+          "strikeoutsPerNine": 8.515,
+          "walksPerNine": 3.946,
+          "strikeoutToWalkRatio": 2.158
+        }
+      }
+    },
+    "links": {
+      "self": "/players/e8srk.json"
+    }
+  }
+}

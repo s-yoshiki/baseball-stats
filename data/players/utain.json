@@ -1,0 +1,587 @@
+{
+  "data": {
+    "type": "player",
+    "id": "utain",
+    "attributes": {
+      "profile": {
+        "familyName": "桑原",
+        "givenName": "将志",
+        "familyNameKana": "くわはら",
+        "givenNameKana": "まさゆき",
+        "registeredName": "桑原 将志",
+        "registeredNameKana": "くわはら・まさゆき",
+        "url": "https://npb.jp/bis/players/51755135.html",
+        "isActive": true,
+        "details": {
+          "position": "外野手",
+          "throws": "右",
+          "bats": "右",
+          "heightCm": 174,
+          "weightKg": 80,
+          "birthDate": {
+            "iso": "1993-07-21",
+            "year": 1993,
+            "month": 7,
+            "day": 21
+          },
+          "career": {
+            "raw": "福知山成美高",
+            "entries": [
+              "福知山成美高"
+            ]
+          },
+          "draft": {
+            "raw": "2011年ドラフト4位",
+            "year": 2011,
+            "rank": 4,
+            "selection": "regular"
+          }
+        }
+      },
+      "battingStats": [
+        {
+          "season": 2012,
+          "team": "横浜DeNA",
+          "totals": {
+            "games": 3,
+            "plateAppearances": 3,
+            "atBats": 3,
+            "runs": 0,
+            "hits": 1,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 1,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 1,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0.333,
+            "onBasePercentage": 0.333,
+            "sluggingPercentage": 0.333,
+            "ops": 0.666,
+            "iso": 0,
+            "walkPercentage": 0,
+            "strikeoutPercentage": 0.333
+          }
+        },
+        {
+          "season": 2013,
+          "team": "横浜DeNA",
+          "totals": {
+            "games": 5,
+            "plateAppearances": 6,
+            "atBats": 6,
+            "runs": 0,
+            "hits": 0,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 0,
+            "totalBases": 0,
+            "rbi": 0,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 0,
+            "sacrificeFlies": 0,
+            "walks": 0,
+            "hitByPitch": 0,
+            "strikeouts": 3,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0,
+            "onBasePercentage": 0,
+            "sluggingPercentage": 0,
+            "ops": 0,
+            "iso": 0,
+            "walkPercentage": 0,
+            "strikeoutPercentage": 0.5
+          }
+        },
+        {
+          "season": 2014,
+          "team": "横浜DeNA",
+          "totals": {
+            "games": 53,
+            "plateAppearances": 169,
+            "atBats": 144,
+            "runs": 15,
+            "hits": 37,
+            "doubles": 7,
+            "triples": 2,
+            "homeRuns": 1,
+            "totalBases": 51,
+            "rbi": 13,
+            "steals": 4,
+            "caughtStealing": 1,
+            "sacrificeHits": 8,
+            "sacrificeFlies": 0,
+            "walks": 15,
+            "hitByPitch": 2,
+            "strikeouts": 32,
+            "groundedIntoDoublePlays": 5
+          },
+          "metrics": {
+            "battingAverage": 0.257,
+            "onBasePercentage": 0.335,
+            "sluggingPercentage": 0.354,
+            "ops": 0.689,
+            "iso": 0.097,
+            "walkPercentage": 0.089,
+            "strikeoutPercentage": 0.189
+          }
+        },
+        {
+          "season": 2015,
+          "team": "横浜DeNA",
+          "totals": {
+            "games": 60,
+            "plateAppearances": 116,
+            "atBats": 103,
+            "runs": 14,
+            "hits": 19,
+            "doubles": 4,
+            "triples": 1,
+            "homeRuns": 1,
+            "totalBases": 28,
+            "rbi": 5,
+            "steals": 1,
+            "caughtStealing": 1,
+            "sacrificeHits": 8,
+            "sacrificeFlies": 0,
+            "walks": 5,
+            "hitByPitch": 0,
+            "strikeouts": 26,
+            "groundedIntoDoublePlays": 1
+          },
+          "metrics": {
+            "battingAverage": 0.184,
+            "onBasePercentage": 0.222,
+            "sluggingPercentage": 0.272,
+            "ops": 0.494,
+            "iso": 0.088,
+            "walkPercentage": 0.043,
+            "strikeoutPercentage": 0.224
+          }
+        },
+        {
+          "season": 2016,
+          "team": "横浜DeNA",
+          "totals": {
+            "games": 133,
+            "plateAppearances": 522,
+            "atBats": 462,
+            "runs": 80,
+            "hits": 131,
+            "doubles": 23,
+            "triples": 2,
+            "homeRuns": 11,
+            "totalBases": 191,
+            "rbi": 49,
+            "steals": 19,
+            "caughtStealing": 11,
+            "sacrificeHits": 8,
+            "sacrificeFlies": 0,
+            "walks": 38,
+            "hitByPitch": 14,
+            "strikeouts": 93,
+            "groundedIntoDoublePlays": 5
+          },
+          "metrics": {
+            "battingAverage": 0.284,
+            "onBasePercentage": 0.356,
+            "sluggingPercentage": 0.413,
+            "ops": 0.769,
+            "iso": 0.129,
+            "walkPercentage": 0.073,
+            "strikeoutPercentage": 0.178
+          }
+        },
+        {
+          "season": 2017,
+          "team": "横浜DeNA",
+          "totals": {
+            "games": 143,
+            "plateAppearances": 664,
+            "atBats": 598,
+            "runs": 87,
+            "hits": 161,
+            "doubles": 38,
+            "triples": 5,
+            "homeRuns": 13,
+            "totalBases": 248,
+            "rbi": 52,
+            "steals": 10,
+            "caughtStealing": 11,
+            "sacrificeHits": 10,
+            "sacrificeFlies": 0,
+            "walks": 45,
+            "hitByPitch": 11,
+            "strikeouts": 116,
+            "groundedIntoDoublePlays": 8
+          },
+          "metrics": {
+            "battingAverage": 0.269,
+            "onBasePercentage": 0.332,
+            "sluggingPercentage": 0.415,
+            "ops": 0.747,
+            "iso": 0.146,
+            "walkPercentage": 0.068,
+            "strikeoutPercentage": 0.175
+          }
+        },
+        {
+          "season": 2018,
+          "team": "横浜DeNA",
+          "totals": {
+            "games": 127,
+            "plateAppearances": 421,
+            "atBats": 379,
+            "runs": 57,
+            "hits": 99,
+            "doubles": 24,
+            "triples": 5,
+            "homeRuns": 9,
+            "totalBases": 160,
+            "rbi": 26,
+            "steals": 17,
+            "caughtStealing": 3,
+            "sacrificeHits": 7,
+            "sacrificeFlies": 0,
+            "walks": 32,
+            "hitByPitch": 3,
+            "strikeouts": 71,
+            "groundedIntoDoublePlays": 3
+          },
+          "metrics": {
+            "battingAverage": 0.261,
+            "onBasePercentage": 0.324,
+            "sluggingPercentage": 0.422,
+            "ops": 0.746,
+            "iso": 0.161,
+            "walkPercentage": 0.076,
+            "strikeoutPercentage": 0.169
+          }
+        },
+        {
+          "season": 2019,
+          "team": "横浜DeNA",
+          "totals": {
+            "games": 72,
+            "plateAppearances": 115,
+            "atBats": 102,
+            "runs": 14,
+            "hits": 19,
+            "doubles": 3,
+            "triples": 1,
+            "homeRuns": 2,
+            "totalBases": 30,
+            "rbi": 7,
+            "steals": 2,
+            "caughtStealing": 0,
+            "sacrificeHits": 3,
+            "sacrificeFlies": 0,
+            "walks": 9,
+            "hitByPitch": 1,
+            "strikeouts": 26,
+            "groundedIntoDoublePlays": 0
+          },
+          "metrics": {
+            "battingAverage": 0.186,
+            "onBasePercentage": 0.259,
+            "sluggingPercentage": 0.294,
+            "ops": 0.553,
+            "iso": 0.108,
+            "walkPercentage": 0.078,
+            "strikeoutPercentage": 0.226
+          }
+        },
+        {
+          "season": 2020,
+          "team": "横浜DeNA",
+          "totals": {
+            "games": 34,
+            "plateAppearances": 42,
+            "atBats": 36,
+            "runs": 8,
+            "hits": 5,
+            "doubles": 0,
+            "triples": 0,
+            "homeRuns": 1,
+            "totalBases": 8,
+            "rbi": 2,
+            "steals": 0,
+            "caughtStealing": 0,
+            "sacrificeHits": 1,
+            "sacrificeFlies": 1,
+            "walks": 3,
+            "hitByPitch": 1,
+            "strikeouts": 11,
+            "groundedIntoDoublePlays": 2
+          },
+          "metrics": {
+            "battingAverage": 0.139,
+            "onBasePercentage": 0.22,
+            "sluggingPercentage": 0.222,
+            "ops": 0.442,
+            "iso": 0.083,
+            "walkPercentage": 0.071,
+            "strikeoutPercentage": 0.262
+          }
+        },
+        {
+          "season": 2021,
+          "team": "横浜DeNA",
+          "totals": {
+            "games": 135,
+            "plateAppearances": 571,
+            "atBats": 519,
+            "runs": 84,
+            "hits": 161,
+            "doubles": 39,
+            "triples": 2,
+            "homeRuns": 14,
+            "totalBases": 246,
+            "rbi": 43,
+            "steals": 12,
+            "caughtStealing": 7,
+            "sacrificeHits": 4,
+            "sacrificeFlies": 0,
+            "walks": 44,
+            "hitByPitch": 4,
+            "strikeouts": 75,
+            "groundedIntoDoublePlays": 12
+          },
+          "metrics": {
+            "battingAverage": 0.31,
+            "onBasePercentage": 0.369,
+            "sluggingPercentage": 0.474,
+            "ops": 0.843,
+            "iso": 0.164,
+            "walkPercentage": 0.077,
+            "strikeoutPercentage": 0.131
+          }
+        },
+        {
+          "season": 2022,
+          "team": "横浜DeNA",
+          "totals": {
+            "games": 130,
+            "plateAppearances": 529,
+            "atBats": 475,
+            "runs": 61,
+            "hits": 122,
+            "doubles": 32,
+            "triples": 1,
+            "homeRuns": 4,
+            "totalBases": 168,
+            "rbi": 39,
+            "steals": 13,
+            "caughtStealing": 8,
+            "sacrificeHits": 7,
+            "sacrificeFlies": 1,
+            "walks": 42,
+            "hitByPitch": 4,
+            "strikeouts": 89,
+            "groundedIntoDoublePlays": 3
+          },
+          "metrics": {
+            "battingAverage": 0.257,
+            "onBasePercentage": 0.322,
+            "sluggingPercentage": 0.354,
+            "ops": 0.676,
+            "iso": 0.097,
+            "walkPercentage": 0.079,
+            "strikeoutPercentage": 0.168
+          }
+        },
+        {
+          "season": 2023,
+          "team": "横浜DeNA",
+          "totals": {
+            "games": 132,
+            "plateAppearances": 479,
+            "atBats": 429,
+            "runs": 48,
+            "hits": 108,
+            "doubles": 23,
+            "triples": 4,
+            "homeRuns": 7,
+            "totalBases": 160,
+            "rbi": 35,
+            "steals": 3,
+            "caughtStealing": 8,
+            "sacrificeHits": 11,
+            "sacrificeFlies": 6,
+            "walks": 23,
+            "hitByPitch": 10,
+            "strikeouts": 54,
+            "groundedIntoDoublePlays": 11
+          },
+          "metrics": {
+            "battingAverage": 0.252,
+            "onBasePercentage": 0.301,
+            "sluggingPercentage": 0.373,
+            "ops": 0.674,
+            "iso": 0.121,
+            "walkPercentage": 0.048,
+            "strikeoutPercentage": 0.113
+          }
+        },
+        {
+          "season": 2024,
+          "team": "横浜DeNA",
+          "totals": {
+            "games": 106,
+            "plateAppearances": 321,
+            "atBats": 285,
+            "runs": 35,
+            "hits": 77,
+            "doubles": 12,
+            "triples": 0,
+            "homeRuns": 5,
+            "totalBases": 104,
+            "rbi": 24,
+            "steals": 8,
+            "caughtStealing": 0,
+            "sacrificeHits": 9,
+            "sacrificeFlies": 4,
+            "walks": 19,
+            "hitByPitch": 4,
+            "strikeouts": 42,
+            "groundedIntoDoublePlays": 6
+          },
+          "metrics": {
+            "battingAverage": 0.27,
+            "onBasePercentage": 0.321,
+            "sluggingPercentage": 0.365,
+            "ops": 0.686,
+            "iso": 0.095,
+            "walkPercentage": 0.059,
+            "strikeoutPercentage": 0.131
+          }
+        },
+        {
+          "season": 2025,
+          "team": "横浜DeNA",
+          "totals": {
+            "games": 106,
+            "plateAppearances": 447,
+            "atBats": 398,
+            "runs": 48,
+            "hits": 113,
+            "doubles": 17,
+            "triples": 2,
+            "homeRuns": 6,
+            "totalBases": 152,
+            "rbi": 27,
+            "steals": 10,
+            "caughtStealing": 0,
+            "sacrificeHits": 10,
+            "sacrificeFlies": 0,
+            "walks": 30,
+            "hitByPitch": 9,
+            "strikeouts": 59,
+            "groundedIntoDoublePlays": 5
+          },
+          "metrics": {
+            "battingAverage": 0.284,
+            "onBasePercentage": 0.348,
+            "sluggingPercentage": 0.382,
+            "ops": 0.73,
+            "iso": 0.098,
+            "walkPercentage": 0.067,
+            "strikeoutPercentage": 0.132
+          }
+        },
+        {
+          "season": 2026,
+          "team": "埼玉西武",
+          "totals": {
+            "games": 54,
+            "plateAppearances": 225,
+            "atBats": 203,
+            "runs": 16,
+            "hits": 48,
+            "doubles": 5,
+            "triples": 4,
+            "homeRuns": 3,
+            "totalBases": 70,
+            "rbi": 15,
+            "steals": 2,
+            "caughtStealing": 0,
+            "sacrificeHits": 2,
+            "sacrificeFlies": 0,
+            "walks": 16,
+            "hitByPitch": 4,
+            "strikeouts": 35,
+            "groundedIntoDoublePlays": 3
+          },
+          "metrics": {
+            "battingAverage": 0.236,
+            "onBasePercentage": 0.305,
+            "sluggingPercentage": 0.345,
+            "ops": 0.65,
+            "iso": 0.109,
+            "walkPercentage": 0.071,
+            "strikeoutPercentage": 0.156
+          }
+        }
+      ],
+      "pitchingStats": [],
+      "career": {
+        "batting": {
+          "seasons": 15,
+          "games": 1293,
+          "plateAppearances": 4630,
+          "atBats": 4142,
+          "runs": 567,
+          "hits": 1101,
+          "doubles": 227,
+          "triples": 29,
+          "homeRuns": 77,
+          "totalBases": 1617,
+          "rbi": 337,
+          "steals": 101,
+          "walks": 321,
+          "hitByPitch": 67,
+          "strikeouts": 733,
+          "battingAverage": 0.266,
+          "onBasePercentage": 0.322,
+          "sluggingPercentage": 0.39,
+          "ops": 0.712,
+          "iso": 0.124
+        },
+        "pitching": {
+          "seasons": 0,
+          "games": 0,
+          "wins": 0,
+          "losses": 0,
+          "saves": 0,
+          "holds": 0,
+          "innings": 0,
+          "hitsAllowed": 0,
+          "walksAllowed": 0,
+          "strikeouts": 0,
+          "earnedRuns": 0,
+          "winningPercentage": null,
+          "era": null,
+          "whip": null,
+          "strikeoutsPerNine": null,
+          "walksPerNine": null,
+          "strikeoutToWalkRatio": null
+        }
+      }
+    },
+    "links": {
+      "self": "/players/utain.json"
+    }
+  }
+}

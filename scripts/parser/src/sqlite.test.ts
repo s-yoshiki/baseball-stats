@@ -18,7 +18,16 @@ const player: RawPlayer = {
   playerName: "テスト 太郎",
   kanaName: "テスト タロウ",
   isActive: true,
-  detailInfo: { 所属球団: "福岡ソフトバンク" },
+  detailInfo: {
+    所属球団: "福岡ソフトバンク",
+    ポジション: "内野手",
+    投打: "右投左打",
+    "身長／体重": "178cm／84kg",
+    生年月日: "1996年7月4日",
+    出身地: "福井県",
+    経歴: "春江工 - 中央大",
+    ドラフト: "2014年ドラフト2位",
+  },
   battingStats: [
     {
       season: "2024",
@@ -26,6 +35,20 @@ const player: RawPlayer = {
       plateAppearances: "30",
       hits: "10",
       atBats: "30",
+      runs: "5",
+      doubles: "2",
+      triples: "0",
+      homeRuns: "1",
+      totalBases: "15",
+      rbi: "4",
+      steals: "3",
+      caughtStealing: "1",
+      sacrificeHits: "0",
+      sacrificeFlies: "1",
+      walks: "2",
+      hitByPitch: "1",
+      strikeouts: "5",
+      groundedIntoDoublePlays: "1",
     },
   ],
   pitchingStats: [],
@@ -70,10 +93,40 @@ describe("writeSnapshotToSqlite", () => {
       );
       expect(
         db.prepare("select ops, batting_average from batting_stats").get(),
-      ).toMatchObject({ batting_average: 0.333, ops: 0.333 });
+      ).toMatchObject({ batting_average: 0.333, ops: 0.882 });
       expect(
         db.prepare("select team_id, league_id from batting_stats").get(),
       ).toEqual({ team_id: "hawks", league_id: "pacific" });
+      expect(
+        db
+          .prepare(
+            "select registered_name, family_name, given_name, height_cm, weight_kg, birth_date_iso, career, draft from players",
+          )
+          .get(),
+      ).toMatchObject({
+        registered_name: "テスト 太郎",
+        family_name: "テスト",
+        given_name: "太郎",
+        height_cm: 178,
+        weight_kg: 84,
+        birth_date_iso: "1996-07-04",
+        career: "春江工 - 中央大",
+        draft: "2014年ドラフト2位",
+      });
+      expect(
+        db
+          .prepare(
+            "select caught_stealing, sacrifice_hits, sacrifice_flies, grounded_into_double_plays, babip, stolen_base_success_percentage from batting_stats",
+          )
+          .get(),
+      ).toMatchObject({
+        caught_stealing: 1,
+        sacrifice_hits: 0,
+        sacrifice_flies: 1,
+        grounded_into_double_plays: 1,
+        babip: 0.36,
+        stolen_base_success_percentage: 0.75,
+      });
       expect(db.prepare("select count(*) as count from leagues").get()).toEqual(
         { count: 3 },
       );

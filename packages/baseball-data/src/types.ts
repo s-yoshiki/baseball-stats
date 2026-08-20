@@ -173,16 +173,30 @@ export type ComputedBattingSeason = {
   iso: number | null;
   walkPercentage: number | null;
   strikeoutPercentage: number | null;
+  babip: number | null;
+  stolenBaseSuccessPercentage: number | null;
+  homeRunPercentage: number | null;
+  extraBaseHitPercentage: number | null;
+  runsPerPlateAppearance: number | null;
+  rbiPerPlateAppearance: number | null;
+  walkToStrikeoutRatio: number | null;
 };
 
 export type ComputedPitchingSeason = {
   season: number | null;
   team: string | null;
+  winningPercentage: number | null;
   era: number | null;
   whip: number | null;
   strikeoutsPerNine: number | null;
   walksPerNine: number | null;
   strikeoutToWalkRatio: number | null;
+  hitsPerNine: number | null;
+  homeRunsPerNine: number | null;
+  runsPerNine: number | null;
+  strikeoutPercentage: number | null;
+  walkPercentage: number | null;
+  strikeoutMinusWalkPercentage: number | null;
 };
 
 export type ComputedBattingCareer = {
@@ -198,14 +212,25 @@ export type ComputedBattingCareer = {
   totalBases: number;
   rbi: number;
   steals: number;
+  caughtStealing: number;
+  sacrificeHits: number;
+  sacrificeFlies: number;
   walks: number;
   hitByPitch: number;
   strikeouts: number;
+  groundedIntoDoublePlays: number;
   battingAverage: number | null;
   onBasePercentage: number | null;
   sluggingPercentage: number | null;
   ops: number | null;
   iso: number | null;
+  babip: number | null;
+  stolenBaseSuccessPercentage: number | null;
+  homeRunPercentage: number | null;
+  extraBaseHitPercentage: number | null;
+  runsPerPlateAppearance: number | null;
+  rbiPerPlateAppearance: number | null;
+  walkToStrikeoutRatio: number | null;
 };
 
 export type ComputedPitchingCareer = {
@@ -215,10 +240,20 @@ export type ComputedPitchingCareer = {
   losses: number;
   saves: number;
   holds: number;
+  holdPoints: number;
+  completeGames: number;
+  shutouts: number;
+  noWalkCompleteGames: number;
+  battersFaced: number;
   innings: number;
   hitsAllowed: number;
+  homeRunsAllowed: number;
   walksAllowed: number;
+  hitByPitch: number;
   strikeouts: number;
+  wildPitches: number;
+  balks: number;
+  runsAllowed: number;
   earnedRuns: number;
   winningPercentage: number | null;
   era: number | null;
@@ -226,6 +261,12 @@ export type ComputedPitchingCareer = {
   strikeoutsPerNine: number | null;
   walksPerNine: number | null;
   strikeoutToWalkRatio: number | null;
+  hitsPerNine: number | null;
+  homeRunsPerNine: number | null;
+  runsPerNine: number | null;
+  strikeoutPercentage: number | null;
+  walkPercentage: number | null;
+  strikeoutMinusWalkPercentage: number | null;
 };
 
 export type PlayerComputedStats = {

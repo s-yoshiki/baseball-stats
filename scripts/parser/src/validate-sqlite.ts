@@ -1,6 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
-import BetterSqlite3 from "better-sqlite3";
+import { readPublishedCounts } from "./publish-counts.js";
 
 function option(name: string): string | undefined {
   const index = process.argv.indexOf(name);
@@ -15,32 +15,23 @@ if (!fs.existsSync(dbPath)) {
   throw new Error(`SQLite file not found: ${dbPath}`);
 }
 
-const db = new BetterSqlite3(dbPath, { readonly: true, fileMustExist: true });
-try {
-  const integrity = db.pragma("integrity_check", { simple: true });
-  if (integrity !== "ok")
-    throw new Error(`SQLite integrity check failed: ${integrity}`);
+const { players, battingRows, pitchingRows } = readPublishedCounts(dbPath);
+if (players < 1) throw new Error("SQLite snapshot contains no players");
 
-  const players = (
-    db.prepare("SELECT COUNT(*) AS count FROM players").get() as {
-      count: number;
-    }
-  ).count;
-  const battingRows = (
-    db.prepare("SELECT COUNT(*) AS count FROM batting_stats").get() as {
-      count: number;
-    }
-  ).count;
-  const pitchingRows = (
-    db.prepare("SELECT COUNT(*) AS count FROM pitching_stats").get() as {
-      count: number;
-    }
-  ).count;
-  if (players < 1) throw new Error("SQLite snapshot contains no players");
+console.log(
+  `SQLite is valid: ${players} players, ${battingRows} batting rows, ${pitchingRows} pitching rows (${dbPath})`,
+);
 
-  console.log(
-    `SQLite is valid: ${players} players, ${battingRows} batting rows, ${pitchingRows} pitching rows (${dbPath})`,
+// Optional: also drop the row counts as JSON so a later CI step (building
+// the db-latest release metadata) can reuse this validation run instead of
+// opening the SQLite file a second time.
+const jsonOut = option("--json-out");
+if (jsonOut) {
+  const jsonOutPath = path.resolve(process.cwd(), jsonOut);
+  fs.mkdirSync(path.dirname(jsonOutPath), { recursive: true });
+  fs.writeFileSync(
+    jsonOutPath,
+    `${JSON.stringify({ players, battingRows, pitchingRows }, null, 2)}\n`,
   );
-} finally {
-  db.close();
+  console.log(`Wrote row counts to ${jsonOutPath}`);
 }

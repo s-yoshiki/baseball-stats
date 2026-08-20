@@ -6,3 +6,5 @@ export const DEFAULT_EXPORT_PLAYER_DATA_DIR = "../../data/export/players";
 export const DEFAULT_MASTER_DATA_DIR = "../../data/masters";
 export const DEFAULT_SQLITE_PATH = "../../data/sqlite/data.sqlite";
 export const DEFAULT_RAW_SQLITE_PATH = "../../data/raw/raw.sqlite";
+export const DEFAULT_RELEASE_COUNTS_PATH = "../../release/counts.json";
+export const DEFAULT_RELEASE_METADATA_PATH = "../../release/metadata.json";

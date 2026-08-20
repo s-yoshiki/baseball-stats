@@ -6,6 +6,7 @@
   "scripts": {
     "build": "tsc --noEmit",
     "atlas-schema": "node --import tsx src/atlas-schema.ts",
+    "build-release-metadata": "tsx src/build-release-metadata.ts",
     "export-json": "tsx src/export-json.ts",
     "scrape": "tsx src/main.ts",
     "test": "vitest run",

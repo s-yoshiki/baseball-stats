@@ -34,7 +34,7 @@ https://s-yoshiki.github.io/baseball-stats/metadata.json
 https://s-yoshiki.github.io/baseball-stats/index.html
 ```
 
-既存のArtifact（`baseball-stats-sqlite` / `baseball-stats-raw`）はデバッグ・差分復元用に引き続き公開します。判断の背景は [ADR 0005](docs/adr/0005-github-pages-for-public-sqlite-distribution.md) を参照してください。`npb-analysis`側でのデプロイ手順は [npb-analysisの同期運用ドキュメント](https://github.com/s-yoshiki/npb-analysis/blob/develop/docs/operations/baseball-stats-sync.md) を参照してください。
+既存のArtifact（`baseball-stats-sqlite` / `baseball-stats-raw`）はデバッグ・差分復元用に引き続き公開します。判断の背景は [ADR 0006](docs/adr/0006-github-pages-for-public-sqlite-distribution.md) を参照してください。`npb-analysis`側でのデプロイ手順は [npb-analysisの同期運用ドキュメント](https://github.com/s-yoshiki/npb-analysis/blob/develop/docs/operations/baseball-stats-sync.md) を参照してください。
 
 ### 初回フル取得（引退選手を含む全選手）
 

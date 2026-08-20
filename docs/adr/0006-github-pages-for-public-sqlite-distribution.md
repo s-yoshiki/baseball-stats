@@ -1,13 +1,14 @@
-# ADR 0005: 公開用SQLiteをGitHub Pagesで配布する
+# ADR 0006: 公開用SQLiteをGitHub Pagesで配布する
 
 - Status: Accepted
+- Supersedes: ADR 0005
 - Date: 2026-08-21
 
 ## Context
 
 `npb-analysis` はデプロイ時に `baseball-stats` が生成した公開用SQLite（`data/sqlite/data.sqlite`）を取得し、自スキーマへ変換してデプロイする。これまでは Actions artifact `baseball-stats-sqlite`（retention 14日）を `repository_dispatch` で通知し、`npb-analysis` 側がartifactをダウンロードしていた。
 
-`baseball-stats` を public にしても、Actions artifactのZIPダウンロードは匿名アクセスでは401になり、tokenが必須であることが実測で確認された。この制約を避けるため、一度は `db-latest` というrolling tagのGitHub Releaseへ公開する方式を実装した（`gh release view` による存在確認＋`gh release create`/`edit` + `gh release upload --clobber`）。しかしこの実装がマージされた後、利用者の判断で配布経路を GitHub Pages に変更することになった。
+`baseball-stats` を public にしても、Actions artifactのZIPダウンロードは匿名アクセスでは401になり、tokenが必須であることが実測で確認された（一方、Release assetとGitHub Pagesはいずれも匿名アクセスで200が返ることを実測で確認済み）。この制約を避けるため、`db-latest` というrolling tagのGitHub Releaseへ公開する方式（[ADR 0005](0005-github-release-for-public-sqlite-distribution.md)）を実装し、実際にマージして稼働させた——利用者が `db-latest` Releaseを実際に作成し、`npb-analysis` 側もそのReleaseから取得する実装をマージして運用していた。その後、利用者の判断で配布経路を GitHub Pages に変更することになった。
 
 公開用SQLiteの取得範囲（`scope`）は配布方式とは独立した下流の要件でもある。`npb-analysis` は引退選手を含む約7900選手分のデータを前提に最低選手数（デフォルト5000）のチェックを行うため、`scope=active`（実測 `players=1072`）のみで生成した公開DBはこのチェックで弾かれる。フル取得（`scope=all`）は `Daily scrape` の役割とし、`Publish SQLite` は現役ロースターの再公開に用途を絞る（詳細は両ワークフローの `scope` 入力のコメントを参照）。
 
@@ -43,7 +44,7 @@ Pages の有効化（`build_type = "workflow"`）そのものは、このリポ�
 
 ## Alternatives considered
 
-- **GitHub Release の rolling tag（`db-latest`）**: 一度実装しマージまでした方式。Release assetは公開リポジトリであれば匿名ダウンロードできるが、Releaseの作成・更新に `contents: write` が必要でActions tokenの権限が広がる。また `gh release upload --clobber` による上書きのたびにRelease全体のメタデータ（notes等）も書き換わり、Pages方式に比べてワークフロー側のロジックが複雑になる。Pages はリポジトリがpublicであれば追加の権限昇格なしに同じ匿名ダウンロード性質を得られるため、この案は採用しなかった。
+- **GitHub Release の rolling tag（`db-latest`、[ADR 0005](0005-github-release-for-public-sqlite-distribution.md)）**: 実装・マージ・稼働まで行った方式。Release assetは公開リポジトリであれば匿名ダウンロードできるが、Releaseの作成・更新に `contents: write` が必要でActions tokenの権限が広がる。また `gh release upload --clobber` による上書きのたびにRelease全体のメタデータ（notes等）も書き換わり、Pages方式に比べてワークフロー側のロジックが複雑になる。Pages はリポジトリがpublicであれば追加の権限昇格なしに同じ匿名ダウンロード性質を得られるため、稼働中だったこの方式を置き換えることにした。
 - **Actions artifact のみ（従来方式）**: 実測でZIPダウンロードが匿名アクセスでは401になり、tokenが必須であることが確認された。retention 14日の制約もある。`npb-analysis` にtokenを持たせずに済ませたいため採用しなかった（デバッグ・差分復元用途では引き続き併用する）。
 
 ## Consequences

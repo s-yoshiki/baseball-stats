@@ -6,6 +6,7 @@ import Database from "better-sqlite3";
 import { describe, expect, it } from "vitest";
 import {
   openRawSqliteWriter,
+  readKnownPlayerIds,
   readLatestRawPlayers,
   writeRawPlayersToSqlite,
 } from "./raw-sqlite.js";
@@ -96,6 +97,30 @@ describe("openRawSqliteWriter", () => {
       await expect(readLatestRawPlayers(dbPath)).resolves.toHaveLength(1);
     } finally {
       await writer.close();
+      await rm(temporaryDirectory, { recursive: true, force: true });
+    }
+  });
+});
+
+describe("completed raw scrape runs", () => {
+  it("uses the newest row for each player across incremental runs", async () => {
+    const temporaryDirectory = await mkdtemp(
+      path.join(os.tmpdir(), "baseball-stats-incremental-raw-sqlite-"),
+    );
+    const dbPath = path.join(temporaryDirectory, "raw.sqlite");
+    const updatedPlayer = { ...player, playerName: "更新 テスト 太郎" };
+
+    try {
+      await writeRawPlayersToSqlite([player], dbPath, "run-1");
+      await writeRawPlayersToSqlite([updatedPlayer], dbPath, "run-2");
+
+      await expect(readKnownPlayerIds(dbPath)).resolves.toEqual(
+        new Set(["test-player"]),
+      );
+      await expect(readLatestRawPlayers(dbPath)).resolves.toMatchObject([
+        { id: "test-player", playerName: "更新 テスト 太郎" },
+      ]);
+    } finally {
       await rm(temporaryDirectory, { recursive: true, force: true });
     }
   });

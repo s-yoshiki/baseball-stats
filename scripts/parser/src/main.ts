@@ -1,10 +1,11 @@
+import fs from "node:fs";
 import path from "node:path";
 import {
   DEFAULT_MASTER_DATA_DIR,
   DEFAULT_RAW_SQLITE_PATH,
   DEFAULT_SQLITE_PATH,
 } from "./constants.js";
-import { openRawSqliteWriter } from "./raw-sqlite.js";
+import { openRawSqliteWriter, readKnownPlayerIds } from "./raw-sqlite.js";
 import { type ScrapeOptions, scrapePlayers } from "./scrape.js";
 import { writeRawSqliteToSqlite } from "./sqlite.js";
 
@@ -26,7 +27,7 @@ export function readCliOptions(args: string[]): CliOptions {
   const options: CliOptions = {
     debug: false,
     delayMs: 300,
-    includeRetired: false,
+    scope: "active",
     db: DEFAULT_SQLITE_PATH,
     mastersDir: DEFAULT_MASTER_DATA_DIR,
     rawDb: DEFAULT_RAW_SQLITE_PATH,
@@ -42,7 +43,8 @@ export function readCliOptions(args: string[]): CliOptions {
       console.log(`Usage: pnpm scrape -- [options]
 
 Options:
-  --scope active|all    scrape active players or all players (default: active)
+  --scope daily|active|all
+                        daily: active + newly indexed players; active or all otherwise (default: active)
   --limit <number>      scrape only the first N players
   --kana-limit <number> scrape only the first N kana index pages
   --delay <ms>          wait between requests (default: 300)
@@ -57,17 +59,22 @@ Options:
       continue;
     }
     if (arg === "--include-retired" || (arg === "--scope" && next === "all")) {
-      options.includeRetired = true;
+      options.scope = "all";
       if (arg === "--scope") {
         index += 1;
       }
       continue;
     }
     if (arg === "--active-only" || (arg === "--scope" && next === "active")) {
-      options.includeRetired = false;
+      options.scope = "active";
       if (arg === "--scope") {
         index += 1;
       }
+      continue;
+    }
+    if (arg === "--scope" && next === "daily") {
+      options.scope = "daily";
+      index += 1;
       continue;
     }
     if (arg === "--limit" && next) {
@@ -108,10 +115,24 @@ Options:
 export async function main(args = process.argv.slice(2)): Promise<void> {
   const options = readCliOptions(args);
   const rawDbPath = path.resolve(process.cwd(), options.rawDb);
+  let knownPlayerIds: ReadonlySet<string> | undefined;
+  if (options.scope === "daily" && fs.existsSync(rawDbPath)) {
+    try {
+      knownPlayerIds = await readKnownPlayerIds(rawDbPath);
+    } catch (error) {
+      const incompatiblePath = `${rawDbPath}.incompatible-${Date.now()}`;
+      fs.renameSync(rawDbPath, incompatiblePath);
+      console.warn(
+        `Existing raw SQLite is incompatible and was moved to ${incompatiblePath}. Starting a full daily baseline.`,
+        error,
+      );
+      knownPlayerIds = new Set();
+    }
+  }
   const writer = await openRawSqliteWriter(rawDbPath);
   let rawResult: Awaited<ReturnType<typeof writer.finish>>;
   try {
-    await scrapePlayers(options, writer.writePlayer);
+    await scrapePlayers({ ...options, knownPlayerIds }, writer.writePlayer);
     rawResult = await writer.finish();
   } finally {
     await writer.close();

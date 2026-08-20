@@ -8,12 +8,13 @@ on:
   workflow_dispatch:
     inputs:
       scope:
-        description: "Player scope"
+        description: "Player scope (daily updates active and new players)"
         type: choice
         options:
+          - daily
           - active
           - all
-        default: active
+        default: daily
         required: true
       limit:
         description: "Optional player limit for a small verification run"
@@ -33,6 +34,7 @@ on:
 
 permissions:
   contents: read
+  actions: read
 
 concurrency:
   group: daily-scrape
@@ -58,9 +60,32 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
+      - name: Restore previous raw SQLite
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p data/raw
+          previous_run_id="$(gh run list \
+            --workflow daily-scrape.yml \
+            --branch main \
+            --status success \
+            --limit 1 \
+            --json databaseId \
+            --jq '.[0].databaseId // empty')"
+          if [ -z "$previous_run_id" ]; then
+            echo "No previous daily raw artifact found; starting a baseline scrape."
+            exit 0
+          fi
+          if ! gh run download "$previous_run_id" \
+            --name baseball-stats-raw \
+            --dir data/raw; then
+            echo "Previous raw artifact is unavailable; starting a baseline scrape."
+            rm -f data/raw/raw.sqlite
+          fi
+
       - name: Scrape and build SQLite
         env:
-          SCRAPE_SCOPE: ${{ inputs.scope || 'active' }}
+          SCRAPE_SCOPE: ${{ inputs.scope || 'daily' }}
           SCRAPE_LIMIT: ${{ inputs.limit || '' }}
           SCRAPE_KANA_LIMIT: ${{ inputs.kana_limit || '' }}
           SCRAPE_DELAY: ${{ inputs.delay || '300' }}
@@ -73,7 +98,7 @@ jobs:
       - name: Upload raw scrape SQLite
         uses: actions/upload-artifact@v4
         with:
-          name: baseball-stats-raw-${{ github.run_id }}
+          name: baseball-stats-raw
           path: data/raw/raw.sqlite
           if-no-files-found: error
           retention-days: 30

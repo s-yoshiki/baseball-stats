@@ -13,11 +13,12 @@ function sleep(ms: number): Promise<void> {
 }
 
 export type ScrapeOptions = {
-  includeRetired: boolean;
+  scope: "active" | "all" | "daily";
   delayMs: number;
   kanaLimit?: number;
   limit?: number;
   debug: boolean;
+  knownPlayerIds?: ReadonlySet<string>;
 };
 
 export type ScrapedPlayerHandler = (player: ScrapedPlayer) => Promise<void>;
@@ -82,7 +83,7 @@ export async function scrapePlayers(
     await sleep(options.delayMs);
   };
 
-  if (!options.includeRetired) {
+  if (options.scope === "active") {
     for (const url of [...activeUrls].sort()) {
       if (options.limit !== undefined && playerCount >= options.limit) {
         break;
@@ -122,6 +123,13 @@ export async function scrapePlayers(
       }
 
       seenUrls.add(url);
+      if (
+        options.scope === "daily" &&
+        !activeUrls.has(url) &&
+        options.knownPlayerIds?.has(toBase36PlayerIdFromUrl(url))
+      ) {
+        continue;
+      }
       await scrapePlayer(url);
     }
     await sleep(options.delayMs);

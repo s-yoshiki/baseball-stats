@@ -14,7 +14,7 @@ data/sqlite/data.sqlite
 data/export/players/*.json
 ```
 
-GitHub Actionsでは、`Daily scrape` が毎日03:00 JSTにraw SQLiteと公開用SQLiteを生成し、Actions artifactとして公開したうえで `npb-analysis` に更新通知を送ります。必要なGitHub secretsと、npb-analysis側でのPR・デプロイまでの手順は [npb-analysisの同期運用ドキュメント](https://github.com/s-yoshiki/npb-analysis/blob/develop/docs/operations/baseball-stats-sync.md) を参照してください。
+GitHub Actionsでは、`Daily scrape` が毎日03:00 JSTに前回のraw SQLite artifactを復元し、現役選手と新たにNPBの全選手一覧へ追加された選手だけを取得します。初回や前回artifactがない場合は全選手を取得して基準データを作ります。生成したraw SQLiteと公開用SQLiteをartifactとして公開したうえで `npb-analysis` に更新通知を送ります。必要なGitHub secretsと、npb-analysis側でのPR・デプロイまでの手順は [npb-analysisの同期運用ドキュメント](https://github.com/s-yoshiki/npb-analysis/blob/develop/docs/operations/baseball-stats-sync.md) を参照してください。
 
 選手データの正本は `data/raw/raw.sqlite` とし、公開用の整形済みデータは `data/sqlite/data.sqlite` に生成します。選手JSONはGit管理せず、必要な場合だけ `export-json` で生成します。プロフィールには `familyName`、`givenName`、`familyNameKana`、`givenNameKana`、`registeredName`、`registeredNameKana` を持たせ、`details` には投打、身長・体重、生年月日、経歴、ドラフトを構造化します。
 
@@ -46,6 +46,8 @@ pnpm --filter @repo/parser run scrape -- \
 
 `scrape` は選手を1件取得するたびにスクレイピングデータを `data/raw/raw.sqlite` へ保存し、取得完了後に `data/sqlite/data.sqlite` も再生成します。選手データ全件をメモリに保持しません。保存先は `--raw-db` と `--db` で変更できます。
 
+日次差分を実行する場合は、前回のraw SQLiteを `--raw-db` に用意してから `daily` scopeを指定します。`daily` は現役選手を毎回取得し、全選手インデックスに存在するがraw SQLiteに未登録の選手だけを追加取得します。
+
 ```sh
 pnpm --filter @repo/parser run write-sqlite
 
@@ -62,7 +64,7 @@ pnpm --filter @repo/parser run write-sqlite -- \
   --db ../../data/sqlite/data.sqlite
 ```
 
-`export-json` はraw.sqliteの最新スクレイプ実行から、必要なときだけ選手JSON APIリソースを生成します。`write-sqlite` はraw.sqliteから公開用SQLiteを再構築します。
+`export-json` はraw.sqliteの完了済みrunを選手ごとに統合した最新状態から、必要なときだけ選手JSON APIリソースを生成します。`write-sqlite` はraw.sqliteから公開用SQLiteを再構築します。
 
 SQLiteを手動で検証する場合:
 

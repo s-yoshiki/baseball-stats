@@ -51,7 +51,7 @@ exportされた `index.json` は同じ `data` 形式で選手リソースの一�
 
 ## SQLite
 
-公開SQLiteはraw SQLiteとマスタから再生成するアプリケーション用データです。`players` にプロフィールと `computed_json`、`batting_stats` と `pitching_stats` にシーズン単位の基本値および主要な派生値を保存します。
+公開SQLiteはraw SQLiteとマスタから再生成するアプリケーション用データです。`players` にプロフィールと `computed_json`、`batting_stats` と `pitching_stats` にシーズン単位の基本値および主要な派生値を保存します。raw SQLiteに複数のスクレイプrunがある場合は、完了済みrunのうち選手ごとに最も新しい行を統合します。これにより、日次runが現役選手と新規選手だけを含む差分runでも、過去の引退選手を失わずに公開DBを再生成できます。
 
 スクレイピング用の `raw.sqlite` は別DBで、実行単位の `scrape_runs` と選手単位の `raw_players` を持ちます。raw DBのテーブル列とJSONキーは英語に統一します。`raw_players` は次の列を持ち、`profile_json`、`batting_stats_json`、`pitching_stats_json` はJSON文字列です。
 
@@ -66,3 +66,5 @@ raw_players(
 `batting_stats_json` と `pitching_stats_json` の行キーは、それぞれ `season`、`team`、`games`、`hits`、`innings`、`earnedRuns` などの英語名です。プロフィールの取得値は `position`、`batsThrows`、`heightWeight`、`birthDate`、`career`、`draft` として保持し、未知の項目は `additional` 配列に退避します。
 
 KyselyがTypeScriptのテーブル型・クエリ・スキーマビルダーを提供し、`atlas.hcl` のexternal schema loaderがKyselyから生成したDDLをAtlasへ渡します。Atlasの差分と適用用SQLは `atlas/migrations/raw` と `atlas/migrations/published` で管理します。
+
+GitHub Actionsの`Daily scrape`は前回成功runのraw SQLite artifactを復元します。`daily` scopeでは現役選手を毎回取得し、全選手インデックスとの差分から新規追加選手を取得します。artifactがない初回は全選手を取得します。

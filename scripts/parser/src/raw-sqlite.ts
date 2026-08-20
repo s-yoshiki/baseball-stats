@@ -11,7 +11,12 @@ import {
   normalizePitchingStat,
   parsePlayerDetails,
 } from "@repo/baseball-data";
-import { createRawKyselyDb, createRawSchema } from "./raw-schema.js";
+import { sql } from "kysely";
+import {
+  createRawKyselyDb,
+  createRawSchema,
+  type RawPlayersTable,
+} from "./raw-schema.js";
 
 export type RawSqliteResult = {
   runId: string;
@@ -186,27 +191,62 @@ function detailInfoFromProfile(
   return details;
 }
 
+export async function readKnownPlayerIds(dbPath: string): Promise<Set<string>> {
+  const db = createRawKyselyDb(dbPath);
+  try {
+    const rows = await db
+      .selectFrom("raw_players")
+      .innerJoin("scrape_runs", "scrape_runs.id", "raw_players.run_id")
+      .select("raw_players.player_id")
+      .where("scrape_runs.completed_at", "is not", null)
+      .distinct()
+      .execute();
+    return new Set(rows.map((row) => row.player_id));
+  } finally {
+    await db.destroy();
+  }
+}
+
 export async function readLatestRawPlayers(
   dbPath: string,
 ): Promise<RawPlayer[]> {
   const db = createRawKyselyDb(dbPath);
   try {
-    const run = await db
-      .selectFrom("scrape_runs")
-      .select("id")
-      .where("completed_at", "is not", null)
-      .orderBy("completed_at", "desc")
-      .orderBy("id", "desc")
-      .executeTakeFirst();
-    if (!run) throw new Error(`No scrape runs found in ${dbPath}`);
+    const result = await sql<RawPlayersTable>`
+      SELECT candidate.run_id,
+             candidate.player_id,
+             candidate.player_url,
+             candidate.player_name,
+             candidate.kana_name,
+             candidate.is_active,
+             candidate.profile_json,
+             candidate.batting_stats_json,
+             candidate.pitching_stats_json
+      FROM raw_players AS candidate
+      INNER JOIN scrape_runs AS candidate_run
+        ON candidate_run.id = candidate.run_id
+      WHERE candidate_run.completed_at IS NOT NULL
+        AND NOT EXISTS (
+          SELECT 1
+          FROM raw_players AS newer
+          INNER JOIN scrape_runs AS newer_run
+            ON newer_run.id = newer.run_id
+          WHERE newer.player_id = candidate.player_id
+            AND newer_run.completed_at IS NOT NULL
+            AND (
+              newer_run.completed_at > candidate_run.completed_at
+              OR (
+                newer_run.completed_at = candidate_run.completed_at
+                AND newer_run.id > candidate_run.id
+              )
+            )
+        )
+      ORDER BY candidate.player_id
+    `.execute(db);
+    if (!result.rows.length)
+      throw new Error(`No scrape runs found in ${dbPath}`);
 
-    const rows = await db
-      .selectFrom("raw_players")
-      .selectAll()
-      .where("run_id", "=", run.id)
-      .orderBy("player_id")
-      .execute();
-    return rows.map((row) => {
+    return result.rows.map((row) => {
       const profile = JSON.parse(row.profile_json) as RawSqliteProfile;
       const detailInfo = detailInfoFromProfile(profile);
       return {

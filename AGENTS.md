@@ -27,6 +27,7 @@ pnpm install
 pnpm verify
 
 pnpm --filter @repo/parser run scrape -- --limit 3 --kana-limit 1 --debug --delay 300
+pnpm --filter @repo/parser run scrape -- --scope daily --limit 3 --kana-limit 1 --debug --delay 300
 pnpm --filter @repo/parser run write-sqlite
 pnpm --filter @repo/parser run export-json
 ```
@@ -35,7 +36,7 @@ pnpm --filter @repo/parser run export-json
 
 ## Change rules
 
-- `npb.jp` のレスポンスは `data/raw/raw.sqlite` に実行単位で保存する。選手ページは全件をメモリに蓄積せず、1選手取得ごとにraw SQLiteへ保存する。raw SQLiteの列名・JSONキーは英語に正規化し、値は取得時の表記を保持する。整形済みJSONには取得用の日本語キーを残さない。
+- `npb.jp` のレスポンスは `data/raw/raw.sqlite` に実行単位で保存する。選手ページは全件をメモリに蓄積せず、1選手取得ごとにraw SQLiteへ保存する。daily scopeは現役選手と新規追加選手だけを取得し、公開DB生成時に完了済みrunの選手ごとの最新行を統合する。raw SQLiteの列名・JSONキーは英語に正規化し、値は取得時の表記を保持する。整形済みJSONには取得用の日本語キーを残さない。
 - 派生値は `packages/baseball-data/src/stats.ts` の純粋関数で計算する。
 - JSON exportのスキーマを変更した場合は README、関連テスト、サンプルデータを更新する。
 - マスタを追加・修正する場合は `data/masters/README.md` と `scripts/parser/src/sqlite.ts` の取り込み処理を確認する。

@@ -13,7 +13,7 @@ pnpm --filter @repo/parser run scrape -- \
 
 オプション:
 
-- `--scope active|all`: 現役選手または全選手。デフォルトは `active`
+- `--scope daily|active|all`: `daily` は現役選手と新規追加選手、`active` は現役選手、`all` は全選手。デフォルトは `active`
 - `--limit <number>`: 取得する選手数
 - `--kana-limit <number>`: 取得するかな別インデックス数
 - `--delay <ms>`: リクエスト間隔。デフォルトは300ms
@@ -21,6 +21,8 @@ pnpm --filter @repo/parser run scrape -- \
 - `--db <path>`: 公開SQLiteの出力先
 - `--masters-dir <path>`: マスタJSONディレクトリ
 - `--debug`: URL、選手、抽出行数を表示
+
+`daily` は `--raw-db` に保存済みの完了済みrunから既知の選手IDを読み込み、現役選手は毎回、全選手インデックスに新しく現れた選手は追加で取得します。取得済みの引退選手はraw SQLiteの過去runから引き継ぎます。初回や互換性のないraw SQLiteの場合は既知IDが空になるため、dailyでも全選手が取得対象になります。
 
 サイトの負荷を避けるため、開発・検証では必ず小さいlimitを指定します。フルスクレイプでは `--scope all` と十分な `--delay` を明示してください。
 

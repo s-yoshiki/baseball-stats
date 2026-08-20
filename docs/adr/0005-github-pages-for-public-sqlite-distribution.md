@@ -9,6 +9,8 @@
 
 `baseball-stats` を public にしても、Actions artifactのZIPダウンロードは匿名アクセスでは401になり、tokenが必須であることが実測で確認された。この制約を避けるため、一度は `db-latest` というrolling tagのGitHub Releaseへ公開する方式を実装した（`gh release view` による存在確認＋`gh release create`/`edit` + `gh release upload --clobber`）。しかしこの実装がマージされた後、利用者の判断で配布経路を GitHub Pages に変更することになった。
 
+公開用SQLiteの取得範囲（`scope`）は配布方式とは独立した下流の要件でもある。`npb-analysis` は引退選手を含む約7900選手分のデータを前提に最低選手数（デフォルト5000）のチェックを行うため、`scope=active`（実測 `players=1072`）のみで生成した公開DBはこのチェックで弾かれる。フル取得（`scope=all`）は `Daily scrape` の役割とし、`Publish SQLite` は現役ロースターの再公開に用途を絞る（詳細は両ワークフローの `scope` 入力のコメントを参照）。
+
 ## Decision
 
 公開用SQLiteを、`baseball-stats` の GitHub Pages サイトへ次の4ファイルとして公開する。
@@ -33,7 +35,9 @@ Pages の有効化（`build_type = "workflow"`）そのものは、このリポ�
 
 デプロイジョブの権限は `pages: write` と `id-token: write` のみを付与し、ビルドジョブ（スクレイプ・SQLite生成・サイト組み立て）の `permissions.contents` は Release方式で必要だった `write` から `read` に戻す。複数ワークフロー（`daily-scrape` / `publish-sqlite`）が同じPagesサイトへデプロイし得るため、デプロイジョブには専用の `concurrency: group: "pages"`（`cancel-in-progress: false`）を設定し、各ワークフロー全体の既存concurrency（`daily-scrape` / `publish-sqlite`）とは独立して直列化する。
 
-既存のActions artifact（`baseball-stats-sqlite` / `baseball-stats-raw`）はそのまま残す。`baseball-stats-raw` は `daily` scopeの差分run復元に使われており、`baseball-stats-sqlite` はデバッグ用途で引き続き有用なため、置き換えずに併存させる。`repository_dispatch` による `npb-analysis` への通知も残すが、payloadはPages方式に合わせて `page_url`（デプロイ後のPages URL）を含める形に更新し、Pages方式では意味を持たなくなった `release_tag` は削除する。`npb-analysis` はprivateリポジトリのままなので、この通知には引き続き `NPB_ANALYSIS_DISPATCH_TOKEN` を使う。
+既存のActions artifact（`baseball-stats-sqlite` / `baseball-stats-raw`）はそのまま残す。`baseball-stats-raw` は `daily` scopeの差分run復元に使われており、`baseball-stats-sqlite` はデバッグ用途で引き続き有用なため、置き換えずに併存させる。
+
+`npb-analysis` への `repository_dispatch`（`baseball-stats-updated`）通知は行わない。`npb-analysis` は `NPB_ANALYSIS_DISPATCH_TOKEN`（`baseball-stats` へのアクセス権を持つPAT）を使うevent駆動のデプロイから、自身の `push: main` / `schedule`（毎日05:00 JST） / `workflow_dispatch` によるデプロイに切り替えたため、`baseball-stats` からの通知を受け取る先がなくなった。これにより `Check cross-repository dispatch secret` と `Notify npb-analysis` の両ステップを両ワークフローから削除し、`baseball-stats` は `NPB_ANALYSIS_DISPATCH_TOKEN` を一切保持・参照しなくなる。
 
 行数（`players` / `batting_rows` / `pitching_rows`）の算出は変更しない。引き続き `scripts/parser/src/publish-counts.ts` の `readPublishedCounts` を `validate-sqlite` と `build-release-metadata` の両方から呼び出し、同じSQLiteを二重に開かないようにする。
 
@@ -45,6 +49,7 @@ Pages の有効化（`build_type = "workflow"`）そのものは、このリポ�
 ## Consequences
 
 - `npb-analysis` はSQLite取得用のtokenを持たなくてよくなり、Actions artifactのretention 14日の制約も受けない
+- `npb-analysis` がevent駆動（`repository_dispatch`）から自身の`schedule`/`push`駆動に切り替わったため、`baseball-stats`側は`NPB_ANALYSIS_DISPATCH_TOKEN`シークレットの登録・維持が不要になる
 - サイト全体1GB・帯域月100GBというGitHub Pagesのソフトリミットの対象になる。公開用SQLite単体のサイズやアクセス頻度がこれに収まることを前提にしており、超過した場合は別の配布方式を再検討する必要がある
 - デプロイのたびに公開ツリー全体が置き換わるため、GitHub Releaseのようなバージョン履歴は残らない。過去バージョンが必要な場合はActions artifact（`baseball-stats-sqlite`、retention 14日）かrun履歴を参照する必要がある
 - Pages サイトはリポジトリの可視性に関わらず誰でも閲覧できるURLを持つため、`baseball-stats` を private に戻す判断をする場合、この配布方式はそのままでは使えない（Pagesサイト自体を無効化するか、別の非公開配布手段に切り替える必要がある）

@@ -14,7 +14,7 @@ data/sqlite/data.sqlite
 data/export/players/*.json    GitHub Pages (data.sqlite)
 ```
 
-GitHub Actionsでは、`Daily scrape` が毎日03:00 JSTに前回のraw SQLite artifactを復元し、現役選手と新たにNPBの全選手一覧へ追加された選手だけを取得します。初回や前回artifactがない場合は全選手を取得して基準データを作ります。生成したraw SQLiteと公開用SQLiteをartifactとして公開したうえで、公開用SQLiteをGitHub Pagesサイトへも公開し、`npb-analysis` に更新通知を送ります。
+GitHub Actionsでは、`Daily scrape` が毎日03:00 JSTに前回のraw SQLite artifactを復元し、現役選手と新たにNPBの全選手一覧へ追加された選手だけを取得します。初回や前回artifactがない場合は全選手を取得して基準データを作ります。生成したraw SQLiteと公開用SQLiteをartifactとして公開したうえで、公開用SQLiteをGitHub Pagesサイトへも公開します。`npb-analysis` はこのPagesサイトを自身の`push`/`schedule`/`workflow_dispatch`で取得しに来るため、`baseball-stats`側から`repository_dispatch`で更新通知を送ることはしません。
 
 ### 公開用SQLiteの配布（GitHub Pages）
 
@@ -34,7 +34,13 @@ https://s-yoshiki.github.io/baseball-stats/metadata.json
 https://s-yoshiki.github.io/baseball-stats/index.html
 ```
 
-既存のArtifact（`baseball-stats-sqlite` / `baseball-stats-raw`）はデバッグ・差分復元用に引き続き公開します。判断の背景は [ADR 0005](docs/adr/0005-github-pages-for-public-sqlite-distribution.md) を参照してください。必要なGitHub secretsと、npb-analysis側でのPR・デプロイまでの手順は [npb-analysisの同期運用ドキュメント](https://github.com/s-yoshiki/npb-analysis/blob/develop/docs/operations/baseball-stats-sync.md) を参照してください。
+既存のArtifact（`baseball-stats-sqlite` / `baseball-stats-raw`）はデバッグ・差分復元用に引き続き公開します。判断の背景は [ADR 0005](docs/adr/0005-github-pages-for-public-sqlite-distribution.md) を参照してください。`npb-analysis`側でのデプロイ手順は [npb-analysisの同期運用ドキュメント](https://github.com/s-yoshiki/npb-analysis/blob/develop/docs/operations/baseball-stats-sync.md) を参照してください。
+
+### 初回フル取得（引退選手を含む全選手）
+
+`npb-analysis` は引退選手を含む約7900選手分のデータを前提としており、デプロイ時に公開DBの選手数が一定数（デフォルト5000）を下回ると弾く下限チェックを持ちます。現役選手のみ（`scope=active`）で生成した公開DBは、実測で `players=1072` とこの下限に届きません。
+
+初回公開時、またはraw SQLiteのbaseline作り直しが必要なときは、`Daily scrape` を `workflow_dispatch` で `scope=all` を指定して手動実行し、引退選手を含む全選手をフル取得してください（`Daily scrape` は `timeout-minutes: 90`）。`delay`はnpb.jpへの負荷を考慮してデフォルト（300ms）以上を維持してください。`Publish SQLite` は現役ロースターの再公開専用（`scope=active`のみ選択可、`timeout-minutes: 20`）で、フル取得には使えません。
 
 選手データの正本は `data/raw/raw.sqlite` とし、公開用の整形済みデータは `data/sqlite/data.sqlite` に生成します。選手JSONはGit管理せず、必要な場合だけ `export-json` で生成します。プロフィールには `familyName`、`givenName`、`familyNameKana`、`givenNameKana`、`registeredName`、`registeredNameKana` を持たせ、`details` には投打、身長・体重、生年月日、経歴、ドラフトを構造化します。
 

@@ -3,10 +3,14 @@ name: Publish SQLite
 on:
   workflow_dispatch:
     inputs:
+      # 引退選手を含む全選手（scope=all、約8000選手）のフル取得はこの
+      # workflowのtimeout-minutes: 20には収まらないため許可しない。フル取得は
+      # Daily scrapeをworkflow_dispatchでscope=all指定して手動実行する
+      # （timeout-minutes: 90）。このworkflowは現役ロースターの再公開専用とする。
       scope:
-        description: "Player scope"
+        description: "Player scope (full scrape is done via Daily scrape)"
         type: choice
-        options: [active, all]
+        options: [active]
         default: active
         required: true
       delay:
@@ -181,35 +185,8 @@ jobs:
       group: pages
       cancel-in-progress: false
     steps:
+      # npb-analysisはpush(main)/schedule/workflow_dispatchで自走するため、
+      # ここからのrepository_dispatch通知は行わない。
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
-      - name: Check cross-repository dispatch secret
-        id: dispatch-secret
-        env:
-          DISPATCH_TOKEN: ${{ secrets.NPB_ANALYSIS_DISPATCH_TOKEN }}
-        run: |
-          if [ -z "$DISPATCH_TOKEN" ]; then
-            echo "::warning::NPB_ANALYSIS_DISPATCH_TOKEN is not configured; skipping npb-analysis notification"
-            echo "configured=false" >> "$GITHUB_OUTPUT"
-          else
-            echo "configured=true" >> "$GITHUB_OUTPUT"
-          fi
-
-      - name: Notify npb-analysis
-        if: steps.dispatch-secret.outputs.configured == 'true'
-        uses: actions/github-script@v7
-        with:
-          github-token: ${{ secrets.NPB_ANALYSIS_DISPATCH_TOKEN }}
-          script: |
-            await github.rest.repos.createDispatchEvent({
-              owner: "s-yoshiki",
-              repo: "npb-analysis",
-              event_type: "baseball-stats-updated",
-              client_payload: {
-                source_repo: context.repo.owner + "/" + context.repo.repo,
-                source_sha: context.sha,
-                page_url: "${{ steps.deployment.outputs.page_url }}",
-              },
-            });

@@ -25,10 +25,141 @@ function text(value: string | undefined): string | null {
   return trimmed ? trimmed : null;
 }
 
+function valueOrZero(value: number | null): number {
+  return value ?? 0;
+}
+
+function knownRatio(
+  numerator: number,
+  denominator: number,
+  required: Array<number | null>,
+): number | null {
+  return required.some((value) => value === null)
+    ? null
+    : ratio(numerator, denominator);
+}
+
+type BattingMetricInputs = {
+  plateAppearances: number | null;
+  atBats: number | null;
+  runs: number | null;
+  hits: number | null;
+  doubles: number | null;
+  triples: number | null;
+  homeRuns: number | null;
+  totalBases: number | null;
+  rbi: number | null;
+  steals: number | null;
+  caughtStealing: number | null;
+  sacrificeFlies: number | null;
+  walks: number | null;
+  hitByPitch: number | null;
+  strikeouts: number | null;
+};
+
+function calculateBabip(
+  hits: number | null,
+  homeRuns: number | null,
+  atBats: number | null,
+  strikeouts: number | null,
+  sacrificeFlies: number | null,
+): number | null {
+  if (
+    hits === null ||
+    homeRuns === null ||
+    atBats === null ||
+    strikeouts === null
+  ) {
+    return null;
+  }
+
+  return ratio(
+    hits - homeRuns,
+    atBats - strikeouts - homeRuns + (sacrificeFlies ?? 0),
+  );
+}
+
+function calculateBattingMetrics(
+  input: BattingMetricInputs,
+  overrides: {
+    battingAverage?: number | null;
+    onBasePercentage?: number | null;
+    sluggingPercentage?: number | null;
+  } = {},
+): Omit<ComputedBattingSeason, "season" | "team"> {
+  const plateAppearances = valueOrZero(input.plateAppearances);
+  const atBats = valueOrZero(input.atBats);
+  const hits = valueOrZero(input.hits);
+  const walks = valueOrZero(input.walks);
+  const hitByPitch = valueOrZero(input.hitByPitch);
+  const strikeouts = valueOrZero(input.strikeouts);
+  const sacrificeFlies = valueOrZero(input.sacrificeFlies);
+  const onBaseDenominator =
+    input.sacrificeFlies !== null && input.atBats !== null
+      ? atBats + walks + hitByPitch + sacrificeFlies
+      : input.plateAppearances !== null
+        ? plateAppearances
+        : atBats + walks + hitByPitch;
+  const battingAverage = overrides.battingAverage ?? ratio(hits, atBats);
+  const onBasePercentage =
+    overrides.onBasePercentage ??
+    ratio(hits + walks + hitByPitch, onBaseDenominator);
+  const sluggingPercentage =
+    overrides.sluggingPercentage ??
+    ratio(valueOrZero(input.totalBases), atBats);
+
+  return {
+    battingAverage,
+    onBasePercentage,
+    sluggingPercentage,
+    ops: addNullable(onBasePercentage, sluggingPercentage),
+    iso: subtractNullable(sluggingPercentage, battingAverage),
+    walkPercentage: ratio(walks, plateAppearances),
+    strikeoutPercentage: ratio(strikeouts, plateAppearances),
+    babip: calculateBabip(
+      input.hits,
+      input.homeRuns,
+      input.atBats,
+      input.strikeouts,
+      input.sacrificeFlies,
+    ),
+    stolenBaseSuccessPercentage: knownRatio(
+      valueOrZero(input.steals),
+      valueOrZero(input.steals) + valueOrZero(input.caughtStealing),
+      [input.steals, input.caughtStealing],
+    ),
+    homeRunPercentage: knownRatio(
+      valueOrZero(input.homeRuns),
+      plateAppearances,
+      [input.homeRuns, input.plateAppearances],
+    ),
+    extraBaseHitPercentage: knownRatio(
+      valueOrZero(input.doubles) +
+        valueOrZero(input.triples) +
+        valueOrZero(input.homeRuns),
+      hits,
+      [input.doubles, input.triples, input.homeRuns, input.hits],
+    ),
+    runsPerPlateAppearance: knownRatio(
+      valueOrZero(input.runs),
+      plateAppearances,
+      [input.runs, input.plateAppearances],
+    ),
+    rbiPerPlateAppearance: knownRatio(
+      valueOrZero(input.rbi),
+      plateAppearances,
+      [input.rbi, input.plateAppearances],
+    ),
+    walkToStrikeoutRatio: knownRatio(walks, strikeouts, [
+      input.walks,
+      input.strikeouts,
+    ]),
+  };
+}
+
 function calculateBattingCareer(
   rows: RawPlayer["battingStats"],
 ): ComputedBattingCareer {
-  const games = sum(rows.map((row) => toNumber(row.games)));
   const plateAppearances = sum(
     rows.map((row) => toNumber(row.plateAppearances)),
   );
@@ -41,16 +172,16 @@ function calculateBattingCareer(
   const totalBases = sum(rows.map((row) => toNumber(row.totalBases)));
   const rbi = sum(rows.map((row) => toNumber(row.rbi)));
   const steals = sum(rows.map((row) => toNumber(row.steals)));
+  const caughtStealing = sum(rows.map((row) => toNumber(row.caughtStealing)));
+  const sacrificeHits = sum(rows.map((row) => toNumber(row.sacrificeHits)));
+  const sacrificeFlies = sum(rows.map((row) => toNumber(row.sacrificeFlies)));
   const walks = sum(rows.map((row) => toNumber(row.walks)));
   const hitByPitch = sum(rows.map((row) => toNumber(row.hitByPitch)));
   const strikeouts = sum(rows.map((row) => toNumber(row.strikeouts)));
-  const battingAverage = ratio(hits, atBats);
-  const onBasePercentage = ratio(hits + walks + hitByPitch, plateAppearances);
-  const sluggingPercentage = ratio(totalBases, atBats);
-
-  return {
-    seasons: rows.filter((row) => toNumber(row.season) !== null).length,
-    games,
+  const groundedIntoDoublePlays = sum(
+    rows.map((row) => toNumber(row.groundedIntoDoublePlays)),
+  );
+  const metrics = calculateBattingMetrics({
     plateAppearances,
     atBats,
     runs,
@@ -61,105 +192,219 @@ function calculateBattingCareer(
     totalBases,
     rbi,
     steals,
+    caughtStealing,
+    sacrificeFlies,
     walks,
     hitByPitch,
     strikeouts,
-    battingAverage,
-    onBasePercentage,
-    sluggingPercentage,
-    ops: addNullable(onBasePercentage, sluggingPercentage),
-    iso: subtractNullable(sluggingPercentage, battingAverage),
+  });
+
+  return {
+    seasons: new Set(
+      rows
+        .map((row) => toNumber(row.season))
+        .filter((season): season is number => season !== null),
+    ).size,
+    games: sum(rows.map((row) => toNumber(row.games))),
+    plateAppearances,
+    atBats,
+    runs,
+    hits,
+    doubles,
+    triples,
+    homeRuns,
+    totalBases,
+    rbi,
+    steals,
+    caughtStealing,
+    sacrificeHits,
+    sacrificeFlies,
+    walks,
+    hitByPitch,
+    strikeouts,
+    groundedIntoDoublePlays,
+    ...metrics,
+  };
+}
+
+type PitchingMetricInputs = {
+  wins: number | null;
+  losses: number | null;
+  innings: number | null;
+  hitsAllowed: number | null;
+  homeRunsAllowed: number | null;
+  walksAllowed: number | null;
+  battersFaced: number | null;
+  strikeouts: number | null;
+  runsAllowed: number | null;
+  earnedRuns: number | null;
+};
+
+function calculatePitchingMetrics(
+  input: PitchingMetricInputs,
+  overrides: { winningPercentage?: number | null; era?: number | null } = {},
+): Omit<ComputedPitchingSeason, "season" | "team"> {
+  const innings = valueOrZero(input.innings);
+  const wins = valueOrZero(input.wins);
+  const losses = valueOrZero(input.losses);
+  const hitsAllowed = valueOrZero(input.hitsAllowed);
+  const homeRunsAllowed = valueOrZero(input.homeRunsAllowed);
+  const walksAllowed = valueOrZero(input.walksAllowed);
+  const strikeouts = valueOrZero(input.strikeouts);
+  const runsAllowed = valueOrZero(input.runsAllowed);
+  const earnedRuns = valueOrZero(input.earnedRuns);
+  const decisions = wins + losses;
+  const perNine = (value: number): number | null =>
+    innings > 0 ? round((value * 9) / innings) : null;
+
+  return {
+    winningPercentage: overrides.winningPercentage ?? ratio(wins, decisions),
+    era:
+      overrides.era ?? (innings > 0 ? round((earnedRuns * 9) / innings) : null),
+    whip: innings > 0 ? round((hitsAllowed + walksAllowed) / innings) : null,
+    strikeoutsPerNine: perNine(strikeouts),
+    walksPerNine: perNine(walksAllowed),
+    strikeoutToWalkRatio: ratio(strikeouts, walksAllowed),
+    hitsPerNine: perNine(hitsAllowed),
+    homeRunsPerNine: perNine(homeRunsAllowed),
+    runsPerNine: perNine(runsAllowed),
+    strikeoutPercentage: knownRatio(
+      strikeouts,
+      valueOrZero(input.battersFaced),
+      [input.strikeouts, input.battersFaced],
+    ),
+    walkPercentage: knownRatio(walksAllowed, valueOrZero(input.battersFaced), [
+      input.walksAllowed,
+      input.battersFaced,
+    ]),
+    strikeoutMinusWalkPercentage: knownRatio(
+      strikeouts - walksAllowed,
+      valueOrZero(input.battersFaced),
+      [input.strikeouts, input.walksAllowed, input.battersFaced],
+    ),
   };
 }
 
 function calculatePitchingCareer(
   rows: RawPlayer["pitchingStats"],
 ): ComputedPitchingCareer {
-  const games = sum(rows.map((row) => toNumber(row.games)));
   const wins = sum(rows.map((row) => toNumber(row.wins)));
   const losses = sum(rows.map((row) => toNumber(row.losses)));
-  const saves = sum(rows.map((row) => toNumber(row.saves)));
-  const holds = sum(rows.map((row) => toNumber(row.holds)));
   const innings = sum(rows.map((row) => parseInnings(row.innings)));
   const hitsAllowed = sum(rows.map((row) => toNumber(row.hitsAllowed)));
+  const homeRunsAllowed = sum(rows.map((row) => toNumber(row.homeRunsAllowed)));
   const walksAllowed = sum(rows.map((row) => toNumber(row.walksAllowed)));
+  const hitByPitch = sum(rows.map((row) => toNumber(row.hitByPitch)));
   const strikeouts = sum(rows.map((row) => toNumber(row.strikeouts)));
+  const battersFaced = sum(rows.map((row) => toNumber(row.battersFaced)));
+  const runsAllowed = sum(rows.map((row) => toNumber(row.runsAllowed)));
   const earnedRuns = sum(rows.map((row) => toNumber(row.earnedRuns)));
-  const decisions = wins + losses;
-
-  return {
-    seasons: rows.filter((row) => toNumber(row.season) !== null).length,
-    games,
+  const metrics = calculatePitchingMetrics({
     wins,
     losses,
-    saves,
-    holds,
+    innings,
+    hitsAllowed,
+    homeRunsAllowed,
+    walksAllowed,
+    battersFaced,
+    strikeouts,
+    runsAllowed,
+    earnedRuns,
+  });
+
+  return {
+    seasons: new Set(
+      rows
+        .map((row) => toNumber(row.season))
+        .filter((season): season is number => season !== null),
+    ).size,
+    games: sum(rows.map((row) => toNumber(row.games))),
+    wins,
+    losses,
+    saves: sum(rows.map((row) => toNumber(row.saves))),
+    holds: sum(rows.map((row) => toNumber(row.holds))),
+    holdPoints: sum(rows.map((row) => toNumber(row.holdPoints))),
+    completeGames: sum(rows.map((row) => toNumber(row.completeGames))),
+    shutouts: sum(rows.map((row) => toNumber(row.shutouts))),
+    noWalkCompleteGames: sum(
+      rows.map((row) => toNumber(row.noWalkCompleteGames)),
+    ),
+    battersFaced,
     innings: round(innings, 3) ?? 0,
     hitsAllowed,
+    homeRunsAllowed,
     walksAllowed,
+    hitByPitch,
     strikeouts,
+    wildPitches: sum(rows.map((row) => toNumber(row.wildPitches))),
+    balks: sum(rows.map((row) => toNumber(row.balks))),
+    runsAllowed,
     earnedRuns,
-    winningPercentage: ratio(wins, decisions),
-    era: innings > 0 ? round((earnedRuns * 9) / innings) : null,
-    whip: innings > 0 ? round((hitsAllowed + walksAllowed) / innings) : null,
-    strikeoutsPerNine: innings > 0 ? round((strikeouts * 9) / innings) : null,
-    walksPerNine: innings > 0 ? round((walksAllowed * 9) / innings) : null,
-    strikeoutToWalkRatio: ratio(strikeouts, walksAllowed),
+    ...metrics,
   };
 }
 
 function calculateBattingSeason(
   row: RawPlayer["battingStats"][number],
 ): ComputedBattingSeason {
-  const plateAppearances = toNumber(row.plateAppearances) ?? 0;
-  const atBats = toNumber(row.atBats) ?? 0;
-  const hits = toNumber(row.hits) ?? 0;
-  const walks = toNumber(row.walks) ?? 0;
-  const hitByPitch = toNumber(row.hitByPitch) ?? 0;
-  const strikeouts = toNumber(row.strikeouts) ?? 0;
-  const battingAverage = toNumber(row.battingAverage) ?? ratio(hits, atBats);
-  const onBasePercentage =
-    toNumber(row.onBasePercentage) ??
-    ratio(hits + walks + hitByPitch, plateAppearances);
-  const sluggingPercentage =
-    toNumber(row.sluggingPercentage) ??
-    ratio(toNumber(row.totalBases) ?? 0, atBats);
+  const metrics = calculateBattingMetrics(
+    {
+      plateAppearances: toNumber(row.plateAppearances),
+      atBats: toNumber(row.atBats),
+      runs: toNumber(row.runs),
+      hits: toNumber(row.hits),
+      doubles: toNumber(row.doubles),
+      triples: toNumber(row.triples),
+      homeRuns: toNumber(row.homeRuns),
+      totalBases: toNumber(row.totalBases),
+      rbi: toNumber(row.rbi),
+      steals: toNumber(row.steals),
+      caughtStealing: toNumber(row.caughtStealing),
+      sacrificeFlies: toNumber(row.sacrificeFlies),
+      walks: toNumber(row.walks),
+      hitByPitch: toNumber(row.hitByPitch),
+      strikeouts: toNumber(row.strikeouts),
+    },
+    {
+      battingAverage: toNumber(row.battingAverage),
+      onBasePercentage: toNumber(row.onBasePercentage),
+      sluggingPercentage: toNumber(row.sluggingPercentage),
+    },
+  );
 
   return {
     season: toNumber(row.season),
     team: text(row.team),
-    battingAverage,
-    onBasePercentage,
-    sluggingPercentage,
-    ops: addNullable(onBasePercentage, sluggingPercentage),
-    iso: subtractNullable(sluggingPercentage, battingAverage),
-    walkPercentage: ratio(walks, plateAppearances),
-    strikeoutPercentage: ratio(strikeouts, plateAppearances),
+    ...metrics,
   };
 }
 
 function calculatePitchingSeason(
   row: RawPlayer["pitchingStats"][number],
 ): ComputedPitchingSeason {
-  const innings = parseInnings(row.innings);
-  const hits = toNumber(row.hitsAllowed) ?? 0;
-  const walks = toNumber(row.walksAllowed) ?? 0;
-  const strikeouts = toNumber(row.strikeouts) ?? 0;
-  const earnedRuns = toNumber(row.earnedRuns);
+  const metrics = calculatePitchingMetrics(
+    {
+      wins: toNumber(row.wins),
+      losses: toNumber(row.losses),
+      innings: parseInnings(row.innings),
+      hitsAllowed: toNumber(row.hitsAllowed),
+      homeRunsAllowed: toNumber(row.homeRunsAllowed),
+      walksAllowed: toNumber(row.walksAllowed),
+      battersFaced: toNumber(row.battersFaced),
+      strikeouts: toNumber(row.strikeouts),
+      runsAllowed: toNumber(row.runsAllowed),
+      earnedRuns: toNumber(row.earnedRuns),
+    },
+    {
+      winningPercentage: toNumber(row.winningPercentage),
+      era: toNumber(row.era),
+    },
+  );
 
   return {
     season: toNumber(row.season),
     team: text(row.team),
-    era:
-      toNumber(row.era) ??
-      (innings && earnedRuns !== null
-        ? round((earnedRuns * 9) / innings)
-        : null),
-    whip: innings && innings > 0 ? round((hits + walks) / innings) : null,
-    strikeoutsPerNine:
-      innings && innings > 0 ? round((strikeouts * 9) / innings) : null,
-    walksPerNine: innings && innings > 0 ? round((walks * 9) / innings) : null,
-    strikeoutToWalkRatio: ratio(strikeouts, walks),
+    ...metrics,
   };
 }
 

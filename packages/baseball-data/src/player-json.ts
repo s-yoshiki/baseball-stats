@@ -106,16 +106,30 @@ function battingMetrics(value: ComputedBattingSeason) {
     iso: value.iso,
     walkPercentage: value.walkPercentage,
     strikeoutPercentage: value.strikeoutPercentage,
+    babip: value.babip,
+    stolenBaseSuccessPercentage: value.stolenBaseSuccessPercentage,
+    homeRunPercentage: value.homeRunPercentage,
+    extraBaseHitPercentage: value.extraBaseHitPercentage,
+    runsPerPlateAppearance: value.runsPerPlateAppearance,
+    rbiPerPlateAppearance: value.rbiPerPlateAppearance,
+    walkToStrikeoutRatio: value.walkToStrikeoutRatio,
   };
 }
 
 function pitchingMetrics(value: ComputedPitchingSeason) {
   return {
+    winningPercentage: value.winningPercentage,
     era: value.era,
     whip: value.whip,
     strikeoutsPerNine: value.strikeoutsPerNine,
     walksPerNine: value.walksPerNine,
     strikeoutToWalkRatio: value.strikeoutToWalkRatio,
+    hitsPerNine: value.hitsPerNine,
+    homeRunsPerNine: value.homeRunsPerNine,
+    runsPerNine: value.runsPerNine,
+    strikeoutPercentage: value.strikeoutPercentage,
+    walkPercentage: value.walkPercentage,
+    strikeoutMinusWalkPercentage: value.strikeoutMinusWalkPercentage,
   };
 }
 

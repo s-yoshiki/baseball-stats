@@ -51,7 +51,7 @@ exportされた `index.json` は同じ `data` 形式で選手リソースの一�
 
 ## SQLite
 
-公開SQLiteはraw SQLiteとマスタから再生成するアプリケーション用データです。`players` にプロフィールと `computed_json`、`batting_stats` と `pitching_stats` にシーズン単位の基本値および主要な派生値を保存します。raw SQLiteに複数のスクレイプrunがある場合は、完了済みrunのうち選手ごとに最も新しい行を統合します。これにより、日次runが現役選手と新規選手だけを含む差分runでも、過去の引退選手を失わずに公開DBを再生成できます。
+公開SQLiteはraw SQLiteとマスタから再生成するアプリケーション用データです。`players` に構造化プロフィール、`batting_stats` と `pitching_stats` にシーズン単位の全カウント値および派生値を保存します。`computed_json` のような重複JSONは保存せず、必要なJSON APIはraw SQLiteからexportします。raw SQLiteに複数のスクレイプrunがある場合は、完了済みrunのうち選手ごとに最も新しい行を統合します。これにより、日次runが現役選手と新規選手だけを含む差分runでも、過去の引退選手を失わずに公開DBを再生成できます。詳細なテーブル・計算式は [database-schema.md](database-schema.md) を参照してください。
 
 スクレイピング用の `raw.sqlite` は別DBで、実行単位の `scrape_runs` と選手単位の `raw_players` を持ちます。raw DBのテーブル列とJSONキーは英語に統一します。`raw_players` は次の列を持ち、`profile_json`、`batting_stats_json`、`pitching_stats_json` はJSON文字列です。
 

@@ -23,8 +23,8 @@ console.log(
 );
 
 // Optional: also drop the row counts as JSON so a later CI step (building
-// the db-latest release metadata) can reuse this validation run instead of
-// opening the SQLite file a second time.
+// the published `metadata.json` for the GitHub Pages site) can reuse this
+// validation run instead of opening the SQLite file a second time.
 const jsonOut = option("--json-out");
 if (jsonOut) {
   const jsonOutPath = path.resolve(process.cwd(), jsonOut);

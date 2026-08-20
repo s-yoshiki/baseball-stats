@@ -20,8 +20,8 @@ export type ReleaseMetadata = {
 
 /**
  * Builds the `metadata.json` asset published alongside `data.sqlite` on the
- * `db-latest` GitHub Release. `npb-analysis` reads this to record provenance
- * and to sanity-check the download without re-deriving row counts itself.
+ * GitHub Pages site. `npb-analysis` reads this to record provenance and to
+ * sanity-check the download without re-deriving row counts itself.
  */
 export function buildReleaseMetadata(
   counts: PublishedCounts,

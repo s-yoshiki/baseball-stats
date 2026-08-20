@@ -11,28 +11,30 @@ data/raw/raw.sqlite
   ↓ build with Kysely
 data/sqlite/data.sqlite
   ↓ optional export           ↓ publish
-data/export/players/*.json    db-latest GitHub Release (data.sqlite)
+data/export/players/*.json    GitHub Pages (data.sqlite)
 ```
 
-GitHub Actionsでは、`Daily scrape` が毎日03:00 JSTに前回のraw SQLite artifactを復元し、現役選手と新たにNPBの全選手一覧へ追加された選手だけを取得します。初回や前回artifactがない場合は全選手を取得して基準データを作ります。生成したraw SQLiteと公開用SQLiteをartifactとして公開したうえで、公開用SQLiteを `db-latest` タグのGitHub Releaseへも公開し、`npb-analysis` に更新通知を送ります。
+GitHub Actionsでは、`Daily scrape` が毎日03:00 JSTに前回のraw SQLite artifactを復元し、現役選手と新たにNPBの全選手一覧へ追加された選手だけを取得します。初回や前回artifactがない場合は全選手を取得して基準データを作ります。生成したraw SQLiteと公開用SQLiteをartifactとして公開したうえで、公開用SQLiteをGitHub Pagesサイトへも公開し、`npb-analysis` に更新通知を送ります。
 
-### 公開用SQLiteの配布（`db-latest` Release）
+### 公開用SQLiteの配布（GitHub Pages）
 
-`Daily scrape` と `Publish SQLite` はいずれも、検証済みの `data/sqlite/data.sqlite` を毎回同じ `db-latest` タグ（rolling tag、targetは `main`）のGitHub Releaseへ次の3つのassetとしてアップロードします。
+`Daily scrape` と `Publish SQLite` はいずれも、検証済みの `data/sqlite/data.sqlite` を毎回このリポジトリのGitHub Pagesサイトへ次の4ファイルとしてデプロイします。
 
 - `data.sqlite`: 公開用SQLite本体
 - `data.sqlite.sha256`: `sha256sum` 形式のチェックサム（`<hash>  data.sqlite`）
 - `metadata.json`: `source_sha` / `source_run_id` / `generated_at` / `scope` / `players` / `batting_rows` / `pitching_rows` を持つJSON
+- `index.html`: データセットの説明と3ファイルへのリンク、最新の生成日時・行数を記載した最小限のページ
 
-Actions artifactのZIPダウンロードは公開リポジトリでもtokenが必須ですが、Release assetは匿名でダウンロードできます。**このリポジトリが public であることが匿名ダウンロードの前提です。** 匿名ダウンロードURLは次の形式です。
+Actions artifactのZIPダウンロードは公開リポジトリでもtokenが必須ですが、GitHub PagesはpublicリポジトリであればHTTP GETだけで匿名取得できます。**このリポジトリが public であることが匿名ダウンロードの前提です。** Pagesの有効化そのものは `github-terraform` リポジトリのTerraformで管理しており（`build_type = "workflow"`）、このリポジトリのワークフローはPagesが有効化済みであることを前提にしています。匿名ダウンロードURLは次の形式です。
 
 ```text
-https://github.com/s-yoshiki/baseball-stats/releases/download/db-latest/data.sqlite
-https://github.com/s-yoshiki/baseball-stats/releases/download/db-latest/data.sqlite.sha256
-https://github.com/s-yoshiki/baseball-stats/releases/download/db-latest/metadata.json
+https://s-yoshiki.github.io/baseball-stats/data.sqlite
+https://s-yoshiki.github.io/baseball-stats/data.sqlite.sha256
+https://s-yoshiki.github.io/baseball-stats/metadata.json
+https://s-yoshiki.github.io/baseball-stats/index.html
 ```
 
-既存のArtifact（`baseball-stats-sqlite` / `baseball-stats-raw`）はデバッグ・差分復元用に引き続き公開します。判断の背景は [ADR 0005](docs/adr/0005-github-release-for-public-sqlite-distribution.md) を参照してください。必要なGitHub secretsと、npb-analysis側でのPR・デプロイまでの手順は [npb-analysisの同期運用ドキュメント](https://github.com/s-yoshiki/npb-analysis/blob/develop/docs/operations/baseball-stats-sync.md) を参照してください。
+既存のArtifact（`baseball-stats-sqlite` / `baseball-stats-raw`）はデバッグ・差分復元用に引き続き公開します。判断の背景は [ADR 0005](docs/adr/0005-github-pages-for-public-sqlite-distribution.md) を参照してください。必要なGitHub secretsと、npb-analysis側でのPR・デプロイまでの手順は [npb-analysisの同期運用ドキュメント](https://github.com/s-yoshiki/npb-analysis/blob/develop/docs/operations/baseball-stats-sync.md) を参照してください。
 
 選手データの正本は `data/raw/raw.sqlite` とし、公開用の整形済みデータは `data/sqlite/data.sqlite` に生成します。選手JSONはGit管理せず、必要な場合だけ `export-json` で生成します。プロフィールには `familyName`、`givenName`、`familyNameKana`、`givenNameKana`、`registeredName`、`registeredNameKana` を持たせ、`details` には投打、身長・体重、生年月日、経歴、ドラフトを構造化します。
 

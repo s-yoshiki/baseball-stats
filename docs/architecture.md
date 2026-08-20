@@ -68,3 +68,9 @@ raw_players(
 KyselyがTypeScriptのテーブル型・クエリ・スキーマビルダーを提供し、`atlas.hcl` のexternal schema loaderがKyselyから生成したDDLをAtlasへ渡します。Atlasの差分と適用用SQLは `atlas/migrations/raw` と `atlas/migrations/published` で管理します。
 
 GitHub Actionsの`Daily scrape`は前回成功runのraw SQLite artifactを復元します。`daily` scopeでは現役選手を毎回取得し、全選手インデックスとの差分から新規追加選手を取得します。artifactがない初回は全選手を取得します。
+
+## Publishing `data.sqlite`
+
+`Daily scrape` と `Publish SQLite` はどちらも、検証済みの公開用SQLiteをActions artifact（`baseball-stats-sqlite`、retention 14日）に加えて、`db-latest` タグのGitHub Releaseへも公開します。Release assetは `data.sqlite`、チェックサム用の `data.sqlite.sha256`、行数と生成元コミットを持つ `metadata.json` の3つです。`db-latest` はrolling tagで、公開のたびに同じtagのReleaseを`gh release edit` / `gh release upload --clobber`で上書きします。
+
+Actions artifactのダウンロードは公開リポジトリでもtokenが必須ですが、GitHub ReleaseのassetはpublicリポジトリであればHTTP GETだけで匿名取得できます。`npb-analysis`はこの性質を利用して、tokenを持たずに最新の公開用SQLiteを取得します（前提としてこのリポジトリがpublicであることが必要です）。行数の算出には`scripts/parser/src/publish-counts.ts`の`readPublishedCounts`を使い、`validate-sqlite`と`build-release-metadata`の両方から同じ実装を再利用します。設計判断の詳細は[ADR 0005](adr/0005-github-release-for-public-sqlite-distribution.md)を参照してください。

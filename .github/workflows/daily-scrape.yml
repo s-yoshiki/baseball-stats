@@ -1,10 +1,11 @@
+# npb-analysisへの統合に伴い、日次自動実行（schedule）は停止した。
+# raw baselineは2026-08-22のrun（32590274729）で凍結済みで、
+# npb-analysis側のS3バケットへ初期投入するため退避してある。
+# 以降のスクレイプはnpb-analysis側で行うため、このworkflowは
+# workflow_dispatchによる手動実行のみを受け付ける。
 name: Daily scrape
 
 on:
-  schedule:
-    # 03:00 JST. Keep the request interval in the command below so the
-    # scheduled job is polite to npb.jp.
-    - cron: "0 18 * * *"
   workflow_dispatch:
     inputs:
       scope:

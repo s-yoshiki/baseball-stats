@@ -14,7 +14,7 @@ data/sqlite/data.sqlite
 data/export/players/*.json    GitHub Pages (data.sqlite)
 ```
 
-GitHub Actionsでは、`Daily scrape` が毎日03:00 JSTに前回のraw SQLite artifactを復元し、現役選手と新たにNPBの全選手一覧へ追加された選手だけを取得します。初回や前回artifactがない場合は全選手を取得して基準データを作ります。生成したraw SQLiteと公開用SQLiteをartifactとして公開したうえで、公開用SQLiteをGitHub Pagesサイトへも公開します。`npb-analysis` はこのPagesサイトを自身の`push`/`schedule`/`workflow_dispatch`で取得しに来るため、`baseball-stats`側から`repository_dispatch`で更新通知を送ることはしません。
+`npb-analysis` への統合移行に伴い、`Daily scrape` の毎日03:00 JSTでの自動実行（`schedule`トリガ）は停止しました。以降のスクレイプは移行先の `npb-analysis` 側で行います。`Daily scrape` は `workflow_dispatch` による手動実行のみ受け付け、実行時は前回のraw SQLite artifactを復元して現役選手と新たにNPBの全選手一覧へ追加された選手だけを取得します（前回artifactがない場合は全選手を取得して基準データを作ります）。生成したraw SQLiteと公開用SQLiteをartifactとして公開したうえで、公開用SQLiteをGitHub Pagesサイトへも公開します。
 
 ### 公開用SQLiteの配布（GitHub Pages）
 

@@ -1,6 +1,6 @@
 # ADR 0005: 公開用SQLiteをGitHub Releaseの匿名DL可能なassetとして配布する
 
-- Status: Accepted
+- Status: Superseded by ADR 0006
 - Date: 2026-08-20
 
 ## Context

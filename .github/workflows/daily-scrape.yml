@@ -1,8 +1,11 @@
-# npb-analysisへの統合に伴い、日次自動実行（schedule）は停止した。
-# raw baselineは2026-08-22のrun（32590274729）で凍結済みで、
-# npb-analysis側のS3バケットへ初期投入するため退避してある。
-# 以降のスクレイプはnpb-analysis側で行うため、このworkflowは
-# workflow_dispatchによる手動実行のみを受け付ける。
+# baseball-statsはnpb.jpの取得層に専業化し、raw SQLite（raw.sqlite）だけを
+# 生成してこのリポジトリのGitHub Pagesへ公開する。加工済み（published）SQLiteの
+# 生成・公開はnpb-analysis側へ移した（ADR 0007を参照）。npb-analysisはデプロイ時に
+# このPagesサイトからraw.sqliteを取得し、自スキーマへ変換する。
+#
+# 日次自動実行（schedule）は現時点で無効化されている。以降の自動実行の要否・頻度は
+# 別途利用者が判断する。このworkflowは今のところworkflow_dispatchによる手動実行の
+# みを受け付ける。
 name: Daily scrape
 
 on:
@@ -67,8 +70,43 @@ jobs:
       - name: Restore previous raw SQLite
         env:
           GH_TOKEN: ${{ github.token }}
+          SCRAPE_SCOPE: ${{ inputs.scope || 'daily' }}
         run: |
+          set -euo pipefail
           mkdir -p data/raw
+
+          # 日次差分の基準は、このworkflow自身が公開したGitHub Pages上の
+          # raw.sqliteにする。Actions artifactのgh run downloadと違い、
+          # retention（30日）の制約を受けない——常に「自分が最後にpublishした
+          # もの」を基準にできる。
+          pages_url="https://s-yoshiki.github.io/baseball-stats/raw.sqlite"
+          pages_ok=false
+          if curl -fL --retry 5 -H "Cache-Control: no-cache" \
+              "$pages_url" -o data/raw/raw.sqlite; then
+            # `|| true` を付けて、.sha256側だけが取得に失敗した場合でも
+            # set -eでジョブ全体を落とさず、下のチェックサム不一致処理
+            # （破棄してartifactフォールバックへ進む）に委ねる。
+            expected="$(curl -fsL --retry 5 -H "Cache-Control: no-cache" \
+              "${pages_url}.sha256" | awk '{print $1}' || true)"
+            actual="$(cd data/raw && sha256sum raw.sqlite | awk '{print $1}')"
+            if [ -n "$expected" ] && [ "$expected" = "$actual" ]; then
+              echo "Restored the previous raw SQLite from GitHub Pages (sha256 $actual)."
+              pages_ok=true
+            else
+              echo "Checksum mismatch after downloading from Pages (expected '$expected', got '$actual'); discarding."
+              rm -f data/raw/raw.sqlite
+            fi
+          else
+            echo "GitHub Pages has no raw.sqlite yet (expected before the first publish)."
+          fi
+
+          if [ "$pages_ok" = true ]; then
+            exit 0
+          fi
+
+          # ここから先は移行期間だけの暫定フォールバック。Pagesへの初回publishが
+          # 終わったら、この経路（前回runのActions artifact復元）は削除できる。
+          echo "Falling back to the previous Actions artifact for the raw SQLite baseline."
           previous_run_id="$(gh run list \
             --workflow daily-scrape.yml \
             --branch main \
@@ -76,18 +114,28 @@ jobs:
             --limit 1 \
             --json databaseId \
             --jq '.[0].databaseId // empty')"
-          if [ -z "$previous_run_id" ]; then
-            echo "No previous daily raw artifact found; starting a baseline scrape."
-            exit 0
-          fi
-          if ! gh run download "$previous_run_id" \
-            --name baseball-stats-raw \
-            --dir data/raw; then
-            echo "Previous raw artifact is unavailable; starting a baseline scrape."
-            rm -f data/raw/raw.sqlite
+          artifact_ok=false
+          if [ -n "$previous_run_id" ] && gh run download "$previous_run_id" \
+              --name baseball-stats-raw \
+              --dir data/raw; then
+            artifact_ok=true
           fi
 
-      - name: Scrape and build SQLite
+          if [ "$artifact_ok" = true ]; then
+            echo "Restored the previous raw SQLite from Actions artifact (run $previous_run_id)."
+            exit 0
+          fi
+
+          rm -f data/raw/raw.sqlite
+          if [ "$SCRAPE_SCOPE" = "all" ]; then
+            echo "No previous raw SQLite found on Pages or in Actions artifacts; starting a full baseline scrape (scope=all)."
+            exit 0
+          fi
+
+          echo "::error::No previous raw SQLite found on GitHub Pages or in Actions artifacts, and scope is '$SCRAPE_SCOPE' (not 'all'). Refusing to run to avoid an unintended full scrape; re-run with scope=all to rebuild the baseline."
+          exit 1
+
+      - name: Scrape and build raw SQLite
         env:
           SCRAPE_SCOPE: ${{ inputs.scope || 'daily' }}
           SCRAPE_LIMIT: ${{ inputs.limit || '' }}
@@ -107,19 +155,11 @@ jobs:
           if-no-files-found: error
           retention-days: 30
 
-      - name: Validate published SQLite
+      - name: Validate raw SQLite
         run: >-
           pnpm --filter @repo/parser run validate-sqlite --
-          --db ../../data/sqlite/data.sqlite
+          --db ../../data/raw/raw.sqlite
           --json-out ../../release/counts.json
-
-      - name: Upload published SQLite
-        uses: actions/upload-artifact@v4
-        with:
-          name: baseball-stats-sqlite
-          path: data/sqlite/data.sqlite
-          if-no-files-found: error
-          retention-days: 14
 
       - name: Build release metadata
         env:
@@ -138,10 +178,10 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p release
-          # sha256sumの実行ディレクトリをdata/sqliteにして、チェックサムファイルの
-          # 対象名がdata.sqlite（asset名と同じ）になるようにする。
-          (cd data/sqlite && sha256sum data.sqlite) > release/data.sqlite.sha256
-          cat release/data.sqlite.sha256
+          # sha256sumの実行ディレクトリをdata/rawにして、チェックサムファイルの
+          # 対象名がraw.sqlite（asset名と同じ）になるようにする。
+          (cd data/raw && sha256sum raw.sqlite) > release/raw.sqlite.sha256
+          cat release/raw.sqlite.sha256
 
       # ここから公開用サイト（GitHub Pages）の構築。Actions artifactは匿名DLに
       # tokenが要るため、npb-analysisからの匿名取得先はGitHub Pagesに一本化する。
@@ -155,8 +195,8 @@ jobs:
           rm -rf "$site_dir"
           mkdir -p "$site_dir"
 
-          cp data/sqlite/data.sqlite "$site_dir/data.sqlite"
-          cp release/data.sqlite.sha256 "$site_dir/data.sqlite.sha256"
+          cp data/raw/raw.sqlite "$site_dir/raw.sqlite"
+          cp release/raw.sqlite.sha256 "$site_dir/raw.sqlite.sha256"
           cp release/metadata.json "$site_dir/metadata.json"
 
           # metadata.jsonの値をそのままページに埋め込む。値はこのジョブが
@@ -166,8 +206,7 @@ jobs:
           generated_at="$(jq -r '.generated_at' release/metadata.json)"
           scope="$(jq -r '.scope' release/metadata.json)"
           players="$(jq -r '.players' release/metadata.json)"
-          batting_rows="$(jq -r '.batting_rows' release/metadata.json)"
-          pitching_rows="$(jq -r '.pitching_rows' release/metadata.json)"
+          runs="$(jq -r '.runs' release/metadata.json)"
 
           cat > "$site_dir/index.html" <<HTML
           <!doctype html>
@@ -175,7 +214,7 @@ jobs:
           <head>
           <meta charset="utf-8">
           <meta name="viewport" content="width=device-width, initial-scale=1">
-          <title>baseball-stats public dataset</title>
+          <title>baseball-stats raw dataset</title>
           <style>
             body { font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif; line-height: 1.6; max-width: 42rem; margin: 2rem auto; padding: 0 1rem; color: #1a1a1a; }
             h1 { font-size: 1.4rem; }
@@ -186,23 +225,22 @@ jobs:
           </style>
           </head>
           <body>
-          <h1>baseball-stats 公開データセット</h1>
-          <p>NPB公式サイト（npb.jp）の公開選手データを取得・整形したSQLiteデータベースです。<a href="https://github.com/s-yoshiki/baseball-stats">baseball-stats</a> のGitHub Actionsワークフローが生成し、このページへ再デプロイします。</p>
+          <h1>baseball-stats raw データセット</h1>
+          <p>NPB公式サイト（<a href="https://npb.jp">npb.jp</a>）の公開選手データをそのまま取得したraw SQLiteデータベースです。加工・派生指標の計算は行っていません。<a href="https://github.com/s-yoshiki/baseball-stats">baseball-stats</a> のGitHub Actionsワークフローが生成し、このページへ再デプロイします。<a href="https://github.com/s-yoshiki/npb-analysis">npb-analysis</a> がデプロイ時にこのraw.sqliteを取得し、アプリ向けに加工したデータベースを生成します。</p>
 
           <h2>ファイル</h2>
           <ul>
-            <li><a href="data.sqlite">data.sqlite</a> — 公開用SQLite本体</li>
-            <li><a href="data.sqlite.sha256">data.sqlite.sha256</a> — <code>sha256sum</code>形式のチェックサム</li>
-            <li><a href="metadata.json">metadata.json</a> — 由来と行数を記録したメタデータ</li>
+            <li><a href="raw.sqlite">raw.sqlite</a> — raw SQLite本体（スクレイピング結果と取得履歴）</li>
+            <li><a href="raw.sqlite.sha256">raw.sqlite.sha256</a> — <code>sha256sum</code>形式のチェックサム</li>
+            <li><a href="metadata.json">metadata.json</a> — 由来と規模を記録したメタデータ</li>
           </ul>
 
           <h2>最新の生成情報</h2>
           <table>
             <tr><th>生成日時</th><td>${generated_at}</td></tr>
             <tr><th>取得範囲 (scope)</th><td>${scope}</td></tr>
-            <tr><th>選手数</th><td>${players}</td></tr>
-            <tr><th>打撃成績行数</th><td>${batting_rows}</td></tr>
-            <tr><th>投手成績行数</th><td>${pitching_rows}</td></tr>
+            <tr><th>選手数（player_id重複除く）</th><td>${players}</td></tr>
+            <tr><th>スクレイプrun数</th><td>${runs}</td></tr>
             <tr><th>ソースコミット</th><td><code>${source_sha}</code></td></tr>
           </table>
 
@@ -228,16 +266,13 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    # 同じPagesサイトへ複数ワークフロー（daily-scrape / publish-sqlite）から
-    # デプロイし得るため、専用のconcurrencyグループで直列化する。ワークフロー
-    # 全体のconcurrency（daily-scrape）とは独立して、デプロイ処理だけを
-    # 直列化する。
+    # 同じPagesサイトへ複数ワークフローからデプロイし得るため、専用の
+    # concurrencyグループで直列化する。ワークフロー全体のconcurrency
+    # （daily-scrape）とは独立して、デプロイ処理だけを直列化する。
     concurrency:
       group: pages
       cancel-in-progress: false
     steps:
-      # npb-analysisはpush(main)/schedule/workflow_dispatchで自走するため、
-      # ここからのrepository_dispatch通知は行わない。
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

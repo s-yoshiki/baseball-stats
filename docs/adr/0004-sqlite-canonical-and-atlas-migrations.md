@@ -1,6 +1,6 @@
 # ADR 0004: SQLiteを選手データの正本としAtlasでスキーマを管理する
 
-- Status: Accepted
+- Status: Accepted（rawの正本化・Atlas管理は継続。publishedの生成・管理は[ADR 0007](0007-raw-only-scope-and-pages-publish-raw-sqlite.md)でnpb-analysis側へ移設）
 - Date: 2026-08-20
 
 ## Decision

@@ -1,6 +1,6 @@
 # ADR 0006: 公開用SQLiteをGitHub Pagesで配布する
 
-- Status: Accepted
+- Status: Accepted（配布方式は継続。「公開するのは加工済みSQLite」という前提は[ADR 0007](0007-raw-only-scope-and-pages-publish-raw-sqlite.md)で更新）
 - Supersedes: ADR 0005
 - Date: 2026-08-21
 

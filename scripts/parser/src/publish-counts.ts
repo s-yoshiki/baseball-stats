@@ -1,18 +1,18 @@
 import BetterSqlite3 from "better-sqlite3";
 
-export type PublishedCounts = {
+export type RawCounts = {
   players: number;
-  battingRows: number;
-  pitchingRows: number;
+  runs: number;
 };
 
 /**
- * Opens the published SQLite read-only, checks its integrity, and returns
- * row counts for the tables that describe how much data it contains. Shared
- * by `validate-sqlite` and `build-release-metadata` so both report the same
- * numbers from a single query implementation.
+ * Opens the raw scrape SQLite read-only, checks its integrity, and returns
+ * counts that describe how much data it contains: the number of distinct
+ * players across all scrape runs, and the number of scrape runs recorded.
+ * Shared by `validate-sqlite` and `build-release-metadata` so both report
+ * the same numbers from a single query implementation.
  */
-export function readPublishedCounts(dbPath: string): PublishedCounts {
+export function readRawCounts(dbPath: string): RawCounts {
   const db = new BetterSqlite3(dbPath, {
     readonly: true,
     fileMustExist: true,
@@ -24,22 +24,17 @@ export function readPublishedCounts(dbPath: string): PublishedCounts {
     }
 
     const players = (
-      db.prepare("SELECT COUNT(*) AS count FROM players").get() as {
-        count: number;
-      }
+      db
+        .prepare("SELECT COUNT(DISTINCT player_id) AS count FROM raw_players")
+        .get() as { count: number }
     ).count;
-    const battingRows = (
-      db.prepare("SELECT COUNT(*) AS count FROM batting_stats").get() as {
-        count: number;
-      }
-    ).count;
-    const pitchingRows = (
-      db.prepare("SELECT COUNT(*) AS count FROM pitching_stats").get() as {
+    const runs = (
+      db.prepare("SELECT COUNT(*) AS count FROM scrape_runs").get() as {
         count: number;
       }
     ).count;
 
-    return { players, battingRows, pitchingRows };
+    return { players, runs };
   } finally {
     db.close();
   }

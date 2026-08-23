@@ -1,4 +1,4 @@
-import type { PublishedCounts } from "./publish-counts.js";
+import type { RawCounts } from "./publish-counts.js";
 
 export type ReleaseMetadataInput = {
   sourceSha: string;
@@ -14,17 +14,16 @@ export type ReleaseMetadata = {
   generated_at: string;
   scope: string;
   players: number;
-  batting_rows: number;
-  pitching_rows: number;
+  runs: number;
 };
 
 /**
- * Builds the `metadata.json` asset published alongside `data.sqlite` on the
+ * Builds the `metadata.json` asset published alongside `raw.sqlite` on the
  * GitHub Pages site. `npb-analysis` reads this to record provenance and to
- * sanity-check the download without re-deriving row counts itself.
+ * sanity-check the download without re-deriving counts itself.
  */
 export function buildReleaseMetadata(
-  counts: PublishedCounts,
+  counts: RawCounts,
   input: ReleaseMetadataInput,
 ): ReleaseMetadata {
   if (!input.sourceSha) throw new Error("sourceSha is required");
@@ -39,7 +38,6 @@ export function buildReleaseMetadata(
     generated_at: (input.generatedAt ?? new Date()).toISOString(),
     scope: input.scope,
     players: counts.players,
-    batting_rows: counts.battingRows,
-    pitching_rows: counts.pitchingRows,
+    runs: counts.runs,
   };
 }

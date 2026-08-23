@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { buildReleaseMetadata } from "./release-metadata.js";
 
-const counts = { players: 3, battingRows: 5, pitchingRows: 2 };
+const counts = { players: 3, runs: 5 };
 
 describe("buildReleaseMetadata", () => {
   it("maps counts and provenance into the published metadata shape", () => {
@@ -20,8 +20,7 @@ describe("buildReleaseMetadata", () => {
       generated_at: "2026-08-20T03:00:00.000Z",
       scope: "daily",
       players: 3,
-      batting_rows: 5,
-      pitching_rows: 2,
+      runs: 5,
     });
   });
 

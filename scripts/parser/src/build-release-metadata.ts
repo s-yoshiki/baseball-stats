@@ -4,7 +4,7 @@ import {
   DEFAULT_RELEASE_COUNTS_PATH,
   DEFAULT_RELEASE_METADATA_PATH,
 } from "./constants.js";
-import type { PublishedCounts } from "./publish-counts.js";
+import type { RawCounts } from "./publish-counts.js";
 import { buildReleaseMetadata } from "./release-metadata.js";
 
 function requireOption(name: string): string {
@@ -33,9 +33,7 @@ if (!fs.existsSync(countsPath)) {
     `Counts file not found: ${countsPath} (run validate-sqlite with --json-out first)`,
   );
 }
-const counts = JSON.parse(
-  fs.readFileSync(countsPath, "utf8"),
-) as PublishedCounts;
+const counts = JSON.parse(fs.readFileSync(countsPath, "utf8")) as RawCounts;
 
 const outPath = path.resolve(
   process.cwd(),

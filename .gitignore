@@ -11,9 +11,6 @@ build
 .env.*
 !.env.example
 
-# SQLite files and exported player JSON are rebuildable artifacts.
-data/sqlite/*.sqlite
-data/sqlite/*.sqlite-*
+# The raw SQLite store is a rebuildable scrape artifact.
 data/raw/*.sqlite
 data/raw/*.sqlite-*
-data/export/

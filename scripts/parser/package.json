@@ -7,12 +7,10 @@
     "build": "tsc --noEmit",
     "atlas-schema": "node --import tsx src/atlas-schema.ts",
     "build-release-metadata": "tsx src/build-release-metadata.ts",
-    "export-json": "tsx src/export-json.ts",
     "scrape": "tsx src/main.ts",
     "test": "vitest run",
     "typecheck": "tsc --noEmit",
-    "validate-sqlite": "tsx src/validate-sqlite.ts",
-    "write-sqlite": "tsx src/write-sqlite.ts"
+    "validate-sqlite": "tsx src/validate-sqlite.ts"
   },
   "dependencies": {
     "@repo/baseball-data": "workspace:*",

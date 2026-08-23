@@ -1,17 +1,10 @@
 import fs from "node:fs";
 import path from "node:path";
-import {
-  DEFAULT_MASTER_DATA_DIR,
-  DEFAULT_RAW_SQLITE_PATH,
-  DEFAULT_SQLITE_PATH,
-} from "./constants.js";
+import { DEFAULT_RAW_SQLITE_PATH } from "./constants.js";
 import { openRawSqliteWriter, readKnownPlayerIds } from "./raw-sqlite.js";
 import { type ScrapeOptions, scrapePlayers } from "./scrape.js";
-import { writeRawSqliteToSqlite } from "./sqlite.js";
 
 type CliOptions = ScrapeOptions & {
-  db: string;
-  mastersDir: string;
   rawDb: string;
 };
 
@@ -28,8 +21,6 @@ export function readCliOptions(args: string[]): CliOptions {
     debug: false,
     delayMs: 300,
     scope: "active",
-    db: DEFAULT_SQLITE_PATH,
-    mastersDir: DEFAULT_MASTER_DATA_DIR,
     rawDb: DEFAULT_RAW_SQLITE_PATH,
   };
 
@@ -49,8 +40,6 @@ Options:
   --kana-limit <number> scrape only the first N kana index pages
   --delay <ms>          wait between requests (default: 300)
   --raw-db <path>       raw scrape SQLite path (default: ${DEFAULT_RAW_SQLITE_PATH})
-  --db <path>           generated application SQLite path (default: ${DEFAULT_SQLITE_PATH})
-  --masters-dir <path>  master data directory (default: ${DEFAULT_MASTER_DATA_DIR})
   --debug               print progress and row counts`);
       process.exit(0);
     }
@@ -97,16 +86,6 @@ Options:
       index += 1;
       continue;
     }
-    if (arg === "--db" && next) {
-      options.db = next;
-      index += 1;
-      continue;
-    }
-    if (arg === "--masters-dir" && next) {
-      options.mastersDir = next;
-      index += 1;
-      continue;
-    }
     throw new Error(`Unknown or incomplete option: ${arg}`);
   }
   return options;
@@ -137,18 +116,8 @@ export async function main(args = process.argv.slice(2)): Promise<void> {
   } finally {
     await writer.close();
   }
-  const dbPath = path.resolve(process.cwd(), options.db);
-  const mastersDir = path.resolve(process.cwd(), options.mastersDir);
-  const sqliteResult = await writeRawSqliteToSqlite(
-    rawDbPath,
-    dbPath,
-    mastersDir,
-  );
   console.log(
     `Saved raw scrape run ${rawResult.runId} (${rawResult.players} players) to ${rawDbPath}`,
-  );
-  console.log(
-    `Wrote ${sqliteResult.players} players, ${sqliteResult.battingRows} batting rows, and ${sqliteResult.pitchingRows} pitching rows to ${dbPath}`,
   );
 }
 

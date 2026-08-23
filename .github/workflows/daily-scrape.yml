@@ -3,12 +3,23 @@
 # 生成・公開はnpb-analysis側へ移した（ADR 0007を参照）。npb-analysisはデプロイ時に
 # このPagesサイトからraw.sqliteを取得し、自スキーマへ変換する。
 #
-# 日次自動実行（schedule）は現時点で無効化されている。以降の自動実行の要否・頻度は
-# 別途利用者が判断する。このworkflowは今のところworkflow_dispatchによる手動実行の
-# みを受け付ける。
+# 日次自動実行（schedule）は、npb-analysisへの統合作業中は一時的に無効化されて
+# いた（workflow_dispatchのみ受け付ける状態だった）。GitHub Pagesへのraw.sqlite
+# 初回publishが成功し、npb-analysisのDeployがこのPagesサイトを参照して起動する
+# 経路に切り替わったため、scheduleを復活させる。
+#
+# 下流タイミング依存: npb-analysisのDeployは cron "0 20 * * *"（05:00 JST）で、
+# このリポジトリのGitHub PagesからPublishされたraw.sqliteを取得する。この
+# workflowは03:00 JST開始・timeout-minutes: 90であり、遅くとも04:30 JSTには
+# scrapeジョブが完了し、続くdeploy-pagesジョブがPagesへpublishする。つまり
+# npb-analysisのDeployが起動する05:00 JSTより前に新しいraw.sqliteが揃っている
+# 前提でスケジュールを組んでいる。開始時刻（cron）やtimeout-minutesを変更して
+# この時間関係を崩す場合は、npb-analysis側のDeploy cronも合わせて見直すこと。
 name: Daily scrape
 
 on:
+  schedule:
+    - cron: "0 18 * * *" # 03:00 JST
   workflow_dispatch:
     inputs:
       scope:
@@ -39,9 +50,10 @@ on:
 permissions:
   # チェックアウトとPages成果物のビルドにはcontents: readで十分。
   # Pagesへのデプロイ権限（pages: write / id-token: write）はdeployジョブ側で
-  # 必要な範囲だけ個別に付与する。
+  # 必要な範囲だけ個別に付与する。raw SQLiteの復元はGitHub Pagesからの匿名
+  # 取得のみで完結するため（gh run list / gh run downloadは使わない）、
+  # actions: readは不要。
   contents: read
-  actions: read
 
 concurrency:
   group: daily-scrape
@@ -69,23 +81,22 @@ jobs:
 
       - name: Restore previous raw SQLite
         env:
-          GH_TOKEN: ${{ github.token }}
           SCRAPE_SCOPE: ${{ inputs.scope || 'daily' }}
         run: |
           set -euo pipefail
           mkdir -p data/raw
 
           # 日次差分の基準は、このworkflow自身が公開したGitHub Pages上の
-          # raw.sqliteにする。Actions artifactのgh run downloadと違い、
-          # retention（30日）の制約を受けない——常に「自分が最後にpublishした
-          # もの」を基準にできる。
+          # raw.sqliteにする。Actions artifact（retention 30日）と違って
+          # 寿命の制約を受けない——Pages上のraw.sqliteは直近のpublishで常に
+          # 上書きされているため、常に「自分が最後にpublishしたもの」を
+          # 基準にできる。
           pages_url="https://s-yoshiki.github.io/baseball-stats/raw.sqlite"
           pages_ok=false
           if curl -fL --retry 5 -H "Cache-Control: no-cache" \
               "$pages_url" -o data/raw/raw.sqlite; then
             # `|| true` を付けて、.sha256側だけが取得に失敗した場合でも
-            # set -eでジョブ全体を落とさず、下のチェックサム不一致処理
-            # （破棄してartifactフォールバックへ進む）に委ねる。
+            # set -eでジョブ全体を落とさず、下のチェックサム不一致処理に委ねる。
             expected="$(curl -fsL --retry 5 -H "Cache-Control: no-cache" \
               "${pages_url}.sha256" | awk '{print $1}' || true)"
             actual="$(cd data/raw && sha256sum raw.sqlite | awk '{print $1}')"
@@ -97,42 +108,20 @@ jobs:
               rm -f data/raw/raw.sqlite
             fi
           else
-            echo "GitHub Pages has no raw.sqlite yet (expected before the first publish)."
+            echo "GitHub Pages fetch of raw.sqlite failed."
+            rm -f data/raw/raw.sqlite
           fi
 
           if [ "$pages_ok" = true ]; then
             exit 0
           fi
 
-          # ここから先は移行期間だけの暫定フォールバック。Pagesへの初回publishが
-          # 終わったら、この経路（前回runのActions artifact復元）は削除できる。
-          echo "Falling back to the previous Actions artifact for the raw SQLite baseline."
-          previous_run_id="$(gh run list \
-            --workflow daily-scrape.yml \
-            --branch main \
-            --status success \
-            --limit 1 \
-            --json databaseId \
-            --jq '.[0].databaseId // empty')"
-          artifact_ok=false
-          if [ -n "$previous_run_id" ] && gh run download "$previous_run_id" \
-              --name baseball-stats-raw \
-              --dir data/raw; then
-            artifact_ok=true
-          fi
-
-          if [ "$artifact_ok" = true ]; then
-            echo "Restored the previous raw SQLite from Actions artifact (run $previous_run_id)."
-            exit 0
-          fi
-
-          rm -f data/raw/raw.sqlite
           if [ "$SCRAPE_SCOPE" = "all" ]; then
-            echo "No previous raw SQLite found on Pages or in Actions artifacts; starting a full baseline scrape (scope=all)."
+            echo "No usable raw SQLite found on GitHub Pages; starting a full baseline scrape (scope=all)."
             exit 0
           fi
 
-          echo "::error::No previous raw SQLite found on GitHub Pages or in Actions artifacts, and scope is '$SCRAPE_SCOPE' (not 'all'). Refusing to run to avoid an unintended full scrape; re-run with scope=all to rebuild the baseline."
+          echo "::error::No usable raw SQLite found on GitHub Pages, and scope is '$SCRAPE_SCOPE' (not 'all'). Refusing to run to avoid an unintended full scrape; re-run with scope=all to rebuild the baseline."
           exit 1
 
       - name: Scrape and build raw SQLite

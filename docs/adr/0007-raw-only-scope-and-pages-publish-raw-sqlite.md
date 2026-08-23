@@ -52,3 +52,12 @@
 - 日次差分の基準がActions artifactのretention（30日）に縛られなくなり、長期間ワークフローを実行しなくても直近の公開物を基準に差分runを続けられる
 - 初回publishが完了するまでは、Pages取得失敗時にActions artifactへフォールバックする暫定コードパスが残る。初回publish後はこのフォールバックを削除できる
 - 加工済みSQLite・選手JSON export・マスタ管理は`baseball-stats`のスコープ外になる。これらが必要な場合は`npb-analysis`側のドキュメントを参照する
+
+## Update
+
+GitHub Pagesへのraw.sqlite初回publish（run `32631015731`）が成功し、`npb-analysis`側もこのPagesサイトを参照する経路への切替を完了した。これに伴い、上記「移行期間の配慮」で残していた暫定措置を解消した。
+
+- `daily-scrape.yml`の`Restore previous raw SQLite`ステップから、Actions artifact復元（`gh run download`）へのフォールバック経路を削除した。GitHub Pagesからの取得とsha256検証のみで完結する。取得に失敗した場合の扱いは変更していない（`scope=all`ならbaseline作り直しとして続行、それ以外は`::error::`で失敗させる）
+- `gh run list` / `gh run download`を使わなくなったため、`daily-scrape.yml`の`permissions`から`actions: read`と、対応する`GH_TOKEN`の受け渡しを削除した
+- raw artifact（`baseball-stats-raw`、retention 30日）のアップロード自体は、Pagesが壊れた場合のバックアップとして引き続き残す
+- `Daily scrape`のschedule（`cron: "0 18 * * *"`、03:00 JST）を復活させた。`npb-analysis`のDeployは`cron: "0 20 * * *"`（05:00 JST）でPagesのraw.sqliteを取得するため、`daily-scrape.yml`の開始時刻や`timeout-minutes: 90`を変更してこの時間関係を崩す場合は、`npb-analysis`側のDeploy cronも合わせて見直す必要がある

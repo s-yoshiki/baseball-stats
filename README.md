@@ -16,7 +16,9 @@ GitHub Pages (raw.sqlite)
 npb-analysis
 ```
 
-`npb-analysis` への統合に伴い、`Daily scrape` の毎日03:00 JSTでの自動実行（`schedule`トリガ）は停止しています。このワークフローは現在 `workflow_dispatch` による手動実行のみを受け付けます。実行時は前回公開したraw SQLiteを基準にして現役選手と新たにNPBの全選手一覧へ追加された選手だけを取得します（基準が無い場合は全選手を取得して基準データを作ります）。生成したraw SQLiteはActions artifactとして公開したうえで、このリポジトリのGitHub Pagesサイトへも公開します。
+`Daily scrape` は毎日03:00 JST（`cron: "0 18 * * *"`）に自動実行されます。`npb-analysis`への統合作業中は一時的にscheduleを止め`workflow_dispatch`のみ受け付けていましたが、GitHub Pagesへのraw.sqlite初回publishが成功し、`npb-analysis`のDeployがこのPagesサイトを参照する経路に切り替わったことで自動実行を復活させています。`workflow_dispatch`による手動実行も引き続き可能です。実行時は自分が最後にGitHub Pagesへ公開したraw SQLiteを基準にして現役選手と新たにNPBの全選手一覧へ追加された選手だけを取得します（基準が無い場合は全選手を取得して基準データを作ります）。生成したraw SQLiteはActions artifactとして公開したうえで、このリポジトリのGitHub Pagesサイトへも公開します。
+
+`npb-analysis`のDeployは`cron: "0 20 * * *"`（05:00 JST）でこのPagesサイトのraw.sqliteを取得します。`Daily scrape`は03:00 JST開始・`timeout-minutes: 90`のため遅くとも04:30 JSTにはscrapeジョブが完了し、続くdeploy-pagesジョブによるPagesへのpublishも05:00 JSTより前に終わります。この時間関係は`.github/workflows/daily-scrape.yml`にもコメントで明記しています。開始時刻（cron）やtimeout-minutesを変更してこの関係を崩す場合は、`npb-analysis`側のDeploy cronも合わせて見直してください。
 
 ### raw SQLiteの配布（GitHub Pages）
 
@@ -36,7 +38,7 @@ https://s-yoshiki.github.io/baseball-stats/metadata.json
 https://s-yoshiki.github.io/baseball-stats/index.html
 ```
 
-日次差分run（`daily` scope）は、このPagesサイトへ自分が最後に公開した `raw.sqlite` を基準に前回状態を復元します。以前はActions artifact（`baseball-stats-raw`、retention 30日）から `gh run download` で復元していましたが、retentionが切れると基準を失う制約がありました。Pages由来の取得に切り替えたことでこの制約が無くなりました（初回publishが終わるまでの移行期間だけ、Pages取得に失敗した場合はActions artifact復元へフォールバックします）。既存のArtifact（`baseball-stats-raw`）はバックアップ・デバッグ用途で引き続き公開します。詳細な設計判断は [ADR 0006](docs/adr/0006-github-pages-for-public-sqlite-distribution.md) と [ADR 0007](docs/adr/0007-raw-only-scope-and-pages-publish-raw-sqlite.md) を参照してください。`npb-analysis` 側での取得・デプロイ手順は [npb-analysisの同期運用ドキュメント](https://github.com/s-yoshiki/npb-analysis/blob/develop/docs/operations/baseball-stats-sync.md) を参照してください。
+日次差分run（`daily` scope）は、このPagesサイトへ自分が最後に公開した `raw.sqlite` を基準に前回状態を復元します。以前はActions artifact（`baseball-stats-raw`、retention 30日）から `gh run download` で復元していましたが、retentionが切れると基準を失う制約がありました。Pages由来の取得に切り替えたことでこの制約が無くなりました——Pagesの`raw.sqlite`は直近のpublishで常に上書きされているため、retentionのような期限を持ちません。初回publishが終わるまでの移行期間はActions artifact復元へのフォールバック経路がありましたが、初回publishの成功後に削除済みです。既存のArtifact（`baseball-stats-raw`）はPagesが壊れた場合のバックアップ・デバッグ用途として引き続き公開します（`Restore previous raw SQLite`ステップからは参照しません）。詳細な設計判断は [ADR 0006](docs/adr/0006-github-pages-for-public-sqlite-distribution.md) と [ADR 0007](docs/adr/0007-raw-only-scope-and-pages-publish-raw-sqlite.md) を参照してください。`npb-analysis` 側での取得・デプロイ手順は [npb-analysisの同期運用ドキュメント](https://github.com/s-yoshiki/npb-analysis/blob/develop/docs/operations/baseball-stats-sync.md) を参照してください。
 
 ### 初回フル取得（引退選手を含む全選手）
 

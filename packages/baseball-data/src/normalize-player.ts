@@ -93,6 +93,7 @@ export function normalizeScrapedPlayer(player: ScrapedPlayer): RawPlayer {
     playerName: player.playerName,
     kanaName: player.kanaName,
     isActive: player.isActive,
+    updatedAt: player.updatedAt,
     detailInfo: player.detailInfo,
     battingStats: player.battingStats.map(normalizeBattingStat),
     pitchingStats: player.pitchingStats.map(normalizePitchingStat),

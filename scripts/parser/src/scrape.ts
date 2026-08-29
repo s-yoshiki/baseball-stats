@@ -62,13 +62,16 @@ export async function scrapePlayers(
   let playerCount = 0;
 
   const scrapePlayer = async (url: string): Promise<void> => {
-    const parsed = parsePlayerPage(await fetchHtml(url));
+    const html = await fetchHtml(url);
+    const updatedAt = new Date().toISOString();
+    const parsed = parsePlayerPage(html);
     const player: ScrapedPlayer = {
       id: toBase36PlayerIdFromUrl(url),
       playerUrl: url,
       playerName: parsed.playerName,
       kanaName: parsed.kanaName,
       isActive: activeUrls.has(url),
+      updatedAt,
       detailInfo: parsed.detailInfo,
       battingStats: parsed.battingStats,
       pitchingStats: parsed.pitchingStats,

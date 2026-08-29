@@ -113,6 +113,7 @@ export type ScrapedPlayer = {
   playerName: string;
   kanaName: string;
   isActive: boolean;
+  updatedAt: string;
   detailInfo: Record<string, string>;
   battingStats: NpbBattingStatRow[];
   pitchingStats: NpbPitchingStatRow[];
@@ -124,6 +125,7 @@ export type RawPlayer = {
   playerName: string;
   kanaName: string;
   isActive: boolean;
+  updatedAt: string | null;
   detailInfo: Record<string, string>;
   profileDetails?: PlayerDetails;
   battingStats: BattingStatRow[];

@@ -17,6 +17,7 @@ const player: ScrapedPlayer = {
   playerName: "テスト 太郎",
   kanaName: "テスト タロウ",
   isActive: true,
+  updatedAt: "2026-08-29T06:30:00.000Z",
   detailInfo: {
     ポジション: "内野手",
     投打: "右投左打",
@@ -44,10 +45,12 @@ describe("writeRawPlayersToSqlite", () => {
         player_count: 1,
       });
       const row = db.prepare("select * from raw_players").get() as {
+        updated_at: string;
         profile_json: string;
         batting_stats_json: string;
         pitching_stats_json: string;
       };
+      expect(row.updated_at).toBe("2026-08-29T06:30:00.000Z");
       expect(JSON.parse(row.profile_json)).toEqual({
         position: "内野手",
         batsThrows: "右投左打",
@@ -118,7 +121,11 @@ describe("completed raw scrape runs", () => {
         new Set(["test-player"]),
       );
       await expect(readLatestRawPlayers(dbPath)).resolves.toMatchObject([
-        { id: "test-player", playerName: "更新 テスト 太郎" },
+        {
+          id: "test-player",
+          playerName: "更新 テスト 太郎",
+          updatedAt: "2026-08-29T06:30:00.000Z",
+        },
       ]);
     } finally {
       await rm(temporaryDirectory, { recursive: true, force: true });

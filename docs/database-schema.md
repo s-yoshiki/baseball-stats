@@ -11,7 +11,7 @@ append-only at the run level.
 scrape_runs(id, source, started_at, completed_at, player_count)
 raw_players(
   run_id, player_id, player_url, player_name, kana_name, is_active,
-  profile_json, batting_stats_json, pitching_stats_json
+  updated_at, profile_json, batting_stats_json, pitching_stats_json
 )
 ```
 
@@ -21,6 +21,8 @@ raw_players(
 - `raw_players`: one row per `(run_id, player_id)`. `profile_json`,
   `batting_stats_json`, and `pitching_stats_json` are JSON-encoded strings,
   not typed columns — this table is a scrape log, not a query schema.
+  `updated_at` is the ISO 8601 timestamp at which the player's source page was
+  last fetched.
 
 `profile_json` holds `position`, `batsThrows`, `heightWeight`, `birthDate`,
 `career`, `draft`, and an `additional` array of `{ sourceKey, value }` pairs

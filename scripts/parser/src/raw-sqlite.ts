@@ -146,6 +146,7 @@ export async function openRawSqliteWriter(
           player_name: player.playerName,
           kana_name: player.kanaName,
           is_active: player.isActive ? 1 : 0,
+          updated_at: player.updatedAt,
           profile_json: JSON.stringify(payload.profile),
           batting_stats_json: JSON.stringify(payload.battingStats),
           pitching_stats_json: JSON.stringify(payload.pitchingStats),
@@ -212,6 +213,14 @@ export async function readLatestRawPlayers(
 ): Promise<RawPlayer[]> {
   const db = createRawKyselyDb(dbPath);
   try {
+    const { rows: rawPlayerColumns } = await sql<{
+      name: string;
+    }>`PRAGMA table_info(raw_players)`.execute(db);
+    const updatedAtExpression = rawPlayerColumns.some(
+      (column) => column.name === "updated_at",
+    )
+      ? "COALESCE(candidate.updated_at, candidate_run.completed_at)"
+      : "candidate_run.completed_at";
     const result = await sql<RawPlayersTable>`
       SELECT candidate.run_id,
              candidate.player_id,
@@ -219,6 +228,7 @@ export async function readLatestRawPlayers(
              candidate.player_name,
              candidate.kana_name,
              candidate.is_active,
+             ${sql.raw(updatedAtExpression)} AS updated_at,
              candidate.profile_json,
              candidate.batting_stats_json,
              candidate.pitching_stats_json
@@ -255,6 +265,7 @@ export async function readLatestRawPlayers(
         playerName: row.player_name,
         kanaName: row.kana_name,
         isActive: row.is_active === 1,
+        updatedAt: row.updated_at,
         detailInfo,
         profileDetails: parsePlayerDetails(detailInfo),
         battingStats: JSON.parse(row.batting_stats_json) as BattingStatRow[],

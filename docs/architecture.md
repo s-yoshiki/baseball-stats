@@ -14,7 +14,7 @@
 scrape_runs(id, source, started_at, completed_at, player_count)
 raw_players(
   run_id, player_id, player_url, player_name, kana_name, is_active,
-  profile_json, batting_stats_json, pitching_stats_json
+  updated_at, profile_json, batting_stats_json, pitching_stats_json
 )
 ```
 

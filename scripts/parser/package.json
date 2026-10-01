@@ -14,16 +14,16 @@
   },
   "dependencies": {
     "@repo/baseball-data": "workspace:*",
-    "better-sqlite3": "13.0.2",
+    "better-sqlite3": "13.0.3",
     "cheerio": "1.2.0",
-    "kysely": "0.29.4"
+    "kysely": "0.29.6"
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
-    "@types/better-sqlite3": "7.6.13",
-    "@types/node": "22.15.3",
-    "tsx": "4.22.3",
+    "@types/better-sqlite3": "9.6.0",
+    "@types/node": "26.6.3",
+    "tsx": "4.23.15",
     "typescript": "7.0.2",
-    "vitest": "4.1.10"
+    "vitest": "5.0.3"
   }
 }

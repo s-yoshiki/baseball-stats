@@ -1,0 +1,44 @@
+name: 改善提案
+description: スクレイピングや raw SQLite の生成・公開に関する改善を提案します
+title: "[改善] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        このリポジトリは NPB 公開データの取得と raw SQLite の公開を担当します。派生指標やアプリ向けデータ加工は `npb-analysis` 側が対象です。
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: 対象領域
+      options:
+        - スクレイピング・HTML解析
+        - raw SQLite・スキーマ
+        - GitHub Actions・GitHub Pages
+        - ドキュメント
+        - その他
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: 解決したい課題
+      description: 現在困っていることや、改善が必要な理由を説明してください。
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 提案する変更
+      description: 期待する動作や解決方法を説明してください。
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 補足・代替案
+    validations:
+      required: false

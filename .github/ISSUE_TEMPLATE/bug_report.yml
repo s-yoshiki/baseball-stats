@@ -1,0 +1,71 @@
+name: バグ報告
+description: スクレイピングや raw SQLite の生成で起きた問題を報告します
+title: "[不具合] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        再現できる場合は、実行コマンドとエラーログを記載してください。Cookie、APIキーなどの認証情報は貼り付けないでください。
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: 問題の概要
+      description: 何が起きたかを簡潔に説明してください。
+      placeholder: 例: 選手ページの打撃成績が raw SQLite に保存されない
+    validations:
+      required: true
+
+  - type: dropdown
+    id: scope
+    attributes:
+      label: 実行範囲
+      description: 該当するスクレイプ範囲を選択してください。
+      options:
+        - active
+        - daily
+        - all
+        - 該当なし
+    validations:
+      required: true
+
+  - type: input
+    id: player_or_url
+    attributes:
+      label: 対象の選手またはURL
+      description: データの問題の場合は、選手ID・選手名・NPBページURLなどを記載してください。
+      placeholder: 例: https://npb.jp/bis/players/123.html
+    validations:
+      required: false
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: 再現手順と実行環境
+      description: 実行コマンド、Node.js / pnpm のバージョン、再現手順を記載してください。
+      render: shell
+    validations:
+      required: false
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期待した結果
+    validations:
+      required: false
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: 実際の結果
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: エラーログ
+      description: 必要な箇所だけ貼り付け、認証情報や個人情報が含まれていないことを確認してください。
+      render: text
+    validations:
+      required: false

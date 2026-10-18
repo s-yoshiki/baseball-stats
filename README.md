@@ -16,9 +16,8 @@ GitHub Pages (raw.sqlite)
 npb-analysis
 ```
 
-`Daily scrape` は毎日03:00 JST（`cron: "0 18 * * *"`）に自動実行されます。`npb-analysis`への統合作業中は一時的にscheduleを止め`workflow_dispatch`のみ受け付けていましたが、GitHub Pagesへのraw.sqlite初回publishが成功し、`npb-analysis`のDeployがこのPagesサイトを参照する経路に切り替わったことで自動実行を復活させています。`workflow_dispatch`による手動実行も引き続き可能です。実行時は自分が最後にGitHub Pagesへ公開したraw SQLiteを基準にして現役選手と新たにNPBの全選手一覧へ追加された選手だけを取得します（基準が無い場合は全選手を取得して基準データを作ります）。生成したraw SQLiteはActions artifactとして公開したうえで、このリポジトリのGitHub Pagesサイトへも公開します。
+`Daily scrape` の定期実行は停止しています。必要な場合は `workflow_dispatch` から手動実行してください。実行時はGitHub Pagesへ最後に公開したraw SQLiteを基準にして、現役選手と新たにNPBの全選手一覧へ追加された選手だけを取得します（基準が無い場合は全選手を取得して基準データを作ります）。生成したraw SQLiteはActions artifactとして公開したうえで、このリポジトリのGitHub Pagesサイトへも公開します。`npb-analysis`のDeployは引き続き毎日05:00 JSTに実行され、その時点でGitHub Pagesに公開されている最新のraw.sqliteを取得します。
 
-`npb-analysis`のDeployは`cron: "0 20 * * *"`（05:00 JST）でこのPagesサイトのraw.sqliteを取得します。`Daily scrape`は03:00 JST開始・`timeout-minutes: 90`のため遅くとも04:30 JSTにはscrapeジョブが完了し、続くdeploy-pagesジョブによるPagesへのpublishも05:00 JSTより前に終わります。この時間関係は`.github/workflows/daily-scrape.yml`にもコメントで明記しています。開始時刻（cron）やtimeout-minutesを変更してこの関係を崩す場合は、`npb-analysis`側のDeploy cronも合わせて見直してください。
 
 ### raw SQLiteの配布（GitHub Pages）
 

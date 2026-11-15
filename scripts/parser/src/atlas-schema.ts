@@ -1,9 +1,9 @@
-import BetterSqlite3 from "better-sqlite3";
-import { Kysely, SqliteDialect } from "kysely";
-import { createRawSchema, type RawDatabaseSchema } from "./raw-schema.js";
+import BetterSqlite3 from 'better-sqlite3';
+import { Kysely, SqliteDialect } from 'kysely';
+import { createRawSchema, type RawDatabaseSchema } from './raw-schema.js';
 
 async function main(): Promise<void> {
-  const sqlite = new BetterSqlite3(":memory:");
+  const sqlite = new BetterSqlite3(':memory:');
   const db = new Kysely<RawDatabaseSchema>({
     dialect: new SqliteDialect({ database: sqlite }),
   });
@@ -22,9 +22,7 @@ async function writeSchema(sqlite: BetterSqlite3.Database): Promise<void> {
        ORDER BY CASE type WHEN 'table' THEN 0 WHEN 'index' THEN 1 ELSE 2 END, name`,
     )
     .all() as Array<{ sql: string }>;
-  process.stdout.write(
-    `${statements.map((statement) => `${statement.sql};`).join("\n\n")}\n`,
-  );
+  process.stdout.write(`${statements.map((statement) => `${statement.sql};`).join('\n\n')}\n`);
 }
 
 main().catch((error: unknown) => {

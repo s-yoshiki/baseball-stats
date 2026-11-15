@@ -1,8 +1,8 @@
-import fs from "node:fs";
-import path from "node:path";
-import { DEFAULT_RAW_SQLITE_PATH } from "./constants.js";
-import { openRawSqliteWriter, readKnownPlayerIds } from "./raw-sqlite.js";
-import { type ScrapeOptions, scrapePlayers } from "./scrape.js";
+import fs from 'node:fs';
+import path from 'node:path';
+import { DEFAULT_RAW_SQLITE_PATH } from './constants.js';
+import { openRawSqliteWriter, readKnownPlayerIds } from './raw-sqlite.js';
+import { type ScrapeOptions, scrapePlayers } from './scrape.js';
 
 type CliOptions = ScrapeOptions & {
   rawDb: string;
@@ -20,17 +20,17 @@ export function readCliOptions(args: string[]): CliOptions {
   const options: CliOptions = {
     debug: false,
     delayMs: 300,
-    scope: "active",
+    scope: 'active',
     rawDb: DEFAULT_RAW_SQLITE_PATH,
   };
 
   for (let index = 0; index < args.length; index += 1) {
     const arg = args[index];
     const next = args[index + 1];
-    if (arg === "--") {
+    if (arg === '--') {
       continue;
     }
-    if (arg === "--help") {
+    if (arg === '--help') {
       console.log(`Usage: pnpm scrape -- [options]
 
 Options:
@@ -43,45 +43,45 @@ Options:
   --debug               print progress and row counts`);
       process.exit(0);
     }
-    if (arg === "--debug") {
+    if (arg === '--debug') {
       options.debug = true;
       continue;
     }
-    if (arg === "--include-retired" || (arg === "--scope" && next === "all")) {
-      options.scope = "all";
-      if (arg === "--scope") {
+    if (arg === '--include-retired' || (arg === '--scope' && next === 'all')) {
+      options.scope = 'all';
+      if (arg === '--scope') {
         index += 1;
       }
       continue;
     }
-    if (arg === "--active-only" || (arg === "--scope" && next === "active")) {
-      options.scope = "active";
-      if (arg === "--scope") {
+    if (arg === '--active-only' || (arg === '--scope' && next === 'active')) {
+      options.scope = 'active';
+      if (arg === '--scope') {
         index += 1;
       }
       continue;
     }
-    if (arg === "--scope" && next === "daily") {
-      options.scope = "daily";
+    if (arg === '--scope' && next === 'daily') {
+      options.scope = 'daily';
       index += 1;
       continue;
     }
-    if (arg === "--limit" && next) {
-      options.limit = parseNumber(next, "--limit");
+    if (arg === '--limit' && next) {
+      options.limit = parseNumber(next, '--limit');
       index += 1;
       continue;
     }
-    if (arg === "--kana-limit" && next) {
-      options.kanaLimit = parseNumber(next, "--kana-limit");
+    if (arg === '--kana-limit' && next) {
+      options.kanaLimit = parseNumber(next, '--kana-limit');
       index += 1;
       continue;
     }
-    if (arg === "--delay" && next) {
-      options.delayMs = parseNumber(next, "--delay");
+    if (arg === '--delay' && next) {
+      options.delayMs = parseNumber(next, '--delay');
       index += 1;
       continue;
     }
-    if (arg === "--raw-db" && next) {
+    if (arg === '--raw-db' && next) {
       options.rawDb = next;
       index += 1;
       continue;
@@ -95,7 +95,7 @@ export async function main(args = process.argv.slice(2)): Promise<void> {
   const options = readCliOptions(args);
   const rawDbPath = path.resolve(process.cwd(), options.rawDb);
   let knownPlayerIds: ReadonlySet<string> | undefined;
-  if (options.scope === "daily" && fs.existsSync(rawDbPath)) {
+  if (options.scope === 'daily' && fs.existsSync(rawDbPath)) {
     try {
       knownPlayerIds = await readKnownPlayerIds(rawDbPath);
     } catch (error) {

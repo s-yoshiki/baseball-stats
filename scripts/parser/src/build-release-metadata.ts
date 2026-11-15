@@ -1,11 +1,8 @@
-import fs from "node:fs";
-import path from "node:path";
-import {
-  DEFAULT_RELEASE_COUNTS_PATH,
-  DEFAULT_RELEASE_METADATA_PATH,
-} from "./constants.js";
-import type { RawCounts } from "./publish-counts.js";
-import { buildReleaseMetadata } from "./release-metadata.js";
+import fs from 'node:fs';
+import path from 'node:path';
+import { DEFAULT_RELEASE_COUNTS_PATH, DEFAULT_RELEASE_METADATA_PATH } from './constants.js';
+import type { RawCounts } from './publish-counts.js';
+import { buildReleaseMetadata } from './release-metadata.js';
 
 function requireOption(name: string): string {
   const index = process.argv.indexOf(name);
@@ -24,26 +21,20 @@ function option(name: string): string | undefined {
 // Reads the row counts written by `validate-sqlite --json-out` so this
 // script never opens the SQLite file itself: the counts it reports are
 // guaranteed to come from the snapshot that was just validated.
-const countsPath = path.resolve(
-  process.cwd(),
-  option("--counts") ?? DEFAULT_RELEASE_COUNTS_PATH,
-);
+const countsPath = path.resolve(process.cwd(), option('--counts') ?? DEFAULT_RELEASE_COUNTS_PATH);
 if (!fs.existsSync(countsPath)) {
   throw new Error(
     `Counts file not found: ${countsPath} (run validate-sqlite with --json-out first)`,
   );
 }
-const counts = JSON.parse(fs.readFileSync(countsPath, "utf8")) as RawCounts;
+const counts = JSON.parse(fs.readFileSync(countsPath, 'utf8')) as RawCounts;
 
-const outPath = path.resolve(
-  process.cwd(),
-  option("--out") ?? DEFAULT_RELEASE_METADATA_PATH,
-);
+const outPath = path.resolve(process.cwd(), option('--out') ?? DEFAULT_RELEASE_METADATA_PATH);
 
 const metadata = buildReleaseMetadata(counts, {
-  sourceSha: requireOption("--source-sha"),
-  sourceRunId: Number(requireOption("--source-run-id")),
-  scope: requireOption("--scope"),
+  sourceSha: requireOption('--source-sha'),
+  sourceRunId: Number(requireOption('--source-run-id')),
+  scope: requireOption('--scope'),
 });
 
 fs.mkdirSync(path.dirname(outPath), { recursive: true });

@@ -1,6 +1,6 @@
 name: バグ報告
 description: スクレイピングや raw SQLite の生成で起きた問題を報告します
-title: "[不具合] "
+title: '[不具合] '
 body:
   - type: markdown
     attributes:
@@ -12,7 +12,7 @@ body:
     attributes:
       label: 問題の概要
       description: 何が起きたかを簡潔に説明してください。
-      placeholder: 例: 選手ページの打撃成績が raw SQLite に保存されない
+      placeholder: '例: 選手ページの打撃成績が raw SQLite に保存されない'
     validations:
       required: true
 
@@ -34,7 +34,7 @@ body:
     attributes:
       label: 対象の選手またはURL
       description: データの問題の場合は、選手ID・選手名・NPBページURLなどを記載してください。
-      placeholder: 例: https://npb.jp/bis/players/123.html
+      placeholder: '例: https://npb.jp/bis/players/123.html'
     validations:
       required: false
 

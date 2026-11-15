@@ -1,5 +1,5 @@
-import BetterSqlite3 from "better-sqlite3";
-import { Kysely, SqliteDialect, sql } from "kysely";
+import BetterSqlite3 from 'better-sqlite3';
+import { Kysely, SqliteDialect, sql } from 'kysely';
 
 export interface ScrapeRunsTable {
   id: string;
@@ -34,13 +34,11 @@ export function createRawKyselyDb(dbPath: string): Kysely<RawDatabaseSchema> {
   });
 }
 
-async function ensureUpdatedAtColumn(
-  db: Kysely<RawDatabaseSchema>,
-): Promise<void> {
+async function ensureUpdatedAtColumn(db: Kysely<RawDatabaseSchema>): Promise<void> {
   const { rows } = await sql<{
     name: string;
   }>`PRAGMA table_info(raw_players)`.execute(db);
-  if (!rows.some((row) => row.name === "updated_at")) {
+  if (!rows.some((row) => row.name === 'updated_at')) {
     await sql`ALTER TABLE raw_players ADD COLUMN updated_at text`.execute(db);
   }
 
@@ -58,44 +56,42 @@ async function ensureUpdatedAtColumn(
   `.execute(db);
 }
 
-export async function createRawSchema(
-  db: Kysely<RawDatabaseSchema>,
-): Promise<void> {
+export async function createRawSchema(db: Kysely<RawDatabaseSchema>): Promise<void> {
   await sql`PRAGMA foreign_keys = ON`.execute(db);
   await db.schema
-    .createTable("scrape_runs")
+    .createTable('scrape_runs')
     .ifNotExists()
-    .addColumn("id", "text", (column) => column.primaryKey())
-    .addColumn("source", "text", (column) => column.notNull())
-    .addColumn("started_at", "text", (column) => column.notNull())
-    .addColumn("completed_at", "text")
-    .addColumn("player_count", "integer", (column) => column.notNull())
+    .addColumn('id', 'text', (column) => column.primaryKey())
+    .addColumn('source', 'text', (column) => column.notNull())
+    .addColumn('started_at', 'text', (column) => column.notNull())
+    .addColumn('completed_at', 'text')
+    .addColumn('player_count', 'integer', (column) => column.notNull())
     .execute();
 
   await db.schema
-    .createTable("raw_players")
+    .createTable('raw_players')
     .ifNotExists()
-    .addColumn("run_id", "text", (column) =>
-      column.notNull().references("scrape_runs.id").onDelete("cascade"),
+    .addColumn('run_id', 'text', (column) =>
+      column.notNull().references('scrape_runs.id').onDelete('cascade'),
     )
-    .addColumn("player_id", "text", (column) => column.notNull())
-    .addColumn("player_url", "text", (column) => column.notNull())
-    .addColumn("player_name", "text", (column) => column.notNull())
-    .addColumn("kana_name", "text", (column) => column.notNull())
-    .addColumn("is_active", "integer", (column) => column.notNull())
-    .addColumn("updated_at", "text")
-    .addColumn("profile_json", "text", (column) => column.notNull())
-    .addColumn("batting_stats_json", "text", (column) => column.notNull())
-    .addColumn("pitching_stats_json", "text", (column) => column.notNull())
-    .addPrimaryKeyConstraint("raw_players_pk", ["run_id", "player_id"])
+    .addColumn('player_id', 'text', (column) => column.notNull())
+    .addColumn('player_url', 'text', (column) => column.notNull())
+    .addColumn('player_name', 'text', (column) => column.notNull())
+    .addColumn('kana_name', 'text', (column) => column.notNull())
+    .addColumn('is_active', 'integer', (column) => column.notNull())
+    .addColumn('updated_at', 'text')
+    .addColumn('profile_json', 'text', (column) => column.notNull())
+    .addColumn('batting_stats_json', 'text', (column) => column.notNull())
+    .addColumn('pitching_stats_json', 'text', (column) => column.notNull())
+    .addPrimaryKeyConstraint('raw_players_pk', ['run_id', 'player_id'])
     .execute();
 
   await ensureUpdatedAtColumn(db);
 
   await db.schema
-    .createIndex("idx_raw_players_player")
+    .createIndex('idx_raw_players_player')
     .ifNotExists()
-    .on("raw_players")
-    .column("player_id")
+    .on('raw_players')
+    .column('player_id')
     .execute();
 }

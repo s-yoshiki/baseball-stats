@@ -35,6 +35,7 @@
   ```
 
   ファイル構成・チェックサム形式・`metadata.json`のフィールド設計（`source_sha` / `source_run_id` / `generated_at` / `scope` に加えて規模を示す値）は[ADR 0006](0006-github-pages-for-public-sqlite-distribution.md)の設計をそのまま踏襲する。`players` / `batting_rows` / `pitching_rows`だった規模フィールドを、rawの規模を表す`players`（`COUNT(DISTINCT player_id)`）/ `runs`（`scrape_runs`件数）に置き換える点だけが異なる。Pages公開ジョブの構成（`upload-pages-artifact` + `deploy-pages`、`concurrency: pages`での直列化、ビルドジョブは`contents: read`・デプロイジョブだけ`pages: write` / `id-token: write`）はADR 0006の決定をそのまま維持する
+
 - 日次差分（`daily` scope）の基準を、Actions artifactの`gh run download`から、自分がGitHub Pagesへ公開した`raw.sqlite`の取得に切り替える。
 
   ```sh
@@ -42,6 +43,7 @@
   ```
 
   取得後は同時に公開されている`raw.sqlite.sha256`と突き合わせて検証してから使う。これにより、Actions artifactのretention（30日）に基準runの寿命が縛られる制約が解消される——Pages上の`raw.sqlite`は直近の公開ワークフローが常に最新へ上書きしており、寿命を持たない
+
 - **移行期間の配慮**: 本ADR適用時点ではPagesにまだrawが一度もpublishされておらず、最初の実行ではPagesからの取得が404になる。そのため、Pagesからの取得に失敗した場合は既存のActions artifact復元（`gh run download`）にフォールバックする経路を残す。両方失敗した場合、`scope=all`ならbaseline作り直しとして続行し、それ以外のscopeでは失敗させる（`daily`/`active`で意図しないフルスクレイプが走ることを防ぐため）。artifactフォールバックは初回publish後に不要になる暫定措置であり、ワークフロー内にその旨をコメントで明記する
 - raw artifact（`baseball-stats-raw`、retention 30日）のアップロード自体はバックアップとして当面残す
 

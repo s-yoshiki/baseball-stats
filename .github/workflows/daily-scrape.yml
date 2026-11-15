@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
     inputs:
       scope:
-        description: "Player scope (daily updates active and new players)"
+        description: 'Player scope (daily updates active and new players)'
         type: choice
         options:
           - daily
@@ -19,19 +19,19 @@ on:
         default: daily
         required: true
       limit:
-        description: "Optional player limit for a small verification run"
+        description: 'Optional player limit for a small verification run'
         type: string
-        default: ""
+        default: ''
         required: false
       kana_limit:
-        description: "Optional kana-page limit for a small verification run"
+        description: 'Optional kana-page limit for a small verification run'
         type: string
-        default: ""
+        default: ''
         required: false
       delay:
-        description: "Delay between requests in milliseconds"
+        description: 'Delay between requests in milliseconds'
         type: string
-        default: "300"
+        default: '300'
         required: true
 
 permissions:

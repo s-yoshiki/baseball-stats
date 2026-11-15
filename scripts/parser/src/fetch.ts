@@ -1,4 +1,4 @@
-const USER_AGENT = "baseball-stats/0.1 (+https://github.com/s-yoshiki)";
+const USER_AGENT = 'baseball-stats/0.1 (+https://github.com/s-yoshiki)';
 
 export async function fetchHtml(
   url: string,
@@ -6,8 +6,8 @@ export async function fetchHtml(
 ): Promise<string> {
   const response = await fetch(url, {
     headers: {
-      Accept: "text/html,application/xhtml+xml",
-      "User-Agent": USER_AGENT,
+      Accept: 'text/html,application/xhtml+xml',
+      'User-Agent': USER_AGENT,
     },
     signal: AbortSignal.timeout(options.timeoutMs ?? 30_000),
   });

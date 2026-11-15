@@ -1,22 +1,18 @@
-import fs from "node:fs";
-import path from "node:path";
+import fs from 'node:fs';
+import path from 'node:path';
 import type {
   BattingStatRow,
   PitchingStatRow,
   RawPlayer,
   ScrapedPlayer,
-} from "@repo/baseball-data";
+} from '@repo/baseball-data';
 import {
   normalizeBattingStat,
   normalizePitchingStat,
   parsePlayerDetails,
-} from "@repo/baseball-data";
-import { sql } from "kysely";
-import {
-  createRawKyselyDb,
-  createRawSchema,
-  type RawPlayersTable,
-} from "./raw-schema.js";
+} from '@repo/baseball-data';
+import { sql } from 'kysely';
+import { createRawKyselyDb, createRawSchema, type RawPlayersTable } from './raw-schema.js';
 
 export type RawSqliteResult = {
   runId: string;
@@ -54,14 +50,14 @@ type RawSqlitePayload = {
 function createPayload(player: ScrapedPlayer): RawSqlitePayload {
   const details = player.detailInfo;
   const knownDetailKeys = new Set([
-    "ポジション",
-    "守備位置",
-    "投打",
-    "身長／体重",
-    "身長/体重",
-    "生年月日",
-    "経歴",
-    "ドラフト",
+    'ポジション',
+    '守備位置',
+    '投打',
+    '身長／体重',
+    '身長/体重',
+    '生年月日',
+    '経歴',
+    'ドラフト',
   ]);
   return {
     id: player.id,
@@ -72,7 +68,7 @@ function createPayload(player: ScrapedPlayer): RawSqlitePayload {
     profile: {
       position: details.ポジション ?? details.守備位置 ?? null,
       batsThrows: details.投打 ?? null,
-      heightWeight: details["身長／体重"] ?? details["身長/体重"] ?? null,
+      heightWeight: details['身長／体重'] ?? details['身長/体重'] ?? null,
       birthDate: details.生年月日 ?? null,
       career: details.経歴 ?? null,
       draft: details.ドラフト ?? null,
@@ -86,7 +82,7 @@ function createPayload(player: ScrapedPlayer): RawSqlitePayload {
 }
 
 function createRunId(): string {
-  return new Date().toISOString().replace(/[-:.TZ]/g, "");
+  return new Date().toISOString().replace(/[-:.TZ]/g, '');
 }
 
 export async function writeRawPlayersToSqlite(
@@ -119,10 +115,10 @@ export async function openRawSqliteWriter(
 
   await createRawSchema(db);
   await db
-    .insertInto("scrape_runs")
+    .insertInto('scrape_runs')
     .values({
       id: runId,
-      source: "npb.jp",
+      source: 'npb.jp',
       started_at: startedAt,
       completed_at: null,
       player_count: 0,
@@ -132,13 +128,12 @@ export async function openRawSqliteWriter(
   return {
     runId,
     async writePlayer(player) {
-      if (closed) throw new Error("Cannot write to a closed raw SQLite writer");
-      if (finished)
-        throw new Error("Cannot write after finishing a raw SQLite run");
+      if (closed) throw new Error('Cannot write to a closed raw SQLite writer');
+      if (finished) throw new Error('Cannot write after finishing a raw SQLite run');
 
       const payload = createPayload(player);
       await db
-        .insertInto("raw_players")
+        .insertInto('raw_players')
         .values({
           run_id: runId,
           player_id: player.id,
@@ -156,15 +151,15 @@ export async function openRawSqliteWriter(
     },
     async finish() {
       if (result) return result;
-      if (closed) throw new Error("Cannot finish a closed raw SQLite writer");
+      if (closed) throw new Error('Cannot finish a closed raw SQLite writer');
 
       await db
-        .updateTable("scrape_runs")
+        .updateTable('scrape_runs')
         .set({
           completed_at: new Date().toISOString(),
           player_count: playerCount,
         })
-        .where("id", "=", runId)
+        .where('id', '=', runId)
         .execute();
       finished = true;
       result = { runId, players: playerCount };
@@ -178,13 +173,11 @@ export async function openRawSqliteWriter(
   };
 }
 
-function detailInfoFromProfile(
-  profile: RawSqliteProfile,
-): Record<string, string> {
+function detailInfoFromProfile(profile: RawSqliteProfile): Record<string, string> {
   const details: Record<string, string> = {};
   if (profile.position) details.ポジション = profile.position;
   if (profile.batsThrows) details.投打 = profile.batsThrows;
-  if (profile.heightWeight) details["身長／体重"] = profile.heightWeight;
+  if (profile.heightWeight) details['身長／体重'] = profile.heightWeight;
   if (profile.birthDate) details.生年月日 = profile.birthDate;
   if (profile.career) details.経歴 = profile.career;
   if (profile.draft) details.ドラフト = profile.draft;
@@ -196,10 +189,10 @@ export async function readKnownPlayerIds(dbPath: string): Promise<Set<string>> {
   const db = createRawKyselyDb(dbPath);
   try {
     const rows = await db
-      .selectFrom("raw_players")
-      .innerJoin("scrape_runs", "scrape_runs.id", "raw_players.run_id")
-      .select("raw_players.player_id")
-      .where("scrape_runs.completed_at", "is not", null)
+      .selectFrom('raw_players')
+      .innerJoin('scrape_runs', 'scrape_runs.id', 'raw_players.run_id')
+      .select('raw_players.player_id')
+      .where('scrape_runs.completed_at', 'is not', null)
       .distinct()
       .execute();
     return new Set(rows.map((row) => row.player_id));
@@ -208,19 +201,15 @@ export async function readKnownPlayerIds(dbPath: string): Promise<Set<string>> {
   }
 }
 
-export async function readLatestRawPlayers(
-  dbPath: string,
-): Promise<RawPlayer[]> {
+export async function readLatestRawPlayers(dbPath: string): Promise<RawPlayer[]> {
   const db = createRawKyselyDb(dbPath);
   try {
     const { rows: rawPlayerColumns } = await sql<{
       name: string;
     }>`PRAGMA table_info(raw_players)`.execute(db);
-    const updatedAtExpression = rawPlayerColumns.some(
-      (column) => column.name === "updated_at",
-    )
-      ? "COALESCE(candidate.updated_at, candidate_run.completed_at)"
-      : "candidate_run.completed_at";
+    const updatedAtExpression = rawPlayerColumns.some((column) => column.name === 'updated_at')
+      ? 'COALESCE(candidate.updated_at, candidate_run.completed_at)'
+      : 'candidate_run.completed_at';
     const result = await sql<RawPlayersTable>`
       SELECT candidate.run_id,
              candidate.player_id,
@@ -253,8 +242,7 @@ export async function readLatestRawPlayers(
         )
       ORDER BY candidate.player_id
     `.execute(db);
-    if (!result.rows.length)
-      throw new Error(`No scrape runs found in ${dbPath}`);
+    if (!result.rows.length) throw new Error(`No scrape runs found in ${dbPath}`);
 
     return result.rows.map((row) => {
       const profile = JSON.parse(row.profile_json) as RawSqliteProfile;

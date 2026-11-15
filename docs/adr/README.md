@@ -8,3 +8,4 @@
 - [0006: 公開用SQLiteをGitHub Pagesで配布する（0007で一部更新）](0006-github-pages-for-public-sqlite-distribution.md)
 - [0007: baseball-statsをraw取得層に専業化し、GitHub Pagesではrawを公開する](0007-raw-only-scope-and-pages-publish-raw-sqlite.md)
 - [0008: 選手単位のデータ最終取得日時をrawに保存する](0008-store-player-data-updated-at.md)
+- [0009: Oxlint と Oxfmt を lint / formatter に使う](0009-oxlint-oxfmt-toolchain.md)

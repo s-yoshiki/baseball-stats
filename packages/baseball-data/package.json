@@ -9,14 +9,14 @@
   },
   "scripts": {
     "build": "tsc --noEmit",
-    "lint": "biome lint .",
+    "lint": "oxlint",
     "test": "vitest run",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
-    "@types/node": "26.6.3",
-    "typescript": "7.0.2",
-    "vitest": "5.0.3"
+    "@types/node": "catalog:",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
   }
 }

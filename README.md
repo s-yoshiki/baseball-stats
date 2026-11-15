@@ -18,7 +18,6 @@ npb-analysis
 
 `Daily scrape` の定期実行は停止しています。必要な場合は `workflow_dispatch` から手動実行してください。実行時はGitHub Pagesへ最後に公開したraw SQLiteを基準にして、現役選手と新たにNPBの全選手一覧へ追加された選手だけを取得します（基準が無い場合は全選手を取得して基準データを作ります）。生成したraw SQLiteはActions artifactとして公開したうえで、このリポジトリのGitHub Pagesサイトへも公開します。`npb-analysis`のDeployは引き続き毎日05:00 JSTに実行され、その時点でGitHub Pagesに公開されている最新のraw.sqliteを取得します。
 
-
 ### raw SQLiteの配布（GitHub Pages）
 
 `Daily scrape` は、検証済みの `data/raw/raw.sqlite` を毎回このリポジトリのGitHub Pagesサイトへ次の4ファイルとしてデプロイします。
@@ -47,7 +46,7 @@ https://s-yoshiki.github.io/baseball-stats/index.html
 
 ## Setup
 
-要件は Node.js 26 と pnpm 11 です。
+要件は Node.js 26 と pnpm 12 です。
 Atlasのスキーマ差分・マイグレーション操作にはAtlas CLIも必要です。
 
 ```sh

@@ -1,7 +1,7 @@
-import type { PlayerDetails } from "./types.js";
+import type { PlayerDetails } from './types.js';
 
 function text(value: string | undefined): string | null {
-  const normalized = value?.normalize("NFKC").replace(/\s+/g, " ").trim();
+  const normalized = value?.normalize('NFKC').replace(/\s+/g, ' ').trim();
   return normalized || null;
 }
 
@@ -24,7 +24,7 @@ function parseHeightWeight(value: string | undefined): {
   };
 }
 
-function parseBirthDate(value: string | undefined): PlayerDetails["birthDate"] {
+function parseBirthDate(value: string | undefined): PlayerDetails['birthDate'] {
   const match = value?.match(/^(\d{4})年(\d{1,2})月(\d{1,2})日$/);
   const year = number(match?.[1]);
   const month = number(match?.[2]);
@@ -32,7 +32,7 @@ function parseBirthDate(value: string | undefined): PlayerDetails["birthDate"] {
   return {
     iso:
       year !== null && month !== null && day !== null
-        ? `${year}-${String(month).padStart(2, "0")}-${String(day).padStart(2, "0")}`
+        ? `${year}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`
         : null,
     year,
     month,
@@ -40,7 +40,7 @@ function parseBirthDate(value: string | undefined): PlayerDetails["birthDate"] {
   };
 }
 
-function parseCareer(value: string | undefined): PlayerDetails["career"] {
+function parseCareer(value: string | undefined): PlayerDetails['career'] {
   const raw = text(value);
   return {
     raw,
@@ -48,28 +48,26 @@ function parseCareer(value: string | undefined): PlayerDetails["career"] {
   };
 }
 
-function parseDraft(value: string | undefined): PlayerDetails["draft"] {
+function parseDraft(value: string | undefined): PlayerDetails['draft'] {
   const raw = text(value);
   const year = number(raw?.match(/(\d{4})年/)?.[1]);
   const rank = number(raw?.match(/(\d+)(?:位|巡目)/)?.[1]);
-  let selection: PlayerDetails["draft"]["selection"] = null;
-  if (raw?.includes("ドラフト外")) {
-    selection = "outside";
-  } else if (raw?.includes("育成")) {
-    selection = "development";
-  } else if (raw?.includes("ドラフト")) {
-    selection = "regular";
+  let selection: PlayerDetails['draft']['selection'] = null;
+  if (raw?.includes('ドラフト外')) {
+    selection = 'outside';
+  } else if (raw?.includes('育成')) {
+    selection = 'development';
+  } else if (raw?.includes('ドラフト')) {
+    selection = 'regular';
   }
   return { raw, year, rank, selection };
 }
 
-export function parsePlayerDetails(
-  detailInfo: Record<string, string>,
-): PlayerDetails {
+export function parsePlayerDetails(detailInfo: Record<string, string>): PlayerDetails {
   const batsThrows = text(detailInfo.投打);
   const match = batsThrows?.match(/^([左右])投([左右])打$/);
   const { heightCm, weightKg } = parseHeightWeight(
-    detailInfo["身長／体重"] ?? detailInfo["身長/体重"],
+    detailInfo['身長／体重'] ?? detailInfo['身長/体重'],
   );
 
   return {

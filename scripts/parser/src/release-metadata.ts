@@ -1,4 +1,4 @@
-import type { RawCounts } from "./publish-counts.js";
+import type { RawCounts } from './publish-counts.js';
 
 export type ReleaseMetadataInput = {
   sourceSha: string;
@@ -26,11 +26,11 @@ export function buildReleaseMetadata(
   counts: RawCounts,
   input: ReleaseMetadataInput,
 ): ReleaseMetadata {
-  if (!input.sourceSha) throw new Error("sourceSha is required");
+  if (!input.sourceSha) throw new Error('sourceSha is required');
   if (!Number.isInteger(input.sourceRunId) || input.sourceRunId <= 0) {
-    throw new Error("sourceRunId must be a positive integer");
+    throw new Error('sourceRunId must be a positive integer');
   }
-  if (!input.scope) throw new Error("scope is required");
+  if (!input.scope) throw new Error('scope is required');
 
   return {
     source_sha: input.sourceSha,

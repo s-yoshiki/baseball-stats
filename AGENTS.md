@@ -12,7 +12,7 @@ NPB公式サイトの公開選手データを取得し、raw SQLiteを正本と�
 ## Runtime and package manager
 
 - Node.js 26
-- pnpm 11
+- pnpm 12
 - pnpm workspace + Turborepo
 - SQLite access: Kysely + `better-sqlite3`
 - Schema migrations: Atlas CLI

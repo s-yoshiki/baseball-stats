@@ -1,19 +1,15 @@
-import type { ScrapedPlayer } from "@repo/baseball-data";
-import { ACTIVE_INDEX_ROOT_URL, ALL_INDEX_ROOT_URL } from "./constants.js";
-import { fetchHtml } from "./fetch.js";
-import {
-  parseKanaIndexUrls,
-  parsePlayerPage,
-  parsePlayerUrlsFromKanaPage,
-} from "./parse.js";
-import { toBase36PlayerIdFromUrl } from "./player-id.js";
+import type { ScrapedPlayer } from '@repo/baseball-data';
+import { ACTIVE_INDEX_ROOT_URL, ALL_INDEX_ROOT_URL } from './constants.js';
+import { fetchHtml } from './fetch.js';
+import { parseKanaIndexUrls, parsePlayerPage, parsePlayerUrlsFromKanaPage } from './parse.js';
+import { toBase36PlayerIdFromUrl } from './player-id.js';
 
 function sleep(ms: number): Promise<void> {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
 export type ScrapeOptions = {
-  scope: "active" | "all" | "daily";
+  scope: 'active' | 'all' | 'daily';
   delayMs: number;
   kanaLimit?: number;
   limit?: number;
@@ -30,17 +26,13 @@ async function collectPlayerUrls(
   const rootHtml = await fetchHtml(indexRootUrl);
   const allKanaPages = parseKanaIndexUrls(rootHtml, indexRootUrl);
   const kanaPages =
-    options.kanaLimit === undefined
-      ? allKanaPages
-      : allKanaPages.slice(0, options.kanaLimit);
+    options.kanaLimit === undefined ? allKanaPages : allKanaPages.slice(0, options.kanaLimit);
 
   if (!kanaPages.length) {
     throw new Error(`Kana index pages not found from ${indexRootUrl}`);
   }
   if (options.debug) {
-    console.log(
-      `[debug] ${indexRootUrl}: ${kanaPages.length}/${allKanaPages.length} kana pages`,
-    );
+    console.log(`[debug] ${indexRootUrl}: ${kanaPages.length}/${allKanaPages.length} kana pages`);
   }
 
   const urls = new Set<string>();
@@ -80,13 +72,13 @@ export async function scrapePlayers(
     playerCount += 1;
     if (options.debug) {
       console.log(
-        `[debug] ${playerCount} ${player.id} ${player.playerName || "(empty)"} batting=${player.battingStats.length} pitching=${player.pitchingStats.length}`,
+        `[debug] ${playerCount} ${player.id} ${player.playerName || '(empty)'} batting=${player.battingStats.length} pitching=${player.pitchingStats.length}`,
       );
     }
     await sleep(options.delayMs);
   };
 
-  if (options.scope === "active") {
+  if (options.scope === 'active') {
     for (const url of [...activeUrls].sort()) {
       if (options.limit !== undefined && playerCount >= options.limit) {
         break;
@@ -101,9 +93,7 @@ export async function scrapePlayers(
   const rootHtml = await fetchHtml(ALL_INDEX_ROOT_URL);
   const allKanaPages = parseKanaIndexUrls(rootHtml, ALL_INDEX_ROOT_URL);
   const kanaPages =
-    options.kanaLimit === undefined
-      ? allKanaPages
-      : allKanaPages.slice(0, options.kanaLimit);
+    options.kanaLimit === undefined ? allKanaPages : allKanaPages.slice(0, options.kanaLimit);
 
   if (!kanaPages.length) {
     throw new Error(`Kana index pages not found from ${ALL_INDEX_ROOT_URL}`);
@@ -127,7 +117,7 @@ export async function scrapePlayers(
 
       seenUrls.add(url);
       if (
-        options.scope === "daily" &&
+        options.scope === 'daily' &&
         !activeUrls.has(url) &&
         options.knownPlayerIds?.has(toBase36PlayerIdFromUrl(url))
       ) {

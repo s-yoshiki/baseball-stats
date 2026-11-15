@@ -1,6 +1,6 @@
 name: 改善提案
 description: スクレイピングや raw SQLite の生成・公開に関する改善を提案します
-title: "[改善] "
+title: '[改善] '
 body:
   - type: markdown
     attributes:

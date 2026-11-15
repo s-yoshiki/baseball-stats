@@ -1,7 +1,7 @@
-export const BASE_URL = "https://npb.jp";
+export const BASE_URL = 'https://npb.jp';
 export const ALL_INDEX_ROOT_URL = `${BASE_URL}/bis/players/all/index.html`;
 export const ACTIVE_INDEX_ROOT_URL = `${BASE_URL}/bis/players/active/index.html`;
 
-export const DEFAULT_RAW_SQLITE_PATH = "../../data/raw/raw.sqlite";
-export const DEFAULT_RELEASE_COUNTS_PATH = "../../release/counts.json";
-export const DEFAULT_RELEASE_METADATA_PATH = "../../release/metadata.json";
+export const DEFAULT_RAW_SQLITE_PATH = '../../data/raw/raw.sqlite';
+export const DEFAULT_RELEASE_COUNTS_PATH = '../../release/counts.json';
+export const DEFAULT_RELEASE_METADATA_PATH = '../../release/metadata.json';

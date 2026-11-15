@@ -1,4 +1,4 @@
-import BetterSqlite3 from "better-sqlite3";
+import BetterSqlite3 from 'better-sqlite3';
 
 export type RawCounts = {
   players: number;
@@ -18,18 +18,18 @@ export function readRawCounts(dbPath: string): RawCounts {
     fileMustExist: true,
   });
   try {
-    const integrity = db.pragma("integrity_check", { simple: true });
-    if (integrity !== "ok") {
+    const integrity = db.pragma('integrity_check', { simple: true });
+    if (integrity !== 'ok') {
       throw new Error(`SQLite integrity check failed: ${integrity}`);
     }
 
     const players = (
-      db
-        .prepare("SELECT COUNT(DISTINCT player_id) AS count FROM raw_players")
-        .get() as { count: number }
+      db.prepare('SELECT COUNT(DISTINCT player_id) AS count FROM raw_players').get() as {
+        count: number;
+      }
     ).count;
     const runs = (
-      db.prepare("SELECT COUNT(*) AS count FROM scrape_runs").get() as {
+      db.prepare('SELECT COUNT(*) AS count FROM scrape_runs').get() as {
         count: number;
       }
     ).count;

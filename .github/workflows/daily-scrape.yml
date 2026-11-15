@@ -3,23 +3,10 @@
 # 生成・公開はnpb-analysis側へ移した（ADR 0007を参照）。npb-analysisはデプロイ時に
 # このPagesサイトからraw.sqliteを取得し、自スキーマへ変換する。
 #
-# 日次自動実行（schedule）は、npb-analysisへの統合作業中は一時的に無効化されて
-# いた（workflow_dispatchのみ受け付ける状態だった）。GitHub Pagesへのraw.sqlite
-# 初回publishが成功し、npb-analysisのDeployがこのPagesサイトを参照して起動する
-# 経路に切り替わったため、scheduleを復活させる。
-#
-# 下流タイミング依存: npb-analysisのDeployは cron "0 20 * * *"（05:00 JST）で、
-# このリポジトリのGitHub PagesからPublishされたraw.sqliteを取得する。この
-# workflowは03:00 JST開始・timeout-minutes: 90であり、遅くとも04:30 JSTには
-# scrapeジョブが完了し、続くdeploy-pagesジョブがPagesへpublishする。つまり
-# npb-analysisのDeployが起動する05:00 JSTより前に新しいraw.sqliteが揃っている
-# 前提でスケジュールを組んでいる。開始時刻（cron）やtimeout-minutesを変更して
-# この時間関係を崩す場合は、npb-analysis側のDeploy cronも合わせて見直すこと。
+# 定期実行は停止中。必要な場合はworkflow_dispatchから手動実行する。
 name: Daily scrape
 
 on:
-  schedule:
-    - cron: "0 18 * * *" # 03:00 JST
   workflow_dispatch:
     inputs:
       scope:
